@@ -275,9 +275,9 @@ h2 {
 
 .work-card img {
   width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  object-position: top center;
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+  object-position: center;
   background: #080808;
 }
 
