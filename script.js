@@ -73,7 +73,7 @@ const works = [
     links: {
       BOOTH: "https://esunamura.booth.pm/items/8120812",
       pictSPACE: "https://pictspace.net/items/manage_detail/838060",
-      PromptCom: "https://prompt-com.com/ja/p/9da02195-61d2-4eca-a3a4-c912a20a3443"
+      PromptCom: "https://prompt-com.com/ja/p/03378ed3-d986-496a-88df-e1216d212266"
     }
   },
   {
@@ -107,6 +107,16 @@ const works = [
       pictSPACE: "https://pictspace.net/items/manage_detail/838092",
       DLsite: "https://www.dlsite.com/aix/work/=/product_id/RJ01604402.html",
       PromptCom: "https://prompt-com.com/ja/p/21cdb0c3-6cda-4e92-b9e7-bd1d521c2b66"
+    }
+  },
+  {
+    title: { ja: "ひかがみ 登校編 / Hikagami School Route", en: "Hikagami School Route / ひかがみ 登校編" },
+    slug: "hikagami-school-route",
+    image: "images/11_ひかがみ 登校編.jpg",
+    links: {
+      BOOTH: "https://esunamura.booth.pm/items/8203343",
+      pictSPACE: "https://pictspace.net/items/manage_detail/845880",
+      PromptCom: "https://prompt-com.com/ja/p/c9fd0fb2-4bca-4ea4-a30d-c2b28948c06a"
     }
   },
   {
