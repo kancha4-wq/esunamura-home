@@ -3,6 +3,8 @@ const works = [
     title: { ja: "里帰り / Satogaeri", en: "Satogaeri / 里帰り" },
     slug: "satogaeri",
     image: "images/01_里帰り.jpg",
+    imageWidth: 1750,
+    imageHeight: 1225,
     links: {
       pictSPACE: "https://pictspace.net/items/manage_detail/837195",
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_741847/",
@@ -13,6 +15,8 @@ const works = [
     title: { ja: "古都美人 / Ancient Capital Beauty", en: "Ancient Capital Beauty / 古都美人" },
     slug: "ancient-capital-beauty",
     image: "images/02_古都美人.jpg",
+    imageWidth: 4096,
+    imageHeight: 2872,
     links: {
       BOOTH: "https://esunamura.booth.pm/items/8111016",
       pictSPACE: "https://pictspace.net/items/manage_detail/838029",
@@ -24,6 +28,8 @@ const works = [
     title: { ja: "ひかがみ / Hikagami", en: "Hikagami / ひかがみ" },
     slug: "hikagami",
     image: "images/03_ひかがみ.png",
+    imageWidth: 1000,
+    imageHeight: 700,
     links: {
       BOOTH: "https://esunamura.booth.pm/items/8111107",
       pictSPACE: "https://pictspace.net/items/manage_detail/838048",
@@ -34,6 +40,8 @@ const works = [
     title: { ja: "瀬戸内おもらし紀行 / Setouchi Omorashi Journey", en: "Setouchi Omorashi Journey / 瀬戸内おもらし紀行" },
     slug: "setouchi-omorashi-journey",
     image: "images/04_瀬戸内おもらし紀行.png",
+    imageWidth: 1000,
+    imageHeight: 700,
     links: {
       BOOTH: "https://esunamura.booth.pm/items/8116002",
       pictSPACE: "https://pictspace.net/items/manage_detail/837289",
@@ -46,6 +54,8 @@ const works = [
     title: { ja: "北海道おもらし紀行 / Hokkaido Omorashi Journey", en: "Hokkaido Omorashi Journey / 北海道おもらし紀行" },
     slug: "hokkaido-omorashi-journey",
     image: "images/05_北海道おもらし紀行.jpg",
+    imageWidth: 1260,
+    imageHeight: 945,
     links: {
       BOOTH: "https://esunamura.booth.pm/items/8120897",
       pictSPACE: "https://pictspace.net/items/manage_detail/838061",
@@ -58,6 +68,8 @@ const works = [
     title: { ja: "金髪巫女 / Blonde Shrine Maiden", en: "Blonde Shrine Maiden / 金髪巫女" },
     slug: "blonde-shrine-maiden",
     image: "images/06_金髪巫女.jpg",
+    imageWidth: 1375,
+    imageHeight: 963,
     links: {
       BOOTH: "https://esunamura.booth.pm/items/8120906",
       pictSPACE: "https://pictspace.net/items/manage_detail/838067",
@@ -70,9 +82,12 @@ const works = [
     title: { ja: "ごくじり / Gokujiri", en: "Gokujiri / ごくじり" },
     slug: "gokujiri",
     image: "images/07_ごくじり.jpg",
+    imageWidth: 2048,
+    imageHeight: 1536,
     links: {
       BOOTH: "https://esunamura.booth.pm/items/8120812",
       pictSPACE: "https://pictspace.net/items/manage_detail/838060",
+      DLsite: "https://www.dlsite.com/aix/work/=/product_id/RJ01605513.html",
       PromptCom: "https://prompt-com.com/ja/p/03378ed3-d986-496a-88df-e1216d212266"
     }
   },
@@ -80,6 +95,8 @@ const works = [
     title: { ja: "沖縄ちゅらさん粗相 / Okinawa Churasan Accident", en: "Okinawa Churasan Accident / 沖縄ちゅらさん粗相" },
     slug: "okinawa-churasan-accident",
     image: "images/08_沖縄ちゅらさん粗相.jpg",
+    imageWidth: 2867,
+    imageHeight: 2867,
     links: {
       BOOTH: "https://esunamura.booth.pm/items/8139646",
       pictSPACE: "https://pictspace.net/items/manage_detail/838076",
@@ -90,6 +107,8 @@ const works = [
     title: { ja: "桃色バイト / Pink Part-Time Job", en: "Pink Part-Time Job / 桃色バイト" },
     slug: "pink-part-time-job",
     image: "images/09_桃色バイト.jpg",
+    imageWidth: 1750,
+    imageHeight: 1225,
     links: {
       BOOTH: "https://esunamura.booth.pm/items/8139630",
       pictSPACE: "https://pictspace.net/items/manage_detail/838081",
@@ -102,6 +121,8 @@ const works = [
     title: { ja: "しずくの記録 / Shizuku no Kiroku", en: "Shizuku no Kiroku / しずくの記録" },
     slug: "shizuku-no-kiroku",
     image: "images/10_しずくの記録.jpg",
+    imageWidth: 1000,
+    imageHeight: 700,
     links: {
       BOOTH: "https://esunamura.booth.pm/items/8168871",
       pictSPACE: "https://pictspace.net/items/manage_detail/838092",
@@ -113,6 +134,8 @@ const works = [
     title: { ja: "ひかがみ 登校編 / Hikagami School Route", en: "Hikagami School Route / ひかがみ 登校編" },
     slug: "hikagami-school-route",
     image: "images/11_ひかがみ 登校編.jpg",
+    imageWidth: 1000,
+    imageHeight: 700,
     links: {
       BOOTH: "https://esunamura.booth.pm/items/8203343",
       pictSPACE: "https://pictspace.net/items/manage_detail/845880",
@@ -123,6 +146,8 @@ const works = [
     title: { ja: "エロボキシン4649 / Erobokishin 4649", en: "Erobokishin 4649 / エロボキシン4649" },
     slug: "erobokishin-4649",
     image: "images/11_エロボキシン4649.jpg",
+    imageWidth: 1260,
+    imageHeight: 945,
     links: {
       BOOTH: "https://esunamura.booth.pm/items/8238754",
       pictSPACE: "https://pictspace.net/items/manage_detail/851348",
@@ -141,6 +166,32 @@ const translatableNodes = document.querySelectorAll("[data-ja][data-en]");
 
 function analyticsKey(label) {
   return label.toLowerCase().replace(/\s+/g, "-");
+}
+
+function normalizeDestination(label) {
+  return label.toLowerCase().replace(/\s+/g, "-");
+}
+
+function sendOutboundClick(link) {
+  if (typeof window.gtag !== "function") {
+    return;
+  }
+
+  const destination = link.dataset.analyticsLink || normalizeDestination(link.textContent);
+  const area = link.dataset.analyticsArea || "unknown";
+  const work = link.dataset.analyticsWork || "";
+  const readableUrl = `${destination}:${link.href}`;
+
+  window.gtag("event", "click", {
+    link_url: readableUrl,
+    link_domain: new URL(link.href).hostname,
+    link_text: link.textContent.trim(),
+    link_destination: destination,
+    link_area: area,
+    work_slug: work,
+    outbound: true,
+    transport_type: "beacon",
+  });
 }
 
 function createLink(label, url, workSlug) {
@@ -166,7 +217,10 @@ function renderWorks() {
     const image = document.createElement("img");
     image.src = work.image;
     image.alt = work.title.ja;
+    image.width = work.imageWidth;
+    image.height = work.imageHeight;
     image.loading = "lazy";
+    image.decoding = "async";
 
     const copy = document.createElement("div");
     copy.className = "work-copy";
@@ -207,3 +261,12 @@ languageButtons.forEach((button) => {
 });
 
 setLanguage("ja");
+
+document.addEventListener("click", (event) => {
+  const link = event.target.closest("a[data-analytics-link]");
+  if (!link) {
+    return;
+  }
+
+  sendOutboundClick(link);
+});
