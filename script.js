@@ -131,7 +131,7 @@ function createLink(label, url) {
 function renderWorks() {
   worksGrid.textContent = "";
 
-  works.forEach((work) => {
+  works.slice().reverse().forEach((work) => {
     const card = document.createElement("article");
     card.className = "work-card";
 
