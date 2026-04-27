@@ -512,6 +512,44 @@ h2 {
   text-align: center;
 }
 
+.affiliate-banner {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  margin: 18px 0 0;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(28, 25, 24, 0.56);
+  text-align: center;
+}
+
+.affiliate-banner h2 {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+.affiliate-banner a {
+  display: inline-flex;
+  max-width: 100%;
+  border-radius: 8px;
+  opacity: 0.86;
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.affiliate-banner a:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+.affiliate-banner img {
+  width: 234px;
+  max-width: 100%;
+  height: auto;
+}
+
 @media (min-width: 640px) {
   html {
     overflow-y: scroll;
