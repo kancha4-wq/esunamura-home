@@ -167,6 +167,8 @@ const languageButtons = document.querySelectorAll(".lang-button");
 const translatableNodes = document.querySelectorAll("[data-ja][data-en]");
 const ageGateEnter = document.querySelector(".age-gate-enter");
 const ageGateLeave = document.querySelector(".age-gate-leave");
+const pixivTabs = document.querySelectorAll("[data-pixiv-tab]");
+const pixivPanels = document.querySelectorAll("[data-pixiv-panel]");
 
 function setAgeGateState(accepted) {
   document.body.classList.toggle("age-verified", accepted);
@@ -194,6 +196,18 @@ function acceptAgeGate() {
 
 function leaveAgeGate() {
   window.location.href = ageGateLeaveUrl;
+}
+
+function setPixivTab(activeTab) {
+  pixivTabs.forEach((tab) => {
+    const isActive = tab.dataset.pixivTab === activeTab;
+    tab.classList.toggle("is-active", isActive);
+    tab.setAttribute("aria-selected", String(isActive));
+  });
+
+  pixivPanels.forEach((panel) => {
+    panel.hidden = panel.dataset.pixivPanel !== activeTab;
+  });
 }
 
 function analyticsKey(label) {
@@ -320,7 +334,12 @@ languageButtons.forEach((button) => {
   button.addEventListener("click", () => setLanguage(button.dataset.lang));
 });
 
+pixivTabs.forEach((tab) => {
+  tab.addEventListener("click", () => setPixivTab(tab.dataset.pixivTab));
+});
+
 setLanguage("ja");
+setPixivTab("recommended");
 setAgeGateState(hasAcceptedAgeGate());
 
 ageGateEnter?.addEventListener("click", acceptAgeGate);

@@ -391,6 +391,38 @@ h2 {
   background: rgba(31, 29, 29, 0.92);
 }
 
+.pixiv-preview-tabs {
+  display: inline-grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4px;
+  padding: 4px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.pixiv-tab {
+  min-height: 36px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.pixiv-tab.is-active {
+  background: rgba(230, 177, 95, 0.88);
+  color: #1a1209;
+}
+
+.pixiv-preview-panel[hidden] {
+  display: none;
+}
+
 .pixiv-preview-links {
   display: grid;
   gap: 10px;
