@@ -55,18 +55,24 @@ img {
 
 .age-gate-pending .page-shell,
 .age-gate-active .page-shell {
-  visibility: hidden;
+  opacity: 0.08;
+  filter: blur(10px);
+  pointer-events: none;
+  user-select: none;
 }
 
 .age-verified .page-shell {
-  visibility: visible;
+  opacity: 1;
+  filter: none;
+  pointer-events: auto;
+  user-select: auto;
 }
 
 .age-gate {
   position: fixed;
   inset: 0;
   z-index: 1000;
-  display: none;
+  display: grid;
   min-width: 320px;
   place-items: center;
   padding: 18px;
