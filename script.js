@@ -239,10 +239,28 @@ function createLink(label, url, workSlug) {
   return link;
 }
 
-function salesNoteText() {
-  return currentLanguage === "ja"
-    ? "BOOTH / pictSPACE: ZIP + PDF版 · FANZA / DLsite: 高解像度4K版"
-    : "BOOTH / pictSPACE: ZIP + PDF editions · FANZA / DLsite: 4K versions";
+function salesNoteText(work) {
+  const zipStores = ["BOOTH", "pictSPACE"].filter((store) => work.links[store]);
+  const highResStores = ["FANZA", "DLsite"].filter((store) => work.links[store]);
+  const parts = [];
+
+  if (zipStores.length > 0) {
+    parts.push(
+      currentLanguage === "ja"
+        ? `${zipStores.join(" / ")}: ZIP + PDF版`
+        : `${zipStores.join(" / ")}: ZIP + PDF editions`
+    );
+  }
+
+  if (highResStores.length > 0) {
+    parts.push(
+      currentLanguage === "ja"
+        ? `${highResStores.join(" / ")}: 高解像度4K版`
+        : `${highResStores.join(" / ")}: 4K versions`
+    );
+  }
+
+  return parts.join(" · ");
 }
 
 function renderWorks() {
@@ -268,7 +286,7 @@ function renderWorks() {
 
     const note = document.createElement("p");
     note.className = "work-note";
-    note.textContent = salesNoteText();
+    note.textContent = salesNoteText(work);
 
     const links = document.createElement("div");
     links.className = "work-links";
