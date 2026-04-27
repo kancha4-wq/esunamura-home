@@ -218,6 +218,45 @@ function normalizeDestination(label) {
   return label.toLowerCase().replace(/\s+/g, "-");
 }
 
+function individualClickEventName(link) {
+  const href = link.href;
+  const hostname = new URL(href).hostname;
+
+  if (href.includes("851351") || link.dataset.analyticsLink === "free-64p") {
+    return "click_free_sample";
+  }
+
+  if (hostname.includes("dlsite.com") || hostname === "dlaf.jp") {
+    return "click_dlsite";
+  }
+
+  if (hostname.includes("dmm.co.jp")) {
+    return "click_fanza";
+  }
+
+  if (hostname.includes("booth.pm")) {
+    return "click_booth";
+  }
+
+  if (hostname.includes("pictspace.net")) {
+    return "click_pictspace";
+  }
+
+  if (hostname.includes("prompt-com.com")) {
+    return "click_promptcom";
+  }
+
+  if (hostname.includes("pixiv.net")) {
+    return "click_pixiv";
+  }
+
+  if (hostname.includes("amazon.co.jp") || hostname.includes("amazon.com")) {
+    return "click_kindle";
+  }
+
+  return "";
+}
+
 function sendOutboundClick(link) {
   if (typeof window.gtag !== "function") {
     return;
@@ -227,8 +266,7 @@ function sendOutboundClick(link) {
   const area = link.dataset.analyticsArea || "unknown";
   const work = link.dataset.analyticsWork || "";
   const readableUrl = `${destination}:${link.href}`;
-
-  window.gtag("event", "click", {
+  const params = {
     link_url: readableUrl,
     link_domain: new URL(link.href).hostname,
     link_text: link.textContent.trim(),
@@ -237,7 +275,14 @@ function sendOutboundClick(link) {
     work_slug: work,
     outbound: true,
     transport_type: "beacon",
-  });
+  };
+
+  window.gtag("event", "click", params);
+
+  const eventName = individualClickEventName(link);
+  if (eventName) {
+    window.gtag("event", eventName, params);
+  }
 }
 
 function createLink(label, url, workSlug) {
