@@ -159,10 +159,42 @@ const works = [
 ];
 
 let currentLanguage = "ja";
+const ageGateStorageKey = "esunamuraAgeGateAccepted";
+const ageGateLeaveUrl = "https://www.google.com/";
 
 const worksGrid = document.querySelector("#worksGrid");
 const languageButtons = document.querySelectorAll(".lang-button");
 const translatableNodes = document.querySelectorAll("[data-ja][data-en]");
+const ageGateEnter = document.querySelector(".age-gate-enter");
+const ageGateLeave = document.querySelector(".age-gate-leave");
+
+function setAgeGateState(accepted) {
+  document.body.classList.toggle("age-verified", accepted);
+  document.body.classList.toggle("age-gate-active", !accepted);
+  document.body.classList.remove("age-gate-pending");
+}
+
+function hasAcceptedAgeGate() {
+  try {
+    return window.localStorage.getItem(ageGateStorageKey) === "yes";
+  } catch (error) {
+    return false;
+  }
+}
+
+function acceptAgeGate() {
+  try {
+    window.localStorage.setItem(ageGateStorageKey, "yes");
+  } catch (error) {
+    // Continue even when storage is blocked so the current visit can proceed.
+  }
+
+  setAgeGateState(true);
+}
+
+function leaveAgeGate() {
+  window.location.href = ageGateLeaveUrl;
+}
 
 function analyticsKey(label) {
   return label.toLowerCase().replace(/\s+/g, "-");
@@ -271,6 +303,10 @@ languageButtons.forEach((button) => {
 });
 
 setLanguage("ja");
+setAgeGateState(hasAcceptedAgeGate());
+
+ageGateEnter?.addEventListener("click", acceptAgeGate);
+ageGateLeave?.addEventListener("click", leaveAgeGate);
 
 document.addEventListener("click", (event) => {
   const link = event.target.closest("a[data-analytics-link]");
