@@ -46,7 +46,7 @@ const works = [
       BOOTH: "https://esunamura.booth.pm/items/8116002",
       pictSPACE: "https://pictspace.net/items/manage_detail/837289",
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_745411/",
-      DLsite: "https://www.dlsite.com/aix/work/=/product_id/RJ01591984.html",
+      DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01591984.html",
       PromptCom: "https://prompt-com.com/ja/p/4db875a2-a967-465c-93b8-eb28521defd4"
     }
   },
@@ -60,7 +60,7 @@ const works = [
       BOOTH: "https://esunamura.booth.pm/items/8120897",
       pictSPACE: "https://pictspace.net/items/manage_detail/838061",
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_745765/",
-      DLsite: "https://www.dlsite.com/aix/work/=/product_id/RJ01591976.html",
+      DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01591976.html",
       PromptCom: "https://prompt-com.com/ja/p/2cbff6cf-bb88-4a78-8af0-cb43c5227164"
     }
   },
@@ -74,7 +74,7 @@ const works = [
       BOOTH: "https://esunamura.booth.pm/items/8120906",
       pictSPACE: "https://pictspace.net/items/manage_detail/838067",
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_746695/",
-      DLsite: "https://www.dlsite.com/aix/work/=/product_id/RJ01591986.html",
+      DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01591986.html",
       PromptCom: "https://prompt-com.com/ja/p/4ca5f6fa-e429-4019-9d13-9738eecf2cb8"
     }
   },
@@ -87,7 +87,7 @@ const works = [
     links: {
       BOOTH: "https://esunamura.booth.pm/items/8120812",
       pictSPACE: "https://pictspace.net/items/manage_detail/838060",
-      DLsite: "https://www.dlsite.com/aix/work/=/product_id/RJ01605513.html",
+      DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01605513.html",
       PromptCom: "https://prompt-com.com/ja/p/03378ed3-d986-496a-88df-e1216d212266"
     }
   },
@@ -113,7 +113,7 @@ const works = [
       BOOTH: "https://esunamura.booth.pm/items/8139630",
       pictSPACE: "https://pictspace.net/items/manage_detail/838081",
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_751890/",
-      DLsite: "https://www.dlsite.com/aix/work/=/product_id/RJ01601145.html",
+      DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01601145.html",
       PromptCom: "https://prompt-com.com/ja/p/055982d7-98e2-47ae-92c0-dbb71e117d56"
     }
   },
@@ -126,7 +126,7 @@ const works = [
     links: {
       BOOTH: "https://esunamura.booth.pm/items/8168871",
       pictSPACE: "https://pictspace.net/items/manage_detail/838092",
-      DLsite: "https://www.dlsite.com/aix/work/=/product_id/RJ01604402.html",
+      DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01604402.html",
       PromptCom: "https://prompt-com.com/ja/p/21cdb0c3-6cda-4e92-b9e7-bd1d521c2b66"
     }
   },
@@ -207,6 +207,12 @@ function createLink(label, url, workSlug) {
   return link;
 }
 
+function salesNoteText() {
+  return currentLanguage === "ja"
+    ? "BOOTH / pictSPACE: ZIP + PDF版 · FANZA / DLsite: 高解像度4K版"
+    : "BOOTH / pictSPACE: ZIP + PDF editions · FANZA / DLsite: 4K versions";
+}
+
 function renderWorks() {
   worksGrid.textContent = "";
 
@@ -228,6 +234,10 @@ function renderWorks() {
     const title = document.createElement("h3");
     title.textContent = work.title[currentLanguage];
 
+    const note = document.createElement("p");
+    note.className = "work-note";
+    note.textContent = salesNoteText();
+
     const links = document.createElement("div");
     links.className = "work-links";
 
@@ -235,7 +245,7 @@ function renderWorks() {
       links.append(createLink(label, url, work.slug));
     });
 
-    copy.append(title, links);
+    copy.append(title, note, links);
     card.append(image, copy);
     worksGrid.append(card);
   });
