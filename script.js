@@ -155,6 +155,24 @@ const works = [
       PromptCom: "https://prompt-com.com/ja/p/d3d69153-c51f-41f6-8297-1a0a693c2583",
       "Free 64P": "https://pictspace.net/items/manage_detail/851351"
     }
+  },
+  {
+    title: {
+      ja: "AI制服・美脚イラスト集: 足裏と通学のアートコレクション",
+      en: "AI Seifuku Bikyaku Illustration Collection: Sole and School Commute Art Collection"
+    },
+    slug: "kindle-seifuku-bikyaku",
+    image: "images/12_kindle_seifuku_bikyaku.jpg",
+    imageWidth: 2048,
+    imageHeight: 3512,
+    note: {
+      ja: "Amazon Kindle版",
+      en: "Amazon Kindle edition"
+    },
+    links: {
+      "Kindle JP": "https://www.amazon.co.jp/dp/B0GYMZZR4S",
+      "Kindle US": "https://www.amazon.com/dp/B0GYMZZR4S"
+    }
   }
 ];
 
@@ -316,6 +334,10 @@ function salesNoteText(work) {
   const zipStores = ["BOOTH", "pictSPACE"].filter((store) => work.links[store]);
   const highResStores = ["FANZA", "DLsite"].filter((store) => work.links[store]);
   const parts = [];
+
+  if (work.note) {
+    parts.push(work.note[currentLanguage]);
+  }
 
   if (zipStores.length > 0) {
     parts.push(
