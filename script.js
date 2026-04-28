@@ -169,6 +169,8 @@ const ageGateEnter = document.querySelector(".age-gate-enter");
 const ageGateLeave = document.querySelector(".age-gate-leave");
 const pixivTabs = document.querySelectorAll("[data-pixiv-tab]");
 const pixivPanels = document.querySelectorAll("[data-pixiv-panel]");
+const promptcomTabs = document.querySelectorAll("[data-promptcom-tab]");
+const promptcomPanels = document.querySelectorAll("[data-promptcom-panel]");
 
 function setAgeGateState(accepted) {
   document.body.classList.toggle("age-verified", accepted);
@@ -207,6 +209,18 @@ function setPixivTab(activeTab) {
 
   pixivPanels.forEach((panel) => {
     panel.hidden = panel.dataset.pixivPanel !== activeTab;
+  });
+}
+
+function setPromptcomTab(activeTab) {
+  promptcomTabs.forEach((tab) => {
+    const isActive = tab.dataset.promptcomTab === activeTab;
+    tab.classList.toggle("is-active", isActive);
+    tab.setAttribute("aria-selected", String(isActive));
+  });
+
+  promptcomPanels.forEach((panel) => {
+    panel.hidden = panel.dataset.promptcomPanel !== activeTab;
   });
 }
 
@@ -383,8 +397,13 @@ pixivTabs.forEach((tab) => {
   tab.addEventListener("click", () => setPixivTab(tab.dataset.pixivTab));
 });
 
+promptcomTabs.forEach((tab) => {
+  tab.addEventListener("click", () => setPromptcomTab(tab.dataset.promptcomTab));
+});
+
 setLanguage("ja");
 setPixivTab("recommended");
+setPromptcomTab("free");
 setAgeGateState(hasAcceptedAgeGate());
 
 ageGateEnter?.addEventListener("click", acceptAgeGate);
