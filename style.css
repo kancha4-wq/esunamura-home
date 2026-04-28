@@ -335,6 +335,109 @@ h2 {
   font-weight: 800;
 }
 
+.sale-notice {
+  position: relative;
+  overflow: hidden;
+  border-color: rgba(240, 200, 121, 0.34);
+  background:
+    radial-gradient(circle at 88% 12%, rgba(240, 200, 121, 0.26), transparent 18rem),
+    linear-gradient(135deg, rgba(78, 33, 24, 0.92), rgba(28, 25, 24, 0.94) 48%, rgba(35, 29, 22, 0.98));
+}
+
+.sale-notice::before {
+  content: "SALE";
+  position: absolute;
+  top: 10px;
+  right: -12px;
+  color: rgba(255, 255, 255, 0.05);
+  font-size: clamp(3.8rem, 16vw, 8rem);
+  font-weight: 1000;
+  letter-spacing: -0.08em;
+  line-height: 0.8;
+  pointer-events: none;
+}
+
+.sale-notice > * {
+  position: relative;
+  z-index: 1;
+}
+
+.sale-notice h1 {
+  max-width: 13em;
+  text-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.sale-offers {
+  display: grid;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.sale-offer {
+  display: grid;
+  gap: 3px;
+  min-height: 94px;
+  padding: 14px;
+  border: 1px solid rgba(240, 200, 121, 0.34);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.07);
+  box-shadow: 0 18px 34px rgba(0, 0, 0, 0.24);
+  transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+}
+
+.sale-offer:hover {
+  transform: translateY(-2px);
+  border-color: rgba(240, 200, 121, 0.8);
+  background: rgba(240, 200, 121, 0.13);
+}
+
+.sale-store {
+  color: var(--accent-strong);
+  font-size: 0.82rem;
+  font-weight: 1000;
+  letter-spacing: 0.08em;
+}
+
+.sale-offer strong {
+  font-size: clamp(1.25rem, 6vw, 2rem);
+  line-height: 1.08;
+}
+
+.sale-offer small {
+  color: var(--muted);
+  font-weight: 800;
+}
+
+.sale-lead,
+.sale-note {
+  font-weight: 800;
+}
+
+.sale-series-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0;
+  margin: 12px 0 0;
+  list-style: none;
+}
+
+.sale-series-list li {
+  padding: 6px 10px;
+  border: 1px solid rgba(240, 200, 121, 0.28);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.07);
+  color: #ffe6b5;
+  font-size: 0.85rem;
+  font-weight: 900;
+}
+
+.notice-actions {
+  display: grid;
+  gap: 9px;
+  margin-top: 14px;
+}
+
 .featured-card {
   overflow: hidden;
 }
@@ -653,6 +756,11 @@ h2 {
   }
 
   .button-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sale-offers,
+  .notice-actions {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
