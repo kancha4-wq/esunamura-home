@@ -125,16 +125,25 @@
           <a class="link-button primary" href="https://www.pixiv.net/users/21257126/artworks" target="_blank" rel="noopener" data-ja="pixivで見る" data-en="View on pixiv" data-analytics-link="pixiv-latest" data-analytics-area="latest-pixiv" data-analytics-work="latest-pixiv">pixivで見る</a>
         </section>
 
-        <section class="pixiv-preview-card" aria-labelledby="pixiv-preview-title">
+        <section class="pixiv-preview-card reading-preview-card" aria-labelledby="reading-preview-title">
           <div class="pixiv-preview-copy">
-            <p class="eyebrow" data-ja="pixiv試し読み" data-en="pixiv Preview">pixiv試し読み</p>
-            <h2 id="pixiv-preview-title" data-ja="シリーズの雰囲気をpixivで見る" data-en="Browse series on pixiv">シリーズの雰囲気をpixivで見る</h2>
-            <p data-ja="おすすめ作品と全シリーズ一覧をまとめました。" data-en="Recommended works and the full series archive are collected here.">おすすめ作品と全シリーズ一覧をまとめました。</p>
+            <p class="eyebrow" data-ja="試し読み" data-en="Preview">試し読み</p>
+            <h2 id="reading-preview-title" data-ja="シリーズを試し読みする" data-en="Preview the series">シリーズを試し読みする</h2>
+            <p data-ja="pixivとPromptComの試し読み先をまとめました。" data-en="Preview links for pixiv and PromptCom are collected here.">pixivとPromptComの試し読み先をまとめました。</p>
           </div>
-          <div class="pixiv-preview-tabs" role="tablist" aria-label="pixiv series">
-            <button class="pixiv-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="pixiv-recommended-panel" data-pixiv-tab="recommended" data-ja="おすすめ" data-en="Recommended">おすすめ</button>
-            <button class="pixiv-tab" type="button" role="tab" aria-selected="false" aria-controls="pixiv-all-panel" data-pixiv-tab="all" data-ja="すべて" data-en="All Series">すべて</button>
+          <div class="pixiv-preview-tabs preview-platform-tabs" role="tablist" aria-label="Preview platform">
+            <button class="pixiv-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="reading-pixiv-panel" data-reading-tab="pixiv" data-ja="pixivで見る" data-en="View on pixiv">pixivで見る</button>
+            <button class="pixiv-tab" type="button" role="tab" aria-selected="false" aria-controls="reading-promptcom-panel" data-reading-tab="promptcom" data-ja="PromptComで見る" data-en="View on PromptCom">PromptComで見る</button>
           </div>
+          <div class="preview-platform-panel" id="reading-pixiv-panel" role="tabpanel" data-reading-panel="pixiv">
+            <div class="preview-subcopy">
+              <h3 data-ja="シリーズの雰囲気をpixivで見る" data-en="Browse series on pixiv">シリーズの雰囲気をpixivで見る</h3>
+              <p data-ja="おすすめ作品と全シリーズ一覧をまとめました。" data-en="Recommended works and the full series archive are collected here.">おすすめ作品と全シリーズ一覧をまとめました。</p>
+            </div>
+            <div class="pixiv-preview-tabs" role="tablist" aria-label="pixiv series">
+              <button class="pixiv-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="pixiv-recommended-panel" data-pixiv-tab="recommended" data-ja="おすすめ" data-en="Recommended">おすすめ</button>
+              <button class="pixiv-tab" type="button" role="tab" aria-selected="false" aria-controls="pixiv-all-panel" data-pixiv-tab="all" data-ja="すべて" data-en="All Series">すべて</button>
+            </div>
           <div class="pixiv-preview-panel" id="pixiv-recommended-panel" role="tabpanel" data-pixiv-panel="recommended">
             <div class="pixiv-preview-links">
               <article class="pixiv-preview-item">
@@ -223,111 +232,96 @@
               </article>
             </div>
           </div>
-        </section>
+          </div>
 
-        <section class="pixiv-preview-card promptcom-preview-card" aria-labelledby="promptcom-preview-title">
-          <div class="pixiv-preview-copy">
-            <p class="eyebrow" data-ja="PromptCom試し読み" data-en="PromptCom Preview">PromptCom試し読み</p>
-            <h2 id="promptcom-preview-title" data-ja="シリーズをPromptComで見る" data-en="Browse series on PromptCom">シリーズをPromptComで見る</h2>
-            <p data-ja="無料公開・先行公開・限定公開をまとめました。" data-en="Free, early-access, and limited releases are collected here.">無料公開・先行公開・限定公開をまとめました。</p>
-          </div>
-          <div class="pixiv-preview-tabs" role="tablist" aria-label="PromptCom series">
-            <button class="pixiv-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="promptcom-free-panel" data-promptcom-tab="free" data-ja="無料公開" data-en="Free">無料公開</button>
-            <button class="pixiv-tab" type="button" role="tab" aria-selected="false" aria-controls="promptcom-paid-panel" data-promptcom-tab="paid" data-ja="有料公開" data-en="Paid">有料公開</button>
-          </div>
+          <div class="preview-platform-panel" id="reading-promptcom-panel" role="tabpanel" data-reading-panel="promptcom" hidden>
+            <div class="preview-subcopy">
+              <h3 data-ja="シリーズをPromptComで見る" data-en="Browse series on PromptCom">シリーズをPromptComで見る</h3>
+              <p data-ja="無料公開・試し読み・先行公開をまとめています。作品によって掲載内容や公開範囲が異なります。" data-en="Free previews, trial reading, and early access are collected here. Available content and access may vary by work.">無料公開・試し読み・先行公開をまとめています。作品によって掲載内容や公開範囲が異なります。</p>
+            </div>
+            <div class="pixiv-preview-tabs promptcom-free-only-tabs" role="tablist" aria-label="PromptCom series">
+              <button class="pixiv-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="promptcom-free-panel" data-promptcom-tab="free" data-ja="無料公開" data-en="Free">無料公開</button>
+              <button class="pixiv-tab" type="button" role="tab" aria-selected="false" aria-controls="promptcom-paid-panel" data-promptcom-tab="paid" data-ja="有料公開" data-en="Paid" hidden>有料公開</button>
+            </div>
           <div class="pixiv-preview-panel" id="promptcom-free-panel" role="tabpanel" data-promptcom-panel="free">
-            <p class="preview-note" data-ja="掲載内容は制作中のプレビューです。完成版では内容が変更される場合があります。" data-en="This is a work-in-progress preview. Content may differ from the final release.">掲載内容は制作中のプレビューです。完成版では内容が変更される場合があります。</p>
             <div class="pixiv-preview-links">
               <article class="pixiv-preview-item">
                 <div class="preview-item-heading">
-                  <h3>里帰り</h3>
-                  <span class="promptcom-badge" data-ja="無料プレビュー" data-en="Free Preview">無料プレビュー</span>
+                  <h3>金髪巫女 異世界編</h3>
                 </div>
-                <a class="link-button accent" href="https://prompt-com.com/ja/tags/%E9%87%8C%E5%B8%B0%E3%82%8A%E7%84%A1%E6%96%99?product_typegallery&amp;rating=all" target="_blank" rel="noopener" data-ja="無料で読む" data-en="Read for free" data-analytics-link="promptcom-free-satogaeri" data-analytics-area="promptcom-preview-free" data-analytics-work="satogaeri">無料で読む</a>
-              </article>
-              <article class="pixiv-preview-item">
-                <div class="preview-item-heading">
-                  <h3>瀬戸内おもらし紀行</h3>
-                  <span class="promptcom-badge" data-ja="無料プレビュー" data-en="Free Preview">無料プレビュー</span>
-                </div>
-                <a class="link-button accent" href="https://prompt-com.com/ja/tags/%E7%80%AC%E6%88%B8%E5%86%85%E3%81%8A%E3%82%82%E3%82%89%E3%81%97%E7%B4%80%E8%A1%8C%E7%84%A1%E6%96%99?product_typegallery&amp;rating=all" target="_blank" rel="noopener" data-ja="無料で読む" data-en="Read for free" data-analytics-link="promptcom-free-setouchi-omorashi-journey" data-analytics-area="promptcom-preview-free" data-analytics-work="setouchi-omorashi-journey">無料で読む</a>
-              </article>
-              <article class="pixiv-preview-item">
-                <div class="preview-item-heading">
-                  <h3>古都美人</h3>
-                  <span class="promptcom-badge" data-ja="無料プレビュー" data-en="Free Preview">無料プレビュー</span>
-                </div>
-                <a class="link-button accent" href="https://prompt-com.com/ja/tags/%E5%8F%A4%E9%83%BD%E7%BE%8E%E4%BA%BA%E7%84%A1%E6%96%99?product_typegallery&amp;rating=all" target="_blank" rel="noopener" data-ja="無料で読む" data-en="Read for free" data-analytics-link="promptcom-free-ancient-capital-beauty" data-analytics-area="promptcom-preview-free" data-analytics-work="ancient-capital-beauty">無料で読む</a>
-              </article>
-              <article class="pixiv-preview-item">
-                <div class="preview-item-heading">
-                  <h3>ごくじり再編版</h3>
-                  <span class="promptcom-badge" data-ja="無料プレビュー" data-en="Free Preview">無料プレビュー</span>
-                </div>
-                <a class="link-button accent" href="https://prompt-com.com/ja/tags/%E3%81%94%E3%81%8F%E3%81%98%E3%82%8A%E5%86%8D%E7%B7%A8%E7%89%88%E7%84%A1%E6%96%99?product_typegallery&amp;rating=all" target="_blank" rel="noopener" data-ja="無料で読む" data-en="Read for free" data-analytics-link="promptcom-free-gokujiri-recut" data-analytics-area="promptcom-preview-free" data-analytics-work="gokujiri-recut">無料で読む</a>
-              </article>
-              <article class="pixiv-preview-item">
-                <div class="preview-item-heading">
-                  <h3>北海道おもらし紀行</h3>
-                  <span class="promptcom-badge" data-ja="無料プレビュー" data-en="Free Preview">無料プレビュー</span>
-                </div>
-                <a class="link-button accent" href="https://prompt-com.com/ja/tags/%E5%8C%97%E6%B5%B7%E9%81%93%E3%81%8A%E3%82%82%E3%82%89%E3%81%97%E7%B4%80%E8%A1%8C%E7%84%A1%E6%96%99?product_typegallery&amp;rating=all" target="_blank" rel="noopener" data-ja="無料で読む" data-en="Read for free" data-analytics-link="promptcom-free-hokkaido-omorashi-journey" data-analytics-area="promptcom-preview-free" data-analytics-work="hokkaido-omorashi-journey">無料で読む</a>
-              </article>
-              <article class="pixiv-preview-item">
-                <div class="preview-item-heading">
-                  <h3>金髪巫女</h3>
-                  <span class="promptcom-badge" data-ja="無料プレビュー" data-en="Free Preview">無料プレビュー</span>
-                </div>
-                <a class="link-button accent" href="https://prompt-com.com/ja/tags/%E9%87%91%E9%AB%AA%E5%B7%AB%E5%A5%B3v1%E7%84%A1%E6%96%99?product_typegallery&amp;rating=all" target="_blank" rel="noopener" data-ja="無料で読む" data-en="Read for free" data-analytics-link="promptcom-free-blonde-shrine-maiden" data-analytics-area="promptcom-preview-free" data-analytics-work="blonde-shrine-maiden">無料で読む</a>
-              </article>
-              <article class="pixiv-preview-item">
-                <div class="preview-item-heading">
-                  <h3>沖縄ちゅらさん粗相</h3>
-                  <span class="promptcom-badge" data-ja="無料プレビュー" data-en="Free Preview">無料プレビュー</span>
-                </div>
-                <a class="link-button accent" href="https://prompt-com.com/ja/tags/%E6%B2%96%E7%B8%84%E3%81%A1%E3%82%85%E3%82%89%E3%81%95%E3%82%93%E7%B2%97%E7%9B%B8%E7%84%A1%E6%96%99?product_typegallery&amp;rating=all" target="_blank" rel="noopener" data-ja="無料で読む" data-en="Read for free" data-analytics-link="promptcom-free-okinawa-churasan-accident" data-analytics-area="promptcom-preview-free" data-analytics-work="okinawa-churasan-accident">無料で読む</a>
-              </article>
-              <article class="pixiv-preview-item">
-                <div class="preview-item-heading">
-                  <h3>桃色バイト</h3>
-                  <span class="promptcom-badge" data-ja="無料プレビュー" data-en="Free Preview">無料プレビュー</span>
-                </div>
-                <a class="link-button accent" href="https://prompt-com.com/ja/tags/%E6%A1%83%E8%89%B2%E3%83%90%E3%82%A4%E3%83%88%E7%84%A1%E6%96%99?product_typegallery&amp;rating=all" target="_blank" rel="noopener" data-ja="無料で読む" data-en="Read for free" data-analytics-link="promptcom-free-pink-part-time-job" data-analytics-area="promptcom-preview-free" data-analytics-work="pink-part-time-job">無料で読む</a>
-              </article>
-              <article class="pixiv-preview-item">
-                <div class="preview-item-heading">
-                  <h3>しずくの記録</h3>
-                  <span class="promptcom-badge" data-ja="無料プレビュー" data-en="Free Preview">無料プレビュー</span>
-                </div>
-                <a class="link-button accent" href="https://prompt-com.com/ja/tags/%E3%81%97%E3%81%9A%E3%81%8F%E3%81%AE%E8%A8%98%E9%8C%B2%E7%84%A1%E6%96%99?product_typegallery&amp;rating=all" target="_blank" rel="noopener" data-ja="無料で読む" data-en="Read for free" data-analytics-link="promptcom-free-shizuku-no-kiroku" data-analytics-area="promptcom-preview-free" data-analytics-work="shizuku-no-kiroku">無料で読む</a>
-              </article>
-              <article class="pixiv-preview-item">
-                <div class="preview-item-heading">
-                  <h3>ひかがみ 登校編</h3>
-                  <span class="promptcom-badge" data-ja="無料プレビュー" data-en="Free Preview">無料プレビュー</span>
-                </div>
-                <a class="link-button accent" href="https://prompt-com.com/ja/tags/%E3%81%B2%E3%81%8B%E3%81%8C%E3%81%BF%E7%99%BB%E6%A0%A1%E7%B7%A8%E7%84%A1%E6%96%99?product_typegallery&amp;rating=all" target="_blank" rel="noopener" data-ja="無料で読む" data-en="Read for free" data-analytics-link="promptcom-free-hikagami-school-route" data-analytics-area="promptcom-preview-free" data-analytics-work="hikagami-school-route">無料で読む</a>
-              </article>
-              <article class="pixiv-preview-item">
-                <div class="preview-item-heading">
-                  <h3>エロボキシン4649</h3>
-                  <span class="promptcom-badge" data-ja="無料プレビュー" data-en="Free Preview">無料プレビュー</span>
-                </div>
-                <a class="link-button accent" href="https://prompt-com.com/ja/tags/%E3%82%A8%E3%83%AD%E3%83%9C%E3%82%AD%E3%82%B7%E3%83%B3v1%E7%84%A1%E6%96%99?product_typegallery&amp;rating=all" target="_blank" rel="noopener" data-ja="無料で読む" data-en="Read for free" data-analytics-link="promptcom-free-erobokishin-4649" data-analytics-area="promptcom-preview-free" data-analytics-work="erobokishin-4649">無料で読む</a>
+                <a class="link-button accent" href="https://prompt-com.com/ja/tags/%E9%87%91%E9%AB%AA%E5%B7%AB%E5%A5%B3v2%E7%84%A1%E6%96%99?product_typegallery&amp;rating=all" target="_blank" rel="noopener" data-ja="無料で読む" data-en="Read for free" data-analytics-link="promptcom-free-blonde-shrine-maiden-isekai" data-analytics-area="promptcom-preview-free" data-analytics-work="blonde-shrine-maiden-isekai">無料で読む</a>
               </article>
               <article class="pixiv-preview-item">
                 <div class="preview-item-heading">
                   <h3>エロボキシン4649 あかね</h3>
-                  <span class="promptcom-badge" data-ja="無料プレビュー" data-en="Free Preview">無料プレビュー</span>
                 </div>
                 <a class="link-button accent" href="https://prompt-com.com/ja/tags/%E3%82%A8%E3%83%AD%E3%83%9C%E3%82%AD%E3%82%B7%E3%83%B3v2%E7%84%A1%E6%96%99?product_typegallery&amp;rating=all" target="_blank" rel="noopener" data-ja="無料で読む" data-en="Read for free" data-analytics-link="promptcom-free-erobokishin-4649-akane" data-analytics-area="promptcom-preview-free" data-analytics-work="erobokishin-4649-akane">無料で読む</a>
               </article>
               <article class="pixiv-preview-item">
                 <div class="preview-item-heading">
-                  <h3>金髪巫女 異世界編</h3>
-                  <span class="promptcom-badge" data-ja="無料プレビュー" data-en="Free Preview">無料プレビュー</span>
+                  <h3>エロボキシン4649</h3>
                 </div>
-                <a class="link-button accent" href="https://prompt-com.com/ja/tags/%E9%87%91%E9%AB%AA%E5%B7%AB%E5%A5%B3v2%E7%84%A1%E6%96%99?product_typegallery&amp;rating=all" target="_blank" rel="noopener" data-ja="無料で読む" data-en="Read for free" data-analytics-link="promptcom-free-blonde-shrine-maiden-isekai" data-analytics-area="promptcom-preview-free" data-analytics-work="blonde-shrine-maiden-isekai">無料で読む</a>
+                <a class="link-button accent" href="https://prompt-com.com/ja/tags/%E3%82%A8%E3%83%AD%E3%83%9C%E3%82%AD%E3%82%B7%E3%83%B3v1%E7%84%A1%E6%96%99?product_typegallery&amp;rating=all" target="_blank" rel="noopener" data-ja="無料で読む" data-en="Read for free" data-analytics-link="promptcom-free-erobokishin-4649" data-analytics-area="promptcom-preview-free" data-analytics-work="erobokishin-4649">無料で読む</a>
+              </article>
+              <article class="pixiv-preview-item">
+                <div class="preview-item-heading">
+                  <h3>ひかがみ 登校編</h3>
+                </div>
+                <a class="link-button accent" href="https://prompt-com.com/ja/tags/%E3%81%B2%E3%81%8B%E3%81%8C%E3%81%BF%E7%99%BB%E6%A0%A1%E7%B7%A8%E7%84%A1%E6%96%99?product_typegallery&amp;rating=all" target="_blank" rel="noopener" data-ja="無料で読む" data-en="Read for free" data-analytics-link="promptcom-free-hikagami-school-route" data-analytics-area="promptcom-preview-free" data-analytics-work="hikagami-school-route">無料で読む</a>
+              </article>
+              <article class="pixiv-preview-item">
+                <div class="preview-item-heading">
+                  <h3>しずくの記録</h3>
+                </div>
+                <a class="link-button accent" href="https://prompt-com.com/ja/tags/%E3%81%97%E3%81%9A%E3%81%8F%E3%81%AE%E8%A8%98%E9%8C%B2%E7%84%A1%E6%96%99?product_typegallery&amp;rating=all" target="_blank" rel="noopener" data-ja="無料で読む" data-en="Read for free" data-analytics-link="promptcom-free-shizuku-no-kiroku" data-analytics-area="promptcom-preview-free" data-analytics-work="shizuku-no-kiroku">無料で読む</a>
+              </article>
+              <article class="pixiv-preview-item">
+                <div class="preview-item-heading">
+                  <h3>桃色バイト</h3>
+                </div>
+                <a class="link-button accent" href="https://prompt-com.com/ja/tags/%E6%A1%83%E8%89%B2%E3%83%90%E3%82%A4%E3%83%88%E7%84%A1%E6%96%99?product_typegallery&amp;rating=all" target="_blank" rel="noopener" data-ja="無料で読む" data-en="Read for free" data-analytics-link="promptcom-free-pink-part-time-job" data-analytics-area="promptcom-preview-free" data-analytics-work="pink-part-time-job">無料で読む</a>
+              </article>
+              <article class="pixiv-preview-item">
+                <div class="preview-item-heading">
+                  <h3>沖縄ちゅらさん粗相</h3>
+                </div>
+                <a class="link-button accent" href="https://prompt-com.com/ja/tags/%E6%B2%96%E7%B8%84%E3%81%A1%E3%82%85%E3%82%89%E3%81%95%E3%82%93%E7%B2%97%E7%9B%B8%E7%84%A1%E6%96%99?product_typegallery&amp;rating=all" target="_blank" rel="noopener" data-ja="無料で読む" data-en="Read for free" data-analytics-link="promptcom-free-okinawa-churasan-accident" data-analytics-area="promptcom-preview-free" data-analytics-work="okinawa-churasan-accident">無料で読む</a>
+              </article>
+              <article class="pixiv-preview-item">
+                <div class="preview-item-heading">
+                  <h3>金髪巫女</h3>
+                </div>
+                <a class="link-button accent" href="https://prompt-com.com/ja/tags/%E9%87%91%E9%AB%AA%E5%B7%AB%E5%A5%B3v1%E7%84%A1%E6%96%99?product_typegallery&amp;rating=all" target="_blank" rel="noopener" data-ja="無料で読む" data-en="Read for free" data-analytics-link="promptcom-free-blonde-shrine-maiden" data-analytics-area="promptcom-preview-free" data-analytics-work="blonde-shrine-maiden">無料で読む</a>
+              </article>
+              <article class="pixiv-preview-item">
+                <div class="preview-item-heading">
+                  <h3>北海道おもらし紀行</h3>
+                </div>
+                <a class="link-button accent" href="https://prompt-com.com/ja/tags/%E5%8C%97%E6%B5%B7%E9%81%93%E3%81%8A%E3%82%82%E3%82%89%E3%81%97%E7%B4%80%E8%A1%8C%E7%84%A1%E6%96%99?product_typegallery&amp;rating=all" target="_blank" rel="noopener" data-ja="無料で読む" data-en="Read for free" data-analytics-link="promptcom-free-hokkaido-omorashi-journey" data-analytics-area="promptcom-preview-free" data-analytics-work="hokkaido-omorashi-journey">無料で読む</a>
+              </article>
+              <article class="pixiv-preview-item">
+                <div class="preview-item-heading">
+                  <h3>ごくじり再編版</h3>
+                </div>
+                <a class="link-button accent" href="https://prompt-com.com/ja/tags/%E3%81%94%E3%81%8F%E3%81%98%E3%82%8A%E5%86%8D%E7%B7%A8%E7%89%88%E7%84%A1%E6%96%99?product_typegallery&amp;rating=all" target="_blank" rel="noopener" data-ja="無料で読む" data-en="Read for free" data-analytics-link="promptcom-free-gokujiri-recut" data-analytics-area="promptcom-preview-free" data-analytics-work="gokujiri-recut">無料で読む</a>
+              </article>
+              <article class="pixiv-preview-item">
+                <div class="preview-item-heading">
+                  <h3>古都美人</h3>
+                </div>
+                <a class="link-button accent" href="https://prompt-com.com/ja/tags/%E5%8F%A4%E9%83%BD%E7%BE%8E%E4%BA%BA%E7%84%A1%E6%96%99?product_typegallery&amp;rating=all" target="_blank" rel="noopener" data-ja="無料で読む" data-en="Read for free" data-analytics-link="promptcom-free-ancient-capital-beauty" data-analytics-area="promptcom-preview-free" data-analytics-work="ancient-capital-beauty">無料で読む</a>
+              </article>
+              <article class="pixiv-preview-item">
+                <div class="preview-item-heading">
+                  <h3>瀬戸内おもらし紀行</h3>
+                </div>
+                <a class="link-button accent" href="https://prompt-com.com/ja/tags/%E7%80%AC%E6%88%B8%E5%86%85%E3%81%8A%E3%82%82%E3%82%89%E3%81%97%E7%B4%80%E8%A1%8C%E7%84%A1%E6%96%99?product_typegallery&amp;rating=all" target="_blank" rel="noopener" data-ja="無料で読む" data-en="Read for free" data-analytics-link="promptcom-free-setouchi-omorashi-journey" data-analytics-area="promptcom-preview-free" data-analytics-work="setouchi-omorashi-journey">無料で読む</a>
+              </article>
+              <article class="pixiv-preview-item">
+                <div class="preview-item-heading">
+                  <h3>里帰り</h3>
+                </div>
+                <a class="link-button accent" href="https://prompt-com.com/ja/tags/%E9%87%8C%E5%B8%B0%E3%82%8A%E7%84%A1%E6%96%99?product_typegallery&amp;rating=all" target="_blank" rel="noopener" data-ja="無料で読む" data-en="Read for free" data-analytics-link="promptcom-free-satogaeri" data-analytics-area="promptcom-preview-free" data-analytics-work="satogaeri">無料で読む</a>
               </article>
             </div>
           </div>
@@ -382,6 +376,7 @@
                 <a class="link-button" href="https://prompt-com.com/ja/tags/%E9%87%8C%E5%B8%B0%E3%82%8A?product_typegallery&amp;rating=all" target="_blank" rel="noopener" data-ja="PromptComで続きを読む" data-en="Continue on PromptCom" data-analytics-link="promptcom-paid-satogaeri" data-analytics-area="promptcom-preview-paid" data-analytics-work="satogaeri">PromptComで続きを読む</a>
               </article>
             </div>
+          </div>
           </div>
         </section>
 

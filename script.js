@@ -185,6 +185,8 @@ const languageButtons = document.querySelectorAll(".lang-button");
 const translatableNodes = document.querySelectorAll("[data-ja][data-en]");
 const ageGateEnter = document.querySelector(".age-gate-enter");
 const ageGateLeave = document.querySelector(".age-gate-leave");
+const readingTabs = document.querySelectorAll("[data-reading-tab]");
+const readingPanels = document.querySelectorAll("[data-reading-panel]");
 const pixivTabs = document.querySelectorAll("[data-pixiv-tab]");
 const pixivPanels = document.querySelectorAll("[data-pixiv-panel]");
 const promptcomTabs = document.querySelectorAll("[data-promptcom-tab]");
@@ -216,6 +218,18 @@ function acceptAgeGate() {
 
 function leaveAgeGate() {
   window.location.href = ageGateLeaveUrl;
+}
+
+function setReadingTab(activeTab) {
+  readingTabs.forEach((tab) => {
+    const isActive = tab.dataset.readingTab === activeTab;
+    tab.classList.toggle("is-active", isActive);
+    tab.setAttribute("aria-selected", String(isActive));
+  });
+
+  readingPanels.forEach((panel) => {
+    panel.hidden = panel.dataset.readingPanel !== activeTab;
+  });
 }
 
 function setPixivTab(activeTab) {
@@ -415,6 +429,10 @@ languageButtons.forEach((button) => {
   button.addEventListener("click", () => setLanguage(button.dataset.lang));
 });
 
+readingTabs.forEach((tab) => {
+  tab.addEventListener("click", () => setReadingTab(tab.dataset.readingTab));
+});
+
 pixivTabs.forEach((tab) => {
   tab.addEventListener("click", () => setPixivTab(tab.dataset.pixivTab));
 });
@@ -424,6 +442,7 @@ promptcomTabs.forEach((tab) => {
 });
 
 setLanguage("ja");
+setReadingTab("pixiv");
 setPixivTab("recommended");
 setPromptcomTab("free");
 setAgeGateState(hasAcceptedAgeGate());
