@@ -546,10 +546,6 @@ h2 {
   background: rgba(255, 255, 255, 0.045);
 }
 
-.promptcom-free-only-tabs {
-  grid-template-columns: 1fr;
-}
-
 .pixiv-tab {
   min-height: 36px;
   padding: 0 14px;
