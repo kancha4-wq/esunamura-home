@@ -532,6 +532,15 @@ h2 {
   display: none;
 }
 
+.preview-note {
+  padding: 10px 12px;
+  border: 1px solid rgba(230, 177, 95, 0.24);
+  border-radius: 12px;
+  background: rgba(230, 177, 95, 0.08);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
 .pixiv-preview-links {
   display: grid;
   gap: 10px;
