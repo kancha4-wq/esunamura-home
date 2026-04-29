@@ -152,8 +152,7 @@ const works = [
       BOOTH: "https://esunamura.booth.pm/items/8238754",
       pictSPACE: "https://pictspace.net/items/manage_detail/851348",
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_758170/",
-      PromptCom: "https://prompt-com.com/ja/p/d3d69153-c51f-41f6-8297-1a0a693c2583",
-      "Free 64P": "https://pictspace.net/items/manage_detail/851351"
+      PromptCom: "https://prompt-com.com/ja/p/d3d69153-c51f-41f6-8297-1a0a693c2583"
     }
   },
   {
@@ -172,6 +171,18 @@ const works = [
     links: {
       "Kindle JP": "https://www.amazon.co.jp/dp/B0GYMZZR4S",
       "Kindle US": "https://www.amazon.com/dp/B0GYMZZR4S"
+    }
+  },
+  {
+    title: { ja: "エロボキシン4649 あかね / Erobokishin 4649 Akane", en: "Erobokishin 4649 Akane / エロボキシン4649 あかね" },
+    slug: "erobokishin-4649-akane",
+    image: "images/13_エロボキシン4649_あかね.jpg",
+    imageWidth: 1000,
+    imageHeight: 1000,
+    links: {
+      BOOTH: "https://esunamura.booth.pm/items/8284888",
+      pictSPACE: "https://pictspace.net/items/manage_detail/858788",
+      PromptCom: "https://prompt-com.com/ja/p/cdd31e47-ba82-4793-939d-8445864efceb"
     }
   }
 ];
@@ -268,10 +279,6 @@ function individualClickEventName(link) {
   const href = link.href;
   const hostname = new URL(href).hostname;
 
-  if (href.includes("851351") || link.dataset.analyticsLink === "free-64p") {
-    return "click_free_sample";
-  }
-
   if (hostname.includes("dlsite.com") || hostname === "dlaf.jp") {
     return "click_dlsite";
   }
@@ -333,7 +340,7 @@ function sendOutboundClick(link) {
 
 function createLink(label, url, workSlug) {
   const link = document.createElement("a");
-  link.className = label === "Free 64P" ? "link-button accent" : "link-button";
+  link.className = "link-button";
   link.href = url;
   link.target = "_blank";
   link.rel = "noopener";
