@@ -153,7 +153,8 @@ const works = [
       BOOTH: "https://esunamura.booth.pm/items/8238754",
       pictSPACE: "https://pictspace.net/items/manage_detail/851348",
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_758170/",
-      PromptCom: "https://prompt-com.com/ja/p/d3d69153-c51f-41f6-8297-1a0a693c2583"
+      PromptCom: "https://prompt-com.com/ja/p/d3d69153-c51f-41f6-8297-1a0a693c2583",
+      DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0337471/"
     }
   },
   {
@@ -183,7 +184,8 @@ const works = [
     links: {
       BOOTH: "https://esunamura.booth.pm/items/8284888",
       pictSPACE: "https://pictspace.net/items/manage_detail/858788",
-      PromptCom: "https://prompt-com.com/ja/p/cdd31e47-ba82-4793-939d-8445864efceb"
+      PromptCom: "https://prompt-com.com/ja/p/cdd31e47-ba82-4793-939d-8445864efceb",
+      DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0337472/"
     }
   }
 ];
@@ -341,6 +343,7 @@ function sendOutboundClick(link) {
 
 function createLink(label, url, workSlug) {
   const link = document.createElement("a");
+
   link.className = "link-button";
   link.href = url;
   link.target = "_blank";
@@ -355,6 +358,7 @@ function createLink(label, url, workSlug) {
 function salesNoteText(work) {
   const zipStores = ["BOOTH", "pictSPACE"].filter((store) => work.links[store]);
   const highResStores = ["FANZA", "DLsite"].filter((store) => work.links[store]);
+  const hasDigiket = Boolean(work.links.DiGiket);
   const parts = [];
 
   if (work.note) {
@@ -364,7 +368,7 @@ function salesNoteText(work) {
   if (zipStores.length > 0) {
     parts.push(
       currentLanguage === "ja"
-        ? `${zipStores.join(" / ")}: ZIP + PDF版`
+        ? `${zipStores.join(" / ")}: ZIP + PDF`
         : `${zipStores.join(" / ")}: ZIP + PDF editions`
     );
   }
@@ -372,12 +376,20 @@ function salesNoteText(work) {
   if (highResStores.length > 0) {
     parts.push(
       currentLanguage === "ja"
-        ? `${highResStores.join(" / ")}: 高解像度4K版`
+        ? `${highResStores.join(" / ")}: 高解像度4K`
         : `${highResStores.join(" / ")}: 4K versions`
     );
   }
 
-  return parts.join(" · ");
+  if (hasDigiket) {
+    parts.push(
+      currentLanguage === "ja"
+        ? "DiGiket: ZIP + PDF（4K対応）"
+        : "DiGiket: ZIP + PDF (4K supported)"
+    );
+  }
+
+  return parts.join("\n");
 }
 
 function renderWorks() {
