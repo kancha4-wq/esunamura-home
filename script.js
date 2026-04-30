@@ -3,6 +3,7 @@ const works = [
     title: { ja: "里帰り / Satogaeri", en: "Satogaeri / 里帰り" },
     slug: "satogaeri",
     image: "images/01_里帰り.jpg",
+    thumbnail: "images/optimized/01_里帰り-thumb.jpg",
     imageWidth: 1750,
     imageHeight: 1225,
     links: {
@@ -15,6 +16,7 @@ const works = [
     title: { ja: "古都美人 / Ancient Capital Beauty", en: "Ancient Capital Beauty / 古都美人" },
     slug: "ancient-capital-beauty",
     image: "images/02_古都美人.jpg",
+    thumbnail: "images/optimized/02_古都美人-thumb.jpg",
     imageWidth: 4096,
     imageHeight: 2872,
     links: {
@@ -28,6 +30,7 @@ const works = [
     title: { ja: "ひかがみ / Hikagami", en: "Hikagami / ひかがみ" },
     slug: "hikagami",
     image: "images/03_ひかがみ.png",
+    thumbnail: "images/optimized/03_ひかがみ-thumb.jpg",
     imageWidth: 1000,
     imageHeight: 700,
     links: {
@@ -41,6 +44,7 @@ const works = [
     title: { ja: "瀬戸内おもらし紀行 / Setouchi Omorashi Journey", en: "Setouchi Omorashi Journey / 瀬戸内おもらし紀行" },
     slug: "setouchi-omorashi-journey",
     image: "images/04_瀬戸内おもらし紀行.png",
+    thumbnail: "images/optimized/04_瀬戸内おもらし紀行-thumb.jpg",
     imageWidth: 1000,
     imageHeight: 700,
     links: {
@@ -55,6 +59,7 @@ const works = [
     title: { ja: "北海道おもらし紀行 / Hokkaido Omorashi Journey", en: "Hokkaido Omorashi Journey / 北海道おもらし紀行" },
     slug: "hokkaido-omorashi-journey",
     image: "images/05_北海道おもらし紀行.jpg",
+    thumbnail: "images/optimized/05_北海道おもらし紀行-thumb.jpg",
     imageWidth: 1260,
     imageHeight: 945,
     links: {
@@ -69,6 +74,7 @@ const works = [
     title: { ja: "金髪巫女 / Blonde Shrine Maiden", en: "Blonde Shrine Maiden / 金髪巫女" },
     slug: "blonde-shrine-maiden",
     image: "images/06_金髪巫女.jpg",
+    thumbnail: "images/optimized/06_金髪巫女-thumb.jpg",
     imageWidth: 1375,
     imageHeight: 963,
     links: {
@@ -83,6 +89,7 @@ const works = [
     title: { ja: "ごくじり / Gokujiri", en: "Gokujiri / ごくじり" },
     slug: "gokujiri",
     image: "images/07_ごくじり.jpg",
+    thumbnail: "images/optimized/07_ごくじり-thumb.jpg",
     imageWidth: 2048,
     imageHeight: 1536,
     links: {
@@ -96,6 +103,7 @@ const works = [
     title: { ja: "沖縄ちゅらさん粗相 / Okinawa Churasan Accident", en: "Okinawa Churasan Accident / 沖縄ちゅらさん粗相" },
     slug: "okinawa-churasan-accident",
     image: "images/08_沖縄ちゅらさん粗相.jpg",
+    thumbnail: "images/optimized/08_沖縄ちゅらさん粗相-thumb.jpg",
     imageWidth: 2867,
     imageHeight: 2867,
     links: {
@@ -108,6 +116,7 @@ const works = [
     title: { ja: "桃色バイト / Pink Part-Time Job", en: "Pink Part-Time Job / 桃色バイト" },
     slug: "pink-part-time-job",
     image: "images/09_桃色バイト.jpg",
+    thumbnail: "images/optimized/09_桃色バイト-thumb.jpg",
     imageWidth: 1750,
     imageHeight: 1225,
     links: {
@@ -122,6 +131,7 @@ const works = [
     title: { ja: "しずくの記録 / Shizuku no Kiroku", en: "Shizuku no Kiroku / しずくの記録" },
     slug: "shizuku-no-kiroku",
     image: "images/10_しずくの記録.jpg",
+    thumbnail: "images/optimized/10_しずくの記録-thumb.jpg",
     imageWidth: 1000,
     imageHeight: 700,
     links: {
@@ -135,6 +145,7 @@ const works = [
     title: { ja: "ひかがみ 登校編 / Hikagami School Route", en: "Hikagami School Route / ひかがみ 登校編" },
     slug: "hikagami-school-route",
     image: "images/11_ひかがみ 登校編.jpg",
+    thumbnail: "images/optimized/11_ひかがみ 登校編-thumb.jpg",
     imageWidth: 1000,
     imageHeight: 700,
     links: {
@@ -147,6 +158,7 @@ const works = [
     title: { ja: "エロボキシン4649 / Erobokishin 4649", en: "Erobokishin 4649 / エロボキシン4649" },
     slug: "erobokishin-4649",
     image: "images/11_エロボキシン4649.jpg",
+    thumbnail: "images/optimized/11_エロボキシン4649-thumb.jpg",
     imageWidth: 1260,
     imageHeight: 945,
     links: {
@@ -164,6 +176,7 @@ const works = [
     },
     slug: "kindle-seifuku-bikyaku",
     image: "images/12_kindle_seifuku_bikyaku.jpg",
+    thumbnail: "images/optimized/12_kindle_seifuku_bikyaku-thumb.jpg",
     imageWidth: 2048,
     imageHeight: 3512,
     note: {
@@ -179,6 +192,7 @@ const works = [
     title: { ja: "エロボキシン4649 あかね / Erobokishin 4649 Akane", en: "Erobokishin 4649 Akane / エロボキシン4649 あかね" },
     slug: "erobokishin-4649-akane",
     image: "images/13_エロボキシン4649_あかね.jpg",
+    thumbnail: "images/optimized/13_エロボキシン4649_あかね-thumb.jpg",
     imageWidth: 1000,
     imageHeight: 1000,
     links: {
@@ -400,7 +414,7 @@ function renderWorks() {
     card.className = "work-card";
 
     const image = document.createElement("img");
-    image.src = work.image;
+    image.src = work.thumbnail || work.image;
     image.alt = work.title.ja;
     image.width = work.imageWidth;
     image.height = work.imageHeight;

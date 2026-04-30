@@ -18,6 +18,8 @@
 
 html {
   background: var(--bg);
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -55,8 +57,8 @@ img {
 
 .age-gate-pending .page-shell,
 .age-gate-active .page-shell {
-  opacity: 0.08;
-  filter: blur(10px);
+  opacity: 0;
+  filter: none;
   pointer-events: none;
   user-select: none;
 }
@@ -752,11 +754,6 @@ h2 {
 }
 
 @media (min-width: 640px) {
-  html {
-    overflow-y: scroll;
-    scrollbar-gutter: stable;
-  }
-
   .page-shell {
     padding: 24px;
   }

@@ -22,9 +22,21 @@
       gtag("config", window.GA4_MEASUREMENT_ID);
     </script>
     <!-- Cloudflare Web Analytics --><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "eb8b24f9326c49d0b24bef451eed7971"}'></script><!-- End Cloudflare Web Analytics -->
+    <link rel="preload" as="image" href="images/optimized/hero-1280.jpg" fetchpriority="high">
     <link rel="stylesheet" href="style.css">
   </head>
   <body class="age-gate-pending">
+    <script>
+      (() => {
+        try {
+          if (window.localStorage.getItem("esunamuraAgeGateAccepted") === "yes") {
+            document.body.className = "age-verified";
+          }
+        } catch (error) {
+          document.body.className = "age-gate-active";
+        }
+      })();
+    </script>
     <div class="age-gate" role="dialog" aria-modal="true" aria-labelledby="age-gate-title">
       <div class="age-gate-panel">
         <p class="eyebrow">Age Check</p>
@@ -43,7 +55,7 @@
     <div class="page-shell">
       <header class="site-header">
         <div class="hero-image">
-          <img src="images/HPトップ絵.jpg" alt="" width="4096" height="1365" fetchpriority="high" decoding="async">
+          <img src="images/optimized/hero-1280.jpg" alt="" width="1280" height="427" fetchpriority="high" decoding="async">
         </div>
 
         <div class="profile-row">
@@ -121,7 +133,7 @@
 
         <section class="featured-card">
           <div class="featured-media">
-            <img src="images/13_エロボキシン4649_あかね.jpg" alt="エロボキシン4649 あかね" width="1000" height="1000" loading="eager" decoding="async">
+            <img src="images/optimized/featured-akane-720.jpg" alt="エロボキシン4649 あかね" width="720" height="720" loading="lazy" decoding="async">
           </div>
           <div class="featured-copy">
             <p class="eyebrow" data-ja="最新作" data-en="Latest Release">最新作</p>
