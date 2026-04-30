@@ -33,7 +33,8 @@ const works = [
     links: {
       BOOTH: "https://esunamura.booth.pm/items/8111107",
       pictSPACE: "https://pictspace.net/items/manage_detail/838048",
-      FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_744243/"
+      FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_744243/",
+      PromptCom: "https://prompt-com.com/ja/p/85fa5e0c-5d9c-41db-8c11-8c738c9b8a1b"
     }
   },
   {
