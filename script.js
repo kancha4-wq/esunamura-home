@@ -1,4 +1,4 @@
-const works = [
+﻿const works = [
   {
     title: { ja: "里帰り / Satogaeri", en: "Satogaeri / 里帰り" },
     slug: "satogaeri",
@@ -144,10 +144,10 @@ const works = [
   {
     title: { ja: "ひかがみ 登校編 / Hikagami School Route", en: "Hikagami School Route / ひかがみ 登校編" },
     slug: "hikagami-school-route",
-    image: "images/11_ひかがみ 登校編.jpg",
-    thumbnail: "images/optimized/11_ひかがみ 登校編-thumb.jpg",
-    imageWidth: 1000,
-    imageHeight: 700,
+    image: "0501_改修資料/ひかがみ 登校編/1_表紙/表紙.jpg",
+    thumbnail: "0501_改修資料/ひかがみ 登校編/1_表紙/表紙.jpg",
+    imageWidth: 560,
+    imageHeight: 800,
     links: {
       BOOTH: "https://esunamura.booth.pm/items/8203343",
       pictSPACE: "https://pictspace.net/items/manage_detail/845880",
@@ -209,8 +209,9 @@ const ageGateStorageKey = "esunamuraAgeGateAccepted";
 const ageGateLeaveUrl = "https://www.google.com/";
 
 const worksGrid = document.querySelector("#worksGrid");
+const pickupGrid = document.querySelector("#pickupGrid");
 const languageButtons = document.querySelectorAll(".lang-button");
-const translatableNodes = document.querySelectorAll("[data-ja][data-en]");
+const translatableNodes = document.querySelectorAll("[data-ja]");
 const ageGateEnter = document.querySelector(".age-gate-enter");
 const ageGateLeave = document.querySelector(".age-gate-leave");
 const readingTabs = document.querySelectorAll("[data-reading-tab]");
@@ -219,6 +220,151 @@ const pixivTabs = document.querySelectorAll("[data-pixiv-tab]");
 const pixivPanels = document.querySelectorAll("[data-pixiv-panel]");
 const promptcomTabs = document.querySelectorAll("[data-promptcom-tab]");
 const promptcomPanels = document.querySelectorAll("[data-promptcom-panel]");
+
+const workDescriptions = {
+  "satogaeri": {
+    ja: "田舎の夏、幼馴染、覗き見感。帰省先で距離が少しずつ変わっていく流れを描く作品。",
+    en: "A countryside summer story where distance with a childhood friend gradually changes.",
+    zh: "乡下夏日、青梅竹马与窥视感。描绘归乡后距离逐渐变化的作品。",
+    ko: "시골의 여름, 소꿉친구, 엿보는 듯한 시선. 귀향지에서 거리가 조금씩 변해가는 작품."
+  },
+  "ancient-capital-beauty": {
+    ja: "古都の情景と和装美人を軸にした、しっとりした空気感の作品。",
+    en: "A calm, atmospheric work built around ancient-city scenery and kimono beauty.",
+    zh: "以古都景色与和装美人为核心，氛围沉静柔和的作品。",
+    ko: "고도 풍경과 와복 미인을 중심으로 한 차분한 분위기의 작품."
+  },
+  "hikagami": {
+    ja: "太ももから膝裏、ヒップラインへ視線が流れる、ひかがみフェチ特化のオムニバス。",
+    en: "A hikagami-focused omnibus built around thighs, knee backs, and hip-line flow.",
+    zh: "视线从大腿、膝后到臀线流动的膝后主题合集。",
+    ko: "허벅지에서 오금, 힙라인으로 시선이 흐르는 오금 페티시 옴니버스."
+  },
+  "setouchi-omorashi-journey": {
+    ja: "瀬戸内の坂道と港町を歩きながら、日常、我慢、決壊、放心へ進む主力アーカイブ作品。",
+    en: "A Setouchi archive work moving from daily scenes to restraint, release, and afterglow.",
+    zh: "在濑户内坡道与港町中，从日常、忍耐到崩溃与余韵的主力档案作品。",
+    ko: "세토우치의 언덕길과 항구 마을을 배경으로 일상, 참음, 무너짐, 여운으로 이어지는 대표 아카이브 작품."
+  },
+  "hokkaido-omorashi-journey": {
+    ja: "雪景色、温泉街、駅、雪道。冬の旅先で限界へ近づいていく旅行シチュエーション。",
+    en: "A winter travel scenario through snow, inns, stations, and growing tension.",
+    zh: "雪景、温泉街、车站与雪路。冬季旅途中逐渐逼近极限的情境作品。",
+    ko: "설경, 온천 마을, 역, 눈길. 겨울 여행지에서 한계에 가까워지는 여행 시추에이션."
+  },
+  "blonde-shrine-maiden": {
+    ja: "導入、催眠、理性崩壊、放心へ。和装と肌質感を重視した段階進行の作品。",
+    en: "A phased shrine-maiden story moving through induction, hypnosis, collapse, and afterglow.",
+    zh: "从导入、催眠到理性崩坏与失神。重视和装与肌肤质感的阶段式作品。",
+    ko: "도입, 최면, 이성 붕괴, 멍한 여운으로 이어지는 와복과 피부 질감 중심의 단계 진행 작품."
+  },
+  "gokujiri": {
+    ja: "密着感、圧迫感、ローアングル。ヒップラインと肉感を中心に再構成した特化作品。",
+    en: "A close-contact hip-focused work emphasizing pressure, low angles, and physical texture.",
+    zh: "强调贴近感、压迫感与低角度，以臀线和肉感为中心的特化作品。",
+    ko: "밀착감, 압박감, 로우앵글. 힙라인과 육감을 중심으로 재구성한 특화 작품."
+  },
+  "okinawa-churasan-accident": {
+    ja: "南国リゾートの明るい空気と、少しずつ限界へ追い込まれるギャップを描く作品。",
+    en: "A tropical resort work built around bright scenery and rising tension.",
+    zh: "描绘南国度假氛围与逐渐被逼近极限之间反差的作品。",
+    ko: "남국 리조트의 밝은 분위기와 조금씩 한계로 몰리는 대비를 그린 작품."
+  },
+  "pink-part-time-job": {
+    ja: "昼は沖縄リゾートの日常、夜はホテル密室。昼夜の空気差が核になるストーリー。",
+    en: "A day-and-night resort story moving from bright work scenes to a closed hotel room.",
+    zh: "白天是冲绳度假日常，夜晚转入酒店密室。昼夜气氛差是核心。",
+    ko: "낮에는 오키나와 리조트의 일상, 밤에는 호텔 밀실. 낮과 밤의 공기 차이가 핵심인 이야기."
+  },
+  "shizuku-no-kiroku": {
+    ja: "唇、吐息、零れるしずく。湿度と接写構図を重視した口元フェチ作品。",
+    en: "A mouth-detail work focused on lips, breath, droplets, humidity, and close framing.",
+    zh: "唇、吐息与滴落的水珠。重视湿度和近距离构图的口元主题作品。",
+    ko: "입술, 숨결, 떨어지는 물방울. 습도와 클로즈업 구도를 중시한 입가 페티시 작품."
+  },
+  "hikagami-school-route": {
+    ja: "起床、着替え、登校、教室、放課後、帰宅、部屋。学校生活の1日ルーティーン作品。",
+    en: "A school-life routine from waking up to changing, commuting, class, after school, and home.",
+    zh: "从起床、换衣、上学、教室到放学、回家与房间。学校生活的一日动线作品。",
+    ko: "기상, 갈아입기, 등교, 교실, 방과 후, 귀가, 방까지 이어지는 학교생활 하루 루틴 작품."
+  },
+  "erobokishin-4649": {
+    ja: "キッチン、居間、お風呂、寝室へ。日常空間が徐々に濃密な時間へ変わっていく作品。",
+    en: "A domestic story moving through kitchen, living room, bath, and bedroom.",
+    zh: "从厨房、客厅、浴室到卧室。日常空间逐渐变得浓密的作品。",
+    ko: "주방, 거실, 욕실, 침실로 이어지며 일상 공간이 점점 짙은 시간으로 바뀌는 작품."
+  },
+  "kindle-seifuku-bikyaku": {
+    ja: "通学路、階段、教室。制服姿と美脚・足元の表情をまとめたアートコレクション。",
+    en: "A school-uniform leg and foot art collection across commutes, stairs, and classrooms.",
+    zh: "通学路、楼梯、教室。收录制服、美腿与足部表情的艺术合集。",
+    ko: "통학로, 계단, 교실. 교복 차림과 미각, 발 주변의 분위기를 모은 아트 컬렉션."
+  },
+  "erobokishin-4649-akane": {
+    ja: "ナイトプール、最上階ラウンジ、大浴場、ベッドルーム。高級リゾート空間を移動する作品。",
+    en: "A luxury resort-hotel story moving through night pool, lounge, bathhouse, and bedroom.",
+    zh: "夜间泳池、顶层酒廊、大浴场、卧室。穿梭于高级度假酒店空间的作品。",
+    ko: "나이트풀, 최상층 라운지, 대욕장, 침실. 고급 리조트 공간을 이동하는 작품."
+  }
+};
+
+const workTitleTranslations = {
+  "satogaeri": { zh: "返乡 / Satogaeri", ko: "귀향 / Satogaeri" },
+  "ancient-capital-beauty": { zh: "古都美人 / Ancient Capital Beauty", ko: "고도미인 / Ancient Capital Beauty" },
+  "hikagami": { zh: "膝后 / Hikagami", ko: "오금 / Hikagami" },
+  "setouchi-omorashi-journey": { zh: "濑户内失禁纪行 / Setouchi Omorashi Journey", ko: "세토우치 오모라시 기행 / Setouchi Omorashi Journey" },
+  "hokkaido-omorashi-journey": { zh: "北海道失禁纪行 / Hokkaido Omorashi Journey", ko: "홋카이도 오모라시 기행 / Hokkaido Omorashi Journey" },
+  "blonde-shrine-maiden": { zh: "金发巫女 / Blonde Shrine Maiden", ko: "금발 무녀 / Blonde Shrine Maiden" },
+  "gokujiri": { zh: "极臀 / Gokujiri", ko: "고쿠지리 / Gokujiri" },
+  "okinawa-churasan-accident": { zh: "冲绳美少女失误 / Okinawa Churasan Accident", ko: "오키나와 추라상 사고 / Okinawa Churasan Accident" },
+  "pink-part-time-job": { zh: "桃色打工 / Pink Part-Time Job", ko: "분홍빛 아르바이트 / Pink Part-Time Job" },
+  "shizuku-no-kiroku": { zh: "水滴记录 / Shizuku no Kiroku", ko: "물방울의 기록 / Shizuku no Kiroku" },
+  "hikagami-school-route": { zh: "膝后 登校篇 / Hikagami School Route", ko: "오금 등교편 / Hikagami School Route" },
+  "erobokishin-4649": { zh: "Erobokishin 4649", ko: "에로복신 4649" },
+  "kindle-seifuku-bikyaku": { zh: "AI制服美腿插画集", ko: "AI 교복 미각 일러스트집" },
+  "erobokishin-4649-akane": { zh: "Erobokishin 4649 Akane", ko: "에로복신 4649 아카네" }
+};
+
+const pickupSlugs = ["erobokishin-4649", "blonde-shrine-maiden", "setouchi-omorashi-journey"];
+
+const detailPageBySlug = {
+  "satogaeri": "satogaeri",
+  "hikagami": "hikagami",
+  "setouchi-omorashi-journey": "setouchi-omorashi",
+  "hokkaido-omorashi-journey": "hokkaido-omorashi",
+  "blonde-shrine-maiden": "kinpatsu-miko",
+  "gokujiri": "gokujiri",
+  "okinawa-churasan-accident": "okinawa-soso",
+  "pink-part-time-job": "momoiro-baito",
+  "shizuku-no-kiroku": "shizuku-record",
+  "hikagami-school-route": "hikagami-school",
+  "erobokishin-4649": "eroboxin-4649",
+  "kindle-seifuku-bikyaku": "school-legs",
+  "erobokishin-4649-akane": "eroboxin-akane"
+};
+
+function detailHref(work) {
+  const id = detailPageBySlug[work.slug] || work.slug;
+  return `title.html?id=${encodeURIComponent(id)}`;
+}
+
+function workDescription(work) {
+  return workDescriptions[work.slug]?.[currentLanguage] || workDescriptions[work.slug]?.ja || "";
+}
+
+function workTitle(work) {
+  return workTitleTranslations[work.slug]?.[currentLanguage] || work.title[currentLanguage] || work.title.en || work.title.ja;
+}
+
+function detailButtonText(full = false) {
+  const labels = {
+    ja: full ? "作品詳細を見る" : "作品詳細を見る",
+    en: full ? "View work details" : "View details",
+    zh: "查看详情",
+    ko: "상세 보기"
+  };
+  return labels[currentLanguage] || labels.ja;
+}
 
 function setAgeGateState(accepted) {
   document.body.classList.toggle("age-verified", accepted);
@@ -406,6 +552,44 @@ function salesNoteText(work) {
   return parts.join("\n");
 }
 
+function renderPickups() {
+  if (!pickupGrid) return;
+  pickupGrid.textContent = "";
+
+  pickupSlugs
+    .map((slug) => works.find((work) => work.slug === slug))
+    .filter(Boolean)
+    .forEach((work) => {
+      const card = document.createElement("article");
+      card.className = "pickup-card";
+
+      const image = document.createElement("img");
+      image.src = work.thumbnail || work.image;
+      image.alt = work.title.ja;
+      image.width = work.imageWidth;
+      image.height = work.imageHeight;
+      image.loading = "lazy";
+      image.decoding = "async";
+
+      const copy = document.createElement("div");
+
+      const title = document.createElement("h3");
+      title.textContent = workTitle(work);
+
+      const text = document.createElement("p");
+      text.textContent = workDescription(work);
+
+      const link = document.createElement("a");
+      link.className = "link-button primary";
+      link.href = detailHref(work);
+      link.textContent = detailButtonText(true);
+
+      copy.append(title, text, link);
+      card.append(image, copy);
+      pickupGrid.append(card);
+    });
+}
+
 function renderWorks() {
   worksGrid.textContent = "";
 
@@ -425,18 +609,20 @@ function renderWorks() {
     copy.className = "work-copy";
 
     const title = document.createElement("h3");
-    title.textContent = work.title[currentLanguage];
+    title.textContent = workTitle(work);
 
     const note = document.createElement("p");
     note.className = "work-note";
-    note.textContent = salesNoteText(work);
+    note.textContent = workDescription(work) || salesNoteText(work);
 
     const links = document.createElement("div");
     links.className = "work-links";
 
-    Object.entries(work.links).forEach(([label, url]) => {
-      links.append(createLink(label, url, work.slug));
-    });
+    const detailLink = document.createElement("a");
+    detailLink.className = "link-button primary";
+    detailLink.href = detailHref(work);
+    detailLink.textContent = detailButtonText();
+    links.append(detailLink);
 
     copy.append(title, note, links);
     card.append(image, copy);
@@ -447,9 +633,14 @@ function renderWorks() {
 function setLanguage(language) {
   currentLanguage = language;
   document.documentElement.lang = language;
+  try {
+    window.localStorage.setItem("archiveLang", language);
+  } catch (error) {
+    // Language switching still works for the current page when storage is blocked.
+  }
 
   translatableNodes.forEach((node) => {
-    node.textContent = node.dataset[language];
+    node.textContent = node.dataset[language] || node.dataset.ja;
   });
 
   languageButtons.forEach((button) => {
@@ -457,6 +648,7 @@ function setLanguage(language) {
   });
 
   renderWorks();
+  renderPickups();
 }
 
 languageButtons.forEach((button) => {
@@ -475,11 +667,11 @@ promptcomTabs.forEach((tab) => {
   tab.addEventListener("click", () => setPromptcomTab(tab.dataset.promptcomTab));
 });
 
-setLanguage("ja");
+setLanguage(window.localStorage?.getItem("archiveLang") || "ja");
 setReadingTab("pixiv");
 setPixivTab("recommended");
 setPromptcomTab("free");
-setAgeGateState(hasAcceptedAgeGate());
+setAgeGateState(hasAcceptedAgeGate() || location.hostname === "127.0.0.1" || location.hostname === "localhost");
 
 ageGateEnter?.addEventListener("click", acceptAgeGate);
 ageGateLeave?.addEventListener("click", leaveAgeGate);
@@ -492,3 +684,4 @@ document.addEventListener("click", (event) => {
 
   sendOutboundClick(link);
 });
+
