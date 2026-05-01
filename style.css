@@ -548,8 +548,22 @@ h2 {
 
 .card-image-frame {
   position: relative;
+  display: block;
   overflow: hidden;
   background: #080808;
+  color: inherit;
+  text-decoration: none;
+}
+
+.card-image-frame:focus-visible,
+.featured-media-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.featured-media-link {
+  color: inherit;
+  text-decoration: none;
 }
 
 .pickup-card .card-image-frame {

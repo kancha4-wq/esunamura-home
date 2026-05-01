@@ -698,8 +698,10 @@ function renderPickups() {
       const card = document.createElement("article");
       card.className = "pickup-card";
 
-      const imageFrame = document.createElement("div");
+      const imageFrame = document.createElement("a");
       imageFrame.className = "card-image-frame";
+      imageFrame.href = detailHref(work);
+      imageFrame.setAttribute("aria-label", `${workTitle(work)} ${detailButtonText(true)}`);
 
       const image = document.createElement("img");
       image.src = work.thumbnail || work.image;
@@ -736,8 +738,10 @@ function renderWorks() {
     const card = document.createElement("article");
     card.className = "work-card";
 
-    const imageFrame = document.createElement("div");
+    const imageFrame = document.createElement("a");
     imageFrame.className = "card-image-frame";
+    imageFrame.href = detailHref(work);
+    imageFrame.setAttribute("aria-label", `${workTitle(work)} ${detailButtonText(true)}`);
 
     const image = document.createElement("img");
     image.src = work.thumbnail || work.image;
