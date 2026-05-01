@@ -325,6 +325,93 @@ const workTitleTranslations = {
   "erobokishin-4649-akane": { zh: "Erobokishin 4649 Akane", ko: "에로복신 4649 아카네" }
 };
 
+const workArchiveMeta = {
+  "satogaeri": {
+    count: { ja: "227枚収録", en: "227 images", zh: "收录227张", ko: "227장 수록" },
+    quality: "4K",
+    series: { ja: "夏の帰省", en: "Summer Homecoming", zh: "夏日返乡", ko: "여름 귀향" },
+    tags: { ja: ["幼馴染", "覗き見感"], en: ["Childhood friend", "Observed mood"], zh: ["青梅竹马", "窥视感"], ko: ["소꿉친구", "엿보는 시선"] }
+  },
+  "ancient-capital-beauty": {
+    count: { ja: "303枚収録", en: "303 images", zh: "收录303张", ko: "303장 수록" },
+    quality: "4K",
+    series: { ja: "和装情景", en: "Kimono Scenery", zh: "和装情景", ko: "와복 정경" },
+    tags: { ja: ["古都", "旅館"], en: ["Old capital", "Ryokan"], zh: ["古都", "旅馆"], ko: ["고도", "료칸"] }
+  },
+  "hikagami": {
+    count: { ja: "322枚収録", en: "322 images", zh: "收录322张", ko: "322장 수록" },
+    quality: "4K",
+    series: { ja: "ひかがみ", en: "Hikagami", zh: "膝后", ko: "오금" },
+    tags: { ja: ["膝裏", "ローアングル"], en: ["Knee backs", "Low angle"], zh: ["膝后", "低角度"], ko: ["오금", "로우앵글"] }
+  },
+  "setouchi-omorashi-journey": {
+    count: { ja: "500枚収録", en: "500 images", zh: "收录500张", ko: "500장 수록" },
+    quality: "4K",
+    series: { ja: "旅情フェチ紀行", en: "Travel Fetish Archive", zh: "旅情主题纪行", ko: "여행 정취 페티시" },
+    tags: { ja: ["瀬戸内", "観察視点"], en: ["Setouchi", "Observer view"], zh: ["濑户内", "观察视点"], ko: ["세토우치", "관찰 시점"] }
+  },
+  "hokkaido-omorashi-journey": {
+    count: { ja: "100枚収録", en: "100 images", zh: "收录100张", ko: "100장 수록" },
+    quality: "4K",
+    series: { ja: "旅情フェチ紀行", en: "Travel Fetish Archive", zh: "旅情主题纪行", ko: "여행 정취 페티시" },
+    tags: { ja: ["北海道", "冬背景"], en: ["Hokkaido", "Winter"], zh: ["北海道", "冬季背景"], ko: ["홋카이도", "겨울 배경"] }
+  },
+  "blonde-shrine-maiden": {
+    count: { ja: "300枚収録", en: "300 images", zh: "收录300张", ko: "300장 수록" },
+    quality: "4K",
+    series: { ja: "催眠ストーリー", en: "Hypnosis Story", zh: "催眠故事", ko: "최면 스토리" },
+    tags: { ja: ["和装", "段階進行"], en: ["Shrine attire", "Phased flow"], zh: ["和装", "阶段推进"], ko: ["와복", "단계 진행"] }
+  },
+  "gokujiri": {
+    count: { ja: "400枚収録", en: "400 images", zh: "收录400张", ko: "400장 수록" },
+    quality: "4K",
+    series: { ja: "質感フェチ", en: "Texture Fetish", zh: "质感主题", ko: "질감 페티시" },
+    tags: { ja: ["ヒップ特化", "密着感"], en: ["Hip focus", "Close contact"], zh: ["臀部特化", "贴近感"], ko: ["힙 특화", "밀착감"] }
+  },
+  "okinawa-churasan-accident": {
+    count: { ja: "100枚収録", en: "100 images", zh: "收录100张", ko: "100장 수록" },
+    quality: "4K",
+    series: { ja: "旅情フェチ紀行", en: "Travel Fetish Archive", zh: "旅情主题纪行", ko: "여행 정취 페티시" },
+    tags: { ja: ["南国", "リゾート"], en: ["Tropical", "Resort"], zh: ["南国", "度假"], ko: ["남국", "리조트"] }
+  },
+  "pink-part-time-job": {
+    count: { ja: "300枚収録", en: "300 images", zh: "收录300张", ko: "300장 수록" },
+    quality: "4K",
+    series: { ja: "催眠ストーリー", en: "Hypnosis Story", zh: "催眠故事", ko: "최면 스토리" },
+    tags: { ja: ["昼夜ギャップ", "南国"], en: ["Day / night gap", "Tropical"], zh: ["昼夜反差", "南国"], ko: ["낮밤 대비", "남국"] }
+  },
+  "shizuku-no-kiroku": {
+    count: { ja: "420枚収録", en: "420 images", zh: "收录420张", ko: "420장 수록" },
+    quality: "4K",
+    series: { ja: "質感フェチ", en: "Texture Fetish", zh: "质感主题", ko: "질감 페티시" },
+    tags: { ja: ["口元", "しずく"], en: ["Mouth detail", "Droplets"], zh: ["口元", "水滴"], ko: ["입가", "물방울"] }
+  },
+  "hikagami-school-route": {
+    count: { ja: "300枚収録", en: "300 images", zh: "收录300张", ko: "300장 수록" },
+    quality: "4K",
+    series: { ja: "ひかがみ", en: "Hikagami", zh: "膝后", ko: "오금" },
+    tags: { ja: ["制服", "生活動線"], en: ["School uniform", "Daily route"], zh: ["制服", "生活动线"], ko: ["교복", "생활 동선"] }
+  },
+  "erobokishin-4649": {
+    count: { ja: "300枚収録", en: "300 images", zh: "收录300张", ko: "300장 수록" },
+    quality: "4K",
+    series: { ja: "エロボキシン4649", en: "Erobokishin Series", zh: "Erobokishin系列", ko: "에로복신 시리즈" },
+    tags: { ja: ["日常空間", "段階進行"], en: ["Domestic rooms", "Phased flow"], zh: ["日常空间", "阶段推进"], ko: ["일상 공간", "단계 진행"] }
+  },
+  "kindle-seifuku-bikyaku": {
+    count: { ja: "110ページ", en: "110 pages", zh: "110页", ko: "110페이지" },
+    quality: "ART",
+    series: { ja: "制服美脚", en: "Uniform Leg Art", zh: "制服美腿", ko: "교복 미각" },
+    tags: { ja: ["通学", "足元"], en: ["Commute", "Feet"], zh: ["通学", "足部"], ko: ["통학", "발 주변"] }
+  },
+  "erobokishin-4649-akane": {
+    count: { ja: "300枚収録", en: "300 images", zh: "收录300张", ko: "300장 수록" },
+    quality: "4K",
+    series: { ja: "エロボキシン4649", en: "Erobokishin Series", zh: "Erobokishin系列", ko: "에로복신 시리즈" },
+    tags: { ja: ["高級リゾート", "夜景"], en: ["Luxury resort", "Night view"], zh: ["高级度假", "夜景"], ko: ["고급 리조트", "야경"] }
+  }
+};
+
 const pickupSlugs = ["erobokishin-4649", "blonde-shrine-maiden", "setouchi-omorashi-journey"];
 
 const detailPageBySlug = {
@@ -354,6 +441,54 @@ function workDescription(work) {
 
 function workTitle(work) {
   return workTitleTranslations[work.slug]?.[currentLanguage] || work.title[currentLanguage] || work.title.en || work.title.ja;
+}
+
+function localizedMetaValue(value) {
+  if (Array.isArray(value)) return value;
+  if (typeof value === "object" && value !== null) {
+    return value[currentLanguage] || value.ja || value.en || "";
+  }
+  return value || "";
+}
+
+function archiveBadgesFor(work) {
+  const meta = workArchiveMeta[work.slug];
+  if (!meta) return [];
+  const contentBadges = [
+    { label: localizedMetaValue(meta.count), type: "primary" },
+    { label: localizedMetaValue(meta.series), type: "genre" },
+    ...localizedMetaValue(meta.tags).map((label) => ({ label, type: "genre" }))
+  ].filter((badge) => badge.label);
+  const formatBadges = salesFormatBadgesFor(work).map((label) => ({ label, type: "format" }));
+  return [...contentBadges, ...formatBadges].slice(0, 7);
+}
+
+function salesFormatBadgesFor(work) {
+  const labelJoin = currentLanguage === "ja" ? "：" : ": ";
+  const formats = {
+    FANZA: "4K ZIP",
+    DLsite: "4K ZIP",
+    BOOTH: "ZIP + PDF",
+    pictSPACE: "ZIP + PDF",
+    DiGiket: "4K ZIP + PDF",
+    "Kindle JP": "Kindle",
+    "Kindle US": "Kindle"
+  };
+  return Object.keys(formats)
+    .filter((store) => work.links?.[store])
+    .map((store) => `${store}${labelJoin}${formats[store]}`);
+}
+
+function createArchiveBadges(work, compact = false) {
+  const badges = document.createElement("div");
+  badges.className = compact ? "archive-badges compact" : "archive-badges";
+  archiveBadgesFor(work).forEach((item) => {
+    const badge = document.createElement("span");
+    badge.className = `archive-badge ${item.type}`;
+    badge.textContent = item.label;
+    badges.append(badge);
+  });
+  return badges;
 }
 
 function detailButtonText(full = false) {
@@ -563,6 +698,9 @@ function renderPickups() {
       const card = document.createElement("article");
       card.className = "pickup-card";
 
+      const imageFrame = document.createElement("div");
+      imageFrame.className = "card-image-frame";
+
       const image = document.createElement("img");
       image.src = work.thumbnail || work.image;
       image.alt = work.title.ja;
@@ -570,6 +708,7 @@ function renderPickups() {
       image.height = work.imageHeight;
       image.loading = "lazy";
       image.decoding = "async";
+      imageFrame.append(image, createArchiveBadges(work, true));
 
       const copy = document.createElement("div");
 
@@ -585,7 +724,7 @@ function renderPickups() {
       link.textContent = detailButtonText(true);
 
       copy.append(title, text, link);
-      card.append(image, copy);
+      card.append(imageFrame, copy);
       pickupGrid.append(card);
     });
 }
@@ -597,6 +736,9 @@ function renderWorks() {
     const card = document.createElement("article");
     card.className = "work-card";
 
+    const imageFrame = document.createElement("div");
+    imageFrame.className = "card-image-frame";
+
     const image = document.createElement("img");
     image.src = work.thumbnail || work.image;
     image.alt = work.title.ja;
@@ -604,6 +746,7 @@ function renderWorks() {
     image.height = work.imageHeight;
     image.loading = "lazy";
     image.decoding = "async";
+    imageFrame.append(image, createArchiveBadges(work));
 
     const copy = document.createElement("div");
     copy.className = "work-copy";
@@ -625,7 +768,7 @@ function renderWorks() {
     links.append(detailLink);
 
     copy.append(title, note, links);
-    card.append(image, copy);
+    card.append(imageFrame, copy);
     worksGrid.append(card);
   });
 }

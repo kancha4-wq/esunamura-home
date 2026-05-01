@@ -306,6 +306,58 @@
     return item.description[lang] || item.description.ja;
   }
 
+  function countBadgeText(item) {
+    const lang = currentLang();
+    const count = item.count || "";
+    if (!count) return "";
+    if (lang === "en") {
+      return count
+        .replace("枚", " images")
+        .replace("ページ", " pages");
+    }
+    if (lang === "zh") {
+      return count
+        .replace("枚", "张")
+        .replace("ページ", "页");
+    }
+    if (lang === "ko") {
+      return count
+        .replace("枚", "장")
+        .replace("ページ", "페이지");
+    }
+    return count.includes("枚") ? `${count}収録` : count;
+  }
+
+  function salesFormatBadgesFor(item) {
+    const separator = currentLang() === "ja" ? "：" : ": ";
+    const formats = {
+      FANZA: "4K ZIP",
+      DLsite: "4K ZIP",
+      DiGiket: "4K ZIP + PDF",
+      pictSPACE: "ZIP + PDF",
+      BOOTH: "ZIP + PDF",
+      "Kindle JP": "Kindle",
+      "Kindle US": "Kindle"
+    };
+    return item.salesLinks
+      .filter((link) => formats[link.label])
+      .map((link) => `${link.label}${separator}${formats[link.label]}`);
+  }
+
+  function renderArchiveBadges(item) {
+    const contentLabels = [
+      { label: countBadgeText(item), type: "primary" },
+      { label: labelOf(item.series), type: "genre" },
+      ...item.tags.slice(0, 2).map((tag) => ({ label: labelOf(tag), type: "genre" }))
+    ].filter((badge) => badge.label).slice(0, 5);
+    const formatLabels = salesFormatBadgesFor(item).map((label) => ({ label, type: "format" }));
+    const labels = [...contentLabels, ...formatLabels];
+
+    return `<div class="archive-badges detail-badges">
+      ${labels.map((badge) => `<span class="archive-badge ${badge.type}">${badge.label}</span>`).join("")}
+    </div>`;
+  }
+
   function relatedWorks(item) {
     return item.related
       .map((id) => works.find((candidate) => candidate.id === id))
@@ -351,6 +403,7 @@
       <section class="detail-hero">
         <div class="cover-frame">
           <img src="${work.cover}" alt="${titleOf(work)} 表紙">
+          ${renderArchiveBadges(work)}
         </div>
         <div class="detail-copy">
           <p class="eyebrow">${work.series}</p>

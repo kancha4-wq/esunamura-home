@@ -245,7 +245,7 @@ Japanese clothing, skin texture, knee-back shadows, and close distance give the 
     series: "和装情景",
     cover: pathFor("古都美人", "cover", "000.jpg"),
     samples: makeSamples("古都美人", ["1.jpg", "2.jpg", "3.jpg", "4.jpg"]),
-    count: "作品詳細準備中",
+    count: "303枚",
     format: "古都旅行 / 温泉旅館滞在 / 段階進行",
     focus: "神社 / 露天風呂 / 和室 / 晩酌",
     summary: "神社、旅館、露天風呂、夜の和室へと場面が移り、距離感や表情が少しずつ変化していく和風情景作品。",

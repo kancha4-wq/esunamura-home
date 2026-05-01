@@ -546,6 +546,85 @@ h2 {
   border-radius: 10px;
 }
 
+.card-image-frame {
+  position: relative;
+  overflow: hidden;
+  background: #080808;
+}
+
+.pickup-card .card-image-frame {
+  border-radius: 10px;
+}
+
+.card-image-frame img {
+  display: block;
+}
+
+.archive-badges {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  left: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: flex-end;
+  pointer-events: none;
+}
+
+.archive-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 22px;
+  max-width: 100%;
+  padding: 2px 7px;
+  border: 1px solid rgba(230, 177, 95, 0.38);
+  border-radius: 999px;
+  background: rgba(7, 7, 7, 0.72);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.28);
+  color: #f2cf85;
+  font-size: 0.68rem;
+  font-weight: 800;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  backdrop-filter: blur(8px);
+}
+
+.archive-badge.primary {
+  background: linear-gradient(135deg, rgba(230, 177, 95, 0.95), rgba(190, 132, 52, 0.9));
+  color: #1a1209;
+  border-color: rgba(245, 211, 145, 0.7);
+}
+
+.archive-badge.format {
+  border-color: rgba(242, 207, 133, 0.3);
+  background: rgba(7, 7, 7, 0.82);
+  color: #e7d7bd;
+}
+
+.work-card .archive-badge.format,
+.pickup-card .archive-badge.format {
+  min-height: 19px;
+  padding: 1px 6px;
+  border-color: rgba(242, 207, 133, 0.18);
+  background: rgba(7, 7, 7, 0.58);
+  color: rgba(231, 215, 189, 0.82);
+  font-size: 0.6rem;
+  font-weight: 700;
+}
+
+.pickup-card .archive-badge.format {
+  font-size: 0.56rem;
+}
+
+.archive-badges.compact .archive-badge {
+  min-height: 20px;
+  padding: 2px 6px;
+  font-size: 0.62rem;
+}
+
 .pickup-card h3 {
   margin: 0;
   display: -webkit-box;
@@ -957,6 +1036,7 @@ h2 {
 .cover-frame {
   display: grid;
   place-items: center;
+  position: relative;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 12px;
@@ -968,6 +1048,18 @@ h2 {
   max-height: 500px;
   object-fit: contain;
   background: #050505;
+}
+
+.detail-badges {
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+}
+
+.detail-badges .archive-badge {
+  min-height: 24px;
+  padding: 3px 8px;
+  font-size: 0.72rem;
 }
 
 .detail-copy h1 {
