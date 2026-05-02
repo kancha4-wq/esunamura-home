@@ -1144,6 +1144,12 @@ h2 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.share-links {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
 .sales-button {
   display: grid;
   min-height: 38px;
@@ -1153,6 +1159,43 @@ h2 {
   background: linear-gradient(180deg, #302d2b, #252220);
   font-weight: 800;
   font-size: 0.84rem;
+}
+
+.share-x-button {
+  display: inline-flex;
+  min-height: 28px;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  width: min(100%, 142px);
+  padding: 0 13px;
+  border: 1px solid rgba(230, 177, 95, 0.34);
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(39, 36, 34, 0.94), rgba(24, 22, 21, 0.95));
+  color: rgba(247, 241, 237, 0.86);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.share-x-icon {
+  display: inline-grid;
+  width: 17px;
+  height: 17px;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(230, 177, 95, 0.16);
+  color: var(--accent);
+  font-size: 0.68rem;
+  line-height: 1;
+}
+
+.share-x-button:hover {
+  transform: translateY(-1px);
+  border-color: rgba(230, 177, 95, 0.52);
+  background: linear-gradient(180deg, rgba(48, 44, 41, 0.96), rgba(29, 26, 24, 0.98));
+  color: var(--text);
 }
 
 .sales-button.disabled {
@@ -1288,6 +1331,15 @@ h2 {
   .sample-gallery,
   .related-grid {
     grid-template-columns: 1fr;
+  }
+
+  .share-links {
+    justify-content: flex-start;
+  }
+
+  .share-x-button {
+    min-height: 36px;
+    width: min(100%, 190px);
   }
 
   .title-page .language-switch {

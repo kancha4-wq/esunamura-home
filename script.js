@@ -432,7 +432,7 @@ const detailPageBySlug = {
 
 function detailHref(work) {
   const id = detailPageBySlug[work.slug] || work.slug;
-  return `title.html?id=${encodeURIComponent(id)}`;
+  return `titles/${encodeURIComponent(id)}.html`;
 }
 
 function workDescription(work) {

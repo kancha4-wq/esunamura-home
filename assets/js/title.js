@@ -4,7 +4,8 @@
   const languageButtons = document.querySelectorAll(".lang-button");
   const staticTranslatableNodes = document.querySelectorAll("[data-ja]");
   const params = new URLSearchParams(location.search);
-  const work = works.find((item) => item.id === params.get("id")) || works[0];
+  const requestedWorkId = window.DETAIL_WORK_ID || params.get("id");
+  const work = works.find((item) => item.id === requestedWorkId) || works[0];
   const ui = {
     ja: {
       sales: "販売サイト",
@@ -16,6 +17,7 @@
       preview: "このシリーズを試し読み",
       pixiv: "pixivで見る",
       promptcom: "PromptComで見る",
+      shareX: "Xで共有",
       sameSeries: "同シリーズ",
       relatedFetish: "関連フェチ",
       closeWorld: "世界観近い作品"
@@ -30,6 +32,7 @@
       preview: "Preview this series",
       pixiv: "View on pixiv",
       promptcom: "View on PromptCom",
+      shareX: "Share on X",
       sameSeries: "Same series",
       relatedFetish: "Related motif",
       closeWorld: "Similar mood"
@@ -44,6 +47,7 @@
       preview: "试读这个系列",
       pixiv: "在 pixiv 查看",
       promptcom: "在 PromptCom 查看",
+      shareX: "分享到 X",
       sameSeries: "同系列",
       relatedFetish: "相关要素",
       closeWorld: "氛围相近"
@@ -58,6 +62,7 @@
       preview: "이 시리즈 미리보기",
       pixiv: "pixiv에서 보기",
       promptcom: "PromptCom에서 보기",
+      shareX: "X에 공유",
       sameSeries: "같은 시리즈",
       relatedFetish: "관련 취향",
       closeWorld: "비슷한 분위기"
@@ -880,6 +885,52 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
     return shortTranslations[item.id]?.focus?.[lang] || item.focus;
   }
 
+  function siteRootUrl() {
+    if (location.protocol !== "http:" && location.protocol !== "https:") {
+      return "https://kancha4-wq.github.io/esunamura-home/";
+    }
+    return (location.pathname || "").includes("/titles/")
+      ? new URL("../", location.href).href
+      : new URL("./", location.href).href;
+  }
+
+  function detailPageUrl(item) {
+    const id = encodeURIComponent(item.id);
+    return new URL(`titles/${id}.html`, siteRootUrl()).href;
+  }
+
+  function shareTextFor(item) {
+    const title = titleOf(item);
+    const summary = summaryOf(item);
+    const pageUrl = detailPageUrl(item);
+    const lang = currentLang();
+    if (lang === "en") {
+      return `"${title}" is now available.\n${summary}\nDetails, samples, and store links:\n${pageUrl}`;
+    }
+    if (lang === "zh") {
+      return `「${title}」公开中。\n${summary}\n详情、样张和销售页面：\n${pageUrl}`;
+    }
+    if (lang === "ko") {
+      return `"${title}" 공개 중.\n${summary}\n상세 정보, 샘플, 판매처:\n${pageUrl}`;
+    }
+    return `「${title}」公開中。\n${summary}\n詳細・サンプル・販売先はこちら：\n${pageUrl}`;
+  }
+
+  function shareUrlFor(item) {
+    return `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareTextFor(item))}`;
+  }
+
+  function trackShareX(item) {
+    if (typeof window.gtag !== "function") {
+      return;
+    }
+    window.gtag("event", "click_share_x", {
+      work_slug: item.id,
+      work_title: titleOf(item),
+      page_url: detailPageUrl(item)
+    });
+  }
+
   function labelOf(text) {
     const lang = currentLang();
     return labelTranslations[text]?.[lang] || text;
@@ -968,6 +1019,18 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
     }).join("");
   }
 
+  function renderShareButton(item) {
+    return `<a class="share-x-button" href="${shareUrlFor(item)}" target="_blank" rel="noopener" data-share-x><span class="share-x-icon" aria-hidden="true">X</span>${uiText("shareX")}</a>`;
+  }
+
+  function bindShareButtons(item) {
+    app.querySelectorAll("[data-share-x]").forEach((button) => {
+      button.addEventListener("click", () => {
+        trackShareX(item);
+      });
+    });
+  }
+
   function renderPreviewLinks(item) {
     const links = previewLinks[item.id];
     if (!links) return "";
@@ -1005,6 +1068,7 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
           </div>
           <h2>${uiText("sales")}</h2>
           <div class="sales-links">${renderSales(work)}</div>
+          <div class="share-links">${renderShareButton(work)}</div>
         </div>
       </section>
 
@@ -1048,7 +1112,7 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
         <h2>${uiText("related")}</h2>
         <div class="related-grid">
           ${relatedWorks(work).map((item) => `
-            <a class="related-card" href="title.html?id=${encodeURIComponent(item.id)}">
+            <a class="related-card" href="${detailPageUrl(item)}">
               <div class="related-cover">
                 <img src="${item.cover}" alt="${titleOf(item)} 表紙" loading="lazy">
               </div>
@@ -1063,6 +1127,7 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
         </div>
       </section>
     `;
+    bindShareButtons(work);
   }
 
   if (!work) {
