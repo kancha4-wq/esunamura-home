@@ -449,13 +449,13 @@ const salesByWorkId = {
     pictSPACE: "https://pictspace.net/items/manage_detail/851348",
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_758170/",
     PromptCom: "https://prompt-com.com/ja/p/d3d69153-c51f-41f6-8297-1a0a693c2583",
-    DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0337471/"
+    DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0337471/AFID=esunamura/"
   },
   "eroboxin-akane": {
     BOOTH: "https://esunamura.booth.pm/items/8284888",
     pictSPACE: "https://pictspace.net/items/manage_detail/858788",
     PromptCom: "https://prompt-com.com/ja/p/cdd31e47-ba82-4793-939d-8445864efceb",
-    DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0337472/"
+    DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0337472/AFID=esunamura/"
   },
   "shizuku-record": {
     BOOTH: "https://esunamura.booth.pm/items/8168871",

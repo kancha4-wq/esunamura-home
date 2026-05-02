@@ -701,7 +701,7 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
 
 最大の特徴は、肌の質感と接近感を重視した描写。
 
-膝裏「ひかがみ」の陰影、汗ばんだ肌、乱れていく表情など、和装作品ならではのフェチ感を意識して構成しています。
+汗ばんだ肌、乱れていく表情など、和装作品ならではのフェチ感を意識して構成しています。
 
 導入から結末まで、段階的に空気が変化していく、催〇・和装系ストーリー作品です。`
   };
@@ -1015,7 +1015,7 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
       const href = link.url || "#";
       const className = link.url ? "sales-button" : "sales-button disabled";
       const label = link.url ? link.label : `${link.label} / ${copy.unavailable}`;
-      return `<a class="${className}" href="${href}" ${link.url ? 'target="_blank" rel="noopener"' : ""}>${label}</a>`;
+      return `<a class="${className}" href="${href}" ${link.url ? 'target="_blank" rel="noopener noreferrer"' : ""}>${label}</a>`;
     }).join("");
   }
 
