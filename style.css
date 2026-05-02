@@ -880,6 +880,18 @@ h2 {
   text-align: center;
 }
 
+.affiliate-marketplaces {
+  justify-items: stretch;
+}
+
+.affiliate-marketplace-card {
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  gap: 14px;
+  min-width: 0;
+}
+
 .affiliate-banner-copy {
   display: grid;
   gap: 5px;
@@ -1003,8 +1015,13 @@ h2 {
   }
 
   .affiliate-banner-links {
-    grid-template-columns: repeat(2, minmax(0, auto));
+    grid-template-columns: minmax(0, auto);
     justify-content: center;
+  }
+
+  .affiliate-marketplaces {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
   }
 
   .works-grid {
