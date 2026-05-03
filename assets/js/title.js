@@ -920,15 +920,57 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
     return `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareTextFor(item))}`;
   }
 
+  function analyticsPlatformFromUrl(url, fallback = "") {
+    if (!url) return fallback.toLowerCase();
+    const hostname = new URL(url, location.href).hostname;
+    if (hostname.includes("dlsite.com") || hostname === "dlaf.jp") return "dlsite";
+    if (hostname.includes("dmm.co.jp")) return "fanza";
+    if (hostname.includes("digiket.com")) return "digiket";
+    if (hostname.includes("booth.pm")) return "booth";
+    if (hostname.includes("pictspace.net")) return "pictspace";
+    if (hostname.includes("prompt-com.com")) return "promptcom";
+    if (hostname.includes("pixiv.net")) return "pixiv";
+    return fallback.toLowerCase();
+  }
+
+  function analyticsEventName(platform) {
+    return {
+      fanza: "click_fanza",
+      dlsite: "click_dlsite",
+      digiket: "click_digiket",
+      booth: "click_booth",
+      pictspace: "click_pictspace",
+      promptcom: "click_promptcom",
+      pixiv: "click_pixiv"
+    }[platform] || "";
+  }
+
+  function analyticsParamsFor(item, platform) {
+    return {
+      work_slug: item.id,
+      work_title: titleOf(item),
+      platform,
+      page_url: location.href,
+      transport_type: "beacon"
+    };
+  }
+
+  function trackPlatformClick(item, platform) {
+    if (typeof window.gtag !== "function") {
+      return;
+    }
+
+    const eventName = analyticsEventName(platform);
+    if (eventName) {
+      window.gtag("event", eventName, analyticsParamsFor(item, platform));
+    }
+  }
+
   function trackShareX(item) {
     if (typeof window.gtag !== "function") {
       return;
     }
-    window.gtag("event", "click_share_x", {
-      work_slug: item.id,
-      work_title: titleOf(item),
-      page_url: detailPageUrl(item)
-    });
+    window.gtag("event", "click_share_x", analyticsParamsFor(item, "x"));
   }
 
   function labelOf(text) {
@@ -1015,7 +1057,11 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
       const href = link.url || "#";
       const className = link.url ? "sales-button" : "sales-button disabled";
       const label = link.url ? link.label : `${link.label} / ${copy.unavailable}`;
-      return `<a class="${className}" href="${href}" ${link.url ? 'target="_blank" rel="noopener noreferrer"' : ""}>${label}</a>`;
+      const platform = analyticsPlatformFromUrl(link.url, link.label);
+      const analyticsAttrs = link.url
+        ? `data-analytics-platform="${platform}" data-analytics-work="${item.id}"`
+        : "";
+      return `<a class="${className}" href="${href}" ${link.url ? 'target="_blank" rel="noopener noreferrer"' : ""} ${analyticsAttrs}>${label}</a>`;
     }).join("");
   }
 
@@ -1038,8 +1084,8 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
       <div class="detail-panel preview-links-panel">
         <h2>${uiText("preview")}</h2>
         <div class="preview-detail-links">
-          <a class="sales-button" href="${links.pixiv}" target="_blank" rel="noopener">${uiText("pixiv")}</a>
-          <a class="sales-button" href="${links.promptcom}" target="_blank" rel="noopener">${uiText("promptcom")}</a>
+          <a class="sales-button" href="${links.pixiv}" target="_blank" rel="noopener" data-analytics-platform="pixiv" data-analytics-work="${item.id}">${uiText("pixiv")}</a>
+          <a class="sales-button" href="${links.promptcom}" target="_blank" rel="noopener" data-analytics-platform="promptcom" data-analytics-work="${item.id}">${uiText("promptcom")}</a>
         </div>
       </div>
     `;
@@ -1129,6 +1175,19 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
     `;
     bindShareButtons(work);
   }
+
+  document.addEventListener("click", (event) => {
+    const link = event.target.closest("a[data-analytics-platform], a[data-analytics-link]");
+    if (!link || link.matches("[data-share-x]")) {
+      return;
+    }
+
+    const platform = link.dataset.analyticsPlatform || analyticsPlatformFromUrl(
+      link.href,
+      link.dataset.analyticsLink || link.textContent
+    );
+    trackPlatformClick(work, platform);
+  });
 
   if (!work) {
     app.innerHTML = `<section class="not-found"><div><h1>Title not found</h1><p><a href="index.html">作品一覧へ戻る</a></p></div></section>`;

@@ -612,43 +612,74 @@ function normalizeDestination(label) {
   return label.toLowerCase().replace(/\s+/g, "-");
 }
 
-function individualClickEventName(link) {
-  const href = link.href;
-  const hostname = new URL(href).hostname;
+function workBySlug(slug) {
+  return works.find((work) => work.slug === slug);
+}
+
+function analyticsPlatform(link) {
+  const explicitPlatform = link.dataset.analyticsPlatform;
+  if (explicitPlatform) {
+    return explicitPlatform.toLowerCase();
+  }
+
+  const destination = link.dataset.analyticsLink || normalizeDestination(link.textContent);
+  if (destination.includes("dlsite")) return "dlsite";
+  if (destination.includes("fanza")) return "fanza";
+  if (destination.includes("booth")) return "booth";
+  if (destination.includes("pictspace")) return "pictspace";
+  if (destination.includes("digiket")) return "digiket";
+  if (destination.includes("promptcom")) return "promptcom";
+  if (destination.includes("pixiv")) return "pixiv";
+
+  const hostname = new URL(link.href).hostname;
 
   if (hostname.includes("dlsite.com") || hostname === "dlaf.jp") {
-    return "click_dlsite";
+    return "dlsite";
   }
 
   if (hostname.includes("dmm.co.jp")) {
-    return "click_fanza";
+    return "fanza";
   }
 
   if (hostname.includes("booth.pm")) {
-    return "click_booth";
+    return "booth";
   }
 
   if (hostname.includes("pictspace.net")) {
-    return "click_pictspace";
+    return "pictspace";
   }
 
   if (hostname.includes("digiket.com")) {
-    return "click_digiket";
+    return "digiket";
   }
 
   if (hostname.includes("prompt-com.com")) {
-    return "click_promptcom";
+    return "promptcom";
   }
 
   if (hostname.includes("pixiv.net")) {
-    return "click_pixiv";
+    return "pixiv";
   }
 
   if (hostname.includes("amazon.co.jp") || hostname.includes("amazon.com")) {
-    return "click_kindle";
+    return "kindle";
   }
 
   return "";
+}
+
+function individualClickEventName(link) {
+  const platform = analyticsPlatform(link);
+  const eventNames = {
+    fanza: "click_fanza",
+    dlsite: "click_dlsite",
+    digiket: "click_digiket",
+    booth: "click_booth",
+    pictspace: "click_pictspace",
+    promptcom: "click_promptcom",
+    pixiv: "click_pixiv"
+  };
+  return eventNames[platform] || "";
 }
 
 function sendOutboundClick(link) {
@@ -658,7 +689,9 @@ function sendOutboundClick(link) {
 
   const destination = link.dataset.analyticsLink || normalizeDestination(link.textContent);
   const area = link.dataset.analyticsArea || "unknown";
-  const work = link.dataset.analyticsWork || "";
+  const workSlug = link.dataset.analyticsWork || "";
+  const work = workBySlug(workSlug);
+  const platform = analyticsPlatform(link);
   const readableUrl = `${destination}:${link.href}`;
   const params = {
     link_url: readableUrl,
@@ -666,7 +699,10 @@ function sendOutboundClick(link) {
     link_text: link.textContent.trim(),
     link_destination: destination,
     link_area: area,
-    work_slug: work,
+    work_slug: workSlug,
+    work_title: link.dataset.analyticsWorkTitle || (work ? workTitle(work) : ""),
+    platform,
+    page_url: location.href,
     outbound: true,
     transport_type: "beacon",
   };
