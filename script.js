@@ -210,7 +210,7 @@
     imageWidth: 1280,
     imageHeight: 960,
     links: {
-      BOOTH: "#"
+      BOOTH: "https://esunamura.booth.pm/items/8300644"
     }
   }
 ];
