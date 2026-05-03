@@ -201,6 +201,17 @@
       PromptCom: "https://prompt-com.com/ja/p/cdd31e47-ba82-4793-939d-8445864efceb",
       DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0337472/AFID=esunamura/"
     }
+  },
+  {
+    title: { ja: "Kyoto Atmosphere Prompt Pack Vol.1｜京都風背景", en: "Kyoto Atmosphere Prompt Pack Vol.1" },
+    slug: "kyoto-prompt-pack",
+    image: "images/kyoto-prompt-pack/表紙.jpg",
+    thumbnail: "images/kyoto-prompt-pack/表紙.jpg",
+    imageWidth: 1280,
+    imageHeight: 960,
+    links: {
+      BOOTH: "#"
+    }
   }
 ];
 
@@ -305,6 +316,12 @@ const workDescriptions = {
     en: "A luxury resort-hotel story moving through night pool, lounge, bathhouse, and bedroom.",
     zh: "夜间泳池、顶层酒廊、大浴场、卧室。穿梭于高级度假酒店空间的作品。",
     ko: "나이트풀, 최상층 라운지, 대욕장, 침실. 고급 리조트 공간을 이동하는 작품."
+  },
+  "kyoto-prompt-pack": {
+    ja: "京都風・和風背景生成向けPrompt Pack。町家、鳥居、石畳、縁側などの空気感を収録。",
+    en: "A Kyoto-inspired background Prompt Pack for SDXL generation, focused on machiya, torii gates, stone pavements, verandas, and atmosphere.",
+    zh: "京都风・和风背景生成向Prompt Pack。收录町家、鸟居、石板路、缘侧等氛围。",
+    ko: "교토풍・일본식 배경 생성을 위한 Prompt Pack. 마치야, 도리이, 돌길, 툇마루 등의 분위기를 담았습니다."
   }
 };
 
@@ -322,7 +339,8 @@ const workTitleTranslations = {
   "hikagami-school-route": { zh: "膝后 登校篇 / Hikagami School Route", ko: "오금 등교편 / Hikagami School Route" },
   "erobokishin-4649": { zh: "Erobokishin 4649", ko: "에로복신 4649" },
   "kindle-seifuku-bikyaku": { zh: "AI制服美腿插画集", ko: "AI 교복 미각 일러스트집" },
-  "erobokishin-4649-akane": { zh: "Erobokishin 4649 Akane", ko: "에로복신 4649 아카네" }
+  "erobokishin-4649-akane": { zh: "Erobokishin 4649 Akane", ko: "에로복신 4649 아카네" },
+  "kyoto-prompt-pack": { zh: "Kyoto Atmosphere Prompt Pack Vol.1", ko: "Kyoto Atmosphere Prompt Pack Vol.1" }
 };
 
 const workArchiveMeta = {
@@ -409,6 +427,12 @@ const workArchiveMeta = {
     quality: "4K",
     series: { ja: "エロボキシン4649", en: "Erobokishin Series", zh: "Erobokishin系列", ko: "에로복신 시리즈" },
     tags: { ja: ["高級リゾート", "夜景"], en: ["Luxury resort", "Night view"], zh: ["高级度假", "夜景"], ko: ["고급 리조트", "야경"] }
+  },
+  "kyoto-prompt-pack": {
+    count: { ja: "Prompt Pack", en: "Prompt Pack", zh: "Prompt Pack", ko: "Prompt Pack" },
+    quality: "SDXL",
+    series: { ja: "Background", en: "Background", zh: "Background", ko: "Background" },
+    tags: { ja: ["京都風", "背景生成"], en: ["Kyoto style", "Background"], zh: ["京都风", "背景生成"], ko: ["교토풍", "배경 생성"] }
   }
 };
 
@@ -427,11 +451,15 @@ const detailPageBySlug = {
   "hikagami-school-route": "hikagami-school",
   "erobokishin-4649": "eroboxin-4649",
   "kindle-seifuku-bikyaku": "school-legs",
-  "erobokishin-4649-akane": "eroboxin-akane"
+  "erobokishin-4649-akane": "eroboxin-akane",
+  "kyoto-prompt-pack": "kyoto-prompt-pack/index.html"
 };
 
 function detailHref(work) {
   const id = detailPageBySlug[work.slug] || work.slug;
+  if (id.includes("/")) {
+    return id;
+  }
   return `titles/${encodeURIComponent(id)}.html`;
 }
 
@@ -468,7 +496,7 @@ function salesFormatBadgesFor(work) {
   const formats = {
     FANZA: "4K ZIP",
     DLsite: "4K ZIP",
-    BOOTH: "ZIP + PDF",
+    BOOTH: work.slug === "kyoto-prompt-pack" ? "Prompt Pack" : "ZIP + PDF",
     pictSPACE: "ZIP + PDF",
     DiGiket: "4K ZIP + PDF",
     "Kindle JP": "Kindle",
@@ -489,6 +517,15 @@ function createArchiveBadges(work, compact = false) {
     badges.append(badge);
   });
   return badges;
+}
+
+function keepImageFrameStable(image, imageFrame) {
+  image.addEventListener("error", () => {
+    const fileName = image.getAttribute("src")?.split("/").pop() || "";
+    imageFrame.dataset.sample = fileName;
+    imageFrame.classList.add("is-missing");
+    image.hidden = true;
+  });
 }
 
 function detailButtonText(full = false) {
@@ -714,6 +751,7 @@ function renderPickups() {
       image.height = work.imageHeight;
       image.loading = "lazy";
       image.decoding = "async";
+      keepImageFrameStable(image, imageFrame);
       imageFrame.append(image, createArchiveBadges(work, true));
 
       const copy = document.createElement("div");
@@ -754,6 +792,7 @@ function renderWorks() {
     image.height = work.imageHeight;
     image.loading = "lazy";
     image.decoding = "async";
+    keepImageFrameStable(image, imageFrame);
     imageFrame.append(image, createArchiveBadges(work));
 
     const copy = document.createElement("div");
