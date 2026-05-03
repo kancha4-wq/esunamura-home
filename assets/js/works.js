@@ -479,7 +479,8 @@ const salesByWorkId = {
     pictSPACE: "https://pictspace.net/items/manage_detail/838067",
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_746695/",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01591986.html",
-    PromptCom: "https://prompt-com.com/ja/p/4ca5f6fa-e429-4019-9d13-9738eecf2cb8"
+    PromptCom: "https://prompt-com.com/ja/p/4ca5f6fa-e429-4019-9d13-9738eecf2cb8",
+    DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0337791/AFID=esunamura/"
   },
   "ancient-capital-beauty": {
     BOOTH: "https://esunamura.booth.pm/items/8111016",
@@ -492,7 +493,8 @@ const salesByWorkId = {
     pictSPACE: "https://pictspace.net/items/manage_detail/838081",
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_751890/",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01601145.html",
-    PromptCom: "https://prompt-com.com/ja/p/055982d7-98e2-47ae-92c0-dbb71e117d56"
+    PromptCom: "https://prompt-com.com/ja/p/055982d7-98e2-47ae-92c0-dbb71e117d56",
+    DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0337792/AFID=esunamura/"
   },
   satogaeri: {
     pictSPACE: "https://pictspace.net/items/manage_detail/837195",
