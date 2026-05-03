@@ -754,10 +754,20 @@ h2 {
   background:
     radial-gradient(circle at top left, rgba(230, 177, 95, 0.12), transparent 34%),
     rgba(31, 29, 29, 0.92);
+  padding: 16px;
+}
+
+.reading-preview-card h2 {
+  font-size: clamp(1.18rem, 4vw, 1.55rem);
+}
+
+.reading-preview-card .eyebrow {
+  letter-spacing: 0.06em;
 }
 
 .preview-platform-tabs {
   margin-top: 2px;
+  width: min(100%, 420px);
 }
 
 .preview-platform-panel {
@@ -791,6 +801,7 @@ h2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 4px;
   padding: 4px;
+  max-width: 100%;
   border: 1px solid var(--line);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.045);
@@ -798,7 +809,8 @@ h2 {
 
 .pixiv-tab {
   min-height: 36px;
-  padding: 0 14px;
+  min-width: 0;
+  padding: 0 12px;
   border: 0;
   border-radius: 999px;
   background: transparent;
@@ -806,7 +818,13 @@ h2 {
   font: inherit;
   font-size: 0.86rem;
   font-weight: 900;
+  line-height: 1.2;
+  white-space: nowrap;
   cursor: pointer;
+}
+
+.reading-preview-card .pixiv-preview-tabs {
+  width: 100%;
 }
 
 .pixiv-tab.is-active {
@@ -1742,7 +1760,6 @@ h2 {
 }
 
 .latest-pixiv-card,
-.reading-preview-card,
 .store-section {
   display: none !important;
 }
