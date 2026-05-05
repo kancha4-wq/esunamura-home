@@ -67,6 +67,38 @@ Knee-back lines, tense legs, close hip framing, and the feeling of being caught 
     related: ["hokkaido-omorashi", "okinawa-soso", "hikagami", "gokujiri"]
   },
   {
+    id: "omorashi-sankei",
+    folder: "おもらし三景",
+    title: { ja: "おもらし三景セット" },
+    series: "旅情フェチ紀行",
+    cover: pathFor("おもらし三景", "cover", "表紙.png"),
+    samples: makeSamples("おもらし三景", ["1.jpg", "2.jpg", "3.jpg"]),
+    count: "300枚",
+    format: "3地域 × 各100枚",
+    focus: "北海道 / 瀬戸内 / 沖縄",
+    summary: "北海道・瀬戸内・沖縄の地域テーマを各100枚ずつまとめた、旅情系おもらしCGセット。",
+    description: {
+      ja: `3つの地域テーマをまとめて楽しめる、高解像度AI CG 300枚セットです。
+
+「北海道おもらし紀行」「瀬戸内おもらし紀行」「沖縄ちゅらさん粗相」をベースに、各作品100枚ずつ、合計300枚を収録しています。
+
+北海道は、広がりのある風景や旅先の空気を取り入れた冬の地域テーマ。瀬戸内は、本編500枚版とは異なる切り口で構成した、穏やかな港町の空気感を残した100枚版。沖縄は、南国らしい背景やリゾートの雰囲気と、シチュエーション重視の流れを楽しめる構成です。
+
+個別作品の雰囲気をまとめて確認したい方、地域テーマの旅行シチュエーションを横断して楽しみたい方向けのセット商品です。`,
+      en: `A high-resolution 300-image AI CG set built around three regional travel themes.
+
+This set brings together Hokkaido Omorashi Journey, Setouchi Omorashi Journey, and Okinawa Churasan Accident, with 100 images from each title for a total of 300 images.
+
+Hokkaido focuses on wide northern scenery and the mood of winter travel. Setouchi is a separate 100-image edit from the larger 500-image archive, keeping the calm atmosphere of a harbor town. Okinawa brings together tropical backgrounds, resort ambience, and situation-focused travel scenes.
+
+It is designed as a bundle for readers who want to compare the atmosphere of the included works and enjoy regional travel scenarios in one set.`
+    },
+    phases: ["旅情", "地域テーマ", "南国", "港町", "リゾート", "ローカル感", "シチュエーション重視"],
+    tags: ["おもらし", "旅行", "旅情", "地域テーマ", "リゾート背景", "屋外背景", "まとめ版"],
+    salesLinks: saleLinkTemplate,
+    related: ["hokkaido-omorashi", "setouchi-omorashi", "okinawa-soso"]
+  },
+  {
     id: "eroboxin-4649",
     folder: "エロボキシン4649",
     title: { ja: "エロボキシン4649" },
@@ -437,6 +469,10 @@ The images move through morning streets, stairs, classrooms, and small daily mom
 ];
 
 const salesByWorkId = {
+  "omorashi-sankei": {
+    pictSPACE: "https://pictspace.net/items/detail/863949",
+    BOOTH: "https://esunamura.booth.pm/items/8311289"
+  },
   "setouchi-omorashi": {
     BOOTH: "https://esunamura.booth.pm/items/8116002",
     pictSPACE: "https://pictspace.net/items/manage_detail/837289",

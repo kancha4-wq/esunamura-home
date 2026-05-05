@@ -214,6 +214,18 @@
     links: {
       BOOTH: "https://esunamura.booth.pm/items/8300644"
     }
+  },
+  {
+    title: { ja: "おもらし三景セット / Omorashi Three-Scenery Set", en: "Omorashi Three-Scenery Set / おもらし三景セット" },
+    slug: "omorashi-sankei-set",
+    image: "0501_改修資料/おもらし三景/1_表紙/表紙.png",
+    thumbnail: "0501_改修資料/おもらし三景/1_表紙/表紙.png",
+    imageWidth: 1000,
+    imageHeight: 700,
+    links: {
+      pictSPACE: "https://pictspace.net/items/detail/863949",
+      BOOTH: "https://esunamura.booth.pm/items/8311289"
+    }
   }
 ];
 
@@ -264,6 +276,12 @@ const workDescriptions = {
     en: "A winter travel scenario through snow, inns, stations, and growing tension.",
     zh: "雪景、温泉街、车站与雪路。冬季旅途中逐渐逼近极限的情境作品。",
     ko: "설경, 온천 마을, 역, 눈길. 겨울 여행지에서 한계에 가까워지는 여행 시추에이션."
+  },
+  "omorashi-sankei-set": {
+    ja: "北海道・瀬戸内・沖縄の地域テーマを各100枚ずつまとめた、旅情系おもらしCGセット。",
+    en: "A 300-image travel-themed omorashi set collecting Hokkaido, Setouchi, and Okinawa scenes.",
+    zh: "汇总北海道、濑户内、冲绳三个地域主题，各100张、共300张的旅情系失禁CG套装。",
+    ko: "홋카이도, 세토우치, 오키나와 지역 테마를 각 100장씩 모은 총 300장 여행 정취 오모라시 CG 세트."
   },
   "blonde-shrine-maiden": {
     ja: "導入、催眠、理性崩壊、放心へ。和装と肌質感を重視した段階進行の作品。",
@@ -333,6 +351,7 @@ const workTitleTranslations = {
   "hikagami": { zh: "膝后 / Hikagami", ko: "오금 / Hikagami" },
   "setouchi-omorashi-journey": { zh: "濑户内失禁纪行 / Setouchi Omorashi Journey", ko: "세토우치 오모라시 기행 / Setouchi Omorashi Journey" },
   "hokkaido-omorashi-journey": { zh: "北海道失禁纪行 / Hokkaido Omorashi Journey", ko: "홋카이도 오모라시 기행 / Hokkaido Omorashi Journey" },
+  "omorashi-sankei-set": { zh: "失禁三景套装 / Omorashi Three-Scenery Set", ko: "오모라시 삼경 세트 / Omorashi Three-Scenery Set" },
   "blonde-shrine-maiden": { zh: "金发巫女 / Blonde Shrine Maiden", ko: "금발 무녀 / Blonde Shrine Maiden" },
   "gokujiri": { zh: "极臀 / Gokujiri", ko: "고쿠지리 / Gokujiri" },
   "okinawa-churasan-accident": { zh: "冲绳美少女失误 / Okinawa Churasan Accident", ko: "오키나와 추라상 사고 / Okinawa Churasan Accident" },
@@ -375,6 +394,12 @@ const workArchiveMeta = {
     quality: "4K",
     series: { ja: "旅情フェチ紀行", en: "Travel Fetish Archive", zh: "旅情主题纪行", ko: "여행 정취 페티시" },
     tags: { ja: ["北海道", "冬背景"], en: ["Hokkaido", "Winter"], zh: ["北海道", "冬季背景"], ko: ["홋카이도", "겨울 배경"] }
+  },
+  "omorashi-sankei-set": {
+    count: { ja: "300枚収録", en: "300 images", zh: "收录300张", ko: "300장 수록" },
+    quality: "4K",
+    series: { ja: "三景セット", en: "Three-Scenery Set", zh: "三景套装", ko: "삼경 세트" },
+    tags: { ja: ["旅情", "地域テーマ"], en: ["Travel mood", "Regional themes"], zh: ["旅情", "地域主题"], ko: ["여행 정취", "지역 테마"] }
   },
   "blonde-shrine-maiden": {
     count: { ja: "300枚収録", en: "300 images", zh: "收录300张", ko: "300장 수록" },
@@ -445,6 +470,7 @@ const detailPageBySlug = {
   "hikagami": "hikagami",
   "setouchi-omorashi-journey": "setouchi-omorashi",
   "hokkaido-omorashi-journey": "hokkaido-omorashi",
+  "omorashi-sankei-set": "omorashi-sankei",
   "blonde-shrine-maiden": "kinpatsu-miko",
   "gokujiri": "gokujiri",
   "okinawa-churasan-accident": "okinawa-soso",

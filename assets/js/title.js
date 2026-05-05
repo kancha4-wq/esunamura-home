@@ -75,6 +75,7 @@
     "hikagami": { en: "Hikagami", zh: "膝后", ko: "오금" },
     "setouchi-omorashi": { en: "Setouchi Omorashi Journey", zh: "濑户内失禁纪行", ko: "세토우치 오모라시 기행" },
     "hokkaido-omorashi": { en: "Hokkaido Omorashi Journey", zh: "北海道失禁纪行", ko: "홋카이도 오모라시 기행" },
+    "omorashi-sankei": { en: "Omorashi Three-Scenery Set", zh: "失禁三景套装", ko: "오모라시 삼경 세트" },
     "kinpatsu-miko": { en: "Blonde Shrine Maiden", zh: "金发巫女", ko: "금발 무녀" },
     "gokujiri": { en: "Gokujiri", zh: "极臀", ko: "고쿠지리" },
     "okinawa-soso": { en: "Okinawa Churasan Accident", zh: "冲绳美少女失误", ko: "오키나와 추라상 사고" },
@@ -95,6 +96,15 @@
       },
       format: { en: "Luxury resort hotel progression", zh: "高级度假酒店动线", ko: "고급 리조트 호텔 진행" },
       focus: { en: "Night pool / Lounge / Bathhouse / Bedroom", zh: "夜间泳池 / 酒廊 / 大浴场 / 卧室", ko: "나이트풀 / 라운지 / 대욕장 / 침실" }
+    },
+    "omorashi-sankei": {
+      summary: {
+        en: "A 300-image travel-themed omorashi set collecting Hokkaido, Setouchi, and Okinawa scenes.",
+        zh: "汇总北海道、濑户内、冲绳三个地域主题，各100张、共300张的旅情系失禁CG套装。",
+        ko: "홋카이도, 세토우치, 오키나와 지역 테마를 각 100장씩 모은 총 300장 여행 정취 오모라시 CG 세트."
+      },
+      format: { en: "3 regions x 100 images each", zh: "3个地域 x 各100张", ko: "3개 지역 x 각 100장" },
+      focus: { en: "Hokkaido / Setouchi / Okinawa", zh: "北海道 / 濑户内 / 冲绳", ko: "홋카이도 / 세토우치 / 오키나와" }
     },
     "eroboxin-4649": {
       summary: { en: "A domestic story where ordinary rooms gradually turn into a denser, more intimate flow.", zh: "日常房间逐渐变得浓密，空间移动本身形成段落的作品。", ko: "일상 공간이 점점 짙은 시간으로 변해가는 실내 동선 중심 작품." },
@@ -238,6 +248,29 @@ It is an omnibus-style collection not bound to a single story, built around hika
 넓은 구도부터 근접 구도, 피부 질감을 강조한 초근접 컷까지 단계적으로 오금 부위를 즐길 수 있도록 구성했습니다.
 
 하나의 스토리에 묶이지 않고 오금, 허벅지, 힙, 절대영역 등 하반신 모티프를 중심으로 구성한 옴니버스형 컬렉션으로, 총 322장을 수록했습니다.`
+    },
+    "omorashi-sankei": {
+      en: `A high-resolution 300-image AI CG set built around three regional travel themes.
+
+This set brings together Hokkaido Omorashi Journey, Setouchi Omorashi Journey, and Okinawa Churasan Accident, with 100 images from each title for a total of 300 images.
+
+Hokkaido focuses on wide northern scenery and the mood of winter travel. Setouchi is a separate 100-image edit from the larger 500-image archive, keeping the calm atmosphere of a harbor town. Okinawa brings together tropical backgrounds, resort ambience, and situation-focused travel scenes.
+
+It is designed as a bundle for readers who want to compare the atmosphere of the included works and enjoy regional travel scenarios in one set.`,
+      zh: `这是一套以三个地域旅行主题构成的高分辨率 AI CG 300张套装。
+
+本套装收录《北海道失禁纪行》《濑户内失禁纪行》《冲绳美少女失误》三部作品的内容，每部各100张，合计300张。
+
+北海道部分重视北国开阔风景与冬季旅途氛围。濑户内部分是不同于500张本篇的100张独立编辑版，保留了港町平静的空气感。冲绳部分则结合南国背景、度假氛围与情境推进。
+
+适合想一次确认收录作品氛围、并横向欣赏地域主题旅行情境的用户。`,
+      ko: `세 가지 지역 여행 테마를 중심으로 구성한 고해상도 AI CG 300장 세트입니다.
+
+이 세트는 “홋카이도 오모라시 기행”, “세토우치 오모라시 기행”, “오키나와 추라상 사고”를 바탕으로 각 작품 100장씩, 총 300장을 수록했습니다.
+
+홋카이도는 넓게 펼쳐진 북쪽 풍경과 겨울 여행의 공기를 중심으로 합니다. 세토우치는 500장 본편과는 다른 관점으로 구성한 100장 편집판으로, 잔잔한 항구 마을의 분위기를 남겼습니다. 오키나와는 남국 배경, 리조트 분위기, 시추에이션 중심의 흐름을 함께 담았습니다.
+
+수록 작품의 분위기를 한 번에 확인하고, 지역 테마의 여행 시추에이션을 함께 즐기고 싶은 분들을 위한 세트 상품입니다.`
     },
     "hikagami-school": {
       en: `From waking up in the morning and changing into a uniform, to commuting to school, attending class, returning home, and spending time in her room.
@@ -638,6 +671,13 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
 寒さ、移動、緊張感、そして少しずつ追い込まれていく空気感を重視し、旅行作品らしい流れで構成しています。
 
 北海道の景色や雰囲気を背景として楽しみながら、フェチシチュエーションを味わえる、旅情系シリーズ作品です。`,
+    "omorashi-sankei": `3つの地域テーマをまとめて楽しめる、高解像度AI CG 300枚セットです。
+
+「北海道おもらし紀行」「瀬戸内おもらし紀行」「沖縄ちゅらさん粗相」をベースに、各作品100枚ずつ、合計300枚を収録しています。
+
+北海道は、広がりのある風景や旅先の空気を取り入れた冬の地域テーマ。瀬戸内は、本編500枚版とは異なる切り口で構成した、穏やかな港町の空気感を残した100枚版。沖縄は、南国らしい背景やリゾートの雰囲気と、シチュエーション重視の流れを楽しめる構成です。
+
+個別作品の雰囲気をまとめて確認したい方、地域テーマの旅行シチュエーションを横断して楽しみたい方向けのセット商品です。`,
     "ancient-capital-beauty": `古都の情景と和装美人を軸にした、しっとりした空気感の作品。
 
 神社、旅館、露天風呂、夜の和室へと場面が移りながら、距離感や表情が少しずつ変化していく流れを描いています。
@@ -779,8 +819,16 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
     "構図重視": { zh: "重视构图", ko: "구도 중시" },
     "南国": { zh: "南国", ko: "남국" },
     "旅行": { zh: "旅行", ko: "여행" },
+    "旅情": { zh: "旅情", ko: "여행 정취" },
+    "地域テーマ": { zh: "地域主题", ko: "지역 테마" },
+    "港町": { zh: "港町", ko: "항구 마을" },
+    "リゾート": { zh: "度假", ko: "리조트" },
+    "ローカル感": { zh: "本地感", ko: "로컬감" },
+    "シチュエーション重視": { zh: "重视情境", ko: "시추에이션 중시" },
     "我慢": { zh: "忍耐", ko: "참음" },
     "リゾート背景": { zh: "度假背景", ko: "리조트 배경" },
+    "屋外背景": { zh: "户外背景", ko: "야외 배경" },
+    "まとめ版": { zh: "汇总版", ko: "합본판" },
     "北海道": { zh: "北海道", ko: "홋카이도" },
     "雪景色": { zh: "雪景", ko: "설경" },
     "冬背景": { zh: "冬季背景", ko: "겨울 배경" },
@@ -826,6 +874,15 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
     "hokkaido-omorashi": {
       pixiv: "https://www.pixiv.net/users/21257126/artworks/%E5%8C%97%E6%B5%B7%E9%81%93%E3%81%8A%E3%82%82%E3%82%89%E3%81%97%E7%B4%80%E8%A1%8C",
       promptcom: "https://prompt-com.com/ja/tags/%E5%8C%97%E6%B5%B7%E9%81%93%E3%81%8A%E3%82%82%E3%82%89%E3%81%97%E7%B4%80%E8%A1%8C%E7%84%A1%E6%96%99?product_typegallery&rating=all"
+    },
+    "omorashi-sankei": {
+      title: {
+        ja: "収録作品の雰囲気はこちらから確認できます",
+        en: "Preview the included works",
+        zh: "可在此查看收录作品的氛围",
+        ko: "수록 작품의 분위기를 여기에서 확인할 수 있습니다"
+      },
+      includedWorks: ["hokkaido-omorashi", "setouchi-omorashi", "okinawa-soso"]
     },
     "setouchi-omorashi": {
       pixiv: "https://www.pixiv.net/users/21257126/artworks/%E7%80%AC%E6%88%B8%E5%86%85%E3%81%8A%E3%82%82%E3%82%89%E3%81%97%E7%B4%80%E8%A1%8C",
@@ -1080,12 +1137,30 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
   function renderPreviewLinks(item) {
     const links = previewLinks[item.id];
     if (!links) return "";
+    const previewTitle = typeof links.title === "object"
+      ? links.title[currentLang()] || links.title.ja
+      : uiText("preview");
+    if (Array.isArray(links.includedWorks)) {
+      const includedWorks = links.includedWorks
+        .map((id) => works.find((candidate) => candidate.id === id))
+        .filter(Boolean);
+      return `
+        <div class="detail-panel preview-links-panel">
+          <h2>${previewTitle}</h2>
+          <div class="preview-detail-links">
+            ${includedWorks.map((includedWork) => `
+              <a class="sales-button" href="${detailPageUrl(includedWork)}">${titleOf(includedWork)}</a>
+            `).join("")}
+          </div>
+        </div>
+      `;
+    }
     return `
       <div class="detail-panel preview-links-panel">
-        <h2>${uiText("preview")}</h2>
+        <h2>${previewTitle}</h2>
         <div class="preview-detail-links">
-          <a class="sales-button" href="${links.pixiv}" target="_blank" rel="noopener" data-analytics-platform="pixiv" data-analytics-work="${item.id}">${uiText("pixiv")}</a>
-          <a class="sales-button" href="${links.promptcom}" target="_blank" rel="noopener" data-analytics-platform="promptcom" data-analytics-work="${item.id}">${uiText("promptcom")}</a>
+          <a class="sales-button" href="${links.pixiv}" target="_blank" rel="noopener noreferrer" data-analytics-platform="pixiv" data-analytics-work="${item.id}">${uiText("pixiv")}</a>
+          <a class="sales-button" href="${links.promptcom}" target="_blank" rel="noopener noreferrer" data-analytics-platform="promptcom" data-analytics-work="${item.id}">${uiText("promptcom")}</a>
         </div>
       </div>
     `;
