@@ -483,6 +483,11 @@ const detailPageBySlug = {
   "kyoto-prompt-pack": "kyoto-prompt-pack/index.html"
 };
 
+const newReleaseLabels = {
+  "omorashi-sankei-set": "NEW / 2026.05",
+  "kyoto-prompt-pack": "NEW / 2026.05"
+};
+
 function detailHref(work) {
   const id = detailPageBySlug[work.slug] || work.slug;
   if (id.includes("/")) {
@@ -545,6 +550,15 @@ function createArchiveBadges(work, compact = false) {
     badges.append(badge);
   });
   return badges;
+}
+
+function createNewReleaseBadge(work) {
+  const label = newReleaseLabels[work.slug];
+  if (!label) return null;
+  const badge = document.createElement("span");
+  badge.className = "new-release-badge";
+  badge.textContent = label;
+  return badge;
 }
 
 function keepImageFrameStable(image, imageFrame) {
@@ -816,7 +830,10 @@ function renderPickups() {
       image.loading = "lazy";
       image.decoding = "async";
       keepImageFrameStable(image, imageFrame);
-      imageFrame.append(image, createArchiveBadges(work, true));
+      imageFrame.append(image);
+      const releaseBadge = createNewReleaseBadge(work);
+      if (releaseBadge) imageFrame.append(releaseBadge);
+      imageFrame.append(createArchiveBadges(work, true));
 
       const copy = document.createElement("div");
 
@@ -857,7 +874,10 @@ function renderWorks() {
     image.loading = "lazy";
     image.decoding = "async";
     keepImageFrameStable(image, imageFrame);
-    imageFrame.append(image, createArchiveBadges(work));
+    imageFrame.append(image);
+    const releaseBadge = createNewReleaseBadge(work);
+    if (releaseBadge) imageFrame.append(releaseBadge);
+    imageFrame.append(createArchiveBadges(work));
 
     const copy = document.createElement("div");
     copy.className = "work-copy";
