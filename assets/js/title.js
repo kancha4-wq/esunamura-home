@@ -5,7 +5,7 @@
   const staticTranslatableNodes = document.querySelectorAll("[data-ja]");
   const params = new URLSearchParams(location.search);
   const requestedWorkId = window.DETAIL_WORK_ID || params.get("id");
-  const work = works.find((item) => item.id === requestedWorkId) || works[0];
+  const work = works.find((item) => item.id === requestedWorkId) || (!requestedWorkId ? works[0] : null);
   const ui = {
     ja: {
       sales: "販売サイト",
@@ -1171,6 +1171,16 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
     staticTranslatableNodes.forEach((node) => {
       node.textContent = node.dataset[currentLang()] || node.dataset.ja;
     });
+    if (!work) {
+      app.innerHTML = `
+        <section class="detail-panel">
+          <p class="eyebrow">Not Found</p>
+          <h1>作品データを読み込めませんでした</h1>
+          <p class="lead">ページを再読み込みしても表示されない場合は、作品一覧から開き直してください。</p>
+        </section>
+      `;
+      return;
+    }
     document.title = `${titleOf(work)} | Esunamura Collection`;
     app.innerHTML = `
       <section class="detail-hero">
