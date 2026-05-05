@@ -223,6 +223,7 @@
     imageWidth: 1000,
     imageHeight: 700,
     links: {
+      DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0337987/AFID=esunamura/",
       pictSPACE: "https://pictspace.net/items/detail/863949",
       BOOTH: "https://esunamura.booth.pm/items/8311289"
     }

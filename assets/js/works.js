@@ -470,6 +470,7 @@ The images move through morning streets, stairs, classrooms, and small daily mom
 
 const salesByWorkId = {
   "omorashi-sankei": {
+    DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0337987/AFID=esunamura/",
     pictSPACE: "https://pictspace.net/items/detail/863949",
     BOOTH: "https://esunamura.booth.pm/items/8311289"
   },
