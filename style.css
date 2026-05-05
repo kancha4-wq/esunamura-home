@@ -571,6 +571,7 @@ h2 {
 .pickup-card {
   display: grid;
   gap: 8px;
+  position: relative;
   padding: 10px;
   border: 1px solid var(--line);
   border-radius: 14px;
@@ -667,19 +668,19 @@ h2 {
 
 .new-release-badge {
   position: absolute;
-  top: 8px;
-  left: 8px;
+  top: 10px;
+  left: 10px;
   z-index: 2;
   display: inline-flex;
   align-items: center;
-  min-height: 22px;
-  padding: 2px 8px;
-  border: 1px solid rgba(245, 211, 145, 0.72);
+  min-height: 20px;
+  padding: 2px 7px;
+  border: 1px solid rgba(245, 211, 145, 0.46);
   border-radius: 999px;
-  background: linear-gradient(135deg, rgba(230, 177, 95, 0.96), rgba(190, 132, 52, 0.92));
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.28);
-  color: #1a1209;
-  font-size: 0.68rem;
+  background: rgba(38, 29, 18, 0.72);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.22);
+  color: rgba(255, 219, 151, 0.9);
+  font-size: 0.62rem;
   font-weight: 900;
   line-height: 1.1;
   white-space: nowrap;
@@ -909,6 +910,7 @@ h2 {
 
 .work-card {
   overflow: hidden;
+  position: relative;
   background: rgba(38, 33, 31, 0.92);
 }
 

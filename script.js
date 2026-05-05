@@ -830,10 +830,7 @@ function renderPickups() {
       image.loading = "lazy";
       image.decoding = "async";
       keepImageFrameStable(image, imageFrame);
-      imageFrame.append(image);
-      const releaseBadge = createNewReleaseBadge(work);
-      if (releaseBadge) imageFrame.append(releaseBadge);
-      imageFrame.append(createArchiveBadges(work, true));
+      imageFrame.append(image, createArchiveBadges(work, true));
 
       const copy = document.createElement("div");
 
@@ -850,6 +847,8 @@ function renderPickups() {
 
       copy.append(title, text, link);
       card.append(imageFrame, copy);
+      const releaseBadge = createNewReleaseBadge(work);
+      if (releaseBadge) card.append(releaseBadge);
       pickupGrid.append(card);
     });
 }
@@ -874,10 +873,7 @@ function renderWorks() {
     image.loading = "lazy";
     image.decoding = "async";
     keepImageFrameStable(image, imageFrame);
-    imageFrame.append(image);
-    const releaseBadge = createNewReleaseBadge(work);
-    if (releaseBadge) imageFrame.append(releaseBadge);
-    imageFrame.append(createArchiveBadges(work));
+    imageFrame.append(image, createArchiveBadges(work));
 
     const copy = document.createElement("div");
     copy.className = "work-copy";
@@ -900,6 +896,8 @@ function renderWorks() {
 
     copy.append(title, note, links);
     card.append(imageFrame, copy);
+    const releaseBadge = createNewReleaseBadge(work);
+    if (releaseBadge) card.append(releaseBadge);
     worksGrid.append(card);
   });
 }
