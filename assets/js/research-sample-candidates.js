@@ -1,4 +1,4 @@
-window.researchSampleCandidates = {
+﻿window.researchSampleCandidates = {
   "generated_from": "selected_samples_codex_ascii_v2.zip + selected_bangs_codex_test18.zip + selected_hairstyle_test19_codex.zip + hairstyle_test19_codex_simple_store.zip + bangs_test20_codex_simple_store.zip",
   "notes": "Selected candidate samples for Esunamura research page. Test19 hairstyle and Test20 bangs candidates are added as supplemental verification material.",
   "sections": [
@@ -138,10 +138,10 @@ window.researchSampleCandidates = {
       "role": "main",
       "focus": "青系",
       "expected_result": "暗め青髪。黒髪との差別化が出るか確認",
-      "filename": "navy_blue_hair_181138188_02.png",
+      "filename": "navy_blue_hair_1065230368_03.png",
       "reason": "暗め青髪。黒髪との差別化が出るか確認。暗色青。",
-      "source_path": "selected/hair_color_test21/navy_blue_hair/navy_blue_hair_181138188_02.png",
-      "asset_path": "assets/research/hair-color/test21/navy_blue_hair/navy_blue_hair_181138188_02.png",
+      "source_path": "selected/hair_color_test21/navy_blue_hair/navy_blue_hair_1065230368_03.png",
+      "asset_path": "assets/research/hair-color/test21/navy_blue_hair/navy_blue_hair_1065230368_03.png",
       "stage": "survey",
       "important_tags": "navy blue hair",
       "positive_hair_prompt": "(navy blue hair:1.35), deep navy hair, dark blue hair, elegant dark blue anime hair, subtle blue highlights",
