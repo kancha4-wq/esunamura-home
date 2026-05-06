@@ -1978,7 +1978,7 @@ h2 {
 }
 
 .research-hero-with-visual .research-intro-trigger img {
-  aspect-ratio: 1;
+  aspect-ratio: 3 / 4;
   max-height: 210px;
   object-fit: contain;
 }
