@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="SDXL / illustriousXL 系モデルで、短めボブ、片側編み込み、サイドテールなどの髪型プロンプトを比較した検証ログです。">
+    <link rel="canonical" href="https://kancha4-wq.github.io/esunamura-home/research/hairstyle/">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="えすなむら">
+    <meta property="og:title" content="髪型プロンプト検証 | えすなむら研究室">
+    <meta property="og:description" content="SDXL / illustriousXL 系モデルで、短めボブ、片側編み込み、サイドテールなどの髪型プロンプトを比較した検証ログです。">
+    <meta property="og:url" content="https://kancha4-wq.github.io/esunamura-home/research/hairstyle/">
+    <meta property="og:image" content="https://kancha4-wq.github.io/esunamura-home/images/optimized/hero-1280.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>髪型プロンプト検証 | えすなむら研究室</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-new-32x32.png?v=2">
+    <link rel="stylesheet" href="../../style.css">
+  </head>
+  <body class="age-verified title-page research-page research-detail-page" data-research-section="hairstyle" data-root-prefix="../../">
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="profile-row">
+          <a class="avatar-link" href="../../index.html" aria-label="ホームへ戻る">
+            <img class="avatar" src="../../images/profile-icon.png" alt="えすなむら icon" width="180" height="180" decoding="async">
+          </a>
+          <div class="profile-copy">
+            <p class="creator-name">えすなむら</p>
+            <p class="tagline">AI CG / Illustration Collection</p>
+          </div>
+          <div class="language-switch" aria-label="Language">
+            <button class="lang-button is-active" type="button" data-lang="ja">日本語</button>
+            <button class="lang-button" type="button" data-lang="en">English</button>
+            <button class="lang-button" type="button" data-lang="zh">简体中文</button>
+            <button class="lang-button" type="button" data-lang="ko">한국어</button>
+          </div>
+        </div>
+
+        <nav class="quick-links" aria-label="Main links">
+          <a href="../../index.html" data-ja="ホーム" data-en="Home" data-zh="首页" data-ko="홈">ホーム</a>
+          <a href="../../works/index.html" data-ja="作品一覧" data-en="Collection" data-zh="作品列表" data-ko="작품 목록">作品一覧</a>
+          <a href="../index.html" data-ja="研究室" data-en="Research" data-zh="研究室" data-ko="연구실">研究室</a>
+        </nav>
+      </header>
+
+      <main>
+        <nav class="research-subnav" aria-label="Research pages">
+          <a class="is-active" href="index.html" data-ja="髪型" data-en="Hairstyle" data-zh="发型" data-ko="헤어스타일">髪型</a>
+          <a href="../bangs/index.html" data-ja="前髪" data-en="Bangs" data-zh="刘海" data-ko="앞머리">前髪</a>
+          <a href="../hair-color/index.html" data-ja="髪色" data-en="Hair Color" data-zh="发色" data-ko="헤어 컬러">髪色</a>
+          <a href="../background/index.html" data-ja="背景" data-en="Background" data-zh="背景" data-ko="배경">背景</a>
+        </nav>
+
+        <section class="detail-hero research-hero">
+          <div class="detail-copy">
+            <p class="eyebrow">Prompt Verification</p>
+            <h1 data-ja="髪型プロンプト検証" data-en="Hairstyle Prompt Verification" data-zh="发型 Prompt 验证" data-ko="헤어스타일 프롬프트 검증">髪型プロンプト検証</h1>
+            <p class="lead" data-ja="短めボブ、サイド編み込み、サイドテールなど、髪型シルエットの違いを比較しています。<br>キャラクターの印象を崩さずに髪型だけを変えるには、どんな言葉が効くのかを整理した検証ログです。" data-en="Comparing hairstyle silhouette differences such as short bob, side braid, and side ponytail. This log organizes which words help change only the hairstyle without breaking the character impression." data-zh="比较短波波头、侧编发、侧马尾等发型轮廓差异。这个验证日志整理了在不破坏角色印象的前提下，只改变发型时有效的词语。" data-ko="짧은 보브, 사이드 브레이드, 사이드 테일 등 헤어스타일 실루엣 차이를 비교합니다. 캐릭터 인상을 유지하면서 헤어스타일만 바꾸기 위해 어떤 단어가 효과적인지 정리한 검증 로그입니다.">短めボブ、サイド編み込み、サイドテールなど、髪型シルエットの違いを比較しています。<br>キャラクターの印象を崩さずに髪型だけを変えるには、どんな言葉が効くのかを整理した検証ログです。</p>
+          </div>
+        </section>
+
+        <div id="researchSections"></div>
+      </main>
+
+      <footer class="site-footer">
+        <p data-ja="無断転載、二次配布、AI再学習利用禁止" data-en="Unauthorized reproduction, redistribution, and use for AI training are prohibited." data-zh="禁止转载、二次分发及用于AI再训练。" data-ko="무단 전재, 2차 배포, AI 재학습 이용 금지">無断転載、二次配布、AI再学習利用禁止</p>
+        <p data-ja="登場キャラクターは全て18歳以上です。" data-en="All characters are 18 or older." data-zh="登场角色均为18岁以上。" data-ko="등장 캐릭터는 모두 18세 이상입니다.">登場キャラクターは全て18歳以上です。</p>
+      </footer>
+    </div>
+
+    <script src="../../assets/js/research-sample-candidates.js"></script>
+    <script src="../../assets/js/research.js"></script>
+    <script src="../../assets/js/back-to-top.js"></script>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

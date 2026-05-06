@@ -238,6 +238,7 @@ const worksGrid = document.querySelector("#worksGrid");
 const pickupGrid = document.querySelector("#pickupGrid");
 const languageButtons = document.querySelectorAll(".lang-button");
 const translatableNodes = document.querySelectorAll("[data-ja]");
+const pathPrefix = document.body.dataset.pathPrefix || "";
 const ageGateEnter = document.querySelector(".age-gate-enter");
 const ageGateLeave = document.querySelector(".age-gate-leave");
 const readingTabs = document.querySelectorAll("[data-reading-tab]");
@@ -339,10 +340,10 @@ const workDescriptions = {
     ko: "나이트풀, 최상층 라운지, 대욕장, 침실. 고급 리조트 공간을 이동하는 작품."
   },
   "kyoto-prompt-pack": {
-    ja: "京都風・和風背景生成向けPrompt Pack。町家、鳥居、石畳、縁側などの空気感を収録。",
-    en: "A Kyoto-inspired background Prompt Pack for SDXL generation, focused on machiya, torii gates, stone pavements, verandas, and atmosphere.",
-    zh: "京都风・和风背景生成向Prompt Pack。收录町家、鸟居、石板路、缘侧等氛围。",
-    ko: "교토풍・일본식 배경 생성을 위한 Prompt Pack. 마치야, 도리이, 돌길, 툇마루 등의 분위기를 담았습니다."
+    ja: "研究室公開記念の無料Prompt Pack。SDXL / illustriousXL 系モデル向けの京都風・和風背景プロンプト検証素材です。",
+    en: "A free research-linked Prompt Pack for SDXL / illustriousXL background prompt verification with Kyoto-inspired atmosphere.",
+    zh: "研究室公开纪念免费 Prompt Pack。面向 SDXL / illustriousXL 系模型的京都风・和风背景 prompt 验证素材。",
+    ko: "연구실 공개 기념 무료 Prompt Pack. SDXL / illustriousXL 계열 모델용 교토풍・일본풍 배경 프롬프트 검증 소재입니다."
   }
 };
 
@@ -457,10 +458,10 @@ const workArchiveMeta = {
     tags: { ja: ["高級リゾート", "夜景"], en: ["Luxury resort", "Night view"], zh: ["高级度假", "夜景"], ko: ["고급 리조트", "야경"] }
   },
   "kyoto-prompt-pack": {
-    count: { ja: "Prompt Pack", en: "Prompt Pack", zh: "Prompt Pack", ko: "Prompt Pack" },
+    count: { ja: "無料Prompt Pack", en: "Free Prompt Pack", zh: "免费Prompt Pack", ko: "무료 Prompt Pack" },
     quality: "SDXL",
-    series: { ja: "Background", en: "Background", zh: "Background", ko: "Background" },
-    tags: { ja: ["京都風", "背景生成"], en: ["Kyoto style", "Background"], zh: ["京都风", "背景生成"], ko: ["교토풍", "배경 생성"] }
+    series: { ja: "研究室連動", en: "Research-linked", zh: "研究室联动", ko: "연구실 연동" },
+    tags: { ja: ["背景検証", "京都風"], en: ["Background test", "Kyoto style"], zh: ["背景验证", "京都风"], ko: ["배경 검증", "교토풍"] }
   }
 };
 
@@ -492,9 +493,16 @@ const newReleaseLabels = {
 function detailHref(work) {
   const id = detailPageBySlug[work.slug] || work.slug;
   if (id.includes("/")) {
-    return id;
+    return `${pathPrefix}${id}`;
   }
-  return `titles/${encodeURIComponent(id)}.html`;
+  return `${pathPrefix}titles/${encodeURIComponent(id)}.html`;
+}
+
+function localAssetPath(path) {
+  if (!path || /^(?:[a-z]+:)?\/\//i.test(path) || path.startsWith("/") || path.startsWith("#")) {
+    return path;
+  }
+  return `${pathPrefix}${path}`;
 }
 
 function workDescription(work) {
@@ -526,6 +534,14 @@ function archiveBadgesFor(work) {
 }
 
 function salesFormatBadgesFor(work) {
+  if (work.slug === "kyoto-prompt-pack") {
+    return [{
+      ja: "無料配布",
+      en: "Free distribution",
+      zh: "免费配布",
+      ko: "무료 배포"
+    }[currentLanguage] || "無料配布"];
+  }
   const labelJoin = currentLanguage === "ja" ? "：" : ": ";
   const formats = {
     FANZA: "4K ZIP",
@@ -824,7 +840,7 @@ function renderPickups() {
       imageFrame.setAttribute("aria-label", `${workTitle(work)} ${detailButtonText(true)}`);
 
       const image = document.createElement("img");
-      image.src = work.thumbnail || work.image;
+      image.src = localAssetPath(work.thumbnail || work.image);
       image.alt = work.title.ja;
       image.width = work.imageWidth;
       image.height = work.imageHeight;
@@ -867,7 +883,7 @@ function renderWorks() {
     imageFrame.setAttribute("aria-label", `${workTitle(work)} ${detailButtonText(true)}`);
 
     const image = document.createElement("img");
-    image.src = work.thumbnail || work.image;
+    image.src = localAssetPath(work.thumbnail || work.image);
     image.alt = work.title.ja;
     image.width = work.imageWidth;
     image.height = work.imageHeight;
