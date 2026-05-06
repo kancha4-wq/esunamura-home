@@ -1933,6 +1933,29 @@ h2 {
   background: #0b0b0b;
 }
 
+@media (max-width: 900px) {
+  .research-intro-visual {
+    margin: -4px 0 0;
+    padding: 8px;
+    border-radius: 14px;
+  }
+
+  .research-intro-visual img {
+    max-height: min(46vw, 420px);
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 760px) {
+  .research-page main {
+    gap: 22px;
+  }
+
+  .research-intro-visual {
+    display: none;
+  }
+}
+
 .research-jump-links {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   margin-top: 18px;
