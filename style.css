@@ -1899,6 +1899,19 @@ h2 {
   max-width: 920px;
 }
 
+.research-share-links {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 16px;
+}
+
+.research-share-links .share-x-button {
+  width: fit-content;
+  min-width: 128px;
+  min-height: 34px;
+  padding-inline: 15px;
+}
+
 .research-jump-links {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   margin-top: 18px;

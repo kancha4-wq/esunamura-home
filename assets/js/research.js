@@ -94,6 +94,14 @@
     hair_color: ["hair_color_test21", "hair_color"]
   };
 
+  const shareText = {
+    research: "SDXL / illustriousXL 系モデル向けのプロンプト検証ログをまとめました。\n髪型、前髪、髪色、背景など、AIイラスト用の指定を比較しています。",
+    hairstyle: "SDXL / illustriousXL 系モデル向けの髪型プロンプト検証をまとめました。\nショートボブ、姫カット、ツインテール、お団子など、AIイラスト用の髪型表現を比較しています。",
+    bangs: "SDXL / illustriousXL 系モデル向けの前髪プロンプト検証をまとめました。\nシースルー前髪、流し前髪、重め前髪、片目隠れ前髪などを比較しています。",
+    hair_color: "SDXL / illustriousXL 系モデル向けの髪色プロンプト検証をまとめました。\nピンク系、ブロンド系、青系、紫系、緑系などの髪色表現を比較しています。",
+    background: "SDXL / illustriousXL 系モデル向けの背景プロンプト検証をまとめました。\n京都風、和風町並み、温泉旅館、海辺、リゾートなどの背景表現を比較しています。"
+  };
+
   const pageSectionGroups = {
     hairstyle: ["hairstyle_test19", "hairstyle"],
     bangs: ["bangs_test20", "bangs"],
@@ -104,6 +112,26 @@
     return `${rootPrefix}${path}`;
   }
 
+  function pageShareUrl() {
+    const canonical = document.querySelector('link[rel="canonical"]')?.href;
+    return canonical || window.location.href.split("#")[0];
+  }
+
+  function shareIntentUrl(topic) {
+    const params = new URLSearchParams({
+      text: shareText[topic] || shareText.research,
+      url: pageShareUrl()
+    });
+    return `https://twitter.com/intent/tweet?${params.toString()}`;
+  }
+
+  function updateShareLinks() {
+    document.querySelectorAll(".research-share-button").forEach((link) => {
+      const topic = link.dataset.shareTopic || document.body.dataset.shareTopic || pageSection || "research";
+      link.href = shareIntentUrl(topic);
+    });
+  }
+
   function escapeHTML(value) {
     return String(value ?? "")
       .replaceAll("&", "&amp;")
@@ -111,6 +139,14 @@
       .replaceAll(">", "&gt;")
       .replaceAll('"', "&quot;")
       .replaceAll("'", "&#39;");
+  }
+
+  function slugFor(value) {
+    return String(value || "")
+      .trim()
+      .toLowerCase()
+      .replace(/[^a-z0-9_]+/g, "-")
+      .replace(/^-+|-+$/g, "") || "candidate";
   }
 
   function itemsFor(sectionId) {
@@ -237,8 +273,9 @@
 
   function renderCandidateCard(item) {
     const tag = importantTagFor(item);
+    const candidateId = slugFor(item.theme_name || item.theme || item.important_tags || item.jp_label);
     return `
-      <article class="research-candidate-card">
+      <article class="research-candidate-card" id="${escapeHTML(candidateId)}">
         <a class="research-image-link" href="${escapeHTML(withPagePrefix(item.asset_path))}" target="_blank" rel="noopener noreferrer">
           <img src="${escapeHTML(withPagePrefix(item.asset_path))}" alt="${escapeHTML(item.jp_label)}" loading="lazy" decoding="async">
         </a>
@@ -331,6 +368,11 @@
     }
     translatableNodes.forEach((node) => {
       const value = node.dataset[language] || node.dataset.ja;
+      if (node.classList.contains("share-x-button")) {
+        const label = node.querySelector("span:last-child");
+        if (label) label.textContent = value;
+        return;
+      }
       if (node.classList.contains("lead")) {
         node.innerHTML = escapeHTML(value).replaceAll("&lt;br&gt;", "<br>");
         return;
@@ -343,6 +385,7 @@
     if (pageSection) {
       renderPageSections(pageSection);
     }
+    updateShareLinks();
   }
 
   languageButtons.forEach((button) => {
