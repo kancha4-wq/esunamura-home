@@ -1942,6 +1942,8 @@ h2 {
 
 .research-hero-with-visual .research-intro-visual {
   align-self: center;
+  justify-self: end;
+  width: min(100%, 220px);
   margin: 0;
   padding: 7px;
 }
@@ -1976,8 +1978,8 @@ h2 {
 }
 
 .research-hero-with-visual .research-intro-trigger img {
-  aspect-ratio: 1080 / 1350;
-  max-height: 360px;
+  aspect-ratio: 1;
+  max-height: 210px;
   object-fit: contain;
 }
 
@@ -2060,7 +2062,7 @@ h2 {
   }
 
   .research-hero-with-visual .research-intro-trigger img {
-    max-height: 300px;
+    max-height: 190px;
   }
 }
 
@@ -2086,6 +2088,8 @@ h2 {
   }
 
   .research-hero-with-visual .research-intro-visual {
+    justify-self: start;
+    width: min(62vw, 180px);
     margin-top: 0;
   }
 
@@ -2094,7 +2098,7 @@ h2 {
   }
 
   .research-hero-with-visual .research-intro-trigger img {
-    max-height: 240px;
+    max-height: 170px;
   }
 
   .image-lightbox {
