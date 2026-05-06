@@ -1938,6 +1938,13 @@ h2 {
   cursor: zoom-in;
 }
 
+.sample-gallery a,
+.prompt-sample-gallery a,
+.prompt-hero-gallery a,
+.research-image-link {
+  cursor: zoom-in;
+}
+
 .research-intro-trigger img {
   display: block;
   width: 100%;
@@ -1957,25 +1964,7 @@ h2 {
   outline-offset: 3px;
 }
 
-.research-intro-zoom-label {
-  position: absolute;
-  right: 12px;
-  bottom: 12px;
-  display: inline-flex;
-  align-items: center;
-  min-height: 30px;
-  padding: 6px 11px;
-  border: 1px solid rgba(245, 195, 99, 0.48);
-  border-radius: 999px;
-  background: rgba(12, 10, 9, 0.78);
-  color: #f7d28a;
-  font-size: 0.76rem;
-  font-weight: 900;
-  line-height: 1;
-  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.28);
-}
-
-.research-lightbox {
+.image-lightbox {
   position: fixed;
   inset: 0;
   z-index: 120;
@@ -1987,16 +1976,16 @@ h2 {
   backdrop-filter: blur(8px);
 }
 
-.research-lightbox.is-open {
+.image-lightbox.is-open {
   display: flex;
 }
 
-.research-lightbox__inner {
+.image-lightbox__inner {
   position: relative;
   width: min(94vw, 1500px);
 }
 
-.research-lightbox__image {
+.image-lightbox__image {
   display: block;
   width: 100%;
   max-height: 86vh;
@@ -2007,7 +1996,7 @@ h2 {
   box-shadow: 0 26px 80px rgba(0, 0, 0, 0.58);
 }
 
-.research-lightbox__close {
+.image-lightbox__close {
   position: absolute;
   top: -14px;
   right: -10px;
@@ -2025,7 +2014,7 @@ h2 {
   line-height: 1;
 }
 
-.research-lightbox__close:focus-visible {
+.image-lightbox__close:focus-visible {
   outline: 2px solid rgba(245, 195, 99, 0.84);
   outline-offset: 3px;
 }
@@ -2058,29 +2047,20 @@ h2 {
     max-height: 168px;
   }
 
-  .research-intro-zoom-label {
-    right: auto;
-    left: 8px;
-    bottom: 8px;
-    min-height: 28px;
-    padding: 6px 9px;
-    font-size: 0.7rem;
-  }
-
-  .research-lightbox {
+  .image-lightbox {
     padding: max(12px, env(safe-area-inset-top)) max(8px, env(safe-area-inset-right)) max(12px, env(safe-area-inset-bottom)) max(8px, env(safe-area-inset-left));
   }
 
-  .research-lightbox__inner {
+  .image-lightbox__inner {
     width: 96vw;
   }
 
-  .research-lightbox__image {
+  .image-lightbox__image {
     max-height: 82vh;
     border-radius: 10px;
   }
 
-  .research-lightbox__close {
+  .image-lightbox__close {
     top: -10px;
     right: -4px;
     width: 38px;
