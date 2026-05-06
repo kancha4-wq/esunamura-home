@@ -132,6 +132,61 @@
     });
   }
 
+  function initIntroLightbox() {
+    const triggers = document.querySelectorAll(".research-intro-trigger");
+    if (!triggers.length) return;
+
+    const lightbox = document.createElement("div");
+    lightbox.className = "research-lightbox";
+    lightbox.setAttribute("role", "dialog");
+    lightbox.setAttribute("aria-modal", "true");
+    lightbox.setAttribute("aria-label", "紹介画像の拡大表示");
+    lightbox.innerHTML = `
+      <div class="research-lightbox__inner">
+        <button class="research-lightbox__close" type="button" aria-label="拡大表示を閉じる">×</button>
+        <img class="research-lightbox__image" src="" alt="" decoding="async">
+      </div>
+    `;
+    document.body.append(lightbox);
+
+    const closeButton = lightbox.querySelector(".research-lightbox__close");
+    const lightboxImage = lightbox.querySelector(".research-lightbox__image");
+    let activeTrigger = null;
+    let previousBodyOverflow = "";
+
+    function openLightbox(trigger) {
+      const image = trigger.querySelector("img");
+      activeTrigger = trigger;
+      lightboxImage.src = trigger.dataset.fullSrc || image?.currentSrc || image?.src || "";
+      lightboxImage.alt = trigger.dataset.fullAlt || image?.alt || "";
+      previousBodyOverflow = document.body.style.overflow;
+      document.body.style.overflow = "hidden";
+      lightbox.classList.add("is-open");
+      closeButton.focus();
+    }
+
+    function closeLightbox() {
+      if (!lightbox.classList.contains("is-open")) return;
+      lightbox.classList.remove("is-open");
+      lightboxImage.removeAttribute("src");
+      document.body.style.overflow = previousBodyOverflow;
+      if (activeTrigger) activeTrigger.focus();
+      activeTrigger = null;
+    }
+
+    triggers.forEach((trigger) => {
+      trigger.addEventListener("click", () => openLightbox(trigger));
+    });
+
+    closeButton.addEventListener("click", closeLightbox);
+    lightbox.addEventListener("click", (event) => {
+      if (event.target === lightbox) closeLightbox();
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") closeLightbox();
+    });
+  }
+
   function escapeHTML(value) {
     return String(value ?? "")
       .replaceAll("&", "&amp;")
@@ -392,6 +447,7 @@
     button.addEventListener("click", () => setLanguage(button.dataset.lang));
   });
   setLanguage(window.localStorage?.getItem("archiveLang") || "ja");
+  initIntroLightbox();
 
   if (!pageSection) return;
   if (!data || !Array.isArray(data.items)) {
