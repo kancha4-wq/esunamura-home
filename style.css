@@ -1912,6 +1912,27 @@ h2 {
   padding-inline: 15px;
 }
 
+.research-intro-visual {
+  margin: -8px 0 2px;
+  padding: clamp(8px, 1.4vw, 12px);
+  overflow: hidden;
+  border: 1px solid rgba(230, 177, 95, 0.28);
+  border-radius: 16px;
+  background:
+    linear-gradient(145deg, rgba(37, 31, 26, 0.9), rgba(17, 15, 14, 0.94));
+  box-shadow: var(--shadow);
+}
+
+.research-intro-visual img {
+  display: block;
+  width: 100%;
+  max-height: min(56vw, 620px);
+  object-fit: cover;
+  border: 1px solid rgba(230, 177, 95, 0.18);
+  border-radius: 11px;
+  background: #0b0b0b;
+}
+
 .research-jump-links {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   margin-top: 18px;
