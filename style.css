@@ -1976,8 +1976,8 @@ h2 {
 }
 
 .research-hero-with-visual .research-intro-trigger img {
-  aspect-ratio: 1200 / 630;
-  max-height: 230px;
+  aspect-ratio: 1080 / 1350;
+  max-height: 360px;
   object-fit: contain;
 }
 
@@ -2060,7 +2060,7 @@ h2 {
   }
 
   .research-hero-with-visual .research-intro-trigger img {
-    max-height: 210px;
+    max-height: 300px;
   }
 }
 
@@ -2094,7 +2094,7 @@ h2 {
   }
 
   .research-hero-with-visual .research-intro-trigger img {
-    max-height: 150px;
+    max-height: 240px;
   }
 
   .image-lightbox {
