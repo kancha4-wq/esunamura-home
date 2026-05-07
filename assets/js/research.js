@@ -160,14 +160,21 @@
     return value && String(value).trim() ? String(value) : localizedText(uiText.unset);
   }
 
-  function promptBlock(label, value) {
-    return `${label}:\n${textOrUnset(value)}`;
+  function cleanPromptText(value) {
+    const text = String(value ?? "").replace(/\r\n?/g, "\n").trim();
+    if (!text) return "";
+    return text
+      .split("\n")
+      .map((line) => line.replace(/^\s*[a-z][a-z0-9_]*_prompt\s*:\s*/i, "").trim())
+      .filter(Boolean)
+      .join("\n");
   }
 
   function visiblePromptParts(parts) {
     return parts
       .filter((part) => part.value && String(part.value).trim() && String(part.value).trim() !== "hidden")
-      .map((part) => promptBlock(part.label, part.value));
+      .map((part) => cleanPromptText(part.value))
+      .filter(Boolean);
   }
 
   function stripWeight(text) {
@@ -257,7 +264,7 @@
       { label: "fixed_bangs_prompt", value: item.fixed_bangs_prompt },
       { label: "fixed_face_prompt", value: item.fixed_face_prompt }
     ]).join("\n\n") || "未設定";
-    const negativePrompt = promptBlock("negative_hair_prompt", item.negative_hair_prompt || item.negative_prompt);
+    const negativePrompt = cleanPromptText(item.negative_hair_prompt || item.negative_prompt) || localizedText(uiText.unset);
     return `
       <div class="research-prompt-stack">
         <details class="research-prompt-details">
