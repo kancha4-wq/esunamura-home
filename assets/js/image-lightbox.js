@@ -2,6 +2,7 @@
   const triggerSelector = [
     ".research-intro-trigger",
     "a.research-image-link",
+    "a.research-sample-thumb",
     ".sample-gallery a",
     ".prompt-sample-gallery a",
     ".prompt-hero-gallery a"

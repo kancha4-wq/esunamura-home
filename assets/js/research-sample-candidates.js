@@ -1,6 +1,6 @@
-﻿window.researchSampleCandidates = {
-  "generated_from": "selected_samples_codex_ascii_v2.zip + selected_bangs_codex_test18.zip + selected_hairstyle_test19_codex.zip + hairstyle_test19_codex_simple_store.zip + bangs_test20_codex_simple_store.zip",
-  "notes": "Selected candidate samples for Esunamura research page. Test19 hairstyle and Test20 bangs candidates are added as supplemental verification material.",
+window.researchSampleCandidates = {
+  "generated_from": "selected_samples_codex_ascii_v2.zip + selected_bangs_codex_test18.zip + selected_hairstyle_test19_codex.zip + hairstyle_test19_codex_simple_store.zip + bangs_test20_codex_simple_store.zip + HP????_????_????????.zip(test25 final)",
+  "notes": "Selected candidate samples for Esunamura research page. Test19 hairstyle and Test20 bangs candidates are added as supplemental verification material. Test25 hairstyle candidates are added as final HP reflection candidates.",
   "sections": [
     {
       "id": "hair_color",
@@ -21,6 +21,11 @@
       "id": "hairstyle_test19",
       "title_ja": "髪型追加検証：テスト19候補",
       "asset_dir": "assets/research/hairstyle/test19/"
+    },
+    {
+      "id": "hairstyle_test25",
+      "title_ja": "??????????25??",
+      "asset_dir": "assets/research/hairstyle/test25/"
     },
     {
       "id": "bangs_test20",
@@ -78,6 +83,11 @@
       "id": "test20_all_contact",
       "label": "テスト20 overview",
       "path": "assets/research/contact-sheets/test20_all_contact.jpg"
+    },
+    {
+      "id": "hairstyle_test25_selected",
+      "label": "?????25????",
+      "path": "assets/research/contact-sheets/hairstyle_test25_selected_contact.jpg"
     }
   ],
   "items": [
@@ -1816,6 +1826,886 @@
       "verification_note": "短めボブ＋片目見えの軽い目隠れ。アニメ髪型としての実用性が高い。",
       "public_hidden": true,
       "public_note": "short_bob_eye_cover_bangs は 79823700_03 を代表として公開表示"
+    },
+    {
+      "section": "hairstyle_test25",
+      "order": 1,
+      "source_test": "test25",
+      "theme": "ahoge_short_bob",
+      "theme_name": "ahoge_short_bob",
+      "jp_label": "アホ毛ショートボブ",
+      "role": "main",
+      "focus": "アホ毛と短めボブの両立。頭頂まで入ってアホ毛が見えるか。",
+      "expected_result": "小さなアホ毛付きの短めボブ。王道アニメ髪型としてサムネでも見えやすい。",
+      "filename": "ahoge_short_bob_front_4073710981_02.png",
+      "reason": "小さなアホ毛付きの短めボブ。王道アニメ髪型としてサムネでも見えやすい。",
+      "source_path": "test25/ahoge_short_bob/ahoge_short_bob_front_4073710981_02.png",
+      "asset_path": "assets/research/hairstyle/test25/ahoge_short_bob/ahoge_short_bob_front_4073710981_02.png",
+      "samples": [
+        {
+          "angle": "front",
+          "label": "front",
+          "filename": "ahoge_short_bob_front_4073710981_02.png",
+          "asset_path": "assets/research/hairstyle/test25/ahoge_short_bob/ahoge_short_bob_front_4073710981_02.png"
+        },
+        {
+          "angle": "side",
+          "label": "side",
+          "filename": "ahoge_short_bob_side_1540112819_03.png",
+          "asset_path": "assets/research/hairstyle/test25/ahoge_short_bob/ahoge_short_bob_side_1540112819_03.png"
+        },
+        {
+          "angle": "three_quarter_back",
+          "label": "rear 3q",
+          "filename": "ahoge_short_bob_three_quarter_back_2430052213_01.png",
+          "asset_path": "assets/research/hairstyle/test25/ahoge_short_bob/ahoge_short_bob_three_quarter_back_2430052213_01.png"
+        }
+      ],
+      "stage": "survey",
+      "important_tags": "ahoge short bob",
+      "positive_hair_prompt": "(short bob hair:1.25), jaw-length bob, single small ahoge, visible ahoge",
+      "negative_hair_prompt": "no ahoge, huge ahoge, twin ahoge, twintails, ponytail, very long hair, double buns, drill hair",
+      "fixed_face_prompt": "same face, same character, soft round face, large clear eyes, soft cheeks, gentle expression",
+      "verification_note": "小さなアホ毛付きの短めボブ。王道アニメ髪型としてサムネでも見えやすい。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト25_髪型.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "hairstyle_test25",
+      "order": 2,
+      "source_test": "test25",
+      "theme": "braided_crown_loose_hair",
+      "theme_name": "braided_crown_loose_hair",
+      "jp_label": "編み込みクラウン＋下ろし髪",
+      "role": "main",
+      "focus": "頭頂まわりの編み込みがサムネでも分かるか。",
+      "expected_result": "頭頂を囲うクラウン編み込みと下ろし髪の両立。上品で見栄えが良い。",
+      "filename": "braided_crown_loose_hair_front_3389050203_02.png",
+      "reason": "頭頂を囲うクラウン編み込みと下ろし髪の両立。上品で見栄えが良い。",
+      "source_path": "test25/braided_crown_loose_hair/braided_crown_loose_hair_front_3389050203_02.png",
+      "asset_path": "assets/research/hairstyle/test25/braided_crown_loose_hair/braided_crown_loose_hair_front_3389050203_02.png",
+      "samples": [
+        {
+          "angle": "front",
+          "label": "front",
+          "filename": "braided_crown_loose_hair_front_3389050203_02.png",
+          "asset_path": "assets/research/hairstyle/test25/braided_crown_loose_hair/braided_crown_loose_hair_front_3389050203_02.png"
+        },
+        {
+          "angle": "side",
+          "label": "side",
+          "filename": "braided_crown_loose_hair_side_2546763804_03.png",
+          "asset_path": "assets/research/hairstyle/test25/braided_crown_loose_hair/braided_crown_loose_hair_side_2546763804_03.png"
+        },
+        {
+          "angle": "three_quarter_back",
+          "label": "rear 3q",
+          "filename": "braided_crown_loose_hair_three_quarter_back_2130852455_02.png",
+          "asset_path": "assets/research/hairstyle/test25/braided_crown_loose_hair/braided_crown_loose_hair_three_quarter_back_2130852455_02.png"
+        }
+      ],
+      "stage": "survey",
+      "important_tags": "braided crown loose hair",
+      "positive_hair_prompt": "(braided crown:1.30), crown braid around head, visible crown braid, loose long hair",
+      "negative_hair_prompt": "single braid only, twin braids, ponytail, side ponytail, bun, short hair, no braid",
+      "fixed_face_prompt": "same face, same character, soft round face, large clear eyes, soft cheeks, gentle expression",
+      "verification_note": "頭頂を囲うクラウン編み込みと下ろし髪の両立。上品で見栄えが良い。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト25_髪型.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "hairstyle_test25",
+      "order": 3,
+      "source_test": "test25",
+      "theme": "braided_half_up",
+      "theme_name": "braided_half_up",
+      "jp_label": "編み込みハーフアップ",
+      "role": "main",
+      "focus": "編み込み＋後ろ構造",
+      "expected_result": "編み込みハーフアップの特徴が分かりやすく見えること。",
+      "filename": "braided_half_up_front_414940019_02.png",
+      "reason": "編み込みハーフアップの特徴が分かりやすく見えること。",
+      "source_path": "test25/braided_half_up/braided_half_up_front_414940019_02.png",
+      "asset_path": "assets/research/hairstyle/test25/braided_half_up/braided_half_up_front_414940019_02.png",
+      "samples": [
+        {
+          "angle": "front",
+          "label": "front",
+          "filename": "braided_half_up_front_414940019_02.png",
+          "asset_path": "assets/research/hairstyle/test25/braided_half_up/braided_half_up_front_414940019_02.png"
+        },
+        {
+          "angle": "side",
+          "label": "side",
+          "filename": "braided_half_up_side_3220707481_02.png",
+          "asset_path": "assets/research/hairstyle/test25/braided_half_up/braided_half_up_side_3220707481_02.png"
+        },
+        {
+          "angle": "three_quarter_back",
+          "label": "rear 3q",
+          "filename": "braided_half_up_three_quarter_back_1546127050_02.png",
+          "asset_path": "assets/research/hairstyle/test25/braided_half_up/braided_half_up_three_quarter_back_1546127050_02.png"
+        }
+      ],
+      "stage": "survey",
+      "important_tags": "braided half up",
+      "positive_hair_prompt": "braided half up",
+      "negative_hair_prompt": "cropped head, top of head out of frame, hair out of frame",
+      "fixed_face_prompt": "same face, same character, soft round face, large clear eyes, soft cheeks, gentle expression",
+      "verification_note": "編み込みハーフアップの特徴が分かりやすく見えること。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト25_髪型.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "hairstyle_test25",
+      "order": 4,
+      "source_test": "test25",
+      "theme": "char_short_bob_side_braid",
+      "theme_name": "char_short_bob_side_braid",
+      "jp_label": "片側編み込みボブ",
+      "role": "main",
+      "focus": "ボブと片側編み込みの両立。",
+      "expected_result": "追加候補。ボブ系の派生として差が分かりやすく、公開ページの幅を広げやすい。",
+      "filename": "char_short_bob_side_braid_front_4004095021_03.png",
+      "reason": "追加候補。ボブ系の派生として差が分かりやすく、公開ページの幅を広げやすい。",
+      "source_path": "test25/char_short_bob_side_braid/char_short_bob_side_braid_front_4004095021_03.png",
+      "asset_path": "assets/research/hairstyle/test25/char_short_bob_side_braid/char_short_bob_side_braid_front_4004095021_03.png",
+      "samples": [
+        {
+          "angle": "front",
+          "label": "front",
+          "filename": "char_short_bob_side_braid_front_4004095021_03.png",
+          "asset_path": "assets/research/hairstyle/test25/char_short_bob_side_braid/char_short_bob_side_braid_front_4004095021_03.png"
+        },
+        {
+          "angle": "side",
+          "label": "side",
+          "filename": "char_short_bob_side_braid_side_1547790485_02.png",
+          "asset_path": "assets/research/hairstyle/test25/char_short_bob_side_braid/char_short_bob_side_braid_side_1547790485_02.png"
+        },
+        {
+          "angle": "three_quarter_back",
+          "label": "rear 3q",
+          "filename": "char_short_bob_side_braid_three_quarter_back_357158078_02.png",
+          "asset_path": "assets/research/hairstyle/test25/char_short_bob_side_braid/char_short_bob_side_braid_three_quarter_back_357158078_02.png"
+        }
+      ],
+      "stage": "survey",
+      "important_tags": "char short bob side braid",
+      "positive_hair_prompt": "(short bob hair:1.25), one side braid, braided sidelock, visible side braid, bob silhouette",
+      "negative_hair_prompt": "very long hair, twin braids, ponytail, twintails, buns, no braid",
+      "fixed_face_prompt": "same face, same character, soft round face, large clear eyes, soft cheeks, gentle expression",
+      "verification_note": "追加候補。ボブ系の派生として差が分かりやすく、公開ページの幅を広げやすい。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト25_髪型.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "hairstyle_test25",
+      "order": 5,
+      "source_test": "test25",
+      "theme": "char_short_low_side_tail",
+      "theme_name": "char_short_low_side_tail",
+      "jp_label": "短め＋低いサイド結び",
+      "role": "main",
+      "focus": "低いサイド結びが見えるか。",
+      "expected_result": "追加候補。今の公開一覧に薄い「低いサイド結び」系を補強できる。",
+      "filename": "char_short_low_side_tail_front_2219547133_03.png",
+      "reason": "追加候補。今の公開一覧に薄い「低いサイド結び」系を補強できる。",
+      "source_path": "test25/char_short_low_side_tail/char_short_low_side_tail_front_2219547133_03.png",
+      "asset_path": "assets/research/hairstyle/test25/char_short_low_side_tail/char_short_low_side_tail_front_2219547133_03.png",
+      "samples": [
+        {
+          "angle": "front",
+          "label": "front",
+          "filename": "char_short_low_side_tail_front_2219547133_03.png",
+          "asset_path": "assets/research/hairstyle/test25/char_short_low_side_tail/char_short_low_side_tail_front_2219547133_03.png"
+        },
+        {
+          "angle": "side",
+          "label": "side",
+          "filename": "char_short_low_side_tail_side_3267191467_01.png",
+          "asset_path": "assets/research/hairstyle/test25/char_short_low_side_tail/char_short_low_side_tail_side_3267191467_01.png"
+        },
+        {
+          "angle": "three_quarter_back",
+          "label": "rear 3q",
+          "filename": "char_short_low_side_tail_three_quarter_back_2402898791_01.png",
+          "asset_path": "assets/research/hairstyle/test25/char_short_low_side_tail/char_short_low_side_tail_three_quarter_back_2402898791_01.png"
+        }
+      ],
+      "stage": "survey",
+      "important_tags": "char short low side tail",
+      "positive_hair_prompt": "(short to medium hair:1.20), low side ponytail, side-tied hair, visible low side tail",
+      "negative_hair_prompt": "twintails, high ponytail, twin braids, buns, fully loose hair",
+      "fixed_face_prompt": "same face, same character, soft round face, large clear eyes, soft cheeks, gentle expression",
+      "verification_note": "追加候補。今の公開一覧に薄い「低いサイド結び」系を補強できる。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト25_髪型.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "hairstyle_test25",
+      "order": 6,
+      "source_test": "test25",
+      "theme": "char_side_braid_low_side_tail",
+      "theme_name": "char_side_braid_low_side_tail",
+      "jp_label": "片側編み込み＋低いサイド結び",
+      "role": "main",
+      "focus": "片側編み込みと低いサイド結びが両方見えるか。",
+      "expected_result": "追加候補。編み込みと結びを同時に見せられる検証枠として有力。",
+      "filename": "char_side_braid_low_side_tail_front_4032497343_02.png",
+      "reason": "追加候補。編み込みと結びを同時に見せられる検証枠として有力。",
+      "source_path": "test25/char_side_braid_low_side_tail/char_side_braid_low_side_tail_front_4032497343_02.png",
+      "asset_path": "assets/research/hairstyle/test25/char_side_braid_low_side_tail/char_side_braid_low_side_tail_front_4032497343_02.png",
+      "samples": [
+        {
+          "angle": "front",
+          "label": "front",
+          "filename": "char_side_braid_low_side_tail_front_4032497343_02.png",
+          "asset_path": "assets/research/hairstyle/test25/char_side_braid_low_side_tail/char_side_braid_low_side_tail_front_4032497343_02.png"
+        },
+        {
+          "angle": "side",
+          "label": "side",
+          "filename": "char_side_braid_low_side_tail_side_356837400_03.png",
+          "asset_path": "assets/research/hairstyle/test25/char_side_braid_low_side_tail/char_side_braid_low_side_tail_side_356837400_03.png"
+        },
+        {
+          "angle": "three_quarter_back",
+          "label": "rear 3q",
+          "filename": "char_side_braid_low_side_tail_three_quarter_back_376206669_02.png",
+          "asset_path": "assets/research/hairstyle/test25/char_side_braid_low_side_tail/char_side_braid_low_side_tail_three_quarter_back_376206669_02.png"
+        }
+      ],
+      "stage": "survey",
+      "important_tags": "char side braid low side tail",
+      "positive_hair_prompt": "(side braid:1.25), low side ponytail, one side braid near face, visible side braid, visible low side tail",
+      "negative_hair_prompt": "twintails, twin braids, high ponytail, buns, no braid, no side tail",
+      "fixed_face_prompt": "same face, same character, soft round face, large clear eyes, soft cheeks, gentle expression",
+      "verification_note": "追加候補。編み込みと結びを同時に見せられる検証枠として有力。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト25_髪型.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "hairstyle_test25",
+      "order": 7,
+      "source_test": "test25",
+      "theme": "char_side_braid_plus_loose_hair",
+      "theme_name": "char_side_braid_plus_loose_hair",
+      "jp_label": "片側編み込み＋下ろし髪",
+      "role": "main",
+      "focus": "片側編み込みの視認性。",
+      "expected_result": "片側だけ編み込みを入れ、全体は下ろし髪。顔まわりに特徴が出る。",
+      "filename": "char_side_braid_plus_loose_hair_front_536929221_02.png",
+      "reason": "片側だけ編み込みを入れ、全体は下ろし髪。顔まわりに特徴が出る。",
+      "source_path": "test25/char_side_braid_plus_loose_hair/char_side_braid_plus_loose_hair_front_536929221_02.png",
+      "asset_path": "assets/research/hairstyle/test25/char_side_braid_plus_loose_hair/char_side_braid_plus_loose_hair_front_536929221_02.png",
+      "samples": [
+        {
+          "angle": "front",
+          "label": "front",
+          "filename": "char_side_braid_plus_loose_hair_front_536929221_02.png",
+          "asset_path": "assets/research/hairstyle/test25/char_side_braid_plus_loose_hair/char_side_braid_plus_loose_hair_front_536929221_02.png"
+        },
+        {
+          "angle": "side",
+          "label": "side",
+          "filename": "char_side_braid_plus_loose_hair_side_2469974861_03.png",
+          "asset_path": "assets/research/hairstyle/test25/char_side_braid_plus_loose_hair/char_side_braid_plus_loose_hair_side_2469974861_03.png"
+        },
+        {
+          "angle": "three_quarter_back",
+          "label": "rear 3q",
+          "filename": "char_side_braid_plus_loose_hair_three_quarter_back_2170398396_03.png",
+          "asset_path": "assets/research/hairstyle/test25/char_side_braid_plus_loose_hair/char_side_braid_plus_loose_hair_three_quarter_back_2170398396_03.png"
+        }
+      ],
+      "stage": "survey",
+      "important_tags": "char side braid plus loose hair",
+      "positive_hair_prompt": "(side braid:1.30), one side braid near face, loose medium to long hair, visible side braid",
+      "negative_hair_prompt": "double braids, crown braid, full braid, ponytail, bun, no braid",
+      "fixed_face_prompt": "same face, same character, soft round face, large clear eyes, soft cheeks, gentle expression",
+      "verification_note": "片側だけ編み込みを入れ、全体は下ろし髪。顔まわりに特徴が出る。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト25_髪型.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "hairstyle_test25",
+      "order": 8,
+      "source_test": "test25",
+      "theme": "crown_braid_bun",
+      "theme_name": "crown_braid_bun",
+      "jp_label": "編み込みお団子",
+      "role": "main",
+      "focus": "後頭部シルエット",
+      "expected_result": "編み込みお団子の特徴が分かりやすく見えること。",
+      "filename": "crown_braid_bun_front_3319505376_01.png",
+      "reason": "編み込みお団子の特徴が分かりやすく見えること。",
+      "source_path": "test25/crown_braid_bun/crown_braid_bun_front_3319505376_01.png",
+      "asset_path": "assets/research/hairstyle/test25/crown_braid_bun/crown_braid_bun_front_3319505376_01.png",
+      "samples": [
+        {
+          "angle": "front",
+          "label": "front",
+          "filename": "crown_braid_bun_front_3319505376_01.png",
+          "asset_path": "assets/research/hairstyle/test25/crown_braid_bun/crown_braid_bun_front_3319505376_01.png"
+        },
+        {
+          "angle": "side",
+          "label": "side",
+          "filename": "crown_braid_bun_side_4158059699_02.png",
+          "asset_path": "assets/research/hairstyle/test25/crown_braid_bun/crown_braid_bun_side_4158059699_02.png"
+        },
+        {
+          "angle": "three_quarter_back",
+          "label": "rear 3q",
+          "filename": "crown_braid_bun_three_quarter_back_152609853_03.png",
+          "asset_path": "assets/research/hairstyle/test25/crown_braid_bun/crown_braid_bun_three_quarter_back_152609853_03.png"
+        }
+      ],
+      "stage": "survey",
+      "important_tags": "crown braid bun",
+      "positive_hair_prompt": "crown braid bun",
+      "negative_hair_prompt": "cropped head, top of head out of frame, hair out of frame",
+      "fixed_face_prompt": "same face, same character, soft round face, large clear eyes, soft cheeks, gentle expression",
+      "verification_note": "編み込みお団子の特徴が分かりやすく見えること。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト25_髪型.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "hairstyle_test25",
+      "order": 9,
+      "source_test": "test25",
+      "theme": "double_buns",
+      "theme_name": "double_buns",
+      "jp_label": "ツインお団子",
+      "role": "main",
+      "focus": "左右お団子構造",
+      "expected_result": "ツインお団子の特徴が分かりやすく見えること。",
+      "filename": "double_buns_front_1707434151_02.png",
+      "reason": "ツインお団子の特徴が分かりやすく見えること。",
+      "source_path": "test25/double_buns/double_buns_front_1707434151_02.png",
+      "asset_path": "assets/research/hairstyle/test25/double_buns/double_buns_front_1707434151_02.png",
+      "samples": [
+        {
+          "angle": "front",
+          "label": "front",
+          "filename": "double_buns_front_1707434151_02.png",
+          "asset_path": "assets/research/hairstyle/test25/double_buns/double_buns_front_1707434151_02.png"
+        },
+        {
+          "angle": "side",
+          "label": "side",
+          "filename": "double_buns_side_4119183993_03.png",
+          "asset_path": "assets/research/hairstyle/test25/double_buns/double_buns_side_4119183993_03.png"
+        },
+        {
+          "angle": "three_quarter_back",
+          "label": "rear 3q",
+          "filename": "double_buns_three_quarter_back_4209933154_03.png",
+          "asset_path": "assets/research/hairstyle/test25/double_buns/double_buns_three_quarter_back_4209933154_03.png"
+        }
+      ],
+      "stage": "survey",
+      "important_tags": "double buns",
+      "positive_hair_prompt": "double buns",
+      "negative_hair_prompt": "cropped head, top of head out of frame, hair out of frame",
+      "fixed_face_prompt": "same face, same character, soft round face, large clear eyes, soft cheeks, gentle expression",
+      "verification_note": "ツインお団子の特徴が分かりやすく見えること。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト25_髪型.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "hairstyle_test25",
+      "order": 10,
+      "source_test": "test25",
+      "theme": "fluffy_short_bob",
+      "theme_name": "fluffy_short_bob",
+      "jp_label": "ふんわりショートボブ",
+      "role": "main",
+      "focus": "丸みと空気感",
+      "expected_result": "ふんわりショートボブの特徴が分かりやすく見えること。",
+      "filename": "fluffy_short_bob_front_50853376_01.png",
+      "reason": "ふんわりショートボブの特徴が分かりやすく見えること。",
+      "source_path": "test25/fluffy_short_bob/fluffy_short_bob_front_50853376_01.png",
+      "asset_path": "assets/research/hairstyle/test25/fluffy_short_bob/fluffy_short_bob_front_50853376_01.png",
+      "samples": [
+        {
+          "angle": "front",
+          "label": "front",
+          "filename": "fluffy_short_bob_front_50853376_01.png",
+          "asset_path": "assets/research/hairstyle/test25/fluffy_short_bob/fluffy_short_bob_front_50853376_01.png"
+        },
+        {
+          "angle": "side",
+          "label": "side",
+          "filename": "fluffy_short_bob_side_833308122_01.png",
+          "asset_path": "assets/research/hairstyle/test25/fluffy_short_bob/fluffy_short_bob_side_833308122_01.png"
+        },
+        {
+          "angle": "three_quarter_back",
+          "label": "rear 3q",
+          "filename": "fluffy_short_bob_three_quarter_back_4083497067_02.png",
+          "asset_path": "assets/research/hairstyle/test25/fluffy_short_bob/fluffy_short_bob_three_quarter_back_4083497067_02.png"
+        }
+      ],
+      "stage": "survey",
+      "important_tags": "fluffy short bob",
+      "positive_hair_prompt": "fluffy short bob",
+      "negative_hair_prompt": "cropped head, top of head out of frame, hair out of frame",
+      "fixed_face_prompt": "same face, same character, soft round face, large clear eyes, soft cheeks, gentle expression",
+      "verification_note": "ふんわりショートボブの特徴が分かりやすく見えること。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト25_髪型.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "hairstyle_test25",
+      "order": 11,
+      "source_test": "test25",
+      "theme": "hime_bob_blunt_sidelocks",
+      "theme_name": "hime_bob_blunt_sidelocks",
+      "jp_label": "姫ボブ＋切りそろえ横髪",
+      "role": "main",
+      "focus": "切りそろえ横髪の明瞭さ。",
+      "expected_result": "ボブベースに切りそろえた横髪を合わせた姫寄りシルエット。",
+      "filename": "hime_bob_blunt_sidelocks_front_3953900241_03.png",
+      "reason": "ボブベースに切りそろえた横髪を合わせた姫寄りシルエット。",
+      "source_path": "test25/hime_bob_blunt_sidelocks/hime_bob_blunt_sidelocks_front_3953900241_03.png",
+      "asset_path": "assets/research/hairstyle/test25/hime_bob_blunt_sidelocks/hime_bob_blunt_sidelocks_front_3953900241_03.png",
+      "samples": [
+        {
+          "angle": "front",
+          "label": "front",
+          "filename": "hime_bob_blunt_sidelocks_front_3953900241_03.png",
+          "asset_path": "assets/research/hairstyle/test25/hime_bob_blunt_sidelocks/hime_bob_blunt_sidelocks_front_3953900241_03.png"
+        },
+        {
+          "angle": "side",
+          "label": "side",
+          "filename": "hime_bob_blunt_sidelocks_side_561088484_01.png",
+          "asset_path": "assets/research/hairstyle/test25/hime_bob_blunt_sidelocks/hime_bob_blunt_sidelocks_side_561088484_01.png"
+        },
+        {
+          "angle": "three_quarter_back",
+          "label": "rear 3q",
+          "filename": "hime_bob_blunt_sidelocks_three_quarter_back_3853658366_03.png",
+          "asset_path": "assets/research/hairstyle/test25/hime_bob_blunt_sidelocks/hime_bob_blunt_sidelocks_three_quarter_back_3853658366_03.png"
+        }
+      ],
+      "stage": "survey",
+      "important_tags": "hime bob blunt sidelocks",
+      "positive_hair_prompt": "(hime bob:1.30), short bob hair, blunt sidelocks, straight bangs, clear hime-style sidelocks",
+      "negative_hair_prompt": "very long hair, layered hair, twintails, ponytail, buns, no sidelocks",
+      "fixed_face_prompt": "same face, same character, soft round face, large clear eyes, soft cheeks, gentle expression",
+      "verification_note": "ボブベースに切りそろえた横髪を合わせた姫寄りシルエット。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト25_髪型.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "hairstyle_test25",
+      "order": 12,
+      "source_test": "test25",
+      "theme": "inward_curled_bob",
+      "theme_name": "inward_curled_bob",
+      "jp_label": "内巻きボブ",
+      "role": "main",
+      "focus": "内巻きの丸いシルエット。",
+      "expected_result": "毛先が内側に入る丸いボブ。柔らかく整った印象になる。",
+      "filename": "inward_curled_bob_front_3611412008_02.png",
+      "reason": "毛先が内側に入る丸いボブ。柔らかく整った印象になる。",
+      "source_path": "test25/inward_curled_bob/inward_curled_bob_front_3611412008_02.png",
+      "asset_path": "assets/research/hairstyle/test25/inward_curled_bob/inward_curled_bob_front_3611412008_02.png",
+      "samples": [
+        {
+          "angle": "front",
+          "label": "front",
+          "filename": "inward_curled_bob_front_3611412008_02.png",
+          "asset_path": "assets/research/hairstyle/test25/inward_curled_bob/inward_curled_bob_front_3611412008_02.png"
+        },
+        {
+          "angle": "side",
+          "label": "side",
+          "filename": "inward_curled_bob_side_2179404655_03.png",
+          "asset_path": "assets/research/hairstyle/test25/inward_curled_bob/inward_curled_bob_side_2179404655_03.png"
+        },
+        {
+          "angle": "three_quarter_back",
+          "label": "rear 3q",
+          "filename": "inward_curled_bob_three_quarter_back_4227864497_03.png",
+          "asset_path": "assets/research/hairstyle/test25/inward_curled_bob/inward_curled_bob_three_quarter_back_4227864497_03.png"
+        }
+      ],
+      "stage": "survey",
+      "important_tags": "inward curled bob",
+      "positive_hair_prompt": "(inward curled bob:1.30), bob haircut, inward curled ends, rounded bob silhouette",
+      "negative_hair_prompt": "outward flipped bob, very long hair, ponytail, twintails, buns",
+      "fixed_face_prompt": "same face, same character, soft round face, large clear eyes, soft cheeks, gentle expression",
+      "verification_note": "毛先が内側に入る丸いボブ。柔らかく整った印象になる。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト25_髪型.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "hairstyle_test25",
+      "order": 13,
+      "source_test": "test25",
+      "theme": "layered_short_bob",
+      "theme_name": "layered_short_bob",
+      "jp_label": "レイヤーショートボブ",
+      "role": "main",
+      "focus": "レイヤー感と軽さ",
+      "expected_result": "レイヤーショートボブの特徴が分かりやすく見えること。",
+      "filename": "layered_short_bob_front_872660369_02.png",
+      "reason": "レイヤーショートボブの特徴が分かりやすく見えること。",
+      "source_path": "test25/layered_short_bob/layered_short_bob_front_872660369_02.png",
+      "asset_path": "assets/research/hairstyle/test25/layered_short_bob/layered_short_bob_front_872660369_02.png",
+      "samples": [
+        {
+          "angle": "front",
+          "label": "front",
+          "filename": "layered_short_bob_front_872660369_02.png",
+          "asset_path": "assets/research/hairstyle/test25/layered_short_bob/layered_short_bob_front_872660369_02.png"
+        },
+        {
+          "angle": "side",
+          "label": "side",
+          "filename": "layered_short_bob_side_3325104215_01.png",
+          "asset_path": "assets/research/hairstyle/test25/layered_short_bob/layered_short_bob_side_3325104215_01.png"
+        },
+        {
+          "angle": "three_quarter_back",
+          "label": "rear 3q",
+          "filename": "layered_short_bob_three_quarter_back_2632707139_03.png",
+          "asset_path": "assets/research/hairstyle/test25/layered_short_bob/layered_short_bob_three_quarter_back_2632707139_03.png"
+        }
+      ],
+      "stage": "survey",
+      "important_tags": "layered short bob",
+      "positive_hair_prompt": "layered short bob",
+      "negative_hair_prompt": "cropped head, top of head out of frame, hair out of frame",
+      "fixed_face_prompt": "same face, same character, soft round face, large clear eyes, soft cheeks, gentle expression",
+      "verification_note": "レイヤーショートボブの特徴が分かりやすく見えること。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト25_髪型.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "hairstyle_test25",
+      "order": 14,
+      "source_test": "test25",
+      "theme": "light_hime_cut_medium",
+      "theme_name": "light_hime_cut_medium",
+      "jp_label": "軽め姫カットミディアム",
+      "role": "main",
+      "focus": "軽め姫カットの横ライン。",
+      "expected_result": "重すぎない姫カットとミディアム長。横の姫ラインが見えやすい。",
+      "filename": "light_hime_cut_medium_front_4110901816_02.png",
+      "reason": "重すぎない姫カットとミディアム長。横の姫ラインが見えやすい。",
+      "source_path": "test25/light_hime_cut_medium/light_hime_cut_medium_front_4110901816_02.png",
+      "asset_path": "assets/research/hairstyle/test25/light_hime_cut_medium/light_hime_cut_medium_front_4110901816_02.png",
+      "samples": [
+        {
+          "angle": "front",
+          "label": "front",
+          "filename": "light_hime_cut_medium_front_4110901816_02.png",
+          "asset_path": "assets/research/hairstyle/test25/light_hime_cut_medium/light_hime_cut_medium_front_4110901816_02.png"
+        },
+        {
+          "angle": "side",
+          "label": "side",
+          "filename": "light_hime_cut_medium_side_2091003919_01.png",
+          "asset_path": "assets/research/hairstyle/test25/light_hime_cut_medium/light_hime_cut_medium_side_2091003919_01.png"
+        },
+        {
+          "angle": "three_quarter_back",
+          "label": "rear 3q",
+          "filename": "light_hime_cut_medium_three_quarter_back_3045506273_01.png",
+          "asset_path": "assets/research/hairstyle/test25/light_hime_cut_medium/light_hime_cut_medium_three_quarter_back_3045506273_01.png"
+        }
+      ],
+      "stage": "survey",
+      "important_tags": "light hime cut medium",
+      "positive_hair_prompt": "(light hime cut:1.30), medium hair, blunt sidelocks, visible hime-cut sidelocks",
+      "negative_hair_prompt": "long hime cut only, twin tails, ponytail, buns, no sidelocks",
+      "fixed_face_prompt": "same face, same character, soft round face, large clear eyes, soft cheeks, gentle expression",
+      "verification_note": "重すぎない姫カットとミディアム長。横の姫ラインが見えやすい。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト25_髪型.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "hairstyle_test25",
+      "order": 15,
+      "source_test": "test25",
+      "theme": "long_twin_tails",
+      "theme_name": "long_twin_tails",
+      "jp_label": "ロングツインテール",
+      "role": "main",
+      "focus": "左右結び位置",
+      "expected_result": "ロングツインテールの特徴が分かりやすく見えること。",
+      "filename": "long_twin_tails_front_1326675062_01.png",
+      "reason": "ロングツインテールの特徴が分かりやすく見えること。",
+      "source_path": "test25/long_twin_tails/long_twin_tails_front_1326675062_01.png",
+      "asset_path": "assets/research/hairstyle/test25/long_twin_tails/long_twin_tails_front_1326675062_01.png",
+      "samples": [
+        {
+          "angle": "front",
+          "label": "front",
+          "filename": "long_twin_tails_front_1326675062_01.png",
+          "asset_path": "assets/research/hairstyle/test25/long_twin_tails/long_twin_tails_front_1326675062_01.png"
+        },
+        {
+          "angle": "side",
+          "label": "side",
+          "filename": "long_twin_tails_side_3430847157_01.png",
+          "asset_path": "assets/research/hairstyle/test25/long_twin_tails/long_twin_tails_side_3430847157_01.png"
+        },
+        {
+          "angle": "three_quarter_back",
+          "label": "rear 3q",
+          "filename": "long_twin_tails_three_quarter_back_2852328111_03.png",
+          "asset_path": "assets/research/hairstyle/test25/long_twin_tails/long_twin_tails_three_quarter_back_2852328111_03.png"
+        }
+      ],
+      "stage": "survey",
+      "important_tags": "long twin tails",
+      "positive_hair_prompt": "long twin tails",
+      "negative_hair_prompt": "cropped head, top of head out of frame, hair out of frame",
+      "fixed_face_prompt": "same face, same character, soft round face, large clear eyes, soft cheeks, gentle expression",
+      "verification_note": "ロングツインテールの特徴が分かりやすく見えること。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト25_髪型.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "hairstyle_test25",
+      "order": 16,
+      "source_test": "test25",
+      "theme": "loose_wavy_long",
+      "theme_name": "loose_wavy_long",
+      "jp_label": "ゆるウェーブロング",
+      "role": "main",
+      "focus": "ゆるいウェーブと長さ。",
+      "expected_result": "全体にゆるいウェーブが入った長髪。柔らかい印象を作りやすい。",
+      "filename": "loose_wavy_long_front_814135508_03.png",
+      "reason": "全体にゆるいウェーブが入った長髪。柔らかい印象を作りやすい。",
+      "source_path": "test25/loose_wavy_long/loose_wavy_long_front_814135508_03.png",
+      "asset_path": "assets/research/hairstyle/test25/loose_wavy_long/loose_wavy_long_front_814135508_03.png",
+      "samples": [
+        {
+          "angle": "front",
+          "label": "front",
+          "filename": "loose_wavy_long_front_814135508_03.png",
+          "asset_path": "assets/research/hairstyle/test25/loose_wavy_long/loose_wavy_long_front_814135508_03.png"
+        },
+        {
+          "angle": "side",
+          "label": "side",
+          "filename": "loose_wavy_long_side_2178882061_02.png",
+          "asset_path": "assets/research/hairstyle/test25/loose_wavy_long/loose_wavy_long_side_2178882061_02.png"
+        },
+        {
+          "angle": "three_quarter_back",
+          "label": "rear 3q",
+          "filename": "loose_wavy_long_three_quarter_back_1548897434_01.png",
+          "asset_path": "assets/research/hairstyle/test25/loose_wavy_long/loose_wavy_long_three_quarter_back_1548897434_01.png"
+        }
+      ],
+      "stage": "survey",
+      "important_tags": "loose wavy long",
+      "positive_hair_prompt": "(loose wavy long hair:1.30), long hair, soft loose waves, airy wavy hair",
+      "negative_hair_prompt": "short hair, bob haircut, ponytail, twintails, buns, straight hair only",
+      "fixed_face_prompt": "same face, same character, soft round face, large clear eyes, soft cheeks, gentle expression",
+      "verification_note": "全体にゆるいウェーブが入った長髪。柔らかい印象を作りやすい。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト25_髪型.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "hairstyle_test25",
+      "order": 17,
+      "source_test": "test25",
+      "theme": "low_ponytail_long",
+      "theme_name": "low_ponytail_long",
+      "jp_label": "低めロングポニテ",
+      "role": "main",
+      "focus": "後ろ結び位置",
+      "expected_result": "低めロングポニテの特徴が分かりやすく見えること。",
+      "filename": "low_ponytail_long_front_3268174842_02.png",
+      "reason": "低めロングポニテの特徴が分かりやすく見えること。",
+      "source_path": "test25/low_ponytail_long/low_ponytail_long_front_3268174842_02.png",
+      "asset_path": "assets/research/hairstyle/test25/low_ponytail_long/low_ponytail_long_front_3268174842_02.png",
+      "samples": [
+        {
+          "angle": "front",
+          "label": "front",
+          "filename": "low_ponytail_long_front_3268174842_02.png",
+          "asset_path": "assets/research/hairstyle/test25/low_ponytail_long/low_ponytail_long_front_3268174842_02.png"
+        },
+        {
+          "angle": "side",
+          "label": "side",
+          "filename": "low_ponytail_long_side_3306543434_03.png",
+          "asset_path": "assets/research/hairstyle/test25/low_ponytail_long/low_ponytail_long_side_3306543434_03.png"
+        },
+        {
+          "angle": "three_quarter_back",
+          "label": "rear 3q",
+          "filename": "low_ponytail_long_three_quarter_back_1921054207_02.png",
+          "asset_path": "assets/research/hairstyle/test25/low_ponytail_long/low_ponytail_long_three_quarter_back_1921054207_02.png"
+        }
+      ],
+      "stage": "survey",
+      "important_tags": "low ponytail long",
+      "positive_hair_prompt": "low ponytail long",
+      "negative_hair_prompt": "cropped head, top of head out of frame, hair out of frame",
+      "fixed_face_prompt": "same face, same character, soft round face, large clear eyes, soft cheeks, gentle expression",
+      "verification_note": "低めロングポニテの特徴が分かりやすく見えること。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト25_髪型.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "hairstyle_test25",
+      "order": 18,
+      "source_test": "test25",
+      "theme": "medium_side_tail",
+      "theme_name": "medium_side_tail",
+      "jp_label": "ミディアムサイド結び",
+      "role": "main",
+      "focus": "低めサイド結び",
+      "expected_result": "ミディアムサイド結びの特徴が分かりやすく見えること。",
+      "filename": "medium_side_tail_front_2531106695_01.png",
+      "reason": "ミディアムサイド結びの特徴が分かりやすく見えること。",
+      "source_path": "test25/medium_side_tail/medium_side_tail_front_2531106695_01.png",
+      "asset_path": "assets/research/hairstyle/test25/medium_side_tail/medium_side_tail_front_2531106695_01.png",
+      "samples": [
+        {
+          "angle": "front",
+          "label": "front",
+          "filename": "medium_side_tail_front_2531106695_01.png",
+          "asset_path": "assets/research/hairstyle/test25/medium_side_tail/medium_side_tail_front_2531106695_01.png"
+        },
+        {
+          "angle": "side",
+          "label": "side",
+          "filename": "medium_side_tail_side_1431384374_02.png",
+          "asset_path": "assets/research/hairstyle/test25/medium_side_tail/medium_side_tail_side_1431384374_02.png"
+        },
+        {
+          "angle": "three_quarter_back",
+          "label": "rear 3q",
+          "filename": "medium_side_tail_three_quarter_back_3567137960_01.png",
+          "asset_path": "assets/research/hairstyle/test25/medium_side_tail/medium_side_tail_three_quarter_back_3567137960_01.png"
+        }
+      ],
+      "stage": "survey",
+      "important_tags": "medium side tail",
+      "positive_hair_prompt": "medium side tail",
+      "negative_hair_prompt": "cropped head, top of head out of frame, hair out of frame",
+      "fixed_face_prompt": "same face, same character, soft round face, large clear eyes, soft cheeks, gentle expression",
+      "verification_note": "ミディアムサイド結びの特徴が分かりやすく見えること。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト25_髪型.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "hairstyle_test25",
+      "order": 19,
+      "source_test": "test25",
+      "theme": "medium_wolf_cut",
+      "theme_name": "medium_wolf_cut",
+      "jp_label": "ミディアムウルフ",
+      "role": "main",
+      "focus": "襟足と段差",
+      "expected_result": "ミディアムウルフの特徴が分かりやすく見えること。",
+      "filename": "medium_wolf_cut_front_1983433487_02.png",
+      "reason": "ミディアムウルフの特徴が分かりやすく見えること。",
+      "source_path": "test25/medium_wolf_cut/medium_wolf_cut_front_1983433487_02.png",
+      "asset_path": "assets/research/hairstyle/test25/medium_wolf_cut/medium_wolf_cut_front_1983433487_02.png",
+      "samples": [
+        {
+          "angle": "front",
+          "label": "front",
+          "filename": "medium_wolf_cut_front_1983433487_02.png",
+          "asset_path": "assets/research/hairstyle/test25/medium_wolf_cut/medium_wolf_cut_front_1983433487_02.png"
+        },
+        {
+          "angle": "side",
+          "label": "side",
+          "filename": "medium_wolf_cut_side_2209047312_02.png",
+          "asset_path": "assets/research/hairstyle/test25/medium_wolf_cut/medium_wolf_cut_side_2209047312_02.png"
+        },
+        {
+          "angle": "three_quarter_back",
+          "label": "rear 3q",
+          "filename": "medium_wolf_cut_three_quarter_back_822572020_02.png",
+          "asset_path": "assets/research/hairstyle/test25/medium_wolf_cut/medium_wolf_cut_three_quarter_back_822572020_02.png"
+        }
+      ],
+      "stage": "survey",
+      "important_tags": "medium wolf cut",
+      "positive_hair_prompt": "medium wolf cut",
+      "negative_hair_prompt": "cropped head, top of head out of frame, hair out of frame",
+      "fixed_face_prompt": "same face, same character, soft round face, large clear eyes, soft cheeks, gentle expression",
+      "verification_note": "ミディアムウルフの特徴が分かりやすく見えること。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト25_髪型.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "hairstyle_test25",
+      "order": 20,
+      "source_test": "test25",
+      "theme": "straight_long_hair",
+      "theme_name": "straight_long_hair",
+      "jp_label": "ストレートロング",
+      "role": "main",
+      "focus": "長さとストレート感",
+      "expected_result": "ストレートロングの特徴が分かりやすく見えること。",
+      "filename": "straight_long_hair_front_2039988465_03.png",
+      "reason": "ストレートロングの特徴が分かりやすく見えること。",
+      "source_path": "test25/straight_long_hair/straight_long_hair_front_2039988465_03.png",
+      "asset_path": "assets/research/hairstyle/test25/straight_long_hair/straight_long_hair_front_2039988465_03.png",
+      "samples": [
+        {
+          "angle": "front",
+          "label": "front",
+          "filename": "straight_long_hair_front_2039988465_03.png",
+          "asset_path": "assets/research/hairstyle/test25/straight_long_hair/straight_long_hair_front_2039988465_03.png"
+        },
+        {
+          "angle": "side",
+          "label": "side",
+          "filename": "straight_long_hair_side_459642279_01.png",
+          "asset_path": "assets/research/hairstyle/test25/straight_long_hair/straight_long_hair_side_459642279_01.png"
+        },
+        {
+          "angle": "three_quarter_back",
+          "label": "rear 3q",
+          "filename": "straight_long_hair_three_quarter_back_3733102604_01.png",
+          "asset_path": "assets/research/hairstyle/test25/straight_long_hair/straight_long_hair_three_quarter_back_3733102604_01.png"
+        }
+      ],
+      "stage": "survey",
+      "important_tags": "straight long hair",
+      "positive_hair_prompt": "straight long hair",
+      "negative_hair_prompt": "cropped head, top of head out of frame, hair out of frame",
+      "fixed_face_prompt": "same face, same character, soft round face, large clear eyes, soft cheeks, gentle expression",
+      "verification_note": "ストレートロングの特徴が分かりやすく見えること。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト25_髪型.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
     }
   ],
   "rejected_examples": [],

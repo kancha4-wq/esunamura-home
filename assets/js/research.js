@@ -87,8 +87,9 @@
   };
 
   const sectionContactIds = {
-    hairstyle: ["hairstyle"],
+    hairstyle: ["hairstyle_test25_selected", "hairstyle"],
     hairstyle_test19: ["hairstyle_test19_selected", "test19_all_contact"],
+    hairstyle_test25: ["hairstyle_test25_selected"],
     bangs_test20: ["test20_selected_contact", "test20_all_contact"],
     bangs: ["bangs_selected_contact_test18", "test18_overview"],
     hair_color: ["hair_color_test21", "hair_color"]
@@ -103,7 +104,7 @@
   };
 
   const pageSectionGroups = {
-    hairstyle: ["hairstyle_test19", "hairstyle"],
+    hairstyle: ["hairstyle_test25", "hairstyle_test19", "hairstyle"],
     bangs: ["bangs_test20", "bangs"],
     hair_color: ["hair_color_test21", "hair_color"]
   };
@@ -271,14 +272,48 @@
     `;
   }
 
+  function candidateImages(item) {
+    const samples = Array.isArray(item.samples)
+      ? item.samples.filter((sample) => sample.asset_path)
+      : [];
+    if (samples.length) return samples;
+    return [{
+      asset_path: item.asset_path,
+      label: item.role || "main",
+      filename: item.filename
+    }];
+  }
+
+  function renderCandidateMedia(item) {
+    const images = candidateImages(item);
+    const mainImage = images[0];
+    const mainAlt = `${item.jp_label}${mainImage.label ? ` ${mainImage.label}` : ""}`;
+    const thumbs = images.slice(1);
+    return `
+      <div class="research-candidate-media">
+        <a class="research-image-link" href="${escapeHTML(withPagePrefix(mainImage.asset_path))}" target="_blank" rel="noopener noreferrer">
+          <img src="${escapeHTML(withPagePrefix(mainImage.asset_path))}" alt="${escapeHTML(mainAlt)}" loading="lazy" decoding="async">
+        </a>
+        ${thumbs.length ? `
+          <div class="research-sample-thumbs" aria-label="${escapeHTML(item.jp_label)}の追加サンプル">
+            ${thumbs.map((sample) => `
+              <a class="research-sample-thumb" href="${escapeHTML(withPagePrefix(sample.asset_path))}" target="_blank" rel="noopener noreferrer">
+                <img src="${escapeHTML(withPagePrefix(sample.asset_path))}" alt="${escapeHTML(`${item.jp_label} ${sample.label || sample.angle || ""}`)}" loading="lazy" decoding="async">
+                <span>${escapeHTML(sample.label || sample.angle || "sample")}</span>
+              </a>
+            `).join("")}
+          </div>
+        ` : ""}
+      </div>
+    `;
+  }
+
   function renderCandidateCard(item) {
     const tag = importantTagFor(item);
     const candidateId = slugFor(item.theme_name || item.theme || item.important_tags || item.jp_label);
     return `
       <article class="research-candidate-card" id="${escapeHTML(candidateId)}">
-        <a class="research-image-link" href="${escapeHTML(withPagePrefix(item.asset_path))}" target="_blank" rel="noopener noreferrer">
-          <img src="${escapeHTML(withPagePrefix(item.asset_path))}" alt="${escapeHTML(item.jp_label)}" loading="lazy" decoding="async">
-        </a>
+        ${renderCandidateMedia(item)}
         <div class="research-candidate-copy">
           <h3>${escapeHTML(item.jp_label)}</h3>
           <dl class="research-meta-list">
@@ -333,8 +368,8 @@
       const copy = localizedSectionCopy(sectionId);
       const seenTags = new Set();
       const items = sectionIds.flatMap(itemsFor).filter((item) => {
-        const tag = importantTagFor(item);
-        const key = `${item.section.startsWith("hairstyle") ? "hairstyle" : item.section.startsWith("bangs") ? "bangs" : item.section.startsWith("hair_color") ? "hair_color" : item.section}:${tag}`;
+        const identity = item.theme_name || item.theme || importantTagFor(item);
+        const key = `${item.section.startsWith("hairstyle") ? "hairstyle" : item.section.startsWith("bangs") ? "bangs" : item.section.startsWith("hair_color") ? "hair_color" : item.section}:${identity}`;
         if (seenTags.has(key)) return false;
         seenTags.add(key);
         return true;
