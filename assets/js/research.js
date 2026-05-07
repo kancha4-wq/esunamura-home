@@ -290,7 +290,7 @@
     const mainAlt = `${item.jp_label}${mainImage.label ? ` ${mainImage.label}` : ""}`;
     const thumbs = images.slice(1);
     return `
-      <div class="research-candidate-media">
+      <div class="research-candidate-media${thumbs.length ? " has-samples" : ""}">
         <a class="research-image-link" href="${escapeHTML(withPagePrefix(mainImage.asset_path))}" target="_blank" rel="noopener noreferrer">
           <img src="${escapeHTML(withPagePrefix(mainImage.asset_path))}" alt="${escapeHTML(mainAlt)}" loading="lazy" decoding="async">
         </a>

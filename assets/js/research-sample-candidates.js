@@ -2233,22 +2233,22 @@ window.researchSampleCandidates = {
       "role": "main",
       "focus": "丸みと空気感",
       "expected_result": "ふんわりショートボブの特徴が分かりやすく見えること。",
-      "filename": "fluffy_short_bob_front_50853376_01.png",
+      "filename": "fluffy_short_bob_side_833308122_01.png",
       "reason": "ふんわりショートボブの特徴が分かりやすく見えること。",
-      "source_path": "test25/fluffy_short_bob/fluffy_short_bob_front_50853376_01.png",
-      "asset_path": "assets/research/hairstyle/test25/fluffy_short_bob/fluffy_short_bob_front_50853376_01.png",
+      "source_path": "test25/fluffy_short_bob/fluffy_short_bob_side_833308122_01.png",
+      "asset_path": "assets/research/hairstyle/test25/fluffy_short_bob/fluffy_short_bob_side_833308122_01.png",
       "samples": [
-        {
-          "angle": "front",
-          "label": "front",
-          "filename": "fluffy_short_bob_front_50853376_01.png",
-          "asset_path": "assets/research/hairstyle/test25/fluffy_short_bob/fluffy_short_bob_front_50853376_01.png"
-        },
         {
           "angle": "side",
           "label": "side",
           "filename": "fluffy_short_bob_side_833308122_01.png",
           "asset_path": "assets/research/hairstyle/test25/fluffy_short_bob/fluffy_short_bob_side_833308122_01.png"
+        },
+        {
+          "angle": "front",
+          "label": "front",
+          "filename": "fluffy_short_bob_front_50853376_01.png",
+          "asset_path": "assets/research/hairstyle/test25/fluffy_short_bob/fluffy_short_bob_front_50853376_01.png"
         },
         {
           "angle": "three_quarter_back",
@@ -2277,11 +2277,17 @@ window.researchSampleCandidates = {
       "role": "main",
       "focus": "切りそろえ横髪の明瞭さ。",
       "expected_result": "ボブベースに切りそろえた横髪を合わせた姫寄りシルエット。",
-      "filename": "hime_bob_blunt_sidelocks_front_3953900241_03.png",
+      "filename": "hime_bob_blunt_sidelocks_three_quarter_back_3853658366_03.png",
       "reason": "ボブベースに切りそろえた横髪を合わせた姫寄りシルエット。",
-      "source_path": "test25/hime_bob_blunt_sidelocks/hime_bob_blunt_sidelocks_front_3953900241_03.png",
-      "asset_path": "assets/research/hairstyle/test25/hime_bob_blunt_sidelocks/hime_bob_blunt_sidelocks_front_3953900241_03.png",
+      "source_path": "test25/hime_bob_blunt_sidelocks/hime_bob_blunt_sidelocks_three_quarter_back_3853658366_03.png",
+      "asset_path": "assets/research/hairstyle/test25/hime_bob_blunt_sidelocks/hime_bob_blunt_sidelocks_three_quarter_back_3853658366_03.png",
       "samples": [
+        {
+          "angle": "three_quarter_back",
+          "label": "rear 3q",
+          "filename": "hime_bob_blunt_sidelocks_three_quarter_back_3853658366_03.png",
+          "asset_path": "assets/research/hairstyle/test25/hime_bob_blunt_sidelocks/hime_bob_blunt_sidelocks_three_quarter_back_3853658366_03.png"
+        },
         {
           "angle": "front",
           "label": "front",
@@ -2293,12 +2299,6 @@ window.researchSampleCandidates = {
           "label": "side",
           "filename": "hime_bob_blunt_sidelocks_side_561088484_01.png",
           "asset_path": "assets/research/hairstyle/test25/hime_bob_blunt_sidelocks/hime_bob_blunt_sidelocks_side_561088484_01.png"
-        },
-        {
-          "angle": "three_quarter_back",
-          "label": "rear 3q",
-          "filename": "hime_bob_blunt_sidelocks_three_quarter_back_3853658366_03.png",
-          "asset_path": "assets/research/hairstyle/test25/hime_bob_blunt_sidelocks/hime_bob_blunt_sidelocks_three_quarter_back_3853658366_03.png"
         }
       ],
       "stage": "survey",
@@ -2321,22 +2321,22 @@ window.researchSampleCandidates = {
       "role": "main",
       "focus": "内巻きの丸いシルエット。",
       "expected_result": "毛先が内側に入る丸いボブ。柔らかく整った印象になる。",
-      "filename": "inward_curled_bob_front_3611412008_02.png",
+      "filename": "inward_curled_bob_side_2179404655_03.png",
       "reason": "毛先が内側に入る丸いボブ。柔らかく整った印象になる。",
-      "source_path": "test25/inward_curled_bob/inward_curled_bob_front_3611412008_02.png",
-      "asset_path": "assets/research/hairstyle/test25/inward_curled_bob/inward_curled_bob_front_3611412008_02.png",
+      "source_path": "test25/inward_curled_bob/inward_curled_bob_side_2179404655_03.png",
+      "asset_path": "assets/research/hairstyle/test25/inward_curled_bob/inward_curled_bob_side_2179404655_03.png",
       "samples": [
-        {
-          "angle": "front",
-          "label": "front",
-          "filename": "inward_curled_bob_front_3611412008_02.png",
-          "asset_path": "assets/research/hairstyle/test25/inward_curled_bob/inward_curled_bob_front_3611412008_02.png"
-        },
         {
           "angle": "side",
           "label": "side",
           "filename": "inward_curled_bob_side_2179404655_03.png",
           "asset_path": "assets/research/hairstyle/test25/inward_curled_bob/inward_curled_bob_side_2179404655_03.png"
+        },
+        {
+          "angle": "front",
+          "label": "front",
+          "filename": "inward_curled_bob_front_3611412008_02.png",
+          "asset_path": "assets/research/hairstyle/test25/inward_curled_bob/inward_curled_bob_front_3611412008_02.png"
         },
         {
           "angle": "three_quarter_back",
@@ -2673,11 +2673,17 @@ window.researchSampleCandidates = {
       "role": "main",
       "focus": "長さとストレート感",
       "expected_result": "ストレートロングの特徴が分かりやすく見えること。",
-      "filename": "straight_long_hair_front_2039988465_03.png",
+      "filename": "straight_long_hair_three_quarter_back_3733102604_01.png",
       "reason": "ストレートロングの特徴が分かりやすく見えること。",
-      "source_path": "test25/straight_long_hair/straight_long_hair_front_2039988465_03.png",
-      "asset_path": "assets/research/hairstyle/test25/straight_long_hair/straight_long_hair_front_2039988465_03.png",
+      "source_path": "test25/straight_long_hair/straight_long_hair_three_quarter_back_3733102604_01.png",
+      "asset_path": "assets/research/hairstyle/test25/straight_long_hair/straight_long_hair_three_quarter_back_3733102604_01.png",
       "samples": [
+        {
+          "angle": "three_quarter_back",
+          "label": "rear 3q",
+          "filename": "straight_long_hair_three_quarter_back_3733102604_01.png",
+          "asset_path": "assets/research/hairstyle/test25/straight_long_hair/straight_long_hair_three_quarter_back_3733102604_01.png"
+        },
         {
           "angle": "front",
           "label": "front",
@@ -2689,12 +2695,6 @@ window.researchSampleCandidates = {
           "label": "side",
           "filename": "straight_long_hair_side_459642279_01.png",
           "asset_path": "assets/research/hairstyle/test25/straight_long_hair/straight_long_hair_side_459642279_01.png"
-        },
-        {
-          "angle": "three_quarter_back",
-          "label": "rear 3q",
-          "filename": "straight_long_hair_three_quarter_back_3733102604_01.png",
-          "asset_path": "assets/research/hairstyle/test25/straight_long_hair/straight_long_hair_three_quarter_back_3733102604_01.png"
         }
       ],
       "stage": "survey",
