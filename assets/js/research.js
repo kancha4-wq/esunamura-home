@@ -165,7 +165,7 @@
     if (!text) return "";
     return text
       .split("\n")
-      .map((line) => line.replace(/^\s*[a-z][a-z0-9_]*_prompt\s*:\s*/i, "").trim())
+      .map((line) => line.replace(/^\s*(?:[a-z][a-z0-9_]*_prompt|angle_positive|angle_negative)\s*:\s*/i, "").trim())
       .filter(Boolean)
       .join("\n");
   }
