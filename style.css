@@ -2413,7 +2413,10 @@ h2 {
 
 .research-candidate-media.has-samples {
   grid-template-columns: minmax(0, 2fr) minmax(74px, 1fr);
+  align-content: stretch;
   align-items: stretch;
+  height: 100%;
+  min-height: 0;
 }
 
 .research-image-link img {
@@ -2434,9 +2437,17 @@ h2 {
 }
 
 .research-candidate-media.has-samples .research-image-link img {
+  aspect-ratio: auto;
   height: 100%;
   object-fit: contain;
   object-position: center;
+}
+
+.research-candidate-media.has-samples .research-image-link,
+.research-candidate-media.has-samples .research-sample-thumbs,
+.research-candidate-media.has-samples .research-sample-thumb {
+  height: 100%;
+  min-height: 0;
 }
 
 .research-sample-thumbs {
@@ -2471,6 +2482,7 @@ h2 {
 
 .research-candidate-media.has-samples .research-sample-thumb,
 .research-candidate-media.has-samples .research-sample-thumb img {
+  aspect-ratio: auto;
   height: 100%;
 }
 
