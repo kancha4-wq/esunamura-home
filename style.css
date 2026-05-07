@@ -2416,6 +2416,7 @@ h2 {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
+  object-position: center top;
   border-radius: 8px;
 }
 
@@ -2449,6 +2450,7 @@ h2 {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
+  object-position: center top;
 }
 
 .research-sample-thumb span {
