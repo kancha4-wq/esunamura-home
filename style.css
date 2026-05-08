@@ -2552,7 +2552,7 @@ h2 {
 
 .research-candidate-copy {
   display: grid;
-  gap: 10px;
+  gap: 8px;
   padding: 12px;
 }
 
@@ -2605,8 +2605,8 @@ h2 {
 .research-candidate-copy h3 {
   width: fit-content;
   max-width: 100%;
-  margin: 0 0 4px;
-  padding: 8px 12px 9px;
+  margin: 0;
+  padding: 4px 10px 5px;
   border: 1px solid rgba(245, 195, 99, 0.34);
   border-left: 4px solid var(--accent);
   border-radius: 10px;
@@ -2615,7 +2615,7 @@ h2 {
     rgba(8, 8, 8, 0.26);
   color: var(--text);
   font-size: clamp(1.08rem, 2.2vw, 1.28rem);
-  line-height: 1.35;
+  line-height: 1.2;
   overflow-wrap: anywhere;
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
 }
