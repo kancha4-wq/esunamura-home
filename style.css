@@ -2603,6 +2603,8 @@ h2 {
 }
 
 .research-candidate-copy h3 {
+  align-self: start;
+  justify-self: start;
   width: fit-content;
   max-width: 100%;
   margin: 0;
