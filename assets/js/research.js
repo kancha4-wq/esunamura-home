@@ -87,7 +87,7 @@
   };
 
   const sectionContactIds = {
-    hairstyle: ["hairstyle_test25_selected", "hairstyle_test28_selected", "hairstyle"],
+    hairstyle: ["hairstyle_test25_selected", "hairstyle_test28_selected"],
     hairstyle_test19: ["hairstyle_test19_selected", "test19_all_contact"],
     hairstyle_test25: ["hairstyle_test25_selected"],
     hairstyle_test28: ["hairstyle_test28_selected"],
@@ -107,7 +107,7 @@
   };
 
   const pageSectionGroups = {
-    hairstyle: ["hairstyle_test25", "hairstyle_test28", "hairstyle_test19", "hairstyle"],
+    hairstyle: ["hairstyle_test25", "hairstyle_test28"],
     bangs: ["bangs_test26"],
     hair_color: ["hair_color_test27", "hair_color_test21", "hair_color"]
   };
