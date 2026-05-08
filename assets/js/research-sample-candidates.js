@@ -1,6 +1,6 @@
 window.researchSampleCandidates = {
-  "generated_from": "selected_samples_codex_ascii_v2.zip + selected_bangs_codex_test18.zip + selected_hairstyle_test19_codex.zip + hairstyle_test19_codex_simple_store.zip + bangs_test20_codex_simple_store.zip + HP????_????_????????.zip(test25 final) + bangs_test26_selected + hair_color_test27_selected",
-  "notes": "Selected candidate samples for Esunamura research page. Test19 hairstyle and Test20 bangs candidates are added as supplemental verification material. Test25 hairstyle candidates are added as final HP reflection candidates. Test26 bangs candidates are added as final HP reflection candidates. Test27 hair color candidates are added as full color retest candidates.",
+  "generated_from": "selected_samples_codex_ascii_v2.zip + selected_bangs_codex_test18.zip + selected_hairstyle_test19_codex.zip + hairstyle_test19_codex_simple_store.zip + bangs_test20_codex_simple_store.zip + HP????_????_????????.zip(test25 final) + bangs_test26_selected + hair_color_test27_selected + hairstyle_test28_selected",
+  "notes": "Selected candidate samples for Esunamura research page. Test19 hairstyle and Test20 bangs candidates are added as supplemental verification material. Test25 hairstyle candidates are added as final HP reflection candidates. Test26 bangs candidates are added as final HP reflection candidates. Test27 hair color candidates are added as full color retest candidates. Test28 hairstyle supplemental candidates are added where all 3 angles are available.",
   "sections": [
     {
       "id": "hair_color",
@@ -31,6 +31,11 @@ window.researchSampleCandidates = {
       "id": "hairstyle_test25",
       "title_ja": "??????????25??",
       "asset_dir": "assets/research/hairstyle/test25/"
+    },
+    {
+      "id": "hairstyle_test28",
+      "title_ja": "髪型補完検証：テスト28候補",
+      "asset_dir": "assets/research/hairstyle/test28/"
     },
     {
       "id": "bangs_test26",
@@ -103,6 +108,11 @@ window.researchSampleCandidates = {
       "id": "hairstyle_test25_selected",
       "label": "?????25????",
       "path": "assets/research/contact-sheets/hairstyle_test25_selected_contact.jpg"
+    },
+    {
+      "id": "hairstyle_test28_selected",
+      "label": "髪型テスト28補完候補",
+      "path": "assets/research/contact-sheets/hairstyle_test28_selected_contact.jpg"
     },
     {
       "id": "hair_color_test27_selected",
@@ -2881,6 +2891,221 @@ window.researchSampleCandidates = {
       "prompt_source_sheet": "manifest",
       "public_hidden": true,
       "public_note": "Public page prioritizes stronger Test20 eye-covering bangs representatives."
+    },
+    {
+      "section": "hairstyle_test28",
+      "order": 6,
+      "source_test": "test28",
+      "theme": "high_twin_tails_ribbon",
+      "theme_name": "high_twin_tails_ribbon",
+      "jp_label": "高めツインテール",
+      "role": "main",
+      "focus": "高め位置の左右結びとリボンが見えるか。",
+      "expected_result": "高め位置のツインテールが明確。アニメ髪型として需要が高い候補。",
+      "filename": "high_twin_tails_ribbon_front_3680516398_02.png",
+      "reason": "高め位置のツインテールが明確。アニメ髪型として需要が高い候補。",
+      "source_path": "テスト結果BK/テスト28_結果_髪型補完/generated/PromptThemes/high_twin_tails_ribbon/front/high_twin_tails_ribbon_front_3680516398_02.png",
+      "asset_path": "assets/research/hairstyle/test28/high_twin_tails_ribbon/high_twin_tails_ribbon_front_3680516398_02.png",
+      "samples": [
+        {
+          "angle": "front",
+          "label": "front",
+          "filename": "high_twin_tails_ribbon_front_3680516398_02.png",
+          "asset_path": "assets/research/hairstyle/test28/high_twin_tails_ribbon/high_twin_tails_ribbon_front_3680516398_02.png"
+        },
+        {
+          "angle": "side",
+          "label": "side",
+          "filename": "high_twin_tails_ribbon_side_3760423966_01.png",
+          "asset_path": "assets/research/hairstyle/test28/high_twin_tails_ribbon/high_twin_tails_ribbon_side_3760423966_01.png"
+        },
+        {
+          "angle": "three_quarter_back",
+          "label": "rear 3q",
+          "filename": "high_twin_tails_ribbon_three_quarter_back_1332047762_01.png",
+          "asset_path": "assets/research/hairstyle/test28/high_twin_tails_ribbon/high_twin_tails_ribbon_three_quarter_back_1332047762_01.png"
+        }
+      ],
+      "stage": "survey",
+      "important_tags": "high twin tails ribbon",
+      "positive_hair_prompt": "(high twintails:1.45), high twin tails, peach blonde hair, soft peach blonde hair, warm blonde hair, hair tied high on both sides, visible ribbons, soft bangs, energetic anime hairstyle",
+      "negative_hair_prompt": "low twintails, twin braids, side ponytail, single ponytail, double buns, short bob only, merged hair, broken hairstyle, animal ears, cat ears, duplicate, multiple girls, character sheet",
+      "verification_note": "高め位置のツインテールが明確。アニメ髪型として需要が高い候補。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト28_髪型補完.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "hairstyle_test28",
+      "order": 7,
+      "source_test": "test28",
+      "theme": "double_buns_short_bob",
+      "theme_name": "double_buns_short_bob",
+      "jp_label": "お団子ボブ",
+      "role": "main",
+      "focus": "左右対称のお団子とボブ感が両立するか。",
+      "expected_result": "左右対称のお団子とボブ感が両立。お団子系の本命候補。",
+      "filename": "double_buns_short_bob_front_493296692_03.png",
+      "reason": "左右対称のお団子とボブ感が両立。お団子系の本命候補。",
+      "source_path": "テスト結果BK/テスト28_結果_髪型補完/generated/PromptThemes/double_buns_short_bob/front/double_buns_short_bob_front_493296692_03.png",
+      "asset_path": "assets/research/hairstyle/test28/double_buns_short_bob/double_buns_short_bob_front_493296692_03.png",
+      "samples": [
+        {
+          "angle": "front",
+          "label": "front",
+          "filename": "double_buns_short_bob_front_493296692_03.png",
+          "asset_path": "assets/research/hairstyle/test28/double_buns_short_bob/double_buns_short_bob_front_493296692_03.png"
+        },
+        {
+          "angle": "side",
+          "label": "side",
+          "filename": "double_buns_short_bob_side_2246794154_01.png",
+          "asset_path": "assets/research/hairstyle/test28/double_buns_short_bob/double_buns_short_bob_side_2246794154_01.png"
+        },
+        {
+          "angle": "three_quarter_back",
+          "label": "rear 3q",
+          "filename": "double_buns_short_bob_three_quarter_back_119515153_04.png",
+          "asset_path": "assets/research/hairstyle/test28/double_buns_short_bob/double_buns_short_bob_three_quarter_back_119515153_04.png"
+        }
+      ],
+      "stage": "survey",
+      "important_tags": "double buns short bob",
+      "positive_hair_prompt": "(short bob hair:1.25), chin-length bob, neatly styled straight hair, peach blonde hair, soft peach blonde hair, warm blonde hair, (blunt bangs:1.15), straight bangs, (double buns:1.35), symmetrical side buns, small side buns, hair gathered into buns, compact odango hairstyle, thin side locks, face-framing strands, neat anime hairstyle",
+      "negative_hair_prompt": "long hair, shoulder-length hair, very long hair, ponytail, side ponytail, high side ponytail, braids, twin braids, twintails, messy hair, damaged hair, curly hair, wavy hair, asymmetrical bun, one bun, large bun, oversized bun, uneven buns, merged hair, broken hairstyle, animal ears, cat ears, duplicate, multiple girls, character sheet",
+      "verification_note": "左右対称のお団子とボブ感が両立。お団子系の本命候補。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト28_髪型補完.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "hairstyle_test28",
+      "order": 8,
+      "source_test": "test28",
+      "theme": "anime_straight_long",
+      "theme_name": "anime_straight_long",
+      "jp_label": "アニメ風ストレートロング",
+      "role": "main",
+      "focus": "基準ロングとして髪の長さと直線感が見えるか。",
+      "expected_result": "基準ロングとして安定。ほかの髪型との差分比較用に使いやすい。",
+      "filename": "anime_straight_long_three_quarter_back_1093792795_01.png",
+      "reason": "基準ロングとして安定。ほかの髪型との差分比較用に使いやすい。",
+      "source_path": "テスト結果BK/テスト28_結果_髪型補完/generated/PromptThemes/anime_straight_long/three_quarter_back/anime_straight_long_three_quarter_back_1093792795_01.png",
+      "asset_path": "assets/research/hairstyle/test28/anime_straight_long/anime_straight_long_three_quarter_back_1093792795_01.png",
+      "samples": [
+        {
+          "angle": "three_quarter_back",
+          "label": "rear 3q",
+          "filename": "anime_straight_long_three_quarter_back_1093792795_01.png",
+          "asset_path": "assets/research/hairstyle/test28/anime_straight_long/anime_straight_long_three_quarter_back_1093792795_01.png"
+        },
+        {
+          "angle": "front",
+          "label": "front",
+          "filename": "anime_straight_long_front_289395445_01.png",
+          "asset_path": "assets/research/hairstyle/test28/anime_straight_long/anime_straight_long_front_289395445_01.png"
+        },
+        {
+          "angle": "side",
+          "label": "side",
+          "filename": "anime_straight_long_side_386952263_01.png",
+          "asset_path": "assets/research/hairstyle/test28/anime_straight_long/anime_straight_long_side_386952263_01.png"
+        }
+      ],
+      "stage": "survey",
+      "important_tags": "anime straight long",
+      "positive_hair_prompt": "(long straight hair:1.35), peach blonde hair, soft peach blonde hair, warm blonde hair, sleek straight long hair, soft straight bangs, long side strands, clean anime silhouette",
+      "negative_hair_prompt": "short bob, ponytail, twintails, side ponytail, twin braids, curly hair, messy hair, hime cut sidelocks, merged hair, broken hairstyle, animal ears, cat ears, duplicate, multiple girls, character sheet",
+      "verification_note": "基準ロングとして安定。ほかの髪型との差分比較用に使いやすい。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト28_髪型補完.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "hairstyle_test28",
+      "order": 9,
+      "source_test": "test28",
+      "theme": "char_low_side_ponytail_soft",
+      "theme_name": "char_low_side_ponytail_soft",
+      "jp_label": "低いサイドポニー",
+      "role": "main",
+      "focus": "低いサイドポニーの結び位置とリボンが見えるか。",
+      "expected_result": "低いサイドポニー枠。リボンと結び位置が見える。",
+      "filename": "char_low_side_ponytail_soft_side_2596541975_01.png",
+      "reason": "低いサイドポニー枠。リボンと結び位置が見える。",
+      "source_path": "テスト結果BK/テスト28_結果_髪型補完/generated/PromptThemes/char_low_side_ponytail_soft/side/char_low_side_ponytail_soft_side_2596541975_01.png",
+      "asset_path": "assets/research/hairstyle/test28/char_low_side_ponytail_soft/char_low_side_ponytail_soft_side_2596541975_01.png",
+      "samples": [
+        {
+          "angle": "side",
+          "label": "side",
+          "filename": "char_low_side_ponytail_soft_side_2596541975_01.png",
+          "asset_path": "assets/research/hairstyle/test28/char_low_side_ponytail_soft/char_low_side_ponytail_soft_side_2596541975_01.png"
+        },
+        {
+          "angle": "front",
+          "label": "front",
+          "filename": "char_low_side_ponytail_soft_front_2544267602_01.png",
+          "asset_path": "assets/research/hairstyle/test28/char_low_side_ponytail_soft/char_low_side_ponytail_soft_front_2544267602_01.png"
+        },
+        {
+          "angle": "three_quarter_back",
+          "label": "rear 3q",
+          "filename": "char_low_side_ponytail_soft_three_quarter_back_776413999_01.png",
+          "asset_path": "assets/research/hairstyle/test28/char_low_side_ponytail_soft/char_low_side_ponytail_soft_three_quarter_back_776413999_01.png"
+        }
+      ],
+      "stage": "survey",
+      "important_tags": "char low side ponytail soft",
+      "positive_hair_prompt": "(medium hair:1.2), peach blonde hair, soft peach blonde hair, warm blonde hair, (low side ponytail:1.45), side ponytail, tied low at one side, visible ribbon, loose side strands, soft hair",
+      "negative_hair_prompt": "twin braids, twintails, high ponytail, double buns, full braid, very long hair, bob cut only, merged hair, broken hairstyle, animal ears, cat ears, duplicate, multiple girls, character sheet",
+      "verification_note": "低いサイドポニー枠。リボンと結び位置が見える。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト28_髪型補完.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "hairstyle_test28",
+      "order": 10,
+      "source_test": "test28",
+      "theme": "char_loose_braid_accent_long",
+      "theme_name": "char_loose_braid_accent_long",
+      "jp_label": "ゆる編みアクセントロング",
+      "role": "main",
+      "focus": "ロングの中に小さなゆる編みアクセントが見えるか。",
+      "expected_result": "ゆる編み派生候補。HP研究室用に使える。",
+      "filename": "char_loose_braid_accent_long_front_3643804414_02.png",
+      "reason": "ゆる編み派生候補。HP研究室用に使える。",
+      "source_path": "テスト結果BK/テスト28_結果_髪型補完/generated/PromptThemes/char_loose_braid_accent_long/front/char_loose_braid_accent_long_front_3643804414_02.png",
+      "asset_path": "assets/research/hairstyle/test28/char_loose_braid_accent_long/char_loose_braid_accent_long_front_3643804414_02.png",
+      "samples": [
+        {
+          "angle": "front",
+          "label": "front",
+          "filename": "char_loose_braid_accent_long_front_3643804414_02.png",
+          "asset_path": "assets/research/hairstyle/test28/char_loose_braid_accent_long/char_loose_braid_accent_long_front_3643804414_02.png"
+        },
+        {
+          "angle": "side",
+          "label": "side",
+          "filename": "char_loose_braid_accent_long_side_2385747007_01.png",
+          "asset_path": "assets/research/hairstyle/test28/char_loose_braid_accent_long/char_loose_braid_accent_long_side_2385747007_01.png"
+        },
+        {
+          "angle": "three_quarter_back",
+          "label": "rear 3q",
+          "filename": "char_loose_braid_accent_long_three_quarter_back_3610465342_01.png",
+          "asset_path": "assets/research/hairstyle/test28/char_loose_braid_accent_long/char_loose_braid_accent_long_three_quarter_back_3610465342_01.png"
+        }
+      ],
+      "stage": "survey",
+      "important_tags": "char loose braid accent long",
+      "positive_hair_prompt": "long hair, peach blonde hair, soft peach blonde hair, warm blonde hair, loose braid accent, one small loose braid, mostly loose hair, soft side strands, airy hair",
+      "negative_hair_prompt": "twin braids, full braid, ponytail, twintails, short bob hair, double buns, tight braid only, merged hair, broken hairstyle, animal ears, cat ears, duplicate, multiple girls, character sheet",
+      "verification_note": "ゆる編み派生候補。HP研究室用に使える。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト28_髪型補完.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
     },
     {
       "section": "hairstyle_test19",
