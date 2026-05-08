@@ -1,6 +1,6 @@
 window.researchSampleCandidates = {
-  "generated_from": "selected_samples_codex_ascii_v2.zip + selected_bangs_codex_test18.zip + selected_hairstyle_test19_codex.zip + hairstyle_test19_codex_simple_store.zip + bangs_test20_codex_simple_store.zip + HP????_????_????????.zip(test25 final)",
-  "notes": "Selected candidate samples for Esunamura research page. Test19 hairstyle and Test20 bangs candidates are added as supplemental verification material. Test25 hairstyle candidates are added as final HP reflection candidates.",
+  "generated_from": "selected_samples_codex_ascii_v2.zip + selected_bangs_codex_test18.zip + selected_hairstyle_test19_codex.zip + hairstyle_test19_codex_simple_store.zip + bangs_test20_codex_simple_store.zip + HP????_????_????????.zip(test25 final) + bangs_test26_selected",
+  "notes": "Selected candidate samples for Esunamura research page. Test19 hairstyle and Test20 bangs candidates are added as supplemental verification material. Test25 hairstyle candidates are added as final HP reflection candidates. Test26 bangs candidates are added as final HP reflection candidates.",
   "sections": [
     {
       "id": "hair_color",
@@ -26,6 +26,11 @@ window.researchSampleCandidates = {
       "id": "hairstyle_test25",
       "title_ja": "??????????25??",
       "asset_dir": "assets/research/hairstyle/test25/"
+    },
+    {
+      "id": "bangs_test26",
+      "title_ja": "前髪プロンプト検証：テスト26候補",
+      "asset_dir": "assets/research/bangs/test26/"
     },
     {
       "id": "bangs_test20",
@@ -73,6 +78,11 @@ window.researchSampleCandidates = {
       "id": "test19_all_contact",
       "label": "テスト19 overview",
       "path": "assets/research/contact-sheets/test19_all_contact.jpg"
+    },
+    {
+      "id": "bangs_test26_selected",
+      "label": "前髪テスト26 採用候補",
+      "path": "assets/research/contact-sheets/bangs_test26_selected_contact.jpg"
     },
     {
       "id": "test20_selected_contact",
@@ -1616,6 +1626,754 @@ window.researchSampleCandidates = {
       "positive_hair_prompt": "(loose wavy long hair:1.35), peach blonde hair, soft peach blonde hair, warm blonde hair, soft waves, long wavy hair, fluffy hair volume, airy bangs, gentle anime hairstyle",
       "negative_hair_prompt": "straight long hair, drill curls, twintails, ponytail, side ponytail, short bob, twin braids, merged hair, broken hairstyle, animal ears, cat ears, duplicate, multiple girls, character sheet",
       "lora_weight": "hidden"
+    },
+    {
+      "section": "bangs_test26",
+      "order": 1,
+      "source_test": "test26",
+      "theme": "diagonal_bangs_covering_one_eye",
+      "theme_name": "diagonal_bangs_covering_one_eye",
+      "jp_label": "斜め目隠れ前髪",
+      "role": "main",
+      "focus": "斜めに流れた前髪が片目にかかるか",
+      "expected_result": "片目に自然にかかる斜め前髪。アニメ髪型として使いやすい。",
+      "filename": "diagonal_bangs_covering_one_eye_front_3596997295_01.png",
+      "reason": "片目に自然にかかる斜め前髪。アニメ髪型として使いやすい。",
+      "source_path": "test26/diagonal_bangs_covering_one_eye",
+      "asset_path": "assets/research/bangs/test26/diagonal_bangs_covering_one_eye/diagonal_bangs_covering_one_eye_front_3596997295_01.png",
+      "samples": [
+        {
+          "asset_path": "assets/research/bangs/test26/diagonal_bangs_covering_one_eye/diagonal_bangs_covering_one_eye_front_3596997295_01.png",
+          "label": "front",
+          "angle": "front",
+          "filename": "diagonal_bangs_covering_one_eye_front_3596997295_01.png"
+        },
+        {
+          "asset_path": "assets/research/bangs/test26/diagonal_bangs_covering_one_eye/diagonal_bangs_covering_one_eye_close_front_3525864210_03.png",
+          "label": "close",
+          "angle": "close_front",
+          "filename": "diagonal_bangs_covering_one_eye_close_front_3525864210_03.png"
+        },
+        {
+          "asset_path": "assets/research/bangs/test26/diagonal_bangs_covering_one_eye/diagonal_bangs_covering_one_eye_slight_three_quarter_558861391_04.png",
+          "label": "3/4",
+          "angle": "slight_three_quarter",
+          "filename": "diagonal_bangs_covering_one_eye_slight_three_quarter_558861391_04.png"
+        }
+      ],
+      "stage": "candidate",
+      "important_tags": "diagonal bangs covering one eye",
+      "positive_hair_prompt": "diagonal bangs covering one eye, long diagonal fringe, one eye partly hidden by bangs",
+      "negative_hair_prompt": "both eyes fully covered, forehead fully exposed, no bangs",
+      "fixed_face_prompt": "",
+      "verification_note": "片目に自然にかかる斜め前髪。アニメ髪型として使いやすい。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト26_前髪.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "bangs_test26",
+      "order": 2,
+      "source_test": "test26",
+      "theme": "side_braid_one_eye_covered",
+      "theme_name": "side_braid_one_eye_covered",
+      "jp_label": "片側編み込み＋片目隠れ",
+      "role": "main",
+      "focus": "片側編み込みを残しつつ片目が隠れるか",
+      "expected_result": "片側編み込みと片目隠れ前髪の組み合わせ。",
+      "filename": "side_braid_one_eye_covered_close_front_3171922756_01.png",
+      "reason": "片側編み込みと片目隠れ前髪の組み合わせ。",
+      "source_path": "test26/side_braid_one_eye_covered",
+      "asset_path": "assets/research/bangs/test26/side_braid_one_eye_covered/side_braid_one_eye_covered_close_front_3171922756_01.png",
+      "samples": [
+        {
+          "asset_path": "assets/research/bangs/test26/side_braid_one_eye_covered/side_braid_one_eye_covered_close_front_3171922756_01.png",
+          "label": "close",
+          "angle": "close_front",
+          "filename": "side_braid_one_eye_covered_close_front_3171922756_01.png"
+        },
+        {
+          "asset_path": "assets/research/bangs/test26/side_braid_one_eye_covered/side_braid_one_eye_covered_front_963991318_04.png",
+          "label": "front",
+          "angle": "front",
+          "filename": "side_braid_one_eye_covered_front_963991318_04.png"
+        },
+        {
+          "asset_path": "assets/research/bangs/test26/side_braid_one_eye_covered/side_braid_one_eye_covered_slight_three_quarter_2513978604_01.png",
+          "label": "3/4",
+          "angle": "slight_three_quarter",
+          "filename": "side_braid_one_eye_covered_slight_three_quarter_2513978604_01.png"
+        }
+      ],
+      "stage": "candidate",
+      "important_tags": "side braid one eye covered",
+      "positive_hair_prompt": "side braid, bangs covering one eye, one eye covered by fringe, side-swept long bangs",
+      "negative_hair_prompt": "no braid, both eyes covered, forehead fully visible",
+      "fixed_face_prompt": "",
+      "verification_note": "片側編み込みと片目隠れ前髪の組み合わせ。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト26_前髪.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "bangs_test26",
+      "order": 3,
+      "source_test": "test26",
+      "theme": "low_side_ponytail_one_eye_covered",
+      "theme_name": "low_side_ponytail_one_eye_covered",
+      "jp_label": "低いサイド結び＋片目隠れ",
+      "role": "main",
+      "focus": "結び髪でも前髪が片目にかかるか",
+      "expected_result": "低いサイド結びと片目隠れ前髪の組み合わせ。",
+      "filename": "low_side_ponytail_one_eye_covered_front_1829777700_05.png",
+      "reason": "低いサイド結びと片目隠れ前髪の組み合わせ。",
+      "source_path": "test26/low_side_ponytail_one_eye_covered",
+      "asset_path": "assets/research/bangs/test26/low_side_ponytail_one_eye_covered/low_side_ponytail_one_eye_covered_front_1829777700_05.png",
+      "samples": [
+        {
+          "asset_path": "assets/research/bangs/test26/low_side_ponytail_one_eye_covered/low_side_ponytail_one_eye_covered_front_1829777700_05.png",
+          "label": "front",
+          "angle": "front",
+          "filename": "low_side_ponytail_one_eye_covered_front_1829777700_05.png"
+        },
+        {
+          "asset_path": "assets/research/bangs/test26/low_side_ponytail_one_eye_covered/low_side_ponytail_one_eye_covered_close_front_1181884395_02.png",
+          "label": "close",
+          "angle": "close_front",
+          "filename": "low_side_ponytail_one_eye_covered_close_front_1181884395_02.png"
+        },
+        {
+          "asset_path": "assets/research/bangs/test26/low_side_ponytail_one_eye_covered/low_side_ponytail_one_eye_covered_slight_three_quarter_770897578_01.png",
+          "label": "3/4",
+          "angle": "slight_three_quarter",
+          "filename": "low_side_ponytail_one_eye_covered_slight_three_quarter_770897578_01.png"
+        }
+      ],
+      "stage": "candidate",
+      "important_tags": "low side ponytail one eye covered",
+      "positive_hair_prompt": "low side ponytail, bangs covering one eye, long side bangs, one eye partly hidden",
+      "negative_hair_prompt": "high ponytail, both eyes covered, no bangs",
+      "fixed_face_prompt": "",
+      "verification_note": "低いサイド結びと片目隠れ前髪の組み合わせ。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト26_前髪.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "bangs_test26",
+      "order": 4,
+      "source_test": "test26",
+      "theme": "heavy_bangs_covering_eyes",
+      "theme_name": "heavy_bangs_covering_eyes",
+      "jp_label": "重め目隠れ前髪",
+      "role": "main",
+      "focus": "重い前髪が目元にかかるか",
+      "expected_result": "重めの前髪が目元にかかり、視線が少し隠れる。",
+      "filename": "heavy_bangs_covering_eyes_close_front_1984976320_02.png",
+      "reason": "重めの前髪が目元にかかり、視線が少し隠れる。",
+      "source_path": "test26/heavy_bangs_covering_eyes",
+      "asset_path": "assets/research/bangs/test26/heavy_bangs_covering_eyes/heavy_bangs_covering_eyes_close_front_1984976320_02.png",
+      "samples": [
+        {
+          "asset_path": "assets/research/bangs/test26/heavy_bangs_covering_eyes/heavy_bangs_covering_eyes_close_front_1984976320_02.png",
+          "label": "close",
+          "angle": "close_front",
+          "filename": "heavy_bangs_covering_eyes_close_front_1984976320_02.png"
+        },
+        {
+          "asset_path": "assets/research/bangs/test26/heavy_bangs_covering_eyes/heavy_bangs_covering_eyes_slight_three_quarter_193682051_03.png",
+          "label": "3/4",
+          "angle": "slight_three_quarter",
+          "filename": "heavy_bangs_covering_eyes_slight_three_quarter_193682051_03.png"
+        },
+        {
+          "asset_path": "assets/research/bangs/test26/heavy_bangs_covering_eyes/heavy_bangs_covering_eyes_front_2711982284_02.png",
+          "label": "front",
+          "angle": "front",
+          "filename": "heavy_bangs_covering_eyes_front_2711982284_02.png"
+        }
+      ],
+      "stage": "candidate",
+      "important_tags": "heavy bangs covering eyes",
+      "positive_hair_prompt": "heavy bangs covering eyes, long thick bangs over eyes, eyes partly hidden by heavy fringe",
+      "negative_hair_prompt": "forehead visible, thin bangs, short bangs, no bangs",
+      "fixed_face_prompt": "",
+      "verification_note": "重めの前髪が目元にかかり、視線が少し隠れる。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト26_前髪.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "bangs_test26",
+      "order": 5,
+      "source_test": "test26",
+      "theme": "peekaboo_bangs",
+      "theme_name": "peekaboo_bangs",
+      "jp_label": "チラ見え目隠れ前髪",
+      "role": "main",
+      "focus": "前髪の隙間から片目が見えるか",
+      "expected_result": "髪の隙間から片目が見えるバランス重視。",
+      "filename": "peekaboo_bangs_front_2137725647_02.png",
+      "reason": "髪の隙間から片目が見えるバランス重視。",
+      "source_path": "test26/peekaboo_bangs",
+      "asset_path": "assets/research/bangs/test26/peekaboo_bangs/peekaboo_bangs_front_2137725647_02.png",
+      "samples": [
+        {
+          "asset_path": "assets/research/bangs/test26/peekaboo_bangs/peekaboo_bangs_front_2137725647_02.png",
+          "label": "front",
+          "angle": "front",
+          "filename": "peekaboo_bangs_front_2137725647_02.png"
+        },
+        {
+          "asset_path": "assets/research/bangs/test26/peekaboo_bangs/peekaboo_bangs_close_front_2782226142_03.png",
+          "label": "close",
+          "angle": "close_front",
+          "filename": "peekaboo_bangs_close_front_2782226142_03.png"
+        },
+        {
+          "asset_path": "assets/research/bangs/test26/peekaboo_bangs/peekaboo_bangs_slight_three_quarter_1132414516_04.png",
+          "label": "3/4",
+          "angle": "slight_three_quarter",
+          "filename": "peekaboo_bangs_slight_three_quarter_1132414516_04.png"
+        }
+      ],
+      "stage": "candidate",
+      "important_tags": "peekaboo bangs",
+      "positive_hair_prompt": "peekaboo bangs, one eye peeking through bangs, long fringe with visible eye gap",
+      "negative_hair_prompt": "both eyes hidden, forehead fully exposed, hair covering whole face",
+      "fixed_face_prompt": "",
+      "verification_note": "髪の隙間から片目が見えるバランス重視。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト26_前髪.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "bangs_test26",
+      "order": 6,
+      "source_test": "test26",
+      "theme": "sadako_style_long_front_hair",
+      "theme_name": "sadako_style_long_front_hair",
+      "jp_label": "貞子寄り長前髪",
+      "role": "main",
+      "focus": "長い前髪が顔にかかるか",
+      "expected_result": "重い長め前髪が顔にかかるが、表情は最低限見える。",
+      "filename": "sadako_style_long_front_hair_front_2307728024_05.png",
+      "reason": "重い長め前髪が顔にかかるが、表情は最低限見える。",
+      "source_path": "test26/sadako_style_long_front_hair",
+      "asset_path": "assets/research/bangs/test26/sadako_style_long_front_hair/sadako_style_long_front_hair_front_2307728024_05.png",
+      "samples": [
+        {
+          "asset_path": "assets/research/bangs/test26/sadako_style_long_front_hair/sadako_style_long_front_hair_front_2307728024_05.png",
+          "label": "front",
+          "angle": "front",
+          "filename": "sadako_style_long_front_hair_front_2307728024_05.png"
+        },
+        {
+          "asset_path": "assets/research/bangs/test26/sadako_style_long_front_hair/sadako_style_long_front_hair_slight_three_quarter_1032442237_03.png",
+          "label": "3/4",
+          "angle": "slight_three_quarter",
+          "filename": "sadako_style_long_front_hair_slight_three_quarter_1032442237_03.png"
+        },
+        {
+          "asset_path": "assets/research/bangs/test26/sadako_style_long_front_hair/sadako_style_long_front_hair_close_front_3209370202_04.png",
+          "label": "close",
+          "angle": "close_front",
+          "filename": "sadako_style_long_front_hair_close_front_3209370202_04.png"
+        }
+      ],
+      "stage": "candidate",
+      "important_tags": "sadako style long front hair",
+      "positive_hair_prompt": "very long front hair, long bangs falling over face, eerie long fringe, bangs reaching below eyes",
+      "negative_hair_prompt": "short bangs, forehead visible, neat straight bangs",
+      "fixed_face_prompt": "",
+      "verification_note": "重い長め前髪が顔にかかるが、表情は最低限見える。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト26_前髪.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "bangs_test26",
+      "order": 7,
+      "source_test": "test26",
+      "theme": "see_through_bangs",
+      "theme_name": "see_through_bangs",
+      "jp_label": "透け感シースルー前髪",
+      "role": "main",
+      "focus": "薄い前髪の透け感が出るか",
+      "expected_result": "軽めで透け感のある前髪。額が少し見える。",
+      "filename": "see_through_bangs_front_585288791_03.png",
+      "reason": "軽めで透け感のある前髪。額が少し見える。",
+      "source_path": "test26/see_through_bangs",
+      "asset_path": "assets/research/bangs/test26/see_through_bangs/see_through_bangs_front_585288791_03.png",
+      "samples": [
+        {
+          "asset_path": "assets/research/bangs/test26/see_through_bangs/see_through_bangs_front_585288791_03.png",
+          "label": "front",
+          "angle": "front",
+          "filename": "see_through_bangs_front_585288791_03.png"
+        },
+        {
+          "asset_path": "assets/research/bangs/test26/see_through_bangs/see_through_bangs_front_1746234369_05.png",
+          "label": "front",
+          "angle": "front",
+          "filename": "see_through_bangs_front_1746234369_05.png"
+        },
+        {
+          "asset_path": "assets/research/bangs/test26/see_through_bangs/see_through_bangs_slight_three_quarter_1235907896_05.png",
+          "label": "3/4",
+          "angle": "slight_three_quarter",
+          "filename": "see_through_bangs_slight_three_quarter_1235907896_05.png"
+        }
+      ],
+      "stage": "candidate",
+      "important_tags": "see through bangs",
+      "positive_hair_prompt": "see-through bangs, wispy bangs, light transparent fringe, forehead partly visible through bangs",
+      "negative_hair_prompt": "heavy bangs, thick bangs, fully covered forehead, no bangs",
+      "fixed_face_prompt": "",
+      "verification_note": "軽めで透け感のある前髪。額が少し見える。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト26_前髪.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "bangs_test26",
+      "order": 8,
+      "source_test": "test26",
+      "theme": "side_swept_bangs",
+      "theme_name": "side_swept_bangs",
+      "jp_label": "斜め流し前髪",
+      "role": "main",
+      "focus": "流し方向と額の見え方が分かるか",
+      "expected_result": "片側へ自然に流れる前髪。額が少し見える。",
+      "filename": "side_swept_bangs_close_front_606716612_03.png",
+      "reason": "片側へ自然に流れる前髪。額が少し見える。",
+      "source_path": "test26/side_swept_bangs",
+      "asset_path": "assets/research/bangs/test26/side_swept_bangs/side_swept_bangs_close_front_606716612_03.png",
+      "samples": [
+        {
+          "asset_path": "assets/research/bangs/test26/side_swept_bangs/side_swept_bangs_close_front_606716612_03.png",
+          "label": "close",
+          "angle": "close_front",
+          "filename": "side_swept_bangs_close_front_606716612_03.png"
+        },
+        {
+          "asset_path": "assets/research/bangs/test26/side_swept_bangs/side_swept_bangs_front_57250172_02.png",
+          "label": "front",
+          "angle": "front",
+          "filename": "side_swept_bangs_front_57250172_02.png"
+        },
+        {
+          "asset_path": "assets/research/bangs/test26/side_swept_bangs/side_swept_bangs_slight_three_quarter_2549509733_05.png",
+          "label": "3/4",
+          "angle": "slight_three_quarter",
+          "filename": "side_swept_bangs_slight_three_quarter_2549509733_05.png"
+        }
+      ],
+      "stage": "candidate",
+      "important_tags": "side swept bangs",
+      "positive_hair_prompt": "side-swept bangs, bangs swept to one side, diagonal fringe, forehead partly visible",
+      "negative_hair_prompt": "straight full bangs, center parted bangs, no bangs",
+      "fixed_face_prompt": "",
+      "verification_note": "片側へ自然に流れる前髪。額が少し見える。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト26_前髪.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "bangs_test26",
+      "order": 9,
+      "source_test": "test26",
+      "theme": "full_straight_bangs",
+      "theme_name": "full_straight_bangs",
+      "jp_label": "まっすぐ重めストレート前髪",
+      "role": "main",
+      "focus": "直線的な前髪ラインが出るか",
+      "expected_result": "目の上で整ったストレート前髪。やや重め。",
+      "filename": "full_straight_bangs_close_front_4272833754_01.png",
+      "reason": "目の上で整ったストレート前髪。やや重め。",
+      "source_path": "test26/full_straight_bangs",
+      "asset_path": "assets/research/bangs/test26/full_straight_bangs/full_straight_bangs_close_front_4272833754_01.png",
+      "samples": [
+        {
+          "asset_path": "assets/research/bangs/test26/full_straight_bangs/full_straight_bangs_close_front_4272833754_01.png",
+          "label": "close",
+          "angle": "close_front",
+          "filename": "full_straight_bangs_close_front_4272833754_01.png"
+        },
+        {
+          "asset_path": "assets/research/bangs/test26/full_straight_bangs/full_straight_bangs_front_3743921292_05.png",
+          "label": "front",
+          "angle": "front",
+          "filename": "full_straight_bangs_front_3743921292_05.png"
+        },
+        {
+          "asset_path": "assets/research/bangs/test26/full_straight_bangs/full_straight_bangs_slight_three_quarter_1346000220_01.png",
+          "label": "3/4",
+          "angle": "slight_three_quarter",
+          "filename": "full_straight_bangs_slight_three_quarter_1346000220_01.png"
+        }
+      ],
+      "stage": "candidate",
+      "important_tags": "full straight bangs",
+      "positive_hair_prompt": "full straight bangs, straight blunt bangs, even bangs across forehead, neat fringe line",
+      "negative_hair_prompt": "side-swept bangs, parted bangs, no bangs, messy fringe",
+      "fixed_face_prompt": "",
+      "verification_note": "目の上で整ったストレート前髪。やや重め。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト26_前髪.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "bangs_test26",
+      "order": 10,
+      "source_test": "test26",
+      "theme": "long_side_face_framing",
+      "theme_name": "long_side_face_framing",
+      "jp_label": "片側編み込み＋ロング顔まわり",
+      "role": "main",
+      "focus": "顔まわりの長い髪が見えるか",
+      "expected_result": "長めの顔まわり髪と片側編み込みの組み合わせ。",
+      "filename": "long_side_face_framing_close_front_1353036722_03.png",
+      "reason": "長めの顔まわり髪と片側編み込みの組み合わせ。",
+      "source_path": "test26/long_side_face_framing",
+      "asset_path": "assets/research/bangs/test26/long_side_face_framing/long_side_face_framing_close_front_1353036722_03.png",
+      "samples": [
+        {
+          "asset_path": "assets/research/bangs/test26/long_side_face_framing/long_side_face_framing_close_front_1353036722_03.png",
+          "label": "close",
+          "angle": "close_front",
+          "filename": "long_side_face_framing_close_front_1353036722_03.png"
+        },
+        {
+          "asset_path": "assets/research/bangs/test26/long_side_face_framing/long_side_face_framing_front_3921867147_04.png",
+          "label": "front",
+          "angle": "front",
+          "filename": "long_side_face_framing_front_3921867147_04.png"
+        },
+        {
+          "asset_path": "assets/research/bangs/test26/long_side_face_framing/long_side_face_framing_slight_three_quarter_268583306_05.png",
+          "label": "3/4",
+          "angle": "slight_three_quarter",
+          "filename": "long_side_face_framing_slight_three_quarter_268583306_05.png"
+        }
+      ],
+      "stage": "candidate",
+      "important_tags": "long side face framing",
+      "positive_hair_prompt": "long side face framing bangs, long sidelocks, one side braid, face-framing front hair",
+      "negative_hair_prompt": "short bangs, no sidelocks, both eyes covered",
+      "fixed_face_prompt": "",
+      "verification_note": "長めの顔まわり髪と片側編み込みの組み合わせ。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト26_前髪.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "bangs_test26",
+      "order": 11,
+      "source_test": "test26",
+      "theme": "curtain_bangs",
+      "theme_name": "curtain_bangs",
+      "jp_label": "カーテン前髪",
+      "role": "main",
+      "focus": "中央分けと顔まわりの前髪が出るか",
+      "expected_result": "中央で分かれたカーテン前髪。顔まわりに落ちる。",
+      "filename": "curtain_bangs_close_front_1622447598_01.png",
+      "reason": "中央で分かれたカーテン前髪。顔まわりに落ちる。",
+      "source_path": "test26/curtain_bangs",
+      "asset_path": "assets/research/bangs/test26/curtain_bangs/curtain_bangs_close_front_1622447598_01.png",
+      "samples": [
+        {
+          "asset_path": "assets/research/bangs/test26/curtain_bangs/curtain_bangs_close_front_1622447598_01.png",
+          "label": "close",
+          "angle": "close_front",
+          "filename": "curtain_bangs_close_front_1622447598_01.png"
+        },
+        {
+          "asset_path": "assets/research/bangs/test26/curtain_bangs/curtain_bangs_front_4007397004_03.png",
+          "label": "front",
+          "angle": "front",
+          "filename": "curtain_bangs_front_4007397004_03.png"
+        },
+        {
+          "asset_path": "assets/research/bangs/test26/curtain_bangs/curtain_bangs_slight_three_quarter_1916901919_02.png",
+          "label": "3/4",
+          "angle": "slight_three_quarter",
+          "filename": "curtain_bangs_slight_three_quarter_1916901919_02.png"
+        }
+      ],
+      "stage": "candidate",
+      "important_tags": "curtain bangs",
+      "positive_hair_prompt": "curtain bangs, center parted bangs, long bangs parted in the middle, face-framing fringe",
+      "negative_hair_prompt": "full straight bangs, one eye covered, no bangs",
+      "fixed_face_prompt": "",
+      "verification_note": "中央で分かれたカーテン前髪。顔まわりに落ちる。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト26_前髪.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "bangs_test26",
+      "order": 12,
+      "source_test": "test26",
+      "theme": "short_bangs",
+      "theme_name": "short_bangs",
+      "jp_label": "短め前髪",
+      "role": "main",
+      "focus": "短い前髪と額の見え方が分かるか",
+      "expected_result": "眉上寄りの短め前髪。表情が見えやすい。",
+      "filename": "short_bangs_close_front_245552254_01.png",
+      "reason": "眉上寄りの短め前髪。表情が見えやすい。",
+      "source_path": "test26/short_bangs",
+      "asset_path": "assets/research/bangs/test26/short_bangs/short_bangs_close_front_245552254_01.png",
+      "samples": [
+        {
+          "asset_path": "assets/research/bangs/test26/short_bangs/short_bangs_close_front_245552254_01.png",
+          "label": "close",
+          "angle": "close_front",
+          "filename": "short_bangs_close_front_245552254_01.png"
+        },
+        {
+          "asset_path": "assets/research/bangs/test26/short_bangs/short_bangs_front_2862429717_04.png",
+          "label": "front",
+          "angle": "front",
+          "filename": "short_bangs_front_2862429717_04.png"
+        },
+        {
+          "asset_path": "assets/research/bangs/test26/short_bangs/short_bangs_slight_three_quarter_1184679401_02.png",
+          "label": "3/4",
+          "angle": "slight_three_quarter",
+          "filename": "short_bangs_slight_three_quarter_1184679401_02.png"
+        }
+      ],
+      "stage": "candidate",
+      "important_tags": "short bangs",
+      "positive_hair_prompt": "short bangs, baby bangs, short fringe above eyebrows, forehead partly visible",
+      "negative_hair_prompt": "long bangs, eyes covered, heavy bangs",
+      "fixed_face_prompt": "",
+      "verification_note": "眉上寄りの短め前髪。表情が見えやすい。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト26_前髪.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "bangs_test26",
+      "order": 13,
+      "source_test": "test26",
+      "theme": "arched_bangs",
+      "theme_name": "arched_bangs",
+      "jp_label": "丸みアーチ前髪",
+      "role": "main",
+      "focus": "丸い前髪ラインが分かるか",
+      "expected_result": "丸みのあるアーチ状の前髪。柔らかい印象。",
+      "filename": "arched_bangs_front_308348506_05.png",
+      "reason": "丸みのあるアーチ状の前髪。柔らかい印象。",
+      "source_path": "test26/arched_bangs",
+      "asset_path": "assets/research/bangs/test26/arched_bangs/arched_bangs_front_308348506_05.png",
+      "samples": [
+        {
+          "asset_path": "assets/research/bangs/test26/arched_bangs/arched_bangs_front_308348506_05.png",
+          "label": "front",
+          "angle": "front",
+          "filename": "arched_bangs_front_308348506_05.png"
+        },
+        {
+          "asset_path": "assets/research/bangs/test26/arched_bangs/arched_bangs_close_front_1777857269_03.png",
+          "label": "close",
+          "angle": "close_front",
+          "filename": "arched_bangs_close_front_1777857269_03.png"
+        },
+        {
+          "asset_path": "assets/research/bangs/test26/arched_bangs/arched_bangs_slight_three_quarter_3746227029_03.png",
+          "label": "3/4",
+          "angle": "slight_three_quarter",
+          "filename": "arched_bangs_slight_three_quarter_3746227029_03.png"
+        }
+      ],
+      "stage": "candidate",
+      "important_tags": "arched bangs",
+      "positive_hair_prompt": "arched bangs, rounded bangs, curved fringe line, soft rounded front hair",
+      "negative_hair_prompt": "straight blunt bangs, messy bangs, no bangs",
+      "fixed_face_prompt": "",
+      "verification_note": "丸みのあるアーチ状の前髪。柔らかい印象。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト26_前髪.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "bangs_test26",
+      "order": 14,
+      "source_test": "test26",
+      "theme": "slightly_split_bangs",
+      "theme_name": "slightly_split_bangs",
+      "jp_label": "少し割れた前髪",
+      "role": "main",
+      "focus": "自然な割れ目が見えるか",
+      "expected_result": "自然に少し割れた前髪。額が少しだけ見える。",
+      "filename": "slightly_split_bangs_close_front_1805000555_01.png",
+      "reason": "自然に少し割れた前髪。額が少しだけ見える。",
+      "source_path": "test26/slightly_split_bangs",
+      "asset_path": "assets/research/bangs/test26/slightly_split_bangs/slightly_split_bangs_close_front_1805000555_01.png",
+      "samples": [
+        {
+          "asset_path": "assets/research/bangs/test26/slightly_split_bangs/slightly_split_bangs_close_front_1805000555_01.png",
+          "label": "close",
+          "angle": "close_front",
+          "filename": "slightly_split_bangs_close_front_1805000555_01.png"
+        },
+        {
+          "asset_path": "assets/research/bangs/test26/slightly_split_bangs/slightly_split_bangs_front_2684994400_02.png",
+          "label": "front",
+          "angle": "front",
+          "filename": "slightly_split_bangs_front_2684994400_02.png"
+        },
+        {
+          "asset_path": "assets/research/bangs/test26/slightly_split_bangs/slightly_split_bangs_slight_three_quarter_1362404352_01.png",
+          "label": "3/4",
+          "angle": "slight_three_quarter",
+          "filename": "slightly_split_bangs_slight_three_quarter_1362404352_01.png"
+        }
+      ],
+      "stage": "candidate",
+      "important_tags": "slightly split bangs",
+      "positive_hair_prompt": "slightly split bangs, small gap in bangs, natural separated fringe, forehead small gap visible",
+      "negative_hair_prompt": "full heavy bangs, no gap, center parted curtain bangs",
+      "fixed_face_prompt": "",
+      "verification_note": "自然に少し割れた前髪。額が少しだけ見える。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト26_前髪.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "bangs_test26",
+      "order": 15,
+      "source_test": "test26",
+      "theme": "side_tied_bangs",
+      "theme_name": "side_tied_bangs",
+      "jp_label": "片側寄せ前髪",
+      "role": "main",
+      "focus": "片側に寄った前髪が見えるか",
+      "expected_result": "片側に寄せた前髪。左右差が出る。",
+      "filename": "side_tied_bangs_front_2827371341_02.png",
+      "reason": "片側に寄せた前髪。左右差が出る。",
+      "source_path": "test26/side_tied_bangs",
+      "asset_path": "assets/research/bangs/test26/side_tied_bangs/side_tied_bangs_front_2827371341_02.png",
+      "samples": [
+        {
+          "asset_path": "assets/research/bangs/test26/side_tied_bangs/side_tied_bangs_front_2827371341_02.png",
+          "label": "front",
+          "angle": "front",
+          "filename": "side_tied_bangs_front_2827371341_02.png"
+        },
+        {
+          "asset_path": "assets/research/bangs/test26/side_tied_bangs/side_tied_bangs_close_front_144940659_01.png",
+          "label": "close",
+          "angle": "close_front",
+          "filename": "side_tied_bangs_close_front_144940659_01.png"
+        },
+        {
+          "asset_path": "assets/research/bangs/test26/side_tied_bangs/side_tied_bangs_slight_three_quarter_3518814941_01.png",
+          "label": "3/4",
+          "angle": "slight_three_quarter",
+          "filename": "side_tied_bangs_slight_three_quarter_3518814941_01.png"
+        }
+      ],
+      "stage": "candidate",
+      "important_tags": "side tied bangs",
+      "positive_hair_prompt": "bangs tucked to one side, side-tied bangs, asymmetrical front hair, one side forehead visible",
+      "negative_hair_prompt": "symmetrical bangs, full straight bangs, no bangs",
+      "fixed_face_prompt": "",
+      "verification_note": "片側に寄せた前髪。左右差が出る。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト26_前髪.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "bangs_test26",
+      "order": 16,
+      "source_test": "test26",
+      "theme": "low_side_ponytail_long_bangs",
+      "theme_name": "low_side_ponytail_long_bangs",
+      "jp_label": "低めサイド結び＋長前髪",
+      "role": "main",
+      "focus": "長前髪と低めサイド結びの組み合わせ",
+      "expected_result": "前髪が目元にかかりつつ、低めサイド結びが見える。",
+      "filename": "low_side_ponytail_long_bangs_close_front_2576291072_01.png",
+      "reason": "前髪が目元にかかりつつ、低めサイド結びが見える。",
+      "source_path": "test26/low_side_ponytail_long_bangs",
+      "asset_path": "assets/research/bangs/test26/low_side_ponytail_long_bangs/low_side_ponytail_long_bangs_close_front_2576291072_01.png",
+      "samples": [
+        {
+          "asset_path": "assets/research/bangs/test26/low_side_ponytail_long_bangs/low_side_ponytail_long_bangs_close_front_2576291072_01.png",
+          "label": "close",
+          "angle": "close_front",
+          "filename": "low_side_ponytail_long_bangs_close_front_2576291072_01.png"
+        },
+        {
+          "asset_path": "assets/research/bangs/test26/low_side_ponytail_long_bangs/low_side_ponytail_long_bangs_front_3950094296_04.png",
+          "label": "front",
+          "angle": "front",
+          "filename": "low_side_ponytail_long_bangs_front_3950094296_04.png"
+        },
+        {
+          "asset_path": "assets/research/bangs/test26/low_side_ponytail_long_bangs/low_side_ponytail_long_bangs_slight_three_quarter_2756357382_02.png",
+          "label": "3/4",
+          "angle": "slight_three_quarter",
+          "filename": "low_side_ponytail_long_bangs_slight_three_quarter_2756357382_02.png"
+        }
+      ],
+      "stage": "candidate",
+      "important_tags": "low side ponytail long bangs",
+      "positive_hair_prompt": "low side ponytail, long bangs, long fringe beside face, front hair falling near eyes",
+      "negative_hair_prompt": "short bangs, high ponytail, no front hair",
+      "fixed_face_prompt": "",
+      "verification_note": "前髪が目元にかかりつつ、低めサイド結びが見える。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト26_前髪.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
+    },
+    {
+      "section": "bangs_test26",
+      "order": 17,
+      "source_test": "test26",
+      "theme": "full_straight_bangs_with_side_strands",
+      "theme_name": "full_straight_bangs_with_side_strands",
+      "jp_label": "重めストレート＋横髪",
+      "role": "main",
+      "focus": "ぱっつん前髪と横髪が同時に見えるか",
+      "expected_result": "直線的な前髪と横髪で顔まわりが整う。",
+      "filename": "full_straight_bangs_with_side_strands_front_627621447_05.png",
+      "reason": "直線的な前髪と横髪で顔まわりが整う。",
+      "source_path": "test26/full_straight_bangs_with_side_strands",
+      "asset_path": "assets/research/bangs/test26/full_straight_bangs_with_side_strands/full_straight_bangs_with_side_strands_front_627621447_05.png",
+      "samples": [
+        {
+          "asset_path": "assets/research/bangs/test26/full_straight_bangs_with_side_strands/full_straight_bangs_with_side_strands_front_627621447_05.png",
+          "label": "front",
+          "angle": "front",
+          "filename": "full_straight_bangs_with_side_strands_front_627621447_05.png"
+        },
+        {
+          "asset_path": "assets/research/bangs/test26/full_straight_bangs_with_side_strands/full_straight_bangs_with_side_strands_close_front_2637144931_01.png",
+          "label": "close",
+          "angle": "close_front",
+          "filename": "full_straight_bangs_with_side_strands_close_front_2637144931_01.png"
+        },
+        {
+          "asset_path": "assets/research/bangs/test26/full_straight_bangs_with_side_strands/full_straight_bangs_with_side_strands_slight_three_quarter_2930432713_04.png",
+          "label": "3/4",
+          "angle": "slight_three_quarter",
+          "filename": "full_straight_bangs_with_side_strands_slight_three_quarter_2930432713_04.png"
+        }
+      ],
+      "stage": "candidate",
+      "important_tags": "full straight bangs with side strands",
+      "positive_hair_prompt": "full straight bangs, side strands, long sidelocks, neat straight fringe, face framing side hair",
+      "negative_hair_prompt": "side-swept bangs, no sidelocks, forehead exposed",
+      "fixed_face_prompt": "",
+      "verification_note": "直線的な前髪と横髪で顔まわりが整う。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト26_前髪.xlsx",
+      "prompt_source_sheet": "PromptThemes",
+      "final_status": "adopted"
     },
     {
       "section": "bangs_test20",
