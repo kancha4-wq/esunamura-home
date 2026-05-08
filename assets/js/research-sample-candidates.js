@@ -3503,29 +3503,23 @@ window.researchSampleCandidates = {
       "jp_label": "重め目隠れ前髪",
       "role": "main",
       "focus": "重い前髪が目元にかかるか",
-      "expected_result": "重めの前髪が目元にかかり、視線が少し隠れる。",
-      "filename": "heavy_bangs_covering_eyes_close_front_1984976320_02.png",
-      "reason": "重めの前髪が目元にかかり、視線が少し隠れる。",
+      "expected_result": "前髪が目元をしっかり覆い、完全目隠れ方向が分かりやすい。",
+      "filename": "long_bangs_over_eyes_700251998_03.png",
+      "reason": "前髪が目元をしっかり覆い、完全目隠れ方向が分かりやすい。",
       "source_path": "test26/heavy_bangs_covering_eyes",
-      "asset_path": "assets/research/bangs/test26/heavy_bangs_covering_eyes/heavy_bangs_covering_eyes_close_front_1984976320_02.png",
+      "asset_path": "assets/research/bangs/test20/long_bangs_over_eyes/long_bangs_over_eyes_700251998_03.png",
       "samples": [
+        {
+          "asset_path": "assets/research/bangs/test20/long_bangs_over_eyes/long_bangs_over_eyes_700251998_03.png",
+          "label": "cover",
+          "angle": "test20_cover",
+          "filename": "long_bangs_over_eyes_700251998_03.png"
+        },
         {
           "asset_path": "assets/research/bangs/test26/heavy_bangs_covering_eyes/heavy_bangs_covering_eyes_close_front_1984976320_02.png",
           "label": "close",
           "angle": "close_front",
           "filename": "heavy_bangs_covering_eyes_close_front_1984976320_02.png"
-        },
-        {
-          "asset_path": "assets/research/bangs/test26/heavy_bangs_covering_eyes/heavy_bangs_covering_eyes_slight_three_quarter_193682051_03.png",
-          "label": "3/4",
-          "angle": "slight_three_quarter",
-          "filename": "heavy_bangs_covering_eyes_slight_three_quarter_193682051_03.png"
-        },
-        {
-          "asset_path": "assets/research/bangs/test26/heavy_bangs_covering_eyes/heavy_bangs_covering_eyes_front_2711982284_02.png",
-          "label": "front",
-          "angle": "front",
-          "filename": "heavy_bangs_covering_eyes_front_2711982284_02.png"
         }
       ],
       "stage": "candidate",
@@ -3533,7 +3527,7 @@ window.researchSampleCandidates = {
       "positive_hair_prompt": "heavy bangs covering eyes, long thick bangs over eyes, eyes partly hidden by heavy fringe",
       "negative_hair_prompt": "forehead visible, thin bangs, short bangs, no bangs",
       "fixed_face_prompt": "",
-      "verification_note": "重めの前髪が目元にかかり、視線が少し隠れる。",
+      "verification_note": "前髪が目元をしっかり覆い、完全目隠れ方向が分かりやすい。",
       "prompt_source_file": "髪型プロンプト検証用_テスト26_前髪.xlsx",
       "prompt_source_sheet": "PromptThemes",
       "final_status": "adopted"
@@ -3593,7 +3587,7 @@ window.researchSampleCandidates = {
       "focus": "長い前髪が顔にかかるか",
       "expected_result": "重い長め前髪が顔にかかるが、表情は最低限見える。",
       "filename": "sadako_style_long_front_hair_front_2307728024_05.png",
-      "reason": "重い長め前髪が顔にかかるが、表情は最低限見える。",
+      "reason": "左メインは貞子寄りの長い前髪。補助画像も目元にしっかりかかる候補へ整理。",
       "source_path": "test26/sadako_style_long_front_hair",
       "asset_path": "assets/research/bangs/test26/sadako_style_long_front_hair/sadako_style_long_front_hair_front_2307728024_05.png",
       "samples": [
@@ -3604,16 +3598,10 @@ window.researchSampleCandidates = {
           "filename": "sadako_style_long_front_hair_front_2307728024_05.png"
         },
         {
-          "asset_path": "assets/research/bangs/test26/sadako_style_long_front_hair/sadako_style_long_front_hair_slight_three_quarter_1032442237_03.png",
-          "label": "3/4",
-          "angle": "slight_three_quarter",
-          "filename": "sadako_style_long_front_hair_slight_three_quarter_1032442237_03.png"
-        },
-        {
-          "asset_path": "assets/research/bangs/test26/sadako_style_long_front_hair/sadako_style_long_front_hair_close_front_3209370202_04.png",
-          "label": "close",
-          "angle": "close_front",
-          "filename": "sadako_style_long_front_hair_close_front_3209370202_04.png"
+          "asset_path": "assets/research/bangs/test20/sadako_style_long_front_hair/sadako_style_long_front_hair_3624419007_01.png",
+          "label": "cover",
+          "angle": "test20_cover",
+          "filename": "sadako_style_long_front_hair_3624419007_01.png"
         }
       ],
       "stage": "candidate",
@@ -3621,7 +3609,7 @@ window.researchSampleCandidates = {
       "positive_hair_prompt": "very long front hair, long bangs falling over face, eerie long fringe, bangs reaching below eyes",
       "negative_hair_prompt": "short bangs, forehead visible, neat straight bangs",
       "fixed_face_prompt": "",
-      "verification_note": "重い長め前髪が顔にかかるが、表情は最低限見える。",
+      "verification_note": "左メインは貞子寄りの長い前髪。補助画像も目元にしっかりかかる候補へ整理。",
       "prompt_source_file": "髪型プロンプト検証用_テスト26_前髪.xlsx",
       "prompt_source_sheet": "PromptThemes",
       "final_status": "adopted"
