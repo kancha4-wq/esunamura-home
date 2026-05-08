@@ -4546,29 +4546,29 @@ window.researchSampleCandidates = {
     {
       "section": "hairstyle_test25",
       "order": 6,
-      "source_test": "test25",
+      "source_test": "test32",
       "theme": "char_side_braid_low_side_tail",
       "theme_name": "char_side_braid_low_side_tail",
       "jp_label": "片側編み込み＋低いサイド結び",
       "role": "main",
       "focus": "片側編み込みと低いサイド結びが両方見えるか。",
-      "expected_result": "追加候補。編み込みと結びを同時に見せられる検証枠として有力。",
-      "filename": "char_side_braid_low_side_tail_side_356837400_03.png",
-      "reason": "追加候補。編み込みと結びを同時に見せられる検証枠として有力。",
-      "source_path": "test25/char_side_braid_low_side_tail/char_side_braid_low_side_tail_side_356837400_03.png",
-      "asset_path": "assets/research/hairstyle/test25/char_side_braid_low_side_tail/char_side_braid_low_side_tail_side_356837400_03.png",
+      "expected_result": "LoRAを強めて前向き候補を追加生成。頭頂から低いサイド結びまで画面内に入り、編み込みと結びを同時に確認しやすい候補を採用。",
+      "filename": "char_side_braid_low_side_tail_front_full_hair_2130761173_02.png",
+      "reason": "LoRAを強めて前向き候補を追加生成。頭頂から低いサイド結びまで画面内に入り、編み込みと結びを同時に確認しやすい候補を採用。",
+      "source_path": "test32_side_braid_low_tail_front_10/char_side_braid_low_side_tail_front_full_hair_2130761173_02.png",
+      "asset_path": "assets/research/hairstyle/test32/char_side_braid_low_side_tail/char_side_braid_low_side_tail_front_full_hair_2130761173_02.png",
       "samples": [
+        {
+          "angle": "front_full_hair",
+          "label": "front",
+          "filename": "char_side_braid_low_side_tail_front_full_hair_2130761173_02.png",
+          "asset_path": "assets/research/hairstyle/test32/char_side_braid_low_side_tail/char_side_braid_low_side_tail_front_full_hair_2130761173_02.png"
+        },
         {
           "angle": "side",
           "label": "side",
           "filename": "char_side_braid_low_side_tail_side_356837400_03.png",
           "asset_path": "assets/research/hairstyle/test25/char_side_braid_low_side_tail/char_side_braid_low_side_tail_side_356837400_03.png"
-        },
-        {
-          "angle": "front",
-          "label": "front",
-          "filename": "char_side_braid_low_side_tail_front_4032497343_02.png",
-          "asset_path": "assets/research/hairstyle/test25/char_side_braid_low_side_tail/char_side_braid_low_side_tail_front_4032497343_02.png"
         },
         {
           "angle": "three_quarter_back",
@@ -4582,8 +4582,8 @@ window.researchSampleCandidates = {
       "positive_hair_prompt": "(side braid:1.25), low side ponytail, one side braid near face, visible side braid, visible low side tail",
       "negative_hair_prompt": "twintails, twin braids, high ponytail, buns, no braid, no side tail",
       "fixed_face_prompt": "",
-      "verification_note": "追加候補。編み込みと結びを同時に見せられる検証枠として有力。",
-      "prompt_source_file": "髪型プロンプト検証用_テスト25_髪型.xlsx",
+      "verification_note": "LoRAを強めて前向き候補を追加生成。頭頂から低いサイド結びまで画面内に入り、編み込みと結びを同時に確認しやすい候補を採用。",
+      "prompt_source_file": "髪型プロンプト検証用.xlsx",
       "prompt_source_sheet": "PromptThemes",
       "final_status": "adopted"
     },
