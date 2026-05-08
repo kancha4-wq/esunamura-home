@@ -549,6 +549,13 @@ h2 {
   line-height: 1.8;
 }
 
+.hub-language-note {
+  max-width: 780px;
+  color: rgba(245, 226, 203, 0.78) !important;
+  font-size: 0.86rem !important;
+  line-height: 1.65 !important;
+}
+
 .hub-caution {
   display: inline-flex;
   width: fit-content;
