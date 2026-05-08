@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="目プロンプト検証｜Eye Shape Prompt Guide for SDXL。AIイラスト生成で使う目・瞳・ハイライト系プロンプトを、同じキャラクター性をなるべく保ったまま比較する検証ログです。">
+    <link rel="canonical" href="https://kancha4-wq.github.io/esunamura-home/research/eyes/">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="えすなむら">
+    <meta property="og:title" content="目プロンプト検証｜AIイラストの目・瞳・ハイライト表現比較">
+    <meta property="og:description" content="ジト目、猫目、大きい目、小さい目、細長い目、たれ目、つり目などを、同じキャラクター性を保ちながら比較します。">
+    <meta property="og:url" content="https://kancha4-wq.github.io/esunamura-home/research/eyes/">
+    <meta property="og:image" content="https://kancha4-wq.github.io/esunamura-home/assets/images/research/intro/research_overview_1200x630.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="目プロンプト検証｜AIイラストの目・瞳・ハイライト表現比較">
+    <meta name="twitter:description" content="目の形・大きさ・瞳・ハイライトの違いで、キャラクターの印象や年齢感がどう変わるかを比較する検証ログです。">
+    <meta name="twitter:image" content="https://kancha4-wq.github.io/esunamura-home/assets/images/research/intro/research_overview_1200x630.jpg">
+    <title>目プロンプト検証｜AIイラストの目・瞳・ハイライト表現比較 | えすなむら研究室</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-new-32x32.png?v=2">
+    <link rel="stylesheet" href="../../style.css">
+  </head>
+  <body class="age-verified title-page research-page research-detail-page" data-root-prefix="../../" data-share-topic="eyes">
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="profile-row">
+          <a class="avatar-link" href="../../index.html" aria-label="ホームへ戻る">
+            <img class="avatar" src="../../images/profile-icon.png" alt="えすなむら icon" width="180" height="180" decoding="async">
+          </a>
+          <div class="profile-copy">
+            <p class="creator-name">えすなむら</p>
+            <p class="tagline">AI CG / Illustration Collection</p>
+          </div>
+          <div class="language-switch" aria-label="Language">
+            <button class="lang-button is-active" type="button" data-lang="ja">日本語</button>
+            <button class="lang-button" type="button" data-lang="en">English</button>
+            <button class="lang-button" type="button" data-lang="zh">简体中文</button>
+            <button class="lang-button" type="button" data-lang="ko">한국어</button>
+          </div>
+        </div>
+
+        <nav class="quick-links" aria-label="Main links">
+          <a href="../../index.html" data-ja="ホーム" data-en="Home" data-zh="首页" data-ko="홈">ホーム</a>
+          <a href="../../works/index.html" data-ja="作品一覧" data-en="Collection" data-zh="作品列表" data-ko="작품 목록">作品一覧</a>
+          <a href="../index.html" data-ja="研究室" data-en="Research" data-zh="研究室" data-ko="연구실">研究室</a>
+        </nav>
+      </header>
+
+      <main>
+        <nav class="research-subnav" aria-label="Research pages">
+          <a href="../hairstyle/index.html" data-ja="髪型" data-en="Hairstyle" data-zh="发型" data-ko="헤어스타일">髪型</a>
+          <a href="../bangs/index.html" data-ja="前髪" data-en="Bangs" data-zh="刘海" data-ko="앞머리">前髪</a>
+          <a href="../hair-color/index.html" data-ja="髪色" data-en="Hair Color" data-zh="发色" data-ko="헤어 컬러">髪色</a>
+          <a class="is-active" href="index.html" data-ja="目" data-en="Eyes" data-zh="眼睛" data-ko="눈">目</a>
+          <a href="../background/index.html" data-ja="背景" data-en="Background" data-zh="背景" data-ko="배경">背景</a>
+        </nav>
+
+        <section class="detail-hero research-hero">
+          <div class="detail-copy">
+            <p class="eyebrow">Prompt Verification</p>
+            <h1 data-ja="目プロンプト検証｜AIイラストの目・瞳・ハイライト表現比較" data-en="Eye Shape Prompt Guide for SDXL" data-zh="眼睛 Prompt 验证｜眼型・瞳孔・高光表现比较" data-ko="눈 프롬프트 검증｜눈 모양・홍채・하이라이트 표현 비교">目プロンプト検証｜AIイラストの目・瞳・ハイライト表現比較</h1>
+            <p class="lead" data-ja="AIイラスト生成で使う「目・瞳・ハイライト」系プロンプトの検証ログです。<br>ジト目、猫目、大きい目、小さい目、細長い目、たれ目、つり目などを、同じキャラクター性をなるべく保った状態で比較しています。<br>単語の一覧だけではなく、実際の生成結果を見ながら、キャラクターの印象・年齢感・表情の変化を確認できるようにしています。" data-en="A verification log for eye, iris, and highlight prompts used in AI illustration generation. It compares half-lidded eyes, cat eyes, large eyes, small eyes, slender eyes, droopy eyes, and upturned eyes while keeping the same character identity as much as possible." data-zh="这是用于 AI 插画生成的眼睛、瞳孔和高光类 prompt 验证日志。会在尽量保持同一角色性的前提下，比较半睁眼、猫眼、大眼、小眼、细长眼、下垂眼、上挑眼等表现。" data-ko="AI 일러스트 생성에서 사용하는 눈, 홍채, 하이라이트 계열 프롬프트 검증 로그입니다. 같은 캐릭터성을 최대한 유지한 상태에서 지토메, 고양이눈, 큰 눈, 작은 눈, 가늘고 긴 눈, 처진 눈, 올라간 눈 등을 비교합니다.">AIイラスト生成で使う「目・瞳・ハイライト」系プロンプトの検証ログです。<br>ジト目、猫目、大きい目、小さい目、細長い目、たれ目、つり目などを、同じキャラクター性をなるべく保った状態で比較しています。<br>単語の一覧だけではなく、実際の生成結果を見ながら、キャラクターの印象・年齢感・表情の変化を確認できるようにしています。</p>
+            <div class="research-share-links">
+              <a class="share-x-button research-share-button" href="https://twitter.com/intent/tweet" target="_blank" rel="noopener noreferrer" data-ja="Xで共有" data-en="Share on X" data-zh="分享到 X" data-ko="X에 공유"><span class="share-x-icon">X</span><span>Xで共有</span></a>
+            </div>
+          </div>
+        </section>
+
+        <section class="research-section guide-section">
+          <div class="section-heading-row">
+            <div>
+              <p class="eyebrow">Eye Shape Prompt Guide</p>
+              <h2 data-ja="目の形・サイズ" data-en="Eye Shape and Size" data-zh="眼型与大小" data-ko="눈 모양과 크기">目の形・サイズ</h2>
+            </div>
+            <p data-ja="まずはキャラクター性の変化が大きい、目の形とサイズを比較します。" data-en="First, compare eye shape and size prompts that strongly affect character impression." data-zh="首先比较对角色印象影响较大的眼型与大小 prompt。" data-ko="먼저 캐릭터 인상에 큰 영향을 주는 눈 모양과 크기 프롬프트를 비교합니다.">まずはキャラクター性の変化が大きい、目の形とサイズを比較します。</p>
+          </div>
+          <div class="guide-card-grid">
+            <article class="research-overview-card guide-card">
+              <p class="eyebrow">shape / size</p>
+              <h3>small_eyes / large_eyes</h3>
+              <p data-ja="小さい目と大きい目で、年齢感・幼さ・落ち着きの差を確認します。" data-en="Compare how small and large eyes affect age impression, softness, and calmness." data-zh="比较小眼和大眼对年龄感、幼感和沉稳感的影响。" data-ko="작은 눈과 큰 눈이 연령감, 어려 보임, 차분함에 주는 차이를 확인합니다.">小さい目と大きい目で、年齢感・幼さ・落ち着きの差を確認します。</p>
+            </article>
+            <article class="research-overview-card guide-card">
+              <p class="eyebrow">shape</p>
+              <h3>slender_eyes / round_eyes</h3>
+              <p data-ja="細長い目と丸目で、知的さ・柔らかさ・アニメ的な見え方の違いを見ます。" data-en="Compare slender and round eyes for intelligent, soft, and anime-like impressions." data-zh="比较细长眼和圆眼带来的知性、柔和与动画感差异。" data-ko="가늘고 긴 눈과 둥근 눈으로 지적인 느낌, 부드러움, 애니풍 인상 차이를 봅니다.">細長い目と丸目で、知的さ・柔らかさ・アニメ的な見え方の違いを見ます。</p>
+            </article>
+            <article class="research-overview-card guide-card">
+              <p class="eyebrow">direction</p>
+              <h3>droopy_eyes / upturned_eyes / cat_eyes</h3>
+              <p data-ja="たれ目、つり目、猫目で、やさしさ・強さ・小悪魔感の差を比較します。" data-en="Compare droopy, upturned, and cat eyes for gentle, sharp, and mischievous impressions." data-zh="比较下垂眼、上挑眼和猫眼带来的温柔、锐利与小恶魔感。" data-ko="처진 눈, 올라간 눈, 고양이눈으로 상냥함, 강한 인상, 장난스러운 느낌을 비교합니다.">たれ目、つり目、猫目で、やさしさ・強さ・小悪魔感の差を比較します。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="research-section guide-section">
+          <div class="section-heading-row">
+            <div>
+              <p class="eyebrow">Expression Control</p>
+              <h2 data-ja="目元の印象" data-en="Eye-Area Impression" data-zh="眼部印象" data-ko="눈매 인상">目元の印象</h2>
+            </div>
+            <p data-ja="表情を大きく崩さずに、眠そう・鋭い・やさしいなどの印象差を見ます。" data-en="Compare sleepy, sharp, and gentle impressions without changing the whole expression too much." data-zh="在不过度改变整体表情的前提下，比较困倦、锐利、温柔等印象。" data-ko="전체 표정을 크게 바꾸지 않고 졸린 느낌, 날카로움, 부드러움 같은 인상 차이를 봅니다.">表情を大きく崩さずに、眠そう・鋭い・やさしいなどの印象差を見ます。</p>
+          </div>
+          <div class="guide-card-grid">
+            <article class="research-overview-card guide-card">
+              <p class="eyebrow">mood</p>
+              <h3>jitome_half_lidded_eyes / sleepy_eyes</h3>
+              <p data-ja="ジト目と眠そうな目で、気だるさ・無表情感・幼さの残り方を比較します。" data-en="Compare half-lidded and sleepy eyes for tired mood, flat expression, and preserved cuteness." data-zh="比较半睁眼和困倦眼中的慵懒感、无表情感与可爱度保留。" data-ko="지토메와 졸린 눈으로 나른함, 무표정함, 귀여움이 남는 정도를 비교합니다.">ジト目と眠そうな目で、気だるさ・無表情感・幼さの残り方を比較します。</p>
+            </article>
+            <article class="research-overview-card guide-card">
+              <p class="eyebrow">mood</p>
+              <h3>sharp_eyes / gentle_eyes</h3>
+              <p data-ja="鋭い目とやさしい目で、性格の見え方がどの程度変わるかを確認します。" data-en="Compare sharp and gentle eyes to see how much the perceived personality shifts." data-zh="比较锐利眼和温柔眼，确认角色性格印象会变化到什么程度。" data-ko="날카로운 눈과 상냥한 눈으로 성격 인상이 어느 정도 바뀌는지 확인합니다.">鋭い目とやさしい目で、性格の見え方がどの程度変わるかを確認します。</p>
+            </article>
+            <article class="research-overview-card guide-card">
+              <p class="eyebrow">wet / bright</p>
+              <h3>glossy_eyes / sparkling_eyes</h3>
+              <p data-ja="うるみ目とキラキラ目で、感情量やかわいさの増え方を比較します。" data-en="Compare glossy and sparkling eyes for emotional intensity and cuteness." data-zh="比较水润眼和闪亮眼带来的情绪量与可爱度变化。" data-ko="촉촉한 눈과 반짝이는 눈으로 감정량과 귀여움이 늘어나는 정도를 비교합니다.">うるみ目とキラキラ目で、感情量やかわいさの増え方を比較します。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="research-section guide-section">
+          <div class="section-heading-row">
+            <div>
+              <p class="eyebrow">Iris / Highlights</p>
+              <h2 data-ja="瞳・ハイライト表現" data-en="Iris and Highlight Expression" data-zh="瞳孔与高光表现" data-ko="홍채와 하이라이트 표현">瞳・ハイライト表現</h2>
+            </div>
+            <p data-ja="瞳の情報量とハイライト量を調整し、派手になりすぎる表現も抑制します。" data-en="Adjust iris detail and highlight intensity while suppressing overly flashy eye effects." data-zh="调整瞳孔细节和高光量，同时抑制过于夸张的眼部效果。" data-ko="홍채 디테일과 하이라이트 양을 조정하고, 지나치게 화려한 눈 효과도 억제합니다.">瞳の情報量とハイライト量を調整し、派手になりすぎる表現も抑制します。</p>
+          </div>
+          <div class="guide-card-grid">
+            <article class="research-overview-card guide-card">
+              <p class="eyebrow">iris</p>
+              <h3>detailed_iris</h3>
+              <p data-ja="虹彩を細かくし、顔アップでなくても瞳の情報量が残るかを見ます。" data-en="Increase iris detail and check whether eye information remains visible without extreme close-up framing." data-zh="增加虹彩细节，确认不使用极近脸部构图时瞳孔信息是否仍然保留。" data-ko="홍채를 세밀하게 하여 과도한 얼굴 클로즈업 없이도 눈 정보량이 남는지 봅니다.">虹彩を細かくし、顔アップでなくても瞳の情報量が残るかを見ます。</p>
+            </article>
+            <article class="research-overview-card guide-card">
+              <p class="eyebrow">highlight</p>
+              <h3>subdued_highlights</h3>
+              <p data-ja="ハイライト控えめで、落ち着いた表情や大人びた印象に寄せられるかを確認します。" data-en="Use subdued highlights to test calmer expressions and more mature impressions." data-zh="通过控制高光，确认是否能形成更沉稳或更成熟的印象。" data-ko="하이라이트를 줄여 차분한 표정이나 성숙한 인상으로 이어지는지 확인합니다.">ハイライト控えめで、落ち着いた表情や大人びた印象に寄せられるかを確認します。</p>
+            </article>
+            <article class="research-overview-card guide-card">
+              <p class="eyebrow">suppression</p>
+              <h3>starry_eyes_suppression</h3>
+              <p data-ja="星目・推しの子風の過剰な瞳表現を避け、通常のキャラクター絵として安定するかを見ます。" data-en="Suppress starry eyes and idol-anime-like eye symbols to keep the character illustration stable." data-zh="抑制星星眼和偶像动画风过强的瞳孔符号，使角色图更稳定。" data-ko="별눈이나 아이돌 애니풍 눈 표현을 억제해 일반 캐릭터 일러스트로 안정되는지 봅니다.">星目・推しの子風の過剰な瞳表現を避け、通常のキャラクター絵として安定するかを見ます。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="research-free-pack-panel research-overview-card">
+          <p class="eyebrow" data-ja="使い分けメモ" data-en="Usage Notes" data-zh="使用区分备注" data-ko="사용 구분 메모">使い分けメモ</p>
+          <h2 data-ja="キャラクター性を保った目の差分検証" data-en="Eye Variations While Preserving Character Identity" data-zh="保持角色性的眼部差分验证" data-ko="캐릭터성을 유지한 눈 차분 검증">キャラクター性を保った目の差分検証</h2>
+          <p data-ja="目は顔の印象を強く変えるため、プロンプトの効きすぎで別キャラクター化しやすい項目です。生成後は、目だけでなく髪型・顔立ち・年齢感が維持できているかをあわせて確認します。" data-en="Eye prompts can strongly alter the face, so they can easily turn the result into a different character. After generation, the comparison will check not only the eyes but also hairstyle, facial identity, and age impression." data-zh="眼睛 prompt 会强烈改变脸部印象，因此容易让结果变成另一个角色。生成后会同时确认眼睛、发型、脸部特征和年龄感是否保持稳定。" data-ko="눈 프롬프트는 얼굴 인상을 강하게 바꾸기 때문에 결과가 다른 캐릭터처럼 보이기 쉽습니다. 생성 후에는 눈뿐 아니라 헤어스타일, 얼굴 인상, 연령감이 유지되는지도 함께 확인합니다.">目は顔の印象を強く変えるため、プロンプトの効きすぎで別キャラクター化しやすい項目です。生成後は、目だけでなく髪型・顔立ち・年齢感が維持できているかをあわせて確認します。</p>
+        </section>
+
+        <section class="research-free-pack-panel research-overview-card">
+          <p class="eyebrow">CSV / TXT</p>
+          <h2 data-ja="CSV/TXTまとめ版 準備中" data-en="CSV/TXT Summary Coming Soon" data-zh="CSV/TXT 汇总版准备中" data-ko="CSV/TXT 정리판 준비 중">CSV/TXTまとめ版 準備中</h2>
+          <p data-ja="生成結果の確認後、採用しやすい目プロンプトをCSV/TXT形式でも整理する予定です。" data-en="After reviewing generated results, useful eye prompts will be organized into CSV/TXT summary files." data-zh="确认生成结果后，会将较容易采用的眼部 prompt 整理为 CSV/TXT 文件。" data-ko="생성 결과를 확인한 뒤, 사용하기 좋은 눈 프롬프트를 CSV/TXT 형식으로도 정리할 예정입니다.">生成結果の確認後、採用しやすい目プロンプトをCSV/TXT形式でも整理する予定です。</p>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p data-ja="無断転載、二次配布、AI再学習利用禁止" data-en="Unauthorized reproduction, redistribution, and use for AI training are prohibited." data-zh="禁止转载、二次分发及用于AI再训练。" data-ko="무단 전재, 2차 배포, AI 재학습 이용 금지">無断転載、二次配布、AI再学習利用禁止</p>
+        <p data-ja="登場キャラクターは全て18歳以上です。" data-en="All characters are 18 or older." data-zh="登场角色均为18岁以上。" data-ko="등장 캐릭터는 모두 18세 이상입니다.">登場キャラクターは全て18歳以上です。</p>
+      </footer>
+    </div>
+
+    <script src="../../assets/js/research.js"></script>
+    <script src="../../assets/js/back-to-top.js"></script>
+
+  </body>
+</html>
