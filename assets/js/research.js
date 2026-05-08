@@ -93,6 +93,7 @@
     bangs_test26: ["bangs_test26_selected"],
     bangs_test20: ["test20_selected_contact", "test20_all_contact"],
     bangs: ["bangs_selected_contact_test18", "test18_overview"],
+    hair_color_test27: ["hair_color_test27_selected"],
     hair_color: ["hair_color_test21", "hair_color"]
   };
 
@@ -107,7 +108,7 @@
   const pageSectionGroups = {
     hairstyle: ["hairstyle_test25", "hairstyle_test19", "hairstyle"],
     bangs: ["bangs_test26", "bangs_test20", "bangs"],
-    hair_color: ["hair_color_test21", "hair_color"]
+    hair_color: ["hair_color_test27", "hair_color_test21", "hair_color"]
   };
 
   function withPagePrefix(path) {
