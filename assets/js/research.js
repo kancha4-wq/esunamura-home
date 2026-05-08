@@ -62,6 +62,24 @@
         title: "헤어 컬러 프롬프트 비교｜Hair Color Prompt Guide for SDXL",
         lead: "후보 이미지별로 색감 안정성과 캐릭터와의 어울림을 비교할 수 있습니다."
       }
+    },
+    eyes: {
+      ja: {
+        title: "目プロンプト比較｜Eye Shape Prompt Guide for SDXL",
+        lead: "目の形・大きさ・瞳・ハイライトによる印象差を候補画像ごとに確認できます。"
+      },
+      en: {
+        title: "Eye Shape Prompt Guide for SDXL",
+        lead: "Compare each candidate for eye shape, size, iris detail, and highlight expression."
+      },
+      zh: {
+        title: "眼睛 Prompt 比较｜Eye Shape Prompt Guide for SDXL",
+        lead: "可以按候选图像比较眼型、大小、瞳孔细节和高光表现。"
+      },
+      ko: {
+        title: "눈 프롬프트 비교｜Eye Shape Prompt Guide for SDXL",
+        lead: "후보 이미지별로 눈 모양, 크기, 홍채 디테일, 하이라이트 표현을 비교할 수 있습니다."
+      }
     }
   };
 
@@ -117,6 +135,17 @@
     medium_side_tail: { en: "Medium Side Tail", zh: "中长侧边束发", ko: "미디엄 사이드 테일" },
     medium_wolf_cut: { en: "Medium Wolf Cut", zh: "中长狼尾发", ko: "미디엄 울프컷" },
     straight_long_hair: { en: "Straight Long Hair", zh: "直长发", ko: "스트레이트 롱헤어" },
+    jitome_half_lidded_eyes: { en: "Half-Lidded Eyes", zh: "半睁眼", ko: "지토메" },
+    small_eyes: { en: "Small Eyes", zh: "小眼", ko: "작은 눈" },
+    cat_eyes: { en: "Cat Eyes", zh: "猫眼", ko: "고양이눈" },
+    round_eyes: { en: "Round Eyes", zh: "圆眼", ko: "둥근 눈" },
+    sleepy_eyes: { en: "Sleepy Eyes", zh: "困倦眼", ko: "졸린 눈" },
+    sharp_eyes: { en: "Sharp Eyes", zh: "锐利眼", ko: "날카로운 눈" },
+    gentle_eyes: { en: "Gentle Eyes", zh: "温柔眼", ko: "상냥한 눈" },
+    glossy_eyes: { en: "Glossy Eyes", zh: "水润眼", ko: "촉촉한 눈" },
+    sparkling_eyes: { en: "Sparkling Eyes", zh: "闪亮眼", ko: "반짝이는 눈" },
+    subdued_highlights: { en: "Subdued Highlights", zh: "低调高光", ko: "절제된 하이라이트" },
+    starry_eyes_suppression: { en: "Starry Eye Suppression", zh: "星星眼抑制", ko: "별눈 억제" },
     diagonal_bangs_covering_one_eye: { en: "Diagonal Bangs Covering One Eye", zh: "斜向遮单眼刘海", ko: "한쪽 눈을 가리는 사선 앞머리" },
     side_braid_one_eye_covered: { en: "One-Side Braid with One-Eye Bangs", zh: "单侧编发＋遮单眼刘海", ko: "한쪽 브레이드＋한쪽 눈 가림 앞머리" },
     side_braid_one_eye_cover: { en: "One-Side Braid with One-Eye Bangs", zh: "单侧编发＋遮单眼刘海", ko: "한쪽 브레이드＋한쪽 눈 가림 앞머리" },
@@ -198,7 +227,8 @@
   const pageSectionGroups = {
     hairstyle: ["hairstyle_test25", "hairstyle_test28"],
     bangs: ["bangs_test26"],
-    hair_color: ["hair_color_test27", "hair_color_test21", "hair_color"]
+    hair_color: ["hair_color_test27", "hair_color_test21", "hair_color"],
+    eyes: ["eyes_test34"]
   };
 
   function withPagePrefix(path) {
@@ -393,7 +423,7 @@
       { label: "fixed_face_prompt", value: includeFacePrompt ? item.fixed_face_prompt : "" }
     ]).join("\n\n") || "未設定";
     const negativePrompt = cleanPromptText(item.negative_hair_prompt || item.negative_prompt) || localizedText(uiText.unset);
-    const showPromptInline = ["hairstyle", "bangs", "hair_color"].some((sectionPrefix) => item.section.startsWith(sectionPrefix));
+    const showPromptInline = ["hairstyle", "bangs", "hair_color", "eyes"].some((sectionPrefix) => item.section.startsWith(sectionPrefix));
     if (showPromptInline) {
       return `
         <div class="research-prompt-stack research-prompt-stack-static">
