@@ -18,7 +18,7 @@
       important_tags: "half-lidded eyes, jitome",
       positive_prompt: "(half-lidded eyes:1.35), jitome, narrowed eyelids, relaxed eyelids, flat gaze, calm unimpressed eyes",
       verification_note: "半目感が分かりやすく、気だるい印象を比較しやすい候補。",
-      samples: ["jitome_half_lidded_eyes_01.png", "jitome_half_lidded_eyes_02.png"]
+      samples: ["jitome_half_lidded_eyes_01.png", "jitome_half_lidded_eyes_02.png", "jitome_half_lidded_eyes_03.png"]
     },
     {
       theme: "small_eyes",
@@ -26,7 +26,7 @@
       important_tags: "small eyes",
       positive_prompt: "(small eyes:1.35), visibly small anime eyes, compact eye shape, modest eye size, narrow but open eyes, subtle calm gaze",
       verification_note: "追加生成から破綻が少ない候補を採用。小さい目としての差分はやや控えめ。",
-      samples: ["small_eyes_01.png", "small_eyes_02.png"]
+      samples: ["small_eyes_01.png", "small_eyes_02.png", "small_eyes_03.png"]
     },
     {
       theme: "cat_eyes",
@@ -35,7 +35,7 @@
       positive_prompt: "(cat eyes:1.35), cat-like eye shape, almond eyes, slightly upturned outer corners, sharp upper eyelids, playful gaze",
       negative_prompt: commonNegative + ", cat ears, animal ears, cat girl, animal girl, tail, whiskers, furry, costume ears, kemonomimi",
       verification_note: "猫耳化を避けた候補を採用。猫目の形は今後もう少し強める余地あり。",
-      samples: ["cat_eyes_01.png", "cat_eyes_02.png"]
+      samples: ["cat_eyes_01.png", "cat_eyes_02.png", "cat_eyes_03.png"]
     },
     {
       theme: "round_eyes",
@@ -43,7 +43,7 @@
       important_tags: "round eyes",
       positive_prompt: "(round eyes:1.35), clearly round eye shape, round anime eyes, circular irises, soft open round eyes, gentle rounded gaze",
       verification_note: "丸い目元として説明しやすく、破綻が少ない候補。",
-      samples: ["round_eyes_01.png", "round_eyes_02.png"]
+      samples: ["round_eyes_01.png", "round_eyes_02.png", "round_eyes_03.png"]
     },
     {
       theme: "sleepy_eyes",
@@ -51,7 +51,7 @@
       important_tags: "sleepy eyes",
       positive_prompt: "(sleepy eyes:1.30), sleepy eyelids, tired relaxed eyes, low eyelids, calm drowsy gaze",
       verification_note: "まぶたの下がり方が見え、眠そうな印象を比較しやすい候補。",
-      samples: ["sleepy_eyes_01.png", "sleepy_eyes_02.png"]
+      samples: ["sleepy_eyes_01.png", "sleepy_eyes_02.png", "sleepy_eyes_03.png"]
     },
     {
       theme: "sharp_eyes",
@@ -59,7 +59,7 @@
       important_tags: "sharp eyes",
       positive_prompt: "(sharp eyes:1.30), sharp eye shape, intense gaze, defined upper eyelids, serious eyes",
       verification_note: "鋭い目元がはっきりしていて、通常目との差分を見せやすい候補。",
-      samples: ["sharp_eyes_01.png", "sharp_eyes_02.png"]
+      samples: ["sharp_eyes_01.png", "sharp_eyes_02.png", "sharp_eyes_03.png"]
     },
     {
       theme: "gentle_eyes",
@@ -67,7 +67,7 @@
       important_tags: "gentle eyes",
       positive_prompt: "(gentle eyes:1.25), soft eyes, relaxed gaze, warm eye expression, calm friendly eyes",
       verification_note: "やわらかい目元と穏やかな印象が出ている候補。",
-      samples: ["gentle_eyes_01.png", "gentle_eyes_02.png"]
+      samples: ["gentle_eyes_01.png", "gentle_eyes_02.png", "gentle_eyes_03.png"]
     },
     {
       theme: "glossy_eyes",
@@ -75,7 +75,7 @@
       important_tags: "glossy eyes",
       positive_prompt: "(glossy eyes:1.30), moist eyes, watery eye highlights, soft reflective irises, emotional eyes",
       verification_note: "瞳の潤みと光沢が見やすく、比較素材として安定している候補。",
-      samples: ["glossy_eyes_01.png", "glossy_eyes_02.png"]
+      samples: ["glossy_eyes_01.png", "glossy_eyes_02.png", "glossy_eyes_03.png"]
     },
     {
       theme: "sparkling_eyes",
@@ -83,7 +83,7 @@
       important_tags: "sparkling eyes",
       positive_prompt: "(sparkling eyes:1.30), bright sparkling eyes, lively eye highlights, shiny irises, cute excited gaze",
       verification_note: "キラキラした瞳表現が明確で、効果を説明しやすい候補。",
-      samples: ["sparkling_eyes_01.png", "sparkling_eyes_02.png"]
+      samples: ["sparkling_eyes_01.png", "sparkling_eyes_02.png", "sparkling_eyes_03.png"]
     },
     {
       theme: "subdued_highlights",
@@ -91,7 +91,7 @@
       important_tags: "subdued eye highlights",
       positive_prompt: "(subdued eye highlights:1.35), small soft catchlights, low-intensity eye highlights, matte eyes, muted eye shine",
       verification_note: "ハイライトを抑えた落ち着いた瞳として見せやすい候補。",
-      samples: ["subdued_highlights_01.png", "subdued_highlights_02.png"]
+      samples: ["subdued_highlights_01.png", "subdued_highlights_02.png", "subdued_highlights_03.png"]
     },
     {
       theme: "starry_eyes_suppression",
@@ -100,7 +100,7 @@
       positive_prompt: "(normal round catchlights:1.25), natural anime eye highlights, simple clean iris, standard round eye shine, plain pupils",
       negative_prompt: commonNegative + ", star-shaped pupils, star pupils, starry eyes, oshi no ko eyes, heart pupils, symbol eyes, cross pupils, glowing star highlights",
       verification_note: "星目を避けた通常ハイライト寄りの比較素材として採用。",
-      samples: ["starry_eyes_suppression_01.png", "starry_eyes_suppression_02.png"]
+      samples: ["starry_eyes_suppression_01.png", "starry_eyes_suppression_02.png", "starry_eyes_suppression_03.png"]
     }
   ];
 
