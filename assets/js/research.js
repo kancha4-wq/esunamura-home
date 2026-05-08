@@ -269,7 +269,8 @@
       { label: "fixed_face_prompt", value: includeFacePrompt ? item.fixed_face_prompt : "" }
     ]).join("\n\n") || "未設定";
     const negativePrompt = cleanPromptText(item.negative_hair_prompt || item.negative_prompt) || localizedText(uiText.unset);
-    if (item.section.startsWith("hairstyle")) {
+    const showPromptInline = ["hairstyle", "bangs", "hair_color"].some((sectionPrefix) => item.section.startsWith(sectionPrefix));
+    if (showPromptInline) {
       return `
         <div class="research-prompt-stack research-prompt-stack-static">
           <section class="research-prompt-panel">
