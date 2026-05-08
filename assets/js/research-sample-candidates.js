@@ -3497,40 +3497,41 @@ window.researchSampleCandidates = {
     {
       "section": "bangs_test26",
       "order": 4,
-      "source_test": "test26",
+      "source_test": "test31",
       "theme": "heavy_bangs_covering_eyes",
       "theme_name": "heavy_bangs_covering_eyes",
       "jp_label": "重め目隠れ前髪",
       "role": "main",
       "focus": "重い前髪が目元にかかるか",
-      "expected_result": "前髪が目元をしっかり覆い、完全目隠れ方向が分かりやすい。",
-      "filename": "long_bangs_over_eyes_700251998_03.png",
-      "reason": "前髪が目元をしっかり覆い、完全目隠れ方向が分かりやすい。",
-      "source_path": "test26/heavy_bangs_covering_eyes",
-      "asset_path": "assets/research/bangs/test20/long_bangs_over_eyes/long_bangs_over_eyes_700251998_03.png",
+      "expected_result": "前髪だけで目元を覆う重めの目隠れ感が分かりやすい。",
+      "filename": "heavy_bangs_covering_eyes_front_hair_cover_3543428578_05.png",
+      "reason": "手を使わず、厚い前髪で両目が隠れる方向が最も伝わりやすい。",
+      "source_path": "test31/heavy_bangs_covering_eyes",
+      "asset_path": "assets/research/bangs/test31/heavy_bangs_covering_eyes/heavy_bangs_covering_eyes_front_hair_cover_3543428578_05.png",
       "samples": [
         {
-          "asset_path": "assets/research/bangs/test20/long_bangs_over_eyes/long_bangs_over_eyes_700251998_03.png",
-          "label": "cover",
-          "angle": "test20_cover",
-          "filename": "long_bangs_over_eyes_700251998_03.png"
+          "asset_path": "assets/research/bangs/test31/heavy_bangs_covering_eyes/heavy_bangs_covering_eyes_front_hair_cover_3543428578_05.png",
+          "label": "front",
+          "angle": "front_hair_cover",
+          "filename": "heavy_bangs_covering_eyes_front_hair_cover_3543428578_05.png"
         },
         {
-          "asset_path": "assets/research/bangs/test26/heavy_bangs_covering_eyes/heavy_bangs_covering_eyes_close_front_1984976320_02.png",
-          "label": "close",
-          "angle": "close_front",
-          "filename": "heavy_bangs_covering_eyes_close_front_1984976320_02.png"
+          "asset_path": "assets/research/bangs/test31/heavy_bangs_covering_eyes/heavy_bangs_covering_eyes_front_hair_cover_2144367168_10.png",
+          "label": "front",
+          "angle": "front_hair_cover",
+          "filename": "heavy_bangs_covering_eyes_front_hair_cover_2144367168_10.png"
         }
       ],
       "stage": "candidate",
       "important_tags": "heavy bangs covering eyes",
-      "positive_hair_prompt": "heavy bangs covering eyes, long thick bangs over eyes, eyes partly hidden by heavy fringe",
-      "negative_hair_prompt": "forehead visible, thin bangs, short bangs, no bangs",
+      "positive_hair_prompt": "(heavy opaque bangs covering both eyes:1.75), hair curtain over eyes, long thick front bangs falling naturally over the eyes, eyes fully hidden by hair only",
+      "negative_hair_prompt": "forehead visible, thin bangs, short bangs, see-through bangs, parted bangs, hands covering eyes, fingers over face",
       "fixed_face_prompt": "",
-      "verification_note": "前髪が目元をしっかり覆い、完全目隠れ方向が分かりやすい。",
-      "prompt_source_file": "髪型プロンプト検証用_テスト26_前髪.xlsx",
+      "verification_note": "test31でLoRAを弱めて再生成。手で隠す失敗を避け、髪だけで目元を覆う候補を採用。",
+      "prompt_source_file": "髪型プロンプト検証用_テスト31_重め目隠れ前髪_LoRA弱め.xlsx",
       "prompt_source_sheet": "PromptThemes",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "public_note": "Test31 supplement promoted to main; LoRA weight was reduced to avoid hand-covering failures."
     },
     {
       "section": "bangs_test26",
@@ -3585,9 +3586,9 @@ window.researchSampleCandidates = {
       "jp_label": "貞子寄り長前髪",
       "role": "main",
       "focus": "長い前髪が顔にかかるか",
-      "expected_result": "????????????????????????????????",
+      "expected_result": "長い前髪が顔にかかり、貞子寄りの重さが分かりやすい。",
       "filename": "sadako_style_long_front_hair_front_eye_cover_1592417153_03.png",
-      "reason": "????????????????????????????????",
+      "reason": "test29補完生成から、貞子寄り長前髪として最も伝わりやすい候補を採用。",
       "source_path": "test29/sadako_style_long_front_hair/front_eye_cover",
       "asset_path": "assets/research/bangs/test29/sadako_style_long_front_hair/sadako_style_long_front_hair_front_eye_cover_1592417153_03.png",
       "samples": [
@@ -3615,7 +3616,7 @@ window.researchSampleCandidates = {
       "positive_hair_prompt": "very long front hair, long bangs falling over face, eerie long fringe, bangs reaching below eyes",
       "negative_hair_prompt": "short bangs, forehead visible, neat straight bangs",
       "fixed_face_prompt": "",
-      "verification_note": "????????????????????????????????",
+      "verification_note": "長い前髪が顔にかかり、貞子寄りの重さが分かりやすい。",
       "prompt_source_file": "髪型プロンプト検証用_テスト26_前髪.xlsx",
       "prompt_source_sheet": "PromptThemes",
       "final_status": "adopted",
@@ -5238,5 +5239,4 @@ window.researchSampleCandidates = {
       ]
     }
   ]
-}
-;
+};
