@@ -4553,22 +4553,22 @@ window.researchSampleCandidates = {
       "role": "main",
       "focus": "片側編み込みと低いサイド結びが両方見えるか。",
       "expected_result": "追加候補。編み込みと結びを同時に見せられる検証枠として有力。",
-      "filename": "char_side_braid_low_side_tail_front_4032497343_02.png",
+      "filename": "char_side_braid_low_side_tail_side_356837400_03.png",
       "reason": "追加候補。編み込みと結びを同時に見せられる検証枠として有力。",
-      "source_path": "test25/char_side_braid_low_side_tail/char_side_braid_low_side_tail_front_4032497343_02.png",
-      "asset_path": "assets/research/hairstyle/test25/char_side_braid_low_side_tail/char_side_braid_low_side_tail_front_4032497343_02.png",
+      "source_path": "test25/char_side_braid_low_side_tail/char_side_braid_low_side_tail_side_356837400_03.png",
+      "asset_path": "assets/research/hairstyle/test25/char_side_braid_low_side_tail/char_side_braid_low_side_tail_side_356837400_03.png",
       "samples": [
-        {
-          "angle": "front",
-          "label": "front",
-          "filename": "char_side_braid_low_side_tail_front_4032497343_02.png",
-          "asset_path": "assets/research/hairstyle/test25/char_side_braid_low_side_tail/char_side_braid_low_side_tail_front_4032497343_02.png"
-        },
         {
           "angle": "side",
           "label": "side",
           "filename": "char_side_braid_low_side_tail_side_356837400_03.png",
           "asset_path": "assets/research/hairstyle/test25/char_side_braid_low_side_tail/char_side_braid_low_side_tail_side_356837400_03.png"
+        },
+        {
+          "angle": "front",
+          "label": "front",
+          "filename": "char_side_braid_low_side_tail_front_4032497343_02.png",
+          "asset_path": "assets/research/hairstyle/test25/char_side_braid_low_side_tail/char_side_braid_low_side_tail_front_4032497343_02.png"
         },
         {
           "angle": "three_quarter_back",
