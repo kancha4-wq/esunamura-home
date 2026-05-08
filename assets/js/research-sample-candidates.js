@@ -3503,12 +3503,18 @@ window.researchSampleCandidates = {
       "jp_label": "重め目隠れ前髪",
       "role": "main",
       "focus": "重い前髪が目元にかかるか",
-      "expected_result": "前髪だけで目元を覆う重めの目隠れ感が分かりやすい。",
-      "filename": "heavy_bangs_covering_eyes_front_hair_cover_3543428578_05.png",
-      "reason": "手を使わず、厚い前髪で両目が隠れる方向が最も伝わりやすい。",
+      "expected_result": "髪だけで目元を覆う重めの前髪として、目隠れ感が分かりやすい。",
+      "filename": "heavy_bangs_covering_eyes_front_hair_cover_2144367168_10.png",
+      "reason": "手を使わず、厚い前髪で目元が隠れる方向が伝わりやすい。",
       "source_path": "test31/heavy_bangs_covering_eyes",
-      "asset_path": "assets/research/bangs/test31/heavy_bangs_covering_eyes/heavy_bangs_covering_eyes_front_hair_cover_3543428578_05.png",
+      "asset_path": "assets/research/bangs/test31/heavy_bangs_covering_eyes/heavy_bangs_covering_eyes_front_hair_cover_2144367168_10.png",
       "samples": [
+        {
+          "asset_path": "assets/research/bangs/test31/heavy_bangs_covering_eyes/heavy_bangs_covering_eyes_front_hair_cover_2144367168_10.png",
+          "label": "front",
+          "angle": "front_hair_cover",
+          "filename": "heavy_bangs_covering_eyes_front_hair_cover_2144367168_10.png"
+        },
         {
           "asset_path": "assets/research/bangs/test31/heavy_bangs_covering_eyes/heavy_bangs_covering_eyes_front_hair_cover_3543428578_05.png",
           "label": "front",
@@ -3516,10 +3522,10 @@ window.researchSampleCandidates = {
           "filename": "heavy_bangs_covering_eyes_front_hair_cover_3543428578_05.png"
         },
         {
-          "asset_path": "assets/research/bangs/test31/heavy_bangs_covering_eyes/heavy_bangs_covering_eyes_front_hair_cover_2144367168_10.png",
+          "asset_path": "assets/research/bangs/test31/heavy_bangs_covering_eyes/heavy_bangs_covering_eyes_front_hair_cover_3202872199_02.png",
           "label": "front",
           "angle": "front_hair_cover",
-          "filename": "heavy_bangs_covering_eyes_front_hair_cover_2144367168_10.png"
+          "filename": "heavy_bangs_covering_eyes_front_hair_cover_3202872199_02.png"
         }
       ],
       "stage": "candidate",
@@ -3527,7 +3533,7 @@ window.researchSampleCandidates = {
       "positive_hair_prompt": "(heavy opaque bangs covering both eyes:1.75), hair curtain over eyes, long thick front bangs falling naturally over the eyes, eyes fully hidden by hair only",
       "negative_hair_prompt": "forehead visible, thin bangs, short bangs, see-through bangs, parted bangs, hands covering eyes, fingers over face",
       "fixed_face_prompt": "",
-      "verification_note": "test31でLoRAを弱めて再生成。手で隠す失敗を避け、髪だけで目元を覆う候補を採用。",
+      "verification_note": "LoRAを弱めて再生成。手で隠す失敗を避け、髪だけで目元を覆う候補を採用。",
       "prompt_source_file": "髪型プロンプト検証用_テスト31_重め目隠れ前髪_LoRA弱め.xlsx",
       "prompt_source_sheet": "PromptThemes",
       "final_status": "adopted",
