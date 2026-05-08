@@ -261,12 +261,27 @@
   }
 
   function renderPromptDetails(item) {
+    const includeFacePrompt = !item.section.startsWith("hairstyle");
     const positivePrompt = visiblePromptParts([
       { label: "positive_hair_prompt", value: item.positive_hair_prompt || item.positive_prompt },
       { label: "fixed_bangs_prompt", value: item.fixed_bangs_prompt },
-      { label: "fixed_face_prompt", value: item.fixed_face_prompt }
+      { label: "fixed_face_prompt", value: includeFacePrompt ? item.fixed_face_prompt : "" }
     ]).join("\n\n") || "未設定";
     const negativePrompt = cleanPromptText(item.negative_hair_prompt || item.negative_prompt) || localizedText(uiText.unset);
+    if (item.section.startsWith("hairstyle")) {
+      return `
+        <div class="research-prompt-stack research-prompt-stack-static">
+          <section class="research-prompt-panel">
+            <h4>positive prompt</h4>
+            <pre>${escapeHTML(positivePrompt)}</pre>
+          </section>
+          <section class="research-prompt-panel">
+            <h4>negative prompt</h4>
+            <pre>${escapeHTML(negativePrompt)}</pre>
+          </section>
+        </div>
+      `;
+    }
     return `
       <div class="research-prompt-stack">
         <details class="research-prompt-details">

@@ -2618,6 +2618,29 @@ h2 {
   white-space: pre-wrap;
 }
 
+.research-prompt-panel {
+  border: 1px solid rgba(230, 177, 95, 0.18);
+  border-radius: 10px;
+  background: rgba(7, 7, 7, 0.38);
+  padding: 8px 10px 10px;
+}
+
+.research-prompt-panel h4 {
+  margin: 0 0 6px;
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.research-prompt-panel pre {
+  margin: 0;
+  color: var(--muted);
+  font: 700 0.72rem/1.72 Consolas, "Courier New", monospace;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+
 .empty-research-panel {
   color: var(--muted);
   font-weight: 800;
