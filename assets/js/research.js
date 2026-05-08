@@ -86,6 +86,94 @@
     }
   };
 
+  const candidateLabelTranslations = {
+    ahoge_short_bob: { en: "Ahoge Short Bob", zh: "呆毛短波波头", ko: "아호게 쇼트 보브" },
+    ahoge_medium_side_strands: { en: "Soft Medium Hair with Face-Framing Strands", zh: "柔软中长发＋脸周发束", ko: "부드러운 미디엄＋얼굴 주변 잔머리" },
+    classic_hime_cut_long: { en: "Classic Long Hime Cut", zh: "经典长姬发", ko: "클래식 롱 히메컷" },
+    light_hime_cut_medium: { en: "Light Medium Hime Cut", zh: "轻盈中长姬发", ko: "가벼운 미디엄 히메컷" },
+    outward_flipped_bob: { en: "Outward-Flipped Bob", zh: "外翘波波头", ko: "바깥말림 보브" },
+    inward_curled_bob: { en: "Inward-Curled Bob", zh: "内扣波波头", ko: "안쪽말림 보브" },
+    clean_half_up: { en: "Clean Half-Up", zh: "清爽半扎发", ko: "단정한 하프업" },
+    braided_half_up: { en: "Braided Half-Up", zh: "编发半扎发", ko: "브레이드 하프업" },
+    low_twin_tails_soft: { en: "Soft Low Twin Tails", zh: "柔软低双马尾", ko: "부드러운 로우 트윈테일" },
+    high_twin_tails_ribbon: { en: "High Twin Tails", zh: "高双马尾", ko: "하이 트윈테일" },
+    double_buns_short_bob: { en: "Double-Bun Bob", zh: "双丸子波波头", ko: "더블 번 보브" },
+    anime_straight_long: { en: "Anime-Style Straight Long Hair", zh: "动漫风直长发", ko: "애니풍 스트레이트 롱헤어" },
+    loose_wavy_long: { en: "Loose Wavy Long Hair", zh: "蓬松波浪长发", ko: "루즈 웨이브 롱헤어" },
+    char_short_bob_side_braid: { en: "Short Bob with One-Side Braid", zh: "短波波头＋单侧编发", ko: "쇼트 보브＋한쪽 브레이드" },
+    char_side_braid_low_side_tail: { en: "One-Side Braid with Low Side Tail", zh: "单侧编发＋低侧边束发", ko: "한쪽 브레이드＋낮은 사이드 테일" },
+    char_short_low_side_tail: { en: "Short Hair with Low Side Tail", zh: "短发＋低侧边束发", ko: "짧은 머리＋낮은 사이드 테일" },
+    char_low_side_ponytail_soft: { en: "Soft Low Side Ponytail", zh: "柔软低侧马尾", ko: "부드러운 낮은 사이드 포니테일" },
+    char_side_braid_plus_loose_hair: { en: "One-Side Braid with Loose Hair", zh: "单侧编发＋披发", ko: "한쪽 브레이드＋풀어내린 머리" },
+    char_loose_braid_accent_long: { en: "Long Hair with Loose Braid Accent", zh: "长发＋松散编发点缀", ko: "롱헤어＋루즈 브레이드 포인트" },
+    braided_crown_loose_hair: { en: "Braided Crown with Loose Hair", zh: "环绕编发＋披发", ko: "크라운 브레이드＋풀어내린 머리" },
+    crown_braid_bun: { en: "Braided Bun", zh: "编发丸子头", ko: "브레이드 번" },
+    double_buns: { en: "Double Buns", zh: "双丸子头", ko: "더블 번" },
+    fluffy_short_bob: { en: "Fluffy Short Bob", zh: "蓬松短波波头", ko: "폭신한 쇼트 보브" },
+    hime_bob_blunt_sidelocks: { en: "Hime Bob with Blunt Sidelocks", zh: "姬发波波头＋齐切侧发", ko: "히메 보브＋블런트 사이드록" },
+    layered_short_bob: { en: "Layered Short Bob", zh: "层次短波波头", ko: "레이어드 쇼트 보브" },
+    long_twin_tails: { en: "Long Twin Tails", zh: "长双马尾", ko: "롱 트윈테일" },
+    low_ponytail_long: { en: "Long Low Ponytail", zh: "低马尾长发", ko: "낮은 롱 포니테일" },
+    medium_side_tail: { en: "Medium Side Tail", zh: "中长侧边束发", ko: "미디엄 사이드 테일" },
+    medium_wolf_cut: { en: "Medium Wolf Cut", zh: "中长狼尾发", ko: "미디엄 울프컷" },
+    straight_long_hair: { en: "Straight Long Hair", zh: "直长发", ko: "스트레이트 롱헤어" },
+    diagonal_bangs_covering_one_eye: { en: "Diagonal Bangs Covering One Eye", zh: "斜向遮单眼刘海", ko: "한쪽 눈을 가리는 사선 앞머리" },
+    side_braid_one_eye_covered: { en: "One-Side Braid with One-Eye Bangs", zh: "单侧编发＋遮单眼刘海", ko: "한쪽 브레이드＋한쪽 눈 가림 앞머리" },
+    side_braid_one_eye_cover: { en: "One-Side Braid with One-Eye Bangs", zh: "单侧编发＋遮单眼刘海", ko: "한쪽 브레이드＋한쪽 눈 가림 앞머리" },
+    low_side_ponytail_one_eye_covered: { en: "Low Side Tail with One-Eye Bangs", zh: "低侧边束发＋遮单眼刘海", ko: "낮은 사이드 테일＋한쪽 눈 가림 앞머리" },
+    low_side_tail_eye_cover: { en: "Low Side Tail with One-Eye Bangs", zh: "低侧边束发＋遮单眼刘海", ko: "낮은 사이드 테일＋한쪽 눈 가림 앞머리" },
+    heavy_bangs_covering_eyes: { en: "Heavy Eye-Covering Bangs", zh: "厚重遮眼刘海", ko: "무거운 눈가림 앞머리" },
+    long_bangs_over_eyes: { en: "Long Bangs Over Eyes", zh: "遮眼长刘海", ko: "눈을 덮는 긴 앞머리" },
+    peekaboo_bangs: { en: "Peekaboo Bangs", zh: "若隐若现遮眼刘海", ko: "피카부 앞머리" },
+    sadako_style_long_front_hair: { en: "Sadako-Style Long Front Hair", zh: "贞子风长前发", ko: "사다코풍 긴 앞머리" },
+    see_through_bangs: { en: "See-Through Bangs", zh: "空气刘海", ko: "시스루 앞머리" },
+    side_swept_bangs: { en: "Side-Swept Bangs", zh: "斜分刘海", ko: "사이드 스윕 앞머리" },
+    full_straight_bangs: { en: "Full Straight Bangs", zh: "厚直刘海", ko: "풀 스트레이트 앞머리" },
+    long_side_face_framing: { en: "Long Face-Framing Bangs", zh: "长脸周刘海", ko: "긴 얼굴 라인 앞머리" },
+    curtain_bangs: { en: "Curtain Bangs", zh: "八字刘海", ko: "커튼 앞머리" },
+    short_bangs: { en: "Short Bangs", zh: "短刘海", ko: "짧은 앞머리" },
+    arched_bangs: { en: "Arched Bangs", zh: "弧形刘海", ko: "아치형 앞머리" },
+    slightly_split_bangs: { en: "Slightly Split Bangs", zh: "微分刘海", ko: "살짝 갈라진 앞머리" },
+    side_tied_bangs: { en: "Side-Tied Bangs", zh: "侧边收束刘海", ko: "한쪽으로 묶은 앞머리" },
+    low_side_ponytail_long_bangs: { en: "Low Side Tail with Long Bangs", zh: "低侧边束发＋长刘海", ko: "낮은 사이드 테일＋긴 앞머리" },
+    full_straight_bangs_with_side_strands: { en: "Full Straight Bangs with Side Strands", zh: "厚直刘海＋侧发", ko: "풀 스트레이트 앞머리＋옆머리" },
+    short_bob_see_through_straight: { en: "Short Bob with See-Through Bangs", zh: "短波波头＋空气刘海", ko: "쇼트 보브＋시스루 앞머리" },
+    side_tail_see_through_straight: { en: "Side Tail with See-Through Bangs", zh: "侧边束发＋空气刘海", ko: "사이드 테일＋시스루 앞머리" },
+    short_tail_see_through_straight: { en: "Short Side Tail with See-Through Bangs", zh: "短侧边束发＋空气刘海", ko: "짧은 사이드 테일＋시스루 앞머리" },
+    long_side_see_through_straight: { en: "Long One-Side Braid with See-Through Bangs", zh: "单侧编发长发＋空气刘海", ko: "한쪽 브레이드 롱헤어＋시스루 앞머리" },
+    short_bob_side_swept: { en: "Short Bob with Side-Swept Bangs", zh: "短波波头＋斜分刘海", ko: "쇼트 보브＋사이드 스윕 앞머리" },
+    side_tail_side_swept: { en: "Side Tail with Side-Swept Bangs", zh: "侧边束发＋斜分刘海", ko: "사이드 테일＋사이드 스윕 앞머리" },
+    long_side_side_swept: { en: "Long One-Side Braid with Side-Swept Bangs", zh: "单侧编发长发＋斜分刘海", ko: "한쪽 브레이드 롱헤어＋사이드 스윕 앞머리" },
+    short_bob_full_straight: { en: "Short Bob with Full Straight Bangs", zh: "短波波头＋厚直刘海", ko: "쇼트 보브＋풀 스트레이트 앞머리" },
+    short_tail_full_straight: { en: "Short Side Tail with Full Straight Bangs", zh: "短侧边束发＋厚直刘海", ko: "짧은 사이드 테일＋풀 스트레이트 앞머리" },
+    long_side_long_face_framing: { en: "Long One-Side Braid with Face-Framing Bangs", zh: "单侧编发长发＋脸周刘海", ko: "한쪽 브레이드 롱헤어＋얼굴 라인 앞머리" },
+    long_side_curtain_center_part: { en: "Long One-Side Braid with Curtain Bangs", zh: "单侧编发长发＋八字刘海", ko: "한쪽 브레이드 롱헤어＋커튼 앞머리" }
+  };
+
+  const colorWordTranslations = {
+    en: {},
+    zh: {
+      sakura: "樱花", peach: "蜜桃", rose: "玫瑰", coral: "珊瑚", magenta: "品红", pink: "粉色",
+      blonde: "金发", honey: "蜂蜜", ash: "灰调", platinum: "铂金", beige: "米金", strawberry: "草莓",
+      light: "浅", brown: "棕色", milk: "奶茶", tea: "茶", chestnut: "栗色", dark: "深", soft: "柔黑", black: "黑发",
+      blue: "蓝色", silver: "银发", white: "白", pearl: "珍珠", gray: "灰色", lavender: "薰衣草", auburn: "赤褐色",
+      copper: "铜色", orange: "橙色", red: "红色", wine: "酒红", sky: "天空", aqua: "水蓝", navy: "海军蓝",
+      mint: "薄荷绿", emerald: "祖母绿", olive: "橄榄绿", lilac: "丁香紫", violet: "紫罗兰", smoky: "烟熏",
+      cobalt: "钴蓝", ice: "冰蓝", amethyst: "紫水晶", mauve: "藕紫", deep: "深", teal: "蓝绿色",
+      pale: "淡", lime: "青柠绿", turquoise: "绿松石", pastel: "粉彩", purple: "紫色", saxe: "萨克斯蓝"
+    },
+    ko: {
+      sakura: "사쿠라", peach: "피치", rose: "로즈", coral: "코랄", magenta: "마젠타", pink: "핑크",
+      blonde: "블론드", honey: "허니", ash: "애쉬", platinum: "플래티넘", beige: "베이지", strawberry: "스트로베리",
+      light: "라이트", brown: "브라운", milk: "밀크", tea: "티", chestnut: "체스트넛", dark: "다크", soft: "소프트", black: "블랙",
+      blue: "블루", silver: "실버", white: "화이트", pearl: "펄", gray: "그레이", lavender: "라벤더", auburn: "오번",
+      copper: "코퍼", orange: "오렌지", red: "레드", wine: "와인", sky: "스카이", aqua: "아쿠아", navy: "네이비",
+      mint: "민트", emerald: "에메랄드", olive: "올리브", lilac: "라일락", violet: "바이올렛", smoky: "스모키",
+      cobalt: "코발트", ice: "아이스", amethyst: "아메지스트", mauve: "모브", deep: "딥", teal: "틸",
+      pale: "페일", lime: "라임", turquoise: "터쿼이즈", pastel: "파스텔", purple: "퍼플", saxe: "색스 블루"
+    }
+  };
+
   const sectionContactIds = {
     hairstyle: ["hairstyle_test25_selected", "hairstyle_test28_selected"],
     hairstyle_test19: ["hairstyle_test19_selected", "test19_all_contact"],
@@ -225,6 +313,34 @@
     return copy[currentLanguage] || copy.ja || { title: "", lead: "" };
   }
 
+  function titleCaseFromTheme(value) {
+    return String(value || "")
+      .replace(/_hair$/i, "")
+      .split("_")
+      .filter(Boolean)
+      .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+      .join(" ");
+  }
+
+  function localizedColorLabel(item) {
+    const key = item.theme_name || item.theme || "";
+    if (currentLanguage === "ja") return item.jp_label || titleCaseFromTheme(key);
+    if (currentLanguage === "en") return titleCaseFromTheme(key);
+    const words = String(key).replace(/_hair$/i, "").split("_").filter(Boolean);
+    const dictionary = colorWordTranslations[currentLanguage] || {};
+    const translated = words.map((word) => dictionary[word] || word).join(currentLanguage === "ko" ? " " : "");
+    if (!translated) return titleCaseFromTheme(key);
+    return currentLanguage === "ko" ? translated : translated;
+  }
+
+  function localizedCandidateLabel(item) {
+    if (currentLanguage === "ja") return item.jp_label || titleCaseFromTheme(item.theme_name || item.theme);
+    if (sectionKind(item) === "hair_color") return localizedColorLabel(item);
+    const key = item.theme_name || item.theme || "";
+    const translated = candidateLabelTranslations[key]?.[currentLanguage];
+    return translated || titleCaseFromTheme(key) || item.jp_label || "";
+  }
+
   function sectionKind(item) {
     if (item.section.startsWith("hair_color")) return "hair_color";
     if (item.section.startsWith("bangs")) return "bangs";
@@ -313,7 +429,8 @@
   function renderCandidateMedia(item) {
     const images = candidateImages(item);
     const mainImage = images[0];
-    const mainAlt = `${item.jp_label}${mainImage.label ? ` ${mainImage.label}` : ""}`;
+    const label = localizedCandidateLabel(item);
+    const mainAlt = `${label}${mainImage.label ? ` ${mainImage.label}` : ""}`;
     const thumbs = images.slice(1);
     return `
       <div class="research-candidate-media${thumbs.length ? " has-samples" : ""}">
@@ -321,10 +438,10 @@
           <img src="${escapeHTML(withPagePrefix(mainImage.asset_path))}" alt="${escapeHTML(mainAlt)}" loading="lazy" decoding="async">
         </a>
         ${thumbs.length ? `
-          <div class="research-sample-thumbs" aria-label="${escapeHTML(item.jp_label)}の追加サンプル">
+          <div class="research-sample-thumbs" aria-label="${escapeHTML(label)}">
             ${thumbs.map((sample) => `
               <a class="research-sample-thumb" href="${escapeHTML(withPagePrefix(sample.asset_path))}" target="_blank" rel="noopener noreferrer">
-                <img src="${escapeHTML(withPagePrefix(sample.asset_path))}" alt="${escapeHTML(`${item.jp_label} ${sample.label || sample.angle || ""}`)}" loading="lazy" decoding="async">
+                <img src="${escapeHTML(withPagePrefix(sample.asset_path))}" alt="${escapeHTML(`${label} ${sample.label || sample.angle || ""}`)}" loading="lazy" decoding="async">
                 <span>${escapeHTML(sample.label || sample.angle || "sample")}</span>
               </a>
             `).join("")}
@@ -337,11 +454,12 @@
   function renderCandidateCard(item) {
     const tag = importantTagFor(item);
     const candidateId = slugFor(item.theme_name || item.theme || item.important_tags || item.jp_label);
+    const label = localizedCandidateLabel(item);
     return `
       <article class="research-candidate-card" id="${escapeHTML(candidateId)}">
         ${renderCandidateMedia(item)}
         <div class="research-candidate-copy">
-          <h3>${escapeHTML(item.jp_label)}</h3>
+          <h3>${escapeHTML(label)}</h3>
           <dl class="research-meta-list">
             <div><dt>${escapeHTML(localizedText(uiText.importantTags))}</dt><dd>${escapeHTML(tag)}</dd></div>
             <div><dt>${escapeHTML(localizedText(uiText.verificationResult))}</dt><dd>${escapeHTML(localizedVerificationNote(item))}</dd></div>
