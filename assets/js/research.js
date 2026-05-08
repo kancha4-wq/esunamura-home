@@ -11,55 +11,55 @@
   const sectionCopy = {
     hairstyle: {
       ja: {
-        title: "髪型プロンプト検証",
+        title: "髪型プロンプト比較｜Hairstyle Prompt Guide for SDXL",
         lead: "候補画像とプロンプトを1件ずつ確認できます。"
       },
       en: {
-        title: "Hairstyle Prompt Verification",
+        title: "Hairstyle Prompt Guide for SDXL",
         lead: "Check each candidate image together with its prompt notes."
       },
       zh: {
-        title: "发型 Prompt 验证",
+        title: "发型 Prompt 比较｜Hairstyle Prompt Guide for SDXL",
         lead: "可以逐一查看候选图像与对应的 prompt 记录。"
       },
       ko: {
-        title: "헤어스타일 프롬프트 검증",
+        title: "헤어스타일 프롬프트 비교｜Hairstyle Prompt Guide for SDXL",
         lead: "후보 이미지와 프롬프트 기록을 하나씩 확인할 수 있습니다."
       }
     },
     bangs: {
       ja: {
-        title: "前髪プロンプト検証",
+        title: "前髪プロンプト比較｜Bangs Prompt Guide for SDXL",
         lead: "顔まわりの印象差を候補画像ごとに確認できます。"
       },
       en: {
-        title: "Bangs Prompt Verification",
+        title: "Bangs Prompt Guide for SDXL",
         lead: "Compare how each candidate changes the impression around the face."
       },
       zh: {
-        title: "刘海 Prompt 验证",
+        title: "刘海 Prompt 比较｜Bangs Prompt Guide for SDXL",
         lead: "可以按候选图像比较脸部周围印象的差异。"
       },
       ko: {
-        title: "앞머리 프롬프트 검증",
+        title: "앞머리 프롬프트 비교｜Bangs Prompt Guide for SDXL",
         lead: "후보 이미지별로 얼굴 주변 인상이 어떻게 달라지는지 확인할 수 있습니다."
       }
     },
     hair_color: {
       ja: {
-        title: "髪色プロンプト検証",
+        title: "髪色プロンプト比較｜Hair Color Prompt Guide for SDXL",
         lead: "色味とキャラへの馴染みを候補画像ごとに確認できます。"
       },
       en: {
-        title: "Hair Color Prompt Verification",
+        title: "Hair Color Prompt Guide for SDXL",
         lead: "Compare each candidate for color tone stability and character fit."
       },
       zh: {
-        title: "发色 Prompt 验证",
+        title: "发色 Prompt 比较｜Hair Color Prompt Guide for SDXL",
         lead: "可以按候选图像比较色味稳定性和角色适配度。"
       },
       ko: {
-        title: "헤어 컬러 프롬프트 검증",
+        title: "헤어 컬러 프롬프트 비교｜Hair Color Prompt Guide for SDXL",
         lead: "후보 이미지별로 색감 안정성과 캐릭터와의 어울림을 비교할 수 있습니다."
       }
     }
@@ -309,7 +309,14 @@
   }
 
   function localizedSectionCopy(sectionId) {
-    const copy = sectionCopy[sectionId] || {};
+    const fallbackId = sectionId.startsWith("hairstyle")
+      ? "hairstyle"
+      : sectionId.startsWith("bangs")
+        ? "bangs"
+        : sectionId.startsWith("hair_color")
+          ? "hair_color"
+          : sectionId;
+    const copy = sectionCopy[sectionId] || sectionCopy[fallbackId] || {};
     return copy[currentLanguage] || copy.ja || { title: "", lead: "" };
   }
 
