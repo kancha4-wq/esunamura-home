@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
   const { works, siteCopy } = window.archiveData;
   const app = document.querySelector("#titleApp");
   const languageButtons = document.querySelectorAll(".lang-button");
@@ -944,7 +944,7 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
 
   function siteRootUrl() {
     if (location.protocol !== "http:" && location.protocol !== "https:") {
-      return "https://kancha4-wq.github.io/esunamura-home/";
+      return "https://esunamura.com/";
     }
     return (location.pathname || "").includes("/titles/")
       ? new URL("../", location.href).href
