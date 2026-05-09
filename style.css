@@ -2736,6 +2736,63 @@ h2 {
   padding: 0 2px 2px;
 }
 
+.prompt-guide-preview-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.prompt-guide-preview-card {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 12px;
+  min-height: 100%;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(24, 21, 20, 0.86);
+  color: inherit;
+  text-decoration: none;
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.22);
+}
+
+.prompt-guide-preview-card img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border: 1px solid rgba(230, 177, 95, 0.24);
+  border-radius: 8px;
+  background: #080808;
+  object-fit: cover;
+  object-position: top left;
+}
+
+.prompt-guide-preview-tree img {
+  object-fit: contain;
+  object-position: center;
+  padding: 6px;
+}
+
+.prompt-guide-preview-card div {
+  display: grid;
+  align-content: start;
+  gap: 6px;
+}
+
+.prompt-guide-preview-card h3,
+.prompt-guide-preview-card p {
+  margin: 0;
+}
+
+.prompt-guide-preview-card h3 {
+  color: var(--text);
+  font-size: clamp(1rem, 2vw, 1.16rem);
+}
+
+.prompt-guide-preview-card p {
+  color: var(--muted);
+  font-weight: 800;
+  line-height: 1.65;
+}
+
 .prompt-guide-bottom-cta {
   margin-bottom: 0;
 }
@@ -2787,6 +2844,10 @@ h2 {
 
   .prompt-guide-media-wide {
     grid-column: span 2;
+  }
+
+  .prompt-guide-preview-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 

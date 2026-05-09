@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Esunamura SDXL Prompt Guide Pack folder structure</title>
+  <desc id="desc">Folder tree showing Excel, CSV, TXT, categorized prompts, gacha prompts, and sample images.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1d1916"/>
+      <stop offset="1" stop-color="#090807"/>
+    </linearGradient>
+    <linearGradient id="folder" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f3c36e"/>
+      <stop offset="1" stop-color="#d49b43"/>
+    </linearGradient>
+    <style>
+      .panel{fill:url(#bg);stroke:#6d5630;stroke-width:2}
+      .title{fill:#f7efe3;font:800 34px Arial,"Noto Sans JP",sans-serif}
+      .label{fill:#f4e6ca;font:700 25px Consolas,"Noto Sans JP",monospace}
+      .sub{fill:#cabca7;font:700 21px Consolas,"Noto Sans JP",monospace}
+      .line{stroke:#86683a;stroke-width:2;fill:none}
+      .folder{fill:url(#folder)}
+      .file{fill:#ece4d7}
+      .fileFold{fill:#cdbb9a}
+    </style>
+  </defs>
+  <rect x="20" y="20" width="1160" height="720" rx="28" class="panel"/>
+  <text x="60" y="72" class="title">Esunamura_SDXL_Prompt_Guide_Pack_v1</text>
+  <g transform="translate(62 110)">
+    <path class="line" d="M22 28v560"/>
+    <g transform="translate(0 0)">
+      <path class="file" d="M42 4h34l16 16v44H42z"/><path class="fileFold" d="M76 4v18h16"/>
+      <text x="112" y="41" class="label">04_プロンプト一覧_Excel.xlsx</text>
+    </g>
+    <g transform="translate(0 68)">
+      <path class="file" d="M42 4h34l16 16v44H42z"/><path class="fileFold" d="M76 4v18h16"/>
+      <text x="112" y="41" class="label">05_プロンプト一覧_CSV.csv</text>
+    </g>
+    <g transform="translate(0 136)">
+      <path class="file" d="M42 4h34l16 16v44H42z"/><path class="fileFold" d="M76 4v18h16"/>
+      <text x="112" y="41" class="label">06_プロンプト一覧_TXT.txt</text>
+    </g>
+    <g transform="translate(0 214)">
+      <path class="folder" d="M42 10h46l12 14h62v44H42z"/>
+      <text x="184" y="44" class="label">10_カテゴリ別プロンプト_Prompts</text>
+    </g>
+    <path class="line" d="M64 282v270M64 282h32M64 330h32M64 378h32M64 426h32M64 474h32M64 522h32"/>
+    <g transform="translate(94 278)">
+      <path class="folder" d="M0 7h36l10 12h50v33H0z"/>
+      <text x="116" y="35" class="sub">01_髪型_Hairstyle</text>
+    </g>
+    <g transform="translate(94 326)">
+      <path class="folder" d="M0 7h36l10 12h50v33H0z"/>
+      <text x="116" y="35" class="sub">02_前髪_Bangs</text>
+    </g>
+    <g transform="translate(94 374)">
+      <path class="folder" d="M0 7h36l10 12h50v33H0z"/>
+      <text x="116" y="35" class="sub">03_髪色_HairColor</text>
+    </g>
+    <g transform="translate(94 422)">
+      <path class="folder" d="M0 7h36l10 12h50v33H0z"/>
+      <text x="116" y="35" class="sub">04_目_Eyes</text>
+    </g>
+    <g transform="translate(94 470)">
+      <path class="folder" d="M0 7h36l10 12h50v33H0z"/>
+      <text x="116" y="35" class="sub">05_表情_Expression</text>
+    </g>
+    <g transform="translate(94 518)">
+      <path class="folder" d="M0 7h36l10 12h50v33H0z"/>
+      <text x="116" y="35" class="sub">06_背景_Background</text>
+    </g>
+    <g transform="translate(0 594)">
+      <path class="folder" d="M42 10h46l12 14h62v44H42z"/>
+      <text x="184" y="44" class="label">11_ガチャ用プロンプト_Gacha</text>
+    </g>
+    <g transform="translate(0 662)">
+      <path class="folder" d="M42 10h46l12 14h62v44H42z"/>
+      <text x="184" y="44" class="label">12_サンプル画像_Samples</text>
+    </g>
+  </g>
+</svg>
