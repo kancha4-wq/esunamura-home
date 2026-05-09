@@ -2139,17 +2139,19 @@ h2 {
 }
 
 .research-subnav {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 8px;
 }
 
 .research-subnav a {
   display: inline-flex;
+  flex: 1 1 0;
   align-items: center;
   justify-content: center;
+  min-width: 0;
   min-height: 44px;
-  padding: 8px 12px;
+  padding: 8px 10px;
   border: 1px solid var(--line);
   border-radius: 10px;
   background: linear-gradient(180deg, rgba(38, 35, 33, 0.94), rgba(26, 23, 22, 0.94));
@@ -2157,6 +2159,7 @@ h2 {
   font-weight: 900;
   text-align: center;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .research-subnav a.is-active {
@@ -3206,10 +3209,18 @@ body[data-research-section="expression"] .research-candidate-media.has-samples .
   .research-contact-grid,
   .research-candidate-grid,
   .research-jump-links,
-  .research-subnav,
   .research-top-grid,
   .research-detail-page .research-candidate-card {
     grid-template-columns: 1fr;
+  }
+
+  .research-subnav {
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+
+  .research-subnav a {
+    flex: 0 0 min(42vw, 160px);
   }
 
   .research-detail-page .research-image-link img {
