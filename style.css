@@ -2140,7 +2140,7 @@ h2 {
 
 .research-subnav {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 160px), 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 10px;
 }
 
@@ -2496,6 +2496,92 @@ h2 {
   margin: 0;
 }
 
+.background-prompt-section {
+  margin-top: 26px;
+}
+
+.background-prompt-grid,
+.background-use-flow,
+.background-compare-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.background-prompt-card,
+.background-code-card,
+.background-use-flow article,
+.background-compare-grid article {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(24, 21, 20, 0.86);
+}
+
+.background-prompt-card p,
+.background-use-flow h3,
+.background-use-flow p,
+.background-compare-grid h3,
+.background-compare-grid p {
+  margin: 0;
+}
+
+.background-prompt-card code,
+.background-code-card pre {
+  display: block;
+  margin: 0;
+  color: var(--text);
+  font-family: "Roboto Mono", "SFMono-Regular", Consolas, monospace;
+  font-size: 0.86rem;
+  line-height: 1.75;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.background-category-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.background-category-list span {
+  padding: 8px 12px;
+  border: 1px solid rgba(230, 177, 95, 0.28);
+  border-radius: 999px;
+  background: rgba(230, 177, 95, 0.1);
+  color: var(--text);
+  font-weight: 800;
+}
+
+.background-code-card {
+  position: relative;
+  padding-bottom: 52px;
+}
+
+.copy-prompt-button {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  min-width: 82px;
+  min-height: 32px;
+  border: 1px solid rgba(230, 177, 95, 0.42);
+  border-radius: 999px;
+  background: rgba(230, 177, 95, 0.12);
+  color: var(--accent);
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.copy-prompt-button:hover,
+.copy-prompt-button:focus-visible {
+  background: rgba(230, 177, 95, 0.2);
+  color: var(--text);
+}
+
 .prompt-guide-pack-page .research-subnav {
   margin-bottom: 28px;
 }
@@ -2638,6 +2724,16 @@ h2 {
   }
 
   .research-pack-gallery {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .background-prompt-grid,
+  .background-use-flow {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .background-code-grid,
+  .background-compare-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
