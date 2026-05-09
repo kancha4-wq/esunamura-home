@@ -80,6 +80,24 @@
         title: "눈 프롬프트 비교｜Eye Shape Prompt Guide for SDXL",
         lead: "후보 이미지별로 눈 모양, 크기, 홍채 디테일, 하이라이트 표현을 비교할 수 있습니다."
       }
+    },
+    expression: {
+      ja: {
+        title: "表情プロンプト比較｜Expression Prompt Guide for SDXL",
+        lead: "無表情、笑顔、困り顔、怒り顔、照れ顔など、表情差を候補画像ごとに確認できます。"
+      },
+      en: {
+        title: "Expression Prompt Guide for SDXL",
+        lead: "Compare each candidate for neutral, smiling, troubled, angry, embarrassed, and other facial expressions."
+      },
+      zh: {
+        title: "表情 Prompt 比较｜Expression Prompt Guide for SDXL",
+        lead: "可以按候选图像比较无表情、笑容、困扰、愤怒、害羞等表情差异。"
+      },
+      ko: {
+        title: "표정 프롬프트 비교｜Expression Prompt Guide for SDXL",
+        lead: "무표정, 미소, 곤란한 표정, 화난 표정, 부끄러운 표정 등 표정 차이를 후보 이미지별로 확인할 수 있습니다."
+      }
     }
   };
 
@@ -146,6 +164,26 @@
     sparkling_eyes: { en: "Sparkling Eyes", zh: "闪亮眼", ko: "반짝이는 눈" },
     subdued_highlights: { en: "Subdued Highlights", zh: "低调高光", ko: "절제된 하이라이트" },
     starry_eyes_suppression: { en: "Starry Eye Suppression", zh: "星星眼抑制", ko: "별눈 억제" },
+    angry_expression: { en: "Angry Expression", zh: "生气表情", ko: "화난 표정" },
+    dazed_expression: { en: "Dazed Expression", zh: "恍惚表情", ko: "멍한 표정" },
+    embarrassed_expression: { en: "Embarrassed Expression", zh: "害羞表情", ko: "부끄러운 표정" },
+    enchanted_expression: { en: "Enchanted Expression", zh: "陶醉表情", ko: "황홀한 표정" },
+    enduring_expression: { en: "Enduring Expression", zh: "忍耐表情", ko: "참는 표정" },
+    exhausted_expression: { en: "Exhausted Expression", zh: "疲惫表情", ko: "지친 표정" },
+    happy_smile: { en: "Happy Smile", zh: "开心笑容", ko: "활짝 웃는 표정" },
+    jitome_annoyed: { en: "Annoyed Half-Lidded Eyes", zh: "不满半睁眼", ko: "못마땅한 지토메" },
+    melting_expression: { en: "Melting Expression", zh: "放松融化表情", ko: "녹아내리는 표정" },
+    mischievous_smile: { en: "Mischievous Smile", zh: "调皮笑容", ko: "장난스러운 미소" },
+    neutral_expression: { en: "Neutral Expression", zh: "无表情", ko: "무표정" },
+    pouting_expression: { en: "Pouting Expression", zh: "鼓脸不满表情", ko: "삐친 표정" },
+    sad_expression: { en: "Sad Expression", zh: "悲伤表情", ko: "슬픈 표정" },
+    sleepy_expression: { en: "Sleepy Expression", zh: "困倦表情", ko: "졸린 표정" },
+    smug_expression: { en: "Smug Expression", zh: "得意表情", ko: "의기양양한 표정" },
+    soft_smile: { en: "Soft Smile", zh: "柔和微笑", ko: "부드러운 미소" },
+    strong_blush_expression: { en: "Strong Blush Expression", zh: "强烈脸红表情", ko: "강한 홍조 표정" },
+    surprised_expression: { en: "Surprised Expression", zh: "惊讶表情", ko: "놀란 표정" },
+    teary_eyes_expression: { en: "Teary Eyes Expression", zh: "泪眼表情", ko: "눈물 맺힌 표정" },
+    troubled_expression: { en: "Troubled Expression", zh: "困扰表情", ko: "곤란한 표정" },
     diagonal_bangs_covering_one_eye: { en: "Diagonal Bangs Covering One Eye", zh: "斜向遮单眼刘海", ko: "한쪽 눈을 가리는 사선 앞머리" },
     side_braid_one_eye_covered: { en: "One-Side Braid with One-Eye Bangs", zh: "单侧编发＋遮单眼刘海", ko: "한쪽 브레이드＋한쪽 눈 가림 앞머리" },
     side_braid_one_eye_cover: { en: "One-Side Braid with One-Eye Bangs", zh: "单侧编发＋遮单眼刘海", ko: "한쪽 브레이드＋한쪽 눈 가림 앞머리" },
@@ -221,6 +259,7 @@
     bangs: "SDXL / illustriousXL 系モデル向けの前髪プロンプト検証をまとめました。\nシースルー前髪、流し前髪、重め前髪、片目隠れ前髪などを比較しています。",
     hair_color: "SDXL / illustriousXL 系モデル向けの髪色プロンプト検証をまとめました。\nピンク系、ブロンド系、青系、紫系、緑系などの髪色表現を比較しています。",
     eyes: "SDXL / illustriousXL 系モデル向けの目プロンプト検証ページです。\nジト目、猫目、大きい目、小さい目、瞳、ハイライト表現などを比較していきます。",
+    expression: "SDXL / illustriousXL 系モデル向けの表情プロンプト検証ページです。\n無表情、笑顔、困り顔、怒り顔、照れ顔などの表情差を比較しています。",
     background: "SDXL / illustriousXL 系モデル向けの背景プロンプト検証をまとめました。\n京都風、和風町並み、温泉旅館、海辺、リゾートなどの背景表現を比較しています。"
   };
 
@@ -228,7 +267,8 @@
     hairstyle: ["hairstyle_test25", "hairstyle_test28"],
     bangs: ["bangs_test26"],
     hair_color: ["hair_color_test27", "hair_color_test21", "hair_color"],
-    eyes: ["eyes_test34"]
+    eyes: ["eyes_test34"],
+    expression: ["expression_test37"]
   };
 
   function withPagePrefix(path) {
@@ -346,7 +386,11 @@
         ? "bangs"
         : sectionId.startsWith("hair_color")
           ? "hair_color"
-          : sectionId;
+          : sectionId.startsWith("eyes")
+            ? "eyes"
+            : sectionId.startsWith("expression")
+              ? "expression"
+              : sectionId;
     const copy = sectionCopy[sectionId] || sectionCopy[fallbackId] || {};
     return copy[currentLanguage] || copy.ja || { title: "", lead: "" };
   }
@@ -383,6 +427,8 @@
     if (item.section.startsWith("hair_color")) return "hair_color";
     if (item.section.startsWith("bangs")) return "bangs";
     if (item.section.startsWith("hairstyle")) return "hairstyle";
+    if (item.section.startsWith("eyes")) return "eyes";
+    if (item.section.startsWith("expression")) return "expression";
     return "research";
   }
 
@@ -406,6 +452,16 @@
         zh: `使用“${tag}”的候选。适合确认色味稳定性，以及该发色与角色的自然契合度。`,
         ko: `"${tag}"를 사용한 후보입니다. 색감 안정성과 캐릭터에 자연스럽게 어울리는지를 확인하기 좋습니다.`
       },
+      eyes: {
+        en: `Candidate using "${tag}". This entry is useful for comparing how eye shape, iris detail, or highlights change the character impression.`,
+        zh: `使用“${tag}”的候选。适合比较眼型、瞳孔细节或高光如何改变角色印象。`,
+        ko: `"${tag}"를 사용한 후보입니다. 눈 모양, 홍채 디테일, 하이라이트가 캐릭터 인상을 어떻게 바꾸는지 비교하기 좋습니다.`
+      },
+      expression: {
+        en: `Candidate using "${tag}". This entry is useful for comparing how facial expression changes while keeping the character identity readable.`,
+        zh: `使用“${tag}”的候选。适合比较在保持角色辨识度的同时，表情如何变化。`,
+        ko: `"${tag}"를 사용한 후보입니다. 캐릭터성을 읽을 수 있게 유지하면서 표정이 어떻게 달라지는지 비교하기 좋습니다.`
+      },
       research: {
         en: `Candidate using "${tag}". This entry is useful for comparing the generated result with the prompt.`,
         zh: `使用“${tag}”的候选。适合将生成结果与 prompt 进行比较。`,
@@ -423,7 +479,7 @@
       { label: "fixed_face_prompt", value: includeFacePrompt ? item.fixed_face_prompt : "" }
     ]).join("\n\n") || "未設定";
     const negativePrompt = cleanPromptText(item.negative_hair_prompt || item.negative_prompt) || localizedText(uiText.unset);
-    const showPromptInline = ["hairstyle", "bangs", "hair_color", "eyes"].some((sectionPrefix) => item.section.startsWith(sectionPrefix));
+    const showPromptInline = ["hairstyle", "bangs", "hair_color", "eyes", "expression"].some((sectionPrefix) => item.section.startsWith(sectionPrefix));
     if (showPromptInline) {
       return `
         <div class="research-prompt-stack research-prompt-stack-static">
