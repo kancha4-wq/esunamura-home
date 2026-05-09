@@ -2188,8 +2188,8 @@ h2 {
   display: grid;
   gap: 14px;
   align-items: center;
-  margin: 18px 0 28px;
-  padding: 16px;
+  margin: 0;
+  padding: 14px 16px;
   border: 1px solid rgba(230, 177, 95, 0.22);
   border-radius: var(--radius);
   background:
@@ -2219,7 +2219,7 @@ h2 {
 }
 
 .research-pack-mini-cta-bottom {
-  margin-top: 26px;
+  margin-top: 8px;
 }
 
 .guide-section {
@@ -2610,7 +2610,7 @@ h2 {
 }
 
 .prompt-guide-pack-page .research-subnav {
-  margin-bottom: 28px;
+  margin-bottom: 0;
 }
 
 .prompt-guide-hero {
@@ -2805,6 +2805,12 @@ h2 {
 
 .prompt-guide-preview-tree img {
   padding: 12px;
+}
+
+.prompt-guide-preview-cover img {
+  padding: 0;
+  object-fit: cover;
+  object-position: top center;
 }
 
 .prompt-guide-preview-card div {
