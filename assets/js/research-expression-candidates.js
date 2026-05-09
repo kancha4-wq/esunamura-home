@@ -10,7 +10,7 @@
     });
   }
 
-  const commonNegative = "different character, different face, different hairstyle, different hair color, different outfit, hidden eyes, covered eyes, cropped mouth, no mouth, face out of frame, head only, floating head, detached head, extreme close-up, full body, monochrome, grayscale, sketch, rough sketch, lineart only, unfinished, draft, low quality, worst quality, blurry, bad anatomy, bad face, asymmetrical eyes, text, watermark, logo";
+  const commonNegative = "different character, different face, hidden eyes, cropped mouth, head only, monochrome, sketch, low quality";
   const items = [
     {
       theme: "neutral_expression",

@@ -2499,6 +2499,11 @@ h2 {
   object-position: center;
 }
 
+body[data-research-section="expression"] .research-candidate-media.has-samples .research-image-link img {
+  object-fit: cover;
+  object-position: center;
+}
+
 .research-candidate-media.has-samples .research-image-link,
 .research-candidate-media.has-samples .research-sample-thumbs,
 .research-candidate-media.has-samples .research-sample-thumb {
