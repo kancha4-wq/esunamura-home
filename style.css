@@ -2195,6 +2195,12 @@ h2 {
   color: var(--muted);
 }
 
+.research-pack-mini-cta h2 {
+  margin: 0 0 8px;
+  font-size: clamp(1.2rem, 3vw, 1.55rem);
+  line-height: 1.35;
+}
+
 .research-pack-mini-cta .eyebrow {
   margin-bottom: 5px;
   color: var(--accent);
@@ -2638,6 +2644,10 @@ h2 {
   .prompt-guide-hero {
     grid-template-columns: minmax(250px, 0.74fr) minmax(0, 1.26fr);
     padding: 24px;
+  }
+
+  .prompt-guide-hero-text-only {
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .prompt-guide-grid {
