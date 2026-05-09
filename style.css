@@ -169,6 +169,10 @@ img {
   margin-bottom: 18px;
 }
 
+.hub-page .site-header {
+  min-height: clamp(360px, 52vw, 470px);
+}
+
 .hero-image {
   aspect-ratio: 4096 / 1365;
   overflow: hidden;
@@ -189,6 +193,7 @@ img {
   grid-template-columns: auto 1fr;
   gap: 12px;
   align-items: center;
+  min-height: 68px;
   margin-top: 14px;
 }
 
@@ -259,6 +264,7 @@ h2 {
 
 .quick-links {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  min-height: 42px;
   margin-top: 14px;
 }
 
@@ -525,6 +531,7 @@ h2 {
 
 .hub-hero {
   display: grid;
+  min-height: clamp(250px, 28vw, 320px);
   padding: 22px;
   background:
     linear-gradient(135deg, rgba(43, 37, 32, 0.92), rgba(21, 19, 18, 0.94)),
@@ -551,6 +558,7 @@ h2 {
 
 .hub-language-note {
   max-width: 780px;
+  min-height: 2.9em;
   color: rgba(245, 226, 203, 0.78) !important;
   font-size: 0.86rem !important;
   line-height: 1.65 !important;
@@ -559,6 +567,7 @@ h2 {
 .hub-caution {
   display: inline-flex;
   width: fit-content;
+  min-height: 34px;
   padding: 6px 10px;
   border: 1px solid rgba(245, 195, 99, 0.32);
   border-radius: 999px;
@@ -585,6 +594,10 @@ h2 {
 
 .hub-route-card {
   min-height: 260px;
+}
+
+.hub-mini-card {
+  min-height: 210px;
 }
 
 .hub-route-works {
@@ -3348,7 +3361,11 @@ body[data-research-section="expression"] .research-candidate-media.has-samples .
   }
 
   .hub-route-card {
-    min-height: 0;
+    min-height: 230px;
+  }
+
+  .hub-mini-card {
+    min-height: 190px;
   }
 
   .hub-route-card .link-button,

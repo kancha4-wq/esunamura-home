@@ -138,7 +138,15 @@
         languageButtons.forEach((button) => {
           button.addEventListener("click", () => setLanguage(button.dataset.lang));
         });
-        setLanguage(window.localStorage?.getItem("archiveLang") || "ja");
+        let initialLanguage = "ja";
+        try {
+          initialLanguage = window.localStorage.getItem("archiveLang") || "ja";
+        } catch (error) {
+          initialLanguage = "ja";
+        }
+        if (initialLanguage !== "ja") {
+          setLanguage(initialLanguage);
+        }
       })();
     </script>
     <script src="assets/js/back-to-top.js"></script>
