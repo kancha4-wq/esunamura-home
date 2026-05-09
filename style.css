@@ -2813,6 +2813,10 @@ h2 {
   object-position: top center;
 }
 
+.prompt-guide-preview-wide {
+  grid-column: 1 / -1;
+}
+
 .prompt-guide-preview-card div {
   display: grid;
   align-content: start;
