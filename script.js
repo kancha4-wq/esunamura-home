@@ -205,17 +205,6 @@
     }
   },
   {
-    title: { ja: "Kyoto Atmosphere Prompt Pack Vol.1｜京都風背景", en: "Kyoto Atmosphere Prompt Pack Vol.1" },
-    slug: "kyoto-prompt-pack",
-    image: "images/kyoto-prompt-pack/表紙.jpg",
-    thumbnail: "images/kyoto-prompt-pack/表紙.jpg",
-    imageWidth: 1280,
-    imageHeight: 960,
-    links: {
-      BOOTH: "https://esunamura.booth.pm/items/8300644"
-    }
-  },
-  {
     title: { ja: "おもらし三景セット / Omorashi Three-Scenery Set", en: "Omorashi Three-Scenery Set / おもらし三景セット" },
     slug: "omorashi-sankei-set",
     image: "0501_改修資料/おもらし三景/1_表紙/表紙.png",
