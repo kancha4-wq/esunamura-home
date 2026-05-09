@@ -2235,6 +2235,15 @@ h2 {
   transition: transform 180ms ease, opacity 180ms ease;
 }
 
+.research-card-preview-square-12 {
+  grid-auto-flow: row;
+  grid-auto-columns: initial;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+  min-height: 0;
+  aspect-ratio: 4 / 3;
+}
+
 .research-overview-card:hover .research-card-preview img,
 .research-overview-card:focus-visible .research-card-preview img {
   opacity: 0.94;
