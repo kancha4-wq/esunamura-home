@@ -2168,6 +2168,11 @@ h2 {
   color: #21170c;
 }
 
+.research-subnav + .detail-hero,
+.research-subnav + .prompt-guide-hero {
+  margin-top: -4px;
+}
+
 .research-section {
   display: grid;
   gap: 18px;
@@ -2497,6 +2502,25 @@ h2 {
 
 .research-pack-contents h3 {
   margin: 0;
+}
+
+.background-theme-card .research-candidate-media {
+  background: #080808;
+}
+
+.background-theme-card .research-image-link,
+.background-theme-card .research-image-link img {
+  height: 100%;
+}
+
+.background-theme-card .research-image-link img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+}
+
+.background-theme-card .research-candidate-copy {
+  gap: 10px;
 }
 
 .background-prompt-section {
