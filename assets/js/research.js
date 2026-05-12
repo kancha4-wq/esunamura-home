@@ -11,7 +11,7 @@
   const sectionCopy = {
     hairstyle: {
       ja: {
-        title: "髪型プロンプト比較｜Hairstyle Prompt Guide for SDXL",
+        title: "SDXL 髪型プロンプト一覧と生成サンプル",
         lead: "候補画像とプロンプトを1件ずつ確認できます。"
       },
       en: {
@@ -29,7 +29,7 @@
     },
     bangs: {
       ja: {
-        title: "前髪プロンプト比較｜Bangs Prompt Guide for SDXL",
+        title: "SDXL 前髪プロンプト一覧と生成サンプル",
         lead: "顔まわりの印象差を候補画像ごとに確認できます。"
       },
       en: {
@@ -47,7 +47,7 @@
     },
     hair_color: {
       ja: {
-        title: "髪色プロンプト比較｜Hair Color Prompt Guide for SDXL",
+        title: "SDXL 髪色プロンプト一覧と生成サンプル",
         lead: "色味とキャラへの馴染みを候補画像ごとに確認できます。"
       },
       en: {
@@ -530,7 +530,16 @@
     const images = candidateImages(item);
     const mainImage = images[0];
     const label = localizedCandidateLabel(item);
-    const mainAlt = `${label}${mainImage.label ? ` ${mainImage.label}` : ""}`;
+    const contextLabels = {
+      hairstyle: "SDXL 髪型プロンプト検証",
+      bangs: "SDXL 前髪プロンプト検証",
+      hair_color: "SDXL 髪色プロンプト検証",
+      eyes: "SDXL 目プロンプト検証",
+      expression: "SDXL 表情プロンプト検証",
+      research: "SDXL プロンプト検証"
+    };
+    const context = contextLabels[sectionKind(item)] || contextLabels.research;
+    const mainAlt = `${context}：${label}${mainImage.label ? ` ${mainImage.label}` : ""}の生成サンプル`;
     const thumbs = images.slice(1);
     return `
       <div class="research-candidate-media${thumbs.length ? " has-samples" : ""}">
@@ -541,7 +550,7 @@
           <div class="research-sample-thumbs" aria-label="${escapeHTML(label)}">
             ${thumbs.map((sample) => `
               <a class="research-sample-thumb" href="${escapeHTML(withPagePrefix(sample.asset_path))}" target="_blank" rel="noopener noreferrer">
-                <img src="${escapeHTML(withPagePrefix(sample.asset_path))}" alt="${escapeHTML(`${label} ${sample.label || sample.angle || ""}`)}" loading="lazy" decoding="async">
+                <img src="${escapeHTML(withPagePrefix(sample.asset_path))}" alt="${escapeHTML(`${context}：${label} ${sample.label || sample.angle || "sample"}の生成サンプル`)}" loading="lazy" decoding="async">
                 <span>${escapeHTML(sample.label || sample.angle || "sample")}</span>
               </a>
             `).join("")}

@@ -3,19 +3,47 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="SDXL / illustriousXL 向けプロンプト比較ガイド。髪型・前髪・髪色・目・表情・背景などのAIイラスト生成テーマを、日本語・English・简体中文・한국어の入口として整理しています。">
+    <meta name="description" content="SDXL / illustriousXL向けのプロンプト検証ログ。髪型、前髪、髪色、背景プロンプトを中心に、AIイラスト生成で指定がどう効くかをサンプル画像と一緒に比較しています。">
     <link rel="canonical" href="https://esunamura.com/research/">
-    <meta property="og:type" content="article">
+    <meta property="og:type" content="website">
     <meta property="og:site_name" content="えすなむら">
-    <meta property="og:title" content="えすなむら研究室 | SDXL Prompt Guides">
-    <meta property="og:description" content="髪型・前髪・髪色・目・表情・背景など、SDXL / illustriousXL 向けプロンプト比較ガイドを多言語入口として整理しています。">
+    <meta property="og:title" content="SDXLプロンプト検証ログ｜髪型・前髪・髪色・背景">
+    <meta property="og:description" content="SDXL / illustriousXL向けに、髪型、前髪、髪色、背景プロンプトの効き方をサンプル画像と比較する研究室トップです。">
     <meta property="og:url" content="https://esunamura.com/research/">
     <meta property="og:image" content="https://esunamura.com/assets/images/research/intro/research_overview_1200x630.jpg">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="えすなむら研究室 | SDXL Prompt Guides">
-    <meta name="twitter:description" content="髪型・前髪・髪色・目・表情・背景など、SDXL / illustriousXL 向けプロンプト比較ガイドを多言語入口として整理しています。">
+    <meta name="twitter:title" content="SDXLプロンプト検証ログ｜髪型・前髪・髪色・背景">
+    <meta name="twitter:description" content="SDXL / illustriousXL向けに、髪型、前髪、髪色、背景プロンプトの効き方をサンプル画像と比較する研究室トップです。">
     <meta name="twitter:image" content="https://esunamura.com/assets/images/research/intro/research_overview_1200x630.jpg">
-    <title>えすなむら研究室 | SDXL Prompt Guides for Hairstyle, Bangs, Hair Color, Eye Shape, Expression and Background</title>
+    <title>SDXLプロンプト検証ログ｜髪型・前髪・髪色・背景 | えすなむら研究室</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://esunamura.com/#website",
+            "url": "https://esunamura.com/",
+            "name": "えすなむら"
+          },
+          {
+            "@type": "CollectionPage",
+            "@id": "https://esunamura.com/research/#collection",
+            "url": "https://esunamura.com/research/",
+            "name": "SDXLプロンプト検証ログ",
+            "description": "SDXL / illustriousXL向けに、髪型、前髪、髪色、背景プロンプトの効き方をサンプル画像と比較する研究室トップです。",
+            "isPartOf": { "@id": "https://esunamura.com/#website" },
+            "inLanguage": ["ja", "en", "zh", "ko"],
+            "hasPart": [
+              { "@type": "Article", "url": "https://esunamura.com/research/hairstyle/", "name": "SDXL 髪型プロンプト検証" },
+              { "@type": "Article", "url": "https://esunamura.com/research/bangs/", "name": "SDXL 前髪プロンプト検証" },
+              { "@type": "Article", "url": "https://esunamura.com/research/hair-color/", "name": "SDXL 髪色プロンプト検証" },
+              { "@type": "Article", "url": "https://esunamura.com/research/background/", "name": "SDXL 背景プロンプト検証" }
+            ]
+          }
+        ]
+      }
+    </script>
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-new-32x32.png?v=2">
     <link rel="stylesheet" href="../style.css">
   </head>
@@ -58,7 +86,7 @@
         <section class="detail-hero research-hero">
           <div class="detail-copy">
             <p class="eyebrow">プロンプト検証</p>
-            <h1 data-ja="研究室｜SDXL Prompt Guide" data-en="Research Lab | SDXL Prompt Guide" data-zh="研究室｜SDXL Prompt Guide" data-ko="연구실｜SDXL Prompt Guide">研究室｜SDXL Prompt Guide</h1>
+            <h1 data-ja="SDXLプロンプト検証ログ｜髪型・前髪・髪色・背景" data-en="SDXL Prompt Verification Log" data-zh="SDXL Prompt 验证日志" data-ko="SDXL 프롬프트 검증 로그">SDXLプロンプト検証ログ｜髪型・前髪・髪色・背景</h1>
             <p class="lead" data-ja="SDXL / illustriousXL 系モデルを使ったAIイラスト制作ログです。髪型・前髪・髪色・背景プロンプトを比較しながら、目の形やマット肌など今後の検証テーマも含めて、生成を安定させる指定を整理しています。" data-en="An AI illustration production log using SDXL / illustriousXL-based models. It compares hairstyle, bangs, hair color, and background prompts, with future themes such as eye shape and matte skin, while organizing directions that stabilize generation." data-zh="这是使用 SDXL / illustriousXL 系模型的 AI 插画制作日志。通过比较发型、刘海、发色、背景 prompt，并逐步整理眼型、哑光肌肤等主题，记录更稳定的生成指定方式。" data-ko="SDXL / illustriousXL 계열 모델을 사용한 AI 일러스트 제작 로그입니다. 헤어스타일, 앞머리, 헤어 컬러, 배경 프롬프트를 비교하고, 눈 모양과 매트한 피부 같은 향후 검증 테마까지 생성을 안정시키는 지정을 정리합니다.">SDXL / illustriousXL 系モデルを使ったAIイラスト制作ログです。髪型・前髪・髪色・背景プロンプトを比較しながら、目の形やマット肌など今後の検証テーマも含めて、生成を安定させる指定を整理しています。</p>
             <div class="research-share-links">
               <a class="share-x-button research-share-button" href="https://twitter.com/intent/tweet" target="_blank" rel="noopener noreferrer" data-ja="Xで共有" data-en="Share on X" data-zh="分享到 X" data-ko="X에 공유" data-analytics-event="research_share_click" data-analytics-link="research-index-share-x" data-analytics-area="research-hero"><span class="share-x-icon">X</span><span>Xで共有</span></a>
@@ -78,7 +106,7 @@
           <div class="section-heading-row">
             <div>
               <p class="eyebrow">Verification Pages</p>
-              <h2 data-ja="プロンプト比較ガイド｜SDXL Prompt Guides" data-en="SDXL Prompt Guides" data-zh="Prompt 比较指南｜SDXL Prompt Guides" data-ko="프롬프트 비교 가이드｜SDXL Prompt Guides">プロンプト比較ガイド｜SDXL Prompt Guides</h2>
+              <h2 data-ja="SDXL 髪型・前髪・髪色・背景プロンプト検証ページ" data-en="SDXL Prompt Verification Pages" data-zh="SDXL Prompt 验证页面" data-ko="SDXL 프롬프트 검증 페이지">SDXL 髪型・前髪・髪色・背景プロンプト検証ページ</h2>
             </div>
             <p data-ja="確認したいテーマを選んでください。" data-en="Choose a verification theme to review." data-zh="请选择要查看的验证主题。" data-ko="확인할 검증 테마를 선택하세요.">確認したいテーマを選んでください。</p>
           </div>
@@ -86,66 +114,66 @@
           <div class="research-top-grid">
             <a class="research-overview-card" href="hairstyle/index.html" data-analytics-event="research_click" data-analytics-link="research-card-hairstyle" data-analytics-area="research-top-grid">
               <div class="research-card-preview" aria-hidden="true">
-                <img src="../assets/research/hairstyle/test25/ahoge_short_bob/ahoge_short_bob_front_4073710981_02.png" alt="" loading="eager" decoding="async">
-                <img src="../assets/research/hairstyle/test32/char_side_braid_low_side_tail/char_side_braid_low_side_tail_front_full_hair_2130761173_02.png" alt="" loading="eager" decoding="async">
-                <img src="../assets/research/hairstyle/test28/anime_straight_long/anime_straight_long_front_289395445_01.png" alt="" loading="eager" decoding="async">
-                <img src="../assets/research/hairstyle/test28/high_twin_tails_ribbon/high_twin_tails_ribbon_front_3680516398_02.png" alt="" loading="eager" decoding="async">
-                <img src="../assets/research/hairstyle/test28/double_buns_short_bob/double_buns_short_bob_front_493296692_03.png" alt="" loading="eager" decoding="async">
-                <img src="../assets/research/hairstyle/test25/braided_half_up/braided_half_up_front_414940019_02.png" alt="" loading="eager" decoding="async">
-                <img src="../assets/research/hairstyle/test25/char_side_braid_plus_loose_hair/char_side_braid_plus_loose_hair_front_536929221_02.png" alt="" loading="eager" decoding="async">
-                <img src="../assets/research/hairstyle/test28/char_low_side_ponytail_soft/char_low_side_ponytail_soft_front_2544267602_01.png" alt="" loading="eager" decoding="async">
+                <img src="../assets/research/hairstyle/test25/ahoge_short_bob/ahoge_short_bob_front_4073710981_02.png" alt="SDXL 髪型プロンプト検証：アホ毛ショートボブの生成サンプル" loading="eager" decoding="async">
+                <img src="../assets/research/hairstyle/test32/char_side_braid_low_side_tail/char_side_braid_low_side_tail_front_full_hair_2130761173_02.png" alt="SDXL 髪型プロンプト検証：片側編み込みとローサイドテールの生成サンプル" loading="eager" decoding="async">
+                <img src="../assets/research/hairstyle/test28/anime_straight_long/anime_straight_long_front_289395445_01.png" alt="SDXL 髪型プロンプト検証：ストレートロングヘアの生成サンプル" loading="eager" decoding="async">
+                <img src="../assets/research/hairstyle/test28/high_twin_tails_ribbon/high_twin_tails_ribbon_front_3680516398_02.png" alt="SDXL 髪型プロンプト検証：ハイツインテールの生成サンプル" loading="eager" decoding="async">
+                <img src="../assets/research/hairstyle/test28/double_buns_short_bob/double_buns_short_bob_front_493296692_03.png" alt="SDXL 髪型プロンプト検証：お団子ショートボブの生成サンプル" loading="eager" decoding="async">
+                <img src="../assets/research/hairstyle/test25/braided_half_up/braided_half_up_front_414940019_02.png" alt="SDXL 髪型プロンプト検証：編み込みハーフアップの生成サンプル" loading="eager" decoding="async">
+                <img src="../assets/research/hairstyle/test25/char_side_braid_plus_loose_hair/char_side_braid_plus_loose_hair_front_536929221_02.png" alt="SDXL 髪型プロンプト検証：片側編み込みロングヘアの生成サンプル" loading="eager" decoding="async">
+                <img src="../assets/research/hairstyle/test28/char_low_side_ponytail_soft/char_low_side_ponytail_soft_front_2544267602_01.png" alt="SDXL 髪型プロンプト検証：ローサイドポニーテールの生成サンプル" loading="eager" decoding="async">
               </div>
-              <h3 data-ja="髪型プロンプト検証" data-en="Hairstyle Prompt Verification" data-zh="发型 Prompt 验证" data-ko="헤어스타일 프롬프트 검증">髪型プロンプト検証</h3>
+              <h3 data-ja="SDXL 髪型プロンプト検証" data-en="SDXL Hairstyle Prompt Verification" data-zh="SDXL 发型 Prompt 验证" data-ko="SDXL 헤어스타일 프롬프트 검증">SDXL 髪型プロンプト検証</h3>
               <p data-ja="短めボブ、片側編み込み、サイドテールなどの髪型シルエットを比較しています。同じキャラクター性を保ちながら、髪型だけを安定して変えるためのプロンプトを整理しています。" data-en="Comparing hairstyle silhouettes such as short bob, one-side braid, and side ponytail. The log organizes prompts for changing only the hairstyle while keeping the same character identity." data-zh="比较短波波头、单侧编发、侧马尾等发型轮廓。整理在保持同一角色性的同时，只稳定改变发型的 prompt。" data-ko="짧은 보브, 한쪽 브레이드, 사이드 테일 등의 헤어스타일 실루엣을 비교합니다. 같은 캐릭터성을 유지하면서 헤어스타일만 안정적으로 바꾸기 위한 프롬프트를 정리합니다.">短めボブ、片側編み込み、サイドテールなどの髪型シルエットを比較しています。同じキャラクター性を保ちながら、髪型だけを安定して変えるためのプロンプトを整理しています。</p>
               <span class="link-button primary" data-ja="髪型検証を見る" data-en="View hairstyle" data-zh="查看发型验证" data-ko="헤어스타일 보기">髪型検証を見る</span>
             </a>
 
             <a class="research-overview-card" href="bangs/index.html" data-analytics-event="research_click" data-analytics-link="research-card-bangs" data-analytics-area="research-top-grid">
               <div class="research-card-preview" aria-hidden="true">
-                <img src="../assets/research/bangs/test26/see_through_bangs/see_through_bangs_front_585288791_03.png" alt="" loading="eager" decoding="async">
-                <img src="../assets/research/bangs/test26/side_swept_bangs/side_swept_bangs_close_front_606716612_03.png" alt="" loading="eager" decoding="async">
-                <img src="../assets/research/bangs/test26/full_straight_bangs/full_straight_bangs_close_front_4272833754_01.png" alt="" loading="eager" decoding="async">
-                <img src="../assets/research/bangs/test26/curtain_bangs/curtain_bangs_close_front_1622447598_01.png" alt="" loading="eager" decoding="async">
-                <img src="../assets/research/bangs/test26/short_bangs/short_bangs_close_front_245552254_01.png" alt="" loading="eager" decoding="async">
-                <img src="../assets/research/bangs/test26/arched_bangs/arched_bangs_front_308348506_05.png" alt="" loading="eager" decoding="async">
-                <img src="../assets/research/bangs/test26/long_side_face_framing/long_side_face_framing_close_front_1353036722_03.png" alt="" loading="eager" decoding="async">
-                <img src="../assets/research/bangs/test31/heavy_bangs_covering_eyes/heavy_bangs_covering_eyes_front_hair_cover_2144367168_10.png" alt="" loading="eager" decoding="async">
+                <img src="../assets/research/bangs/test26/see_through_bangs/see_through_bangs_front_585288791_03.png" alt="SDXL 前髪プロンプト検証：シースルー前髪の生成サンプル" loading="eager" decoding="async">
+                <img src="../assets/research/bangs/test26/side_swept_bangs/side_swept_bangs_close_front_606716612_03.png" alt="SDXL 前髪プロンプト検証：流し前髪の生成サンプル" loading="eager" decoding="async">
+                <img src="../assets/research/bangs/test26/full_straight_bangs/full_straight_bangs_close_front_4272833754_01.png" alt="SDXL 前髪プロンプト検証：重めストレート前髪の生成サンプル" loading="eager" decoding="async">
+                <img src="../assets/research/bangs/test26/curtain_bangs/curtain_bangs_close_front_1622447598_01.png" alt="SDXL 前髪プロンプト検証：カーテンバングの生成サンプル" loading="eager" decoding="async">
+                <img src="../assets/research/bangs/test26/short_bangs/short_bangs_close_front_245552254_01.png" alt="SDXL 前髪プロンプト検証：短め前髪の生成サンプル" loading="eager" decoding="async">
+                <img src="../assets/research/bangs/test26/arched_bangs/arched_bangs_front_308348506_05.png" alt="SDXL 前髪プロンプト検証：アーチ前髪の生成サンプル" loading="eager" decoding="async">
+                <img src="../assets/research/bangs/test26/long_side_face_framing/long_side_face_framing_close_front_1353036722_03.png" alt="SDXL 前髪プロンプト検証：顔まわりロング前髪の生成サンプル" loading="eager" decoding="async">
+                <img src="../assets/research/bangs/test31/heavy_bangs_covering_eyes/heavy_bangs_covering_eyes_front_hair_cover_2144367168_10.png" alt="SDXL 前髪プロンプト検証：目隠れ重め前髪の生成サンプル" loading="eager" decoding="async">
               </div>
-              <h3 data-ja="前髪プロンプト検証" data-en="Bangs Prompt Verification" data-zh="刘海 Prompt 验证" data-ko="앞머리 프롬프트 검증">前髪プロンプト検証</h3>
+              <h3 data-ja="SDXL 前髪プロンプト検証" data-en="SDXL Bangs Prompt Verification" data-zh="SDXL 刘海 Prompt 验证" data-ko="SDXL 앞머리 프롬프트 검증">SDXL 前髪プロンプト検証</h3>
               <p data-ja="シースルー、流し前髪、重め前髪など、顔まわりの印象を比較しています。前髪のわずかな違いで表情や年齢感がどう変わるかを、生成結果とプロンプトで確認できます。" data-en="Comparing face-framing impressions such as see-through, side-swept, and heavier bangs. You can check how subtle bangs differences shift expression and perceived age through generated results and prompts." data-zh="比较空气刘海、侧分刘海、厚刘海等脸周印象。可以通过生成结果和 prompt 确认前髪细微差异如何改变表情和年龄感。" data-ko="시스루, 옆으로 넘긴 앞머리, 무거운 앞머리 등 얼굴 주변 인상을 비교합니다. 앞머리의 작은 차이로 표정이나 연령감이 어떻게 바뀌는지 생성 결과와 프롬프트로 확인할 수 있습니다.">シースルー、流し前髪、重め前髪など、顔まわりの印象を比較しています。前髪のわずかな違いで表情や年齢感がどう変わるかを、生成結果とプロンプトで確認できます。</p>
               <span class="link-button primary" data-ja="前髪検証を見る" data-en="View bangs" data-zh="查看刘海验证" data-ko="앞머리 보기">前髪検証を見る</span>
             </a>
 
             <a class="research-overview-card" href="hair-color/index.html" data-analytics-event="research_click" data-analytics-link="research-card-hair-color" data-analytics-area="research-top-grid">
               <div class="research-card-preview research-card-preview-square-12" aria-hidden="true">
-                <img src="../assets/research/hair-color/test27/sakura_pink/sakura_pink_1717615737_03.png" alt="" loading="eager" decoding="async">
-                <img src="../assets/research/hair-color/test27/blonde/blonde_1478434849_03.png" alt="" loading="eager" decoding="async">
-                <img src="../assets/research/hair-color/test27/light_brown/light_brown_1122875651_01.png" alt="" loading="eager" decoding="async">
-                <img src="../assets/research/hair-color/test27/soft_black/soft_black_3796948081_02.png" alt="" loading="eager" decoding="async">
-                <img src="../assets/research/hair-color/test27/silver/silver_2083133517_02.png" alt="" loading="eager" decoding="async">
-                <img src="../assets/research/hair-color/test27/sky_blue/sky_blue_2968428359_02.png" alt="" loading="eager" decoding="async">
-                <img src="../assets/research/hair-color/test27/mint_green/mint_green_2033159716_03.png" alt="" loading="eager" decoding="async">
-                <img src="../assets/research/hair-color/test27/violet/violet_1372236329_01.png" alt="" loading="eager" decoding="async">
-                <img src="../assets/research/hair-color/test27/red/red_2796037329_03.png" alt="" loading="lazy" decoding="async">
-                <img src="../assets/research/hair-color/test27/orange/orange_1937777238_02.png" alt="" loading="lazy" decoding="async">
-                <img src="../assets/research/hair-color/test27/emerald_green/emerald_green_2427371609_02.png" alt="" loading="lazy" decoding="async">
-                <img src="../assets/research/hair-color/test27/navy_blue/navy_blue_2141045029_03.png" alt="" loading="lazy" decoding="async">
+                <img src="../assets/research/hair-color/test27/sakura_pink/sakura_pink_1717615737_03.png" alt="SDXL 髪色プロンプト検証：桜ピンク髪の生成サンプル" loading="eager" decoding="async">
+                <img src="../assets/research/hair-color/test27/blonde/blonde_1478434849_03.png" alt="SDXL 髪色プロンプト検証：ブロンド髪の生成サンプル" loading="eager" decoding="async">
+                <img src="../assets/research/hair-color/test27/light_brown/light_brown_1122875651_01.png" alt="SDXL 髪色プロンプト検証：ライトブラウン髪の生成サンプル" loading="eager" decoding="async">
+                <img src="../assets/research/hair-color/test27/soft_black/soft_black_3796948081_02.png" alt="SDXL 髪色プロンプト検証：ソフトブラック髪の生成サンプル" loading="eager" decoding="async">
+                <img src="../assets/research/hair-color/test27/silver/silver_2083133517_02.png" alt="SDXL 髪色プロンプト検証：シルバー髪の生成サンプル" loading="eager" decoding="async">
+                <img src="../assets/research/hair-color/test27/sky_blue/sky_blue_2968428359_02.png" alt="SDXL 髪色プロンプト検証：スカイブルー髪の生成サンプル" loading="eager" decoding="async">
+                <img src="../assets/research/hair-color/test27/mint_green/mint_green_2033159716_03.png" alt="SDXL 髪色プロンプト検証：ミントグリーン髪の生成サンプル" loading="eager" decoding="async">
+                <img src="../assets/research/hair-color/test27/violet/violet_1372236329_01.png" alt="SDXL 髪色プロンプト検証：バイオレット髪の生成サンプル" loading="eager" decoding="async">
+                <img src="../assets/research/hair-color/test27/red/red_2796037329_03.png" alt="SDXL 髪色プロンプト検証：赤髪の生成サンプル" loading="lazy" decoding="async">
+                <img src="../assets/research/hair-color/test27/orange/orange_1937777238_02.png" alt="SDXL 髪色プロンプト検証：オレンジ髪の生成サンプル" loading="lazy" decoding="async">
+                <img src="../assets/research/hair-color/test27/emerald_green/emerald_green_2427371609_02.png" alt="SDXL 髪色プロンプト検証：エメラルドグリーン髪の生成サンプル" loading="lazy" decoding="async">
+                <img src="../assets/research/hair-color/test27/navy_blue/navy_blue_2141045029_03.png" alt="SDXL 髪色プロンプト検証：ネイビーブルー髪の生成サンプル" loading="lazy" decoding="async">
               </div>
-              <h3 data-ja="髪色プロンプト検証" data-en="Hair Color Prompt Verification" data-zh="发色 Prompt 验证" data-ko="헤어 컬러 프롬프트 검증">髪色プロンプト検証</h3>
+              <h3 data-ja="SDXL 髪色プロンプト検証" data-en="SDXL Hair Color Prompt Verification" data-zh="SDXL 发色 Prompt 验证" data-ko="SDXL 헤어 컬러 프롬프트 검증">SDXL 髪色プロンプト検証</h3>
               <p data-ja="ピンク系、ブロンド系、寒色系など、髪色による印象の違いを比較しています。色味の安定感や、自キャラへの馴染みやすさを見比べるための検証ログです。" data-en="Comparing impression differences caused by pink tones, blonde tones, cool colors, and other hair colors. This log helps compare color stability and how naturally each color fits the character." data-zh="比较粉色系、金色系、冷色系等发色带来的印象差异。这个验证日志用于比较色味稳定性和与自家角色的贴合度。" data-ko="핑크계, 블론드계, 쿨톤 등 헤어 컬러에 따른 인상 차이를 비교합니다. 색감의 안정감과 자캐에 얼마나 잘 어울리는지 비교하기 위한 검증 로그입니다.">ピンク系、ブロンド系、寒色系など、髪色による印象の違いを比較しています。色味の安定感や、自キャラへの馴染みやすさを見比べるための検証ログです。</p>
               <span class="link-button primary" data-ja="髪色検証を見る" data-en="View hair color" data-zh="查看发色验证" data-ko="헤어 컬러 보기">髪色検証を見る</span>
             </a>
 
             <a class="research-overview-card" href="eyes/index.html" data-analytics-event="research_click" data-analytics-link="research-card-eyes" data-analytics-area="research-top-grid">
               <div class="research-card-preview" aria-hidden="true">
-                <img src="../assets/research/eyes/test35/jitome_half_lidded_eyes/jitome_half_lidded_eyes_01.png" alt="" loading="lazy" decoding="async">
-                <img src="../assets/research/eyes/test35/small_eyes/small_eyes_01.png" alt="" loading="lazy" decoding="async">
-                <img src="../assets/research/eyes/test35/large_eyes/large_eyes_01.png" alt="" loading="lazy" decoding="async">
-                <img src="../assets/research/eyes/test35/cat_eyes/cat_eyes_01.png" alt="" loading="lazy" decoding="async">
-                <img src="../assets/research/eyes/test35/round_eyes/round_eyes_01.png" alt="" loading="lazy" decoding="async">
-                <img src="../assets/research/eyes/test35/slender_eyes/slender_eyes_01.png" alt="" loading="lazy" decoding="async">
-                <img src="../assets/research/eyes/test35/droopy_eyes/droopy_eyes_01.png" alt="" loading="lazy" decoding="async">
-                <img src="../assets/research/eyes/test35/upturned_eyes/upturned_eyes_01.png" alt="" loading="lazy" decoding="async">
+                <img src="../assets/research/eyes/test35/jitome_half_lidded_eyes/jitome_half_lidded_eyes_01.png" alt="SDXL 目プロンプト検証：ジト目の生成サンプル" loading="lazy" decoding="async">
+                <img src="../assets/research/eyes/test35/small_eyes/small_eyes_01.png" alt="SDXL 目プロンプト検証：小さい目の生成サンプル" loading="lazy" decoding="async">
+                <img src="../assets/research/eyes/test35/large_eyes/large_eyes_01.png" alt="SDXL 目プロンプト検証：大きい目の生成サンプル" loading="lazy" decoding="async">
+                <img src="../assets/research/eyes/test35/cat_eyes/cat_eyes_01.png" alt="SDXL 目プロンプト検証：猫目の生成サンプル" loading="lazy" decoding="async">
+                <img src="../assets/research/eyes/test35/round_eyes/round_eyes_01.png" alt="SDXL 目プロンプト検証：丸い目の生成サンプル" loading="lazy" decoding="async">
+                <img src="../assets/research/eyes/test35/slender_eyes/slender_eyes_01.png" alt="SDXL 目プロンプト検証：細長い目の生成サンプル" loading="lazy" decoding="async">
+                <img src="../assets/research/eyes/test35/droopy_eyes/droopy_eyes_01.png" alt="SDXL 目プロンプト検証：たれ目の生成サンプル" loading="lazy" decoding="async">
+                <img src="../assets/research/eyes/test35/upturned_eyes/upturned_eyes_01.png" alt="SDXL 目プロンプト検証：つり目の生成サンプル" loading="lazy" decoding="async">
               </div>
               <h3 data-ja="目プロンプト検証" data-en="Eye Prompt Verification" data-zh="眼睛 Prompt 验证" data-ko="눈 프롬프트 검증">目プロンプト検証</h3>
               <p data-ja="ジト目、猫目、大きい目、小さい目、細長い目、たれ目、つり目など、目の形・大きさ・瞳・ハイライトによる印象の違いを比較します。同じキャラクター性をなるべく保ったまま、年齢感や表情の変化を確認するための検証ログです。" data-en="Comparing eye shape, size, iris, and highlight prompts such as half-lidded eyes, cat eyes, large eyes, small eyes, slender eyes, droopy eyes, and upturned eyes while preserving the same character identity as much as possible." data-zh="比较半睁眼、猫眼、大眼、小眼、细长眼、下垂眼、上挑眼等眼型、大小、瞳孔和高光带来的印象差异。尽量保持同一角色性，同时确认年龄感和表情变化。" data-ko="지토메, 고양이눈, 큰 눈, 작은 눈, 가늘고 긴 눈, 처진 눈, 올라간 눈 등 눈 모양, 크기, 홍채, 하이라이트에 따른 인상 차이를 비교합니다. 같은 캐릭터성을 최대한 유지하면서 연령감과 표정 변화를 확인합니다.">ジト目、猫目、大きい目、小さい目、細長い目、たれ目、つり目など、目の形・大きさ・瞳・ハイライトによる印象の違いを比較します。同じキャラクター性をなるべく保ったまま、年齢感や表情の変化を確認するための検証ログです。</p>
@@ -154,14 +182,14 @@
 
             <a class="research-overview-card" href="expression/index.html" data-analytics-event="research_click" data-analytics-link="research-card-expression" data-analytics-area="research-top-grid">
               <div class="research-card-preview" aria-hidden="true">
-                <img src="../assets/research/expression/test37/neutral_expression/neutral_expression_01.png" alt="" loading="lazy" decoding="async">
-                <img src="../assets/research/expression/test37/happy_smile/happy_smile_01.png" alt="" loading="lazy" decoding="async">
-                <img src="../assets/research/expression/test37/angry_expression/angry_expression_01.png" alt="" loading="lazy" decoding="async">
-                <img src="../assets/research/expression/test37/surprised_expression/surprised_expression_01.png" alt="" loading="lazy" decoding="async">
-                <img src="../assets/research/expression/test37/jitome_annoyed/jitome_annoyed_01.png" alt="" loading="lazy" decoding="async">
-                <img src="../assets/research/expression/test37/pouting_expression/pouting_expression_01.png" alt="" loading="lazy" decoding="async">
-                <img src="../assets/research/expression/test37/teary_eyes_expression/teary_eyes_expression_01.png" alt="" loading="lazy" decoding="async">
-                <img src="../assets/research/expression/test37/sleepy_expression/sleepy_expression_01.png" alt="" loading="lazy" decoding="async">
+                <img src="../assets/research/expression/test37/neutral_expression/neutral_expression_01.png" alt="SDXL 表情プロンプト検証：無表情の生成サンプル" loading="lazy" decoding="async">
+                <img src="../assets/research/expression/test37/happy_smile/happy_smile_01.png" alt="SDXL 表情プロンプト検証：笑顔の生成サンプル" loading="lazy" decoding="async">
+                <img src="../assets/research/expression/test37/angry_expression/angry_expression_01.png" alt="SDXL 表情プロンプト検証：怒り顔の生成サンプル" loading="lazy" decoding="async">
+                <img src="../assets/research/expression/test37/surprised_expression/surprised_expression_01.png" alt="SDXL 表情プロンプト検証：驚き顔の生成サンプル" loading="lazy" decoding="async">
+                <img src="../assets/research/expression/test37/jitome_annoyed/jitome_annoyed_01.png" alt="SDXL 表情プロンプト検証：不機嫌なジト目の生成サンプル" loading="lazy" decoding="async">
+                <img src="../assets/research/expression/test37/pouting_expression/pouting_expression_01.png" alt="SDXL 表情プロンプト検証：ふくれ顔の生成サンプル" loading="lazy" decoding="async">
+                <img src="../assets/research/expression/test37/teary_eyes_expression/teary_eyes_expression_01.png" alt="SDXL 表情プロンプト検証：涙目表情の生成サンプル" loading="lazy" decoding="async">
+                <img src="../assets/research/expression/test37/sleepy_expression/sleepy_expression_01.png" alt="SDXL 表情プロンプト検証：眠そうな表情の生成サンプル" loading="lazy" decoding="async">
               </div>
               <h3 data-ja="表情プロンプト検証" data-en="Expression Prompt Verification" data-zh="表情 Prompt 验证" data-ko="표정 프롬프트 검증">表情プロンプト検証</h3>
               <p data-ja="無表情、笑顔、困り顔、怒り顔、照れ顔、涙目など、目元・眉・口元による印象の違いを比較します。同じキャラクター性をなるべく保ったまま、表情だけを変えるための検証ログです。" data-en="Comparing neutral expressions, smiles, troubled faces, angry faces, embarrassed faces, teary eyes, and other facial expressions while keeping the same character identity as much as possible." data-zh="比较无表情、笑容、困扰、生气、害羞、泪眼等表情差异。在尽量保持同一角色性的同时，验证只改变表情的指定方式。" data-ko="무표정, 미소, 곤란한 표정, 화난 표정, 부끄러운 표정, 눈물 맺힌 표정 등을 비교합니다. 같은 캐릭터성을 최대한 유지하면서 표정만 바꾸기 위한 검증 로그입니다.">無表情、笑顔、困り顔、怒り顔、照れ顔、涙目など、目元・眉・口元による印象の違いを比較します。同じキャラクター性をなるべく保ったまま、表情だけを変えるための検証ログです。</p>
@@ -170,14 +198,14 @@
 
             <a class="research-overview-card" href="background/index.html" data-analytics-event="research_click" data-analytics-link="research-card-background" data-analytics-area="research-top-grid">
               <div class="research-card-preview research-card-preview-wide" aria-hidden="true">
-                <img src="../images/kyoto-prompt-pack/2.jpg" alt="" loading="lazy" decoding="async">
-                <img src="../images/kyoto-prompt-pack/3.jpg" alt="" loading="lazy" decoding="async">
-                <img src="../images/kyoto-prompt-pack/4.jpg" alt="" loading="lazy" decoding="async">
-                <img src="../images/kyoto-prompt-pack/5.jpg" alt="" loading="lazy" decoding="async">
-                <img src="../images/kyoto-prompt-pack/6.jpg" alt="" loading="lazy" decoding="async">
-                <img src="../images/kyoto-prompt-pack/7.jpg" alt="" loading="lazy" decoding="async">
+                <img src="../images/kyoto-prompt-pack/2.jpg" alt="SDXL 背景プロンプト検証：神社石段と和風背景の生成サンプル" loading="lazy" decoding="async">
+                <img src="../images/kyoto-prompt-pack/3.jpg" alt="SDXL 背景プロンプト検証：鳥居と神社背景の生成サンプル" loading="lazy" decoding="async">
+                <img src="../images/kyoto-prompt-pack/4.jpg" alt="SDXL 背景プロンプト検証：町家と古民家背景の生成サンプル" loading="lazy" decoding="async">
+                <img src="../images/kyoto-prompt-pack/5.jpg" alt="SDXL 背景プロンプト検証：提灯と夕景背景の生成サンプル" loading="lazy" decoding="async">
+                <img src="../images/kyoto-prompt-pack/6.jpg" alt="SDXL 背景プロンプト検証：和室と縁側背景の生成サンプル" loading="lazy" decoding="async">
+                <img src="../images/kyoto-prompt-pack/7.jpg" alt="SDXL 背景プロンプト検証：石畳と路地背景の生成サンプル" loading="lazy" decoding="async">
               </div>
-              <h3 data-ja="背景プロンプト検証" data-en="Background Prompt Verification" data-zh="背景 Prompt 验证" data-ko="배경 프롬프트 검증">背景プロンプト検証</h3>
+              <h3 data-ja="SDXL 背景プロンプト検証" data-en="SDXL Background Prompt Verification" data-zh="SDXL 背景 Prompt 验证" data-ko="SDXL 배경 프롬프트 검증">SDXL 背景プロンプト検証</h3>
               <p data-ja="旧「Kyoto Atmosphere Prompt Pack Vol.1」を本パック向けに再整理し、神社・鳥居・石畳・路地・町家・提灯・和室など、京都風・和風背景の生成に使いやすい指定を比較しています。" data-en="Reorganizing the former Kyoto Atmosphere Prompt Pack Vol.1 for the current guide pack and comparing prompts useful for Kyoto-style and Japanese-style backgrounds such as shrines, torii gates, stone paths, alleys, machiya, lanterns, and Japanese rooms." data-zh="将旧「Kyoto Atmosphere Prompt Pack Vol.1」面向本包重新整理，比较神社、鸟居、石板路、小巷、町家、灯笼、和室等京都风・和风背景生成中易用的指定。" data-ko="기존 「Kyoto Atmosphere Prompt Pack Vol.1」을 본 팩에 맞춰 다시 정리하고, 신사・도리이・돌길・골목・마치야・등불・와실 등 교토풍・일본풍 배경 생성에 쓰기 좋은 지정을 비교합니다.">旧「Kyoto Atmosphere Prompt Pack Vol.1」を本パック向けに再整理し、神社・鳥居・石畳・路地・町家・提灯・和室など、京都風・和風背景の生成に使いやすい指定を比較しています。</p>
               <span class="link-button primary" data-ja="背景検証を見る" data-en="View background" data-zh="查看背景验证" data-ko="배경 보기">背景検証を見る</span>
             </a>
