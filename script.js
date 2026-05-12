@@ -474,7 +474,6 @@ const detailPageBySlug = {
 };
 
 const newReleaseLabels = {
-  "omorashi-sankei-set": "NEW / 2026.05",
   "kyoto-prompt-pack": "NEW / 2026.05"
 };
 
