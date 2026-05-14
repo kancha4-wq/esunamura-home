@@ -1908,6 +1908,53 @@ h2 {
   overflow-wrap: anywhere;
 }
 
+body.research-page {
+  --research-bg: #141312;
+  --research-panel: #25211f;
+  --research-panel-strong: #2d2926;
+  --research-panel-soft: #34302c;
+  --research-prompt-bg: #211f1d;
+  --research-media-bg: #1d1b19;
+  --research-line: rgba(245, 195, 99, 0.23);
+  --research-line-soft: rgba(255, 255, 255, 0.16);
+  --research-muted: #dccfc5;
+  --research-text: #fff8ef;
+}
+
+body.research-page {
+  background:
+    radial-gradient(circle at top left, rgba(230, 177, 95, 0.12), transparent 30rem),
+    linear-gradient(180deg, #171514 0%, #10100f 100%);
+}
+
+.research-page .page-shell {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.018), transparent 320px);
+}
+
+.research-page .detail-hero {
+  border-color: var(--research-line);
+  background:
+    linear-gradient(145deg, rgba(45, 41, 38, 0.96), rgba(31, 29, 27, 0.97));
+}
+
+.research-page .lead,
+.research-page .section-heading-row p:not(.eyebrow),
+.research-page .research-overview-card p:not(.eyebrow),
+.research-page .research-pack-mini-cta p,
+.research-page .research-related-card p,
+.research-page .research-meta-list dd,
+.research-page .empty-research-panel {
+  color: var(--research-muted);
+}
+
+.research-page .detail-copy h1,
+.research-page .section-heading-row h2,
+.research-page .research-overview-card h3,
+.research-page .research-candidate-copy h3 {
+  color: var(--research-text);
+}
+
 .research-hero {
   grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.55fr);
 }
@@ -2167,7 +2214,7 @@ h2 {
   padding: 8px 10px;
   border: 1px solid var(--line);
   border-radius: 10px;
-  background: linear-gradient(180deg, rgba(38, 35, 33, 0.94), rgba(26, 23, 22, 0.94));
+  background: linear-gradient(180deg, rgba(54, 49, 45, 0.96), rgba(38, 35, 32, 0.96));
   color: var(--text);
   font-weight: 900;
   text-align: center;
@@ -2206,8 +2253,8 @@ h2 {
   border: 1px solid rgba(230, 177, 95, 0.22);
   border-radius: var(--radius);
   background:
-    linear-gradient(135deg, rgba(230, 177, 95, 0.1), rgba(255, 255, 255, 0.02)),
-    var(--panel);
+    linear-gradient(135deg, rgba(230, 177, 95, 0.12), rgba(255, 255, 255, 0.035)),
+    var(--research-panel);
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.24);
 }
 
@@ -2249,16 +2296,16 @@ h2 {
   display: grid;
   gap: 8px;
   padding: 14px;
-  border: 1px solid var(--line);
+  border: 1px solid var(--research-line-soft);
   border-radius: 12px;
-  background: rgba(28, 25, 24, 0.9);
+  background: var(--research-panel);
   color: inherit;
   text-decoration: none;
 }
 
 .research-related-card:hover {
   border-color: rgba(230, 177, 95, 0.42);
-  background: rgba(35, 31, 29, 0.96);
+  background: var(--research-panel-strong);
 }
 
 .research-related-card h3 {
@@ -2291,9 +2338,9 @@ h2 {
   gap: 12px;
   min-height: 100%;
   padding: 18px;
-  border: 1px solid var(--line);
+  border: 1px solid var(--research-line-soft);
   border-radius: 14px;
-  background: rgba(28, 25, 24, 0.9);
+  background: var(--research-panel);
   color: inherit;
   text-decoration: none;
   box-shadow: var(--shadow);
@@ -2302,7 +2349,7 @@ h2 {
 .research-overview-card:hover,
 .research-overview-card:focus-visible {
   border-color: rgba(245, 195, 99, 0.52);
-  background: rgba(34, 29, 25, 0.96);
+  background: var(--research-panel-strong);
   transform: translateY(-2px);
 }
 
@@ -2320,9 +2367,11 @@ h2 {
   min-height: 230px;
   overflow: hidden;
   padding: 5px;
-  border: 1px solid rgba(230, 177, 95, 0.2);
+  border: 1px solid var(--research-line);
   border-radius: 10px;
-  background: #080808;
+  background:
+    linear-gradient(135deg, rgba(230, 177, 95, 0.05), transparent),
+    var(--research-media-bg);
 }
 
 .research-card-preview img {
@@ -2331,6 +2380,7 @@ h2 {
   min-height: 0;
   object-fit: cover;
   border-radius: 7px;
+  background: #25211f;
   transition: transform 180ms ease, opacity 180ms ease;
 }
 
@@ -2558,7 +2608,9 @@ h2 {
 }
 
 .background-theme-card .research-candidate-media {
-  background: #080808;
+  background:
+    linear-gradient(135deg, rgba(230, 177, 95, 0.05), rgba(255, 255, 255, 0.018)),
+    var(--research-media-bg);
 }
 
 .background-theme-card .research-image-link,
@@ -2570,6 +2622,7 @@ h2 {
   aspect-ratio: 4 / 3;
   object-fit: cover;
   object-position: center;
+  background: var(--research-media-bg);
 }
 
 .background-theme-card .research-candidate-copy {
@@ -3009,9 +3062,9 @@ h2 {
 .research-contact-card,
 .research-candidate-card {
   overflow: hidden;
-  border: 1px solid var(--line);
+  border: 1px solid var(--research-line-soft);
   border-radius: 14px;
-  background: rgba(28, 25, 24, 0.9);
+  background: var(--research-panel);
   box-shadow: var(--shadow);
 }
 
@@ -3028,7 +3081,7 @@ h2 {
   aspect-ratio: 4 / 3;
   object-fit: contain;
   border-radius: 10px;
-  background: #080808;
+  background: var(--research-media-bg);
 }
 
 .research-contact-card.main-contact-sheet {
@@ -3071,7 +3124,7 @@ h2 {
 
 .research-image-link {
   display: block;
-  background: #080808;
+  background: var(--research-media-bg);
 }
 
 .research-candidate-media {
@@ -3079,7 +3132,9 @@ h2 {
   align-content: start;
   gap: 8px;
   padding: 8px;
-  background: #080808;
+  background:
+    linear-gradient(135deg, rgba(230, 177, 95, 0.045), rgba(255, 255, 255, 0.018)),
+    var(--research-media-bg);
 }
 
 .research-candidate-media.has-samples {
@@ -3141,9 +3196,9 @@ body[data-research-section="expression"] .research-candidate-media.has-samples .
   position: relative;
   display: block;
   overflow: hidden;
-  border: 1px solid rgba(230, 177, 95, 0.22);
+  border: 1px solid rgba(230, 177, 95, 0.28);
   border-radius: 8px;
-  background: #111;
+  background: var(--research-media-bg);
   color: inherit;
   text-decoration: none;
 }
@@ -3181,6 +3236,9 @@ body[data-research-section="expression"] .research-candidate-media.has-samples .
   display: grid;
   gap: 8px;
   padding: 12px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.018), transparent),
+    var(--research-panel);
 }
 
 .research-card-heading {
@@ -3240,8 +3298,8 @@ body[data-research-section="expression"] .research-candidate-media.has-samples .
   border-left: 4px solid var(--accent);
   border-radius: 10px;
   background:
-    linear-gradient(90deg, rgba(230, 177, 95, 0.18), rgba(230, 177, 95, 0.04)),
-    rgba(8, 8, 8, 0.26);
+    linear-gradient(90deg, rgba(230, 177, 95, 0.2), rgba(230, 177, 95, 0.055)),
+    var(--research-panel-soft);
   color: var(--text);
   font-size: clamp(1.08rem, 2.2vw, 1.28rem);
   line-height: 1.2;
@@ -3283,9 +3341,9 @@ body[data-research-section="expression"] .research-candidate-media.has-samples .
 }
 
 .research-prompt-details {
-  border: 1px solid rgba(230, 177, 95, 0.18);
+  border: 1px solid rgba(230, 177, 95, 0.24);
   border-radius: 10px;
-  background: rgba(7, 7, 7, 0.38);
+  background: var(--research-prompt-bg);
 }
 
 .research-prompt-details summary {
@@ -3302,16 +3360,18 @@ body[data-research-section="expression"] .research-candidate-media.has-samples .
   overflow: auto;
   margin: 0;
   padding: 0 12px 12px;
-  color: var(--muted);
+  color: #e2d4c8;
   font: 700 0.72rem/1.72 Consolas, "Courier New", monospace;
   overflow-wrap: anywhere;
   white-space: pre-wrap;
 }
 
 .research-prompt-panel {
-  border: 1px solid rgba(230, 177, 95, 0.18);
+  border: 1px solid rgba(230, 177, 95, 0.24);
   border-radius: 10px;
-  background: rgba(7, 7, 7, 0.38);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.018), transparent),
+    var(--research-prompt-bg);
   padding: 8px 10px 10px;
 }
 
@@ -3325,7 +3385,7 @@ body[data-research-section="expression"] .research-candidate-media.has-samples .
 
 .research-prompt-panel pre {
   margin: 0;
-  color: var(--muted);
+  color: #e2d4c8;
   font: 700 0.72rem/1.72 Consolas, "Courier New", monospace;
   overflow-wrap: anywhere;
   white-space: pre-wrap;
