@@ -1114,11 +1114,14 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
       const href = link.url || "#";
       const className = link.url ? "sales-button" : "sales-button disabled";
       const label = link.url ? link.label : `${link.label} / ${copy.unavailable}`;
+      const rel = link.url && /^https:\/\/dlaf\.jp\//.test(link.url)
+        ? 'rel="noopener noreferrer sponsored"'
+        : 'rel="noopener noreferrer"';
       const platform = analyticsPlatformFromUrl(link.url, link.label);
       const analyticsAttrs = link.url
         ? `data-analytics-platform="${platform}" data-analytics-work="${item.id}"`
         : "";
-      return `<a class="${className}" href="${href}" ${link.url ? 'target="_blank" rel="noopener noreferrer"' : ""} ${analyticsAttrs}>${label}</a>`;
+      return `<a class="${className}" href="${href}" ${link.url ? `target="_blank" ${rel}` : ""} ${analyticsAttrs}>${label}</a>`;
     }).join("");
   }
 

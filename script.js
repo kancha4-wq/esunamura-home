@@ -201,6 +201,7 @@
       BOOTH: "https://esunamura.booth.pm/items/8284888",
       pictSPACE: "https://pictspace.net/items/manage_detail/858788",
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_763759/",
+      DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01612902.html",
       PromptCom: "https://prompt-com.com/ja/p/cdd31e47-ba82-4793-939d-8445864efceb",
       DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0337472/AFID=esunamura/"
     }
