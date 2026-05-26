@@ -218,6 +218,20 @@
       DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0337987/AFID=esunamura/",
       pictSPACE: "https://pictspace.net/items/detail/863949"
     }
+  },
+  {
+    title: {
+      ja: "水着姫コレクション 〜X公開 CG 100枚まとめ〜",
+      en: "Swimsuit Princess Collection: 100 CG Archive"
+    },
+    slug: "swimsuit-hime-collection",
+    image: "0501_改修資料/水着姫コレクション/1_表紙/表紙.jpg",
+    thumbnail: "0501_改修資料/水着姫コレクション/1_表紙/表紙.jpg",
+    imageWidth: 1024,
+    imageHeight: 1024,
+    links: {
+      BOOTH: "https://esunamura.booth.pm/items/8412638"
+    }
   }
 ];
 
@@ -330,6 +344,12 @@ const workDescriptions = {
     zh: "夜间泳池、顶层酒廊、大浴场、卧室。穿梭于高级度假酒店空间的作品。",
     ko: "나이트풀, 최상층 라운지, 대욕장, 침실. 고급 리조트 공간을 이동하는 작품."
   },
+  "swimsuit-hime-collection": {
+    ja: "Xに投稿していた水着イラストを100枚まとめた、高画質AI CGアーカイブです。",
+    en: "A 100-image high-resolution AI CG archive collecting swimsuit illustrations posted on X.",
+    zh: "收录曾发布于 X 的泳装插画，共100张的高画质 AI CG 档案。",
+    ko: "X에 올렸던 수영복 일러스트 100장을 모은 고화질 AI CG 아카이브입니다."
+  },
   "kyoto-prompt-pack": {
     ja: "研究室公開記念の無料Prompt Pack。SDXL / illustriousXL 系モデル向けの京都風・和風背景プロンプト検証素材です。",
     en: "A free research-linked Prompt Pack for SDXL / illustriousXL background prompt verification with Kyoto-inspired atmosphere.",
@@ -354,6 +374,7 @@ const workTitleTranslations = {
   "erobokishin-4649": { zh: "Erobokishin 4649", ko: "에로복신 4649" },
   "kindle-seifuku-bikyaku": { zh: "AI制服美腿插画集", ko: "AI 교복 미각 일러스트집" },
   "erobokishin-4649-akane": { zh: "Erobokishin 4649 Akane", ko: "에로복신 4649 아카네" },
+  "swimsuit-hime-collection": { zh: "泳装公主合集 / Swimsuit Princess Collection", ko: "수영복 공주 컬렉션 / Swimsuit Princess Collection" },
   "kyoto-prompt-pack": { zh: "Kyoto Atmosphere Prompt Pack Vol.1", ko: "Kyoto Atmosphere Prompt Pack Vol.1" }
 };
 
@@ -448,6 +469,12 @@ const workArchiveMeta = {
     series: { ja: "エロボキシン4649", en: "Erobokishin Series", zh: "Erobokishin系列", ko: "에로복신 시리즈" },
     tags: { ja: ["高級リゾート", "夜景"], en: ["Luxury resort", "Night view"], zh: ["高级度假", "夜景"], ko: ["고급 리조트", "야경"] }
   },
+  "swimsuit-hime-collection": {
+    count: { ja: "100枚収録", en: "100 images", zh: "收录100张", ko: "100장 수록" },
+    quality: "4K",
+    series: { ja: "X公開CGまとめ", en: "X CG Archive", zh: "X公开CG合集", ko: "X 공개 CG 모음" },
+    tags: { ja: ["水着", "姫"], en: ["Swimsuit", "Princess"], zh: ["泳装", "公主"], ko: ["수영복", "공주"] }
+  },
   "kyoto-prompt-pack": {
     count: { ja: "無料Prompt Pack", en: "Free Prompt Pack", zh: "免费Prompt Pack", ko: "무료 Prompt Pack" },
     quality: "SDXL",
@@ -473,10 +500,12 @@ const detailPageBySlug = {
   "erobokishin-4649": "eroboxin-4649",
   "kindle-seifuku-bikyaku": "school-legs",
   "erobokishin-4649-akane": "eroboxin-akane",
+  "swimsuit-hime-collection": "swimsuit-hime-collection",
   "kyoto-prompt-pack": "kyoto-prompt-pack/index.html"
 };
 
 const newReleaseLabels = {
+  "swimsuit-hime-collection": "NEW / 2026.05",
   "kyoto-prompt-pack": "NEW / 2026.05"
 };
 

@@ -155,6 +155,34 @@ This title is built around the feeling that each location becomes its own phase 
     related: ["eroboxin-4649", "momoiro-baito", "okinawa-soso"]
   },
   {
+    id: "swimsuit-hime-collection",
+    folder: "水着姫コレクション",
+    title: { ja: "水着姫コレクション 〜X公開 CG 100枚まとめ〜" },
+    series: "X公開CGまとめ",
+    cover: pathFor("水着姫コレクション", "cover", "表紙.jpg"),
+    samples: makeSamples("水着姫コレクション", ["1.jpg", "2.jpg", "3.jpg", "4.jpg"]),
+    count: "100枚",
+    format: "ZIP / PDF",
+    focus: "水着姿 / 姫 / 高画質アーカイブ",
+    summary: "Xに投稿していた水着イラストを100枚まとめた、気軽に見返せる高画質AI CGアーカイブ。",
+    description: {
+      ja: `Xに投稿していた水着イラストをまとめた、気軽に楽しめる高画質アーカイブです。
+
+水着姿の姫たちをテーマにしたAIイラストを100枚収録。SNS投稿済みの画像を中心に、まとめて見返しやすいコレクションとして整理しました。
+
+掲載枚数は100枚、画像サイズは4096×4096px。ファイル形式はZIP / PDFで、水着テーマのイラストをまとめて楽しみたい方向けのコンパクトな作品です。`,
+      en: `A high-resolution archive collecting swimsuit illustrations that were posted on X.
+
+The collection includes 100 AI CG images themed around princess-style swimsuit illustrations, arranged as an easy-to-browse archive.
+
+It includes 100 images at 4096 x 4096 px, provided as ZIP / PDF files.`
+    },
+    phases: ["水着", "姫", "X公開CG", "高画質", "ZIP", "PDF"],
+    tags: ["水着", "姫", "AIイラスト", "X公開CG", "高画質アーカイブ"],
+    salesLinks: saleLinkTemplate,
+    related: ["eroboxin-akane", "kinpatsu-miko", "ancient-capital-beauty"]
+  },
+  {
     id: "shizuku-record",
     folder: "しずくの記録",
     title: { ja: "しずくの記録" },
@@ -495,6 +523,9 @@ const salesByWorkId = {
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01622810.html",
     PromptCom: "https://prompt-com.com/ja/p/cdd31e47-ba82-4793-939d-8445864efceb",
     DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0337472/AFID=esunamura/"
+  },
+  "swimsuit-hime-collection": {
+    BOOTH: "https://esunamura.booth.pm/items/8412638"
   },
   "shizuku-record": {
     BOOTH: "https://esunamura.booth.pm/items/8168871",
