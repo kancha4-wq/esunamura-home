@@ -483,6 +483,13 @@ const workArchiveMeta = {
   }
 };
 
+const allAgesWorkSlugs = new Set([
+  "swimsuit-hime-collection",
+  "kindle-seifuku-bikyaku",
+  "hikagami-school-route",
+  "hikagami"
+]);
+
 const pickupSlugs = ["erobokishin-4649", "blonde-shrine-maiden", "setouchi-omorashi-journey"];
 
 const detailPageBySlug = {
@@ -508,6 +515,14 @@ const newReleaseLabels = {
   "swimsuit-hime-collection": "NEW / 2026.05",
   "kyoto-prompt-pack": "NEW / 2026.05"
 };
+
+function ratingBadgeFor(work) {
+  if (allAgesWorkSlugs.has(work.slug)) return null;
+  return {
+    label: "R18",
+    type: "primary"
+  };
+}
 
 function detailHref(work) {
   const id = detailPageBySlug[work.slug] || work.slug;
@@ -594,6 +609,15 @@ function createNewReleaseBadge(work) {
   const badge = document.createElement("span");
   badge.className = "new-release-badge";
   badge.textContent = label;
+  return badge;
+}
+
+function createRatingOverlayBadge(work) {
+  const rating = ratingBadgeFor(work);
+  if (!rating) return null;
+  const badge = document.createElement("span");
+  badge.className = "rating-overlay-badge is-r18";
+  badge.textContent = rating.label;
   return badge;
 }
 
@@ -867,6 +891,8 @@ function renderPickups() {
       image.decoding = "async";
       keepImageFrameStable(image, imageFrame);
       imageFrame.append(image, createArchiveBadges(work, true));
+      const ratingOverlay = createRatingOverlayBadge(work);
+      if (ratingOverlay) imageFrame.append(ratingOverlay);
 
       const copy = document.createElement("div");
 
@@ -910,6 +936,8 @@ function renderWorks() {
     image.decoding = "async";
     keepImageFrameStable(image, imageFrame);
     imageFrame.append(image, createArchiveBadges(work));
+    const ratingOverlay = createRatingOverlayBadge(work);
+    if (ratingOverlay) imageFrame.append(ratingOverlay);
 
     const copy = document.createElement("div");
     copy.className = "work-copy";

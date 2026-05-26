@@ -1083,12 +1083,28 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
       .map((link) => `${link.label}${separator}${formats[link.label]}`);
   }
 
+  const allAgesWorkIds = new Set([
+    "swimsuit-hime-collection",
+    "school-legs",
+    "hikagami-school",
+    "hikagami"
+  ]);
+
+  function ratingBadgeFor(item) {
+    if (allAgesWorkIds.has(item.id)) return null;
+    return {
+      label: "R18",
+      type: "primary"
+    };
+  }
+
   function renderArchiveBadges(item) {
     const contentLabels = [
+      ratingBadgeFor(item),
       { label: countBadgeText(item), type: "primary" },
       { label: labelOf(item.series), type: "genre" },
       ...item.tags.slice(0, 2).map((tag) => ({ label: labelOf(tag), type: "genre" }))
-    ].filter((badge) => badge.label).slice(0, 5);
+    ].filter((badge) => badge?.label).slice(0, 5);
     const formatLabels = salesFormatBadgesFor(item).map((label) => ({ label, type: "format" }));
     const labels = [...contentLabels, ...formatLabels];
 

@@ -813,6 +813,29 @@ h2 {
   white-space: nowrap;
 }
 
+.rating-overlay-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  min-height: 28px;
+  padding: 3px 9px;
+  border: 1px solid rgba(255, 214, 214, 0.82);
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ff4359, #a80020);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.42);
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 950;
+  line-height: 1;
+  pointer-events: none;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.38);
+}
+
 .archive-badge.format {
   border-color: rgba(242, 207, 133, 0.3);
   background: rgba(7, 7, 7, 0.82);
