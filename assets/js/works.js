@@ -243,7 +243,7 @@ It is a fetish-focused archive title built around proximity, angle, and the quie
     folder: "ひかがみ 登校編",
     title: { ja: "ひかがみ 登校編" },
     series: "ひかがみ",
-    cover: pathFor("ひかがみ 登校編", "cover", "表紙.jpg"),
+    cover: pathFor("ひかがみ 登校編", "cover", "thumbnail.jpg"),
     samples: makeSamples("ひかがみ 登校編", ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"]),
     count: "300枚",
     format: "1日ルーティーン",
@@ -542,6 +542,7 @@ const salesByWorkId = {
   "hikagami-school": {
     BOOTH: "https://esunamura.booth.pm/items/8203343",
     pictSPACE: "https://pictspace.net/items/manage_detail/845880",
+    DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01628452.html",
     PromptCom: "https://prompt-com.com/ja/p/c9fd0fb2-4bca-4ea4-a30d-c2b28948c06a"
   },
   "kinpatsu-miko": {

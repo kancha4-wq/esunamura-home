@@ -146,13 +146,14 @@
   {
     title: { ja: "ひかがみ 登校編 / Hikagami School Route", en: "Hikagami School Route / ひかがみ 登校編" },
     slug: "hikagami-school-route",
-    image: "0501_改修資料/ひかがみ 登校編/1_表紙/表紙.jpg",
-    thumbnail: "0501_改修資料/ひかがみ 登校編/1_表紙/表紙.jpg",
+    image: "0501_改修資料/ひかがみ 登校編/1_表紙/thumbnail.jpg",
+    thumbnail: "0501_改修資料/ひかがみ 登校編/1_表紙/thumbnail.jpg",
     imageWidth: 560,
-    imageHeight: 800,
+    imageHeight: 420,
     links: {
       BOOTH: "https://esunamura.booth.pm/items/8203343",
       pictSPACE: "https://pictspace.net/items/manage_detail/845880",
+      DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01628452.html",
       PromptCom: "https://prompt-com.com/ja/p/c9fd0fb2-4bca-4ea4-a30d-c2b28948c06a"
     }
   },
@@ -515,6 +516,8 @@ const newReleaseLabels = {
   "swimsuit-hime-collection": "NEW / 2026.05",
   "kyoto-prompt-pack": "NEW / 2026.05"
 };
+
+const worksGridPrioritySlugs = ["hikagami-school-route"];
 
 function ratingBadgeFor(work) {
   if (allAgesWorkSlugs.has(work.slug)) return null;
@@ -918,7 +921,15 @@ function renderPickups() {
 function renderWorks() {
   worksGrid.textContent = "";
 
-  works.slice().reverse().forEach((work) => {
+  const priorityWorks = worksGridPrioritySlugs
+    .map((slug) => works.find((work) => work.slug === slug))
+    .filter(Boolean);
+  const orderedWorks = [
+    ...priorityWorks,
+    ...works.slice().reverse().filter((work) => !worksGridPrioritySlugs.includes(work.slug))
+  ];
+
+  orderedWorks.forEach((work) => {
     const card = document.createElement("article");
     card.className = "work-card";
 
