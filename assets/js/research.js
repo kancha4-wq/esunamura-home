@@ -169,6 +169,18 @@
       zh: "验证结果",
       ko: "검증 결과"
     },
+    sampleLabel: {
+      ja: "サンプル",
+      en: "sample",
+      zh: "样本",
+      ko: "샘플"
+    },
+    sampleSuffix: {
+      ja: "の生成サンプル",
+      en: " generation sample",
+      zh: " 生成样本",
+      ko: " 생성 샘플"
+    },
     unset: {
       ja: "未設定",
       en: "Not set",
@@ -460,6 +472,14 @@
     return matched?.label || item.theme.replaceAll("_", " ");
   }
 
+  function localizedImportantTagFor(item) {
+    if (currentLanguage === "ja") return importantTagFor(item);
+    return item[`important_tags_${currentLanguage}`]
+      || item[`label_${currentLanguage}`]
+      || localizedCandidateLabel(item)
+      || importantTagFor(item);
+  }
+
   function localizedText(values) {
     return values?.[currentLanguage] || values?.ja || "";
   }
@@ -507,10 +527,17 @@
 
   function localizedCandidateLabel(item) {
     if (currentLanguage === "ja") return item.jp_label || titleCaseFromTheme(item.theme_name || item.theme);
+    const fieldLabel = item[`label_${currentLanguage}`];
+    if (fieldLabel) return fieldLabel;
     if (sectionKind(item) === "hair_color") return localizedColorLabel(item);
     const key = item.theme_name || item.theme || "";
     const translated = candidateLabelTranslations[key]?.[currentLanguage];
     return translated || titleCaseFromTheme(key) || item.jp_label || "";
+  }
+
+  function localizedDataLabel(value) {
+    if (typeof value === "string") return value;
+    return localizedText(value);
   }
 
   function sectionKind(item) {
@@ -524,7 +551,7 @@
 
   function localizedVerificationNote(item) {
     if (currentLanguage === "ja") return item.verification_note || item.reason || "";
-    const tag = importantTagFor(item);
+    const tag = localizedImportantTagFor(item);
     const kind = sectionKind(item);
     const templates = {
       hairstyle: {
@@ -615,15 +642,47 @@
     const mainImage = images[0];
     const label = localizedCandidateLabel(item);
     const contextLabels = {
-      hairstyle: "SDXL 髪型プロンプト検証",
-      bangs: "SDXL 前髪プロンプト検証",
-      hair_color: "SDXL 髪色プロンプト検証",
-      eyes: "SDXL 目プロンプト検証",
-      expression: "SDXL 表情プロンプト検証",
-      research: "SDXL プロンプト検証"
+      hairstyle: {
+        ja: "SDXL 髪型プロンプト検証",
+        en: "SDXL Hairstyle Prompt Test",
+        zh: "SDXL 发型 Prompt 验证",
+        ko: "SDXL 헤어스타일 프롬프트 검증"
+      },
+      bangs: {
+        ja: "SDXL 前髪プロンプト検証",
+        en: "SDXL Bangs Prompt Test",
+        zh: "SDXL 刘海 Prompt 验证",
+        ko: "SDXL 앞머리 프롬프트 검증"
+      },
+      hair_color: {
+        ja: "SDXL 髪色プロンプト検証",
+        en: "SDXL Hair Color Prompt Test",
+        zh: "SDXL 发色 Prompt 验证",
+        ko: "SDXL 헤어 컬러 프롬프트 검증"
+      },
+      eyes: {
+        ja: "SDXL 目プロンプト検証",
+        en: "SDXL Eye Prompt Test",
+        zh: "SDXL 眼睛 Prompt 验证",
+        ko: "SDXL 눈 프롬프트 검증"
+      },
+      expression: {
+        ja: "SDXL 表情プロンプト検証",
+        en: "SDXL Expression Prompt Test",
+        zh: "SDXL 表情 Prompt 验证",
+        ko: "SDXL 표정 프롬프트 검증"
+      },
+      research: {
+        ja: "SDXL プロンプト検証",
+        en: "SDXL Prompt Test",
+        zh: "SDXL Prompt 验证",
+        ko: "SDXL 프롬프트 검증"
+      }
     };
-    const context = contextLabels[sectionKind(item)] || contextLabels.research;
-    const mainAlt = `${context}：${label}${mainImage.label ? ` ${mainImage.label}` : ""}の生成サンプル`;
+    const context = localizedText(contextLabels[sectionKind(item)] || contextLabels.research);
+    const sampleLabel = localizedText(uiText.sampleLabel) || "sample";
+    const sampleSuffix = localizedText(uiText.sampleSuffix) || " sample";
+    const mainAlt = `${context}：${label}${mainImage.label ? ` ${mainImage.label}` : ""}${sampleSuffix}`;
     const thumbs = images.slice(1);
     return `
       <div class="research-candidate-media${thumbs.length ? " has-samples" : ""}">
@@ -634,8 +693,8 @@
           <div class="research-sample-thumbs" aria-label="${escapeHTML(label)}">
             ${thumbs.map((sample) => `
               <a class="research-sample-thumb" href="${escapeHTML(withPagePrefix(sample.asset_path))}" target="_blank" rel="noopener noreferrer">
-                <img src="${escapeHTML(withPagePrefix(sample.asset_path))}" alt="${escapeHTML(`${context}：${label} ${sample.label || sample.angle || "sample"}の生成サンプル`)}" loading="lazy" decoding="async">
-                <span>${escapeHTML(sample.label || sample.angle || "sample")}</span>
+                <img src="${escapeHTML(withPagePrefix(sample.asset_path))}" alt="${escapeHTML(`${context}：${label} ${sample.label || sample.angle || sampleLabel}${sampleSuffix}`)}" loading="lazy" decoding="async">
+                <span>${escapeHTML(sample.label || sample.angle || sampleLabel)}</span>
               </a>
             `).join("")}
           </div>
@@ -645,7 +704,7 @@
   }
 
   function renderCandidateCard(item) {
-    const tag = importantTagFor(item);
+    const tag = localizedImportantTagFor(item);
     const candidateId = slugFor(item.theme_name || item.theme || item.important_tags || item.jp_label);
     const label = localizedCandidateLabel(item);
     return `
@@ -673,8 +732,8 @@
     const sheets = contactSheetsFor(sectionId);
     contactRoot.innerHTML = sheets.map((sheet) => `
       <a class="research-contact-card" href="${escapeHTML(withPagePrefix(sheet.path))}" target="_blank" rel="noopener noreferrer">
-        <img src="${escapeHTML(withPagePrefix(sheet.path))}" alt="${escapeHTML(sheet.label)}" loading="lazy" decoding="async">
-        <span>${escapeHTML(sheet.label)}</span>
+        <img src="${escapeHTML(withPagePrefix(sheet.path))}" alt="${escapeHTML(localizedDataLabel(sheet.label))}" loading="lazy" decoding="async">
+        <span>${escapeHTML(localizedDataLabel(sheet.label))}</span>
       </a>
     `).join("");
   }

@@ -111,17 +111,32 @@ window.researchSampleCandidates = {
     },
     {
       "id": "hairstyle_test25_selected",
-      "label": "?????25????",
+      "label": {
+        "ja": "髪型テスト25補完候補",
+        "en": "Hairstyle Test25 Selected",
+        "zh": "发型测试25 精选候选",
+        "ko": "헤어스타일 테스트25 선택 후보"
+      },
       "path": "assets/research/contact-sheets/hairstyle_test25_selected_contact.jpg"
     },
     {
       "id": "hairstyle_test28_selected",
-      "label": "髪型テスト28補完候補",
+      "label": {
+        "ja": "髪型テスト28補完候補",
+        "en": "Hairstyle Test28 Supplemental",
+        "zh": "发型测试28补充候选",
+        "ko": "헤어스타일 테스트28 보완 후보"
+      },
       "path": "assets/research/contact-sheets/hairstyle_test28_selected_contact.jpg"
     },
     {
       "id": "hairstyle_vol1_1_contact",
-      "label": "髪型 Vol.1.1 自然文制御",
+      "label": {
+        "ja": "髪型 Vol.1.1 自然文制御",
+        "en": "Hairstyle Vol.1.1 Natural-Language Control",
+        "zh": "发型 Vol.1.1 自然语言控制",
+        "ko": "헤어스타일 Vol.1.1 자연어 제어"
+      },
       "path": "assets/research/contact-sheets/hairstyle_vol1_1_natural_text_contact.jpg"
     },
     {
@@ -154,7 +169,13 @@ window.researchSampleCandidates = {
       "verification_note": "生成結果は「ショートボブ」として確認。",
       "prompt_source_file": "A323_HSNL002_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "label_en": "Short Bob",
+      "label_zh": "短波波头",
+      "label_ko": "쇼트 보브",
+      "important_tags_en": "Short Bob",
+      "important_tags_zh": "短波波头",
+      "important_tags_ko": "쇼트 보브"
     },
     {
       "section": "hairstyle_vol1_1",
@@ -179,7 +200,13 @@ window.researchSampleCandidates = {
       "verification_note": "元指定はサイド編み込み入りだが、生成結果では編み込みが弱くショートボブとして確認。",
       "prompt_source_file": "A323_HSNL003_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "label_en": "Short Bob",
+      "label_zh": "短波波头",
+      "label_ko": "쇼트 보브",
+      "important_tags_en": "Short Bob",
+      "important_tags_zh": "短波波头",
+      "important_tags_ko": "쇼트 보브"
     },
     {
       "section": "hairstyle_vol1_1",
@@ -204,7 +231,13 @@ window.researchSampleCandidates = {
       "verification_note": "元指定はミディアム＋顔まわりサイド束だが、生成結果は外ハネショートボブ寄り。",
       "prompt_source_file": "A323_HSNL004_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "label_en": "Outward-Flipped Short Bob",
+      "label_zh": "外翘短波波头",
+      "label_ko": "바깥말림 쇼트 보브",
+      "important_tags_en": "Outward-Flipped Short Bob",
+      "important_tags_zh": "外翘短波波头",
+      "important_tags_ko": "바깥말림 쇼트 보브"
     },
     {
       "section": "hairstyle_vol1_1",
@@ -229,7 +262,13 @@ window.researchSampleCandidates = {
       "verification_note": "元指定はクラウン編み込み＋ロングだが、生成結果では編み込みよりルーズロングの印象が強い。",
       "prompt_source_file": "A323_HSNL005_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "label_en": "Loose Long Hair",
+      "label_zh": "松散长发",
+      "label_ko": "루즈 롱헤어",
+      "important_tags_en": "Loose Long Hair",
+      "important_tags_zh": "松散长发",
+      "important_tags_ko": "루즈 롱헤어"
     },
     {
       "section": "hairstyle_vol1_1",
@@ -254,7 +293,13 @@ window.researchSampleCandidates = {
       "verification_note": "元指定はサイド編み込み入りだが、生成結果ではショートボブとして確認。",
       "prompt_source_file": "A323_HSNL006_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "label_en": "Short Bob",
+      "label_zh": "短波波头",
+      "label_ko": "쇼트 보브",
+      "important_tags_en": "Short Bob",
+      "important_tags_zh": "短波波头",
+      "important_tags_ko": "쇼트 보브"
     },
     {
       "section": "hairstyle_vol1_1",
@@ -279,7 +324,13 @@ window.researchSampleCandidates = {
       "verification_note": "元指定は編み込みハーフアップだが、生成結果はローツインテール寄り。",
       "prompt_source_file": "A323_HSNL007_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "label_en": "Low Twin Tails",
+      "label_zh": "低双马尾",
+      "label_ko": "로우 트윈테일",
+      "important_tags_en": "Low Twin Tails",
+      "important_tags_zh": "低双马尾",
+      "important_tags_ko": "로우 트윈테일"
     },
     {
       "section": "hairstyle_vol1_1",
@@ -304,7 +355,13 @@ window.researchSampleCandidates = {
       "verification_note": "生成結果は「サイド編み込みボブ」として確認。",
       "prompt_source_file": "A323_HSNL008_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "label_en": "Side-Braid Bob",
+      "label_zh": "侧编发波波头",
+      "label_ko": "사이드 브레이드 보브",
+      "important_tags_en": "Side-Braid Bob",
+      "important_tags_zh": "侧编发波波头",
+      "important_tags_ko": "사이드 브레이드 보브"
     },
     {
       "section": "hairstyle_vol1_1",
@@ -329,7 +386,13 @@ window.researchSampleCandidates = {
       "verification_note": "生成結果は「姫カットロング」として確認。",
       "prompt_source_file": "A323_HSNL009_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "label_en": "Long Hime Cut",
+      "label_zh": "长姬发",
+      "label_ko": "롱 히메컷",
+      "important_tags_en": "Long Hime Cut",
+      "important_tags_zh": "长姬发",
+      "important_tags_ko": "롱 히메컷"
     },
     {
       "section": "hairstyle_vol1_1",
@@ -354,7 +417,13 @@ window.researchSampleCandidates = {
       "verification_note": "生成結果は「ワンサイド編み込みボブ」として確認。",
       "prompt_source_file": "A323_HSNL010_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "label_en": "One-Side Braid Bob",
+      "label_zh": "单侧编发波波头",
+      "label_ko": "한쪽 브레이드 보브",
+      "important_tags_en": "One-Side Braid Bob",
+      "important_tags_zh": "单侧编发波波头",
+      "important_tags_ko": "한쪽 브레이드 보브"
     },
     {
       "section": "hairstyle_vol1_1",
@@ -379,7 +448,13 @@ window.researchSampleCandidates = {
       "verification_note": "元指定はローサイドポニー＋リボンだが、生成結果はサイド編み込みボブ寄り。",
       "prompt_source_file": "A323_HSNL011_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "label_en": "Side-Braid Bob Variant",
+      "label_zh": "侧编发波波头别案",
+      "label_ko": "사이드 브레이드 보브 다른 안",
+      "important_tags_en": "Side-Braid Bob Variant",
+      "important_tags_zh": "侧编发波波头别案",
+      "important_tags_ko": "사이드 브레이드 보브 다른 안"
     },
     {
       "section": "hairstyle_vol1_1",
@@ -404,7 +479,13 @@ window.researchSampleCandidates = {
       "verification_note": "生成結果は「やわらか姫カットミディアム」として確認。",
       "prompt_source_file": "A323_HSNL012_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "label_en": "Soft Medium Hime Cut",
+      "label_zh": "柔和中长姬发",
+      "label_ko": "부드러운 미디엄 히메컷",
+      "important_tags_en": "Soft Medium Hime Cut",
+      "important_tags_zh": "柔和中长姬发",
+      "important_tags_ko": "부드러운 미디엄 히메컷"
     },
     {
       "section": "hairstyle_vol1_1",
@@ -429,7 +510,13 @@ window.researchSampleCandidates = {
       "verification_note": "生成結果は「短めサイドポニーテール」として確認。",
       "prompt_source_file": "A323_HSNL013_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "label_en": "Short Side Ponytail",
+      "label_zh": "短侧马尾",
+      "label_ko": "짧은 사이드 포니테일",
+      "important_tags_en": "Short Side Ponytail",
+      "important_tags_zh": "短侧马尾",
+      "important_tags_ko": "짧은 사이드 포니테일"
     },
     {
       "section": "hairstyle_vol1_1",
@@ -454,7 +541,13 @@ window.researchSampleCandidates = {
       "verification_note": "生成結果は「ミディアムローサイドポニー」として確認。",
       "prompt_source_file": "A323_HSNL016_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "label_en": "Medium Low Side Ponytail",
+      "label_zh": "中长低侧马尾",
+      "label_ko": "미디엄 로우 사이드 포니테일",
+      "important_tags_en": "Medium Low Side Ponytail",
+      "important_tags_zh": "中长低侧马尾",
+      "important_tags_ko": "미디엄 로우 사이드 포니테일"
     },
     {
       "section": "hairstyle_vol1_1",
@@ -479,7 +572,13 @@ window.researchSampleCandidates = {
       "verification_note": "元指定はハイツインテールだが、生成結果はローツインテール寄り。",
       "prompt_source_file": "A323_HSNL018_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "label_en": "Low Twin Tails (Dark Hair)",
+      "label_zh": "低双马尾（黑发）",
+      "label_ko": "로우 트윈테일(검은 머리)",
+      "important_tags_en": "Low Twin Tails (Dark Hair)",
+      "important_tags_zh": "低双马尾（黑发）",
+      "important_tags_ko": "로우 트윈테일(검은 머리)"
     },
     {
       "section": "hairstyle_vol1_1",
@@ -504,7 +603,13 @@ window.researchSampleCandidates = {
       "verification_note": "生成結果は「片側編み込みロング」として確認。",
       "prompt_source_file": "A323_HSNL021_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "label_en": "One-Side Braid Long Hair",
+      "label_zh": "单侧编发长发",
+      "label_ko": "한쪽 브레이드 롱헤어",
+      "important_tags_en": "One-Side Braid Long Hair",
+      "important_tags_zh": "单侧编发长发",
+      "important_tags_ko": "한쪽 브레이드 롱헤어"
     },
     {
       "section": "hairstyle_vol1_1",
@@ -529,7 +634,13 @@ window.researchSampleCandidates = {
       "verification_note": "元指定はハーフアップだが、生成結果は片側サイドテール寄り。",
       "prompt_source_file": "A323_HSNL022_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "label_en": "One-Side Tail",
+      "label_zh": "单侧边束发",
+      "label_ko": "한쪽 사이드 테일",
+      "important_tags_en": "One-Side Tail",
+      "important_tags_zh": "单侧边束发",
+      "important_tags_ko": "한쪽 사이드 테일"
     },
     {
       "section": "hairstyle_vol1_1",
@@ -554,7 +665,13 @@ window.researchSampleCandidates = {
       "verification_note": "元指定はダブルお団子ボブだが、生成結果はサイドポニーテールボブ寄り。",
       "prompt_source_file": "A323_HSNL023_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "label_en": "Side Ponytail Bob",
+      "label_zh": "侧马尾波波头",
+      "label_ko": "사이드 포니테일 보브",
+      "important_tags_en": "Side Ponytail Bob",
+      "important_tags_zh": "侧马尾波波头",
+      "important_tags_ko": "사이드 포니테일 보브"
     },
     {
       "section": "hairstyle_vol1_1",
@@ -579,7 +696,13 @@ window.researchSampleCandidates = {
       "verification_note": "ロング指定だが、生成結果は肩下のストレートミディアム寄り。頭頂部の余白が少なく、構図は注意。",
       "prompt_source_file": "A323_HSNL024_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "label_en": "Straight Medium Hair",
+      "label_zh": "直中长发",
+      "label_ko": "스트레이트 미디엄 헤어",
+      "important_tags_en": "Straight Medium Hair",
+      "important_tags_zh": "直中长发",
+      "important_tags_ko": "스트레이트 미디엄 헤어"
     },
     {
       "section": "hairstyle_vol1_1",
@@ -604,7 +727,13 @@ window.researchSampleCandidates = {
       "verification_note": "元指定は編み込みハーフアップだが、生成結果は軽いミディアムヘア寄り。",
       "prompt_source_file": "A323_HSNL025_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "label_en": "Airy Medium Hair",
+      "label_zh": "空气感中长发",
+      "label_ko": "에어리 미디엄 헤어",
+      "important_tags_en": "Airy Medium Hair",
+      "important_tags_zh": "空气感中长发",
+      "important_tags_ko": "에어리 미디엄 헤어"
     },
     {
       "section": "hairstyle_vol1_1",
@@ -629,7 +758,13 @@ window.researchSampleCandidates = {
       "verification_note": "生成結果は「片側編み込みルーズヘア」として確認。",
       "prompt_source_file": "A323_HSNL026_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "label_en": "One-Side Braid Loose Hair",
+      "label_zh": "单侧编发披发",
+      "label_ko": "한쪽 브레이드 루즈 헤어",
+      "important_tags_en": "One-Side Braid Loose Hair",
+      "important_tags_zh": "单侧编发披发",
+      "important_tags_ko": "한쪽 브레이드 루즈 헤어"
     },
     {
       "section": "hairstyle_vol1_1",
@@ -654,7 +789,13 @@ window.researchSampleCandidates = {
       "verification_note": "生成結果はサイド編み込みと低いまとめ髪の印象が強い。",
       "prompt_source_file": "A323_HSNL028_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "label_en": "Braided Low Ponytail",
+      "label_zh": "编发低马尾",
+      "label_ko": "브레이드 로우 포니테일",
+      "important_tags_en": "Braided Low Ponytail",
+      "important_tags_zh": "编发低马尾",
+      "important_tags_ko": "브레이드 로우 포니테일"
     },
     {
       "section": "hairstyle_vol1_1",
@@ -679,7 +820,13 @@ window.researchSampleCandidates = {
       "verification_note": "生成結果は「ダブルお団子」として確認。",
       "prompt_source_file": "A323_HSNL030_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "label_en": "Double Buns",
+      "label_zh": "双丸子头",
+      "label_ko": "더블 번",
+      "important_tags_en": "Double Buns",
+      "important_tags_zh": "双丸子头",
+      "important_tags_ko": "더블 번"
     },
     {
       "section": "hairstyle_vol1_1",
@@ -704,7 +851,13 @@ window.researchSampleCandidates = {
       "verification_note": "生成結果は「ローツインテール」として確認。",
       "prompt_source_file": "A323_HSNL031_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "label_en": "Low Twin Tails",
+      "label_zh": "低双马尾（自然色）",
+      "label_ko": "로우 트윈테일",
+      "important_tags_en": "Low Twin Tails",
+      "important_tags_zh": "低双马尾（自然色）",
+      "important_tags_ko": "로우 트윈테일"
     },
     {
       "section": "hairstyle_vol1_1",
@@ -729,7 +882,13 @@ window.researchSampleCandidates = {
       "verification_note": "元指定はルーズ編み込みロングだが、生成結果はショートボブ寄り。",
       "prompt_source_file": "A323_HSNL032_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "label_en": "Short Bob Variant",
+      "label_zh": "短波波头别案",
+      "label_ko": "쇼트 보브 다른 안",
+      "important_tags_en": "Short Bob Variant",
+      "important_tags_zh": "短波波头别案",
+      "important_tags_ko": "쇼트 보브 다른 안"
     },
     {
       "section": "hairstyle_vol1_1",
@@ -754,7 +913,13 @@ window.researchSampleCandidates = {
       "verification_note": "元指定はルーズ編み込みロングだが、生成結果は外ハネショート寄り。",
       "prompt_source_file": "A323_HSNL033_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "label_en": "Outward-Flipped Short Hair",
+      "label_zh": "外翘短发",
+      "label_ko": "바깥말림 쇼트 헤어",
+      "important_tags_en": "Outward-Flipped Short Hair",
+      "important_tags_zh": "外翘短发",
+      "important_tags_ko": "바깥말림 쇼트 헤어"
     },
     {
       "section": "hairstyle_vol1_1",
@@ -779,7 +944,13 @@ window.researchSampleCandidates = {
       "verification_note": "生成結果は「ふんわりショートボブ」として確認。",
       "prompt_source_file": "A323_HSNL034_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "label_en": "Fluffy Short Bob",
+      "label_zh": "蓬松短波波头",
+      "label_ko": "폭신한 쇼트 보브",
+      "important_tags_en": "Fluffy Short Bob",
+      "important_tags_zh": "蓬松短波波头",
+      "important_tags_ko": "폭신한 쇼트 보브"
     },
     {
       "section": "hairstyle_vol1_1",
@@ -804,7 +975,13 @@ window.researchSampleCandidates = {
       "verification_note": "元指定はハイツインテールだが、生成結果はローツインテール寄り。",
       "prompt_source_file": "A323_HSNL035_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "label_en": "Low Twin Tails (Black Hair)",
+      "label_zh": "低双马尾（黑发）",
+      "label_ko": "로우 트윈테일(검은 머리)",
+      "important_tags_en": "Low Twin Tails (Black Hair)",
+      "important_tags_zh": "低双马尾（黑发）",
+      "important_tags_ko": "로우 트윈테일(검은 머리)"
     },
     {
       "section": "hairstyle_vol1_1",
@@ -829,7 +1006,13 @@ window.researchSampleCandidates = {
       "verification_note": "生成結果は「ダブルお団子ボブ」として確認。",
       "prompt_source_file": "A323_HSNL036_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "label_en": "Double-Bun Bob",
+      "label_zh": "双丸子波波头",
+      "label_ko": "더블 번 보브",
+      "important_tags_en": "Double-Bun Bob",
+      "important_tags_zh": "双丸子波波头",
+      "important_tags_ko": "더블 번 보브"
     },
     {
       "section": "hairstyle_vol1_1",
@@ -854,7 +1037,13 @@ window.researchSampleCandidates = {
       "verification_note": "生成結果は「姫ボブ」として確認。",
       "prompt_source_file": "A323_HSNL037_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "label_en": "Hime Bob",
+      "label_zh": "姬发波波头",
+      "label_ko": "히메 보브",
+      "important_tags_en": "Hime Bob",
+      "important_tags_zh": "姬发波波头",
+      "important_tags_ko": "히메 보브"
     },
     {
       "section": "hairstyle_vol1_1",
@@ -879,7 +1068,13 @@ window.researchSampleCandidates = {
       "verification_note": "生成結果は「内巻きボブ」として確認。",
       "prompt_source_file": "A323_HSNL038_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "label_en": "Inward-Curled Bob",
+      "label_zh": "内扣波波头",
+      "label_ko": "안쪽말림 보브",
+      "important_tags_en": "Inward-Curled Bob",
+      "important_tags_zh": "内扣波波头",
+      "important_tags_ko": "안쪽말림 보브"
     },
     {
       "section": "hairstyle_vol1_1",
@@ -904,7 +1099,13 @@ window.researchSampleCandidates = {
       "verification_note": "生成結果は「ストレートロング」として確認。",
       "prompt_source_file": "A323_HSNL040_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "label_en": "Straight Long Hair",
+      "label_zh": "直长发",
+      "label_ko": "스트레이트 롱헤어",
+      "important_tags_en": "Straight Long Hair",
+      "important_tags_zh": "直长发",
+      "important_tags_ko": "스트레이트 롱헤어"
     },
     {
       "section": "hairstyle_vol1_1",
@@ -929,7 +1130,13 @@ window.researchSampleCandidates = {
       "verification_note": "生成結果は「レイヤードショートボブ」として確認。",
       "prompt_source_file": "A323_HSNL041_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "label_en": "Layered Short Bob",
+      "label_zh": "层次短波波头",
+      "label_ko": "레이어드 쇼트 보브",
+      "important_tags_en": "Layered Short Bob",
+      "important_tags_zh": "层次短波波头",
+      "important_tags_ko": "레이어드 쇼트 보브"
     },
     {
       "section": "hairstyle_vol1_1",
@@ -954,7 +1161,13 @@ window.researchSampleCandidates = {
       "verification_note": "生成結果は「ライト姫カット」として確認。",
       "prompt_source_file": "A323_HSNL042_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "label_en": "Light Hime Cut",
+      "label_zh": "轻盈姬发",
+      "label_ko": "라이트 히메컷",
+      "important_tags_en": "Light Hime Cut",
+      "important_tags_zh": "轻盈姬发",
+      "important_tags_ko": "라이트 히메컷"
     },
     {
       "section": "hairstyle_vol1_1",
@@ -979,7 +1192,13 @@ window.researchSampleCandidates = {
       "verification_note": "元指定はロングツインテールだが、生成結果は短めのローツインテール寄り。",
       "prompt_source_file": "A323_HSNL044_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "label_en": "Low Twin Tails (Blonde)",
+      "label_zh": "低双马尾（金发）",
+      "label_ko": "로우 트윈테일(블론드)",
+      "important_tags_en": "Low Twin Tails (Blonde)",
+      "important_tags_zh": "低双马尾（金发）",
+      "important_tags_ko": "로우 트윈테일(블론드)"
     },
     {
       "section": "hairstyle_vol1_1",
@@ -1004,7 +1223,13 @@ window.researchSampleCandidates = {
       "verification_note": "元指定はゆるウェーブロングだが、生成結果はストレートロング寄り。",
       "prompt_source_file": "A323_HSNL045_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "label_en": "Straight Long Hair Variant",
+      "label_zh": "直长发别案",
+      "label_ko": "스트레이트 롱헤어 다른 안",
+      "important_tags_en": "Straight Long Hair Variant",
+      "important_tags_zh": "直长发别案",
+      "important_tags_ko": "스트레이트 롱헤어 다른 안"
     },
     {
       "section": "hairstyle_vol1_1",
@@ -1030,7 +1255,13 @@ window.researchSampleCandidates = {
       "prompt_source_file": "A323_HSNL046_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
       "final_status": "adopted",
-      "public_hidden": true
+      "public_hidden": true,
+      "label_en": "Short Side Tail",
+      "label_zh": "短侧边束发",
+      "label_ko": "짧은 사이드 테일",
+      "important_tags_en": "Short Side Tail",
+      "important_tags_zh": "短侧边束发",
+      "important_tags_ko": "짧은 사이드 테일"
     },
     {
       "section": "hairstyle_vol1_1",
@@ -1055,7 +1286,13 @@ window.researchSampleCandidates = {
       "verification_note": "生成結果は「ミディアムサイドテール」として確認。",
       "prompt_source_file": "A323_HSNL047_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "label_en": "Medium Side Tail",
+      "label_zh": "中长侧边束发",
+      "label_ko": "미디엄 사이드 테일",
+      "important_tags_en": "Medium Side Tail",
+      "important_tags_zh": "中长侧边束发",
+      "important_tags_ko": "미디엄 사이드 테일"
     },
     {
       "section": "hairstyle_vol1_1",
@@ -1080,7 +1317,13 @@ window.researchSampleCandidates = {
       "verification_note": "元指定はミディアムウルフカットだが、生成結果は外ハネショートボブ寄り。",
       "prompt_source_file": "A323_HSNL048_hairstyle_natural_text_test_01_payload.json",
       "prompt_source_sheet": "20260602_171554_generation",
-      "final_status": "adopted"
+      "final_status": "adopted",
+      "label_en": "Outward-Flipped Short Bob",
+      "label_zh": "外翘短波波头（金发）",
+      "label_ko": "바깥말림 쇼트 보브(금발)",
+      "important_tags_en": "Outward-Flipped Short Bob",
+      "important_tags_zh": "外翘短波波头（金发）",
+      "important_tags_ko": "바깥말림 쇼트 보브(금발)"
     },
     {
       "section": "hair_color_test27",
