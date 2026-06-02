@@ -7,24 +7,79 @@
   const languageButtons = document.querySelectorAll(".lang-button");
   const translatableNodes = document.querySelectorAll("[data-ja]");
   let currentLanguage = "ja";
+  const activeSectionTabs = {};
 
   const sectionCopy = {
     hairstyle: {
       ja: {
-        title: "SDXL 髪型プロンプト一覧と生成サンプル",
-        lead: "候補画像とプロンプトを1件ずつ確認できます。"
+        title: "SDXL 髪型プロンプト検証 Vol.1 + Vol.1.1",
+        lead: "髪型タグの比較に、自然文で髪型を変える追加検証 Vol.1.1 を加えました。候補画像とプロンプトを1件ずつ確認できます。"
       },
       en: {
-        title: "Hairstyle Prompt Guide for SDXL",
-        lead: "Check each candidate image together with its prompt notes."
+        title: "SDXL Hairstyle Prompt Guide Vol.1 + Vol.1.1",
+        lead: "This page adds Vol.1.1 natural-language hairstyle control to the original hairstyle tag comparison. Check each candidate image together with its prompt notes."
       },
       zh: {
-        title: "发型 Prompt 比较｜Hairstyle Prompt Guide for SDXL",
-        lead: "可以逐一查看候选图像与对应的 prompt 记录。"
+        title: "SDXL 发型 Prompt 比较 Vol.1 + Vol.1.1",
+        lead: "在原有发型标签比较之外，加入了 Vol.1.1 自然语言发型控制验证。可以逐一查看候选图像与对应的 prompt 记录。"
       },
       ko: {
-        title: "헤어스타일 프롬프트 비교｜Hairstyle Prompt Guide for SDXL",
-        lead: "후보 이미지와 프롬프트 기록을 하나씩 확인할 수 있습니다."
+        title: "SDXL 헤어스타일 프롬프트 비교 Vol.1 + Vol.1.1",
+        lead: "기존 헤어스타일 태그 비교에 Vol.1.1 자연어 헤어스타일 제어 검증을 더했습니다. 후보 이미지와 프롬프트 기록을 하나씩 확인할 수 있습니다."
+      }
+    },
+    hairstyle_vol1_1: {
+      ja: {
+        title: "SDXL 髪型プロンプト検証 Vol.1.1｜自然文で髪型を変える",
+        lead: "髪型タグに自然文の指示を重ね、キャラクター性を保ちながら髪型・前髪・髪色の印象をどこまで動かせるかを確認した追加検証です。生成結果に出た髪型のズレや、頭切れ・髪切れが残る例も含めて、結果ベースで整理しています。"
+      },
+      en: {
+        title: "SDXL Hairstyle Prompt Test Vol.1.1 | Natural-Language Control",
+        lead: "An additional test that layers natural-language instructions onto hairstyle prompts, checking how far hairstyle, bangs, and hair-color impressions can shift while keeping the character identity readable."
+      },
+      zh: {
+        title: "SDXL 发型 Prompt 验证 Vol.1.1｜自然语言控制",
+        lead: "这是一组追加验证：在发型标签上叠加自然语言指示，观察在保持角色辨识度的同时，发型、刘海与发色印象能变化到什么程度。"
+      },
+      ko: {
+        title: "SDXL 헤어스타일 프롬프트 검증 Vol.1.1｜자연어 제어",
+        lead: "헤어스타일 태그에 자연어 지시를 더해, 캐릭터성을 유지하면서 헤어스타일・앞머리・헤어 컬러 인상이 어디까지 달라지는지 확인한 추가 검증입니다."
+      }
+    },
+    hairstyle_test25: {
+      ja: {
+        title: "基本髪型のタグ検証",
+        lead: "ショートボブ、姫カット、サイド編み込み、サイドテールなど、髪型タグ単体の効き方を比較した基本検証です。"
+      },
+      en: {
+        title: "Core Hairstyle Tag Tests",
+        lead: "Core tests comparing hairstyle tags such as short bob, hime cut, side braid, and side tail."
+      },
+      zh: {
+        title: "基础发型标签验证",
+        lead: "比较短波波头、姬发、侧编发、侧边束发等发型标签的基础验证。"
+      },
+      ko: {
+        title: "기본 헤어스타일 태그 검증",
+        lead: "짧은 보브, 히메컷, 사이드 브레이드, 사이드 테일 등 헤어스타일 태그의 효과를 비교한 기본 검증입니다."
+      }
+    },
+    hairstyle_test28: {
+      ja: {
+        title: "補完髪型の追加検証",
+        lead: "ツインテール、お団子、ストレートロングなど、基本検証で足りなかった髪型バリエーションを補った追加検証です。"
+      },
+      en: {
+        title: "Supplemental Hairstyle Tests",
+        lead: "Supplemental tests for variations such as twin tails, buns, and straight long hair."
+      },
+      zh: {
+        title: "补充发型追加验证",
+        lead: "补充验证双马尾、丸子头、直长发等基础验证中不足的发型变化。"
+      },
+      ko: {
+        title: "보완 헤어스타일 추가 검증",
+        lead: "트윈테일, 번, 스트레이트 롱헤어 등 기본 검증에서 부족했던 헤어스타일 변형을 보완한 추가 검증입니다."
       }
     },
     bangs: {
@@ -247,10 +302,11 @@
   };
 
   const sectionContactIds = {
-    hairstyle: ["hairstyle_test25_selected", "hairstyle_test28_selected"],
+    hairstyle: ["hairstyle_vol1_1_contact", "hairstyle_test25_selected", "hairstyle_test28_selected"],
     hairstyle_test19: ["hairstyle_test19_selected", "test19_all_contact"],
     hairstyle_test25: ["hairstyle_test25_selected"],
     hairstyle_test28: ["hairstyle_test28_selected"],
+    hairstyle_vol1_1: ["hairstyle_vol1_1_contact"],
     bangs_test26: ["bangs_test26_selected"],
     bangs_test20: ["test20_selected_contact", "test20_all_contact"],
     bangs: ["bangs_test26_selected"],
@@ -260,21 +316,44 @@
 
   const shareText = {
     research: "SDXL / illustriousXL 系モデル向けのプロンプト検証ログをまとめました。\n髪型、前髪、髪色、背景など、AIイラスト用の指定を比較しています。",
-    hairstyle: "SDXL / illustriousXL 系モデル向けの髪型プロンプト検証をまとめました。\nショートボブ、姫カット、ツインテール、お団子など、AIイラスト用の髪型表現を比較しています。",
+    hairstyle: "SDXL / illustriousXL 系モデル向けの髪型プロンプト検証をまとめました。\nショートボブ、姫カット、ツインテール、お団子、自然文による髪型制御など、AIイラスト用の髪型表現を比較しています。",
     bangs: "SDXL / illustriousXL 系モデル向けの前髪プロンプト検証をまとめました。\nシースルー前髪、流し前髪、重め前髪、片目隠れ前髪などを比較しています。",
     hair_color: "SDXL / illustriousXL 系モデル向けの髪色プロンプト検証をまとめました。\nピンク系、ブロンド系、青系、紫系、緑系などの髪色表現を比較しています。",
     eyes: "SDXL / illustriousXL 系モデル向けの目プロンプト検証ページです。\nジト目、猫目、大きい目、小さい目、瞳、ハイライト表現などを比較していきます。",
     expression: "SDXL / illustriousXL 系モデル向けの表情プロンプト検証ページです。\n無表情、笑顔、困り顔、怒り顔、照れ顔などの表情差を比較しています。",
     background: "SDXL / illustriousXL 系モデル向けの背景プロンプト検証をまとめました。\n京都風、和風町並み、温泉旅館、海辺、リゾートなどの背景表現を比較しています。",
-    "prompt-guide-pack": "えすなむら研究室のSDXL Prompt Guide Packです。\n髪型、前髪、髪色、目、表情、背景プロンプトをTXT / CSV / Excel形式でまとめています。"
+    "prompt-guide-pack": "えすなむら研究室のSDXL Prompt Guide Pack Vol.1.1です。\n髪型、前髪、髪色、目、表情、背景プロンプトに、自然文髪型プロンプト49件を加えてTXT / CSV / Excel形式でまとめています。"
   };
 
   const pageSectionGroups = {
-    hairstyle: ["hairstyle_test25", "hairstyle_test28"],
+    hairstyle: ["hairstyle_vol1_1", "hairstyle_test25", "hairstyle_test28"],
     bangs: ["bangs_test26"],
     hair_color: ["hair_color_test27", "hair_color_test21", "hair_color"],
     eyes: ["eyes_test34"],
     expression: ["expression_test37"]
+  };
+
+  const sectionTabLabels = {
+    hairstyle: {
+      hairstyle_vol1_1: {
+        ja: "Vol.1.1 自然文",
+        en: "Vol.1.1 Natural",
+        zh: "Vol.1.1 自然语言",
+        ko: "Vol.1.1 자연어"
+      },
+      hairstyle_test25: {
+        ja: "基本髪型",
+        en: "Core Styles",
+        zh: "基础发型",
+        ko: "기본 헤어"
+      },
+      hairstyle_test28: {
+        ja: "補完検証",
+        en: "Supplemental",
+        zh: "补充验证",
+        ko: "보완 검증"
+      }
+    }
   };
 
   function withPagePrefix(path) {
@@ -399,6 +478,11 @@
               : sectionId;
     const copy = sectionCopy[sectionId] || sectionCopy[fallbackId] || {};
     return copy[currentLanguage] || copy.ja || { title: "", lead: "" };
+  }
+
+  function localizedSectionTabLabel(parentSectionId, sectionId) {
+    const label = sectionTabLabels[parentSectionId]?.[sectionId];
+    return label?.[currentLanguage] || label?.ja || localizedSectionCopy(sectionId).title || sectionId;
   }
 
   function titleCaseFromTheme(value) {
@@ -614,9 +698,82 @@
     `;
   }
 
+  function renderSectionTabPanel(parentSectionId, sectionId, isActive) {
+    const copy = localizedSectionCopy(sectionId);
+    const items = itemsFor(sectionId);
+    return `
+      <div class="research-section-tab-panel${isActive ? " is-active" : ""}" id="${escapeHTML(parentSectionId)}-${escapeHTML(sectionId)}-panel" role="tabpanel" aria-labelledby="${escapeHTML(parentSectionId)}-${escapeHTML(sectionId)}-tab"${isActive ? "" : " hidden"}>
+        <div class="research-tab-panel-heading">
+          <h3>${escapeHTML(copy.title)}</h3>
+          <p>${escapeHTML(copy.lead).replaceAll("\n", "<br>")}</p>
+        </div>
+        <div class="research-candidate-grid">
+          ${items.map(renderCandidateCard).join("")}
+        </div>
+      </div>
+    `;
+  }
+
+  function bindSectionTabs() {
+    sectionsRoot.querySelectorAll(".research-section-tab").forEach((button) => {
+      button.addEventListener("click", () => {
+        const parentSectionId = button.dataset.parentSection;
+        const activeSectionId = button.dataset.sectionTab;
+        if (!parentSectionId || !activeSectionId) return;
+        activeSectionTabs[parentSectionId] = activeSectionId;
+        const tabset = sectionsRoot.querySelector(`[data-research-tabset="${CSS.escape(parentSectionId)}"]`);
+        if (!tabset) return;
+        tabset.querySelectorAll(".research-section-tab").forEach((tabButton) => {
+          const isActive = tabButton.dataset.sectionTab === activeSectionId;
+          tabButton.classList.toggle("is-active", isActive);
+          tabButton.setAttribute("aria-selected", String(isActive));
+          tabButton.tabIndex = isActive ? 0 : -1;
+        });
+        tabset.querySelectorAll(".research-section-tab-panel").forEach((panel) => {
+          const isActive = panel.id === `${parentSectionId}-${activeSectionId}-panel`;
+          panel.classList.toggle("is-active", isActive);
+          panel.hidden = !isActive;
+        });
+      });
+    });
+  }
+
   function renderPageSections(sectionId) {
     if (!sectionsRoot) return;
     const sectionIds = pageSectionGroups[sectionId] || [sectionId];
+    const hasSectionTabs = Boolean(sectionTabLabels[sectionId]) && sectionIds.length > 1;
+    if (hasSectionTabs) {
+      const copy = localizedSectionCopy(sectionId);
+      const activeId = sectionIds.includes(activeSectionTabs[sectionId]) ? activeSectionTabs[sectionId] : sectionIds[0];
+      sectionsRoot.innerHTML = `
+        <section class="research-section" id="${escapeHTML(sectionId)}">
+          <div class="section-heading-row">
+            <div>
+              <h2>${escapeHTML(copy.title)}</h2>
+            </div>
+            <p>${escapeHTML(copy.lead).replaceAll("\n", "<br>")}</p>
+          </div>
+          <div class="research-section-tabset" data-research-tabset="${escapeHTML(sectionId)}">
+            <div class="research-section-tabs" role="tablist" aria-label="${escapeHTML(copy.title)}">
+              ${sectionIds.map((tabSectionId) => {
+                const isActive = tabSectionId === activeId;
+                const count = itemsFor(tabSectionId).length;
+                return `
+                  <button class="research-section-tab${isActive ? " is-active" : ""}" id="${escapeHTML(sectionId)}-${escapeHTML(tabSectionId)}-tab" type="button" role="tab" aria-selected="${isActive}" aria-controls="${escapeHTML(sectionId)}-${escapeHTML(tabSectionId)}-panel" tabindex="${isActive ? "0" : "-1"}" data-parent-section="${escapeHTML(sectionId)}" data-section-tab="${escapeHTML(tabSectionId)}">
+                    <span>${escapeHTML(localizedSectionTabLabel(sectionId, tabSectionId))}</span>
+                    <strong>${escapeHTML(count)}</strong>
+                  </button>
+                `;
+              }).join("")}
+            </div>
+            ${sectionIds.map((tabSectionId) => renderSectionTabPanel(sectionId, tabSectionId, tabSectionId === activeId)).join("")}
+          </div>
+        </section>
+      `;
+      bindSectionTabs();
+      renderContactSheets(sectionId);
+      return;
+    }
     if (sectionIds.length > 1) {
       const copy = localizedSectionCopy(sectionId);
       const seenTags = new Set();
