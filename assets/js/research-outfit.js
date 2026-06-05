@@ -89,8 +89,58 @@
     return item[`label_${language}`] || promptLabel(item);
   }
 
-  function verificationNote(item, language = currentLanguage()) {
-    if (language === "ja") return item.description || `${item.label || item.code}の服装プロンプトとして確認。`;
+  function hasAny(text, keywords) {
+    return keywords.some((keyword) => text.includes(keyword));
+  }
+
+  function japaneseVerificationNote(item, category) {
+    const prompt = clothingPromptText(item.prompt).toLowerCase();
+    const label = item.label || item.code;
+    const observations = [];
+
+    if (hasAny(prompt, ["button", "collar", "piping", "zip", "drawstring", "strap", "neckline", "obi", "sash", "panel line"])) {
+      if (category?.id === "wasou") {
+        observations.push("衿合わせや帯まわりの情報が、和装らしい構造として残るかを確認。");
+      } else if (category?.id === "swimwear") {
+        observations.push("ストラップやネックラインの違いが、シルエット差として読めるかを確認。");
+      } else {
+        observations.push("襟・前開き・縁取りなど、部屋着のディテールがどこまで読み取れるかを確認。");
+      }
+    }
+    if (hasAny(prompt, ["long-sleeve", "short-sleeve", "three-quarter", "full-length", "shorts", "mini", "midi", "long skirt", "wide-leg", "hakama"])) {
+      observations.push("袖丈や裾丈の差が、ポーズに埋もれず残るかを見る指定です。");
+    }
+    if (hasAny(prompt, ["stripe", "plaid", "floral", "polka-dot", "plain", "pattern", "motif", "gradation"])) {
+      observations.push("柄の方向や密度が崩れすぎず、服装差として読めるかを見ています。");
+    }
+    if (hasAny(prompt, ["satin", "silk", "gauze", "flannel", "fleece", "waffle", "cotton", "jersey", "rib", "linen", "lace", "chiffon", "matte", "glossy", "sheer"])) {
+      observations.push("布の厚みや光沢、やわらかさの違いが出るかを比較しやすい項目です。");
+    }
+    if (hasAny(prompt, ["robe", "cardigan", "haori", "cover-up", "hoodie", "rash guard", "pareo", "apron", "stole"])) {
+      observations.push("重ね着や羽織り要素が、単なる色替えではなく別パーツとして出るかを確認。");
+    }
+    if (hasAny(prompt, ["ribbon", "bow", "hat", "sandals", "sunglasses", "bag", "hair ornament", "geta"])) {
+      observations.push("小物を足したときに、主役の服装より目立ちすぎないかも見ています。");
+    }
+
+    if (category?.id === "pajama") {
+      observations.push("室内着らしいゆるさと、上下セットのまとまりを確認するための服装プロンプトです。");
+    } else if (category?.id === "wasou") {
+      observations.push("和装らしい合わせ・帯・柄の情報が、キャラクター性を崩さず残るかを確認しています。");
+    } else if (category?.id === "swimwear") {
+      observations.push("露出量ではなく、シルエット・ストラップ・リゾート感の違いを比較するための指定です。");
+    } else {
+      observations.push("固定キャラクターの印象を保ったまま、衣装差だけを読み取れるかを確認しています。");
+    }
+
+    const unique = observations.filter((text, index) => observations.indexOf(text) === index);
+    const selected = unique.slice(0, 2);
+    if (!selected.length) return `${label}として、衣装の輪郭や素材感が安定して出るかを確認しています。`;
+    return selected.join("");
+  }
+
+  function verificationNote(item, category, language = currentLanguage()) {
+    if (language === "ja") return japaneseVerificationNote(item, category);
     const label = itemLabel(item, language);
     const templates = {
       en: `${label} outfit prompt test. Useful for comparing the clothing shape, material feel, and scene fit while keeping the character identity stable.`,
@@ -122,7 +172,7 @@
     const imageSrc = assetSrc(item.src);
     const positivePrompt = clothingPromptText(item.prompt) || localized(uiText.unset, language);
     const negativePrompt = item.negative || localized(uiText.unset, language);
-    const verification = verificationNote(item, language);
+    const verification = verificationNote(item, category, language);
     return `
       <article class="research-candidate-card outfit-log-card" id="${escapeHTML(item.code.toLowerCase())}">
         <div class="research-candidate-media">
