@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   color-scheme: dark;
   --bg: #11100f;
   --panel: #1c1918;
@@ -2714,6 +2714,59 @@ body.research-page {
 .background-code-card {
   position: relative;
   padding-bottom: 52px;
+}
+
+.outfit-category-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.outfit-candidate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 14px;
+}
+
+.outfit-candidate-card {
+  overflow: hidden;
+  border: 1px solid var(--research-border);
+  border-radius: 8px;
+  background: rgba(24, 21, 20, 0.88);
+}
+
+.outfit-candidate-image {
+  display: block;
+  background: var(--research-media-bg);
+}
+
+.outfit-candidate-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.outfit-candidate-caption {
+  display: grid;
+  gap: 3px;
+  padding: 9px 10px 10px;
+}
+
+.outfit-candidate-caption strong {
+  color: var(--accent-strong);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+}
+
+.outfit-candidate-caption span {
+  color: var(--text);
+  font-size: 0.82rem;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
 }
 
 .copy-prompt-button {
