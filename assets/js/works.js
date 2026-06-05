@@ -506,14 +506,14 @@ const salesByWorkId = {
     pictSPACE: "https://pictspace.net/items/manage_detail/837289",
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_745411/",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01591984.html",
-    PromptCom: "https://prompt-com.com/ja/p/4db875a2-a967-465c-93b8-eb28521defd4"
+    PromptCom: "https://prompt-com.com/ja/s/c3479669-23c9-4236-a771-0a9ac78cecc2"
   },
   "eroboxin-4649": {
     BOOTH: "https://esunamura.booth.pm/items/8238754",
     pictSPACE: "https://pictspace.net/items/manage_detail/851348",
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_758170/",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01612902.html",
-    PromptCom: "https://prompt-com.com/ja/p/d3d69153-c51f-41f6-8297-1a0a693c2583",
+    PromptCom: "https://prompt-com.com/ja/s/989fda92-21f4-49b3-bf70-8cb7adc2dd61",
     DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0337471/AFID=esunamura/"
   },
   "eroboxin-akane": {
@@ -521,7 +521,7 @@ const salesByWorkId = {
     pictSPACE: "https://pictspace.net/items/manage_detail/858788",
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_763759/",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01622810.html",
-    PromptCom: "https://prompt-com.com/ja/p/cdd31e47-ba82-4793-939d-8445864efceb",
+    PromptCom: "https://prompt-com.com/ja/s/7073b5d6-4b35-4c77-a0d5-eefb11932083",
     DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0337472/AFID=esunamura/"
   },
   "swimsuit-hime-collection": {
@@ -531,52 +531,52 @@ const salesByWorkId = {
     BOOTH: "https://esunamura.booth.pm/items/8168871",
     pictSPACE: "https://pictspace.net/items/manage_detail/838092",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01604402.html",
-    PromptCom: "https://prompt-com.com/ja/p/21cdb0c3-6cda-4e92-b9e7-bd1d521c2b66"
+    PromptCom: "https://prompt-com.com/ja/s/4713754c-96db-405c-aa16-d6abfc873421"
   },
   hikagami: {
     BOOTH: "https://esunamura.booth.pm/items/8111107",
     pictSPACE: "https://pictspace.net/items/manage_detail/838048",
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_744243/",
-    PromptCom: "https://prompt-com.com/ja/p/85fa5e0c-5d9c-41db-8c11-8c738c9b8a1b"
+    PromptCom: "https://prompt-com.com/ja/s/d76883e7-c094-465c-9874-2afb7379e2f0"
   },
   "hikagami-school": {
     BOOTH: "https://esunamura.booth.pm/items/8203343",
     pictSPACE: "https://pictspace.net/items/manage_detail/845880",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01628452.html",
-    PromptCom: "https://prompt-com.com/ja/p/c9fd0fb2-4bca-4ea4-a30d-c2b28948c06a"
+    PromptCom: "https://prompt-com.com/ja/s/f4785b95-8fb8-4330-a96e-5487eaf39887"
   },
   "kinpatsu-miko": {
     BOOTH: "https://esunamura.booth.pm/items/8120906",
     pictSPACE: "https://pictspace.net/items/manage_detail/838067",
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_746695/",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01591986.html",
-    PromptCom: "https://prompt-com.com/ja/p/4ca5f6fa-e429-4019-9d13-9738eecf2cb8",
+    PromptCom: "https://prompt-com.com/ja/s/b2709d2b-7b6d-4156-9e75-cd6f7c6686d2",
     DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0337791/AFID=esunamura/"
   },
   "ancient-capital-beauty": {
     BOOTH: "https://esunamura.booth.pm/items/8111016",
     pictSPACE: "https://pictspace.net/items/manage_detail/838029",
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_743522/",
-    PromptCom: "https://prompt-com.com/ja/p/004afa0a-8c68-4775-a4d6-1fe78a6c35f3"
+    PromptCom: "https://prompt-com.com/ja/s/024ed546-b71b-4cda-afa4-5d2548f86dbd"
   },
   "momoiro-baito": {
     BOOTH: "https://esunamura.booth.pm/items/8139630",
     pictSPACE: "https://pictspace.net/items/manage_detail/838081",
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_751890/",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01601145.html",
-    PromptCom: "https://prompt-com.com/ja/p/055982d7-98e2-47ae-92c0-dbb71e117d56",
+    PromptCom: "https://prompt-com.com/ja/s/ddd231f2-060b-4f1c-a8af-f197c89f5073",
     DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0337792/AFID=esunamura/"
   },
   satogaeri: {
     pictSPACE: "https://pictspace.net/items/manage_detail/837195",
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_741847/",
-    PromptCom: "https://prompt-com.com/ja/p/3d0682b4-4e94-4ede-9943-b1a6e714af0c"
+    PromptCom: "https://prompt-com.com/ja/s/361fdc2f-feb2-4de2-b4a6-e6f94807f074"
   },
   gokujiri: {
     BOOTH: "https://esunamura.booth.pm/items/8120812",
     pictSPACE: "https://pictspace.net/items/manage_detail/838060",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01605513.html",
-    PromptCom: "https://prompt-com.com/ja/p/03378ed3-d986-496a-88df-e1216d212266"
+    PromptCom: "https://prompt-com.com/ja/s/d2adcab1-91eb-491d-b1d8-0133e0c9b04e"
   },
   "okinawa-soso": {
     BOOTH: "https://esunamura.booth.pm/items/8139646",

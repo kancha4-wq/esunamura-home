@@ -16,7 +16,6 @@
       story: "タイトル説明",
       preview: "このシリーズを試し読み",
       pixiv: "pixivで見る",
-      promptcom: "PromptComで見る",
       shareX: "Xで共有",
       sameSeries: "同シリーズ",
       relatedFetish: "関連フェチ",
@@ -31,7 +30,6 @@
       story: "Title Description",
       preview: "Preview this series",
       pixiv: "View on pixiv",
-      promptcom: "View on PromptCom",
       shareX: "Share on X",
       sameSeries: "Same series",
       relatedFetish: "Related motif",
@@ -46,7 +44,6 @@
       story: "作品说明",
       preview: "试读这个系列",
       pixiv: "在 pixiv 查看",
-      promptcom: "在 PromptCom 查看",
       shareX: "分享到 X",
       sameSeries: "同系列",
       relatedFetish: "相关要素",
@@ -61,7 +58,6 @@
       story: "작품 설명",
       preview: "이 시리즈 미리보기",
       pixiv: "pixiv에서 보기",
-      promptcom: "PromptCom에서 보기",
       shareX: "X에 공유",
       sameSeries: "같은 시리즈",
       relatedFetish: "관련 취향",
@@ -841,23 +837,23 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
   const previewLinks = {
     "eroboxin-akane": {
       pixiv: "https://www.pixiv.net/users/21257126/artworks/%E3%82%A8%E3%83%AD%E3%83%9C%E3%82%AD%E3%82%B7%E3%83%B34649v2",
-      promptcom: "https://prompt-com.com/ja/tags/%E3%82%A8%E3%83%AD%E3%83%9C%E3%82%AD%E3%82%B7%E3%83%B3v2%E7%84%A1%E6%96%99?product_typegallery&rating=all"
+      promptcom: "https://prompt-com.com/ja/s/989fda92-21f4-49b3-bf70-8cb7adc2dd61"
     },
     "eroboxin-4649": {
       pixiv: "https://www.pixiv.net/users/21257126/artworks/%E3%82%A8%E3%83%AD%E3%83%9C%E3%82%AD%E3%82%B7%E3%83%B34649",
-      promptcom: "https://prompt-com.com/ja/tags/%E3%82%A8%E3%83%AD%E3%83%9C%E3%82%AD%E3%82%B7%E3%83%B3v1%E7%84%A1%E6%96%99?product_typegallery&rating=all"
+      promptcom: "https://prompt-com.com/ja/s/989fda92-21f4-49b3-bf70-8cb7adc2dd61"
     },
     "hikagami-school": {
       pixiv: "https://www.pixiv.net/users/21257126/artworks/%E7%99%BB%E6%A0%A1%E7%B7%A8",
-      promptcom: "https://prompt-com.com/ja/tags/%E3%81%B2%E3%81%8B%E3%81%8C%E3%81%BF%E7%99%BB%E6%A0%A1%E7%B7%A8%E7%84%A1%E6%96%99?product_typegallery&rating=all"
+      promptcom: "https://prompt-com.com/ja/s/f4785b95-8fb8-4330-a96e-5487eaf39887"
     },
     "shizuku-record": {
       pixiv: "https://www.pixiv.net/users/21257126/artworks/%E3%81%97%E3%81%9A%E3%81%8F%E3%81%AE%E8%A8%98%E9%8C%B2",
-      promptcom: "https://prompt-com.com/ja/tags/%E3%81%97%E3%81%9A%E3%81%8F%E3%81%AE%E8%A8%98%E9%8C%B2%E7%84%A1%E6%96%99?product_typegallery&rating=all"
+      promptcom: "https://prompt-com.com/ja/s/4713754c-96db-405c-aa16-d6abfc873421"
     },
     "momoiro-baito": {
       pixiv: "https://www.pixiv.net/users/21257126/artworks/%E6%A1%83%E8%89%B2%E3%83%90%E3%82%A4%E3%83%88",
-      promptcom: "https://prompt-com.com/ja/tags/%E6%A1%83%E8%89%B2%E3%83%90%E3%82%A4%E3%83%88%E7%84%A1%E6%96%99?product_typegallery&rating=all"
+      promptcom: "https://prompt-com.com/ja/s/ddd231f2-060b-4f1c-a8af-f197c89f5073"
     },
     "okinawa-soso": {
       pixiv: "https://www.pixiv.net/users/21257126/artworks/%E3%81%A1%E3%82%85%E3%82%89%E3%81%95%E3%82%93%E7%B2%97%E7%9B%B8",
@@ -865,11 +861,11 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
     },
     "kinpatsu-miko": {
       pixiv: "https://www.pixiv.net/users/21257126/artworks/%E5%83%95%E3%81%A3%E5%AD%90",
-      promptcom: "https://prompt-com.com/ja/tags/%E9%87%91%E9%AB%AA%E5%B7%AB%E5%A5%B3v1%E7%84%A1%E6%96%99?product_typegallery&rating=all"
+      promptcom: "https://prompt-com.com/ja/s/b2709d2b-7b6d-4156-9e75-cd6f7c6686d2"
     },
     "ancient-capital-beauty": {
       pixiv: "https://www.pixiv.net/users/21257126/artworks/%E5%8F%A4%E9%83%BD%E7%BE%8E%E4%BA%BA",
-      promptcom: "https://prompt-com.com/ja/tags/%E5%8F%A4%E9%83%BD%E7%BE%8E%E4%BA%BA%E7%84%A1%E6%96%99?product_typegallery&rating=all"
+      promptcom: "https://prompt-com.com/ja/s/024ed546-b71b-4cda-afa4-5d2548f86dbd"
     },
     "hokkaido-omorashi": {
       pixiv: "https://www.pixiv.net/users/21257126/artworks/%E5%8C%97%E6%B5%B7%E9%81%93%E3%81%8A%E3%82%82%E3%82%89%E3%81%97%E7%B4%80%E8%A1%8C",
@@ -886,19 +882,19 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
     },
     "setouchi-omorashi": {
       pixiv: "https://www.pixiv.net/users/21257126/artworks/%E7%80%AC%E6%88%B8%E5%86%85%E3%81%8A%E3%82%82%E3%82%89%E3%81%97%E7%B4%80%E8%A1%8C",
-      promptcom: "https://prompt-com.com/ja/tags/%E7%80%AC%E6%88%B8%E5%86%85%E3%81%8A%E3%82%82%E3%82%89%E3%81%97%E7%B4%80%E8%A1%8C%E7%84%A1%E6%96%99?product_typegallery&rating=all"
+      promptcom: "https://prompt-com.com/ja/s/c3479669-23c9-4236-a771-0a9ac78cecc2"
     },
     "gokujiri": {
       pixiv: "https://www.pixiv.net/users/21257126/artworks/%E3%81%94%E3%81%8F%E3%81%98%E3%82%8A",
-      promptcom: "https://prompt-com.com/ja/tags/%E3%81%94%E3%81%8F%E3%81%98%E3%82%8A%E5%86%8D%E7%B7%A8%E7%89%88%E7%84%A1%E6%96%99?product_typegallery&rating=all"
+      promptcom: "https://prompt-com.com/ja/s/d2adcab1-91eb-491d-b1d8-0133e0c9b04e"
     },
     "hikagami": {
       pixiv: "https://www.pixiv.net/users/21257126/artworks/%E3%81%B2%E3%81%8B%E3%81%8C%E3%81%BF%E5%A5%BD",
-      promptcom: "https://prompt-com.com/ja/tags/%E3%81%B2%E3%81%8B%E3%81%8C%E3%81%BF%E7%84%A1%E6%96%99?product_typegallery&rating=all"
+      promptcom: "https://prompt-com.com/ja/s/d76883e7-c094-465c-9874-2afb7379e2f0"
     },
     "satogaeri": {
       pixiv: "https://www.pixiv.net/users/21257126/artworks/%E9%87%8C%E5%B8%B0%E3%82%8A",
-      promptcom: "https://prompt-com.com/ja/tags/%E9%87%8C%E5%B8%B0%E3%82%8A%E7%84%A1%E6%96%99?product_typegallery&rating=all"
+      promptcom: "https://prompt-com.com/ja/s/361fdc2f-feb2-4de2-b4a6-e6f94807f074"
     }
   };
 
@@ -1179,7 +1175,6 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
         <h2>${previewTitle}</h2>
         <div class="preview-detail-links">
           <a class="sales-button" href="${links.pixiv}" target="_blank" rel="noopener noreferrer" data-analytics-platform="pixiv" data-analytics-work="${item.id}">${uiText("pixiv")}</a>
-          <a class="sales-button" href="${links.promptcom}" target="_blank" rel="noopener noreferrer" data-analytics-platform="promptcom" data-analytics-work="${item.id}">${uiText("promptcom")}</a>
         </div>
       </div>
     `;
