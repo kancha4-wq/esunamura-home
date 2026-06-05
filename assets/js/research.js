@@ -331,6 +331,7 @@
     hairstyle: "SDXL / illustriousXL 系モデル向けの髪型プロンプト検証をまとめました。\nショートボブ、姫カット、ツインテール、お団子、自然文による髪型制御など、AIイラスト用の髪型表現を比較しています。",
     bangs: "SDXL / illustriousXL 系モデル向けの前髪プロンプト検証をまとめました。\nシースルー前髪、流し前髪、重め前髪、片目隠れ前髪などを比較しています。",
     hair_color: "SDXL / illustriousXL 系モデル向けの髪色プロンプト検証をまとめました。\nピンク系、ブロンド系、青系、紫系、緑系などの髪色表現を比較しています。",
+    outfit: "SDXL / illustriousXL 系モデル向けの服装プロンプト検証をまとめました。\nパジャマ・ルームウェア、和装・浴衣、水着・リゾートなど、固定キャラクターで衣装差を比較しています。",
     eyes: "SDXL / illustriousXL 系モデル向けの目プロンプト検証ページです。\nジト目、猫目、大きい目、小さい目、瞳、ハイライト表現などを比較していきます。",
     expression: "SDXL / illustriousXL 系モデル向けの表情プロンプト検証ページです。\n無表情、笑顔、困り顔、怒り顔、照れ顔などの表情差を比較しています。",
     background: "SDXL / illustriousXL 系モデル向けの背景プロンプト検証をまとめました。\n京都風、和風町並み、温泉旅館、海辺、リゾートなどの背景表現を比較しています。",
@@ -391,6 +392,70 @@
       link.href = shareIntentUrl(topic);
     });
   }
+
+  function promptTextForCopy(panel) {
+    return panel.querySelector("pre, code")?.textContent?.trim() || "";
+  }
+
+  function installPromptCopyButtons(root = document) {
+    root.querySelectorAll(".research-prompt-panel, .research-prompt-details").forEach((panel) => {
+      if (panel.querySelector(".copy-prompt-button")) return;
+      if (!promptTextForCopy(panel)) return;
+      const button = document.createElement("button");
+      button.className = "copy-prompt-button";
+      button.type = "button";
+      button.title = "コピー";
+      button.setAttribute("aria-label", "プロンプトをコピー");
+      panel.append(button);
+    });
+  }
+
+  window.installPromptCopyButtons = installPromptCopyButtons;
+
+  function copyTextWithSelection(text) {
+    const textarea = document.createElement("textarea");
+    textarea.value = text;
+    textarea.setAttribute("readonly", "");
+    textarea.style.position = "fixed";
+    textarea.style.top = "-1000px";
+    textarea.style.left = "-1000px";
+    document.body.append(textarea);
+    textarea.select();
+    let copied = false;
+    try {
+      copied = document.execCommand("copy");
+    } catch (error) {
+      copied = false;
+    }
+    textarea.remove();
+    return copied;
+  }
+
+  async function copyText(text) {
+    if (copyTextWithSelection(text)) return true;
+    try {
+      await navigator.clipboard.writeText(text);
+      return true;
+    } catch (error) {
+      return false;
+    }
+  }
+
+  document.addEventListener("click", async (event) => {
+    const button = event.target.closest(".copy-prompt-button");
+    if (!button) return;
+    const panel = button.closest(".research-prompt-panel, .research-prompt-details");
+    const text = button.dataset.copyPrompt || (panel ? promptTextForCopy(panel) : "");
+    if (!text) return;
+    if (await copyText(text)) {
+      button.dataset.copyState = "copied";
+    } else {
+      button.dataset.copyState = "failed";
+    }
+    window.setTimeout(() => {
+      delete button.dataset.copyState;
+    }, 1200);
+  });
 
   function escapeHTML(value) {
     return String(value ?? "")
@@ -889,6 +954,7 @@
     if (pageSection) {
       renderPageSections(pageSection);
     }
+    installPromptCopyButtons();
     updateShareLinks();
   }
 
@@ -896,8 +962,10 @@
     button.addEventListener("click", () => setLanguage(button.dataset.lang));
   });
   setLanguage(window.localStorage?.getItem("archiveLang") || "ja");
+  installPromptCopyButtons();
 
   if (!pageSection) return;
+  if (!sectionsRoot) return;
   if (!data || !Array.isArray(data.items)) {
     sectionsRoot.innerHTML = "<p>研究データを読み込めませんでした。</p>";
     return;

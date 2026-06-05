@@ -2002,6 +2002,29 @@ body.research-page {
   max-width: 920px;
 }
 
+body[data-research-section="outfit"] .research-hero {
+  margin-top: -18px;
+  padding: 10px 12px;
+}
+
+body[data-research-section="outfit"] .research-hero .lead {
+  margin-top: 6px;
+  line-height: 1.55;
+}
+
+body[data-research-section="outfit"] .research-share-links {
+  margin-top: 8px;
+}
+
+body[data-research-section="outfit"] .outfit-note-section {
+  gap: 0;
+  margin-top: -24px;
+}
+
+body[data-research-section="outfit"] .outfit-note-section .section-heading-row {
+  display: none;
+}
+
 .research-detail-page .research-hero-with-visual .detail-copy {
   max-width: 680px;
 }
@@ -2259,6 +2282,27 @@ body.research-page {
 .research-section {
   display: grid;
   gap: 18px;
+}
+
+body[data-research-section="outfit"] .research-section {
+  gap: 8px;
+}
+
+body[data-research-section="outfit"] #outfitCategories {
+  margin-top: -18px;
+}
+
+body[data-research-section="outfit"] .outfit-category-section {
+  margin-top: 0;
+  gap: 0;
+}
+
+body[data-research-section="outfit"] .outfit-category-section .section-heading-row {
+  display: none;
+}
+
+body[data-research-section="outfit"] .outfit-category-section h2 {
+  font-size: clamp(1.12rem, 2.4vw, 1.42rem);
 }
 
 .research-top-grid {
@@ -2717,72 +2761,104 @@ body.research-page {
 }
 
 .outfit-category-jump {
-  display: flex;
-  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.outfit-category-jump .research-section-tab {
+  min-height: 36px;
+  padding: 5px 9px;
+  text-decoration: none;
+}
+
+.outfit-category-jump .research-section-tab strong {
+  min-height: 22px;
+  font-size: 0.76rem;
+}
+
+body[data-research-section="outfit"] .research-candidate-grid {
   gap: 10px;
-  margin-top: 16px;
 }
 
-.outfit-candidate-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 14px;
-}
+@media (max-width: 760px) {
+  .outfit-category-jump.research-section-tabs {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 6px;
+    padding: 6px;
+  }
 
-.outfit-candidate-card {
-  overflow: hidden;
-  border: 1px solid var(--research-border);
-  border-radius: 8px;
-  background: rgba(24, 21, 20, 0.88);
-}
+  .outfit-category-jump .research-section-tab {
+    min-height: 38px;
+    padding: 6px 7px;
+    font-size: 0.78rem;
+  }
 
-.outfit-candidate-image {
-  display: block;
-  background: var(--research-media-bg);
-}
-
-.outfit-candidate-image img {
-  display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: auto;
-  object-fit: cover;
-  object-position: center;
-}
-
-.outfit-candidate-caption {
-  display: grid;
-  gap: 3px;
-  padding: 9px 10px 10px;
-}
-
-.outfit-candidate-caption strong {
-  color: var(--accent-strong);
-  font-size: 0.78rem;
-  letter-spacing: 0.04em;
-}
-
-.outfit-candidate-caption span {
-  color: var(--text);
-  font-size: 0.82rem;
-  line-height: 1.45;
-  overflow-wrap: anywhere;
+  .outfit-category-jump .research-section-tab strong {
+    min-width: 24px;
+    min-height: 22px;
+    padding: 0 5px;
+    font-size: 0.7rem;
+  }
 }
 
 .copy-prompt-button {
   position: absolute;
-  right: 12px;
-  bottom: 12px;
-  min-width: 82px;
-  min-height: 32px;
+  top: 7px;
+  right: 7px;
+  display: grid;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  min-height: 24px;
+  place-items: center;
   border: 1px solid rgba(230, 177, 95, 0.42);
   border-radius: 999px;
   background: rgba(230, 177, 95, 0.12);
   color: var(--accent);
-  font: inherit;
-  font-size: 0.84rem;
-  font-weight: 900;
   cursor: pointer;
+}
+
+.copy-prompt-button::before,
+.copy-prompt-button::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 10px;
+  border: 1.5px solid currentColor;
+  border-radius: 2px;
+  transition: transform 160ms ease, opacity 160ms ease;
+}
+
+.copy-prompt-button::before {
+  transform: translate(-2px, 2px);
+  opacity: 0.62;
+}
+
+.copy-prompt-button::after {
+  background: rgba(36, 29, 22, 0.96);
+  transform: translate(2px, -2px);
+}
+
+.copy-prompt-button[data-copy-state="copied"]::before {
+  width: 10px;
+  height: 5px;
+  border-width: 0 0 2px 2px;
+  border-radius: 0;
+  transform: translateY(-1px) rotate(-45deg);
+  opacity: 1;
+}
+
+.copy-prompt-button[data-copy-state="copied"]::after,
+.copy-prompt-button[data-copy-state="failed"]::after {
+  opacity: 0;
+}
+
+.copy-prompt-button[data-copy-state="failed"]::before {
+  width: 9px;
+  height: 9px;
+  border-width: 2px 0 0 0;
+  border-radius: 0;
+  transform: rotate(45deg);
+  opacity: 1;
 }
 
 .copy-prompt-button:hover,
@@ -3325,6 +3401,10 @@ body.research-page {
   .research-detail-page .research-candidate-card {
     grid-template-columns: minmax(180px, 340px) minmax(0, 1fr);
   }
+
+  body[data-research-section="outfit"].research-detail-page .research-candidate-card {
+    grid-template-columns: minmax(150px, 240px) minmax(0, 1fr);
+  }
 }
 
 .research-image-link {
@@ -3365,6 +3445,21 @@ body.research-page {
 
 .research-candidate-media .research-image-link img {
   height: auto;
+}
+
+body[data-research-section="outfit"] .research-candidate-media .research-image-link img {
+  aspect-ratio: auto;
+  width: auto;
+  max-width: min(100%, 260px);
+  height: auto;
+  max-height: 380px;
+  object-fit: contain;
+  object-position: center;
+}
+
+body[data-research-section="outfit"] .research-candidate-media .research-image-link {
+  display: grid;
+  place-items: center;
 }
 
 .research-candidate-media.has-samples .research-image-link img {
@@ -3546,6 +3641,7 @@ body[data-research-section="expression"] .research-candidate-media.has-samples .
 }
 
 .research-prompt-details {
+  position: relative;
   border: 1px solid rgba(230, 177, 95, 0.24);
   border-radius: 10px;
   background: var(--research-prompt-bg);
@@ -3553,7 +3649,7 @@ body[data-research-section="expression"] .research-candidate-media.has-samples .
 
 .research-prompt-details summary {
   cursor: pointer;
-  padding: 7px 9px;
+  padding: 7px 40px 7px 9px;
   color: var(--accent);
   font-size: 0.72rem;
   font-weight: 900;
@@ -3572,6 +3668,7 @@ body[data-research-section="expression"] .research-candidate-media.has-samples .
 }
 
 .research-prompt-panel {
+  position: relative;
   border: 1px solid rgba(230, 177, 95, 0.24);
   border-radius: 10px;
   background:
@@ -3581,7 +3678,7 @@ body[data-research-section="expression"] .research-candidate-media.has-samples .
 }
 
 .research-prompt-panel h4 {
-  margin: 0 0 6px;
+  margin: 0 34px 6px 0;
   color: var(--accent);
   font-size: 0.72rem;
   font-weight: 900;
