@@ -39,7 +39,7 @@ window.researchSampleCandidates = {
     },
     {
       "id": "hairstyle_vol1_1",
-      "title_ja": "髪型検証 Vol.1.1：自然文制御",
+      "title_ja": "髪型検証：自然文制御",
       "asset_dir": "assets/research/hairstyle/vol1-1-natural-text/"
     },
     {
@@ -132,10 +132,10 @@ window.researchSampleCandidates = {
     {
       "id": "hairstyle_vol1_1_contact",
       "label": {
-        "ja": "髪型 Vol.1.1 自然文制御",
-        "en": "Hairstyle Vol.1.1 Natural-Language Control",
-        "zh": "发型 Vol.1.1 自然语言控制",
-        "ko": "헤어스타일 Vol.1.1 자연어 제어"
+        "ja": "髪型 自然文制御",
+        "en": "Hairstyle Natural-Language Control",
+        "zh": "发型 自然语言控制",
+        "ko": "헤어스타일 자연어 제어"
       },
       "path": "assets/research/contact-sheets/hairstyle_vol1_1_natural_text_contact.jpg"
     },

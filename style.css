@@ -2316,13 +2316,15 @@ body[data-research-section="outfit"] .outfit-category-section h2 {
   gap: 14px;
   align-items: center;
   margin: 0;
-  padding: 14px 16px;
-  border: 1px solid rgba(230, 177, 95, 0.22);
+  padding: 16px 18px;
+  border: 1px solid rgba(80, 205, 190, 0.42);
   border-radius: var(--radius);
   background:
-    linear-gradient(135deg, rgba(230, 177, 95, 0.12), rgba(255, 255, 255, 0.035)),
+    linear-gradient(135deg, rgba(49, 122, 255, 0.26), rgba(39, 206, 158, 0.16)),
     var(--research-panel);
-  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.24);
+  box-shadow:
+    0 18px 45px rgba(0, 0, 0, 0.26),
+    0 0 0 1px rgba(255, 255, 255, 0.04) inset;
 }
 
 .research-pack-mini-cta p {
@@ -2338,11 +2340,25 @@ body[data-research-section="outfit"] .outfit-category-section h2 {
 
 .research-pack-mini-cta .eyebrow {
   margin-bottom: 5px;
-  color: var(--accent);
+  color: #8eead7;
 }
 
 .research-pack-mini-cta .link-button {
   width: 100%;
+  border: 1px solid rgba(143, 243, 225, 0.5);
+  background:
+    linear-gradient(135deg, #39d9bf, #4d87ff);
+  color: #08110f;
+  box-shadow: 0 14px 32px rgba(46, 165, 222, 0.32);
+  font-weight: 900;
+}
+
+.research-pack-mini-cta .link-button:hover {
+  border-color: rgba(255, 255, 255, 0.72);
+  box-shadow:
+    0 16px 36px rgba(46, 165, 222, 0.42),
+    0 0 0 1px rgba(255, 255, 255, 0.14) inset;
+  transform: translateY(-1px);
 }
 
 .research-pack-mini-cta-bottom {
@@ -2761,13 +2777,17 @@ body[data-research-section="outfit"] .outfit-category-section h2 {
 }
 
 .outfit-category-jump {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   margin-top: 10px;
+  gap: 6px;
+  padding: 6px;
 }
 
 .outfit-category-jump .research-section-tab {
   min-height: 36px;
-  padding: 5px 9px;
+  padding: 5px 8px;
   text-decoration: none;
+  font-size: 0.82rem;
 }
 
 .outfit-category-jump .research-section-tab strong {
@@ -3067,8 +3087,9 @@ body[data-research-section="outfit"] .research-candidate-grid {
 
 .prompt-guide-preview-cover img {
   padding: 0;
-  object-fit: cover;
-  object-position: top center;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
 }
 
 .prompt-guide-preview-wide {

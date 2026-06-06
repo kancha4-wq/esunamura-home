@@ -12,37 +12,37 @@
   const sectionCopy = {
     hairstyle: {
       ja: {
-        title: "SDXL 髪型プロンプト検証 Vol.1 + Vol.1.1",
-        lead: "髪型タグの比較に、自然文で髪型を変える追加検証 Vol.1.1 を加えました。候補画像とプロンプトを1件ずつ確認できます。"
+        title: "SDXL 髪型プロンプト検証",
+        lead: "髪型タグの比較に、自然文で髪型を変える追加検証を加えました。候補画像とプロンプトを1件ずつ確認できます。"
       },
       en: {
-        title: "SDXL Hairstyle Prompt Guide Vol.1 + Vol.1.1",
-        lead: "This page adds Vol.1.1 natural-language hairstyle control to the original hairstyle tag comparison. Check each candidate image together with its prompt notes."
+        title: "SDXL Hairstyle Prompt Guide",
+        lead: "This page adds natural-language hairstyle control to the original hairstyle tag comparison. Check each candidate image together with its prompt notes."
       },
       zh: {
-        title: "SDXL 发型 Prompt 比较 Vol.1 + Vol.1.1",
-        lead: "在原有发型标签比较之外，加入了 Vol.1.1 自然语言发型控制验证。可以逐一查看候选图像与对应的 prompt 记录。"
+        title: "SDXL 发型 Prompt 比较",
+        lead: "在原有发型标签比较之外，加入了自然语言发型控制验证。可以逐一查看候选图像与对应的 prompt 记录。"
       },
       ko: {
-        title: "SDXL 헤어스타일 프롬프트 비교 Vol.1 + Vol.1.1",
-        lead: "기존 헤어스타일 태그 비교에 Vol.1.1 자연어 헤어스타일 제어 검증을 더했습니다. 후보 이미지와 프롬프트 기록을 하나씩 확인할 수 있습니다."
+        title: "SDXL 헤어스타일 프롬프트 비교",
+        lead: "기존 헤어스타일 태그 비교에 자연어 헤어스타일 제어 검증을 더했습니다. 후보 이미지와 프롬프트 기록을 하나씩 확인할 수 있습니다."
       }
     },
     hairstyle_vol1_1: {
       ja: {
-        title: "SDXL 髪型プロンプト検証 Vol.1.1｜自然文で髪型を変える",
+        title: "自然文で髪型を変える追加検証",
         lead: "髪型タグに自然文の指示を重ね、キャラクター性を保ちながら髪型・前髪・髪色の印象をどこまで動かせるかを確認した追加検証です。生成結果に出た髪型のズレや、頭切れ・髪切れが残る例も含めて、結果ベースで整理しています。"
       },
       en: {
-        title: "SDXL Hairstyle Prompt Test Vol.1.1 | Natural-Language Control",
+        title: "Natural-Language Hairstyle Control Test",
         lead: "An additional test that layers natural-language instructions onto hairstyle prompts, checking how far hairstyle, bangs, and hair-color impressions can shift while keeping the character identity readable."
       },
       zh: {
-        title: "SDXL 发型 Prompt 验证 Vol.1.1｜自然语言控制",
+        title: "自然语言发型控制追加验证",
         lead: "这是一组追加验证：在发型标签上叠加自然语言指示，观察在保持角色辨识度的同时，发型、刘海与发色印象能变化到什么程度。"
       },
       ko: {
-        title: "SDXL 헤어스타일 프롬프트 검증 Vol.1.1｜자연어 제어",
+        title: "자연어 헤어스타일 제어 추가 검증",
         lead: "헤어스타일 태그에 자연어 지시를 더해, 캐릭터성을 유지하면서 헤어스타일・앞머리・헤어 컬러 인상이 어디까지 달라지는지 확인한 추가 검증입니다."
       }
     },
@@ -335,7 +335,7 @@
     eyes: "SDXL / illustriousXL 系モデル向けの目プロンプト検証ページです。\nジト目、猫目、大きい目、小さい目、瞳、ハイライト表現などを比較していきます。",
     expression: "SDXL / illustriousXL 系モデル向けの表情プロンプト検証ページです。\n無表情、笑顔、困り顔、怒り顔、照れ顔などの表情差を比較しています。",
     background: "SDXL / illustriousXL 系モデル向けの背景プロンプト検証をまとめました。\n京都風、和風町並み、温泉旅館、海辺、リゾートなどの背景表現を比較しています。",
-    "prompt-guide-pack": "えすなむら研究室のSDXL Prompt Guide Pack Vol.1.1です。\n髪型、前髪、髪色、目、表情、背景プロンプトに、自然文髪型プロンプト49件を加えてTXT / CSV / Excel形式でまとめています。"
+    "prompt-guide-pack": "えすなむら研究室のSDXL Prompt Guide Pack Vol.1.2です。\n髪型、前髪、髪色、目、表情、背景、服装プロンプトをTXT / CSV / Excel形式でまとめています。服装プロンプト204件を追加しました。"
   };
 
   const pageSectionGroups = {
@@ -349,10 +349,10 @@
   const sectionTabLabels = {
     hairstyle: {
       hairstyle_vol1_1: {
-        ja: "Vol.1.1 自然文",
-        en: "Vol.1.1 Natural",
-        zh: "Vol.1.1 自然语言",
-        ko: "Vol.1.1 자연어"
+        ja: "自然文",
+        en: "Natural Text",
+        zh: "自然语言",
+        ko: "자연어"
       },
       hairstyle_test25: {
         ja: "基本髪型",
