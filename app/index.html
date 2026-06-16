@@ -270,6 +270,7 @@
     .tab-btn{padding:10px 11px;font-size:12.5px}
   }
 </style>
+<script src="../assets/js/analytics-loader.js" data-cloudflare-beacon-token="eb8b24f9326c49d0b24bef451eed7971"></script>
 </head>
 <body>
 
@@ -640,6 +641,27 @@
     });
   });
 })();
+</script>
+<script>
+  // X CTA など外部リンクのクリックを GA4 に送る（解析ローダー読込時のみ）
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest('a[href]');
+    if (!a) return;
+    var href = a.getAttribute('href') || '';
+    var isX = href.indexOf('x.com') !== -1 || href.indexOf('twitter.com') !== -1;
+    if (!isX) return;
+    if (typeof window.gtag !== 'function') return;
+    window.gtag('event', 'click', {
+      link_url: href,
+      link_domain: 'x.com',
+      link_text: (a.textContent || '').trim().slice(0, 80),
+      link_destination: 'x_cta',
+      link_area: 'app-lp',
+      outbound: true,
+      transport_type: 'beacon',
+      page_url: location.href
+    });
+  }, true);
 </script>
 </body>
 </html>
