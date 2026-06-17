@@ -95,13 +95,22 @@
           html:not([lang="ja"]) .hub-app-row{display:none}
           .hub-app-row{margin-top:2px}
           .hub-route-app{
+            position:relative;
             border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);
             background:linear-gradient(135deg, rgba(37,52,80,.9), rgba(20,22,28,.94)), rgba(28,25,24,.9);
           }
           .hub-route-app .eyebrow{color:#9fc0ee}
+          .hub-app-logo{position:absolute;top:22px;right:22px;width:72px;height:72px;border-radius:16px;
+            box-shadow:0 6px 18px rgba(0,0,0,.35);}
+          .hub-route-app h2{padding-right:88px}
+          @media(max-width:560px){
+            .hub-app-logo{width:56px;height:56px;top:18px;right:18px}
+            .hub-route-app h2{padding-right:70px}
+          }
         </style>
         <section class="hub-app-row" aria-label="開発中アプリ">
           <a class="hub-mini-card hub-route-app" href="app/" data-analytics-event="app_click" data-analytics-link="home-card-app" data-analytics-area="home-route-grid">
+            <img class="hub-app-logo" src="app/assets/app-icon-512.png" alt="同人書籍ビューア アイコン" width="72" height="72" decoding="async">
             <p class="eyebrow">開発中アプリ</p>
             <h2>同人書籍ビューア</h2>
             <p>購入済みの同人漫画・同人小説、EPUB、PDF などを Android 端末で読みやすく管理するビューアを開発中です。漫画も、読む本も。これひとつ。クローズドテストに向けて準備中。</p>
