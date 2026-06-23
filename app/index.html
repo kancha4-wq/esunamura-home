@@ -147,6 +147,8 @@
   .phone-notch::after{content:"";position:absolute;top:5px;left:50%;transform:translateX(-50%);
     width:7px;height:7px;border-radius:50%;background:#2a2d31}
   .phone-screen img{display:block;width:100%;border:0}
+  /* ヒーローの2枚スマホは縦横比を揃えて高さを統一(右EPUBが縦長で不揃い=中央ズレに見えるのを解消) */
+  .hero-duo .phone-screen img{aspect-ratio:1080 / 2102;object-fit:cover}
 
   /* SS上の吹き出し注釈（チェックボックス→説明） */
   .cap-wrap{position:relative;display:block;width:100%;max-width:330px;margin:20px auto 6px}
