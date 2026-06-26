@@ -100,6 +100,8 @@
   }
   .cta:hover{transform:translateY(-1px);box-shadow:0 9px 22px rgba(59,120,184,.34)}
   .cta.ghost{background:#fff;color:var(--accent-ink);border:1.5px solid #cddcea;box-shadow:none}
+  .cta.x{background:#000;color:#fff;box-shadow:0 6px 18px rgba(0,0,0,.22)}
+  .cta.x:hover{box-shadow:0 9px 22px rgba(0,0,0,.30)}
 
   /* feature chips */
   .chips{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:8px}
@@ -305,6 +307,7 @@
     <p style="margin:0 0 12px;font-weight:700">ひと足先に、Windows版（PC体験版）を無料配布中！</p>
     <a class="cta" href="https://booth.pm/ja/items/8522856" target="_blank" rel="noopener">Windows版を無料ダウンロード（BOOTH）</a>
     <a class="cta ghost" href="https://x.com/esuna_4649/status/2066098351804920247" target="_blank" rel="noopener">開発状況をXで見る｜フォローで公開をお知らせ</a>
+    <a class="cta x" href="https://x.com/intent/post" rel="noopener" onclick="return shareApp(event)">𝕏 でシェア</a>
     <p class="small" style="margin-top:10px">※Windows 10 / 11対応・無料の先行Preview版。Android版のリリース時期はXでお知らせします。</p>
     <div class="hero-duo">
       <div class="phone-frame"><div class="phone-screen"><div class="phone-notch"></div><img src="assets/manga_panels.jpg" alt="漫画ビューア（コマ割りページ）"></div></div>
@@ -614,6 +617,7 @@
     <p style="margin:12px 0 8px"><span class="soon">Android版は近日公開／Windows版（PC体験版）は無料配布中</span></p>
     <a class="cta" href="https://booth.pm/ja/items/8522856" target="_blank" rel="noopener" style="margin-top:6px">Windows版を無料ダウンロード（BOOTH）</a>
     <a class="cta ghost" href="https://x.com/esuna_4649/status/2066098351804920247" target="_blank" rel="noopener" style="margin-top:6px">開発状況をXで見る｜フォローで公開をお知らせ</a>
+    <a class="cta x" href="https://x.com/intent/post" rel="noopener" onclick="return shareApp(event)" style="margin-top:6px">𝕏 でシェア</a>
     <p class="small" style="margin-top:12px">ご意見・不具合報告・Android版テスト参加は <a href="https://docs.google.com/forms/d/e/1FAIpQLSeY3DJLreYPvc20ZeEOkn238rYq2ojWfWwEZzcprUYQXo0O8A/viewform" target="_blank" rel="noopener" style="color:var(--accent)">こちらのフォーム</a> から。</p>
   </div>
 </section>
@@ -627,6 +631,22 @@
   <a href="/app/privacy/" style="color:inherit;text-decoration:underline">プライバシーポリシー</a>
 </footer>
 
+<script>
+// 「𝕏 でシェア」ボタン：あらかじめ文・URL・ハッシュタグを入れたXの投稿画面を開く（Web Intent）
+function shareApp(e){
+  if (e) e.preventDefault();
+  var text = '漫画・小説を“本棚”で読む・聴くPCソフト「同人書籍ビューア」PC体験版が無料で試せます📖🔊';
+  var url  = 'https://esunamura.com/app/';
+  var tags = '同人書籍ビューア,自炊,フリーソフト';
+  var via  = 'esuna_4649';
+  var intent = 'https://x.com/intent/post?text=' + encodeURIComponent(text)
+    + '&url=' + encodeURIComponent(url)
+    + '&hashtags=' + encodeURIComponent(tags)
+    + '&via=' + encodeURIComponent(via);
+  window.open(intent, '_blank', 'noopener,width=600,height=600');
+  return false;
+}
+</script>
 <script>
 (function(){
   var btns = Array.prototype.slice.call(document.querySelectorAll('.tab-btn'));
