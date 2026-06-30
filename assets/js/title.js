@@ -86,7 +86,7 @@
 
   const shortTranslations = {
     "kinpatsu-miko-isekai": {
-      summary: { en: "A story-style isekai CG set: from inn-side daily life to town exploration and an unavoidable calamity, 300 high-res images, plus a free 148-image trial.", zh: "故事感异世界CG集：从旅店日常到街区探索，再到无法回避的“灾难”，本篇300张高分辨率。＋免费体验版148张。", ko: "이야기형 이세계 CG집: 여관에서의 일상부터 거리 탐색, 피할 수 없는 ‘재난’까지, 본편 300장 고해상도. ＋무료 체험판 148장." },
+      summary: { en: "A story-style isekai CG set: from inn-side daily life to town exploration and an unavoidable calamity. 448 high-res images in total (300 main + 148 also viewable in the free trial).", zh: "故事感异世界CG集：从旅店日常到街区探索，再到无法回避的“灾难”。全448张高分辨率（本篇300张＋体验版也可观看的148张）。", ko: "이야기형 이세계 CG집: 여관에서의 일상부터 거리 탐색, 피할 수 없는 ‘재난’까지. 총 448장 고해상도(본편 300장＋체험판에서도 볼 수 있는 148장)." },
       format: { en: "Daily life, exploration, calamity, afterglow", zh: "日常 / 探索 / 灾难 / 余韵", ko: "일상 / 탐색 / 재난 / 여운" },
       focus: { en: "Isekai inn / Town exploration / Story format", zh: "异世界旅店 / 街区探索 / 故事形式", ko: "이세계 여관 / 거리 탐색 / 이야기 구성" }
     },
@@ -142,9 +142,9 @@ A blonde-haired shrine maiden settles into a softly lit inn and, in a place wher
 
 Steam rising from a cup, old bookshelves, paper lanterns swaying in the night wind. From a gentle everyday rhythm to exploring an unknown town, and then an unavoidable "calamity," the work follows the events she meets along the way, drawn one image at a time like reading through a story.
 
-The main set contains 300 high-resolution images, composed in the flow of "daily life, exploration, calamity, afterglow," so it reads almost like an illustrated tale.
+In total the collection contains 448 high-resolution images — 300 main images plus the 148 images you can also preview in the free trial — composed in the flow of "daily life, exploration, calamity, afterglow," so it reads almost like an illustrated tale.
 
-The 148 images in the free trial are not included in the main set at all (zero overlap), so the trial works as a bonus. Together, the trial and the main set come to 448 images.`
+Everything you can see in the free trial is included here as well, so you can enjoy all 448 images in a single collection.`
     },
     "eroboxin-akane": {
       en: `Akane is a girl whose composure has been shaken by the strange drug Erobokishin 4649.
@@ -615,12 +615,12 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
 湯気の立つカップ、古い書架、夜風に揺れる提灯。やわらかな日常から、未知の街への探索、そして避けては通れない“災難”へ――。旅の途中で彼女が出会っていく出来事を、一枚一枚、物語を読み進めるように描きました。
 
 【収録内容】
-・本編 全300枚（高解像度イラスト集）
+・全448枚（高解像度イラスト集）＝本編300枚＋無料体験版でも見られる148枚
 ・「日常 → 探索 → 災難 → 余韻」の流れで構成した、読み物感覚のCG集
 ・宿屋・街並み・夜の灯りなど、作り込んだ異世界の情景とともにお届け
 
-【体験版について】
-無料体験版の148枚は、本編300枚には1枚も含まれていません（重複ゼロ）。体験版＋本編をあわせると、全448枚をまるごとお楽しみいただけます。
+【ボリュームについて】
+無料体験版でご覧いただける148枚もすべて含めた、全448枚の大ボリューム。本編300枚に加えて、体験版の148枚もまるごと収録しています。
 
 物語として最後まで楽しめる、異世界スローライフ＆アドベンチャー。金髪巫女が異世界で辿る顛末を、どうぞ見届けてください。`,
     "school-legs": `制服姿の少女たちの通学風景や、やわらかな光の中で見せる美脚・足元の表情をまとめたAIイラスト集です。

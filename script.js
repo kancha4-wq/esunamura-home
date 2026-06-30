@@ -237,8 +237,8 @@
   {
     title: { ja: "金髪巫女、異世界へ / Blonde Shrine Maiden, To Another World", en: "Blonde Shrine Maiden, To Another World / 金髪巫女、異世界へ" },
     slug: "blonde-shrine-maiden-isekai",
-    image: "0501_改修資料/kinpatsu-miko-isekai/thumb.jpg",
-    thumbnail: "0501_改修資料/kinpatsu-miko-isekai/thumb.jpg",
+    image: "0501_改修資料/kinpatsu-miko-isekai/thumb.jpg?v=448",
+    thumbnail: "0501_改修資料/kinpatsu-miko-isekai/thumb.jpg?v=448",
     imageWidth: 560,
     imageHeight: 420,
     links: {
@@ -267,10 +267,10 @@ const promptcomPanels = document.querySelectorAll("[data-promptcom-panel]");
 
 const workDescriptions = {
   "blonde-shrine-maiden-isekai": {
-    ja: "気がつくと見知らぬ異世界。灯りのともる宿での日常から、街の探索、そして“災難”へ。旅の出来事を物語のように描いた本編300枚の高解像度イラスト集です。＋無料体験版148枚。",
-    en: "A blonde shrine maiden wakes in another world. From inn-side daily life to town exploration and an unavoidable calamity, told like a story across 300 high-resolution images. Plus a free 148-image trial.",
-    zh: "金发巫女醒来时已身处异世界。从旅店日常到街区探索，再到无法回避的“灾难”，以故事感呈现的本篇300张高分辨率插画集。＋免费体验版148张。",
-    ko: "정신을 차리니 낯선 이세계. 등불이 켜진 여관에서의 일상부터 거리 탐색, 그리고 피할 수 없는 ‘재난’까지. 여행의 사건을 이야기처럼 그린 본편 300장 고해상도 일러스트집입니다. ＋무료 체험판 148장."
+    ja: "気がつくと見知らぬ異世界。灯りのともる宿での日常から、街の探索、そして“災難”へ。旅の出来事を物語のように描いた、全448枚（本編300枚＋無料体験版148枚）の高解像度イラスト集です。",
+    en: "A blonde shrine maiden wakes in another world. From inn-side daily life to town exploration and an unavoidable calamity, told like a story across 448 high-resolution images in total (300 main + 148 also in the free trial).",
+    zh: "金发巫女醒来时已身处异世界。从旅店日常到街区探索，再到无法回避的“灾难”，以故事感呈现的全448张高分辨率插画集（本篇300张＋体验版也可观看的148张）。",
+    ko: "정신을 차리니 낯선 이세계. 등불이 켜진 여관에서의 일상부터 거리 탐색, 그리고 피할 수 없는 ‘재난’까지. 여행의 사건을 이야기처럼 그린 총 448장 고해상도 일러스트집입니다(본편 300장＋체험판에서도 볼 수 있는 148장)."
   },
   "satogaeri": {
     ja: "田舎の夏、幼馴染、覗き見感。帰省先で距離が少しずつ変わっていく流れを描く作品。",
@@ -399,7 +399,7 @@ const workTitleTranslations = {
 
 const workArchiveMeta = {
   "blonde-shrine-maiden-isekai": {
-    count: { ja: "300枚収録", en: "300 images", zh: "收录300张", ko: "300장 수록" },
+    count: { ja: "448枚収録", en: "448 images", zh: "收录448张", ko: "448장 수록" },
     quality: "4K",
     series: { ja: "異世界ストーリー", en: "Isekai Story", zh: "异世界故事", ko: "이세계 스토리" },
     tags: { ja: ["異世界", "巫女"], en: ["Isekai", "Shrine maiden"], zh: ["异世界", "巫女"], ko: ["이세계", "무녀"] }

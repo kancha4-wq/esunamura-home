@@ -499,12 +499,12 @@ The images move through morning streets, stairs, classrooms, and small daily mom
     folder: "kinpatsu-miko-isekai",
     title: { ja: "金髪巫女、異世界へ" },
     series: "異世界ストーリー",
-    cover: "0501_改修資料/kinpatsu-miko-isekai/cover.jpg",
+    cover: "0501_改修資料/kinpatsu-miko-isekai/cover.jpg?v=448",
     samples: [],
-    count: "300枚",
+    count: "448枚",
     format: "日常 → 探索 → 災難 → 余韻",
     focus: "異世界の宿 / 街の探索 / 物語仕立て",
-    summary: "気がつくと見知らぬ異世界。灯りのともる宿で過ごす日常から、街の探索、そして“災難”へ。旅の出来事を物語のように描いた本編300枚の高解像度イラスト集。＋無料体験版148枚。",
+    summary: "気がつくと見知らぬ異世界。灯りのともる宿で過ごす日常から、街の探索、そして“災難”へ。旅の出来事を物語のように描いた、全448枚（本編300枚＋無料体験版148枚）の高解像度イラスト集。",
     description: {
       ja: `気がつくと、そこは見知らぬ異世界――。
 
@@ -512,14 +512,14 @@ The images move through morning streets, stairs, classrooms, and small daily mom
 
 湯気の立つカップ、古い書架、夜風に揺れる提灯。やわらかな日常から、未知の街への探索、そして避けては通れない“災難”へ――。旅の途中で彼女が出会っていく出来事を、一枚一枚、物語を読み進めるように描きました。
 
-本編は全300枚（高解像度イラスト集）。「日常 → 探索 → 災難 → 余韻」の流れで構成した、読み物感覚のCG集です。
+本編300枚に、無料体験版でもご覧いただける148枚を加えた、全448枚の大ボリューム（高解像度イラスト集）。「日常 → 探索 → 災難 → 余韻」の流れで構成した、読み物感覚のCG集です。
 
-無料体験版の148枚は本編に1枚も含まれていません（重複ゼロ）。体験版＋本編をあわせると全448枚をお楽しみいただけます。`,
+体験版でご覧いただける絵もすべて本編に収録。全448枚をまるごとお楽しみいただけます。`,
       en: `She wakes up in an unfamiliar other world. A blonde-haired shrine maiden settles into a softly lit inn and begins a new daily life in a place where she knows no one.
 
 Steam rising from a cup, old bookshelves, paper lanterns swaying in the night wind. From a gentle everyday rhythm to exploring an unknown town, and then an unavoidable "calamity," the work follows the events she meets like reading through a story.
 
-The main set contains 300 high-resolution images, arranged as a readable CG collection in the flow of "daily life, exploration, calamity, afterglow." The 148 free-trial images are not included in the main set (zero overlap); together they total 448 images.`
+In total the collection contains 448 high-resolution images — 300 main images plus the 148 images you can also preview in the free trial — arranged as a readable CG collection in the flow of "daily life, exploration, calamity, afterglow."`
     },
     phases: ["日常", "探索", "災難", "余韻"],
     tags: ["異世界", "巫女", "金髪", "ストーリー重視", "大ボリューム"],
