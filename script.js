@@ -20,7 +20,6 @@
     imageWidth: 4096,
     imageHeight: 2872,
     links: {
-      BOOTH: "https://esunamura.booth.pm/items/8111016",
       pictSPACE: "https://pictspace.net/items/manage_detail/838029",
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_743522/",
       PromptCom: "https://prompt-com.com/ja/s/024ed546-b71b-4cda-afa4-5d2548f86dbd"
@@ -34,7 +33,6 @@
     imageWidth: 1000,
     imageHeight: 700,
     links: {
-      BOOTH: "https://esunamura.booth.pm/items/8111107",
       pictSPACE: "https://pictspace.net/items/manage_detail/838048",
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_744243/",
       PromptCom: "https://prompt-com.com/ja/s/d76883e7-c094-465c-9874-2afb7379e2f0"
@@ -48,7 +46,6 @@
     imageWidth: 1000,
     imageHeight: 700,
     links: {
-      BOOTH: "https://esunamura.booth.pm/items/8116002",
       pictSPACE: "https://pictspace.net/items/manage_detail/837289",
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_745411/",
       DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01591984.html",
@@ -63,7 +60,6 @@
     imageWidth: 1260,
     imageHeight: 945,
     links: {
-      BOOTH: "https://esunamura.booth.pm/items/8120897",
       pictSPACE: "https://pictspace.net/items/manage_detail/838061",
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_745765/",
       DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01591976.html",
@@ -78,7 +74,6 @@
     imageWidth: 1375,
     imageHeight: 963,
     links: {
-      BOOTH: "https://esunamura.booth.pm/items/8120906",
       pictSPACE: "https://pictspace.net/items/manage_detail/838067",
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_746695/",
       DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01591986.html",
@@ -94,7 +89,6 @@
     imageWidth: 2048,
     imageHeight: 1536,
     links: {
-      BOOTH: "https://esunamura.booth.pm/items/8120812",
       pictSPACE: "https://pictspace.net/items/manage_detail/838060",
       DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01605513.html",
       PromptCom: "https://prompt-com.com/ja/s/d2adcab1-91eb-491d-b1d8-0133e0c9b04e"
@@ -108,7 +102,6 @@
     imageWidth: 2867,
     imageHeight: 2867,
     links: {
-      BOOTH: "https://esunamura.booth.pm/items/8139646",
       pictSPACE: "https://pictspace.net/items/manage_detail/838076",
       PromptCom: "https://prompt-com.com/ja/p/f2af63ce-b2f8-4c6d-ad0b-8340319531c4"
     }
@@ -121,7 +114,6 @@
     imageWidth: 1750,
     imageHeight: 1225,
     links: {
-      BOOTH: "https://esunamura.booth.pm/items/8139630",
       pictSPACE: "https://pictspace.net/items/manage_detail/838081",
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_751890/",
       DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01601145.html",
@@ -137,7 +129,6 @@
     imageWidth: 1000,
     imageHeight: 700,
     links: {
-      BOOTH: "https://esunamura.booth.pm/items/8168871",
       pictSPACE: "https://pictspace.net/items/manage_detail/838092",
       DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01604402.html",
       PromptCom: "https://prompt-com.com/ja/s/4713754c-96db-405c-aa16-d6abfc873421"
@@ -151,7 +142,6 @@
     imageWidth: 560,
     imageHeight: 420,
     links: {
-      BOOTH: "https://esunamura.booth.pm/items/8203343",
       pictSPACE: "https://pictspace.net/items/manage_detail/845880",
       DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01628452.html",
       PromptCom: "https://prompt-com.com/ja/s/f4785b95-8fb8-4330-a96e-5487eaf39887"
@@ -165,7 +155,6 @@
     imageWidth: 1260,
     imageHeight: 945,
     links: {
-      BOOTH: "https://esunamura.booth.pm/items/8238754",
       pictSPACE: "https://pictspace.net/items/manage_detail/851348",
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_758170/",
       DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01612902.html",
@@ -200,7 +189,6 @@
     imageWidth: 1000,
     imageHeight: 1000,
     links: {
-      BOOTH: "https://esunamura.booth.pm/items/8284888",
       pictSPACE: "https://pictspace.net/items/manage_detail/858788",
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_763759/",
       DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01622810.html",
@@ -231,7 +219,7 @@
     imageWidth: 1024,
     imageHeight: 1024,
     links: {
-      BOOTH: "https://esunamura.booth.pm/items/8412638"
+      PromptCom: "https://prompt-com.com/ja/s/4cc0d777-d83d-4c60-9df1-59feff6d340d"
     }
   },
   {
