@@ -66,6 +66,7 @@
   };
 
   const titleTranslations = {
+    "kinpatsu-miko-isekai": { en: "Blonde Shrine Maiden, To Another World", zh: "金发巫女、异世界", ko: "금발 무녀, 이세계로" },
     "satogaeri": { en: "Satogaeri", zh: "返乡", ko: "귀향" },
     "ancient-capital-beauty": { en: "Ancient Capital Beauty", zh: "古都美人", ko: "고도미인" },
     "hikagami": { en: "Hikagami", zh: "膝后", ko: "오금" },
@@ -84,6 +85,11 @@
   };
 
   const shortTranslations = {
+    "kinpatsu-miko-isekai": {
+      summary: { en: "A story-style isekai CG set: from inn-side daily life to town exploration and an unavoidable calamity, 300 high-res images, plus a free 148-image trial.", zh: "故事感异世界CG集：从旅店日常到街区探索，再到无法回避的“灾难”，本篇300张高分辨率。＋免费体验版148张。", ko: "이야기형 이세계 CG집: 여관에서의 일상부터 거리 탐색, 피할 수 없는 ‘재난’까지, 본편 300장 고해상도. ＋무료 체험판 148장." },
+      format: { en: "Daily life, exploration, calamity, afterglow", zh: "日常 / 探索 / 灾难 / 余韵", ko: "일상 / 탐색 / 재난 / 여운" },
+      focus: { en: "Isekai inn / Town exploration / Story format", zh: "异世界旅店 / 街区探索 / 故事形式", ko: "이세계 여관 / 거리 탐색 / 이야기 구성" }
+    },
     "eroboxin-akane": {
       summary: {
         en: "A luxury resort-hotel story where mood and distance shift through the night pool, lounge, bathhouse, and bedroom.",
@@ -129,6 +135,17 @@
   };
 
   const longDescriptionTranslations = {
+    "kinpatsu-miko-isekai": {
+      en: `She wakes up in an unfamiliar other world.
+
+A blonde-haired shrine maiden settles into a softly lit inn and, in a place where she knows no one, begins a new daily life full of small uncertainties.
+
+Steam rising from a cup, old bookshelves, paper lanterns swaying in the night wind. From a gentle everyday rhythm to exploring an unknown town, and then an unavoidable "calamity," the work follows the events she meets along the way, drawn one image at a time like reading through a story.
+
+The main set contains 300 high-resolution images, composed in the flow of "daily life, exploration, calamity, afterglow," so it reads almost like an illustrated tale.
+
+The 148 images in the free trial are not included in the main set at all (zero overlap), so the trial works as a bonus. Together, the trial and the main set come to 448 images.`
+    },
     "eroboxin-akane": {
       en: `Akane is a girl whose composure has been shaken by the strange drug Erobokishin 4649.
 
@@ -591,6 +608,21 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
   };
 
   const officialJapaneseDescriptions = {
+    "kinpatsu-miko-isekai": `気がつくと、そこは見知らぬ異世界――。
+
+金色の髪をした巫女の少女は、灯りのともる宿に身を寄せ、右も左もわからない土地で、戸惑いながらも新しい日々を過ごしはじめます。
+
+湯気の立つカップ、古い書架、夜風に揺れる提灯。やわらかな日常から、未知の街への探索、そして避けては通れない“災難”へ――。旅の途中で彼女が出会っていく出来事を、一枚一枚、物語を読み進めるように描きました。
+
+【収録内容】
+・本編 全300枚（高解像度イラスト集）
+・「日常 → 探索 → 災難 → 余韻」の流れで構成した、読み物感覚のCG集
+・宿屋・街並み・夜の灯りなど、作り込んだ異世界の情景とともにお届け
+
+【体験版について】
+無料体験版の148枚は、本編300枚には1枚も含まれていません（重複ゼロ）。体験版＋本編をあわせると、全448枚をまるごとお楽しみいただけます。
+
+物語として最後まで楽しめる、異世界スローライフ＆アドベンチャー。金髪巫女が異世界で辿る顛末を、どうぞ見届けてください。`,
     "school-legs": `制服姿の少女たちの通学風景や、やわらかな光の中で見せる美脚・足元の表情をまとめたAIイラスト集です。
 
 朝の通学路、階段、教室、日常の一場面などを中心に、足裏や脚線美をテーマにしたアートコレクションとして構成しました。
@@ -743,6 +775,12 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
   };
 
   const labelTranslations = {
+    "異世界": { zh: "异世界", ko: "이세계" },
+    "金髪": { zh: "金发", ko: "금발" },
+    "探索": { zh: "探索", ko: "탐색" },
+    "災難": { zh: "灾难", ko: "재난" },
+    "余韻": { zh: "余韵", ko: "여운" },
+    "大ボリューム": { zh: "大容量", ko: "대용량" },
     "キッチン": { zh: "厨房", ko: "주방" },
     "居間": { zh: "客厅", ko: "거실" },
     "お風呂": { zh: "浴室", ko: "욕실" },
@@ -1240,7 +1278,7 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
         </aside>
       </section>
 
-      <section class="gallery-section" id="samples">
+      ${(work.samples && work.samples.length) ? `<section class="gallery-section" id="samples">
         <p class="eyebrow">Samples</p>
         <h2>${uiText("gallery")}</h2>
         <div class="sample-gallery">
@@ -1250,7 +1288,7 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
             </a>
           `).join("")}
         </div>
-      </section>
+      </section>` : ""}
 
       <section class="related-section">
         <p class="eyebrow">Series / Related</p>

@@ -233,6 +233,17 @@
     links: {
       BOOTH: "https://esunamura.booth.pm/items/8412638"
     }
+  },
+  {
+    title: { ja: "金髪巫女、異世界へ / Blonde Shrine Maiden, To Another World", en: "Blonde Shrine Maiden, To Another World / 金髪巫女、異世界へ" },
+    slug: "blonde-shrine-maiden-isekai",
+    image: "0501_改修資料/kinpatsu-miko-isekai/thumb.jpg",
+    thumbnail: "0501_改修資料/kinpatsu-miko-isekai/thumb.jpg",
+    imageWidth: 560,
+    imageHeight: 420,
+    links: {
+      PromptCom: "https://prompt-com.com/ja/p/fcea3420-06fc-4a52-b3ff-1cf4343f588b"
+    }
   }
 ];
 
@@ -255,6 +266,12 @@ const promptcomTabs = document.querySelectorAll("[data-promptcom-tab]");
 const promptcomPanels = document.querySelectorAll("[data-promptcom-panel]");
 
 const workDescriptions = {
+  "blonde-shrine-maiden-isekai": {
+    ja: "気がつくと見知らぬ異世界。灯りのともる宿での日常から、街の探索、そして“災難”へ。旅の出来事を物語のように描いた本編300枚の高解像度イラスト集です。＋無料体験版148枚。",
+    en: "A blonde shrine maiden wakes in another world. From inn-side daily life to town exploration and an unavoidable calamity, told like a story across 300 high-resolution images. Plus a free 148-image trial.",
+    zh: "金发巫女醒来时已身处异世界。从旅店日常到街区探索，再到无法回避的“灾难”，以故事感呈现的本篇300张高分辨率插画集。＋免费体验版148张。",
+    ko: "정신을 차리니 낯선 이세계. 등불이 켜진 여관에서의 일상부터 거리 탐색, 그리고 피할 수 없는 ‘재난’까지. 여행의 사건을 이야기처럼 그린 본편 300장 고해상도 일러스트집입니다. ＋무료 체험판 148장."
+  },
   "satogaeri": {
     ja: "田舎の夏、幼馴染、覗き見感。帰省先で距離が少しずつ変わっていく流れを描く作品。",
     en: "A countryside summer story where distance with a childhood friend gradually changes.",
@@ -360,6 +377,7 @@ const workDescriptions = {
 };
 
 const workTitleTranslations = {
+  "blonde-shrine-maiden-isekai": { zh: "金发巫女、异世界 / Blonde Shrine Maiden, To Another World", ko: "금발 무녀, 이세계로 / Blonde Shrine Maiden, To Another World" },
   "satogaeri": { zh: "返乡 / Satogaeri", ko: "귀향 / Satogaeri" },
   "ancient-capital-beauty": { zh: "古都美人 / Ancient Capital Beauty", ko: "고도미인 / Ancient Capital Beauty" },
   "hikagami": { zh: "膝后 / Hikagami", ko: "오금 / Hikagami" },
@@ -380,6 +398,12 @@ const workTitleTranslations = {
 };
 
 const workArchiveMeta = {
+  "blonde-shrine-maiden-isekai": {
+    count: { ja: "300枚収録", en: "300 images", zh: "收录300张", ko: "300장 수록" },
+    quality: "4K",
+    series: { ja: "異世界ストーリー", en: "Isekai Story", zh: "异世界故事", ko: "이세계 스토리" },
+    tags: { ja: ["異世界", "巫女"], en: ["Isekai", "Shrine maiden"], zh: ["异世界", "巫女"], ko: ["이세계", "무녀"] }
+  },
   "satogaeri": {
     count: { ja: "227枚収録", en: "227 images", zh: "收录227张", ko: "227장 수록" },
     quality: "4K",
@@ -494,6 +518,7 @@ const allAgesWorkSlugs = new Set([
 const pickupSlugs = ["erobokishin-4649", "blonde-shrine-maiden", "setouchi-omorashi-journey"];
 
 const detailPageBySlug = {
+  "blonde-shrine-maiden-isekai": "kinpatsu-miko-isekai",
   "satogaeri": "satogaeri",
   "hikagami": "hikagami",
   "setouchi-omorashi-journey": "setouchi-omorashi",
@@ -513,11 +538,12 @@ const detailPageBySlug = {
 };
 
 const newReleaseLabels = {
+  "blonde-shrine-maiden-isekai": "NEW / 2026.06",
   "swimsuit-hime-collection": "NEW / 2026.05",
   "kyoto-prompt-pack": "NEW / 2026.05"
 };
 
-const worksGridPrioritySlugs = ["hikagami-school-route"];
+const worksGridPrioritySlugs = ["blonde-shrine-maiden-isekai", "hikagami-school-route"];
 
 function ratingBadgeFor(work) {
   if (allAgesWorkSlugs.has(work.slug)) return null;

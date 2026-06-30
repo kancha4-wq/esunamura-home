@@ -493,6 +493,38 @@ The images move through morning streets, stairs, classrooms, and small daily mom
     tags: ["制服", "美脚", "足元", "通学", "日常", "アートコレクション"],
     salesLinks: saleLinkTemplate,
     related: ["hikagami-school", "hikagami"]
+  },
+  {
+    id: "kinpatsu-miko-isekai",
+    folder: "kinpatsu-miko-isekai",
+    title: { ja: "金髪巫女、異世界へ" },
+    series: "異世界ストーリー",
+    cover: "0501_改修資料/kinpatsu-miko-isekai/cover.jpg",
+    samples: [],
+    count: "300枚",
+    format: "日常 → 探索 → 災難 → 余韻",
+    focus: "異世界の宿 / 街の探索 / 物語仕立て",
+    summary: "気がつくと見知らぬ異世界。灯りのともる宿で過ごす日常から、街の探索、そして“災難”へ。旅の出来事を物語のように描いた本編300枚の高解像度イラスト集。＋無料体験版148枚。",
+    description: {
+      ja: `気がつくと、そこは見知らぬ異世界――。
+
+金色の髪をした巫女の少女は、灯りのともる宿に身を寄せ、右も左もわからない土地で、戸惑いながらも新しい日々を過ごしはじめます。
+
+湯気の立つカップ、古い書架、夜風に揺れる提灯。やわらかな日常から、未知の街への探索、そして避けては通れない“災難”へ――。旅の途中で彼女が出会っていく出来事を、一枚一枚、物語を読み進めるように描きました。
+
+本編は全300枚（高解像度イラスト集）。「日常 → 探索 → 災難 → 余韻」の流れで構成した、読み物感覚のCG集です。
+
+無料体験版の148枚は本編に1枚も含まれていません（重複ゼロ）。体験版＋本編をあわせると全448枚をお楽しみいただけます。`,
+      en: `She wakes up in an unfamiliar other world. A blonde-haired shrine maiden settles into a softly lit inn and begins a new daily life in a place where she knows no one.
+
+Steam rising from a cup, old bookshelves, paper lanterns swaying in the night wind. From a gentle everyday rhythm to exploring an unknown town, and then an unavoidable "calamity," the work follows the events she meets like reading through a story.
+
+The main set contains 300 high-resolution images, arranged as a readable CG collection in the flow of "daily life, exploration, calamity, afterglow." The 148 free-trial images are not included in the main set (zero overlap); together they total 448 images.`
+    },
+    phases: ["日常", "探索", "災難", "余韻"],
+    tags: ["異世界", "巫女", "金髪", "ストーリー重視", "大ボリューム"],
+    salesLinks: saleLinkTemplate,
+    related: ["kinpatsu-miko", "momoiro-baito", "eroboxin-akane"]
   }
 ];
 
@@ -593,6 +625,9 @@ const salesByWorkId = {
   "school-legs": {
     "Kindle JP": "https://www.amazon.co.jp/dp/B0GYMZZR4S",
     "Kindle US": "https://www.amazon.com/dp/B0GYMZZR4S"
+  },
+  "kinpatsu-miko-isekai": {
+    PromptCom: "https://prompt-com.com/ja/p/fcea3420-06fc-4a52-b3ff-1cf4343f588b"
   }
 };
 
