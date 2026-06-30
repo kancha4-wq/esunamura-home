@@ -209,20 +209,6 @@
     }
   },
   {
-    title: {
-      ja: "水着姫コレクション 〜X公開 CG 100枚まとめ〜",
-      en: "Swimsuit Princess Collection: 100 CG Archive"
-    },
-    slug: "swimsuit-hime-collection",
-    image: "0501_改修資料/水着姫コレクション/1_表紙/表紙.jpg",
-    thumbnail: "0501_改修資料/水着姫コレクション/1_表紙/表紙.jpg",
-    imageWidth: 1024,
-    imageHeight: 1024,
-    links: {
-      PromptCom: "https://prompt-com.com/ja/s/4cc0d777-d83d-4c60-9df1-59feff6d340d"
-    }
-  },
-  {
     title: { ja: "金髪巫女、異世界へ / Blonde Shrine Maiden, To Another World", en: "Blonde Shrine Maiden, To Another World / 金髪巫女、異世界へ" },
     slug: "blonde-shrine-maiden-isekai",
     image: "0501_改修資料/kinpatsu-miko-isekai/thumb.jpg?v=448",
@@ -255,10 +241,10 @@ const promptcomPanels = document.querySelectorAll("[data-promptcom-panel]");
 
 const workDescriptions = {
   "blonde-shrine-maiden-isekai": {
-    ja: "気がつくと見知らぬ異世界。灯りのともる宿での日常から、街の探索、そして“災難”へ。旅の出来事を物語のように描いた、全448枚（本編300枚＋無料体験版148枚）の高解像度イラスト集です。",
-    en: "A blonde shrine maiden wakes in another world. From inn-side daily life to town exploration and an unavoidable calamity, told like a story across 448 high-resolution images in total (300 main + 148 also in the free trial).",
-    zh: "金发巫女醒来时已身处异世界。从旅店日常到街区探索，再到无法回避的“灾难”，以故事感呈现的全448张高分辨率插画集（本篇300张＋体验版也可观看的148张）。",
-    ko: "정신을 차리니 낯선 이세계. 등불이 켜진 여관에서의 일상부터 거리 탐색, 그리고 피할 수 없는 ‘재난’까지. 여행의 사건을 이야기처럼 그린 총 448장 고해상도 일러스트집입니다(본편 300장＋체험판에서도 볼 수 있는 148장)."
+    ja: "気がつくと見知らぬ異世界。灯りのともる宿での日常から街の探索、そして“災難”へ。物語仕立ての全448枚（本編300枚＋体験版148枚）の高解像度イラスト集。DLsite／FANZA版に先がけPromptComで先行販売中。",
+    en: "A story-style isekai CG collection: from inn-side daily life to town exploration and an unavoidable calamity. 448 high-res images in total (300 main + 148 trial). Now on early release at PromptCom, ahead of the DLsite / FANZA editions.",
+    zh: "故事感异世界CG集：从旅店日常到街区探索，再到无法回避的“灾难”。全448张高分辨率（本篇300张＋体验版148张）。先于 DLsite／FANZA 版，在 PromptCom 先行发售中。",
+    ko: "이야기형 이세계 CG집: 여관에서의 일상부터 거리 탐색, 피할 수 없는 ‘재난’까지. 총 448장 고해상도(본편 300장＋체험판 148장). DLsite／FANZA 판에 앞서 PromptCom에서 선행 판매 중."
   },
   "satogaeri": {
     ja: "田舎の夏、幼馴染、覗き見感。帰省先で距離が少しずつ変わっていく流れを描く作品。",
@@ -350,12 +336,6 @@ const workDescriptions = {
     zh: "夜间泳池、顶层酒廊、大浴场、卧室。穿梭于高级度假酒店空间的作品。",
     ko: "나이트풀, 최상층 라운지, 대욕장, 침실. 고급 리조트 공간을 이동하는 작품."
   },
-  "swimsuit-hime-collection": {
-    ja: "Xに投稿していた水着イラストを100枚まとめた、高画質AI CGアーカイブです。",
-    en: "A 100-image high-resolution AI CG archive collecting swimsuit illustrations posted on X.",
-    zh: "收录曾发布于 X 的泳装插画，共100张的高画质 AI CG 档案。",
-    ko: "X에 올렸던 수영복 일러스트 100장을 모은 고화질 AI CG 아카이브입니다."
-  },
   "kyoto-prompt-pack": {
     ja: "研究室公開記念の無料Prompt Pack。SDXL / illustriousXL 系モデル向けの京都風・和風背景プロンプト検証素材です。",
     en: "A free research-linked Prompt Pack for SDXL / illustriousXL background prompt verification with Kyoto-inspired atmosphere.",
@@ -381,7 +361,6 @@ const workTitleTranslations = {
   "erobokishin-4649": { zh: "Erobokishin 4649", ko: "에로복신 4649" },
   "kindle-seifuku-bikyaku": { zh: "AI制服美腿插画集", ko: "AI 교복 미각 일러스트집" },
   "erobokishin-4649-akane": { zh: "Erobokishin 4649 Akane", ko: "에로복신 4649 아카네" },
-  "swimsuit-hime-collection": { zh: "泳装公主合集 / Swimsuit Princess Collection", ko: "수영복 공주 컬렉션 / Swimsuit Princess Collection" },
   "kyoto-prompt-pack": { zh: "Kyoto Atmosphere Prompt Pack Vol.1", ko: "Kyoto Atmosphere Prompt Pack Vol.1" }
 };
 
@@ -482,12 +461,6 @@ const workArchiveMeta = {
     series: { ja: "エロボキシン4649", en: "Erobokishin Series", zh: "Erobokishin系列", ko: "에로복신 시리즈" },
     tags: { ja: ["高級リゾート", "夜景"], en: ["Luxury resort", "Night view"], zh: ["高级度假", "夜景"], ko: ["고급 리조트", "야경"] }
   },
-  "swimsuit-hime-collection": {
-    count: { ja: "100枚収録", en: "100 images", zh: "收录100张", ko: "100장 수록" },
-    quality: "4K",
-    series: { ja: "X公開CGまとめ", en: "X CG Archive", zh: "X公开CG合集", ko: "X 공개 CG 모음" },
-    tags: { ja: ["水着", "姫"], en: ["Swimsuit", "Princess"], zh: ["泳装", "公主"], ko: ["수영복", "공주"] }
-  },
   "kyoto-prompt-pack": {
     count: { ja: "無料Prompt Pack", en: "Free Prompt Pack", zh: "免费Prompt Pack", ko: "무료 Prompt Pack" },
     quality: "SDXL",
@@ -497,7 +470,6 @@ const workArchiveMeta = {
 };
 
 const allAgesWorkSlugs = new Set([
-  "swimsuit-hime-collection",
   "kindle-seifuku-bikyaku",
   "hikagami-school-route",
   "hikagami"
@@ -521,13 +493,11 @@ const detailPageBySlug = {
   "erobokishin-4649": "eroboxin-4649",
   "kindle-seifuku-bikyaku": "school-legs",
   "erobokishin-4649-akane": "eroboxin-akane",
-  "swimsuit-hime-collection": "swimsuit-hime-collection",
   "kyoto-prompt-pack": "kyoto-prompt-pack/index.html"
 };
 
 const newReleaseLabels = {
   "blonde-shrine-maiden-isekai": "NEW / 2026.06",
-  "swimsuit-hime-collection": "NEW / 2026.05",
   "kyoto-prompt-pack": "NEW / 2026.05"
 };
 

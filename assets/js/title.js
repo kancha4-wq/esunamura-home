@@ -86,7 +86,7 @@
 
   const shortTranslations = {
     "kinpatsu-miko-isekai": {
-      summary: { en: "A story-style isekai CG set: from inn-side daily life to town exploration and an unavoidable calamity. 448 high-res images in total (300 main + 148 also viewable in the free trial).", zh: "故事感异世界CG集：从旅店日常到街区探索，再到无法回避的“灾难”。全448张高分辨率（本篇300张＋体验版也可观看的148张）。", ko: "이야기형 이세계 CG집: 여관에서의 일상부터 거리 탐색, 피할 수 없는 ‘재난’까지. 총 448장 고해상도(본편 300장＋체험판에서도 볼 수 있는 148장)." },
+      summary: { en: "A story-style isekai CG collection: from inn-side daily life to town exploration and an unavoidable calamity. 448 high-res images in total (300 main + 148 trial). Now on early release at PromptCom, ahead of the DLsite / FANZA editions.", zh: "故事感异世界CG集：从旅店日常到街区探索，再到无法回避的“灾难”。全448张高分辨率（本篇300张＋体验版148张）。先于 DLsite／FANZA 版，在 PromptCom 先行发售中。", ko: "이야기형 이세계 CG집: 여관에서의 일상부터 거리 탐색, 피할 수 없는 ‘재난’까지. 총 448장 고해상도(본편 300장＋체험판 148장). DLsite／FANZA 판에 앞서 PromptCom에서 선행 판매 중." },
       format: { en: "Daily life, exploration, calamity, afterglow", zh: "日常 / 探索 / 灾难 / 余韵", ko: "일상 / 탐색 / 재난 / 여운" },
       focus: { en: "Isekai inn / Town exploration / Story format", zh: "异世界旅店 / 街区探索 / 故事形式", ko: "이세계 여관 / 거리 탐색 / 이야기 구성" }
     },
@@ -136,15 +136,57 @@
 
   const longDescriptionTranslations = {
     "kinpatsu-miko-isekai": {
-      en: `She wakes up in an unfamiliar other world.
+      en: `This CG collection is also under sales review for DLsite and FANZA. On PromptCom it is available a step ahead, as an early-release edition.
 
-A blonde-haired shrine maiden settles into a softly lit inn and, in a place where she knows no one, begins a new daily life full of small uncertainties.
+A blonde-haired shrine maiden takes shelter at an inn in an unfamiliar other world and, amid her confusion, begins a new daily life — told as a story-style illustration collection.
 
-Steam rising from a cup, old bookshelves, paper lanterns swaying in the night wind. From a gentle everyday rhythm to exploring an unknown town, and then an unavoidable "calamity," the work follows the events she meets along the way, drawn one image at a time like reading through a story.
+From calm everyday moments to exploring the streets of the other world, and then an unavoidable "calamity." Together with the scenery of the other world — the inn, the townscape, the lights of night — it is composed so you read it one image at a time, like reading through a story.
 
-In total the collection contains 448 high-resolution images — 300 main images plus the 148 images you can also preview in the free trial — composed in the flow of "daily life, exploration, calamity, afterglow," so it reads almost like an illustrated tale.
+[Contents]
+- Main set: 300 images
+- Trial: 148 images (for the DLsite / FANZA editions)
+- Total: 448 images
+- High-resolution illustration collection
+- A story-style structure weaving together daily life, exploration, calamity, and afterglow
 
-Everything you can see in the free trial is included here as well, so you can enjoy all 448 images in a single collection.`
+[About the trial]
+The 148 trial images included here are not part of the 300 main images. There is no overlap with the main set, so you can enjoy all 448 images — trial plus main set — together.
+
+If you would rather see it now without waiting for the DLsite / FANZA editions, please check out the PromptCom early-release edition.`,
+      zh: `本作品是同时向 DLsite／FANZA 提交销售申请中的 CG 集。在 PromptCom 上先行一步，以先行发售版公开。
+
+金发的巫女少女栖身于陌生异世界的旅店，在困惑中开始全新的日常——是一部故事感的插画集。
+
+从平静的日常、异世界街区的探索，再到无法回避的“灾难”。伴随旅店、街景、夜晚灯火等异世界情景，以一张一张读下去、如同阅读故事般的流程构成。
+
+【收录内容】
+・本篇 全300张
+・体验版 148张 ※面向 DLsite／FANZA
+・合计448张
+・高分辨率插画集
+・交织日常、探索、灾难、余韵推进的故事感构成
+
+【关于体验版】
+随附的体验版148张，并不包含在本篇300张之中。与本篇没有重复，因此体验版＋本篇合计可欣赏全448张。
+
+不想等 DLsite／FANZA 版、希望抢先观看的朋友，欢迎查看 PromptCom 先行发售版。`,
+      ko: `본 작품은 DLsite／FANZA 용으로도 판매 신청 중인 CG집입니다. PromptCom에서는 한발 먼저 선행 판매판으로 공개하고 있습니다.
+
+금빛 머리의 무녀 소녀가 낯선 이세계의 여관에 몸을 의지하며, 당황하면서도 새로운 일상을 보내 가는 이야기형 일러스트집입니다.
+
+잔잔한 일상, 이세계 거리의 탐색, 그리고 피할 수 없는 ‘재난’까지――. 여관, 거리 풍경, 밤의 등불 등 이세계의 정경과 함께, 한 장 한 장 이야기를 읽어 나가듯한 흐름으로 구성했습니다.
+
+【수록 내용】
+・본편 전300장
+・체험판 148장 ※DLsite／FANZA용
+・합계448장
+・고해상도 일러스트집
+・일상, 탐색, 재난, 여운을 엮어 진행되는 이야기형 구성
+
+【체험판에 대하여】
+동봉된 체험판 148장은 본편 300장에는 포함되어 있지 않습니다. 본편과 중복이 없으므로, 체험판＋본편을 합쳐 전448장을 즐기실 수 있습니다.
+
+DLsite／FANZA 판을 기다리지 않고 먼저 보고 싶은 분은 꼭 PromptCom 선행 판매판을 확인해 주세요.`
     },
     "eroboxin-akane": {
       en: `Akane is a girl whose composure has been shaken by the strange drug Erobokishin 4649.
@@ -608,21 +650,23 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
   };
 
   const officialJapaneseDescriptions = {
-    "kinpatsu-miko-isekai": `気がつくと、そこは見知らぬ異世界――。
+    "kinpatsu-miko-isekai": `本作品は、DLsite／FANZA向けにも販売申請中のCG集です。PromptComでは一足先に、先行販売版として公開しています。
 
-金色の髪をした巫女の少女は、灯りのともる宿に身を寄せ、右も左もわからない土地で、戸惑いながらも新しい日々を過ごしはじめます。
+金色の髪をした巫女の少女が、見知らぬ異世界の宿に身を寄せ、戸惑いながらも新しい日々を過ごしていく物語仕立てのイラスト集です。
 
-湯気の立つカップ、古い書架、夜風に揺れる提灯。やわらかな日常から、未知の街への探索、そして避けては通れない“災難”へ――。旅の途中で彼女が出会っていく出来事を、一枚一枚、物語を読み進めるように描きました。
+穏やかな日常、異世界の街の探索、そして避けては通れない“災難”へ――。宿屋、街並み、夜の灯りなど、異世界の情景とともに、一枚一枚、物語を読み進めるような流れで構成しています。
 
 【収録内容】
-・全448枚（高解像度イラスト集）＝本編300枚＋無料体験版でも見られる148枚
-・「日常 → 探索 → 災難 → 余韻」の流れで構成した、読み物感覚のCG集
-・宿屋・街並み・夜の灯りなど、作り込んだ異世界の情景とともにお届け
+・本編 全300枚
+・体験版 148枚 ※DLsite／FANZA向け
+・合計448枚
+・高解像度イラスト集
+・日常、探索、災難、余韻を織り交ぜながら進む物語仕立ての構成
 
-【ボリュームについて】
-無料体験版でご覧いただける148枚もすべて含めた、全448枚の大ボリューム。本編300枚に加えて、体験版の148枚もまるごと収録しています。
+【体験版について】
+同梱している体験版148枚は、本編300枚には含まれていません。本編との重複はありませんので、体験版＋本編をあわせて全448枚をお楽しみいただけます。
 
-物語として最後まで楽しめる、異世界スローライフ＆アドベンチャー。金髪巫女が異世界で辿る顛末を、どうぞ見届けてください。`,
+DLsite／FANZA版を待たずに先に見たい方は、ぜひPromptCom先行販売版をご覧ください。`,
     "school-legs": `制服姿の少女たちの通学風景や、やわらかな光の中で見せる美脚・足元の表情をまとめたAIイラスト集です。
 
 朝の通学路、階段、教室、日常の一場面などを中心に、足裏や脚線美をテーマにしたアートコレクションとして構成しました。
@@ -1118,7 +1162,6 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
   }
 
   const allAgesWorkIds = new Set([
-    "swimsuit-hime-collection",
     "school-legs",
     "hikagami-school",
     "hikagami"

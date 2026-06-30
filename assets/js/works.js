@@ -155,34 +155,6 @@ This title is built around the feeling that each location becomes its own phase 
     related: ["eroboxin-4649", "momoiro-baito", "okinawa-soso"]
   },
   {
-    id: "swimsuit-hime-collection",
-    folder: "水着姫コレクション",
-    title: { ja: "水着姫コレクション 〜X公開 CG 100枚まとめ〜" },
-    series: "X公開CGまとめ",
-    cover: pathFor("水着姫コレクション", "cover", "表紙.jpg"),
-    samples: makeSamples("水着姫コレクション", ["1.jpg", "2.jpg", "3.jpg", "4.jpg"]),
-    count: "100枚",
-    format: "ZIP / PDF",
-    focus: "水着姿 / 姫 / 高画質アーカイブ",
-    summary: "Xに投稿していた水着イラストを100枚まとめた、気軽に見返せる高画質AI CGアーカイブ。",
-    description: {
-      ja: `Xに投稿していた水着イラストをまとめた、気軽に楽しめる高画質アーカイブです。
-
-水着姿の姫たちをテーマにしたAIイラストを100枚収録。SNS投稿済みの画像を中心に、まとめて見返しやすいコレクションとして整理しました。
-
-掲載枚数は100枚、画像サイズは4096×4096px。ファイル形式はZIP / PDFで、水着テーマのイラストをまとめて楽しみたい方向けのコンパクトな作品です。`,
-      en: `A high-resolution archive collecting swimsuit illustrations that were posted on X.
-
-The collection includes 100 AI CG images themed around princess-style swimsuit illustrations, arranged as an easy-to-browse archive.
-
-It includes 100 images at 4096 x 4096 px, provided as ZIP / PDF files.`
-    },
-    phases: ["水着", "姫", "X公開CG", "高画質", "ZIP", "PDF"],
-    tags: ["水着", "姫", "AIイラスト", "X公開CG", "高画質アーカイブ"],
-    salesLinks: saleLinkTemplate,
-    related: ["eroboxin-akane", "kinpatsu-miko", "ancient-capital-beauty"]
-  },
-  {
     id: "shizuku-record",
     folder: "しずくの記録",
     title: { ja: "しずくの記録" },
@@ -504,7 +476,7 @@ The images move through morning streets, stairs, classrooms, and small daily mom
     count: "448枚",
     format: "日常 → 探索 → 災難 → 余韻",
     focus: "異世界の宿 / 街の探索 / 物語仕立て",
-    summary: "気がつくと見知らぬ異世界。灯りのともる宿で過ごす日常から、街の探索、そして“災難”へ。旅の出来事を物語のように描いた、全448枚（本編300枚＋無料体験版148枚）の高解像度イラスト集。",
+    summary: "気がつくと見知らぬ異世界。灯りのともる宿での日常から街の探索、そして“災難”へ。物語仕立ての全448枚（本編300枚＋体験版148枚）の高解像度イラスト集。DLsite／FANZA版に先がけPromptComで先行販売中。",
     description: {
       ja: `気がつくと、そこは見知らぬ異世界――。
 
@@ -552,9 +524,6 @@ const salesByWorkId = {
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01622810.html",
     PromptCom: "https://prompt-com.com/ja/s/7073b5d6-4b35-4c77-a0d5-eefb11932083",
     DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0337472/AFID=esunamura/"
-  },
-  "swimsuit-hime-collection": {
-    PromptCom: "https://prompt-com.com/ja/s/4cc0d777-d83d-4c60-9df1-59feff6d340d"
   },
   "shizuku-record": {
     pictSPACE: "https://pictspace.net/items/manage_detail/838092",
