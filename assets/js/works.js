@@ -476,7 +476,7 @@ The images move through morning streets, stairs, classrooms, and small daily mom
     count: "448枚",
     format: "日常 → 探索 → 災難 → 余韻",
     focus: "異世界の宿 / 街の探索 / 物語仕立て",
-    summary: "気がつくと見知らぬ異世界。灯りのともる宿での日常から街の探索、そして“災難”へ。物語仕立ての全448枚（本編300枚＋体験版148枚）の高解像度イラスト集。DLsite／FANZA版に先がけPromptComで先行販売中。",
+    summary: "気がつくと見知らぬ異世界。灯りのともる宿での日常から街の探索、そして“災難”へ。物語仕立ての全448枚（本編300枚＋体験版148枚）の高解像度イラスト集。DLsiteで販売中（PromptComでも配信）。",
     description: {
       ja: `気がつくと、そこは見知らぬ異世界――。
 
@@ -484,9 +484,9 @@ The images move through morning streets, stairs, classrooms, and small daily mom
 
 湯気の立つカップ、古い書架、夜風に揺れる提灯。やわらかな日常から、未知の街への探索、そして避けては通れない“災難”へ――。旅の途中で彼女が出会っていく出来事を、一枚一枚、物語を読み進めるように描きました。
 
-本編300枚に、無料体験版でもご覧いただける148枚を加えた、全448枚の大ボリューム（高解像度イラスト集）。「日常 → 探索 → 災難 → 余韻」の流れで構成した、読み物感覚のCG集です。
+本編は全300枚。これに、本編とは重複しない無料体験版148枚を加えて、全448枚の大ボリューム（高解像度イラスト集）です。「日常 → 探索 → 災難 → 余韻」の流れで構成した、読み物感覚のCG集です。
 
-体験版でご覧いただける絵もすべて本編に収録。全448枚をまるごとお楽しみいただけます。`,
+無料体験版の148枚は本編には含まれていません（重複なし）。体験版＋本編で全448枚をまるごとお楽しみいただけます。`,
       en: `She wakes up in an unfamiliar other world. A blonde-haired shrine maiden settles into a softly lit inn and begins a new daily life in a place where she knows no one.
 
 Steam rising from a cup, old bookshelves, paper lanterns swaying in the night wind. From a gentle everyday rhythm to exploring an unknown town, and then an unavoidable "calamity," the work follows the events she meets like reading through a story.
@@ -584,6 +584,7 @@ const salesByWorkId = {
     "Kindle US": "https://www.amazon.com/dp/B0GYMZZR4S"
   },
   "kinpatsu-miko-isekai": {
+    DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01658559.html",
     PromptCom: "https://prompt-com.com/ja/p/fcea3420-06fc-4a52-b3ff-1cf4343f588b"
   }
 };
