@@ -476,7 +476,7 @@ The images move through morning streets, stairs, classrooms, and small daily mom
     count: "448枚",
     format: "日常 → 探索 → 災難 → 余韻",
     focus: "異世界の宿 / 街の探索 / 物語仕立て",
-    summary: "気がつくと見知らぬ異世界。灯りのともる宿での日常から街の探索、そして“災難”へ。物語仕立ての全448枚（本編300枚＋体験版148枚）の高解像度イラスト集。DLsiteで販売中（PromptComでも配信）。",
+    summary: "気がつくと見知らぬ異世界。灯りのともる宿での日常から街の探索、そして“災難”へ。物語仕立ての全448枚（本編300枚＋体験版148枚）の高解像度イラスト集。DLsiteで販売中（FANZA・PromptComでも配信）。",
     description: {
       ja: `気がつくと、そこは見知らぬ異世界――。
 
@@ -584,6 +584,7 @@ const salesByWorkId = {
     "Kindle US": "https://www.amazon.com/dp/B0GYMZZR4S"
   },
   "kinpatsu-miko-isekai": {
+    FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_784862/",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01658559.html",
     PromptCom: "https://prompt-com.com/ja/p/fcea3420-06fc-4a52-b3ff-1cf4343f588b"
   }

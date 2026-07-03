@@ -86,7 +86,7 @@
 
   const shortTranslations = {
     "kinpatsu-miko-isekai": {
-      summary: { en: "A story-style isekai CG collection: from inn-side daily life to town exploration and an unavoidable calamity. 448 high-res images in total (300 main + 148 trial). On sale now at DLsite (also available on PromptCom).", zh: "故事感异世界CG集：从旅店日常到街区探索，再到无法回避的“灾难”。全448张高分辨率（本篇300张＋体验版148张）。现已在 DLsite 发售（PromptCom 亦有上架）。", ko: "이야기형 이세계 CG집: 여관에서의 일상부터 거리 탐색, 피할 수 없는 ‘재난’까지. 총 448장 고해상도(본편 300장＋체험판 148장). DLsite에서 판매 중(PromptCom에서도 이용 가능)." },
+      summary: { en: "A story-style isekai CG collection: from inn-side daily life to town exploration and an unavoidable calamity. 448 high-res images in total (300 main + 148 trial). On sale now at DLsite (also available on FANZA and PromptCom).", zh: "故事感异世界CG集：从旅店日常到街区探索，再到无法回避的“灾难”。全448张高分辨率（本篇300张＋体验版148张）。现已在 DLsite 发售（FANZA・PromptCom 亦有上架）。", ko: "이야기형 이세계 CG집: 여관에서의 일상부터 거리 탐색, 피할 수 없는 ‘재난’까지. 총 448장 고해상도(본편 300장＋체험판 148장). DLsite에서 판매 중(FANZA·PromptCom에서도 이용 가능)." },
       format: { en: "Daily life, exploration, calamity, afterglow", zh: "日常 / 探索 / 灾难 / 余韵", ko: "일상 / 탐색 / 재난 / 여운" },
       focus: { en: "Isekai inn / Town exploration / Story format", zh: "异世界旅店 / 街区探索 / 故事形式", ko: "이세계 여관 / 거리 탐색 / 이야기 구성" }
     },
@@ -136,7 +136,7 @@
 
   const longDescriptionTranslations = {
     "kinpatsu-miko-isekai": {
-      en: `This story-style CG collection is now on sale at DLsite (also available on PromptCom).
+      en: `This story-style CG collection is now on sale at DLsite (also available on FANZA and PromptCom).
 
 A blonde-haired shrine maiden takes shelter at an inn in an unfamiliar other world and, amid her confusion, begins a new daily life — told as a story-style illustration collection.
 
@@ -152,8 +152,8 @@ From calm everyday moments to exploring the streets of the other world, and then
 [About the trial]
 The 148 trial images are not part of the 300 main images. There is no overlap with the main set, so you can enjoy all 448 images — trial plus main set — together.
 
-You can buy or preview it on the DLsite product page (also available on PromptCom).`,
-      zh: `本作品现已在 DLsite 发售（PromptCom 亦有上架），是一部故事感的 CG 集。
+You can buy or preview it on the DLsite product page (also available on FANZA and PromptCom).`,
+      zh: `本作品现已在 DLsite 发售（FANZA・PromptCom 亦有上架），是一部故事感的 CG 集。
 
 金发的巫女少女栖身于陌生异世界的旅店，在困惑中开始全新的日常。
 
@@ -169,8 +169,8 @@ You can buy or preview it on the DLsite product page (also available on PromptCo
 【关于体验版】
 免费体验版的148张，并不包含在本篇300张之中。与本篇没有重复，因此体验版＋本篇合计可欣赏全448张。
 
-购买与试读请前往 DLsite 作品页（PromptCom 亦有上架）。`,
-      ko: `본 작품은 현재 DLsite에서 판매 중인 CG집입니다(PromptCom에서도 이용 가능).
+购买与试读请前往 DLsite 作品页（FANZA・PromptCom 亦有上架）。`,
+      ko: `본 작품은 현재 DLsite에서 판매 중인 CG집입니다(FANZA·PromptCom에서도 이용 가능).
 
 금빛 머리의 무녀 소녀가 낯선 이세계의 여관에 몸을 의지하며, 당황하면서도 새로운 일상을 보내 가는 이야기형 일러스트집입니다.
 
@@ -186,7 +186,7 @@ You can buy or preview it on the DLsite product page (also available on PromptCo
 【체험판에 대하여】
 동봉된 체험판 148장은 본편 300장에는 포함되어 있지 않습니다. 본편과 중복이 없으므로, 체험판＋본편을 합쳐 전448장을 즐기실 수 있습니다.
 
-구매·미리보기는 DLsite 작품 페이지에서 이용해 주세요(PromptCom에서도 이용 가능).`
+구매·미리보기는 DLsite 작품 페이지에서 이용해 주세요(FANZA·PromptCom에서도 이용 가능).`
     },
     "eroboxin-akane": {
       en: `Akane is a girl whose composure has been shaken by the strange drug Erobokishin 4649.
@@ -650,7 +650,7 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
   };
 
   const officialJapaneseDescriptions = {
-    "kinpatsu-miko-isekai": `本作品は、DLsiteで販売中のCG集です（PromptComでも配信中）。
+    "kinpatsu-miko-isekai": `本作品は、DLsiteで販売中のCG集です（FANZA・PromptComでも配信中）。
 
 金色の髪をした巫女の少女が、見知らぬ異世界の宿に身を寄せ、戸惑いながらも新しい日々を過ごしていく物語仕立てのイラスト集です。
 
@@ -666,7 +666,7 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
 【体験版について】
 無料体験版の148枚は、本編300枚には含まれていません。本編との重複はありませんので、体験版＋本編をあわせて全448枚をお楽しみいただけます。
 
-購入・試し読みは、DLsiteの作品ページからどうぞ（PromptComでも配信中）。`,
+購入・試し読みは、DLsiteの作品ページからどうぞ（FANZA・PromptComでも配信中）。`,
     "school-legs": `制服姿の少女たちの通学風景や、やわらかな光の中で見せる美脚・足元の表情をまとめたAIイラスト集です。
 
 朝の通学路、階段、教室、日常の一場面などを中心に、足裏や脚線美をテーマにしたアートコレクションとして構成しました。
