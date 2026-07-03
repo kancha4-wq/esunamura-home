@@ -524,6 +524,17 @@ h2 {
   grid-template-columns: 1fr;
 }
 
+.featured-stores {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 9px;
+}
+
+.featured-stores .link-button {
+  min-width: 0;
+  padding: 0 8px;
+}
+
 .hub-page main {
   display: grid;
   gap: 18px;
