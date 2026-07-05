@@ -2025,9 +2025,9 @@ h2 {
   gap: 7px;
   width: min(100%, 142px);
   padding: 0 13px;
-  border: 1px solid rgba(230, 177, 95, 0.34);
+  border: 1px solid rgba(221, 91, 120, 0.38);
   border-radius: 999px;
-  background: linear-gradient(180deg, #ffffff, #eef0f3);
+  background: linear-gradient(180deg, #ffffff, #fff2f4);
   color: var(--text);
   font-size: 0.76rem;
   font-weight: 800;
@@ -2041,16 +2041,16 @@ h2 {
   height: 17px;
   place-items: center;
   border-radius: 50%;
-  background: rgba(230, 177, 95, 0.16);
-  color: var(--accent);
+  background: #15181c;
+  color: #ffffff;
   font-size: 0.68rem;
   line-height: 1;
 }
 
 .share-x-button:hover {
   transform: translateY(-1px);
-  border-color: rgba(230, 177, 95, 0.52);
-  background: linear-gradient(180deg, #ffffff, #eef0f3);
+  border-color: rgba(221, 91, 120, 0.6);
+  background: linear-gradient(180deg, #ffffff, #fce8ec);
   color: var(--text);
 }
 
