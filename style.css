@@ -660,6 +660,62 @@ h2 {
   font-size: 0.8rem;
 }
 
+/* --- 近日公開 (Coming Soon) --- */
+.fanart-coming-section {
+  margin-top: 30px;
+}
+
+.fanart-coming-section h2 small {
+  margin-left: 10px;
+  color: var(--accent-strong);
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.fanart-coming-lead {
+  margin: 8px 0 2px;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+.fanart-card.is-coming .fanart-portrait {
+  position: relative;
+}
+
+.coming-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  padding: 5px 11px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ec6f86, #c8415f);
+  color: #fff;
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  box-shadow: 0 3px 10px rgba(200, 65, 95, 0.34);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.fanart-card.is-coming .coming-note {
+  margin: auto 0 0;
+  padding: 9px 10px;
+  border: 1px dashed var(--line-strong);
+  border-radius: 9px;
+  text-align: center;
+  color: var(--accent-strong);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  background: rgba(221, 91, 120, 0.06);
+}
+
 @media (min-width: 640px) {
   .fanart-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
