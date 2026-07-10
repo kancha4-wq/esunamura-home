@@ -77,6 +77,15 @@
   .small{font-size:13px;color:var(--muted)}
   .soon{display:inline-block;background:#fdf0e2;border:1px solid #f0d3ac;color:#b56f1f;
     font-weight:800;font-size:13.5px;border-radius:999px;padding:6px 16px;letter-spacing:.02em}
+  .privacy-note{
+    display:flex;align-items:center;gap:10px;
+    max-width:520px;margin:14px auto 2px;padding:11px 16px;
+    background:#eaf6ee;border:1px solid #a9d7ba;border-radius:12px;
+    color:#1f7a44;font-size:13.5px;font-weight:700;line-height:1.6;text-align:left;
+    box-shadow:0 3px 11px rgba(31,122,68,.12);
+  }
+  .privacy-note .pn-ico{font-size:19px;flex:0 0 auto;line-height:1}
+  .privacy-note b{color:#125f2c;font-weight:800}
 
   /* hero */
   .hero{
@@ -308,7 +317,8 @@
     <a class="cta" href="https://groups.google.com/g/esunastudio" target="_blank" rel="noopener">Androidクローズドテストに参加する</a>
     <a class="cta ghost" href="https://x.com/esuna_4649/status/2066098351804920247" target="_blank" rel="noopener">開発状況をXで見る｜フォローで最新情報</a>
     <a class="cta x" href="https://x.com/intent/post" rel="noopener" onclick="return shareApp(event)">𝕏 でシェア</a>
-    <p class="small" style="margin-top:10px">※参加は無料。グループに参加すると、インストール手順をご案内します（Android端末が必要です）。<br>※参加に使うメールアドレスは、他の参加者には表示されません（テスト配信の管理にのみ使用します）。どうぞお気軽にご参加ください。</p>
+    <p class="privacy-note"><span class="pn-ico">🔒</span><span><b>メールアドレスは他の参加者に表示されません。</b>テスト配信の管理にのみ使用します。どうぞお気軽にご参加ください。</span></p>
+    <p class="small" style="margin-top:10px">※参加は無料。グループに参加すると、インストール手順をご案内します（Android端末が必要です）。</p>
     <div class="hero-duo">
       <div class="phone-frame"><div class="phone-screen"><div class="phone-notch"></div><img src="assets/manga_panels.jpg" alt="漫画ビューア（コマ割りページ）"></div></div>
       <div class="phone-frame"><div class="phone-screen"><div class="phone-notch"></div><img src="assets/epub_p7.jpg" alt="EPUB書籍ビューア（縦書き本文）"></div></div>
@@ -575,9 +585,11 @@
     <div class="panel">
       <p style="margin:0 0 12px"><span class="soon">Android版 クローズドテスト参加者募集中！</span></p>
       <h2>Android版を、いち早く試せます。</h2>
-      <p class="lead" style="margin-bottom:18px">公開に向けたクローズドテストに参加すると、Android版をいまお使いいただけます。漫画・小説を本棚で読む・聴く使い心地を、ぜひお試しください。<br>参加はグループに入るだけ。インストール手順はグループ内でご案内します。<br>参加に使うメールアドレスが、他の参加者に表示されることはありません。安心してご参加ください。</p>
+      <p class="lead" style="margin-bottom:18px">公開に向けたクローズドテストに参加すると、Android版をいまお使いいただけます。漫画・小説を本棚で読む・聴く使い心地を、ぜひお試しください。<br>参加はグループに入るだけ。インストール手順はグループ内でご案内します。</p>
       <a class="cta" href="https://groups.google.com/g/esunastudio" target="_blank" rel="noopener">Androidクローズドテストに参加する</a>
-      <a class="cta ghost" href="https://x.com/esuna_4649/status/2066098351804920247" target="_blank" rel="noopener">開発状況をXで見る｜フォローで最新情報</a>    </div>
+      <a class="cta ghost" href="https://x.com/esuna_4649/status/2066098351804920247" target="_blank" rel="noopener">開発状況をXで見る｜フォローで最新情報</a>
+      <p class="privacy-note"><span class="pn-ico">🔒</span><span><b>メールアドレスは他の参加者に表示されません。</b>テスト配信の管理にのみ使用します。安心してご参加ください。</span></p>
+    </div>
   </div>
 </section>
 
