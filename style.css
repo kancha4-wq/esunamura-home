@@ -612,6 +612,7 @@ h2 {
 }
 
 .fanart-portrait {
+  position: relative;
   aspect-ratio: 4 / 5;
   overflow: hidden;
   background: #eceef1;
@@ -701,6 +702,33 @@ h2 {
   text-transform: uppercase;
   box-shadow: 0 3px 10px rgba(200, 65, 95, 0.34);
   border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.new-badge,
+.free-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  padding: 5px 11px;
+  border-radius: 999px;
+  color: #fff;
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+}
+
+.new-badge {
+  background: linear-gradient(135deg, #ff7a3d, #f24717);
+  box-shadow: 0 3px 10px rgba(242, 71, 23, 0.38);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.free-badge {
+  background: linear-gradient(135deg, #37b26b, #1f9d57);
+  box-shadow: 0 3px 10px rgba(31, 157, 87, 0.32);
 }
 
 .fanart-card.is-coming .coming-note {
