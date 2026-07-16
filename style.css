@@ -731,6 +731,21 @@ h2 {
   box-shadow: 0 3px 10px rgba(31, 157, 87, 0.32);
 }
 
+.date-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(38, 33, 29, 0.82);
+  color: #fff;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+}
+
 .fanart-card.is-coming .coming-note {
   margin: auto 0 0;
   padding: 9px 10px;
