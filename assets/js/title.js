@@ -1127,16 +1127,17 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
     const summary = summaryOf(item);
     const pageUrl = detailPageUrl(item);
     const lang = currentLang();
+    const r18 = allAgesWorkIds.has(item.id) ? "" : "🔞 ";
     if (lang === "en") {
-      return `"${title}" is now available.\n${summary}\nDetails, samples, and store links:\n${pageUrl}`;
+      return `${r18}"${title}" is now available.\n${summary}\nDetails, samples, and store links:\n${pageUrl}`;
     }
     if (lang === "zh") {
-      return `「${title}」公开中。\n${summary}\n详情、样张和销售页面：\n${pageUrl}`;
+      return `${r18}「${title}」公开中。\n${summary}\n详情、样张和销售页面：\n${pageUrl}`;
     }
     if (lang === "ko") {
-      return `"${title}" 공개 중.\n${summary}\n상세 정보, 샘플, 판매처:\n${pageUrl}`;
+      return `${r18}"${title}" 공개 중.\n${summary}\n상세 정보, 샘플, 판매처:\n${pageUrl}`;
     }
-    return `「${title}」公開中。\n${summary}\n詳細・サンプル・販売先はこちら：\n${pageUrl}`;
+    return `${r18}「${title}」公開中。\n${summary}\n詳細・サンプル・販売先はこちら：\n${pageUrl}`;
   }
 
   function shareUrlFor(item) {
