@@ -497,6 +497,42 @@ In total the collection contains 448 high-resolution images — 300 main images 
     tags: ["異世界", "巫女", "金髪", "ストーリー重視", "大ボリューム"],
     salesLinks: saleLinkTemplate,
     related: ["kinpatsu-miko", "momoiro-baito", "eroboxin-akane"]
+  },
+  {
+    id: "summer-schoolday",
+    folder: "summer-schoolday",
+    title: { ja: "誰も来ない登校日。～夕暮れまで、彼女とふたり～" },
+    series: "夏の教室",
+    cover: "0501_改修資料/summer-schoolday/cover.jpg?v=20260720",
+    samples: [
+      "0501_改修資料/summer-schoolday/sample01.jpg",
+      "0501_改修資料/summer-schoolday/sample02.jpg",
+      "0501_改修資料/summer-schoolday/sample03.jpg",
+      "0501_改修資料/summer-schoolday/sample04.jpg",
+      "0501_改修資料/summer-schoolday/sample05.jpg",
+      "0501_改修資料/summer-schoolday/sample06.jpg",
+      "0501_改修資料/summer-schoolday/sample07.jpg",
+      "0501_改修資料/summer-schoolday/sample08.jpg",
+      "0501_改修資料/summer-schoolday/sample09.jpg"
+    ],
+    count: "327枚",
+    format: "夏の教室 → 夕暮れの別れ",
+    focus: "夏休みの登校日 / 3人のヒロイン / 物語仕立て",
+    summary: "夏休みの登校日、誰もいない教室で彼女とふたりきり。同じシチュエーションを3人のヒロインそれぞれで描いた物語仕立ての高解像度CG集。全327枚（1ヒロイン109枚×3人）。PromptComにて先行販売中。",
+    description: {
+      ja: `本作品は、PromptCom（プロンプトコム）にて先行販売中のCG・イラスト集です（FANZA・DLsiteでも順次販売予定）。
+
+夏休みの登校日。静まり返った校舎に響くのは、蝉の声と、ふたりの気配だけ。教室で待っていた彼女と、いつもより少し近い距離で過ごす午後――。
+
+真夏の光が夕暮れへ変わるまで、誰にも邪魔されない、ふたりだけの時間がゆっくりと進んでいきます。本作は、ひとつのシチュエーションを3人のヒロインそれぞれで描いた、物語仕立ての高解像度CG・イラスト集です。`,
+      en: `A story-style, high-resolution CG collection now on early release at PromptCom (coming to FANZA and DLsite as well).
+
+A school day during summer break. The quiet school echoes only with cicadas and the presence of the two of you. She was waiting in the classroom, and the afternoon passes at a slightly closer distance than usual — until the midsummer light turns to dusk.`
+    },
+    phases: ["夏の教室", "近づく距離", "真夏の午後", "夕暮れ", "またね"],
+    tags: ["学園", "制服", "教室", "夏休み", "複数ヒロイン", "物語仕立て"],
+    salesLinks: saleLinkTemplate,
+    related: ["hikagami-school", "school-legs", "kinpatsu-miko-isekai"]
   }
 ];
 
@@ -587,6 +623,9 @@ const salesByWorkId = {
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_784862/",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01658559.html",
     PromptCom: "https://prompt-com.com/ja/p/fcea3420-06fc-4a52-b3ff-1cf4343f588b"
+  },
+  "summer-schoolday": {
+    PromptCom: "https://prompt-com.com/ja/p/58ba1e79-42e7-4f01-963c-9f4fe6b0a60d"
   }
 };
 

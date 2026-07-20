@@ -220,6 +220,26 @@
       DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01658559.html",
       PromptCom: "https://prompt-com.com/ja/p/fcea3420-06fc-4a52-b3ff-1cf4343f588b"
     }
+  },
+  {
+    title: { ja: "誰も来ない登校日。～夕暮れまで、彼女とふたり～ / The Day No One Comes to School", en: "The Day No One Comes to School / 誰も来ない登校日。" },
+    slug: "summer-schoolday",
+    image: "0501_改修資料/summer-schoolday/thumb.jpg?v=20260720",
+    thumbnail: "0501_改修資料/summer-schoolday/thumb.jpg?v=20260720",
+    imageWidth: 560,
+    imageHeight: 420,
+    links: {
+      PromptCom: "https://prompt-com.com/ja/p/58ba1e79-42e7-4f01-963c-9f4fe6b0a60d"
+    }
+  },
+  {
+    title: { ja: "Fanart Select [R]", en: "Fanart Select [R]" },
+    slug: "fanart-select",
+    image: "works/fanart/img/cover.jpg",
+    thumbnail: "works/fanart/img/cover.jpg",
+    imageWidth: 1220,
+    imageHeight: 916,
+    links: {}
   }
 ];
 
@@ -343,6 +363,18 @@ const workDescriptions = {
     en: "A free research-linked Prompt Pack for SDXL / illustriousXL background prompt verification with Kyoto-inspired atmosphere.",
     zh: "研究室公开纪念免费 Prompt Pack。面向 SDXL / illustriousXL 系模型的京都风・和风背景 prompt 验证素材。",
     ko: "연구실 공개 기념 무료 Prompt Pack. SDXL / illustriousXL 계열 모델용 교토풍・일본풍 배경 프롬프트 검증 소재입니다."
+  },
+  "summer-schoolday": {
+    ja: "夏休みの登校日、誰もいない教室で彼女とふたりきり。同じシチュエーションを3人のヒロインそれぞれで描いた物語仕立ての高解像度CG集。全327枚（1ヒロイン109枚×3人）。PromptComにて先行販売中。",
+    en: "Alone with her in an empty summer classroom. A story-style high-res CG collection portraying one situation through three heroines — 327 images total (109 x 3). Early release on PromptCom.",
+    zh: "暑假上学日，在无人的教室与她独处。以三位女主角描绘同一情境的故事感高分辨率CG集，全327张（109×3）。PromptCom 先行发售中。",
+    ko: "여름방학 등교일, 아무도 없는 교실에서 그녀와 단둘이. 하나의 상황을 3명의 히로인으로 그린 이야기형 고해상도 CG집. 총 327장(109×3). PromptCom 선행 판매 중."
+  },
+  "fanart-select": {
+    ja: "prompt-com に掲載中の二次創作キャラクターを紹介しています。ポートレートを掲載中。各キャラの本編は prompt-com からご覧いただけます。",
+    en: "Introducing the fanwork characters featured on prompt-com. All-ages portraits are shown here; each character's full set is on prompt-com.",
+    zh: "介绍 prompt-com 上刊登的二次创作角色。此处为全年龄向头像，各角色本篇请见 prompt-com。",
+    ko: "prompt-com에 게재 중인 2차 창작 캐릭터를 소개합니다. 전연령용 포트레이트를 게재 중이며, 각 캐릭터의 본편은 prompt-com에서 볼 수 있습니다."
   }
 };
 
@@ -363,7 +395,9 @@ const workTitleTranslations = {
   "erobokishin-4649": { zh: "Erobokishin 4649", ko: "에로복신 4649" },
   "kindle-seifuku-bikyaku": { zh: "AI制服美腿插画集", ko: "AI 교복 미각 일러스트집" },
   "erobokishin-4649-akane": { zh: "Erobokishin 4649 Akane", ko: "에로복신 4649 아카네" },
-  "kyoto-prompt-pack": { zh: "Kyoto Atmosphere Prompt Pack Vol.1", ko: "Kyoto Atmosphere Prompt Pack Vol.1" }
+  "kyoto-prompt-pack": { zh: "Kyoto Atmosphere Prompt Pack Vol.1", ko: "Kyoto Atmosphere Prompt Pack Vol.1" },
+  "summer-schoolday": { zh: "无人到来的上学日 / The Day No One Comes to School", ko: "아무도 오지 않는 등교일 / The Day No One Comes to School" },
+  "fanart-select": { zh: "Fanart Select [R]", ko: "Fanart Select [R]" }
 };
 
 const workArchiveMeta = {
@@ -468,6 +502,18 @@ const workArchiveMeta = {
     quality: "SDXL",
     series: { ja: "研究室連動", en: "Research-linked", zh: "研究室联动", ko: "연구실 연동" },
     tags: { ja: ["背景検証", "京都風"], en: ["Background test", "Kyoto style"], zh: ["背景验证", "京都风"], ko: ["배경 검증", "교토풍"] }
+  },
+  "summer-schoolday": {
+    count: { ja: "327枚収録", en: "327 images", zh: "收录327张", ko: "327장 수록" },
+    quality: "4K",
+    series: { ja: "夏の教室", en: "Summer Classroom", zh: "夏日教室", ko: "여름 교실" },
+    tags: { ja: ["制服", "3人ヒロイン"], en: ["School uniform", "3 heroines"], zh: ["制服", "三位女主"], ko: ["교복", "3인 히로인"] }
+  },
+  "fanart-select": {
+    count: { ja: "二次創作", en: "Fanwork", zh: "二次创作", ko: "2차 창작" },
+    quality: "PORTRAIT",
+    series: { ja: "キャラ別ポートレート", en: "Character Portraits", zh: "角色头像集", ko: "캐릭터 포트레이트" },
+    tags: { ja: ["prompt-com"], en: ["prompt-com"], zh: ["prompt-com"], ko: ["prompt-com"] }
   }
 };
 
@@ -495,15 +541,18 @@ const detailPageBySlug = {
   "erobokishin-4649": "eroboxin-4649",
   "kindle-seifuku-bikyaku": "school-legs",
   "erobokishin-4649-akane": "eroboxin-akane",
-  "kyoto-prompt-pack": "kyoto-prompt-pack/index.html"
+  "kyoto-prompt-pack": "kyoto-prompt-pack/index.html",
+  "summer-schoolday": "summer-schoolday",
+  "fanart-select": "works/fanart/index.html"
 };
 
 const newReleaseLabels = {
+  "summer-schoolday": "NEW / 2026.07",
   "blonde-shrine-maiden-isekai": "NEW / 2026.06",
   "kyoto-prompt-pack": "NEW / 2026.05"
 };
 
-const worksGridPrioritySlugs = ["blonde-shrine-maiden-isekai", "hikagami-school-route"];
+const worksGridPrioritySlugs = ["summer-schoolday", "blonde-shrine-maiden-isekai", "hikagami-school-route"];
 
 function ratingBadgeFor(work) {
   if (allAgesWorkSlugs.has(work.slug)) return null;
