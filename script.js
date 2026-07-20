@@ -552,7 +552,7 @@ const newReleaseLabels = {
   "kyoto-prompt-pack": "NEW / 2026.05"
 };
 
-const worksGridPrioritySlugs = ["summer-schoolday", "blonde-shrine-maiden-isekai", "hikagami-school-route"];
+const worksGridPrioritySlugs = ["summer-schoolday", "fanart-select", "blonde-shrine-maiden-isekai", "hikagami-school-route"];
 
 function ratingBadgeFor(work) {
   if (allAgesWorkSlugs.has(work.slug)) return null;
