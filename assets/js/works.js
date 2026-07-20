@@ -625,7 +625,7 @@ const salesByWorkId = {
     PromptCom: "https://prompt-com.com/ja/p/fcea3420-06fc-4a52-b3ff-1cf4343f588b"
   },
   "summer-schoolday": {
-    PromptCom: "https://prompt-com.com/ja/p/58ba1e79-42e7-4f01-963c-9f4fe6b0a60d"
+    PromptCom: "https://prompt-com.com/ja/p/8b9b037a-07e6-4954-8972-866bcb6e7237?rating=all"
   }
 };
 

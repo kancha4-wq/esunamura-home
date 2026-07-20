@@ -1307,6 +1307,17 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
     }).join("");
   }
 
+  const trialLinks = {
+    "summer-schoolday": "https://prompt-com.com/ja/p/58ba1e79-42e7-4f01-963c-9f4fe6b0a60d?rating=all"
+  };
+
+  function renderTrialLink(item) {
+    const url = trialLinks[item.id];
+    if (!url) return "";
+    const label = { ja: "無料体験版はこちら", en: "Free trial", zh: "免费体验版", ko: "무료 체험판" }[currentLang()] || "無料体験版はこちら";
+    return `<div class="trial-links"><a class="sales-button trial-button" href="${url}" target="_blank" rel="noopener noreferrer" data-analytics-platform="promptcom" data-analytics-work="${item.id}">${label}</a></div>`;
+  }
+
   function renderShareButton(item) {
     return `<a class="share-x-button" href="${shareUrlFor(item)}" target="_blank" rel="noopener" data-share-x><span class="share-x-icon" aria-hidden="true">X</span>${uiText("shareX")}</a>`;
   }
@@ -1383,6 +1394,7 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
           </div>
           <h2>${uiText("sales")}</h2>
           <div class="sales-links">${renderSales(work)}</div>
+          ${renderTrialLink(work)}
           <div class="share-links">${renderShareButton(work)}</div>
         </div>
       </section>
