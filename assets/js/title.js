@@ -1314,8 +1314,8 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
   function renderTrialLink(item) {
     const url = trialLinks[item.id];
     if (!url) return "";
-    const label = { ja: "無料体験版はこちら", en: "Free trial", zh: "免费体验版", ko: "무료 체험판" }[currentLang()] || "無料体験版はこちら";
-    return `<div class="trial-links"><a class="sales-button trial-button" href="${url}" target="_blank" rel="noopener noreferrer" data-analytics-platform="promptcom" data-analytics-work="${item.id}">${label}</a></div>`;
+    const label = { ja: "無料体験版", en: "Free trial", zh: "免费体验版", ko: "무료 체험판" }[currentLang()] || "無料体験版";
+    return `<a class="sales-button trial-button" href="${url}" target="_blank" rel="noopener noreferrer" data-analytics-platform="promptcom" data-analytics-work="${item.id}">${label}</a>`;
   }
 
   function renderShareButton(item) {
@@ -1393,8 +1393,7 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
             <div><span>Volume</span><strong>${work.count}</strong></div>
           </div>
           <h2>${uiText("sales")}</h2>
-          <div class="sales-links">${renderSales(work)}</div>
-          ${renderTrialLink(work)}
+          <div class="sales-links">${renderSales(work)}${renderTrialLink(work)}</div>
           <div class="share-links">${renderShareButton(work)}</div>
         </div>
       </section>
