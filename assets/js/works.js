@@ -625,7 +625,8 @@ const salesByWorkId = {
     PromptCom: "https://prompt-com.com/ja/p/fcea3420-06fc-4a52-b3ff-1cf4343f588b"
   },
   "summer-schoolday": {
-    PromptCom: "https://prompt-com.com/ja/p/8b9b037a-07e6-4954-8972-866bcb6e7237?rating=all"
+    PromptCom: "https://prompt-com.com/ja/p/8b9b037a-07e6-4954-8972-866bcb6e7237?rating=all",
+    pictSPACE: "https://pictspace.net/items/manage_detail/939145"
   }
 };
 

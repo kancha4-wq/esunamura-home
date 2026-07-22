@@ -229,7 +229,8 @@
     imageWidth: 560,
     imageHeight: 420,
     links: {
-      PromptCom: "https://prompt-com.com/ja/p/58ba1e79-42e7-4f01-963c-9f4fe6b0a60d"
+      pictSPACE: "https://pictspace.net/items/manage_detail/939145",
+      PromptCom: "https://prompt-com.com/ja/p/8b9b037a-07e6-4954-8972-866bcb6e7237?rating=all"
     }
   },
   {
