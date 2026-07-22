@@ -87,7 +87,7 @@
 
   const shortTranslations = {
     "summer-schoolday": {
-      summary: { en: "Alone with her in an empty summer classroom — a story-style high-res CG collection portraying one situation through three heroines. 327 images total (109 per heroine x 3). Early release on PromptCom.", zh: "在无人的夏日教室与她独处——以三位女主角描绘同一情境的故事感高分辨率CG集。全327张（每位109张×3人）。PromptCom 先行发售中。", ko: "아무도 없는 여름 교실에서 그녀와 단둘이 — 하나의 상황을 3명의 히로인으로 그린 이야기형 고해상도 CG집. 총 327장(히로인당 109장×3). PromptCom 선행 판매 중." },
+      summary: { en: "Alone with her in an empty summer classroom — a story-style high-res CG collection portraying one situation through three heroines. 327 images total (109 per heroine x 3). Now on sale at PromptCom and DiGiket (FANZA and DLsite coming soon).", zh: "在无人的夏日教室与她独处——以三位女主角描绘同一情境的故事感高分辨率CG集。全327张（每位109张×3人）。PromptCom・DiGiket 发售中（FANZA・DLsite 陆续上架）。", ko: "아무도 없는 여름 교실에서 그녀와 단둘이 — 하나의 상황을 3명의 히로인으로 그린 이야기형 고해상도 CG집. 총 327장(히로인당 109장×3). PromptCom・DiGiket 판매 중（FANZA・DLsite 순차 예정）." },
       format: { en: "Summer classroom to a dusk farewell", zh: "从夏日教室到黄昏告别", ko: "여름 교실에서 황혼의 이별까지" },
       focus: { en: "Summer school day / 3 heroines / Story format", zh: "夏日上学日 / 三位女主 / 故事形式", ko: "여름 등교일 / 3인 히로인 / 이야기 구성" }
     },
@@ -142,7 +142,7 @@
 
   const longDescriptionTranslations = {
     "summer-schoolday": {
-      en: `A story-style, high-resolution CG / illustration collection now on early release at PromptCom (coming to FANZA and DLsite as well).
+      en: `A story-style, high-resolution CG / illustration collection now on sale at PromptCom and DiGiket (coming to FANZA and DLsite as well).
 
 A school day during summer break. The quiet school building echoes only with cicadas and the presence of the two of you. She was waiting in the classroom, and the afternoon passes at a slightly closer distance than usual.
 
@@ -161,8 +161,8 @@ Until the midsummer light turns to dusk, undisturbed time flows gently for just 
 [Trial]
 33 selected images out of the full 327 are available as a free trial.
 
-You can buy or view it on the PromptCom product page.`,
-      zh: `本作品现于 PromptCom（提示词社区）先行发售中（FANZA・DLsite 亦将陆续上架），是一部故事感的高分辨率 CG・插画集。
+You can buy or view it at each store's product page.`,
+      zh: `本作品现于 PromptCom・DiGiket 发售中（FANZA・DLsite 亦将陆续上架），是一部故事感的高分辨率 CG・插画集。
 
 暑假中的上学日。寂静的校舍里，回响的只有蝉鸣与两人的气息。在教室里等待的她，与你在比平时更近一些的距离中度过午后。
 
@@ -181,8 +181,8 @@ You can buy or view it on the PromptCom product page.`,
 【体验版】
 在全327张中，精选33张作为体验版公开。
 
-购买与浏览请前往 PromptCom 作品页。`,
-      ko: `본 작품은 현재 PromptCom(프롬프트컴)에서 선행 판매 중인 이야기형 고해상도 CG・일러스트집입니다(FANZA・DLsite에서도 순차 판매 예정).
+购买与浏览请前往各商店的作品页。`,
+      ko: `본 작품은 현재 PromptCom・DiGiket에서 판매 중인 이야기형 고해상도 CG・일러스트집입니다(FANZA・DLsite에서도 순차 판매 예정).
 
 여름방학의 등교일. 고요한 교사에 울리는 것은 매미 소리와 두 사람의 기척뿐. 교실에서 기다리던 그녀와, 평소보다 조금 가까운 거리에서 보내는 오후.
 
@@ -201,7 +201,7 @@ You can buy or view it on the PromptCom product page.`,
 【체험판】
 제품판 총 327장 중 선별한 33장을 체험판으로 공개하고 있습니다.
 
-구매・열람은 PromptCom 작품 페이지에서.`
+구매・열람은 각 스토어 작품 페이지에서.`
     },
     "kinpatsu-miko-isekai": {
       en: `This story-style CG collection is now on sale at DLsite (also available on FANZA and PromptCom).
@@ -718,7 +718,7 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
   };
 
   const officialJapaneseDescriptions = {
-    "summer-schoolday": `本作品は、PromptCom（プロンプトコム）にて先行販売中のCG・イラスト集です（FANZA・DLsiteでも順次販売予定）。
+    "summer-schoolday": `本作品は、PromptCom・DiGiket で販売中のCG・イラスト集です（FANZA・DLsite でも順次販売予定）。
 
 夏休みの登校日。静まり返った校舎に響くのは、蝉の声と、ふたりの気配だけ。教室で待っていた彼女と、いつもより少し近い距離で過ごす午後――。
 
@@ -737,7 +737,7 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
 【体験版】
 製品版 全327枚のうち、選出した33枚を体験版として公開しています。
 
-購入・閲覧は PromptCom の作品ページからどうぞ。`,
+購入・閲覧は各ストアの作品ページからどうぞ。`,
     "kinpatsu-miko-isekai": `本作品は、DLsiteで販売中のCG集です（FANZA・PromptComでも配信中）。
 
 金色の髪をした巫女の少女が、見知らぬ異世界の宿に身を寄せ、戸惑いながらも新しい日々を過ごしていく物語仕立てのイラスト集です。

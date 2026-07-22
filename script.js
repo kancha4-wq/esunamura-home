@@ -230,7 +230,8 @@
     imageHeight: 420,
     links: {
       pictSPACE: "https://pictspace.net/items/manage_detail/939145",
-      PromptCom: "https://prompt-com.com/ja/p/8b9b037a-07e6-4954-8972-866bcb6e7237?rating=all"
+      PromptCom: "https://prompt-com.com/ja/p/8b9b037a-07e6-4954-8972-866bcb6e7237?rating=all",
+      DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0344449/AFID=esunamura/"
     }
   },
   {
@@ -366,10 +367,10 @@ const workDescriptions = {
     ko: "연구실 공개 기념 무료 Prompt Pack. SDXL / illustriousXL 계열 모델용 교토풍・일본풍 배경 프롬프트 검증 소재입니다."
   },
   "summer-schoolday": {
-    ja: "夏休みの登校日、誰もいない教室で彼女とふたりきり。同じシチュエーションを3人のヒロインそれぞれで描いた物語仕立ての高解像度CG集。全327枚（1ヒロイン109枚×3人）。PromptComにて先行販売中。",
-    en: "Alone with her in an empty summer classroom. A story-style high-res CG collection portraying one situation through three heroines — 327 images total (109 x 3). Early release on PromptCom.",
-    zh: "暑假上学日，在无人的教室与她独处。以三位女主角描绘同一情境的故事感高分辨率CG集，全327张（109×3）。PromptCom 先行发售中。",
-    ko: "여름방학 등교일, 아무도 없는 교실에서 그녀와 단둘이. 하나의 상황을 3명의 히로인으로 그린 이야기형 고해상도 CG집. 총 327장(109×3). PromptCom 선행 판매 중."
+    ja: "夏休みの登校日、誰もいない教室で彼女とふたりきり。同じシチュエーションを3人のヒロインそれぞれで描いた物語仕立ての高解像度CG集。全327枚（1ヒロイン109枚×3人）。PromptCom・DiGiket で販売中（FANZA・DLsite は順次配信予定）。",
+    en: "Alone with her in an empty summer classroom. A story-style high-res CG collection portraying one situation through three heroines — 327 images total (109 x 3). Now on sale at PromptCom and DiGiket (FANZA and DLsite coming soon).",
+    zh: "暑假上学日，在无人的教室与她独处。以三位女主角描绘同一情境的故事感高分辨率CG集，全327张（109×3）。PromptCom・DiGiket 发售中（FANZA・DLsite 陆续上架）。",
+    ko: "여름방학 등교일, 아무도 없는 교실에서 그녀와 단둘이. 하나의 상황을 3명의 히로인으로 그린 이야기형 고해상도 CG집. 총 327장(109×3). PromptCom・DiGiket 판매 중（FANZA・DLsite 순차 예정）."
   },
   "fanart-select": {
     ja: "prompt-com に掲載中の二次創作キャラクターを紹介しています。ポートレートを掲載中。各キャラの本編は prompt-com からご覧いただけます。",
