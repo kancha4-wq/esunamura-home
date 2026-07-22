@@ -1314,7 +1314,7 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
   function renderTrialLink(item) {
     const url = trialLinks[item.id];
     if (!url) return "";
-    const label = { ja: "無料体験版", en: "Free trial", zh: "免费体验版", ko: "무료 체험판" }[currentLang()] || "無料体験版";
+    const label = { ja: "無料体験版（PromptCom）", en: "Free trial (PromptCom)", zh: "免费体验版（PromptCom）", ko: "무료 체험판 (PromptCom)" }[currentLang()] || "無料体験版（PromptCom）";
     return `<a class="sales-button trial-button" href="${url}" target="_blank" rel="noopener noreferrer" data-analytics-platform="promptcom" data-analytics-work="${item.id}">${label}</a>`;
   }
 
