@@ -1,4 +1,4 @@
-﻿const works = [
+const works = [
   {
     title: { ja: "里帰り / Satogaeri", en: "Satogaeri / 里帰り" },
     slug: "satogaeri",
@@ -367,16 +367,16 @@ const workDescriptions = {
     ko: "연구실 공개 기념 무료 Prompt Pack. SDXL / illustriousXL 계열 모델용 교토풍・일본풍 배경 프롬프트 검증 소재입니다."
   },
   "summer-schoolday": {
-    ja: "夏休みの登校日、誰もいない教室で彼女とふたりきり。同じシチュエーションを3人のヒロインそれぞれで描いた物語仕立ての高解像度CG集。全327枚（1ヒロイン109枚×3人）。PromptCom・DiGiket で販売中（FANZA・DLsite は順次配信予定）。",
-    en: "Alone with her in an empty summer classroom. A story-style high-res CG collection portraying one situation through three heroines — 327 images total (109 x 3). Now on sale at PromptCom and DiGiket (FANZA and DLsite coming soon).",
-    zh: "暑假上学日，在无人的教室与她独处。以三位女主角描绘同一情境的故事感高分辨率CG集，全327张（109×3）。PromptCom・DiGiket 发售中（FANZA・DLsite 陆续上架）。",
-    ko: "여름방학 등교일, 아무도 없는 교실에서 그녀와 단둘이. 하나의 상황을 3명의 히로인으로 그린 이야기형 고해상도 CG집. 총 327장(109×3). PromptCom・DiGiket 판매 중（FANZA・DLsite 순차 예정）."
+    ja: "夏休みの登校日、誰もいない教室で彼女とふたりきり。同じシチュエーションを3人のヒロインそれぞれで描いた物語仕立ての高解像度CG集。全327枚（1ヒロイン109枚×3人）。DiGiket・PromptCom で販売中（FANZA・DLsite は順次配信予定）。chichi-puiメンバーシップへの加入でも、本編をご覧いただけます。",
+    en: "Alone with her in an empty summer classroom. A story-style high-res CG collection portraying one situation through three heroines — 327 images total (109 x 3). Now on sale at DiGiket and PromptCom (FANZA and DLsite coming soon). The full collection is also available with a chichi-pui Membership.",
+    zh: "暑假上学日，在无人的教室与她独处。以三位女主角描绘同一情境的故事感高分辨率CG集，全327张（109×3）。DiGiket・PromptCom 发售中（FANZA・DLsite 陆续上架）。加入 chichi-pui 会员后，也可浏览完整版。",
+    ko: "여름방학 등교일, 아무도 없는 교실에서 그녀와 단둘이. 하나의 상황을 3명의 히로인으로 그린 이야기형 고해상도 CG집. 총 327장(109×3). DiGiket・PromptCom 판매 중（FANZA・DLsite 순차 예정）. chichi-pui 멤버십에 가입하면 본편도 보실 수 있습니다."
   },
   "fanart-select": {
-    ja: "prompt-com に掲載中の二次創作キャラクターを紹介しています。ポートレートを掲載中。各キャラの本編は prompt-com からご覧いただけます。",
-    en: "Introducing the fanwork characters featured on prompt-com. All-ages portraits are shown here; each character's full set is on prompt-com.",
-    zh: "介绍 prompt-com 上刊登的二次创作角色。此处为全年龄向头像，各角色本篇请见 prompt-com。",
-    ko: "prompt-com에 게재 중인 2차 창작 캐릭터를 소개합니다. 전연령용 포트레이트를 게재 중이며, 각 캐릭터의 본편은 prompt-com에서 볼 수 있습니다."
+    ja: "二次創作キャラクターごとのAIイラストをまとめたシリーズです。各キャラクターのサンプルを無料公開しています。本編・追加イラスト・過去公開分は、chichi-puiメンバーシップ「R18 二次創作アーカイブ」でまとめてご覧いただけます。",
+    en: "An AI illustration series organized by fanwork character. Free samples are available for each character. Full sets, additional illustrations, and past releases are collected in the chichi-pui Membership “R18 二次創作アーカイブ.”",
+    zh: "按二次创作角色整理的 AI 插画系列。每位角色均提供免费样图。完整版、追加插画及往期公开作品，可在 chichi-pui 会员方案“R18 二次創作アーカイブ”中集中查看。",
+    ko: "2차 창작 캐릭터별 AI 일러스트를 모은 시리즈입니다. 각 캐릭터의 샘플을 무료로 공개하고 있습니다. 본편·추가 일러스트·이전 공개분은 chichi-pui 멤버십 “R18 二次創作アーカイブ”에서 한꺼번에 보실 수 있습니다."
   }
 };
 
@@ -515,7 +515,7 @@ const workArchiveMeta = {
     count: { ja: "二次創作", en: "Fanwork", zh: "二次创作", ko: "2차 창작" },
     quality: "PORTRAIT",
     series: { ja: "キャラ別ポートレート", en: "Character Portraits", zh: "角色头像集", ko: "캐릭터 포트레이트" },
-    tags: { ja: ["prompt-com"], en: ["prompt-com"], zh: ["prompt-com"], ko: ["prompt-com"] }
+    tags: { ja: ["chichi-pui", "メンバーシップ"], en: ["chichi-pui", "Membership"], zh: ["chichi-pui", "会员"], ko: ["chichi-pui", "멤버십"] }
   }
 };
 

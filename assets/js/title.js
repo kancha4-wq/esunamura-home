@@ -1,4 +1,4 @@
-﻿(function () {
+(function () {
   const { works, siteCopy } = window.archiveData;
   const app = document.querySelector("#titleApp");
   const languageButtons = document.querySelectorAll(".lang-button");
@@ -87,7 +87,7 @@
 
   const shortTranslations = {
     "summer-schoolday": {
-      summary: { en: "Alone with her in an empty summer classroom — a story-style high-res CG collection portraying one situation through three heroines. 327 images total (109 per heroine x 3). Now on sale at PromptCom and DiGiket (FANZA and DLsite coming soon).", zh: "在无人的夏日教室与她独处——以三位女主角描绘同一情境的故事感高分辨率CG集。全327张（每位109张×3人）。PromptCom・DiGiket 发售中（FANZA・DLsite 陆续上架）。", ko: "아무도 없는 여름 교실에서 그녀와 단둘이 — 하나의 상황을 3명의 히로인으로 그린 이야기형 고해상도 CG집. 총 327장(히로인당 109장×3). PromptCom・DiGiket 판매 중（FANZA・DLsite 순차 예정）." },
+      summary: { en: "Alone with her in an empty summer classroom — a story-style high-res CG collection portraying one situation through three heroines. 327 images total (109 per heroine x 3). Now on sale at DiGiket and PromptCom (FANZA and DLsite coming soon). The full collection is also available with a chichi-pui Membership.", zh: "在无人的夏日教室与她独处——以三位女主角描绘同一情境的故事感高分辨率CG集。全327张（每位109张×3人）。DiGiket・PromptCom 发售中（FANZA・DLsite 陆续上架）。加入 chichi-pui 会员后，也可浏览完整版。", ko: "아무도 없는 여름 교실에서 그녀와 단둘이 — 하나의 상황을 3명의 히로인으로 그린 이야기형 고해상도 CG집. 총 327장(히로인당 109장×3). DiGiket・PromptCom 판매 중（FANZA・DLsite 순차 예정）. chichi-pui 멤버십에 가입하면 본편도 보실 수 있습니다." },
       format: { en: "Summer classroom to a dusk farewell", zh: "从夏日教室到黄昏告别", ko: "여름 교실에서 황혼의 이별까지" },
       focus: { en: "Summer school day / 3 heroines / Story format", zh: "夏日上学日 / 三位女主 / 故事形式", ko: "여름 등교일 / 3인 히로인 / 이야기 구성" }
     },
@@ -142,7 +142,8 @@
 
   const longDescriptionTranslations = {
     "summer-schoolday": {
-      en: `A story-style, high-resolution CG / illustration collection now on sale at PromptCom and DiGiket (coming to FANZA and DLsite as well).
+      en: `A story-style, high-resolution CG / illustration collection now on sale at DiGiket and PromptCom (coming to FANZA and DLsite as well).
+The full collection is also available with a chichi-pui Membership.
 
 A school day during summer break. The quiet school building echoes only with cicadas and the presence of the two of you. She was waiting in the classroom, and the afternoon passes at a slightly closer distance than usual.
 
@@ -158,11 +159,9 @@ Until the midsummer light turns to dusk, undisturbed time flows gently for just 
 - Heroines: 3
 - Image size: 3185x4096 (high resolution)
 
-[Trial]
-33 selected images out of the full 327 are available as a free trial.
-
 You can buy or view it at each store's product page.`,
-      zh: `本作品现于 PromptCom・DiGiket 发售中（FANZA・DLsite 亦将陆续上架），是一部故事感的高分辨率 CG・插画集。
+      zh: `本作品现于 DiGiket・PromptCom 发售中（FANZA・DLsite 亦将陆续上架），是一部故事感的高分辨率 CG・插画集。
+加入 chichi-pui 会员后，也可浏览完整版。
 
 暑假中的上学日。寂静的校舍里，回响的只有蝉鸣与两人的气息。在教室里等待的她，与你在比平时更近一些的距离中度过午后。
 
@@ -178,11 +177,9 @@ You can buy or view it at each store's product page.`,
 ・女主角：3人
 ・图像尺寸：3185×4096（高分辨率）
 
-【体验版】
-在全327张中，精选33张作为体验版公开。
-
 购买与浏览请前往各商店的作品页。`,
-      ko: `본 작품은 현재 PromptCom・DiGiket에서 판매 중인 이야기형 고해상도 CG・일러스트집입니다(FANZA・DLsite에서도 순차 판매 예정).
+      ko: `본 작품은 현재 DiGiket・PromptCom에서 판매 중인 이야기형 고해상도 CG・일러스트집입니다(FANZA・DLsite에서도 순차 판매 예정).
+chichi-pui 멤버십에 가입하면 본편도 보실 수 있습니다.
 
 여름방학의 등교일. 고요한 교사에 울리는 것은 매미 소리와 두 사람의 기척뿐. 교실에서 기다리던 그녀와, 평소보다 조금 가까운 거리에서 보내는 오후.
 
@@ -197,9 +194,6 @@ You can buy or view it at each store's product page.`,
 ・수록 매수: 총 327장
 ・히로인: 3명
 ・이미지 크기: 3185×4096(고해상도)
-
-【체험판】
-제품판 총 327장 중 선별한 33장을 체험판으로 공개하고 있습니다.
 
 구매・열람은 각 스토어 작품 페이지에서.`
     },
@@ -718,7 +712,8 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
   };
 
   const officialJapaneseDescriptions = {
-    "summer-schoolday": `本作品は、PromptCom・DiGiket で販売中のCG・イラスト集です（FANZA・DLsite でも順次販売予定）。
+    "summer-schoolday": `本作品は、DiGiket・PromptCom で販売中のCG・イラスト集です（FANZA・DLsite でも順次販売予定）。
+chichi-puiメンバーシップへの加入でも、本編をご覧いただけます。
 
 夏休みの登校日。静まり返った校舎に響くのは、蝉の声と、ふたりの気配だけ。教室で待っていた彼女と、いつもより少し近い距離で過ごす午後――。
 
@@ -733,9 +728,6 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
 ・収録枚数：全327枚
 ・ヒロイン：3人
 ・画像サイズ：3185×4096（高解像度）
-
-【体験版】
-製品版 全327枚のうち、選出した33枚を体験版として公開しています。
 
 購入・閲覧は各ストアの作品ページからどうぞ。`,
     "kinpatsu-miko-isekai": `本作品は、DLsiteで販売中のCG集です（FANZA・PromptComでも配信中）。
@@ -1153,6 +1145,7 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
     if (hostname.includes("booth.pm")) return "booth";
     if (hostname.includes("pictspace.net")) return "pictspace";
     if (hostname.includes("prompt-com.com")) return "promptcom";
+    if (hostname.includes("chichi-pui.com")) return "chichipui";
     if (hostname.includes("pixiv.net")) return "pixiv";
     return fallback.toLowerCase();
   }
@@ -1165,6 +1158,7 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
       booth: "click_booth",
       pictspace: "click_pictspace",
       promptcom: "click_promptcom",
+      chichipui: "click_chichipui_membership",
       pixiv: "click_pixiv"
     }[platform] || "";
   }
@@ -1307,6 +1301,22 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
     }).join("");
   }
 
+  const membershipLinks = {
+    "summer-schoolday": "https://membership.chichi-pui.com/users/esuna/membership/?age_limit=R18"
+  };
+
+  function renderMembershipLink(item) {
+    const url = membershipLinks[item.id];
+    if (!url) return "";
+    const label = {
+      ja: "chichi-pui メンバーシップ",
+      en: "chichi-pui Membership",
+      zh: "chichi-pui 会员",
+      ko: "chichi-pui 멤버십"
+    }[currentLang()] || "chichi-pui メンバーシップ";
+    return '<a class="sales-button primary" href="' + url + '" target="_blank" rel="noopener noreferrer" data-analytics-platform="chichipui" data-analytics-work="' + item.id + '">' + label + '</a>';
+  }
+
   const trialLinks = {
     "summer-schoolday": "https://prompt-com.com/ja/p/58ba1e79-42e7-4f01-963c-9f4fe6b0a60d?rating=all"
   };
@@ -1393,7 +1403,7 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
             <div><span>Volume</span><strong>${work.count}</strong></div>
           </div>
           <h2>${uiText("sales")}</h2>
-          <div class="sales-links">${renderSales(work)}${renderTrialLink(work)}</div>
+          <div class="sales-links">${renderMembershipLink(work)}${renderSales(work)}${renderTrialLink(work)}</div>
           <div class="share-links">${renderShareButton(work)}</div>
         </div>
       </section>

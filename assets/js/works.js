@@ -518,14 +518,16 @@ In total the collection contains 448 high-resolution images — 300 main images 
     count: "327枚",
     format: "夏の教室 → 夕暮れの別れ",
     focus: "夏休みの登校日 / 3人のヒロイン / 物語仕立て",
-    summary: "夏休みの登校日、誰もいない教室で彼女とふたりきり。同じシチュエーションを3人のヒロインそれぞれで描いた物語仕立ての高解像度CG集。全327枚（1ヒロイン109枚×3人）。PromptCom・DiGiket で販売中（FANZA・DLsite は順次配信予定）。",
+    summary: "夏休みの登校日、誰もいない教室で彼女とふたりきり。同じシチュエーションを3人のヒロインそれぞれで描いた物語仕立ての高解像度CG集。全327枚（1ヒロイン109枚×3人）。DiGiket・PromptCom で販売中（FANZA・DLsite は順次配信予定）。chichi-puiメンバーシップへの加入でも、本編をご覧いただけます。",
     description: {
-      ja: `本作品は、PromptCom・DiGiket で販売中のCG・イラスト集です（FANZA・DLsite でも順次販売予定）。
+      ja: `本作品は、DiGiket・PromptCom で販売中のCG・イラスト集です（FANZA・DLsite でも順次販売予定）。
+chichi-puiメンバーシップへの加入でも、本編をご覧いただけます。
 
 夏休みの登校日。静まり返った校舎に響くのは、蝉の声と、ふたりの気配だけ。教室で待っていた彼女と、いつもより少し近い距離で過ごす午後――。
 
 真夏の光が夕暮れへ変わるまで、誰にも邪魔されない、ふたりだけの時間がゆっくりと進んでいきます。本作は、ひとつのシチュエーションを3人のヒロインそれぞれで描いた、物語仕立ての高解像度CG・イラスト集です。`,
-      en: `A story-style, high-resolution CG collection now on sale at PromptCom and DiGiket (coming to FANZA and DLsite as well).
+      en: `A story-style, high-resolution CG collection now on sale at DiGiket and PromptCom (coming to FANZA and DLsite as well).
+The full collection is also available with a chichi-pui Membership.
 
 A school day during summer break. The quiet school echoes only with cicadas and the presence of the two of you. She was waiting in the classroom, and the afternoon passes at a slightly closer distance than usual — until the midsummer light turns to dusk.`
     },
