@@ -235,6 +235,15 @@ const works = [
     }
   },
   {
+    title: { ja: "Fanart Select [R15]", en: "Fanart Select [R15]" },
+    slug: "fanart-select-r15",
+    image: "works/fanart-r15/img/cover.jpg",
+    thumbnail: "works/fanart-r15/img/cover.jpg",
+    imageWidth: 1220,
+    imageHeight: 916,
+    links: {}
+  },
+  {
     title: { ja: "Fanart Select [R]", en: "Fanart Select [R]" },
     slug: "fanart-select",
     image: "works/fanart/img/cover.jpg",
@@ -372,6 +381,12 @@ const workDescriptions = {
     zh: "暑假上学日，在无人的教室与她独处。以三位女主角描绘同一情境的故事感高分辨率CG集，全327张（109×3）。DiGiket・PromptCom 发售中（FANZA・DLsite 陆续上架）。加入 chichi-pui 会员后，也可浏览完整版。",
     ko: "여름방학 등교일, 아무도 없는 교실에서 그녀와 단둘이. 하나의 상황을 3명의 히로인으로 그린 이야기형 고해상도 CG집. 총 327장(109×3). DiGiket・PromptCom 판매 중（FANZA・DLsite 순차 예정）. chichi-pui 멤버십에 가입하면 본편도 보실 수 있습니다."
   },
+  "fanart-select-r15": {
+    ja: "R15対象の二次創作キャラクターごとのAIイラストをまとめたシリーズです。42キャラのサンプルを公開しています。本編・追加イラスト・過去公開分は、chichi-puiメンバーシップ「R15 二次創作アーカイブ」でまとめてご覧いただけます。",
+    en: "An R15 AI illustration series organized by fanwork character, with samples for 42 characters. Full sets, additional illustrations, and past releases are collected in the chichi-pui Membership “R15 二次創作アーカイブ.”",
+    zh: "按 R15 二次创作角色整理的 AI 插画系列，公开42位角色的样图。完整版、追加插画及往期作品，可在 chichi-pui 会员方案“R15 二次創作アーカイブ”中集中查看。",
+    ko: "R15 2차 창작 캐릭터별 AI 일러스트를 모은 시리즈로, 42명의 샘플을 공개합니다. 본편·추가 일러스트·이전 공개분은 chichi-pui 멤버십 “R15 二次創作アーカイブ”에서 한꺼번에 보실 수 있습니다."
+  },
   "fanart-select": {
     ja: "二次創作キャラクターごとのAIイラストをまとめたシリーズです。各キャラクターのサンプルを無料公開しています。本編・追加イラスト・過去公開分は、chichi-puiメンバーシップ「R18 二次創作アーカイブ」でまとめてご覧いただけます。",
     en: "An AI illustration series organized by fanwork character. Free samples are available for each character. Full sets, additional illustrations, and past releases are collected in the chichi-pui Membership “R18 二次創作アーカイブ.”",
@@ -399,6 +414,7 @@ const workTitleTranslations = {
   "erobokishin-4649-akane": { zh: "Erobokishin 4649 Akane", ko: "에로복신 4649 아카네" },
   "kyoto-prompt-pack": { zh: "Kyoto Atmosphere Prompt Pack Vol.1", ko: "Kyoto Atmosphere Prompt Pack Vol.1" },
   "summer-schoolday": { zh: "无人到来的上学日 / The Day No One Comes to School", ko: "아무도 오지 않는 등교일 / The Day No One Comes to School" },
+  "fanart-select-r15": { zh: "Fanart Select [R15]", ko: "Fanart Select [R15]" },
   "fanart-select": { zh: "Fanart Select [R]", ko: "Fanart Select [R]" }
 };
 
@@ -511,6 +527,12 @@ const workArchiveMeta = {
     series: { ja: "夏の教室", en: "Summer Classroom", zh: "夏日教室", ko: "여름 교실" },
     tags: { ja: ["制服", "3人ヒロイン"], en: ["School uniform", "3 heroines"], zh: ["制服", "三位女主"], ko: ["교복", "3인 히로인"] }
   },
+  "fanart-select-r15": {
+    count: { ja: "42キャラ", en: "42 characters", zh: "42位角色", ko: "42명" },
+    quality: "R15",
+    series: { ja: "キャラ別ポートレート", en: "Character Portraits", zh: "角色头像集", ko: "캐릭터 포트레이트" },
+    tags: { ja: ["chichi-pui", "メンバーシップ"], en: ["chichi-pui", "Membership"], zh: ["chichi-pui", "会员"], ko: ["chichi-pui", "멤버십"] }
+  },
   "fanart-select": {
     count: { ja: "二次創作", en: "Fanwork", zh: "二次创作", ko: "2차 창작" },
     quality: "PORTRAIT",
@@ -523,6 +545,10 @@ const allAgesWorkSlugs = new Set([
   "kindle-seifuku-bikyaku",
   "hikagami-school-route",
   "hikagami"
+]);
+
+const r15WorkSlugs = new Set([
+  "fanart-select-r15"
 ]);
 
 const pickupSlugs = ["erobokishin-4649", "blonde-shrine-maiden", "setouchi-omorashi-journey"];
@@ -545,19 +571,27 @@ const detailPageBySlug = {
   "erobokishin-4649-akane": "eroboxin-akane",
   "kyoto-prompt-pack": "kyoto-prompt-pack/index.html",
   "summer-schoolday": "summer-schoolday",
+  "fanart-select-r15": "works/fanart-r15/index.html",
   "fanart-select": "works/fanart/index.html"
 };
 
 const newReleaseLabels = {
+  "fanart-select-r15": "NEW / 2026.07",
   "summer-schoolday": "NEW / 2026.07",
   "blonde-shrine-maiden-isekai": "NEW / 2026.06",
   "kyoto-prompt-pack": "NEW / 2026.05"
 };
 
-const worksGridPrioritySlugs = ["summer-schoolday", "fanart-select", "blonde-shrine-maiden-isekai", "hikagami-school-route"];
+const worksGridPrioritySlugs = ["summer-schoolday", "fanart-select-r15", "fanart-select", "blonde-shrine-maiden-isekai", "hikagami-school-route"];
 
 function ratingBadgeFor(work) {
   if (allAgesWorkSlugs.has(work.slug)) return null;
+  if (r15WorkSlugs.has(work.slug)) {
+    return {
+      label: "R15",
+      type: "primary"
+    };
+  }
   return {
     label: "R18",
     type: "primary"
@@ -656,7 +690,7 @@ function createRatingOverlayBadge(work) {
   const rating = ratingBadgeFor(work);
   if (!rating) return null;
   const badge = document.createElement("span");
-  badge.className = "rating-overlay-badge is-r18";
+  badge.className = `rating-overlay-badge is-${rating.label.toLowerCase()}`;
   badge.textContent = rating.label;
   return badge;
 }
