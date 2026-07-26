@@ -782,113 +782,6 @@ function analyticsKey(label) {
   return label.toLowerCase().replace(/\s+/g, "-");
 }
 
-function normalizeDestination(label) {
-  return label.toLowerCase().replace(/\s+/g, "-");
-}
-
-function workBySlug(slug) {
-  return works.find((work) => work.slug === slug);
-}
-
-function analyticsPlatform(link) {
-  const explicitPlatform = link.dataset.analyticsPlatform;
-  if (explicitPlatform) {
-    return explicitPlatform.toLowerCase();
-  }
-
-  const destination = link.dataset.analyticsLink || normalizeDestination(link.textContent);
-  if (destination.includes("dlsite")) return "dlsite";
-  if (destination.includes("fanza")) return "fanza";
-  if (destination.includes("booth")) return "booth";
-  if (destination.includes("pictspace")) return "pictspace";
-  if (destination.includes("digiket")) return "digiket";
-  if (destination.includes("promptcom")) return "promptcom";
-  if (destination.includes("pixiv")) return "pixiv";
-
-  const hostname = new URL(link.href).hostname;
-
-  if (hostname.includes("dlsite.com") || hostname === "dlaf.jp") {
-    return "dlsite";
-  }
-
-  if (hostname.includes("dmm.co.jp")) {
-    return "fanza";
-  }
-
-  if (hostname.includes("booth.pm")) {
-    return "booth";
-  }
-
-  if (hostname.includes("pictspace.net")) {
-    return "pictspace";
-  }
-
-  if (hostname.includes("digiket.com")) {
-    return "digiket";
-  }
-
-  if (hostname.includes("prompt-com.com")) {
-    return "promptcom";
-  }
-
-  if (hostname.includes("pixiv.net")) {
-    return "pixiv";
-  }
-
-  if (hostname.includes("amazon.co.jp") || hostname.includes("amazon.com")) {
-    return "kindle";
-  }
-
-  return "";
-}
-
-function individualClickEventName(link) {
-  const platform = analyticsPlatform(link);
-  const eventNames = {
-    fanza: "click_fanza",
-    dlsite: "click_dlsite",
-    digiket: "click_digiket",
-    booth: "click_booth",
-    pictspace: "click_pictspace",
-    promptcom: "click_promptcom",
-    pixiv: "click_pixiv"
-  };
-  return eventNames[platform] || "";
-}
-
-function sendOutboundClick(link) {
-  if (typeof window.gtag !== "function") {
-    return;
-  }
-
-  const destination = link.dataset.analyticsLink || normalizeDestination(link.textContent);
-  const area = link.dataset.analyticsArea || "unknown";
-  const workSlug = link.dataset.analyticsWork || "";
-  const work = workBySlug(workSlug);
-  const platform = analyticsPlatform(link);
-  const readableUrl = `${destination}:${link.href}`;
-  const params = {
-    link_url: readableUrl,
-    link_domain: new URL(link.href).hostname,
-    link_text: link.textContent.trim(),
-    link_destination: destination,
-    link_area: area,
-    work_slug: workSlug,
-    work_title: link.dataset.analyticsWorkTitle || (work ? workTitle(work) : ""),
-    platform,
-    page_url: location.href,
-    outbound: true,
-    transport_type: "beacon",
-  };
-
-  window.gtag("event", "click", params);
-
-  const eventName = individualClickEventName(link);
-  if (eventName) {
-    window.gtag("event", eventName, params);
-  }
-}
-
 function createLink(label, url, workSlug) {
   const link = document.createElement("a");
 
@@ -954,6 +847,10 @@ function renderPickups() {
       const imageFrame = document.createElement("a");
       imageFrame.className = "card-image-frame";
       imageFrame.href = detailHref(work);
+      imageFrame.dataset.analyticsEvent = "work_detail_click";
+      imageFrame.dataset.analyticsArea = "pickup-card";
+      imageFrame.dataset.analyticsWork = work.slug;
+      imageFrame.dataset.analyticsWorkTitle = workTitle(work);
       imageFrame.setAttribute("aria-label", `${workTitle(work)} ${detailButtonText(true)}`);
 
       const image = document.createElement("img");
@@ -980,6 +877,10 @@ function renderPickups() {
       link.className = "link-button primary";
       link.href = detailHref(work);
       link.textContent = detailButtonText(true);
+      link.dataset.analyticsEvent = "work_detail_click";
+      link.dataset.analyticsArea = "pickup-card";
+      link.dataset.analyticsWork = work.slug;
+      link.dataset.analyticsWorkTitle = workTitle(work);
 
       copy.append(title, text, link);
       card.append(imageFrame, copy);
@@ -1007,6 +908,10 @@ function renderWorks() {
     const imageFrame = document.createElement("a");
     imageFrame.className = "card-image-frame";
     imageFrame.href = detailHref(work);
+    imageFrame.dataset.analyticsEvent = "work_detail_click";
+    imageFrame.dataset.analyticsArea = "work-card";
+    imageFrame.dataset.analyticsWork = work.slug;
+    imageFrame.dataset.analyticsWorkTitle = workTitle(work);
     imageFrame.setAttribute("aria-label", `${workTitle(work)} ${detailButtonText(true)}`);
 
     const image = document.createElement("img");
@@ -1038,6 +943,10 @@ function renderWorks() {
     detailLink.className = "link-button primary";
     detailLink.href = detailHref(work);
     detailLink.textContent = detailButtonText();
+    detailLink.dataset.analyticsEvent = "work_detail_click";
+    detailLink.dataset.analyticsArea = "work-card";
+    detailLink.dataset.analyticsWork = work.slug;
+    detailLink.dataset.analyticsWorkTitle = workTitle(work);
     links.append(detailLink);
 
     copy.append(title, note, links);
@@ -1093,13 +1002,3 @@ setAgeGateState(hasAcceptedAgeGate() || location.hostname === "127.0.0.1" || loc
 
 ageGateEnter?.addEventListener("click", acceptAgeGate);
 ageGateLeave?.addEventListener("click", leaveAgeGate);
-
-document.addEventListener("click", (event) => {
-  const link = event.target.closest("a[data-analytics-link]");
-  if (!link) {
-    return;
-  }
-
-  sendOutboundClick(link);
-});
-

@@ -285,7 +285,7 @@
     .tab-btn{padding:10px 11px;font-size:12.5px}
   }
 </style>
-<script src="../assets/js/analytics-loader.js" data-cloudflare-beacon-token="eb8b24f9326c49d0b24bef451eed7971"></script>
+<script src="../assets/js/analytics-loader.js?v=ga4-20260726" data-cloudflare-beacon-token="eb8b24f9326c49d0b24bef451eed7971"></script>
 </head>
 <body>
 
@@ -297,8 +297,8 @@
   </div>
   <nav class="tabs">
     <button class="tab-btn active" data-tab="1" type="button">特徴・仕様</button>
-    <button class="tab-btn" data-tab="2" type="button">書籍ビューア</button>
-    <button class="tab-btn" data-tab="3" type="button">漫画ビューア</button>
+    <button class="tab-btn" data-tab="2" data-analytics-event="viewer_start" data-analytics-link="app-book-viewer" data-analytics-area="app-tabs" type="button">書籍ビューア</button>
+    <button class="tab-btn" data-tab="3" data-analytics-event="viewer_start" data-analytics-link="app-manga-viewer" data-analytics-area="app-tabs" type="button">漫画ビューア</button>
     <button class="tab-btn" data-tab="4" type="button">公開情報</button>
   </nav>
 </header>
@@ -314,9 +314,9 @@
     <p>設定はいりません。開いた、その状態がいちばん読みやすい。</p>
     <p style="margin:16px auto 6px"><span class="soon">Android版 公開に向けて準備中</span></p>
     <p style="margin:0 auto 12px;font-weight:700">公開時期やアップデートは、Xでお知らせします。フォローしてお待ちください。</p>
-    <a class="cta" href="https://x.com/esuna_4649" target="_blank" rel="noopener">最新情報をXでフォロー</a>
-    <a class="cta ghost" href="https://x.com/esuna_4649/status/2066098351804920247" target="_blank" rel="noopener">開発状況をXで見る</a>
-    <a class="cta x" href="https://x.com/intent/post" rel="noopener" onclick="return shareApp(event)">𝕏 でシェア</a>
+    <a class="cta" href="https://x.com/esuna_4649" target="_blank" rel="noopener" data-analytics-link="app-follow-x" data-analytics-area="app-hero">最新情報をXでフォロー</a>
+    <a class="cta ghost" href="https://x.com/esuna_4649/status/2066098351804920247" target="_blank" rel="noopener" data-analytics-link="app-progress-x" data-analytics-area="app-hero">開発状況をXで見る</a>
+    <a class="cta x" href="https://x.com/intent/post" rel="noopener" data-analytics-link="app-share-x" data-analytics-area="app-hero" onclick="return shareApp(event)">𝕏 でシェア</a>
     <div class="hero-duo">
       <div class="phone-frame"><div class="phone-screen"><div class="phone-notch"></div><img src="assets/manga_panels.jpg" alt="漫画ビューア（コマ割りページ）"></div></div>
       <div class="phone-frame"><div class="phone-screen"><div class="phone-notch"></div><img src="assets/epub_p7.jpg" alt="EPUB書籍ビューア（縦書き本文）"></div></div>
@@ -683,27 +683,6 @@ function shareApp(e){
     });
   });
 })();
-</script>
-<script>
-  // X CTA など外部リンクのクリックを GA4 に送る（解析ローダー読込時のみ）
-  document.addEventListener('click', function (e) {
-    var a = e.target.closest('a[href]');
-    if (!a) return;
-    var href = a.getAttribute('href') || '';
-    var isX = href.indexOf('x.com') !== -1 || href.indexOf('twitter.com') !== -1;
-    if (!isX) return;
-    if (typeof window.gtag !== 'function') return;
-    window.gtag('event', 'click', {
-      link_url: href,
-      link_domain: 'x.com',
-      link_text: (a.textContent || '').trim().slice(0, 80),
-      link_destination: 'x_cta',
-      link_area: 'app-lp',
-      outbound: true,
-      transport_type: 'beacon',
-      page_url: location.href
-    });
-  }, true);
 </script>
 </body>
 </html>

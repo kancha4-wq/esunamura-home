@@ -60,6 +60,20 @@
     document.head.appendChild(script);
   }
 
+  function ensureAnalyticsEvents(loaderScript) {
+    const existing = document.querySelector(
+      'script[src*="analytics-events.js"], script[data-esunamura-analytics-events]'
+    );
+    if (existing) return;
+
+    const loaderUrl = loaderScript?.src || new URL("assets/js/analytics-loader.js", window.location.href).href;
+    appendScript({
+      defer: true,
+      src: new URL("analytics-events.js?v=ga4-20260726", loaderUrl).href,
+      "data-esunamura-analytics-events": true,
+    });
+  }
+
   const loaderScript = document.currentScript;
   const ga4MeasurementId =
     (loaderScript && loaderScript.dataset.ga4MeasurementId) || DEFAULT_GA4_MEASUREMENT_ID;
@@ -92,6 +106,13 @@
     async: true,
     src: "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(ga4MeasurementId),
   });
+
+  const loadAnalyticsEvents = () => ensureAnalyticsEvents(loaderScript);
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", loadAnalyticsEvents, { once: true });
+  } else {
+    loadAnalyticsEvents();
+  }
 
   if (cloudflareBeaconToken) {
     appendScript({

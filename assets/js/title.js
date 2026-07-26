@@ -8,7 +8,8 @@
   const work = works.find((item) => item.id === requestedWorkId) || (!requestedWorkId ? works[0] : null);
   const ui = {
     ja: {
-      sales: "販売サイト",
+      sales: "購入・閲覧方法",
+      salesGuide: "メンバーシップで閲覧するか、各販売サイトから購入できます。",
       phases: "フェーズ / 空間導線",
       tags: "この作品が好きな方向け",
       gallery: "サンプル画像ギャラリー",
@@ -19,10 +20,13 @@
       shareX: "Xで共有",
       sameSeries: "同シリーズ",
       relatedFetish: "関連フェチ",
-      closeWorld: "世界観近い作品"
+      closeWorld: "世界観近い作品",
+      research: "関連するSDXL検証記事",
+      researchLead: "この作品の背景・衣装・表情づくりに近い検証ログです。"
     },
     en: {
-      sales: "Stores",
+      sales: "Ways to view or buy",
+      salesGuide: "View through the membership or purchase from an available store.",
       phases: "Phases / Flow",
       tags: "Recommended for",
       gallery: "Sample Gallery",
@@ -33,10 +37,13 @@
       shareX: "Share on X",
       sameSeries: "Same series",
       relatedFetish: "Related motif",
-      closeWorld: "Similar mood"
+      closeWorld: "Similar mood",
+      research: "Related SDXL research",
+      researchLead: "Prompt tests related to the backgrounds, outfits, and expressions used in this work."
     },
     zh: {
-      sales: "销售平台",
+      sales: "浏览・购买方式",
+      salesGuide: "可通过会员浏览，或前往各销售平台购买。",
       phases: "阶段 / 空间动线",
       tags: "推荐给喜欢这些要素的用户",
       gallery: "样张图库",
@@ -47,10 +54,13 @@
       shareX: "分享到 X",
       sameSeries: "同系列",
       relatedFetish: "相关要素",
-      closeWorld: "氛围相近"
+      closeWorld: "氛围相近",
+      research: "相关 SDXL 验证文章",
+      researchLead: "与本作品的背景、服装和表情制作相关的验证日志。"
     },
     ko: {
-      sales: "판매 사이트",
+      sales: "감상・구매 방법",
+      salesGuide: "멤버십으로 감상하거나 각 판매처에서 구매할 수 있습니다.",
       phases: "페이즈 / 공간 동선",
       tags: "이런 취향에 추천",
       gallery: "샘플 이미지 갤러리",
@@ -61,7 +71,9 @@
       shareX: "X에 공유",
       sameSeries: "같은 시리즈",
       relatedFetish: "관련 취향",
-      closeWorld: "비슷한 분위기"
+      closeWorld: "비슷한 분위기",
+      research: "관련 SDXL 검증 글",
+      researchLead: "이 작품의 배경・의상・표정 제작과 가까운 검증 로그입니다."
     }
   };
 
@@ -1150,47 +1162,6 @@ chichi-puiメンバーシップへの加入でも、本編をご覧いただけ�
     return fallback.toLowerCase();
   }
 
-  function analyticsEventName(platform) {
-    return {
-      fanza: "click_fanza",
-      dlsite: "click_dlsite",
-      digiket: "click_digiket",
-      booth: "click_booth",
-      pictspace: "click_pictspace",
-      promptcom: "click_promptcom",
-      chichipui: "click_chichipui_membership",
-      pixiv: "click_pixiv"
-    }[platform] || "";
-  }
-
-  function analyticsParamsFor(item, platform) {
-    return {
-      work_slug: item.id,
-      work_title: titleOf(item),
-      platform,
-      page_url: location.href,
-      transport_type: "beacon"
-    };
-  }
-
-  function trackPlatformClick(item, platform) {
-    if (typeof window.gtag !== "function") {
-      return;
-    }
-
-    const eventName = analyticsEventName(platform);
-    if (eventName) {
-      window.gtag("event", eventName, analyticsParamsFor(item, platform));
-    }
-  }
-
-  function trackShareX(item) {
-    if (typeof window.gtag !== "function") {
-      return;
-    }
-    window.gtag("event", "click_share_x", analyticsParamsFor(item, "x"));
-  }
-
   function labelOf(text) {
     const lang = currentLang();
     return labelTranslations[text]?.[lang] || text;
@@ -1285,6 +1256,105 @@ chichi-puiメンバーシップへの加入でも、本編をご覧いただけ�
     return uiText("closeWorld");
   }
 
+  const researchCatalog = [
+    {
+      path: "research/background/",
+      keywords: /背景|情景|教室|学校|通学|旅|港|北海道|瀬戸内|沖縄|リゾート|異世界|屋外|空間/,
+      label: { ja: "SDXL 背景プロンプト検証", en: "SDXL Background Prompt Guide", zh: "SDXL 背景 Prompt 验证", ko: "SDXL 배경 프롬프트 검증" }
+    },
+    {
+      path: "research/outfit/",
+      keywords: /衣装|制服|巫女|和装|着物|水着|服|通学|リゾート/,
+      label: { ja: "SDXL 服装プロンプト検証", en: "SDXL Outfit Prompt Guide", zh: "SDXL 服装 Prompt 验证", ko: "SDXL 의상 프롬프트 검증" }
+    },
+    {
+      path: "research/expression/",
+      keywords: /表情|笑|放心|理性|感情|ストーリー|段階|口元|唇|接写/,
+      label: { ja: "SDXL 表情プロンプト検証", en: "SDXL Expression Prompt Guide", zh: "SDXL 表情 Prompt 验证", ko: "SDXL 표정 프롬프트 검증" }
+    },
+    {
+      path: "research/hairstyle/",
+      keywords: /髪|金髪|ヘア|巫女|ヒロイン/,
+      label: { ja: "SDXL 髪型プロンプト検証", en: "SDXL Hairstyle Prompt Guide", zh: "SDXL 发型 Prompt 验证", ko: "SDXL 헤어스타일 프롬프트 검증" }
+    },
+    {
+      path: "research/eyes/",
+      keywords: /目|視線|表情|放心|ヒロイン|接近/,
+      label: { ja: "SDXL 目・瞳プロンプト検証", en: "SDXL Eye Prompt Guide", zh: "SDXL 眼睛 Prompt 验证", ko: "SDXL 눈・눈동자 프롬프트 검증" }
+    }
+  ];
+
+  function relatedResearch(item) {
+    const text = [item.series, item.format, item.focus, ...item.phases, ...item.tags].join(" ");
+    const ranked = researchCatalog
+      .map((entry, index) => ({ entry, index, score: entry.keywords.test(text) ? 1 : 0 }))
+      .sort((a, b) => b.score - a.score || a.index - b.index)
+      .slice(0, 3)
+      .map(({ entry }) => entry);
+    return ranked;
+  }
+
+  function renderRelatedResearch(item) {
+    return `
+      <section class="related-section research-related-section title-research-links">
+        <p class="eyebrow">Research / SDXL</p>
+        <h2>${uiText("research")}</h2>
+        <p class="related-section-lead">${uiText("researchLead")}</p>
+        <div class="research-related-grid">
+          ${relatedResearch(item).map((entry) => `
+            <a class="research-related-card" href="${new URL(entry.path, siteRootUrl()).href}" data-analytics-area="title-related-research" data-analytics-link="${entry.path.replace(/\W+/g, "-")}">
+              <h3>${entry.label[currentLang()] || entry.label.ja}</h3>
+              <p>${uiText("researchLead")}</p>
+            </a>
+          `).join("")}
+        </div>
+      </section>
+    `;
+  }
+
+  function syncStructuredData(item) {
+    let structuredData = document.querySelector("#work-structured-data");
+    if (!structuredData) {
+      structuredData = document.createElement("script");
+      structuredData.id = "work-structured-data";
+      structuredData.type = "application/ld+json";
+      document.head.append(structuredData);
+    }
+
+    const detailUrl = detailPageUrl(item);
+    const imageUrls = [item.cover, ...(item.samples || []).slice(0, 3)]
+      .map((image) => new URL(image, siteRootUrl()).href);
+    structuredData.textContent = JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CreativeWork",
+          "@id": `${detailUrl}#work`,
+          name: titleOf(item),
+          headline: titleOf(item),
+          description: summaryOf(item),
+          url: detailUrl,
+          image: imageUrls,
+          creator: { "@type": "Person", name: "えすなむら", url: "https://esunamura.com/" },
+          isPartOf: { "@type": "CollectionPage", "@id": "https://esunamura.com/works/#collection" },
+          genre: item.series,
+          keywords: item.tags,
+          contentRating: allAgesWorkIds.has(item.id) ? "All Ages" : "R18",
+          isFamilyFriendly: allAgesWorkIds.has(item.id),
+          inLanguage: currentLang()
+        },
+        {
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "えすなむら", item: "https://esunamura.com/" },
+            { "@type": "ListItem", position: 2, name: uiText("related"), item: "https://esunamura.com/works/" },
+            { "@type": "ListItem", position: 3, name: titleOf(item), item: detailUrl }
+          ]
+        }
+      ]
+    }).replace(/</g, "\\u003c");
+  }
+
   function renderSales(item) {
     return item.salesLinks.map((link) => {
       const href = link.url || "#";
@@ -1295,7 +1365,7 @@ chichi-puiメンバーシップへの加入でも、本編をご覧いただけ�
         : 'rel="noopener noreferrer"';
       const platform = analyticsPlatformFromUrl(link.url, link.label);
       const analyticsAttrs = link.url
-        ? `data-analytics-platform="${platform}" data-analytics-work="${item.id}"`
+        ? `data-analytics-platform="${platform}" data-analytics-link="${platform}-${item.id}" data-analytics-area="title-sales" data-analytics-work="${item.id}" data-analytics-work-title="${titleOf(item)}"`
         : "";
       return `<a class="${className}" href="${href}" ${link.url ? `target="_blank" ${rel}` : ""} ${analyticsAttrs}>${label}</a>`;
     }).join("");
@@ -1314,7 +1384,7 @@ chichi-puiメンバーシップへの加入でも、本編をご覧いただけ�
       zh: "chichi-pui 会员",
       ko: "chichi-pui 멤버십"
     }[currentLang()] || "chichi-pui メンバーシップ";
-    return '<a class="sales-button primary" href="' + url + '" target="_blank" rel="noopener noreferrer" data-analytics-platform="chichipui" data-analytics-work="' + item.id + '">' + label + '</a>';
+    return '<a class="sales-button primary" href="' + url + '" target="_blank" rel="noopener noreferrer" data-analytics-platform="chichipui" data-analytics-link="chichipui-' + item.id + '" data-analytics-area="title-sales" data-analytics-work="' + item.id + '" data-analytics-work-title="' + titleOf(item) + '">' + label + '</a>';
   }
 
   const trialLinks = {
@@ -1325,19 +1395,11 @@ chichi-puiメンバーシップへの加入でも、本編をご覧いただけ�
     const url = trialLinks[item.id];
     if (!url) return "";
     const label = { ja: "無料体験版（PromptCom）", en: "Free trial (PromptCom)", zh: "免费体验版（PromptCom）", ko: "무료 체험판 (PromptCom)" }[currentLang()] || "無料体験版（PromptCom）";
-    return `<a class="sales-button trial-button" href="${url}" target="_blank" rel="noopener noreferrer" data-analytics-platform="promptcom" data-analytics-work="${item.id}">${label}</a>`;
+    return `<a class="sales-button trial-button" href="${url}" target="_blank" rel="noopener noreferrer" data-analytics-platform="promptcom" data-analytics-link="trial-${item.id}" data-analytics-area="title-sales" data-analytics-work="${item.id}" data-analytics-work-title="${titleOf(item)}">${label}</a>`;
   }
 
   function renderShareButton(item) {
-    return `<a class="share-x-button" href="${shareUrlFor(item)}" target="_blank" rel="noopener" data-share-x><span class="share-x-icon" aria-hidden="true">X</span>${uiText("shareX")}</a>`;
-  }
-
-  function bindShareButtons(item) {
-    app.querySelectorAll("[data-share-x]").forEach((button) => {
-      button.addEventListener("click", () => {
-        trackShareX(item);
-      });
-    });
+    return `<a class="share-x-button" href="${shareUrlFor(item)}" target="_blank" rel="noopener" data-share-x data-analytics-platform="x" data-analytics-link="share-x-${item.id}" data-analytics-area="title-share" data-analytics-work="${item.id}"><span class="share-x-icon" aria-hidden="true">X</span>${uiText("shareX")}</a>`;
   }
 
   function renderPreviewLinks(item) {
@@ -1387,10 +1449,11 @@ chichi-puiメンバーシップへの加入でも、本編をご覧いただけ�
       return;
     }
     document.title = `${titleOf(work)} | Esunamura Collection`;
+    syncStructuredData(work);
     app.innerHTML = `
       <section class="detail-hero">
         <div class="cover-frame">
-          <img src="${work.cover}" alt="${titleOf(work)} 表紙">
+          <img src="${work.cover}" alt="${titleOf(work)} 表紙" loading="eager" decoding="async" fetchpriority="high">
           ${renderArchiveBadges(work)}
         </div>
         <div class="detail-copy">
@@ -1403,6 +1466,7 @@ chichi-puiメンバーシップへの加入でも、本編をご覧いただけ�
             <div><span>Volume</span><strong>${work.count}</strong></div>
           </div>
           <h2>${uiText("sales")}</h2>
+          <p class="sales-guidance">${uiText("salesGuide")}</p>
           <div class="sales-links">${renderMembershipLink(work)}${renderSales(work)}${renderTrialLink(work)}</div>
           <div class="share-links">${renderShareButton(work)}</div>
         </div>
@@ -1436,8 +1500,8 @@ chichi-puiメンバーシップへの加入でも、本編をご覧いただけ�
         <h2>${uiText("gallery")}</h2>
         <div class="sample-gallery">
           ${work.samples.map((sample, index) => `
-            <a href="${sample}" target="_blank" rel="noopener">
-              <img src="${sample}" alt="${titleOf(work)} サンプル ${index + 1}" loading="lazy">
+            <a href="${sample}" target="_blank" rel="noopener" data-analytics-area="title-samples" data-analytics-link="sample-${work.id}-${index + 1}" data-analytics-work="${work.id}">
+              <img src="${sample}" alt="${titleOf(work)} サンプル ${index + 1}" loading="lazy" decoding="async">
             </a>
           `).join("")}
         </div>
@@ -1448,9 +1512,9 @@ chichi-puiメンバーシップへの加入でも、本編をご覧いただけ�
         <h2>${uiText("related")}</h2>
         <div class="related-grid">
           ${relatedWorks(work).map((item) => `
-            <a class="related-card" href="${detailPageUrl(item)}">
+            <a class="related-card" href="${detailPageUrl(item)}" data-analytics-event="work_detail_click" data-analytics-area="title-related-works" data-analytics-work="${item.id}" data-analytics-work-title="${titleOf(item)}">
               <div class="related-cover">
-                <img src="${item.cover}" alt="${titleOf(item)} 表紙" loading="lazy">
+                <img src="${item.cover}" alt="${titleOf(item)} 表紙" loading="lazy" decoding="async">
               </div>
               <div class="related-body">
                 <p class="eyebrow">${item.series}</p>
@@ -1462,22 +1526,10 @@ chichi-puiメンバーシップへの加入でも、本編をご覧いただけ�
           `).join("")}
         </div>
       </section>
+
+      ${renderRelatedResearch(work)}
     `;
-    bindShareButtons(work);
   }
-
-  document.addEventListener("click", (event) => {
-    const link = event.target.closest("a[data-analytics-platform], a[data-analytics-link]");
-    if (!link || link.matches("[data-share-x]")) {
-      return;
-    }
-
-    const platform = link.dataset.analyticsPlatform || analyticsPlatformFromUrl(
-      link.href,
-      link.dataset.analyticsLink || link.textContent
-    );
-    trackPlatformClick(work, platform);
-  });
 
   if (!work) {
     app.innerHTML = `<section class="not-found"><div><h1>Title not found</h1><p><a href="index.html">作品一覧へ戻る</a></p></div></section>`;
