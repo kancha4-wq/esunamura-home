@@ -230,6 +230,7 @@ const works = [
     imageHeight: 420,
     links: {
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_796353/",
+      DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01677590.html",
       pictSPACE: "https://pictspace.net/items/manage_detail/939145",
       PromptCom: "https://prompt-com.com/ja/p/8b9b037a-07e6-4954-8972-866bcb6e7237?rating=all",
       DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0344449/AFID=esunamura/"
@@ -377,10 +378,10 @@ const workDescriptions = {
     ko: "연구실 공개 기념 무료 Prompt Pack. SDXL / illustriousXL 계열 모델용 교토풍・일본풍 배경 프롬프트 검증 소재입니다."
   },
   "summer-schoolday": {
-    ja: "夏休みの登校日、誰もいない教室で彼女とふたりきり。同じシチュエーションを3人のヒロインそれぞれで描いた物語仕立ての高解像度CG集。全327枚（1ヒロイン109枚×3人）。FANZA・DiGiket・PromptCom で販売中（DLsite は順次配信予定）。chichi-puiメンバーシップへの加入でも、本編をご覧いただけます。",
-    en: "Alone with her in an empty summer classroom. A story-style high-res CG collection portraying one situation through three heroines — 327 images total (109 x 3). Now on sale at FANZA, DiGiket, and PromptCom (DLsite coming soon). The full collection is also available with a chichi-pui Membership.",
-    zh: "暑假上学日，在无人的教室与她独处。以三位女主角描绘同一情境的故事感高分辨率CG集，全327张（109×3）。现已在 FANZA、DiGiket、PromptCom 发售（DLsite 陆续上架）。加入 chichi-pui 会员后，也可浏览完整版。",
-    ko: "여름방학 등교일, 아무도 없는 교실에서 그녀와 단둘이. 하나의 상황을 3명의 히로인으로 그린 이야기형 고해상도 CG집. 총 327장(109×3). FANZA・DiGiket・PromptCom에서 판매 중(DLsite 순차 예정). chichi-pui 멤버십에 가입하면 본편도 보실 수 있습니다."
+    ja: "夏休みの登校日、誰もいない教室で彼女とふたりきり。同じシチュエーションを3人のヒロインそれぞれで描いた物語仕立ての高解像度CG集。全327枚（1ヒロイン109枚×3人）。FANZA・DLsite・DiGiket・PromptCom で販売中。chichi-puiメンバーシップへの加入でも、本編をご覧いただけます。",
+    en: "Alone with her in an empty summer classroom. A story-style high-res CG collection portraying one situation through three heroines — 327 images total (109 x 3). Now on sale at FANZA, DLsite, DiGiket, and PromptCom. The full collection is also available with a chichi-pui Membership.",
+    zh: "暑假上学日，在无人的教室与她独处。以三位女主角描绘同一情境的故事感高分辨率CG集，全327张（109×3）。现已在 FANZA、DLsite、DiGiket、PromptCom 发售。加入 chichi-pui 会员后，也可浏览完整版。",
+    ko: "여름방학 등교일, 아무도 없는 교실에서 그녀와 단둘이. 하나의 상황을 3명의 히로인으로 그린 이야기형 고해상도 CG집. 총 327장(109×3). FANZA・DLsite・DiGiket・PromptCom에서 판매 중. chichi-pui 멤버십에 가입하면 본편도 보실 수 있습니다."
   },
   "fanart-select-r15": {
     ja: "R15対象の二次創作キャラクターごとのAIイラストをまとめたシリーズです。42キャラのサンプルを公開しています。本編・追加イラスト・過去公開分は、chichi-puiメンバーシップ「R15 二次創作アーカイブ」でまとめてご覧いただけます。",
