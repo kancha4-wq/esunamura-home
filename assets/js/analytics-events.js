@@ -149,7 +149,7 @@
     if (isOutbound(url)) {
       send("outbound_link_click", { ...params, link_type: download ? "download" : "external" });
       if (CONTENT_ACCESS_PLATFORMS.has(params.platform)) {
-        send("content_access_click", { ...params, access_type: params.platform === "chichipui" ? "membership" : "external_page" });
+        send("content_access_click", { ...params, access_type: params.platform === "chichipui" ? "profile" : "external_page" });
       }
     }
     if (isMajorCta(element)) {

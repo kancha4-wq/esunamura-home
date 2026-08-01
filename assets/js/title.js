@@ -9,7 +9,7 @@
   const ui = {
     ja: {
       sales: "購入・閲覧方法",
-      salesGuide: "メンバーシップで閲覧するか、各販売サイトから購入できます。",
+      salesGuide: "chichi-puiで閲覧するか、各販売サイトから購入できます。",
       phases: "フェーズ / 空間導線",
       tags: "この作品が好きな方向け",
       gallery: "サンプル画像ギャラリー",
@@ -26,7 +26,7 @@
     },
     en: {
       sales: "Ways to view or buy",
-      salesGuide: "View through the membership or purchase from an available store.",
+      salesGuide: "View on chichi-pui or purchase from an available store.",
       phases: "Phases / Flow",
       tags: "Recommended for",
       gallery: "Sample Gallery",
@@ -43,7 +43,7 @@
     },
     zh: {
       sales: "浏览・购买方式",
-      salesGuide: "可通过会员浏览，或前往各销售平台购买。",
+      salesGuide: "可在 chichi-pui 浏览，或前往各销售平台购买。",
       phases: "阶段 / 空间动线",
       tags: "推荐给喜欢这些要素的用户",
       gallery: "样张图库",
@@ -60,7 +60,7 @@
     },
     ko: {
       sales: "감상・구매 방법",
-      salesGuide: "멤버십으로 감상하거나 각 판매처에서 구매할 수 있습니다.",
+      salesGuide: "chichi-pui에서 감상하거나 각 판매처에서 구매할 수 있습니다.",
       phases: "페이즈 / 공간 동선",
       tags: "이런 취향에 추천",
       gallery: "샘플 이미지 갤러리",
@@ -99,7 +99,7 @@
 
   const shortTranslations = {
     "summer-schoolday": {
-      summary: { en: "Alone with her in an empty summer classroom — a story-style high-res CG collection portraying one situation through three heroines. 327 images total (109 per heroine x 3). Now on sale at FANZA, DLsite, DiGiket, and PromptCom. The full collection is also available with a chichi-pui Membership.", zh: "在无人的夏日教室与她独处——以三位女主角描绘同一情境的故事感高分辨率CG集。全327张（每位109张×3人）。现已在 FANZA、DLsite、DiGiket、PromptCom 发售。加入 chichi-pui 会员后，也可浏览完整版。", ko: "아무도 없는 여름 교실에서 그녀와 단둘이 — 하나의 상황을 3명의 히로인으로 그린 이야기형 고해상도 CG집. 총 327장(히로인당 109장×3). FANZA・DLsite・DiGiket・PromptCom에서 판매 중. chichi-pui 멤버십에 가입하면 본편도 보실 수 있습니다." },
+      summary: { en: "Alone with her in an empty summer classroom — a story-style high-res CG collection portraying one situation through three heroines. 327 images total (109 per heroine x 3). Now on sale at FANZA, DLsite, DiGiket, and PromptCom. The full collection is also available on chichi-pui.", zh: "在无人的夏日教室与她独处——以三位女主角描绘同一情境的故事感高分辨率CG集。全327张（每位109张×3人）。现已在 FANZA、DLsite、DiGiket、PromptCom 发售。也可在 chichi-pui 浏览完整版。", ko: "아무도 없는 여름 교실에서 그녀와 단둘이 — 하나의 상황을 3명의 히로인으로 그린 이야기형 고해상도 CG집. 총 327장(히로인당 109장×3). FANZA・DLsite・DiGiket・PromptCom에서 판매 중. chichi-pui에서도 본편을 보실 수 있습니다." },
       format: { en: "Summer classroom to a dusk farewell", zh: "从夏日教室到黄昏告别", ko: "여름 교실에서 황혼의 이별까지" },
       focus: { en: "Summer school day / 3 heroines / Story format", zh: "夏日上学日 / 三位女主 / 故事形式", ko: "여름 등교일 / 3인 히로인 / 이야기 구성" }
     },
@@ -155,7 +155,7 @@
   const longDescriptionTranslations = {
     "summer-schoolday": {
       en: `A story-style, high-resolution CG / illustration collection now on sale at FANZA, DLsite, DiGiket, and PromptCom.
-The full collection is also available with a chichi-pui Membership.
+The full collection is also available on chichi-pui.
 
 A school day during summer break. The quiet school building echoes only with cicadas and the presence of the two of you. She was waiting in the classroom, and the afternoon passes at a slightly closer distance than usual.
 
@@ -173,7 +173,7 @@ Until the midsummer light turns to dusk, undisturbed time flows gently for just 
 
 You can buy or view it at each store's product page.`,
       zh: `本作品现于 FANZA・DLsite・DiGiket・PromptCom 发售中，是一部故事感的高分辨率 CG・插画集。
-加入 chichi-pui 会员后，也可浏览完整版。
+也可在 chichi-pui 浏览完整版。
 
 暑假中的上学日。寂静的校舍里，回响的只有蝉鸣与两人的气息。在教室里等待的她，与你在比平时更近一些的距离中度过午后。
 
@@ -191,7 +191,7 @@ You can buy or view it at each store's product page.`,
 
 购买与浏览请前往各商店的作品页。`,
       ko: `본 작품은 현재 FANZA・DLsite・DiGiket・PromptCom에서 판매 중인 이야기형 고해상도 CG・일러스트집입니다.
-chichi-pui 멤버십에 가입하면 본편도 보실 수 있습니다.
+chichi-pui에서도 본편을 보실 수 있습니다.
 
 여름방학의 등교일. 고요한 교사에 울리는 것은 매미 소리와 두 사람의 기척뿐. 교실에서 기다리던 그녀와, 평소보다 조금 가까운 거리에서 보내는 오후.
 
@@ -725,7 +725,7 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
 
   const officialJapaneseDescriptions = {
     "summer-schoolday": `本作品は、FANZA・DLsite・DiGiket・PromptCom で販売中のCG・イラスト集です。
-chichi-puiメンバーシップへの加入でも、本編をご覧いただけます。
+chichi-puiでも、本編をご覧いただけます。
 
 夏休みの登校日。静まり返った校舎に響くのは、蝉の声と、ふたりの気配だけ。教室で待っていた彼女と、いつもより少し近い距離で過ごす午後――。
 
@@ -1372,18 +1372,18 @@ chichi-puiメンバーシップへの加入でも、本編をご覧いただけ�
   }
 
   const membershipLinks = {
-    "summer-schoolday": "https://membership.chichi-pui.com/users/esuna/membership/?age_limit=R18"
+    "summer-schoolday": "https://www.chichi-pui.com/users/esuna/"
   };
 
   function renderMembershipLink(item) {
     const url = membershipLinks[item.id];
     if (!url) return "";
     const label = {
-      ja: "chichi-pui メンバーシップ",
-      en: "chichi-pui Membership",
-      zh: "chichi-pui 会员",
-      ko: "chichi-pui 멤버십"
-    }[currentLang()] || "chichi-pui メンバーシップ";
+      ja: "chichi-pui",
+      en: "chichi-pui",
+      zh: "chichi-pui",
+      ko: "chichi-pui"
+    }[currentLang()] || "chichi-pui";
     return '<a class="sales-button primary" href="' + url + '" target="_blank" rel="noopener noreferrer" data-analytics-platform="chichipui" data-analytics-link="chichipui-' + item.id + '" data-analytics-area="title-sales" data-analytics-work="' + item.id + '" data-analytics-work-title="' + titleOf(item) + '">' + label + '</a>';
   }
 
