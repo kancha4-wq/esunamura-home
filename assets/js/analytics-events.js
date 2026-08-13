@@ -63,6 +63,7 @@
     const explicit = element?.dataset.analyticsPlatform;
     if (explicit) return explicit.toLowerCase();
     const host = url?.hostname || "";
+    if (host.includes("patreon.com")) return "patreon";
     if (host.includes("chichi-pui.com")) return "chichipui";
     if (host.includes("dlsite.com") || host === "dlaf.jp") return "dlsite";
     if (host.includes("dmm.co.jp")) return "fanza";
