@@ -1206,9 +1206,7 @@ chichi-puiでも、本編をご覧いただけます。
       DLsite: "4K ZIP",
       DiGiket: "4K ZIP + PDF",
       pictSPACE: "ZIP + PDF",
-      BOOTH: "ZIP + PDF",
-      "Kindle JP": "Kindle",
-      "Kindle US": "Kindle"
+      BOOTH: "ZIP + PDF"
     };
     return item.salesLinks
       .filter((link) => formats[link.label])
@@ -1465,9 +1463,10 @@ chichi-puiでも、本編をご覧いただけます。
             <div class="fact-primary"><span>Focus</span><strong>${focusOf(work)}</strong></div>
             <div><span>Volume</span><strong>${work.count}</strong></div>
           </div>
-          <h2>${uiText("sales")}</h2>
-          <p class="sales-guidance">${uiText("salesGuide")}</p>
-          <div class="sales-links">${renderMembershipLink(work)}${renderSales(work)}${renderTrialLink(work)}</div>
+          ${(() => {
+            const salesMarkup = `${renderMembershipLink(work)}${renderSales(work)}${renderTrialLink(work)}`;
+            return salesMarkup ? `<h2>${uiText("sales")}</h2><p class="sales-guidance">${uiText("salesGuide")}</p><div class="sales-links">${salesMarkup}</div>` : "";
+          })()}
           <div class="share-links">${renderShareButton(work)}</div>
         </div>
       </section>

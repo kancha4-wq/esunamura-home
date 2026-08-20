@@ -173,13 +173,10 @@ const works = [
     imageWidth: 2048,
     imageHeight: 3512,
     note: {
-      ja: "Amazon Kindle版",
-      en: "Amazon Kindle edition"
+      ja: "AIイラスト集",
+      en: "AI illustration collection"
     },
-    links: {
-      "Kindle JP": "https://www.amazon.co.jp/dp/B0GYMZZR4S",
-      "Kindle US": "https://www.amazon.com/dp/B0GYMZZR4S"
-    }
+    links: {}
   },
   {
     title: { ja: "エロボキシン4649 あかね / Erobokishin 4649 Akane", en: "Erobokishin 4649 Akane / エロボキシン4649 あかね" },
@@ -658,9 +655,7 @@ function salesFormatBadgesFor(work) {
     DLsite: "4K ZIP",
     DiGiket: "4K ZIP + PDF",
     BOOTH: work.slug === "kyoto-prompt-pack" ? "Prompt Pack" : "ZIP + PDF",
-    pictSPACE: "ZIP + PDF",
-    "Kindle JP": "Kindle",
-    "Kindle US": "Kindle"
+    pictSPACE: "ZIP + PDF"
   };
   return Object.keys(formats)
     .filter((store) => work.links?.[store])

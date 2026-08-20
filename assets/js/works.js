@@ -463,7 +463,7 @@ The images move through morning streets, stairs, classrooms, and small daily mom
     },
     phases: ["朝", "通学路", "階段", "教室"],
     tags: ["制服", "美脚", "足元", "通学", "日常", "アートコレクション"],
-    salesLinks: saleLinkTemplate,
+    salesLinks: [],
     related: ["hikagami-school", "hikagami"]
   },
   {
@@ -617,10 +617,6 @@ const salesByWorkId = {
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01591976.html",
     PromptCom: "https://prompt-com.com/ja/p/2cbff6cf-bb88-4a78-8af0-cb43c5227164"
   },
-  "school-legs": {
-    "Kindle JP": "https://www.amazon.co.jp/dp/B0GYMZZR4S",
-    "Kindle US": "https://www.amazon.com/dp/B0GYMZZR4S"
-  },
   "kinpatsu-miko-isekai": {
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_784862/",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01658559.html",
@@ -638,7 +634,7 @@ const salesByWorkId = {
 works.forEach((work) => {
   const sales = salesByWorkId[work.id];
   if (!sales) return;
-  const priority = ["FANZA", "DLsite", "DiGiket", "pictSPACE", "BOOTH", "PromptCom", "Kindle JP", "Kindle US"];
+  const priority = ["FANZA", "DLsite", "DiGiket", "pictSPACE", "BOOTH", "PromptCom"];
   work.salesLinks = priority
     .filter((label) => sales[label])
     .map((label) => ({ label, url: sales[label] }));
