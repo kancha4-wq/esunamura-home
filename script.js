@@ -142,6 +142,7 @@ const works = [
     imageWidth: 560,
     imageHeight: 420,
     links: {
+      FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_772274/",
       pictSPACE: "https://pictspace.net/items/manage_detail/845880",
       DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01628452.html",
       PromptCom: "https://prompt-com.com/ja/s/f4785b95-8fb8-4330-a96e-5487eaf39887"
@@ -581,7 +582,7 @@ const newReleaseLabels = {
   "kyoto-prompt-pack": "NEW / 2026.05"
 };
 
-const worksGridPrioritySlugs = ["summer-schoolday", "fanart-select-r15", "fanart-select", "blonde-shrine-maiden-isekai", "hikagami-school-route"];
+const worksGridPrioritySlugs = ["hikagami-school-route", "summer-schoolday", "fanart-select-r15", "fanart-select", "blonde-shrine-maiden-isekai"];
 
 function ratingBadgeFor(work) {
   if (allAgesWorkSlugs.has(work.slug)) return null;

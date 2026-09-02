@@ -574,6 +574,7 @@ const salesByWorkId = {
     PromptCom: "https://prompt-com.com/ja/s/d76883e7-c094-465c-9874-2afb7379e2f0"
   },
   "hikagami-school": {
+    FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_772274/",
     pictSPACE: "https://pictspace.net/items/manage_detail/845880",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01628452.html",
     PromptCom: "https://prompt-com.com/ja/s/f4785b95-8fb8-4330-a96e-5487eaf39887"
