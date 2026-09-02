@@ -576,6 +576,7 @@ const detailPageBySlug = {
 };
 
 const newReleaseLabels = {
+  "hikagami-school-route": "NEW / 2026.09",
   "fanart-select-r15": "NEW / 2026.07",
   "summer-schoolday": "NEW / 2026.07",
   "blonde-shrine-maiden-isekai": "NEW / 2026.06",
