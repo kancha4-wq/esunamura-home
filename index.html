@@ -25,14 +25,14 @@
     <link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-new-512x512.png?v=2">
     <script src="assets/js/analytics-loader.js?v=ga4-20260726" data-cloudflare-beacon-token="eb8b24f9326c49d0b24bef451eed7971"></script>
     <link rel="preload" as="image" href="images/optimized/hub-hero-1280.jpg" fetchpriority="high">
-    <link rel="stylesheet" href="style.css?v=ga4-seo-20260726">
+    <link rel="stylesheet" href="style.css?v=home-feed-20260902c">
       <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
         { "@type": "WebSite", "@id": "https://esunamura.com/#website", "url": "https://esunamura.com/", "name": "えすなむら", "inLanguage": ["ja","en","zh","ko"] },
         { "@type": "Person", "@id": "https://esunamura.com/#person", "name": "えすなむら", "alternateName": "esunamura", "url": "https://esunamura.com/",
-          "sameAs": ["https://x.com/esuna_4649","https://www.patreon.com/c/esunamura","https://www.chichi-pui.com/users/esuna/","https://prompt-com.com/ja/6954d7c84740e/series","https://www.dlsite.com/aix/circle/profile/=/maker_id/RG01067916.html","https://www.pixiv.net/users/21257126"] }
+          "sameAs": ["https://x.com/esuna_4649","https://www.patreon.com/c/esunamura","https://www.chichi-pui.com/users/esuna/","https://prompt-com.com/ja/6954d7c84740e/series","https://www.dlsite.com/aix/circle/profile/=/maker_id/RG01067916.html","https://www.pixiv.net/users/21257126","https://painter-ai.ai/ja/users/c156de76bd"] }
       ]
     }
     </script>
@@ -78,6 +78,17 @@
           </div>
         </section>
 
+        <section class="home-latest-feed" aria-labelledby="home-latest-title">
+          <div class="home-latest-feed-heading">
+            <p class="eyebrow" data-ja="最新投稿" data-en="Latest posts" data-zh="最新发布" data-ko="최신 게시물">最新投稿</p>
+            <h2 id="home-latest-title" data-ja="各サイトの最新投稿" data-en="Newest from each platform" data-zh="各平台最新内容" data-ko="플랫폼별 최신 게시물">各サイトの最新投稿</h2>
+            <p data-ja="X・Patreon・chichi-pui・PromptCom・pixiv・pAInterから、各1件を新着順で掲載しています。" data-en="One current post from each of X, Patreon, chichi-pui, PromptCom, pixiv, and pAInter, ordered by publish time." data-zh="按发布时间展示 X、Patreon、chichi-pui、PromptCom、pixiv 与 pAInter 各平台的最新一条内容。" data-ko="X, Patreon, chichi-pui, PromptCom, pixiv, pAInter에서 각 1건의 최신 게시물을 게시 시간순으로 보여드립니다.">X・Patreon・chichi-pui・PromptCom・pixiv・pAInterから、各1件を新着順で掲載しています。</p>
+          </div>
+          <p class="home-latest-feed-status" id="home-latest-status" role="status" aria-live="polite">最新投稿を読み込んでいます。</p>
+          <div class="home-latest-feed-list" id="home-latest-list" hidden></div>
+          <noscript><p class="home-latest-feed-status">最新投稿の表示にはJavaScriptが必要です。</p></noscript>
+        </section>
+
         <section class="hub-hero">
           <div class="hub-copy">
             <p class="eyebrow">Esunamura</p>
@@ -101,34 +112,6 @@
             <h2 data-ja="研究室を見る" data-en="View Research" data-zh="查看研究室" data-ko="연구실 보기">研究室を見る</h2>
             <p data-ja="SDXL / illustriousXL 系モデルを使った、髪型・前髪・髪色・背景プロンプトの検証ログです。生成結果を比較しながら、安定しやすい指定を整理しています。" data-en="An all-ages verification log for hairstyle, bangs, hair color, and background prompts using SDXL / illustriousXL-based models. It compares generated results and organizes stable prompt directions." data-zh="使用 SDXL / illustriousXL 系模型整理的发型、刘海、发色、背景 prompt 验证日志。通过比较生成结果，记录更容易稳定的指定方式。" data-ko="SDXL / illustriousXL 계열 모델을 사용한 헤어스타일, 앞머리, 헤어 컬러, 배경 프롬프트 검증 로그입니다. 생성 결과를 비교하면서 안정되기 쉬운 지정을 정리합니다.">SDXL / illustriousXL 系モデルを使った、髪型・前髪・髪色・背景プロンプトの検証ログです。生成結果を比較しながら、安定しやすい指定を整理しています。</p>
             <span class="link-button primary" data-ja="研究室へ" data-en="Open Research" data-zh="前往研究室" data-ko="연구실로">研究室へ</span>
-          </a>
-        </section>
-
-        <!-- 同人書籍ビューア公式サイト導線（JA表示時のみ） -->
-        <style>
-          html:not([lang="ja"]) .hub-app-row{display:none}
-          .hub-app-row{margin-top:2px}
-          .hub-route-app{
-            position:relative;
-            border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);
-            background:linear-gradient(135deg, #eef3fb, #ffffff);
-          }
-          .hub-route-app .eyebrow{color:#3b6fb5}
-          .hub-app-logo{position:absolute;top:22px;right:22px;width:72px;height:72px;border-radius:16px;
-            box-shadow:0 6px 18px rgba(30,41,59,.12);}
-          .hub-route-app h2{padding-right:88px}
-          @media(max-width:560px){
-            .hub-app-logo{width:56px;height:56px;top:18px;right:18px}
-            .hub-route-app h2{padding-right:70px}
-          }
-        </style>
-        <section class="hub-app-row" aria-label="同人書籍ビューア">
-          <a class="hub-mini-card hub-route-app" href="https://esunastudio-viewer.pages.dev/" target="_blank" rel="noopener noreferrer" data-analytics-event="viewer_start" data-analytics-link="home-card-app" data-analytics-area="home-route-grid">
-            <img class="hub-app-logo" src="app/assets/app-icon-512.png" alt="同人書籍ビューア アイコン" width="72" height="72" decoding="async">
-            <p class="eyebrow">公式サイト</p>
-            <h2>同人書籍ビューア</h2>
-            <p>同人漫画・同人小説、EPUB、PDF に対応した Android 向け蔵書ビューア「同人書籍ビューア」の機能・仕様・公開情報を、公式サイトでご案内しています。漫画も、読む本も。これひとつ。</p>
-            <span class="link-button">公式サイトを見る</span>
           </a>
         </section>
 
@@ -188,7 +171,8 @@
         }
       })();
     </script>
-    <script src="assets/js/analytics-events.js?v=chichipui-profile-20260801"></script>
+    <script src="assets/js/home-latest-posts.js?v=20260902a"></script>
+    <script src="assets/js/analytics-events.js?v=home-feed-20260902a"></script>
     <script src="assets/js/back-to-top.js"></script>
 
   </body>

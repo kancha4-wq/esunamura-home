@@ -6,7 +6,7 @@
     "7z", "cb7", "cbr", "cbt", "cbz", "csv", "epub", "pdf", "rar", "txt", "xls", "xlsx", "zip",
   ]);
   const CONTENT_ACCESS_PLATFORMS = new Set([
-    "amazon", "booth", "chichipui", "digiket", "dlsite", "fanza", "pictspace", "pixiv", "promptcom",
+    "amazon", "booth", "chichipui", "digiket", "dlsite", "fanza", "painter", "patreon", "pictspace", "pixiv", "promptcom",
   ]);
   const SITE_HOSTS = new Set(["esunamura.com", "www.esunamura.com", window.location.hostname]);
   let workDetailViewSent = false;
@@ -70,6 +70,7 @@
     if (host.includes("digiket.com")) return "digiket";
     if (host.includes("pictspace.net")) return "pictspace";
     if (host.includes("prompt-com.com")) return "promptcom";
+    if (host.includes("painter-ai.ai")) return "painter";
     if (host.includes("booth.pm")) return "booth";
     if (host.includes("pixiv.net")) return "pixiv";
     if (host === "x.com" || host.includes("twitter.com") || host === "t.co") return "x";
@@ -106,6 +107,7 @@
 
   function isMajorCta(element) {
     const area = element.dataset.analyticsArea || "";
+    if (element.dataset.analyticsEvent === "latest_post_click") return false;
     return Boolean(
       element.dataset.analyticsEvent ||
       element.matches(".cta, .sales-button, .share-x-button, .link-button.primary") ||
@@ -117,6 +119,7 @@
     const label = staticLabel(element);
     const destinationPath = url?.pathname || "";
     const destinationId = element.dataset.analyticsLink || slugify(label) || slugify(destinationPath);
+    const latestPostClick = element.dataset.analyticsEvent === "latest_post_click";
     return {
       link_id: destinationId,
       link_area: element.dataset.analyticsArea || "unknown",
@@ -125,7 +128,9 @@
       destination_path: destinationPath.slice(0, 160),
       platform: platformFor(url, element),
       work_id: element.dataset.analyticsWork || workIdFromPath(destinationPath) || workIdFromPath(),
-      work_title: element.dataset.analyticsWorkTitle || document.querySelector("h1")?.textContent?.trim().slice(0, 100) || "",
+      work_title: latestPostClick
+        ? ""
+        : element.dataset.analyticsWorkTitle || document.querySelector("h1")?.textContent?.trim().slice(0, 100) || "",
       page_path: window.location.pathname,
       page_type: pageType(),
       content_language: document.documentElement.lang || "ja",
@@ -144,13 +149,17 @@
     const params = eventParams(element, url);
     const download = isDownload(element, url);
 
+    if (element.dataset.analyticsEvent === "latest_post_click") send("latest_post_click", params);
     if (isWorkDetailLink(element, url)) send("work_detail_click", params);
     if (isViewerStart(element, url)) send("viewer_start", params);
     if (download) send("download_click", params);
     if (isOutbound(url)) {
       send("outbound_link_click", { ...params, link_type: download ? "download" : "external" });
       if (CONTENT_ACCESS_PLATFORMS.has(params.platform)) {
-        send("content_access_click", { ...params, access_type: params.platform === "chichipui" ? "profile" : "external_page" });
+        send("content_access_click", {
+          ...params,
+          access_type: element.dataset.analyticsAccess || (params.platform === "chichipui" ? "profile" : "external_page"),
+        });
       }
     }
     if (isMajorCta(element)) {
