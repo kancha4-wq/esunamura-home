@@ -4,27 +4,27 @@
     "items":  [
                   {
                       "platform":  "promptcom",
-                      "published_at":  "2026-09-03T19:00:00+09:00",
-                      "age_rating":  "全年齢",
+                      "published_at":  "2026-09-03T20:00:00+09:00",
+                      "age_rating":  "R15",
                       "membership_only":  false,
                       "destination_url":  "https://prompt-com.com/ja/6954d7c84740e/",
-                      "web_image_relative_path":  "images/homepage-feed-promptcom-f4fb8f215a225abf7596.webp"
-                  },
-                  {
-                      "platform":  "painter",
-                      "published_at":  "2026-09-03T19:00:00+09:00",
-                      "age_rating":  "R18",
-                      "membership_only":  true,
-                      "destination_url":  "https://painter-ai.ai/ja/membership_rooms/a9a7be76-6c2b-4c23-a192-c309b1122209",
-                      "web_image_relative_path":  "images/homepage-feed-painter-617d83eabca9452372a1.webp"
+                      "web_image_relative_path":  "images/homepage-feed-promptcom-a4165b64be989af04f33.webp"
                   },
                   {
                       "platform":  "pixiv",
-                      "published_at":  "2026-09-03T18:00:00+09:00",
-                      "age_rating":  "全年齢",
+                      "published_at":  "2026-09-03T20:00:00+09:00",
+                      "age_rating":  "R18",
                       "membership_only":  false,
                       "destination_url":  "https://www.pixiv.net/users/21257126",
-                      "web_image_relative_path":  "images/homepage-feed-pixiv-7a7deb1f0fbe127409c3.webp"
+                      "web_image_relative_path":  "images/homepage-feed-pixiv-3e202ff7e721ba08f0f8.webp"
+                  },
+                  {
+                      "platform":  "painter",
+                      "published_at":  "2026-09-03T20:00:00+09:00",
+                      "age_rating":  "R15",
+                      "membership_only":  false,
+                      "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
+                      "web_image_relative_path":  "images/homepage-feed-painter-8cae8e8c1dc2111f9bd3.webp"
                   },
                   {
                       "platform":  "x",
