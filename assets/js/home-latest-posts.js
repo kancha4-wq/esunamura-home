@@ -107,7 +107,7 @@
       case "x":
         return /^\/esuna_4649(?:\/status\/\d+)?\/?$/.test(path);
       case "patreon":
-        return /^\/(?:c\/)?esunamura(?:\/posts\/\d+)?\/?$/.test(path);
+        return /^\/(?:c\/)?esunamura(?:\/posts\/(?:[a-z0-9-]+-)?\d+)?\/?$/.test(path);
       case "chichipui":
         return destination.hostname === "membership.chichi-pui.com"
           ? /^\/users\/esuna\/membership\/?$/.test(path)
