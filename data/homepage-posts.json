@@ -4,27 +4,27 @@
     "items":  [
                   {
                       "platform":  "promptcom",
-                      "published_at":  "2026-09-04T14:00:00+09:00",
-                      "age_rating":  "R15",
+                      "published_at":  "2026-09-04T15:00:00+09:00",
+                      "age_rating":  "全年齢",
                       "membership_only":  false,
                       "destination_url":  "https://prompt-com.com/ja/6954d7c84740e/",
-                      "web_image_relative_path":  "images/homepage-feed-promptcom-3b54704186e5cebbc4ca.webp"
+                      "web_image_relative_path":  "images/homepage-feed-promptcom-afd5ca110b95e7eb3d6f.webp"
                   },
                   {
                       "platform":  "painter",
-                      "published_at":  "2026-09-04T13:00:00+09:00",
+                      "published_at":  "2026-09-04T15:00:00+09:00",
                       "age_rating":  "R15",
                       "membership_only":  false,
                       "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
-                      "web_image_relative_path":  "images/homepage-feed-painter-0bfe9173e3a9e82577f4.webp"
+                      "web_image_relative_path":  "images/homepage-feed-painter-81d972941fb494e2bf82.webp"
                   },
                   {
                       "platform":  "chichipui",
-                      "published_at":  "2026-09-04T12:30:00+09:00",
-                      "age_rating":  "R18",
-                      "membership_only":  true,
-                      "destination_url":  "https://membership.chichi-pui.com/users/esuna/membership/",
-                      "web_image_relative_path":  "images/homepage-feed-chichipui-af93ad90b80d1cf6ce2b.webp"
+                      "published_at":  "2026-09-04T14:30:00+09:00",
+                      "age_rating":  "全年齢",
+                      "membership_only":  false,
+                      "destination_url":  "https://www.chichi-pui.com/users/esuna/",
+                      "web_image_relative_path":  "images/homepage-feed-chichipui-c645ec78cc811588dcc3.webp"
                   },
                   {
                       "platform":  "pixiv",
