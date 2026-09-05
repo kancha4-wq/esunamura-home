@@ -1,54 +1,54 @@
 {
-  "schema_version": 1,
-  "timezone": "Asia/Tokyo",
-  "items": [
-    {
-      "platform": "patreon",
-      "published_at": "2026-09-05T18:00:00+09:00",
-      "age_rating": "R18",
-      "membership_only": true,
-      "destination_url": "https://www.patreon.com/esunamura/posts/168648191",
-      "web_image_relative_path": "images/homepage-feed-patreon-e74ae2ef6617f65fbeae.webp"
-    },
-    {
-      "platform": "promptcom",
-      "published_at": "2026-09-05T18:00:00+09:00",
-      "age_rating": "R18",
-      "membership_only": false,
-      "destination_url": "https://prompt-com.com/ja/6954d7c84740e/",
-      "web_image_relative_path": "images/homepage-feed-promptcom-f3d10499e9d6387cc877.webp"
-    },
-    {
-      "platform": "painter",
-      "published_at": "2026-09-05T18:00:00+09:00",
-      "age_rating": "R15",
-      "membership_only": false,
-      "destination_url": "https://painter-ai.ai/ja/users/c156de76bd",
-      "web_image_relative_path": "images/homepage-feed-painter-7b649e569307d7a1154a.webp"
-    },
-    {
-      "platform": "chichipui",
-      "published_at": "2026-09-05T17:30:00+09:00",
-      "age_rating": "R15",
-      "membership_only": false,
-      "destination_url": "https://www.chichi-pui.com/users/esuna/",
-      "web_image_relative_path": "images/homepage-feed-chichipui-25267aada4898e133ab5.webp"
-    },
-    {
-      "platform": "x",
-      "published_at": "2026-09-05T16:13:18+09:00",
-      "age_rating": "全年齢",
-      "membership_only": false,
-      "destination_url": "https://x.com/esuna_4649",
-      "web_image_relative_path": "images/homepage-feed-x-cfaa7ccca76e3502a75d.webp"
-    },
-    {
-      "platform": "pixiv",
-      "published_at": "2026-09-05T12:30:00+09:00",
-      "age_rating": "全年齢",
-      "membership_only": false,
-      "destination_url": "https://www.pixiv.net/users/21257126",
-      "web_image_relative_path": "images/homepage-feed-pixiv-226352a866893f5fcc05.webp"
-    }
-  ]
+    "schema_version":  1,
+    "timezone":  "Asia/Tokyo",
+    "items":  [
+                  {
+                      "platform":  "patreon",
+                      "published_at":  "2026-09-05T18:00:00+09:00",
+                      "age_rating":  "R18",
+                      "membership_only":  true,
+                      "destination_url":  "https://www.patreon.com/esunamura/posts/168648191",
+                      "web_image_relative_path":  "images/homepage-feed-patreon-e74ae2ef6617f65fbeae.webp"
+                  },
+                  {
+                      "platform":  "promptcom",
+                      "published_at":  "2026-09-05T18:00:00+09:00",
+                      "age_rating":  "R18",
+                      "membership_only":  false,
+                      "destination_url":  "https://prompt-com.com/ja/6954d7c84740e/",
+                      "web_image_relative_path":  "images/homepage-feed-promptcom-f3d10499e9d6387cc877.webp"
+                  },
+                  {
+                      "platform":  "painter",
+                      "published_at":  "2026-09-05T18:00:00+09:00",
+                      "age_rating":  "R15",
+                      "membership_only":  false,
+                      "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
+                      "web_image_relative_path":  "images/homepage-feed-painter-7b649e569307d7a1154a.webp"
+                  },
+                  {
+                      "platform":  "chichipui",
+                      "published_at":  "2026-09-05T17:30:00+09:00",
+                      "age_rating":  "R15",
+                      "membership_only":  false,
+                      "destination_url":  "https://www.chichi-pui.com/users/esuna/",
+                      "web_image_relative_path":  "images/homepage-feed-chichipui-25267aada4898e133ab5.webp"
+                  },
+                  {
+                      "platform":  "x",
+                      "published_at":  "2026-09-05T16:13:18+09:00",
+                      "age_rating":  "全年齢",
+                      "membership_only":  false,
+                      "destination_url":  "https://x.com/esuna_4649",
+                      "web_image_relative_path":  "images/homepage-feed-x-cfaa7ccca76e3502a75d.webp"
+                  },
+                  {
+                      "platform":  "pixiv",
+                      "published_at":  "2026-09-05T12:30:00+09:00",
+                      "age_rating":  "全年齢",
+                      "membership_only":  false,
+                      "destination_url":  "https://www.pixiv.net/users/21257126",
+                      "web_image_relative_path":  "images/homepage-feed-pixiv-226352a866893f5fcc05.webp"
+                  }
+              ]
 }
