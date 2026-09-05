@@ -17,6 +17,7 @@
   const status = document.querySelector("#research-r-status");
   let currentLanguage = "ja";
   let currentItems = [];
+  let hashTargetHandled = false;
 
   const copy = {
     ja: { loading: "生成情報を読み込んでいます。", error: "生成情報を読み込めませんでした。時間をおいて再度お試しください。", private: "非公開", copy: "コピー", copied: "コピーしました", prompt: "プロンプト情報", positive: "Positive Prompt", negative: "Negative Prompt", settings: "生成設定", open: "投稿先を開く" },
@@ -112,6 +113,16 @@
     return section;
   }
 
+  function revealHashTarget() {
+    if (hashTargetHandled || !window.location.hash) return;
+    const targetId = decodeURIComponent(window.location.hash.slice(1));
+    if (!/^(x|patreon|chichipui|promptcom|pixiv|painter)-[a-f0-9]{20}$/.test(targetId)) return;
+    const target = document.getElementById(targetId);
+    if (!target) return;
+    hashTargetHandled = true;
+    window.requestAnimationFrame(() => target.scrollIntoView({ block: "start" }));
+  }
+
   function render() {
     const labels = copy[lang()];
     if (!currentItems.length) return;
@@ -120,6 +131,7 @@
     currentItems.forEach((item) => {
       const article = document.createElement("article");
       article.className = `research-r-card platform-${item.platform}`;
+      article.id = item.id;
 
       const header = document.createElement("header");
       header.className = "research-r-card-header";
@@ -188,6 +200,7 @@
     list.replaceChildren(fragment);
     list.hidden = false;
     status.hidden = true;
+    revealHashTarget();
   }
 
   function setLanguage(nextLanguage) {
@@ -201,6 +214,10 @@
   }
 
   languageButtons.forEach((button) => button.addEventListener("click", () => setLanguage(button.dataset.lang)));
+  window.addEventListener("hashchange", () => {
+    hashTargetHandled = false;
+    revealHashTarget();
+  });
   try { setLanguage(window.localStorage.getItem("archiveLang") || "ja"); } catch (error) { setLanguage("ja"); }
 
   fetch(manifestUrl, { cache: "no-cache", credentials: "same-origin", headers: { Accept: "application/json" } })

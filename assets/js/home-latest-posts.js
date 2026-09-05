@@ -43,6 +43,8 @@
       allAges: "全年齢",
       image: (name) => `${name}の最新投稿画像`,
       open: (name) => `${name}の最新投稿を新しいタブで開く`,
+      prompt: "プロンプトを見る",
+      promptLabel: (name) => `${name}の最新画像の生成情報を見る`,
       published: (date) => `公開日時：${date}`,
     },
     en: {
@@ -53,6 +55,8 @@
       allAges: "All ages",
       image: (name) => `Latest post image from ${name}`,
       open: (name) => `Open the latest ${name} post in a new tab`,
+      prompt: "View prompt",
+      promptLabel: (name) => `View generation information for the latest ${name} image`,
       published: (date) => `Published: ${date}`,
     },
     zh: {
@@ -63,6 +67,8 @@
       allAges: "全年龄",
       image: (name) => `${name} 的最新发布图片`,
       open: (name) => `在新标签页打开 ${name} 的最新内容`,
+      prompt: "查看 Prompt",
+      promptLabel: (name) => `查看 ${name} 最新图片的生成信息`,
       published: (date) => `发布时间：${date}`,
     },
     ko: {
@@ -73,6 +79,8 @@
       allAges: "전연령",
       image: (name) => `${name} 최신 게시물 이미지`,
       open: (name) => `${name} 최신 게시물을 새 탭에서 열기`,
+      prompt: "프롬프트 보기",
+      promptLabel: (name) => `${name} 최신 이미지의 생성 정보 보기`,
       published: (date) => `게시 시각: ${date}`,
     },
   });
@@ -146,7 +154,7 @@
     ) return null;
 
     const imagePath = typeof raw.web_image_relative_path === "string" ? raw.web_image_relative_path : "";
-    const imageMatch = imagePath.match(/^images\/homepage-feed-(x|patreon|chichipui|promptcom|pixiv|painter)-[a-f0-9]{12,64}\.webp$/);
+    const imageMatch = imagePath.match(/^images\/homepage-feed-(x|patreon|chichipui|promptcom|pixiv|painter)-([a-f0-9]{12,64})\.webp$/);
     if (!imageMatch || imageMatch[1] !== platform) {
       return null;
     }
@@ -163,6 +171,7 @@
       image: imageUrl.href,
       ageRating: ["全年齢", "R15", "R18"].includes(raw.age_rating) ? raw.age_rating : "",
       membershipOnly: raw.membership_only === true,
+      researchId: `${platform}-${imageMatch[2]}`,
     });
   }
 
@@ -246,6 +255,15 @@
         meta.append(badge(ageText, ageClass));
       }
       if (item.membershipOnly) meta.append(badge(copy.members, "members-only"));
+      const promptLink = document.createElement("a");
+      promptLink.className = "home-latest-prompt-link";
+      promptLink.href = `research-r/#${item.researchId}`;
+      promptLink.textContent = copy.prompt;
+      promptLink.setAttribute("aria-label", copy.promptLabel(config.name));
+      promptLink.dataset.analyticsEvent = "research_r_link_click";
+      promptLink.dataset.analyticsLink = `research-r-${item.platform}`;
+      promptLink.dataset.analyticsArea = "home-latest-feed";
+      meta.append(promptLink);
       header.append(meta);
       article.append(header);
 

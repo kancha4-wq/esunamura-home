@@ -1029,6 +1029,31 @@ h2 {
   color: #624a9d;
 }
 
+.home-latest-prompt-link {
+  display: inline-flex;
+  min-height: 28px;
+  align-items: center;
+  padding: 5px 11px;
+  border: 1px solid rgba(225, 87, 121, 0.38);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--accent-strong);
+  font-size: 0.74rem;
+  font-weight: 900;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.home-latest-prompt-link:hover {
+  border-color: var(--accent);
+  background: rgba(225, 87, 121, 0.07);
+}
+
+.home-latest-prompt-link:focus-visible {
+  outline: 3px solid rgba(221, 91, 120, 0.42);
+  outline-offset: 2px;
+}
+
 .home-latest-image-link {
   display: grid;
   min-height: 120px;
@@ -4580,6 +4605,7 @@ body[data-research-section="expression"] .research-candidate-media.has-samples .
 }
 
 .research-r-card {
+  scroll-margin-top: 18px;
   overflow: hidden;
   border: 1px solid var(--line-strong);
   border-radius: 20px;
