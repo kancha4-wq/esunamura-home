@@ -335,7 +335,7 @@
     eyes: "SDXL / illustriousXL 系モデル向けの目プロンプト検証ページです。\nジト目、猫目、大きい目、小さい目、瞳、ハイライト表現などを比較していきます。",
     expression: "SDXL / illustriousXL 系モデル向けの表情プロンプト検証ページです。\n無表情、笑顔、困り顔、怒り顔、照れ顔などの表情差を比較しています。",
     background: "SDXL / illustriousXL 系モデル向けの背景プロンプト検証をまとめました。\n京都風、和風町並み、温泉旅館、海辺、リゾートなどの背景表現を比較しています。",
-    "prompt-guide-pack": "えすなむら研究室のSDXL Prompt Guide Pack Vol.1.2です。\n髪型、前髪、髪色、目、表情、背景、服装プロンプトをTXT / CSV / Excel形式でまとめています。服装プロンプト204件を追加しました。"
+    "prompt-guide-pack": "えすなむら研究室のSDXL Prompt Guide Pack Vol.1.3です。\n髪型、前髪、髪色、目、表情、背景、服装、自然文髪型の451件を、各項目の対象カテゴリだけに整理してTXT / CSV / Excel形式でまとめています。"
   };
 
   const pageSectionGroups = {
