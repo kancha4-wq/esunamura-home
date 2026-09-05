@@ -4,11 +4,19 @@
     "items":  [
                   {
                       "platform":  "promptcom",
-                      "published_at":  "2026-09-05T13:00:00+09:00",
-                      "age_rating":  "全年齢",
+                      "published_at":  "2026-09-05T14:00:00+09:00",
+                      "age_rating":  "R15",
                       "membership_only":  false,
                       "destination_url":  "https://prompt-com.com/ja/6954d7c84740e/",
-                      "web_image_relative_path":  "images/homepage-feed-promptcom-735e5dd7c5719a7152e3.webp"
+                      "web_image_relative_path":  "images/homepage-feed-promptcom-2832022a4fe18d25d790.webp"
+                  },
+                  {
+                      "platform":  "x",
+                      "published_at":  "2026-09-05T13:54:17+09:00",
+                      "age_rating":  "全年齢",
+                      "membership_only":  false,
+                      "destination_url":  "https://x.com/esuna_4649",
+                      "web_image_relative_path":  "images/homepage-feed-x-f3d1b3e56e85fce98bd2.webp"
                   },
                   {
                       "platform":  "painter",
@@ -41,14 +49,6 @@
                       "membership_only":  true,
                       "destination_url":  "https://www.patreon.com/esunamura/posts/168647914",
                       "web_image_relative_path":  "images/homepage-feed-patreon-ec05622a8f95afad06ac.webp"
-                  },
-                  {
-                      "platform":  "x",
-                      "published_at":  "2026-09-05T11:32:49+09:00",
-                      "age_rating":  "全年齢",
-                      "membership_only":  false,
-                      "destination_url":  "https://x.com/esuna_4649",
-                      "web_image_relative_path":  "images/homepage-feed-x-7b233f718b5b27446447.webp"
                   }
               ]
 }
