@@ -4654,10 +4654,30 @@ body[data-research-section="expression"] .research-candidate-media.has-samples .
 }
 
 .research-r-prompt-panel {
-  display: flex;
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 0.82fr);
+  gap: 10px;
   min-width: 0;
-  flex-direction: column;
+  min-height: 0;
+  padding: 12px;
   border-left: 1px solid var(--line);
+  background: #f6f5f2;
+}
+
+.research-r-prompt-panel.is-private {
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.research-r-prompt-section {
+  display: flex;
+  min-height: 0;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
 }
 
 .research-r-prompt-header {
@@ -4665,18 +4685,31 @@ body[data-research-section="expression"] .research-candidate-media.has-samples .
   gap: 12px;
   align-items: center;
   justify-content: space-between;
-  padding: 13px 16px;
+  padding: 8px 11px;
   border-bottom: 1px solid var(--line);
 }
 
 .research-r-prompt-header h3 {
   margin: 0;
-  font-size: 1rem;
+  font-size: 0.79rem;
+  letter-spacing: 0.025em;
+}
+
+.research-r-prompt-section.is-positive .research-r-prompt-header {
+  background: rgba(87, 139, 111, 0.08);
+}
+
+.research-r-prompt-section.is-negative .research-r-prompt-header {
+  background: rgba(225, 87, 121, 0.07);
+}
+
+.research-r-prompt-section.is-settings .research-r-prompt-header {
+  background: rgba(93, 117, 163, 0.08);
 }
 
 .research-r-copy {
-  min-height: 34px;
-  padding: 6px 13px;
+  min-height: 28px;
+  padding: 4px 10px;
   border: 1px solid rgba(225, 87, 121, 0.38);
   border-radius: 999px;
   background: #fff;
@@ -4692,26 +4725,25 @@ body[data-research-section="expression"] .research-candidate-media.has-samples .
   cursor: default;
 }
 
-.research-r-prompt-panel pre {
+.research-r-prompt-section pre {
   overflow: auto;
   flex: 1;
-  max-height: 700px;
+  min-height: 0;
+  max-height: 205px;
   margin: 0;
-  padding: 18px;
+  padding: 10px 12px;
   background: #fbfaf8;
   color: #243044;
   font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
-  font-size: 0.78rem;
-  line-height: 1.65;
+  font-size: 0.74rem;
+  line-height: 1.55;
   white-space: pre-wrap;
   overflow-wrap: anywhere;
 }
 
-.research-r-prompt-panel pre.is-private {
-  display: grid;
-  place-items: center;
+.research-r-private {
+  margin: 0;
   color: var(--muted);
-  font-family: inherit;
   font-size: 1rem;
   font-weight: 900;
 }
@@ -4735,12 +4767,13 @@ body[data-research-section="expression"] .research-candidate-media.has-samples .
   }
 
   .research-r-prompt-panel {
+    grid-template-rows: none;
     border-top: 1px solid var(--line);
     border-left: 0;
   }
 
-  .research-r-prompt-panel pre {
-    max-height: 520px;
+  .research-r-prompt-section pre {
+    max-height: 260px;
   }
 }
 

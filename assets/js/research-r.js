@@ -19,10 +19,10 @@
   let currentItems = [];
 
   const copy = {
-    ja: { loading: "生成情報を読み込んでいます。", error: "生成情報を読み込めませんでした。時間をおいて再度お試しください。", private: "非公開", copy: "コピー", copied: "コピーしました", prompt: "プロンプト情報", open: "投稿先を開く" },
-    en: { loading: "Loading generation information.", error: "Generation information could not be loaded. Please try again later.", private: "Private", copy: "Copy", copied: "Copied", prompt: "Prompt information", open: "Open post" },
-    zh: { loading: "正在加载生成信息。", error: "无法加载生成信息，请稍后重试。", private: "非公开", copy: "复制", copied: "已复制", prompt: "Prompt 信息", open: "打开发布页" },
-    ko: { loading: "생성 정보를 불러오는 중입니다.", error: "생성 정보를 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.", private: "비공개", copy: "복사", copied: "복사했습니다", prompt: "프롬프트 정보", open: "게시물 열기" },
+    ja: { loading: "生成情報を読み込んでいます。", error: "生成情報を読み込めませんでした。時間をおいて再度お試しください。", private: "非公開", copy: "コピー", copied: "コピーしました", prompt: "プロンプト情報", positive: "Positive Prompt", negative: "Negative Prompt", settings: "生成設定", open: "投稿先を開く" },
+    en: { loading: "Loading generation information.", error: "Generation information could not be loaded. Please try again later.", private: "Private", copy: "Copy", copied: "Copied", prompt: "Prompt information", positive: "Positive Prompt", negative: "Negative Prompt", settings: "Generation settings", open: "Open post" },
+    zh: { loading: "正在加载生成信息。", error: "无法加载生成信息，请稍后重试。", private: "非公开", copy: "复制", copied: "已复制", prompt: "Prompt 信息", positive: "Positive Prompt", negative: "Negative Prompt", settings: "生成设置", open: "打开发布页" },
+    ko: { loading: "생성 정보를 불러오는 중입니다.", error: "생성 정보를 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.", private: "비공개", copy: "복사", copied: "복사했습니다", prompt: "프롬프트 정보", positive: "Positive Prompt", negative: "Negative Prompt", settings: "생성 설정", open: "게시물 열기" },
   };
 
   function lang() {
@@ -71,6 +71,45 @@
     badge.className = `research-r-badge ${className}`;
     badge.textContent = text;
     return badge;
+  }
+
+  function splitPromptInfo(value) {
+    const negativeMarker = /\r?\nNegative prompt:\s*/i.exec(value);
+    const settingsMarker = /\r?\nSteps:\s*/i.exec(value);
+    if (!negativeMarker) return { positive: value.trim(), negative: "", settings: "" };
+
+    const negativeStart = negativeMarker.index + negativeMarker[0].length;
+    const hasSettings = settingsMarker && settingsMarker.index > negativeMarker.index;
+    return {
+      positive: value.slice(0, negativeMarker.index).trim(),
+      negative: value.slice(negativeStart, hasSettings ? settingsMarker.index : value.length).trim(),
+      settings: hasSettings ? value.slice(settingsMarker.index + settingsMarker[0].indexOf("Steps:")).trim() : "",
+    };
+  }
+
+  function makePromptSection(title, value, className, labels) {
+    const section = document.createElement("section");
+    section.className = `research-r-prompt-section ${className}`;
+    const header = document.createElement("div");
+    header.className = "research-r-prompt-header";
+    const heading = document.createElement("h3");
+    heading.textContent = title;
+    header.append(heading);
+    const copyButton = document.createElement("button");
+    copyButton.type = "button";
+    copyButton.className = "research-r-copy";
+    copyButton.textContent = labels.copy;
+    copyButton.addEventListener("click", async () => {
+      await navigator.clipboard.writeText(value);
+      copyButton.textContent = labels.copied;
+      window.setTimeout(() => { copyButton.textContent = copy[lang()].copy; }, 1600);
+    });
+    header.append(copyButton);
+    section.append(header);
+    const pre = document.createElement("pre");
+    pre.textContent = value;
+    section.append(pre);
+    return section;
   }
 
   function render() {
@@ -129,27 +168,18 @@
 
       const promptPanel = document.createElement("div");
       promptPanel.className = "research-r-prompt-panel";
-      const promptHeader = document.createElement("div");
-      promptHeader.className = "research-r-prompt-header";
-      const promptTitle = document.createElement("h3");
-      promptTitle.textContent = labels.prompt;
-      promptHeader.append(promptTitle);
-      const copyButton = document.createElement("button");
-      copyButton.type = "button";
-      copyButton.className = "research-r-copy";
-      copyButton.textContent = labels.copy;
-      copyButton.disabled = item.promptInfo === "非公開";
-      copyButton.addEventListener("click", async () => {
-        await navigator.clipboard.writeText(item.promptInfo);
-        copyButton.textContent = labels.copied;
-        window.setTimeout(() => { copyButton.textContent = copy[lang()].copy; }, 1600);
-      });
-      promptHeader.append(copyButton);
-      promptPanel.append(promptHeader);
-      const pre = document.createElement("pre");
-      pre.className = item.promptInfo === "非公開" ? "is-private" : "";
-      pre.textContent = item.promptInfo === "非公開" ? labels.private : item.promptInfo;
-      promptPanel.append(pre);
+      if (item.promptInfo === "非公開") {
+        promptPanel.classList.add("is-private");
+        const privateText = document.createElement("p");
+        privateText.className = "research-r-private";
+        privateText.textContent = labels.private;
+        promptPanel.append(privateText);
+      } else {
+        const promptParts = splitPromptInfo(item.promptInfo);
+        if (promptParts.positive) promptPanel.append(makePromptSection(labels.positive, promptParts.positive, "is-positive", labels));
+        if (promptParts.negative) promptPanel.append(makePromptSection(labels.negative, promptParts.negative, "is-negative", labels));
+        if (promptParts.settings) promptPanel.append(makePromptSection(labels.settings, promptParts.settings, "is-settings", labels));
+      }
       content.append(promptPanel);
       article.append(content);
       fragment.append(article);
