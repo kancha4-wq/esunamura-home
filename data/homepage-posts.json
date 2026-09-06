@@ -4,11 +4,11 @@
     "items":  [
                   {
                       "platform":  "promptcom",
-                      "published_at":  "2026-09-06T13:00:00+09:00",
-                      "age_rating":  "全年齢",
+                      "published_at":  "2026-09-06T14:00:00+09:00",
+                      "age_rating":  "R15",
                       "membership_only":  false,
                       "destination_url":  "https://prompt-com.com/ja/6954d7c84740e/",
-                      "web_image_relative_path":  "images/homepage-feed-promptcom-9b2a0b0f941a99a79a91.webp"
+                      "web_image_relative_path":  "images/homepage-feed-promptcom-bb9d2e29b0c8383df8c5.webp"
                   },
                   {
                       "platform":  "painter",
