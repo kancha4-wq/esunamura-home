@@ -4,19 +4,19 @@
     "items":  [
                   {
                       "platform":  "promptcom",
-                      "published_at":  "2026-09-13T16:00:00+09:00",
-                      "age_rating":  "全年齢",
+                      "published_at":  "2026-09-13T17:00:00+09:00",
+                      "age_rating":  "R15",
                       "membership_only":  false,
                       "destination_url":  "https://prompt-com.com/ja/6954d7c84740e/",
-                      "web_image_relative_path":  "images/homepage-feed-promptcom-1f7650ab9e2ea1fb8fc4.webp"
+                      "web_image_relative_path":  "images/homepage-feed-promptcom-a155bc82a1b3a4f38587.webp"
                   },
                   {
                       "platform":  "painter",
-                      "published_at":  "2026-09-13T16:00:00+09:00",
-                      "age_rating":  "R15",
+                      "published_at":  "2026-09-13T17:00:00+09:00",
+                      "age_rating":  "R18",
                       "membership_only":  false,
                       "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
-                      "web_image_relative_path":  "images/homepage-feed-painter-10b7441f37c6cf74e846.webp"
+                      "web_image_relative_path":  "images/homepage-feed-painter-e1fcb7388247fa2c5a83.webp"
                   },
                   {
                       "platform":  "chichipui",
