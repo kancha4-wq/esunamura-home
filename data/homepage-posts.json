@@ -4,11 +4,11 @@
     "items":  [
                   {
                       "platform":  "painter",
-                      "published_at":  "2026-09-19T16:00:00+09:00",
-                      "age_rating":  "R15",
+                      "published_at":  "2026-09-19T17:00:00+09:00",
+                      "age_rating":  "R18",
                       "membership_only":  false,
                       "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
-                      "web_image_relative_path":  "images/homepage-feed-painter-b95e6b7bfde6ea685d76.webp"
+                      "web_image_relative_path":  "images/homepage-feed-painter-7c64d166ac53df6da3cc.webp"
                   },
                   {
                       "platform":  "chichipui",
