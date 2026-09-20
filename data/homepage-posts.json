@@ -4,19 +4,27 @@
     "items":  [
                   {
                       "platform":  "promptcom",
-                      "published_at":  "2026-09-20T16:00:00+09:00",
-                      "age_rating":  "全年齢",
+                      "published_at":  "2026-09-20T17:00:00+09:00",
+                      "age_rating":  "R15",
                       "membership_only":  false,
                       "destination_url":  "https://prompt-com.com/ja/6954d7c84740e/",
-                      "web_image_relative_path":  "images/homepage-feed-promptcom-54019e2843518478565b.webp"
+                      "web_image_relative_path":  "images/homepage-feed-promptcom-54e68e8afc06856c064d.webp"
                   },
                   {
                       "platform":  "painter",
-                      "published_at":  "2026-09-20T16:00:00+09:00",
-                      "age_rating":  "R15",
+                      "published_at":  "2026-09-20T17:00:00+09:00",
+                      "age_rating":  "R18",
                       "membership_only":  false,
                       "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
-                      "web_image_relative_path":  "images/homepage-feed-painter-02b3b4d1d27ca90b5843.webp"
+                      "web_image_relative_path":  "images/homepage-feed-painter-637223a46671c1793a54.webp"
+                  },
+                  {
+                      "platform":  "x",
+                      "published_at":  "2026-09-20T16:47:22+09:00",
+                      "age_rating":  "全年齢",
+                      "membership_only":  false,
+                      "destination_url":  "https://x.com/esuna_4649",
+                      "web_image_relative_path":  "images/homepage-feed-x-2fb95f3a87f6897dec1d.webp"
                   },
                   {
                       "platform":  "chichipui",
@@ -41,14 +49,6 @@
                       "membership_only":  true,
                       "destination_url":  "https://www.patreon.com/esunamura/posts/170026641",
                       "web_image_relative_path":  "images/homepage-feed-patreon-b05e654645b889445d55.webp"
-                  },
-                  {
-                      "platform":  "x",
-                      "published_at":  "2026-09-20T00:33:07+09:00",
-                      "age_rating":  "全年齢",
-                      "membership_only":  false,
-                      "destination_url":  "https://x.com/esuna_4649",
-                      "web_image_relative_path":  "images/homepage-feed-x-f7a097f922807c837e74.webp"
                   }
               ]
 }
