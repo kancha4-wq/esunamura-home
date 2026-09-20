@@ -3,6 +3,14 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
+                      "platform":  "promptcom",
+                      "published_at":  "2026-09-20T22:30:00+09:00",
+                      "age_rating":  "R15",
+                      "membership_only":  false,
+                      "destination_url":  "https://prompt-com.com/ja/6954d7c84740e/",
+                      "web_image_relative_path":  "images/homepage-feed-promptcom-667e72da581c7fa86486.webp"
+                  },
+                  {
                       "platform":  "patreon",
                       "published_at":  "2026-09-20T22:00:00+09:00",
                       "age_rating":  "R18",
@@ -17,14 +25,6 @@
                       "membership_only":  false,
                       "destination_url":  "https://www.chichi-pui.com/users/esuna/",
                       "web_image_relative_path":  "images/homepage-feed-chichipui-a97484768e483ba1a7e5.webp"
-                  },
-                  {
-                      "platform":  "promptcom",
-                      "published_at":  "2026-09-20T22:00:00+09:00",
-                      "age_rating":  "R18",
-                      "membership_only":  false,
-                      "destination_url":  "https://prompt-com.com/ja/6954d7c84740e/",
-                      "web_image_relative_path":  "images/homepage-feed-promptcom-8ddeeae3dfdd9b5e03eb.webp"
                   },
                   {
                       "platform":  "painter",
