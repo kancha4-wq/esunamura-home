@@ -41,7 +41,7 @@
     sampleAltPrefix: {
       ja: "SDXL 服装プロンプト検証",
       en: "SDXL outfit prompt verification",
-      zh: "SDXL 服装 Prompt 验证",
+      zh: "SDXL 服装提示词验证",
       ko: "SDXL 의상 프롬프트 검증"
     },
     sampleAltSuffix: {
@@ -53,14 +53,14 @@
     positivePrompt: {
       ja: "Positive Prompt",
       en: "Positive Prompt",
-      zh: "正向 Prompt",
-      ko: "Positive Prompt"
+      zh: "正向提示词",
+      ko: "긍정 프롬프트"
     },
     negativePrompt: {
       ja: "Negative Prompt",
       en: "Negative Prompt",
-      zh: "负向 Prompt",
-      ko: "Negative Prompt"
+      zh: "负向提示词",
+      ko: "부정 프롬프트"
     },
     outfitSet: {
       ja: "服装セット",
@@ -495,9 +495,11 @@
     }
     const translated = translatedDisplay(item, language);
     if (translated) return translated;
+    const localizedLabel = item[`label_${language}`];
+    if (localizedLabel) return localizedLabel;
     const fallback = translatedFallbackLabel(item, language);
     if (fallback) return fallback;
-    return item[`label_${language}`] || item.label_en || promptLabel(item);
+    return item.label_en || promptLabel(item);
   }
 
   function hasAny(text, keywords) {
@@ -569,7 +571,7 @@
     const label = itemLabel(item, language);
     const templates = {
       en: `${label} outfit prompt test. Useful for comparing the clothing shape, material feel, and scene fit while keeping the character identity stable.`,
-      zh: `${label} 服装 prompt 验证。用于比较在保持角色辨识度的同时，服装轮廓、材质感和场景适配是否稳定。`,
+      zh: `${label}服装提示词验证。用于比较在保持角色辨识度的同时，服装轮廓、材质感和场景适配是否稳定。`,
       ko: `${label} 의상 프롬프트 검증입니다. 캐릭터 인상을 유지하면서 의상 형태, 소재감, 장면 적합성이 안정적인지 비교하기 좋습니다.`
     };
     return templates[language] || templates.en;

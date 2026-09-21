@@ -118,6 +118,8 @@
     {
       "code": "LG001",
       "label": "白コットンTシャツブラ",
+      "label_zh": "白色棉质T恤文胸",
+      "label_ko": "화이트 코튼 티셔츠 브라",
       "display": "白コットンTシャツブラ",
       "group": "basic",
       "src": "../../assets/research/outfit/lingerie/basic/lg001.jpg",
@@ -128,6 +130,8 @@
     {
       "code": "LG002",
       "label": "黒コットンデイリーブラ",
+      "label_zh": "黑色棉质日常文胸",
+      "label_ko": "블랙 코튼 데일리 브라",
       "display": "黒コットンデイリーブラ",
       "group": "basic",
       "src": "../../assets/research/outfit/lingerie/basic/lg002.jpg",
@@ -138,6 +142,8 @@
     {
       "code": "LG003",
       "label": "ベージュシームレスブラ",
+      "label_zh": "米色无缝文胸",
+      "label_ko": "베이지 심리스 브라",
       "display": "ベージュシームレスブラ",
       "group": "basic",
       "src": "../../assets/research/outfit/lingerie/basic/lg003.jpg",
@@ -148,6 +154,8 @@
     {
       "code": "LG004",
       "label": "グレーリブブラ",
+      "label_zh": "灰色罗纹文胸",
+      "label_ko": "그레이 리브 브라",
       "display": "グレーリブブラ",
       "group": "basic",
       "src": "../../assets/research/outfit/lingerie/basic/lg004.jpg",
@@ -158,6 +166,8 @@
     {
       "code": "LG005",
       "label": "ネイビー×白ストライプブラ",
+      "label_zh": "藏蓝×白色条纹文胸",
+      "label_ko": "네이비×화이트 스트라이프 브라",
       "display": "ネイビー×白ストライプブラ",
       "group": "basic",
       "src": "../../assets/research/outfit/lingerie/basic/lg005.jpg",
@@ -168,6 +178,8 @@
     {
       "code": "LG006",
       "label": "黒×白ドットブラ",
+      "label_zh": "黑×白波点文胸",
+      "label_ko": "블랙×화이트 도트 브라",
       "display": "黒×白ドットブラ",
       "group": "basic",
       "src": "../../assets/research/outfit/lingerie/basic/lg006.jpg",
@@ -178,6 +190,8 @@
     {
       "code": "LG007",
       "label": "パウダーブルーコットンブラ",
+      "label_zh": "粉蓝色棉质文胸",
+      "label_ko": "파우더 블루 코튼 브라",
       "display": "パウダーブルーコットンブラ",
       "group": "basic",
       "src": "../../assets/research/outfit/lingerie/basic/lg007.jpg",
@@ -188,6 +202,8 @@
     {
       "code": "LG008",
       "label": "ペールピンクコットンブラ",
+      "label_zh": "淡粉色棉质文胸",
+      "label_ko": "페일 핑크 코튼 브라",
       "display": "ペールピンクコットンブラ",
       "group": "basic",
       "src": "../../assets/research/outfit/lingerie/basic/lg008.jpg",
@@ -198,6 +214,8 @@
     {
       "code": "LG009",
       "label": "ミントグリーンリブブラ",
+      "label_zh": "薄荷绿罗纹文胸",
+      "label_ko": "민트 그린 리브 브라",
       "display": "ミントグリーンリブブラ",
       "group": "basic",
       "src": "../../assets/research/outfit/lingerie/basic/lg009.jpg",
@@ -208,6 +226,8 @@
     {
       "code": "LG010",
       "label": "ラベンダーミニマルブラ",
+      "label_zh": "薰衣草紫简约文胸",
+      "label_ko": "라벤더 미니멀 브라",
       "display": "ラベンダーミニマルブラ",
       "group": "basic",
       "src": "../../assets/research/outfit/lingerie/basic/lg010.jpg",
@@ -218,6 +238,8 @@
     {
       "code": "LG011",
       "label": "黒スカラップレース・バルコネット",
+      "label_zh": "黑色扇形蕾丝半杯文胸",
+      "label_ko": "블랙 스캘럽 레이스 발코넷 브라",
       "display": "黒スカラップレース・バルコネット",
       "group": "lace",
       "src": "../../assets/research/outfit/lingerie/lace/lg011.jpg",
@@ -228,6 +250,8 @@
     {
       "code": "LG012",
       "label": "白フローラルレースブラ",
+      "label_zh": "白色花卉蕾丝文胸",
+      "label_ko": "화이트 플로럴 레이스 브라",
       "display": "白フローラルレースブラ",
       "group": "lace",
       "src": "../../assets/research/outfit/lingerie/lace/lg012.jpg",
@@ -238,6 +262,8 @@
     {
       "code": "LG013",
       "label": "ネイビーレース・デミカップ",
+      "label_zh": "藏蓝蕾丝半罩杯文胸",
+      "label_ko": "네이비 레이스 데미컵 브라",
       "display": "ネイビーレース・デミカップ",
       "group": "lace",
       "src": "../../assets/research/outfit/lingerie/lace/lg013.jpg",
@@ -248,6 +274,8 @@
     {
       "code": "LG014",
       "label": "バーガンディレースブラ",
+      "label_zh": "酒红色蕾丝文胸",
+      "label_ko": "버건디 레이스 브라",
       "display": "バーガンディレースブラ",
       "group": "lace",
       "src": "../../assets/research/outfit/lingerie/lace/lg014.jpg",
@@ -258,6 +286,8 @@
     {
       "code": "LG015",
       "label": "エメラルドグリーンレースブラ",
+      "label_zh": "祖母绿蕾丝文胸",
+      "label_ko": "에메랄드 그린 레이스 브라",
       "display": "エメラルドグリーンレースブラ",
       "group": "lace",
       "src": "../../assets/research/outfit/lingerie/lace/lg015.jpg",
@@ -268,6 +298,8 @@
     {
       "code": "LG016",
       "label": "ダスティローズ刺繍レースブラ",
+      "label_zh": "灰玫瑰色刺绣蕾丝文胸",
+      "label_ko": "더스티 로즈 자수 레이스 브라",
       "display": "ダスティローズ刺繍レースブラ",
       "group": "lace",
       "src": "../../assets/research/outfit/lingerie/lace/lg016.jpg",
@@ -278,6 +310,8 @@
     {
       "code": "LG017",
       "label": "アイボリースカラップレースブラ",
+      "label_zh": "象牙白扇形蕾丝文胸",
+      "label_ko": "아이보리 스캘럽 레이스 브라",
       "display": "アイボリースカラップレースブラ",
       "group": "lace",
       "src": "../../assets/research/outfit/lingerie/lace/lg017.jpg",
@@ -288,6 +322,8 @@
     {
       "code": "LG018",
       "label": "ブルーグレー・リーフレースブラ",
+      "label_zh": "蓝灰色叶纹蕾丝文胸",
+      "label_ko": "블루 그레이 리프 레이스 브라",
       "display": "ブルーグレー・リーフレースブラ",
       "group": "lace",
       "src": "../../assets/research/outfit/lingerie/lace/lg018.jpg",
@@ -298,6 +334,8 @@
     {
       "code": "LG019",
       "label": "シャンパン・サテンブラ",
+      "label_zh": "香槟色缎面文胸",
+      "label_ko": "샴페인 새틴 브라",
       "display": "シャンパン・サテンブラ",
       "group": "satin",
       "src": "../../assets/research/outfit/lingerie/satin/lg019.jpg",
@@ -308,6 +346,8 @@
     {
       "code": "LG020",
       "label": "黒サテンブラ",
+      "label_zh": "黑色缎面文胸",
+      "label_ko": "블랙 새틴 브라",
       "display": "黒サテンブラ",
       "group": "satin",
       "src": "../../assets/research/outfit/lingerie/satin/lg020.jpg",
@@ -318,6 +358,8 @@
     {
       "code": "LG021",
       "label": "ルビーレッド・サテンブラ",
+      "label_zh": "红宝石色缎面文胸",
+      "label_ko": "루비 레드 새틴 브라",
       "display": "ルビーレッド・サテンブラ",
       "group": "satin",
       "src": "../../assets/research/outfit/lingerie/satin/lg021.jpg",
@@ -328,6 +370,8 @@
     {
       "code": "LG022",
       "label": "ミッドナイトネイビー・サテンブラ",
+      "label_zh": "午夜蓝缎面文胸",
+      "label_ko": "미드나이트 네이비 새틴 브라",
       "display": "ミッドナイトネイビー・サテンブラ",
       "group": "satin",
       "src": "../../assets/research/outfit/lingerie/satin/lg022.jpg",
@@ -338,6 +382,8 @@
     {
       "code": "LG023",
       "label": "ディーププラム・サテンブラ",
+      "label_zh": "深梅紫缎面文胸",
+      "label_ko": "딥 플럼 새틴 브라",
       "display": "ディーププラム・サテンブラ",
       "group": "satin",
       "src": "../../assets/research/outfit/lingerie/satin/lg023.jpg",
@@ -348,6 +394,8 @@
     {
       "code": "LG024",
       "label": "アイボリー・サテンブラ",
+      "label_zh": "象牙白缎面文胸",
+      "label_ko": "아이보리 새틴 브라",
       "display": "アイボリー・サテンブラ",
       "group": "satin",
       "src": "../../assets/research/outfit/lingerie/satin/lg024.jpg",
@@ -358,6 +406,8 @@
     {
       "code": "LG025",
       "label": "ディープティール・シルキーブラ",
+      "label_zh": "深青绿色丝滑文胸",
+      "label_ko": "딥 틸 실키 브라",
       "display": "ディープティール・シルキーブラ",
       "group": "satin",
       "src": "../../assets/research/outfit/lingerie/satin/lg025.jpg",
@@ -368,6 +418,8 @@
     {
       "code": "LG026",
       "label": "黒スポーツブラ＋ハイライズブリーフ",
+      "label_zh": "黑色运动文胸＋高腰三角裤",
+      "label_ko": "블랙 스포츠 브라＋하이라이즈 브리프",
       "display": "黒スポーツブラ＋ハイライズブリーフ",
       "group": "sports",
       "src": "../../assets/research/outfit/lingerie/sports/lg026.jpg",
@@ -378,6 +430,8 @@
     {
       "code": "LG027",
       "label": "白×ライトグレー・スポーツブラ",
+      "label_zh": "白×浅灰运动文胸",
+      "label_ko": "화이트×라이트 그레이 스포츠 브라",
       "display": "白×ライトグレー・スポーツブラ",
       "group": "sports",
       "src": "../../assets/research/outfit/lingerie/sports/lg027.jpg",
@@ -388,6 +442,8 @@
     {
       "code": "LG028",
       "label": "ネイビー・スポーツブラ",
+      "label_zh": "藏蓝运动文胸",
+      "label_ko": "네이비 스포츠 브라",
       "display": "ネイビー・スポーツブラ",
       "group": "sports",
       "src": "../../assets/research/outfit/lingerie/sports/lg028.jpg",
@@ -398,6 +454,8 @@
     {
       "code": "LG029",
       "label": "コバルトブルー・スポーツブラ",
+      "label_zh": "钴蓝运动文胸",
+      "label_ko": "코발트 블루 스포츠 브라",
       "display": "コバルトブルー・スポーツブラ",
       "group": "sports",
       "src": "../../assets/research/outfit/lingerie/sports/lg029.jpg",
@@ -408,6 +466,8 @@
     {
       "code": "LG030",
       "label": "ラベンダー・シームレススポーツブラ",
+      "label_zh": "薰衣草紫无缝运动文胸",
+      "label_ko": "라벤더 심리스 스포츠 브라",
       "display": "ラベンダー・シームレススポーツブラ",
       "group": "sports",
       "src": "../../assets/research/outfit/lingerie/sports/lg030.jpg",
@@ -418,6 +478,8 @@
     {
       "code": "LG031",
       "label": "ウォームベージュ・シームレスワイヤレスブラ",
+      "label_zh": "暖米色无缝无钢圈文胸",
+      "label_ko": "웜 베이지 심리스 와이어리스 브라",
       "display": "ウォームベージュ・シームレスワイヤレスブラ",
       "group": "sports",
       "src": "../../assets/research/outfit/lingerie/sports/lg031.jpg",
@@ -428,6 +490,8 @@
     {
       "code": "LG032",
       "label": "チャコール・ロングラインスポーツブラ",
+      "label_zh": "炭灰色长款运动文胸",
+      "label_ko": "차콜 롱라인 스포츠 브라",
       "display": "チャコール・ロングラインスポーツブラ",
       "group": "sports",
       "src": "../../assets/research/outfit/lingerie/sports/lg032.jpg",
@@ -438,6 +502,8 @@
     {
       "code": "LG033",
       "label": "黒ロングラインブラレット",
+      "label_zh": "黑色长款无钢圈文胸",
+      "label_ko": "블랙 롱라인 브라렛",
       "display": "黒ロングラインブラレット",
       "group": "bralette",
       "src": "../../assets/research/outfit/lingerie/bralette/lg033.jpg",
@@ -448,6 +514,8 @@
     {
       "code": "LG034",
       "label": "白ソフトカップブラレット",
+      "label_zh": "白色软杯无钢圈文胸",
+      "label_ko": "화이트 소프트컵 브라렛",
       "display": "白ソフトカップブラレット",
       "group": "bralette",
       "src": "../../assets/research/outfit/lingerie/bralette/lg034.jpg",
@@ -458,6 +526,8 @@
     {
       "code": "LG035",
       "label": "スカイブルー・トライアングルブラレット",
+      "label_zh": "天蓝色三角无钢圈文胸",
+      "label_ko": "스카이 블루 트라이앵글 브라렛",
       "display": "スカイブルー・トライアングルブラレット",
       "group": "bralette",
       "src": "../../assets/research/outfit/lingerie/bralette/lg035.jpg",
@@ -468,6 +538,8 @@
     {
       "code": "LG036",
       "label": "グレーブルー・リブブラレット",
+      "label_zh": "灰蓝色罗纹无钢圈文胸",
+      "label_ko": "그레이 블루 리브 브라렛",
       "display": "グレーブルー・リブブラレット",
       "group": "bralette",
       "src": "../../assets/research/outfit/lingerie/bralette/lg036.jpg",
@@ -478,6 +550,8 @@
     {
       "code": "LG037",
       "label": "ネイビー・バンドゥブラ",
+      "label_zh": "藏蓝抹胸式文胸",
+      "label_ko": "네이비 방도 브라",
       "display": "ネイビー・バンドゥブラ",
       "group": "bralette",
       "src": "../../assets/research/outfit/lingerie/bralette/lg037.jpg",
@@ -488,6 +562,8 @@
     {
       "code": "LG038",
       "label": "ライトグレーブルー・ワイヤレスフルカップ",
+      "label_zh": "浅灰蓝色无钢圈全罩杯文胸",
+      "label_ko": "라이트 그레이 블루 와이어리스 풀컵 브라",
       "display": "ライトグレーブルー・ワイヤレスフルカップ",
       "group": "bralette",
       "src": "../../assets/research/outfit/lingerie/bralette/lg038.jpg",
@@ -498,6 +574,8 @@
     {
       "code": "LG039",
       "label": "黒バルコネット＋ハイウエストブリーフ",
+      "label_zh": "黑色半杯文胸＋高腰三角裤",
+      "label_ko": "블랙 발코넷 브라＋하이웨이스트 브리프",
       "display": "黒バルコネット＋ハイウエストブリーフ",
       "group": "silhouette",
       "src": "../../assets/research/outfit/lingerie/silhouette/lg039.jpg",
@@ -508,6 +586,8 @@
     {
       "code": "LG040",
       "label": "ネイビードット＋ハイウエストブリーフ",
+      "label_zh": "藏蓝波点文胸＋高腰三角裤",
+      "label_ko": "네이비 도트 브라＋하이웨이스트 브리프",
       "display": "ネイビードット＋ハイウエストブリーフ",
       "group": "silhouette",
       "src": "../../assets/research/outfit/lingerie/silhouette/lg040.jpg",
@@ -518,6 +598,8 @@
     {
       "code": "LG041",
       "label": "アイボリーレーストリム＋ハイウエストブリーフ",
+      "label_zh": "象牙白蕾丝饰边文胸＋高腰三角裤",
+      "label_ko": "아이보리 레이스 트림 브라＋하이웨이스트 브리프",
       "display": "アイボリーレーストリム＋ハイウエストブリーフ",
       "group": "silhouette",
       "src": "../../assets/research/outfit/lingerie/silhouette/lg041.jpg",
@@ -528,6 +610,8 @@
     {
       "code": "LG042",
       "label": "バーガンディ＋ハイウエストブリーフ",
+      "label_zh": "酒红色文胸＋高腰三角裤",
+      "label_ko": "버건디 브라＋하이웨이스트 브리프",
       "display": "バーガンディ＋ハイウエストブリーフ",
       "group": "silhouette",
       "src": "../../assets/research/outfit/lingerie/silhouette/lg042.jpg",
@@ -538,6 +622,8 @@
     {
       "code": "LG043",
       "label": "ネイビー・デミカップ＋ボーイショーツ",
+      "label_zh": "藏蓝半罩杯文胸＋平角裤",
+      "label_ko": "네이비 데미컵 브라＋보이쇼츠",
       "display": "ネイビー・デミカップ＋ボーイショーツ",
       "group": "silhouette",
       "src": "../../assets/research/outfit/lingerie/silhouette/lg043.jpg",
@@ -548,6 +634,8 @@
     {
       "code": "LG044",
       "label": "パステルピーチ＋ヒップスターブリーフ",
+      "label_zh": "柔和桃色文胸＋低腰内裤",
+      "label_ko": "파스텔 피치 브라＋힙스터 브리프",
       "display": "パステルピーチ＋ヒップスターブリーフ",
       "group": "silhouette",
       "src": "../../assets/research/outfit/lingerie/silhouette/lg044.jpg",
@@ -558,6 +646,8 @@
     {
       "code": "LG045",
       "label": "白ブラ＋幾何学柄ビキニブリーフ",
+      "label_zh": "白色文胸＋几何图案比基尼三角裤",
+      "label_ko": "화이트 브라＋기하학 패턴 비키니 브리프",
       "display": "白ブラ＋幾何学柄ビキニブリーフ",
       "group": "silhouette",
       "src": "../../assets/research/outfit/lingerie/silhouette/lg045.jpg",
@@ -568,6 +658,8 @@
     {
       "code": "LG046",
       "label": "ラベンダーブラ＋ローライズブリーフ",
+      "label_zh": "薰衣草紫文胸＋低腰三角裤",
+      "label_ko": "라벤더 브라＋로우라이즈 브리프",
       "display": "ラベンダーブラ＋ローライズブリーフ",
       "group": "silhouette",
       "src": "../../assets/research/outfit/lingerie/silhouette/lg046.jpg",
@@ -578,6 +670,8 @@
     {
       "code": "LG047",
       "label": "ブルーギンガムブラ",
+      "label_zh": "蓝色格纹文胸",
+      "label_ko": "블루 깅엄 브라",
       "display": "ブルーギンガムブラ",
       "group": "silhouette",
       "src": "../../assets/research/outfit/lingerie/silhouette/lg047.jpg",
@@ -588,6 +682,8 @@
     {
       "code": "LG048",
       "label": "クリーム＋小花柄ブラ",
+      "label_zh": "奶油色小花纹文胸",
+      "label_ko": "크림색 잔꽃무늬 브라",
       "display": "クリーム＋小花柄ブラ",
       "group": "silhouette",
       "src": "../../assets/research/outfit/lingerie/silhouette/lg048.jpg",
@@ -598,6 +694,8 @@
     {
       "code": "LG049",
       "label": "白×黒パイピングブラ",
+      "label_zh": "白×黑滚边文胸",
+      "label_ko": "화이트×블랙 파이핑 브라",
       "display": "白×黒パイピングブラ",
       "group": "design",
       "src": "../../assets/research/outfit/lingerie/design/lg049.jpg",
@@ -608,6 +706,8 @@
     {
       "code": "LG050",
       "label": "ネイビー・セーラー風ストライプブラ",
+      "label_zh": "藏蓝海军风条纹文胸",
+      "label_ko": "네이비 세일러풍 스트라이프 브라",
       "display": "ネイビー・セーラー風ストライプブラ",
       "group": "design",
       "src": "../../assets/research/outfit/lingerie/design/lg050.jpg",
@@ -618,6 +718,8 @@
     {
       "code": "LG051",
       "label": "パステルブルー×ラベンダー・カラーブロックブラ",
+      "label_zh": "粉蓝×薰衣草紫拼色文胸",
+      "label_ko": "파스텔 블루×라벤더 컬러블록 브라",
       "display": "パステルブルー×ラベンダー・カラーブロックブラ",
       "group": "design",
       "src": "../../assets/research/outfit/lingerie/design/lg051.jpg",
@@ -628,6 +730,8 @@
     {
       "code": "LG052",
       "label": "セージグリーン・ボタニカル刺繍ブラ",
+      "label_zh": "鼠尾草绿植物刺绣文胸",
+      "label_ko": "세이지 그린 보태니컬 자수 브라",
       "display": "セージグリーン・ボタニカル刺繍ブラ",
       "group": "design",
       "src": "../../assets/research/outfit/lingerie/design/lg052.jpg",
@@ -638,6 +742,8 @@
     {
       "code": "LG053",
       "label": "ソフトオレンジ×クリームブラ",
+      "label_zh": "柔和橙×奶油色文胸",
+      "label_ko": "소프트 오렌지×크림 브라",
       "display": "ソフトオレンジ×クリームブラ",
       "group": "design",
       "src": "../../assets/research/outfit/lingerie/design/lg053.jpg",
@@ -648,6 +754,8 @@
     {
       "code": "LG054",
       "label": "ペールブルー×ネイビーリボンブラ",
+      "label_zh": "淡蓝×藏蓝蝴蝶结文胸",
+      "label_ko": "페일 블루×네이비 리본 브라",
       "display": "ペールブルー×ネイビーリボンブラ",
       "group": "design",
       "src": "../../assets/research/outfit/lingerie/design/lg054.jpg",
@@ -658,6 +766,8 @@
     {
       "code": "LG055",
       "label": "ベージュ・モールドカップブラ",
+      "label_zh": "米色模杯文胸",
+      "label_ko": "베이지 몰드컵 브라",
       "display": "ベージュ・モールドカップブラ",
       "group": "design",
       "src": "../../assets/research/outfit/lingerie/design/lg055.jpg",
@@ -668,6 +778,8 @@
     {
       "code": "LG056",
       "label": "黒サイドサポートブラ",
+      "label_zh": "黑色侧托文胸",
+      "label_ko": "블랙 사이드 서포트 브라",
       "display": "黒サイドサポートブラ",
       "group": "design",
       "src": "../../assets/research/outfit/lingerie/design/lg056.jpg",
@@ -678,6 +790,8 @@
     {
       "code": "LG057",
       "label": "ネイビー・ロングラインブラ",
+      "label_zh": "藏蓝长款文胸",
+      "label_ko": "네이비 롱라인 브라",
       "display": "ネイビー・ロングラインブラ",
       "group": "design",
       "src": "../../assets/research/outfit/lingerie/design/lg057.jpg",
