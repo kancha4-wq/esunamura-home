@@ -1,11 +1,23 @@
-(function () {
+(async function () {
   const root = document.querySelector("#outfitCategories");
-  const data = window.outfitPromptData;
+  let data = window.outfitPromptData;
   const selectedCategoryId = document.body.dataset.outfitCategory || "";
   const rootPrefix = document.body.dataset.rootPrefix || "../../";
   const languageButtons = document.querySelectorAll(".lang-button");
 
   if (!root || !data?.categories) return;
+
+  if (selectedCategoryId === "lingerie" && !data.categories.some((category) => category.id === "lingerie")) {
+    try {
+      const response = await fetch(`${rootPrefix}assets/data/research-lingerie.json`);
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const lingerieCategory = await response.json();
+      data = { ...data, categories: [lingerieCategory, ...data.categories] };
+    } catch (error) {
+      root.innerHTML = '<p class="research-empty">ランジェリーデータを読み込めませんでした。</p>';
+      return;
+    }
+  }
 
   const uiText = {
     importantTags: {
@@ -56,6 +68,16 @@
       zh: "服装组",
       ko: "의상 세트"
     }
+  };
+
+  const lingerieGroupTitles = {
+    basic: { ja: "ベーシック・コットン", en: "Basics / Cotton", zh: "基础款 / 棉质", ko: "베이식 / 코튼" },
+    lace: { ja: "レース", en: "Lace", zh: "蕾丝", ko: "레이스" },
+    satin: { ja: "サテン・シルキー", en: "Satin / Silky", zh: "缎面 / 丝滑", ko: "새틴 / 실키" },
+    sports: { ja: "スポーツ・シームレス", en: "Sports / Seamless", zh: "运动 / 无缝", ko: "스포츠 / 심리스" },
+    bralette: { ja: "ブラレット・ワイヤレス", en: "Bralettes / Wireless", zh: "无钢圈 / 软杯", ko: "브라렛 / 와이어리스" },
+    silhouette: { ja: "シルエット・ボトム違い", en: "Silhouettes / Bottoms", zh: "轮廓 / 下装变化", ko: "실루엣 / 하의 차이" },
+    design: { ja: "配色・柄・サポート設計", en: "Colors / Patterns / Support", zh: "配色 / 图案 / 支撑设计", ko: "배색 / 패턴 / 서포트" }
   };
 
   function escapeHTML(value) {
@@ -475,8 +497,7 @@
     if (translated) return translated;
     const fallback = translatedFallbackLabel(item, language);
     if (fallback) return fallback;
-    if (language === "zh" || language === "ko") return item.display || item.label || item.code;
-    return item[`label_${language}`] || promptLabel(item);
+    return item[`label_${language}`] || item.label_en || promptLabel(item);
   }
 
   function hasAny(text, keywords) {
@@ -492,6 +513,8 @@
       observations.push("日常服としての自然さと、季節ごとの軽さ・重ね着感が出るかを確認しています。");
     } else if (category?.id === "onepiece") {
       observations.push("一枚服としての丈・ウエスト位置・裾の流れが安定して出るかを確認しています。");
+    } else if (category?.id === "lingerie") {
+      observations.push("ランジェリーのカップ形状・アンダーバンド・ボトムの違いが明確に出るかを確認しています。");
     }
 
     if (hasAny(prompt, ["button", "collar", "piping", "zip", "drawstring", "strap", "neckline", "obi", "sash", "panel line"])) {
@@ -529,6 +552,8 @@
       observations.push("和装らしい合わせ・帯・柄の情報が、キャラクター性を崩さず残るかを確認しています。");
     } else if (category?.id === "swimwear") {
       observations.push("露出量ではなく、シルエット・ストラップ・リゾート感の違いを比較するための指定です。");
+    } else if (category?.id === "lingerie") {
+      observations.push("透けや裸化を避けながら、素材・配色・サポート構造の差を比較するための指定です。");
     } else {
       observations.push("固定キャラクターの印象を保ったまま、衣装差だけを読み取れるかを確認しています。");
     }
@@ -573,11 +598,12 @@
     const positivePrompt = clothingPromptText(item.prompt) || localized(uiText.unset, language);
     const negativePrompt = item.negative || localized(uiText.unset, language);
     const verification = verificationNote(item, category, language);
+    const imageHeight = category?.id === "lingerie" ? 926 : 1234;
     return `
       <article class="research-candidate-card outfit-log-card" id="${escapeHTML(item.code.toLowerCase())}">
         <div class="research-candidate-media">
           <a class="research-image-link" href="${escapeHTML(imageSrc)}" data-full-alt="${escapeHTML(alt)}" target="_blank" rel="noopener noreferrer">
-            <img src="${escapeHTML(imageSrc)}" alt="${escapeHTML(alt)}" loading="lazy" decoding="async" width="720" height="1234">
+            <img src="${escapeHTML(imageSrc)}" alt="${escapeHTML(alt)}" loading="lazy" decoding="async" width="720" height="${imageHeight}">
           </a>
         </div>
         <div class="research-candidate-copy">
@@ -597,6 +623,27 @@
     `;
   }
 
+  function renderCategoryItems(category) {
+    if (category.id !== "lingerie" || !Array.isArray(category.groups)) {
+      return `<div class="research-candidate-grid">${category.items.map((item) => renderCard(item, category)).join("")}</div>`;
+    }
+    return category.groups.map((group) => {
+      const items = category.items.filter((item) => item.group === group.id);
+      const title = localized(lingerieGroupTitles[group.id] || { ja: group.id });
+      return `
+        <section class="lingerie-subgroup" id="lingerie-${escapeHTML(group.id)}">
+          <div class="lingerie-subgroup-heading">
+            <h3>${escapeHTML(title)}</h3>
+            <span>${items.length}</span>
+          </div>
+          <div class="research-candidate-grid">
+            ${items.map((item) => renderCard(item, category)).join("")}
+          </div>
+        </section>
+      `;
+    }).join("");
+  }
+
   function render() {
     const language = currentLanguage();
     const categories = selectedCategoryId
@@ -611,9 +658,7 @@
           </div>
           <p>${escapeHTML(localized(category.lead, language))}</p>
         </div>
-        <div class="research-candidate-grid">
-          ${category.items.map((item) => renderCard(item, category)).join("")}
-        </div>
+        ${renderCategoryItems(category)}
       </section>
     `).join("");
     window.installPromptCopyButtons?.(root);

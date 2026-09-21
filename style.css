@@ -3445,7 +3445,7 @@ body[data-research-section="outfit"] .outfit-category-section h2 {
 }
 
 .outfit-category-jump {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   margin-top: 10px;
   gap: 6px;
   padding: 6px;
@@ -3465,6 +3465,40 @@ body[data-research-section="outfit"] .outfit-category-section h2 {
 
 body[data-research-section="outfit"] .research-candidate-grid {
   gap: 10px;
+}
+
+.lingerie-subgroup + .lingerie-subgroup {
+  margin-top: 30px;
+}
+
+.lingerie-subgroup-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0 0 12px;
+  padding: 10px 14px;
+  border: 1px solid rgba(236, 140, 160, 0.36);
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(236, 140, 160, 0.12), rgba(230, 177, 95, 0.08));
+}
+
+.lingerie-subgroup-heading h3 {
+  margin: 0;
+  font-size: clamp(1rem, 2.4vw, 1.2rem);
+}
+
+.lingerie-subgroup-heading span {
+  display: inline-grid;
+  min-width: 30px;
+  min-height: 26px;
+  place-items: center;
+  padding: 0 8px;
+  border-radius: 999px;
+  background: rgba(236, 140, 160, 0.14);
+  color: var(--accent-strong);
+  font-size: 0.78rem;
+  font-weight: 800;
 }
 
 @media (max-width: 760px) {
