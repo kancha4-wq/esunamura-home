@@ -5,6 +5,37 @@
   const sectionsRoot = document.querySelector("#researchSections");
   const contactRoot = document.querySelector("#researchContactSheets");
   const languageButtons = document.querySelectorAll(".lang-button");
+
+  function installDownloadPackBanner() {
+    if (!document.body.classList.contains("research-detail-page")) return;
+    if (document.body.classList.contains("prompt-guide-pack-page")) return;
+    const subnav = document.querySelector(".research-subnav");
+    if (!subnav || document.querySelector(".research-download-banner")) return;
+
+    const banner = document.createElement("section");
+    banner.className = "research-download-banner";
+    banner.setAttribute("aria-label", "SDXL Prompt Guide Pack Vol.1.4");
+    banner.innerHTML = `
+      <div class="research-download-banner-copy">
+        <p class="eyebrow" data-ja="DOWNLOAD PACK / VOL.1.4" data-en="DOWNLOAD PACK / VOL.1.4" data-zh="下载包 / VOL.1.4" data-ko="다운로드 팩 / VOL.1.4">DOWNLOAD PACK / VOL.1.4</p>
+        <h2 data-ja="検証プロンプト508件を、すぐ使える形でまとめて収録" data-en="Get all 508 tested prompts in a production-ready pack" data-zh="将508条验证提示词整理为可直接使用的下载包" data-ko="검증 프롬프트 508건을 바로 쓸 수 있는 형태로 한 번에">検証プロンプト508件を、すぐ使える形でまとめて収録</h2>
+        <p data-ja="このページを含む研究室のプロンプトを、TXT・CSV・サムネイル付きExcel・カテゴリ別ファイルでまとめて検索、コピー、管理できます。Vol.1.4ではランジェリー57件を追加しました。" data-en="Search, copy, and manage the Research Lab prompts—including this page—in TXT, CSV, thumbnail Excel, and category files. Vol.1.4 adds 57 lingerie prompts." data-zh="可通过TXT、CSV、带缩略图Excel及分类文件，集中搜索、复制和管理研究室提示词（包括本页内容）。Vol.1.4新增57条内衣提示词。" data-ko="이 페이지를 포함한 연구실 프롬프트를 TXT, CSV, 썸네일 포함 Excel, 카테고리별 파일로 한꺼번에 검색·복사·관리할 수 있습니다. Vol.1.4에는 란제리 57건을 추가했습니다.">このページを含む研究室のプロンプトを、TXT・CSV・サムネイル付きExcel・カテゴリ別ファイルでまとめて検索、コピー、管理できます。Vol.1.4ではランジェリー57件を追加しました。</p>
+        <div class="research-download-banner-facts" aria-label="Pack summary">
+          <span data-ja="本体508件" data-en="508 main entries" data-zh="本体508条" data-ko="본체 508건">本体508件</span>
+          <span data-ja="服装261件" data-en="261 outfit prompts" data-zh="服装261条" data-ko="의상 261건">服装261件</span>
+          <span>TXT / CSV / Excel</span>
+          <span data-ja="500円" data-en="500 JPY" data-zh="500日元" data-ko="500엔">500円</span>
+        </div>
+      </div>
+      <div class="research-download-banner-actions">
+        <a class="link-button primary research-download-booth" href="https://esunamura.booth.pm/items/8300644" target="_blank" rel="noopener noreferrer" data-ja="BOOTHで購入する（500円）" data-en="Buy on BOOTH (500 JPY)" data-zh="前往BOOTH购买（500日元）" data-ko="BOOTH에서 구매하기（500엔）" data-analytics-event="prompt_guide_pack_click" data-analytics-link="research-top-pack-booth" data-analytics-area="research-download-banner">BOOTHで購入する（500円）</a>
+        <a class="link-button research-download-details" href="${rootPrefix}research/prompt-guide-pack/" data-ja="収録内容を詳しく見る" data-en="View pack details" data-zh="查看详细收录内容" data-ko="수록 내용 자세히 보기" data-analytics-event="prompt_guide_pack_click" data-analytics-link="research-top-pack-details" data-analytics-area="research-download-banner">収録内容を詳しく見る</a>
+      </div>
+    `;
+    subnav.insertAdjacentElement("afterend", banner);
+  }
+
+  installDownloadPackBanner();
   const translatableNodes = document.querySelectorAll("[data-ja]");
   let currentLanguage = "ja";
   const activeSectionTabs = {};
@@ -335,7 +366,7 @@
     eyes: "SDXL / illustriousXL 系モデル向けの目プロンプト検証ページです。\nジト目、猫目、大きい目、小さい目、瞳、ハイライト表現などを比較していきます。",
     expression: "SDXL / illustriousXL 系モデル向けの表情プロンプト検証ページです。\n無表情、笑顔、困り顔、怒り顔、照れ顔などの表情差を比較しています。",
     background: "SDXL / illustriousXL 系モデル向けの背景プロンプト検証をまとめました。\n京都風、和風町並み、温泉旅館、海辺、リゾートなどの背景表現を比較しています。",
-    "prompt-guide-pack": "えすなむら研究室のSDXL Prompt Guide Pack Vol.1.3です。\n髪型、前髪、髪色、目、表情、背景、服装、自然文髪型の451件を、各項目の対象カテゴリだけに整理してTXT / CSV / Excel形式でまとめています。"
+    "prompt-guide-pack": "えすなむら研究室のSDXL Prompt Guide Pack Vol.1.4です。\nランジェリー57件を追加し、本体508件・服装261件・自然文髪型49件をTXT / CSV / サムネイル付きExcelなどでまとめています。"
   };
 
   const pageSectionGroups = {
