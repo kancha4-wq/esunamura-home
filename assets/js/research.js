@@ -28,7 +28,8 @@
         </div>
       </div>
       <div class="research-download-banner-actions">
-        <a class="link-button primary research-download-store" href="https://pictspace.net/items/manage_detail/1004297" target="_blank" rel="noopener noreferrer" data-ja="pictSPACEで購入する（500円）" data-en="Buy on pictSPACE (500 JPY)" data-zh="前往pictSPACE购买（500日元）" data-ko="pictSPACE에서 구매하기（500엔）" data-analytics-event="prompt_guide_pack_click" data-analytics-link="research-top-pack-pictspace" data-analytics-area="research-download-banner">pictSPACEで購入する（500円）</a>
+        <a class="link-button primary research-download-store" href="https://prompt-com.com/ja/p/90279140-7f30-41c7-8e15-1cfd83826c77" target="_blank" rel="noopener noreferrer" data-ja="PromptComで購入する（500円）" data-en="Buy on PromptCom (500 JPY)" data-zh="前往PromptCom购买（500日元）" data-ko="PromptCom에서 구매하기（500엔）" data-analytics-event="prompt_guide_pack_click" data-analytics-link="research-top-pack-promptcom" data-analytics-area="research-download-banner">PromptComで購入する（500円）</a>
+        <a class="link-button research-download-details" href="https://pictspace.net/items/manage_detail/1004297" target="_blank" rel="noopener noreferrer" data-ja="pictSPACEでも購入できます" data-en="Also available on pictSPACE" data-zh="也可在pictSPACE购买" data-ko="pictSPACE에서도 구매 가능" data-analytics-event="prompt_guide_pack_click" data-analytics-link="research-top-pack-pictspace" data-analytics-area="research-download-banner">pictSPACEでも購入できます</a>
         <a class="link-button research-download-details" href="${rootPrefix}research/prompt-guide-pack/" data-ja="収録内容を詳しく見る" data-en="View pack details" data-zh="查看详细收录内容" data-ko="수록 내용 자세히 보기" data-analytics-event="prompt_guide_pack_click" data-analytics-link="research-top-pack-details" data-analytics-area="research-download-banner">収録内容を詳しく見る</a>
       </div>
     `;

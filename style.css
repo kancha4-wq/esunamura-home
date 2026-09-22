@@ -2684,6 +2684,7 @@ body[data-research-section="outfit"] .outfit-note-section .section-heading-row {
 
 .research-share-links {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   margin-top: 16px;
 }
@@ -3033,6 +3034,15 @@ body[data-research-section="outfit"] .outfit-note-section .section-heading-row {
   color: #ffffff !important;
   box-shadow: 0 6px 14px rgba(210, 70, 100, 0.24);
   font-weight: 900;
+}
+
+.prompt-guide-purchase-secondary {
+  min-height: 46px;
+  padding-inline: 20px;
+  border-color: rgba(193, 126, 54, 0.42) !important;
+  background: rgba(255, 252, 246, 0.92) !important;
+  color: #714c25 !important;
+  box-shadow: none !important;
 }
 
 .research-section {
@@ -3967,6 +3977,12 @@ body[data-research-section="outfit"] .research-candidate-grid {
 
 .prompt-guide-bottom-cta .link-button {
   justify-self: start;
+}
+
+.prompt-guide-store-actions {
+  display: grid;
+  gap: 9px;
+  width: 100%;
 }
 
 @media (min-width: 780px) {
