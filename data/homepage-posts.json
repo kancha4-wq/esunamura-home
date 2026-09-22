@@ -4,11 +4,19 @@
     "items":  [
                   {
                       "platform":  "promptcom",
-                      "published_at":  "2026-09-22T13:00:00+09:00",
-                      "age_rating":  "全年齢",
+                      "published_at":  "2026-09-22T14:00:00+09:00",
+                      "age_rating":  "R15",
                       "membership_only":  false,
                       "destination_url":  "https://prompt-com.com/ja/6954d7c84740e/",
-                      "web_image_relative_path":  "images/homepage-feed-promptcom-e965a8b1008ba8669bc3.webp"
+                      "web_image_relative_path":  "images/homepage-feed-promptcom-6adee262cca8f0254381.webp"
+                  },
+                  {
+                      "platform":  "x",
+                      "published_at":  "2026-09-22T13:16:51+09:00",
+                      "age_rating":  "全年齢",
+                      "membership_only":  false,
+                      "destination_url":  "https://x.com/esuna_4649",
+                      "web_image_relative_path":  "images/homepage-feed-x-6b07713763dfc8d8d8ff.webp"
                   },
                   {
                       "platform":  "painter",
@@ -41,14 +49,6 @@
                       "membership_only":  false,
                       "destination_url":  "https://www.chichi-pui.com/users/esuna/",
                       "web_image_relative_path":  "images/homepage-feed-chichipui-4b55b2b30de02ea74151.webp"
-                  },
-                  {
-                      "platform":  "x",
-                      "published_at":  "2026-09-22T08:31:47+09:00",
-                      "age_rating":  "全年齢",
-                      "membership_only":  false,
-                      "destination_url":  "https://x.com/esuna_4649",
-                      "web_image_relative_path":  "images/homepage-feed-x-c1d35aa367c384edc823.webp"
                   }
               ]
 }
