@@ -28,7 +28,7 @@
         </div>
       </div>
       <div class="research-download-banner-actions">
-        <a class="link-button primary research-download-booth" href="https://esunamura.booth.pm/items/8300644" target="_blank" rel="noopener noreferrer" data-ja="BOOTHで購入する（500円）" data-en="Buy on BOOTH (500 JPY)" data-zh="前往BOOTH购买（500日元）" data-ko="BOOTH에서 구매하기（500엔）" data-analytics-event="prompt_guide_pack_click" data-analytics-link="research-top-pack-booth" data-analytics-area="research-download-banner">BOOTHで購入する（500円）</a>
+        <a class="link-button primary research-download-store" href="https://pictspace.net/items/manage_detail/1004297" target="_blank" rel="noopener noreferrer" data-ja="pictSPACEで購入する（500円）" data-en="Buy on pictSPACE (500 JPY)" data-zh="前往pictSPACE购买（500日元）" data-ko="pictSPACE에서 구매하기（500엔）" data-analytics-event="prompt_guide_pack_click" data-analytics-link="research-top-pack-pictspace" data-analytics-area="research-download-banner">pictSPACEで購入する（500円）</a>
         <a class="link-button research-download-details" href="${rootPrefix}research/prompt-guide-pack/" data-ja="収録内容を詳しく見る" data-en="View pack details" data-zh="查看详细收录内容" data-ko="수록 내용 자세히 보기" data-analytics-event="prompt_guide_pack_click" data-analytics-link="research-top-pack-details" data-analytics-area="research-download-banner">収録内容を詳しく見る</a>
       </div>
     `;
