@@ -10,7 +10,7 @@
     });
   }
 
-  const commonNegative = "closed eyes, eyes not visible, extra pupils, symbol eyes, horror eyes";
+  const commonNegative = "";
   const items = [
     {
       theme: "jitome_half_lidded_eyes",

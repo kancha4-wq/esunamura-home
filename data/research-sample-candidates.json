@@ -1751,7 +1751,7 @@
       "stage": "candidate",
       "important_tags": "sadako style long front hair",
       "positive_hair_prompt": "(sadako-style long front hair:1.25), very long front bangs, hair curtain covering eyes, face hidden by long bangs, one eye barely visible through hair, long messy front hair",
-      "negative_hair_prompt": "cute open face, both eyes fully visible, forehead visible, short bangs, neat bangs, horror, scary face, ghost, blood, monster, corpse",
+      "negative_hair_prompt": "cute open face, both eyes fully visible, forehead visible, short bangs, neat bangs",
       "verification_note": "完全目隠れの方向性がきれいに出た強個性候補。ホラー化しすぎず使いやすい。",
       "public_hidden": true,
       "public_note": "sadako_style_long_front_hair は 3624419007_01 を代表として公開表示"
@@ -1772,7 +1772,7 @@
       "stage": "candidate",
       "important_tags": "sadako style long front hair",
       "positive_hair_prompt": "(sadako-style long front hair:1.25), very long front bangs, hair curtain covering eyes, face hidden by long bangs, one eye barely visible through hair, long messy front hair",
-      "negative_hair_prompt": "cute open face, both eyes fully visible, forehead visible, short bangs, neat bangs, horror, scary face, ghost, blood, monster, corpse",
+      "negative_hair_prompt": "cute open face, both eyes fully visible, forehead visible, short bangs, neat bangs",
       "verification_note": "重い前髪の中から片目がのぞく実用寄り候補。個性を出しつつ顔の印象も保てる。"
     },
     {

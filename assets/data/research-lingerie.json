@@ -124,7 +124,7 @@
       "group": "basic",
       "src": "../../assets/research/outfit/lingerie/basic/lg001.jpg",
       "prompt": "white cotton T-shirt bra with matching mid-rise briefs, smooth opaque fabric, clean edges, minimal seams, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "白コットンTシャツブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -136,7 +136,7 @@
       "group": "basic",
       "src": "../../assets/research/outfit/lingerie/basic/lg002.jpg",
       "prompt": "black cotton everyday bra with matching briefs, opaque soft fabric, simple supportive design, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "黒コットンデイリーブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -148,7 +148,7 @@
       "group": "basic",
       "src": "../../assets/research/outfit/lingerie/basic/lg003.jpg",
       "prompt": "nude beige seamless bra and matching briefs, invisible edges, smooth matte fabric, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "ベージュシームレスブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -160,7 +160,7 @@
       "group": "basic",
       "src": "../../assets/research/outfit/lingerie/basic/lg004.jpg",
       "prompt": "heather gray ribbed bra and matching briefs, soft rib-knit texture, understated trim, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "グレーリブブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -172,7 +172,7 @@
       "group": "basic",
       "src": "../../assets/research/outfit/lingerie/basic/lg005.jpg",
       "prompt": "navy and white striped bra with matching briefs, crisp nautical stripe pattern, opaque fabric, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "ネイビー×白ストライプブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -184,7 +184,7 @@
       "group": "basic",
       "src": "../../assets/research/outfit/lingerie/basic/lg006.jpg",
       "prompt": "black bra and briefs with small white polka dots, neat white piping, opaque fabric, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "黒×白ドットブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -196,7 +196,7 @@
       "group": "basic",
       "src": "../../assets/research/outfit/lingerie/basic/lg007.jpg",
       "prompt": "powder blue cotton bra with matching briefs, soft opaque fabric, tiny centered bows, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "パウダーブルーコットンブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -208,7 +208,7 @@
       "group": "basic",
       "src": "../../assets/research/outfit/lingerie/basic/lg008.jpg",
       "prompt": "pale pink cotton bra with matching briefs, smooth cups, delicate picot edging, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "ペールピンクコットンブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -220,7 +220,7 @@
       "group": "basic",
       "src": "../../assets/research/outfit/lingerie/basic/lg009.jpg",
       "prompt": "mint green ribbed cotton bra and matching briefs, soft texture, simple elastic trim, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "ミントグリーンリブブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -232,7 +232,7 @@
       "group": "basic",
       "src": "../../assets/research/outfit/lingerie/basic/lg010.jpg",
       "prompt": "lavender minimalist bra and matching briefs, clean modern lines, smooth opaque fabric, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "ラベンダーミニマルブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -244,7 +244,7 @@
       "group": "lace",
       "src": "../../assets/research/outfit/lingerie/lace/lg011.jpg",
       "prompt": "black scalloped lace balconette bra with matching lined briefs, opaque lining, refined floral lace overlay, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "黒スカラップレース・バルコネットのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -256,7 +256,7 @@
       "group": "lace",
       "src": "../../assets/research/outfit/lingerie/lace/lg012.jpg",
       "prompt": "white floral lace bra with matching lined briefs, opaque cups and lining, delicate scalloped edges, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "白フローラルレースブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -268,7 +268,7 @@
       "group": "lace",
       "src": "../../assets/research/outfit/lingerie/lace/lg013.jpg",
       "prompt": "navy lace demi-cup bra with matching lined briefs, subtle floral pattern, satin edge trim, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "ネイビーレース・デミカップのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -280,7 +280,7 @@
       "group": "lace",
       "src": "../../assets/research/outfit/lingerie/lace/lg014.jpg",
       "prompt": "burgundy lace bra with matching lined briefs, elegant floral motifs, opaque supportive construction, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "バーガンディレースブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -292,7 +292,7 @@
       "group": "lace",
       "src": "../../assets/research/outfit/lingerie/lace/lg015.jpg",
       "prompt": "emerald green lace bra and matching lined briefs, leaf-pattern lace, neat scalloped trim, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "エメラルドグリーンレースブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -304,7 +304,7 @@
       "group": "lace",
       "src": "../../assets/research/outfit/lingerie/lace/lg016.jpg",
       "prompt": "dusty rose bra with embroidered floral lace and matching lined briefs, small ribbon accents, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "ダスティローズ刺繍レースブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -316,7 +316,7 @@
       "group": "lace",
       "src": "../../assets/research/outfit/lingerie/lace/lg017.jpg",
       "prompt": "ivory scalloped lace bra with matching lined briefs, opaque lining, pearl-like center ornament, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "アイボリースカラップレースブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -328,7 +328,7 @@
       "group": "lace",
       "src": "../../assets/research/outfit/lingerie/lace/lg018.jpg",
       "prompt": "blue-gray leaf-lace bra with matching lined briefs, elegant opaque base, fine edge piping, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "ブルーグレー・リーフレースブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -340,7 +340,7 @@
       "group": "satin",
       "src": "../../assets/research/outfit/lingerie/satin/lg019.jpg",
       "prompt": "champagne satin bra with matching briefs, soft sheen, clean tailored seams, tiny center bow, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "シャンパン・サテンブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -352,7 +352,7 @@
       "group": "satin",
       "src": "../../assets/research/outfit/lingerie/satin/lg020.jpg",
       "prompt": "black satin bra and matching briefs, restrained luster, elegant ivory piping, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "黒サテンブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -364,7 +364,7 @@
       "group": "satin",
       "src": "../../assets/research/outfit/lingerie/satin/lg021.jpg",
       "prompt": "ruby red satin bra with matching briefs, smooth opaque fabric, subtle gathered center detail, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "ルビーレッド・サテンブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -376,7 +376,7 @@
       "group": "satin",
       "src": "../../assets/research/outfit/lingerie/satin/lg022.jpg",
       "prompt": "midnight navy satin bra and matching briefs, understated shine, pale blue trim, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "ミッドナイトネイビー・サテンブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -388,7 +388,7 @@
       "group": "satin",
       "src": "../../assets/research/outfit/lingerie/satin/lg023.jpg",
       "prompt": "deep plum satin bra with matching briefs, smooth structured cups, delicate tonal piping, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "ディーププラム・サテンブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -400,7 +400,7 @@
       "group": "satin",
       "src": "../../assets/research/outfit/lingerie/satin/lg024.jpg",
       "prompt": "ivory satin bra and matching briefs, soft bridal styling, opaque fabric, fine champagne trim, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "アイボリー・サテンブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -412,7 +412,7 @@
       "group": "satin",
       "src": "../../assets/research/outfit/lingerie/satin/lg025.jpg",
       "prompt": "deep teal silky bra with matching briefs, smooth opaque finish, simple gold-tone center accent, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "ディープティール・シルキーブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -424,7 +424,7 @@
       "group": "sports",
       "src": "../../assets/research/outfit/lingerie/sports/lg026.jpg",
       "prompt": "black sports bra with matching high-rise athletic briefs, matte stretch fabric, supportive underband, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "黒スポーツブラ＋ハイライズブリーフのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -436,7 +436,7 @@
       "group": "sports",
       "src": "../../assets/research/outfit/lingerie/sports/lg027.jpg",
       "prompt": "white and light gray sports bra with matching briefs, breathable panel design, opaque performance fabric, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "白×ライトグレー・スポーツブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -448,7 +448,7 @@
       "group": "sports",
       "src": "../../assets/research/outfit/lingerie/sports/lg028.jpg",
       "prompt": "navy sports bra with matching athletic briefs, contrast white piping, secure fit, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "ネイビー・スポーツブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -460,7 +460,7 @@
       "group": "sports",
       "src": "../../assets/research/outfit/lingerie/sports/lg029.jpg",
       "prompt": "cobalt blue sports bra with matching athletic briefs, smooth stretch fabric, clean panel seams, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "コバルトブルー・スポーツブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -472,7 +472,7 @@
       "group": "sports",
       "src": "../../assets/research/outfit/lingerie/sports/lg030.jpg",
       "prompt": "lavender seamless sports bra and matching briefs, wide supportive bands, minimal stitching, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "ラベンダー・シームレススポーツブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -484,7 +484,7 @@
       "group": "sports",
       "src": "../../assets/research/outfit/lingerie/sports/lg031.jpg",
       "prompt": "warm beige seamless wireless bra with matching briefs, laser-cut edges, smooth matte finish, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "ウォームベージュ・シームレスワイヤレスブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -496,7 +496,7 @@
       "group": "sports",
       "src": "../../assets/research/outfit/lingerie/sports/lg032.jpg",
       "prompt": "charcoal longline sports bra with matching briefs, ribbed underband, understated aqua accents, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "チャコール・ロングラインスポーツブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -508,7 +508,7 @@
       "group": "bralette",
       "src": "../../assets/research/outfit/lingerie/bralette/lg033.jpg",
       "prompt": "black longline bralette with matching lined briefs, opaque lace panels, wireless supportive band, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "黒ロングラインブラレットのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -520,7 +520,7 @@
       "group": "bralette",
       "src": "../../assets/research/outfit/lingerie/bralette/lg034.jpg",
       "prompt": "white soft-cup bralette with matching briefs, opaque cotton lining, delicate picot trim, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "白ソフトカップブラレットのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -532,7 +532,7 @@
       "group": "bralette",
       "src": "../../assets/research/outfit/lingerie/bralette/lg035.jpg",
       "prompt": "sky blue triangle bralette with matching briefs, opaque fabric, slim clean straps, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "スカイブルー・トライアングルブラレットのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -544,7 +544,7 @@
       "group": "bralette",
       "src": "../../assets/research/outfit/lingerie/bralette/lg036.jpg",
       "prompt": "gray-blue ribbed bralette with matching briefs, wide elastic underband, soft opaque knit, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "グレーブルー・リブブラレットのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -556,7 +556,7 @@
       "group": "bralette",
       "src": "../../assets/research/outfit/lingerie/bralette/lg037.jpg",
       "prompt": "navy bandeau bra with matching briefs, secure straight neckline, opaque stretch fabric, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "ネイビー・バンドゥブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -568,7 +568,7 @@
       "group": "bralette",
       "src": "../../assets/research/outfit/lingerie/bralette/lg038.jpg",
       "prompt": "light gray-blue wireless full-cup bra with matching briefs, smooth supportive panels, soft trim, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "ライトグレーブルー・ワイヤレスフルカップのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -580,7 +580,7 @@
       "group": "silhouette",
       "src": "../../assets/research/outfit/lingerie/silhouette/lg039.jpg",
       "prompt": "black balconette bra with matching high-waisted briefs, retro silhouette, opaque fabric, white piping, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "黒バルコネット＋ハイウエストブリーフのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -592,7 +592,7 @@
       "group": "silhouette",
       "src": "../../assets/research/outfit/lingerie/silhouette/lg040.jpg",
       "prompt": "navy polka-dot bra with matching high-waisted briefs, small white dots, neat vintage trim, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "ネイビードット＋ハイウエストブリーフのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -604,7 +604,7 @@
       "group": "silhouette",
       "src": "../../assets/research/outfit/lingerie/silhouette/lg041.jpg",
       "prompt": "ivory lace-trim bra with matching high-waisted lined briefs, opaque panels, refined vintage styling, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "アイボリーレーストリム＋ハイウエストブリーフのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -616,7 +616,7 @@
       "group": "silhouette",
       "src": "../../assets/research/outfit/lingerie/silhouette/lg042.jpg",
       "prompt": "burgundy bra with matching high-waisted briefs, structured opaque panels, tonal lace accents, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "バーガンディ＋ハイウエストブリーフのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -628,7 +628,7 @@
       "group": "silhouette",
       "src": "../../assets/research/outfit/lingerie/silhouette/lg043.jpg",
       "prompt": "navy demi-cup bra with matching boyshorts, opaque smooth fabric, pale blue piping, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "ネイビー・デミカップ＋ボーイショーツのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -640,7 +640,7 @@
       "group": "silhouette",
       "src": "../../assets/research/outfit/lingerie/silhouette/lg044.jpg",
       "prompt": "pastel peach bra with matching hipster briefs, soft opaque cotton, simple scalloped edging, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "パステルピーチ＋ヒップスターブリーフのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -652,7 +652,7 @@
       "group": "silhouette",
       "src": "../../assets/research/outfit/lingerie/silhouette/lg045.jpg",
       "prompt": "white bra with matching geometric-print bikini briefs, navy and teal pattern, opaque fabric, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "白ブラ＋幾何学柄ビキニブリーフのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -664,7 +664,7 @@
       "group": "silhouette",
       "src": "../../assets/research/outfit/lingerie/silhouette/lg046.jpg",
       "prompt": "lavender bra with matching low-rise briefs, opaque matte fabric, small side bows, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "ラベンダーブラ＋ローライズブリーフのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -676,7 +676,7 @@
       "group": "silhouette",
       "src": "../../assets/research/outfit/lingerie/silhouette/lg047.jpg",
       "prompt": "blue gingham bra with matching briefs, small check pattern, white piping and tiny bows, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "ブルーギンガムブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -688,7 +688,7 @@
       "group": "silhouette",
       "src": "../../assets/research/outfit/lingerie/silhouette/lg048.jpg",
       "prompt": "cream bra and matching briefs with tiny blue floral print, opaque cotton, delicate navy trim, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "クリーム＋小花柄ブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -700,7 +700,7 @@
       "group": "design",
       "src": "../../assets/research/outfit/lingerie/design/lg049.jpg",
       "prompt": "white bra with black piping and matching white briefs, crisp monochrome color-block design, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "白×黒パイピングブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -712,7 +712,7 @@
       "group": "design",
       "src": "../../assets/research/outfit/lingerie/design/lg050.jpg",
       "prompt": "navy bra and matching briefs with white sailor-inspired stripes, small centered ribbon accents, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "ネイビー・セーラー風ストライプブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -724,7 +724,7 @@
       "group": "design",
       "src": "../../assets/research/outfit/lingerie/design/lg051.jpg",
       "prompt": "pastel blue and lavender color-block bra with matching briefs, smooth opaque fabric, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "パステルブルー×ラベンダー・カラーブロックブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -736,7 +736,7 @@
       "group": "design",
       "src": "../../assets/research/outfit/lingerie/design/lg052.jpg",
       "prompt": "sage green bra with matching lined briefs, subtle botanical embroidery, opaque supportive base, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "セージグリーン・ボタニカル刺繍ブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -748,7 +748,7 @@
       "group": "design",
       "src": "../../assets/research/outfit/lingerie/design/lg053.jpg",
       "prompt": "soft orange bra with matching briefs, cream contrast piping, clean sporty-feminine styling, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "ソフトオレンジ×クリームブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -760,7 +760,7 @@
       "group": "design",
       "src": "../../assets/research/outfit/lingerie/design/lg054.jpg",
       "prompt": "pale blue bra with matching briefs, navy ribbon accents, opaque smooth fabric, balanced decorative trim, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "ペールブルー×ネイビーリボンブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -772,7 +772,7 @@
       "group": "design",
       "src": "../../assets/research/outfit/lingerie/design/lg055.jpg",
       "prompt": "beige molded-cup bra with matching briefs, seamless supportive construction, smooth opaque finish, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "ベージュ・モールドカップブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -784,7 +784,7 @@
       "group": "design",
       "src": "../../assets/research/outfit/lingerie/design/lg056.jpg",
       "prompt": "black side-support bra with matching briefs, structured opaque panels, subtle satin piping, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "黒サイドサポートブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     },
     {
@@ -796,7 +796,7 @@
       "group": "design",
       "src": "../../assets/research/outfit/lingerie/design/lg057.jpg",
       "prompt": "navy longline bra with matching briefs, structured underband, opaque fabric, clean vertical seams, adult lingerie catalog styling, fully opaque coverage",
-      "negative": "transparent fabric, exposed nipples, topless",
+      "negative": "",
       "description": "ネイビー・ロングラインブラのランジェリープロンプト検証用。衣装の形・素材・配色に絞った指定。"
     }
   ]
