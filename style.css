@@ -2939,7 +2939,32 @@ body[data-research-section="outfit"] .outfit-note-section .section-heading-row {
 
 .cosplay-filter-tabs { margin-top: 18px; }
 .cosplay-filter-tabs .research-section-tab { appearance: none; font: inherit; cursor: pointer; }
-.cosplay-code { flex: 0 0 auto; padding: 4px 8px; border: 1px solid rgba(224, 85, 111, 0.3); border-radius: 999px; color: var(--accent-strong); font-size: 0.78rem; font-weight: 900; }
+.cosplay-log-card .research-card-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  gap: 8px 10px;
+}
+
+.cosplay-log-card .research-card-heading h3 {
+  min-width: 0;
+}
+
+.cosplay-code {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: start;
+  min-width: max-content;
+  padding: 5px 9px;
+  border: 1px solid rgba(224, 85, 111, 0.3);
+  border-radius: 999px;
+  color: var(--accent-strong);
+  font-size: 0.78rem;
+  font-weight: 900;
+  line-height: 1;
+  white-space: nowrap;
+}
 .cosplay-log-card .research-candidate-media img { aspect-ratio: 720 / 926; object-fit: cover; }
 
 .research-download-banner {

@@ -14,15 +14,15 @@
 
     const banner = document.createElement("section");
     banner.className = "research-download-banner";
-    banner.setAttribute("aria-label", "SDXL Prompt Guide Pack Vol.1.4");
+    banner.setAttribute("aria-label", "SDXL Prompt Guide Pack Vol.1.5");
     banner.innerHTML = `
       <div class="research-download-banner-copy">
-        <p class="eyebrow" data-ja="DOWNLOAD PACK / VOL.1.4" data-en="DOWNLOAD PACK / VOL.1.4" data-zh="下载包 / VOL.1.4" data-ko="다운로드 팩 / VOL.1.4">DOWNLOAD PACK / VOL.1.4</p>
-        <h2 data-ja="検証プロンプト508件を、すぐ使える形でまとめて収録" data-en="Get all 508 tested prompts in a production-ready pack" data-zh="将508条验证提示词整理为可直接使用的下载包" data-ko="검증 프롬프트 508건을 바로 쓸 수 있는 형태로 한 번에">検証プロンプト508件を、すぐ使える形でまとめて収録</h2>
-        <p data-ja="このページを含む研究室のプロンプトを、TXT・CSV・サムネイル付きExcel・カテゴリ別ファイルでまとめて検索、コピー、管理できます。Vol.1.4ではランジェリー57件を追加しました。" data-en="Search, copy, and manage the Research Lab prompts—including this page—in TXT, CSV, thumbnail Excel, and category files. Vol.1.4 adds 57 lingerie prompts." data-zh="可通过TXT、CSV、带缩略图Excel及分类文件，集中搜索、复制和管理研究室提示词（包括本页内容）。Vol.1.4新增57条内衣提示词。" data-ko="이 페이지를 포함한 연구실 프롬프트를 TXT, CSV, 썸네일 포함 Excel, 카테고리별 파일로 한꺼번에 검색·복사·관리할 수 있습니다. Vol.1.4에는 란제리 57건을 추가했습니다.">このページを含む研究室のプロンプトを、TXT・CSV・サムネイル付きExcel・カテゴリ別ファイルでまとめて検索、コピー、管理できます。Vol.1.4ではランジェリー57件を追加しました。</p>
+        <p class="eyebrow" data-ja="DOWNLOAD PACK / VOL.1.5" data-en="DOWNLOAD PACK / VOL.1.5" data-zh="下载包 / VOL.1.5" data-ko="다운로드 팩 / VOL.1.5">DOWNLOAD PACK / VOL.1.5</p>
+        <h2 data-ja="検証プロンプト598件を、すぐ使える形でまとめて収録" data-en="Get all 598 tested prompts in a production-ready pack" data-zh="将598条验证提示词整理为可直接使用的下载包" data-ko="검증 프롬프트 598건을 바로 쓸 수 있는 형태로 한 번에">検証プロンプト598件を、すぐ使える形でまとめて収録</h2>
+        <p data-ja="このページを含む研究室のプロンプトを、TXT・CSV・サムネイル付きExcel・カテゴリ別ファイルでまとめて検索、コピー、管理できます。Vol.1.5ではコスプレ90件を追加しました。" data-en="Search, copy, and manage the Research Lab prompts—including this page—in TXT, CSV, thumbnail Excel, and category files. Vol.1.5 adds 90 cosplay prompts." data-zh="可通过TXT、CSV、带缩略图Excel及分类文件，集中搜索、复制和管理研究室提示词（包括本页内容）。Vol.1.5新增90条角色扮演提示词。" data-ko="이 페이지를 포함한 연구실 프롬프트를 TXT, CSV, 썸네일 포함 Excel, 카테고리별 파일로 한꺼번에 검색·복사·관리할 수 있습니다. Vol.1.5에는 코스프레 90건을 추가했습니다.">このページを含む研究室のプロンプトを、TXT・CSV・サムネイル付きExcel・カテゴリ別ファイルでまとめて検索、コピー、管理できます。Vol.1.5ではコスプレ90件を追加しました。</p>
         <div class="research-download-banner-facts" aria-label="Pack summary">
-          <span data-ja="本体508件" data-en="508 main entries" data-zh="本体508条" data-ko="본체 508건">本体508件</span>
-          <span data-ja="服装261件" data-en="261 outfit prompts" data-zh="服装261条" data-ko="의상 261건">服装261件</span>
+          <span data-ja="本体598件" data-en="598 main entries" data-zh="本体598条" data-ko="본체 598건">本体598件</span>
+          <span data-ja="コスプレ90件" data-en="90 cosplay prompts" data-zh="角色扮演90条" data-ko="코스프레 90건">コスプレ90件</span>
           <span>TXT / CSV / Excel</span>
           <span data-ja="500円" data-en="500 JPY" data-zh="500日元" data-ko="500엔">500円</span>
         </div>
@@ -368,7 +368,7 @@
     eyes: "SDXL / illustriousXL 系モデル向けの目プロンプト検証ページです。\nジト目、猫目、大きい目、小さい目、瞳、ハイライト表現などを比較していきます。",
     expression: "SDXL / illustriousXL 系モデル向けの表情プロンプト検証ページです。\n無表情、笑顔、困り顔、怒り顔、照れ顔などの表情差を比較しています。",
     background: "SDXL / illustriousXL 系モデル向けの背景プロンプト検証をまとめました。\n京都風、和風町並み、温泉旅館、海辺、リゾートなどの背景表現を比較しています。",
-    "prompt-guide-pack": "えすなむら研究室のSDXL Prompt Guide Pack Vol.1.4です。\nランジェリー57件を追加し、本体508件・服装261件・自然文髪型49件をTXT / CSV / サムネイル付きExcelなどでまとめています。"
+    "prompt-guide-pack": "えすなむら研究室のSDXL Prompt Guide Pack Vol.1.5です。\nコスプレ90件を追加し、本体598件・服装261件・自然文髪型49件をTXT / CSV / サムネイル付きExcelなどでまとめています。"
   };
 
   const pageSectionGroups = {
