@@ -1,29 +1,29 @@
 {
-  "count": 88,
+  "count": 100,
   "groups": [
     {
       "id": "fantasy",
       "label_ja": "ファンタジー・RPG",
       "label_en": "Fantasy / RPG",
-      "count": 23
+      "count": 32
     },
     {
       "id": "japanese",
       "label_ja": "和風・アジアン",
       "label_en": "Japanese / Asian",
-      "count": 9
+      "count": 10
     },
     {
       "id": "classic",
       "label_ja": "クラシック・異世界",
       "label_en": "Classic / Adventure",
-      "count": 10
+      "count": 11
     },
     {
       "id": "work",
       "label_ja": "お仕事・制服",
       "label_en": "Jobs / Uniforms",
-      "count": 16
+      "count": 17
     },
     {
       "id": "scifi",
@@ -918,6 +918,126 @@
       "prompt": "romantic Valentine stage costume, burgundy and rose-pink fitted dress, heart-shaped gold trim, layered flared skirt, long gloves, opaque thigh-high stockings, ribbon hair ornament",
       "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos092.jpg"
+    },
+    {
+      "code": "COS093",
+      "label_ja": "ランサー",
+      "label_en": "fantasy lancer costume",
+      "group": "fantasy",
+      "prompt": "fantasy lancer costume, fitted military-style bodice, split battle skirt panels, compact pauldrons, long gloves, armored boots, transforming spear",
+      "negative": "",
+      "src": "../../assets/research/cosplay/cos093.jpg",
+      "source_row_uid": 3004
+    },
+    {
+      "code": "COS094",
+      "label_ja": "ドラグーンアーマー",
+      "label_en": "fantasy dragoon armor",
+      "group": "fantasy",
+      "prompt": "fantasy dragoon armor, fitted scaled bodice, wing-shaped pauldrons, segmented battle skirt, gauntlets, armored thigh boots, dragon spear",
+      "negative": "",
+      "src": "../../assets/research/cosplay/cos094.jpg",
+      "source_row_uid": 3011
+    },
+    {
+      "code": "COS095",
+      "label_ja": "ヴァンパイアハンター",
+      "label_en": "fantasy vampire-hunter outfit",
+      "group": "fantasy",
+      "prompt": "fantasy vampire-hunter outfit, fitted long military coat, high-collar blouse, layered burgundy skirt, leather gloves, tall boots, crossbow wand",
+      "negative": "",
+      "src": "../../assets/research/cosplay/cos095.jpg",
+      "source_row_uid": 3014
+    },
+    {
+      "code": "COS096",
+      "label_ja": "オラクルローブ",
+      "label_en": "fantasy oracle robes",
+      "group": "fantasy",
+      "prompt": "fantasy oracle robes, fitted sleeveless tunic over a long-sleeve underdress, layered ankle-length skirt, wide ceremonial sash, gloves, jeweled veil crown, divination staff",
+      "negative": "",
+      "src": "../../assets/research/cosplay/cos096.jpg",
+      "source_row_uid": 3015
+    },
+    {
+      "code": "COS097",
+      "label_ja": "レイヴンクローク",
+      "label_en": "raven sorceress costume",
+      "group": "fantasy",
+      "prompt": "raven sorceress costume, fitted feather-trim bodice, layered feather skirt, short winged cloak, long gloves, black boots, raven crown, dark staff",
+      "negative": "",
+      "src": "../../assets/research/cosplay/cos097.jpg",
+      "source_row_uid": 3018
+    },
+    {
+      "code": "COS098",
+      "label_ja": "和装剣姫",
+      "label_en": "kimono sword-princess costume",
+      "group": "japanese",
+      "prompt": "kimono sword-princess costume, fitted wrap bodice, wide obi armor belt, layered petal skirt, detached flowing sleeves, knee-high boots, blossom sword-wand",
+      "negative": "",
+      "src": "../../assets/research/cosplay/cos098.jpg",
+      "source_row_uid": 3023
+    },
+    {
+      "code": "COS099",
+      "label_ja": "レヘンガの術師",
+      "label_en": "lehenga-inspired fantasy costume",
+      "group": "classic",
+      "prompt": "lehenga-inspired fantasy costume, fitted high-neck embroidered top with full coverage, wide flared skirt, draped shoulder sash, bangles, embroidered boots, lotus wand",
+      "negative": "",
+      "src": "../../assets/research/cosplay/cos099.jpg",
+      "source_row_uid": 3030
+    },
+    {
+      "code": "COS100",
+      "label_ja": "フェニックス戦士",
+      "label_en": "phoenix warrior costume",
+      "group": "fantasy",
+      "prompt": "phoenix warrior costume, fitted red-gold bodice, layered feather skirt, winged shoulder pieces, long gloves, red boots, feather crown, phoenix staff",
+      "negative": "",
+      "src": "../../assets/research/cosplay/cos100.jpg",
+      "source_row_uid": 3035
+    },
+    {
+      "code": "COS101",
+      "label_ja": "スノークイーン",
+      "label_en": "snow-queen fantasy gown",
+      "group": "fantasy",
+      "prompt": "snow-queen fantasy gown, fitted ice-blue bodice, structured layered ankle skirt, fur-trim capelet, long gloves, crystal boots, ice crown, frost staff",
+      "negative": "",
+      "src": "../../assets/research/cosplay/cos101.jpg",
+      "source_row_uid": 3038
+    },
+    {
+      "code": "COS102",
+      "label_ja": "ハニービー衣装",
+      "label_en": "honeybee fantasy costume",
+      "group": "fantasy",
+      "prompt": "honeybee fantasy costume, fitted striped jacket bodice, sculpted short overskirt, wing-shaped shoulder cape, long gloves, opaque leggings, yellow boots, antenna crown, honey wand",
+      "negative": "",
+      "src": "../../assets/research/cosplay/cos102.jpg",
+      "source_row_uid": 3039
+    },
+    {
+      "code": "COS103",
+      "label_ja": "ローズガーディアン",
+      "label_en": "rose guardian fantasy dress",
+      "group": "fantasy",
+      "prompt": "rose guardian fantasy dress, fitted corset-style bodice over opaque lining, layered rose-petal skirt, thorn-shaped shoulder guards, long gloves, tall boots, rose crown, vine spear",
+      "negative": "",
+      "src": "../../assets/research/cosplay/cos103.jpg",
+      "source_row_uid": 3041
+    },
+    {
+      "code": "COS104",
+      "label_ja": "魔法学園首席",
+      "label_en": "magic-academy heroine uniform",
+      "group": "work",
+      "prompt": "magic-academy heroine uniform, fitted navy blazer, crystal crest brooch, ribboned shirt, layered pleated skirt, gloves, opaque knee socks, ankle boots, scholar cap, book wand",
+      "negative": "",
+      "src": "../../assets/research/cosplay/cos104.jpg",
+      "source_row_uid": 3049
     }
   ]
 }

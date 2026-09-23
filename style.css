@@ -5073,7 +5073,7 @@ body[data-research-section="expression"] .research-candidate-media.has-samples .
   }
 }
 
-/* Ten research links stay on one row without horizontal scrolling. */
+/* Research links stay on one row without horizontal scrolling. */
 @media (min-width: 761px) {
   .research-subnav a { min-width: 0; padding-left: 5px; padding-right: 5px; font-size: clamp(.68rem, .82vw, .88rem); }
 }
