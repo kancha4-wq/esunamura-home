@@ -2937,6 +2937,11 @@ body[data-research-section="outfit"] .outfit-note-section .section-heading-row {
   margin-top: -12px;
 }
 
+.cosplay-filter-tabs { margin-top: 18px; }
+.cosplay-filter-tabs .research-section-tab { appearance: none; font: inherit; cursor: pointer; }
+.cosplay-code { flex: 0 0 auto; padding: 4px 8px; border: 1px solid rgba(224, 85, 111, 0.3); border-radius: 999px; color: var(--accent-strong); font-size: 0.78rem; font-weight: 900; }
+.cosplay-log-card .research-candidate-media img { aspect-ratio: 720 / 926; object-fit: cover; }
+
 .research-download-banner {
   position: relative;
   display: grid;
@@ -4670,12 +4675,17 @@ body[data-research-section="expression"] .research-candidate-media.has-samples .
   }
 
   .research-subnav {
-    overflow-x: auto;
-    padding-bottom: 4px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 6px;
+    overflow: visible;
+    padding-bottom: 0;
   }
 
   .research-subnav a {
-    flex: 0 0 min(42vw, 160px);
+    min-height: 38px;
+    padding: 6px 4px;
+    font-size: 0.78rem;
   }
 
   .research-detail-page .research-image-link img {
