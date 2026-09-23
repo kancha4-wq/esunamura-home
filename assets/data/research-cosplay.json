@@ -45,8 +45,8 @@
       "label_ja": "銀装のファンタジーナイト",
       "label_en": "Silver Fantasy Knight",
       "group": "fantasy",
-      "prompt": "polished silver fantasy knight armor, navy surcoat, gold trim, leather belt, fitted gauntlets, knee-high armored boots, medieval castle armory, weapon racks, stone walls, warm torchlight",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "polished silver fantasy knight armor, navy surcoat, gold trim, leather belt, fitted gauntlets, knee-high armored boots",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos001.jpg"
     },
     {
@@ -55,8 +55,8 @@
       "label_ja": "白銀のプリンセスナイト",
       "label_en": "White-Silver Princess Knight",
       "group": "fantasy",
-      "prompt": "elegant white and silver princess knight armor, blue cape, engraved breastplate, armored skirt panels, white gloves, tall armored boots, grand castle courtyard, pale stone arches, royal banners, soft overcast daylight",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "elegant white and silver princess knight armor, blue cape, engraved breastplate, armored skirt panels, white gloves, tall armored boots",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos002.jpg"
     },
     {
@@ -65,8 +65,8 @@
       "label_ja": "ロイヤルブルーの王女",
       "label_en": "Royal Blue Princess",
       "group": "fantasy",
-      "prompt": "ornate royal blue princess gown, fitted jeweled bodice, layered full skirt, gold embroidery, elbow-length gloves, small tiara, opulent palace ballroom, chandeliers, marble floor, tall arched windows",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "ornate royal blue princess gown, fitted jeweled bodice, layered full skirt, gold embroidery, elbow-length gloves, small tiara",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos003.jpg"
     },
     {
@@ -75,8 +75,8 @@
       "label_ja": "森のエルフ",
       "label_en": "Forest Elf",
       "group": "fantasy",
-      "prompt": "green forest elf tunic dress, leaf embroidery, brown leather corset belt, fitted bracers, thigh-high leather boots, hooded short cape, enchanted forest glade, ancient trees, mossy stones, soft green filtered light",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "green forest elf tunic dress, leaf embroidery, brown leather corset belt, fitted bracers, thigh-high leather boots, hooded short cape",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos004.jpg"
     },
     {
@@ -85,8 +85,8 @@
       "label_ja": "白魔道士",
       "label_en": "White Mage",
       "group": "fantasy",
-      "prompt": "white mage robe, red geometric trim, fitted waist sash, layered sleeves, white thigh-high boots, crystal pendant, bright fantasy temple, white stone columns, glowing crystal altar, soft sacred light",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "white mage robe, red geometric trim, fitted waist sash, layered sleeves, white thigh-high boots, crystal pendant",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos005.jpg"
     },
     {
@@ -95,8 +95,8 @@
       "label_ja": "黒のアーケインメイジ",
       "label_en": "Black Arcane Mage",
       "group": "fantasy",
-      "prompt": "black arcane mage dress, deep purple lining, fitted corset waist, wide detached sleeves, patterned stockings, pointed mage hat, ancient arcane library, tall bookshelves, floating magic lights, dim violet ambience",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "black arcane mage dress, deep purple lining, fitted corset waist, wide detached sleeves, patterned stockings, pointed mage hat",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos006.jpg"
     },
     {
@@ -105,8 +105,8 @@
       "label_ja": "紅の魔法使い",
       "label_en": "Crimson Mage",
       "group": "fantasy",
-      "prompt": "crimson red mage coat dress, black fitted bodice, gold piping, short capelet, black stockings, high-heeled boots, feathered hat, magic academy hall, stone arches, red banners, glowing spell circles",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "crimson red mage coat dress, black fitted bodice, gold piping, short capelet, black stockings, high-heeled boots, feathered hat",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos007.jpg"
     },
     {
@@ -115,8 +115,8 @@
       "label_ja": "錬金術師",
       "label_en": "Alchemist",
       "group": "fantasy",
-      "prompt": "tan alchemist coat over fitted brown dress, leather harness belt, brass buckles, dark leggings, ankle boots, utility pouches, fantasy alchemy workshop, glass flasks, copper apparatus, shelves of herbs, warm lamplight",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "tan alchemist coat over fitted brown dress, leather harness belt, brass buckles, dark leggings, ankle boots, utility pouches",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos008.jpg"
     },
     {
@@ -125,8 +125,8 @@
       "label_ja": "巫女",
       "label_en": "Shrine Maiden",
       "group": "japanese",
-      "prompt": "traditional white kosode and red hakama, wide detached sleeves, red hair ribbon, white tabi socks, zori sandals, quiet Shinto shrine courtyard, red torii gates, stone lanterns, morning mist",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "traditional white kosode and red hakama, wide detached sleeves, red hair ribbon, white tabi socks, zori sandals",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos009.jpg"
     },
     {
@@ -135,8 +135,8 @@
       "label_ja": "くノ一",
       "label_en": "Kunoichi",
       "group": "japanese",
-      "prompt": "dark indigo kunoichi outfit, sleeveless wrap top, fitted arm guards, short layered skirt over leggings, shinobi sandals, red waist sash, moonlit ninja village rooftops, wooden houses, drifting clouds, cool night light",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "dark indigo kunoichi outfit, sleeveless wrap top, fitted arm guards, short layered skirt over leggings, shinobi sandals, red waist sash",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos010.jpg"
     },
     {
@@ -145,8 +145,8 @@
       "label_ja": "女侍",
       "label_en": "Female Samurai",
       "group": "japanese",
-      "prompt": "black and crimson female samurai armor, lacquered shoulder guards, fitted under-robe, plated waist guards, armored gloves, tall boots, traditional castle dojo, polished wooden floor, armor stands, shoji screens",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "black and crimson female samurai armor, lacquered shoulder guards, fitted under-robe, plated waist guards, armored gloves, tall boots",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos011.jpg"
     },
     {
@@ -155,8 +155,8 @@
       "label_ja": "浪人風の袴姿",
       "label_en": "Hakama Wanderer",
       "group": "japanese",
-      "prompt": "navy kimono with hakama trousers, white inner collar, dark obi, leather forearm guards, tabi boots, weathered short haori, old Japanese post town street, wooden inns, paper lanterns, late afternoon light",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "navy kimono with hakama trousers, white inner collar, dark obi, leather forearm guards, tabi boots, weathered short haori",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos012.jpg"
     },
     {
@@ -165,8 +165,8 @@
       "label_ja": "海賊船長",
       "label_en": "Pirate Captain",
       "group": "classic",
-      "prompt": "burgundy pirate captain coat, ivory ruffled blouse, black corset belt, layered skirt, thigh-high boots, tricorn hat, gold accents, wooden pirate ship deck, tall masts, coiled ropes, open sea, dramatic cloudy sky",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "burgundy pirate captain coat, ivory ruffled blouse, black corset belt, layered skirt, thigh-high boots, tricorn hat, gold accents",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos013.jpg"
     },
     {
@@ -175,8 +175,8 @@
       "label_ja": "セーラー",
       "label_en": "Sailor",
       "group": "classic",
-      "prompt": "navy sailor uniform dress, white sailor collar, blue neckerchief, double-breasted gold buttons, white gloves, navy boots, bright harbor pier, moored sailing ships, warehouses, calm blue water",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "navy sailor uniform dress, white sailor collar, blue neckerchief, double-breasted gold buttons, white gloves, navy boots",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos014.jpg"
     },
     {
@@ -185,8 +185,8 @@
       "label_ja": "スチームパンク発明家",
       "label_en": "Steampunk Inventor",
       "group": "classic",
-      "prompt": "brown steampunk inventor coat, cream blouse, leather corset, asymmetrical skirt, striped stockings, brass goggles, lace-up boots, brass mechanical workshop, gears, pressure gauges, copper pipes, amber industrial light",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "brown steampunk inventor coat, cream blouse, leather corset, asymmetrical skirt, striped stockings, brass goggles, lace-up boots",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos015.jpg"
     },
     {
@@ -195,8 +195,8 @@
       "label_ja": "ゴシックロリータ",
       "label_en": "Gothic Lolita",
       "group": "classic",
-      "prompt": "black gothic lolita dress, layered ruffled skirt, white lace collar, fitted corset waist, puff sleeves, patterned tights, lace headpiece, Victorian manor parlor, carved furniture, red velvet curtains, antique candelabras",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "black gothic lolita dress, layered ruffled skirt, white lace collar, fitted corset waist, puff sleeves, patterned tights, lace headpiece",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos016.jpg"
     },
     {
@@ -205,8 +205,8 @@
       "label_ja": "クラシックメイド",
       "label_en": "Classic Maid",
       "group": "work",
-      "prompt": "black classic maid dress, white ruffled apron, high collar, puff sleeves, white cuffs, black stockings, lace maid headband, elegant mansion tearoom, polished wood furniture, tea table, tall curtained windows",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "black classic maid dress, white ruffled apron, high collar, puff sleeves, white cuffs, black stockings, lace maid headband",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos017.jpg"
     },
     {
@@ -215,8 +215,8 @@
       "label_ja": "カフェメイド",
       "label_en": "Cafe Maid",
       "group": "work",
-      "prompt": "navy café maid dress, white bib apron, short puff sleeves, blue ribbon tie, opaque thigh-high socks, small frilled headband, cozy retro café interior, wooden counter, pastry display, warm pendant lights",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "navy café maid dress, white bib apron, short puff sleeves, blue ribbon tie, opaque thigh-high socks, small frilled headband",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos018.jpg"
     },
     {
@@ -225,8 +225,8 @@
       "label_ja": "女性執事",
       "label_en": "Female Butler",
       "group": "work",
-      "prompt": "tailored black butler jacket, white wing-collar shirt, black waistcoat, slim ribbon tie, fitted trousers, white gloves, polished shoes, grand mansion foyer, sweeping staircase, dark wood paneling, warm chandelier light",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "tailored black butler jacket, white wing-collar shirt, black waistcoat, slim ribbon tie, fitted trousers, white gloves, polished shoes",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos019.jpg"
     },
     {
@@ -235,8 +235,8 @@
       "label_ja": "ナース",
       "label_en": "Nurse",
       "group": "work",
-      "prompt": "clean white nurse-inspired dress, pale blue piping, fitted waist, short sleeves, white opaque stockings, low-heeled shoes, simple nurse cap, bright fantasy clinic room, neat cabinets, white curtains, soft diffused daylight",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "clean white nurse-inspired dress, pale blue piping, fitted waist, short sleeves, white opaque stockings, low-heeled shoes, simple nurse cap",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos020.jpg"
     },
     {
@@ -245,8 +245,8 @@
       "label_ja": "研究員",
       "label_en": "Research Scientist",
       "group": "work",
-      "prompt": "white research lab coat over fitted black turtleneck and navy pencil skirt, ID badge, dark tights, practical shoes, modern science laboratory, glass partitions, monitors, clean workbenches, cool even lighting",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "white research lab coat over fitted black turtleneck and navy pencil skirt, ID badge, dark tights, practical shoes",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos021.jpg"
     },
     {
@@ -255,8 +255,8 @@
       "label_ja": "宇宙飛行士",
       "label_en": "Astronaut",
       "group": "scifi",
-      "prompt": "sleek white astronaut suit, blue joint panels, compact life-support harness, mission patches, fitted gloves, reinforced boots, orbital space station observation module, panoramic Earth view, instrument panels, cool cabin light",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "sleek white astronaut suit, blue joint panels, compact life-support harness, mission patches, fitted gloves, reinforced boots",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos022.jpg"
     },
     {
@@ -265,8 +265,8 @@
       "label_ja": "宇宙船パイロット",
       "label_en": "Starship Pilot",
       "group": "scifi",
-      "prompt": "navy space pilot jumpsuit, white armored vest, orange trim, utility belt, fitted gloves, calf-high boots, starship cockpit, illuminated control panels, pilot seats, stars visible through front canopy",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "navy space pilot jumpsuit, white armored vest, orange trim, utility belt, fitted gloves, calf-high boots",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos023.jpg"
     },
     {
@@ -275,8 +275,8 @@
       "label_ja": "サイバーパンクハッカー",
       "label_en": "Cyberpunk Hacker",
       "group": "scifi",
-      "prompt": "black cyberpunk cropped jacket over fitted teal bodysuit, luminous circuit accents, utility belt, fingerless gloves, platform boots, neon cyberpunk hacker room, holographic screens, cables, dark blue and magenta ambient light",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "black cyberpunk cropped jacket over fitted teal bodysuit, luminous circuit accents, utility belt, fingerless gloves, platform boots",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos024.jpg"
     },
     {
@@ -285,8 +285,8 @@
       "label_ja": "アンドロイド",
       "label_en": "Android",
       "group": "scifi",
-      "prompt": "sleek white and black android bodysuit, blue luminous seams, segmented armor panels, high collar, fitted gloves and boots, futuristic android maintenance chamber, glass pods, clean metallic walls, cyan technical lighting",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "sleek white and black android bodysuit, blue luminous seams, segmented armor panels, high collar, fitted gloves and boots",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos025.jpg"
     },
     {
@@ -295,8 +295,8 @@
       "label_ja": "メカパイロット",
       "label_en": "Mecha Pilot",
       "group": "scifi",
-      "prompt": "form-fitting blue and white mecha pilot suit, orange chest accents, reinforced shoulder panels, tech gloves, armored boots, giant robot hangar, maintenance gantries, warning lights, large mechanical silhouettes",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "form-fitting blue and white mecha pilot suit, orange chest accents, reinforced shoulder panels, tech gloves, armored boots",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos026.jpg"
     },
     {
@@ -305,8 +305,8 @@
       "label_ja": "魔法少女",
       "label_en": "Magical Heroine",
       "group": "stage",
-      "prompt": "white and pastel blue magical heroine dress, fitted ribboned bodice, layered short skirt, detached sleeves, opaque thigh-high socks, ankle boots, small jeweled tiara, crystal fantasy plaza, glowing fountains, floating sparkles, pastel twilight sky",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "white and pastel blue magical heroine dress, fitted ribboned bodice, layered short skirt, detached sleeves, opaque thigh-high socks, ankle boots, small jeweled tiara",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos027.jpg"
     },
     {
@@ -315,8 +315,8 @@
       "label_ja": "ブルーアイドル",
       "label_en": "Blue Idol",
       "group": "stage",
-      "prompt": "bright blue idol stage dress, white ruffled bodice, gold trim, layered pleated skirt, wrist cuffs, knee-high boots, star hair accessory, large concert stage, colorful spotlights, LED backdrop, cheering light sticks in distance",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "bright blue idol stage dress, white ruffled bodice, gold trim, layered pleated skirt, wrist cuffs, knee-high boots, star hair accessory",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos028.jpg"
     },
     {
@@ -325,8 +325,8 @@
       "label_ja": "ロックミュージシャン",
       "label_en": "Rock Musician",
       "group": "stage",
-      "prompt": "black leather rock jacket over red fitted top, plaid mini skirt, patterned tights, studded belt, ankle boots, silver accessories, intimate live music venue, amplifier stacks, stage monitors, red and blue concert lights",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "black leather rock jacket over red fitted top, plaid mini skirt, patterned tights, studded belt, ankle boots, silver accessories",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos029.jpg"
     },
     {
@@ -335,8 +335,8 @@
       "label_ja": "ジャズシンガー",
       "label_en": "Jazz Singer",
       "group": "stage",
-      "prompt": "elegant midnight blue jazz dress, fitted satin bodice, knee-length flared skirt, long gloves, pearl earrings, classic heels, art deco jazz club, small stage, vintage microphone, round tables, warm amber spotlights",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "elegant midnight blue jazz dress, fitted satin bodice, knee-length flared skirt, long gloves, pearl earrings, classic heels",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos030.jpg"
     },
     {
@@ -345,8 +345,8 @@
       "label_ja": "バレリーナ",
       "label_en": "Ballerina",
       "group": "stage",
-      "prompt": "pale blue classical ballet tutu, fitted satin bodice, layered tulle skirt, white tights, pointe shoes, delicate hair ornament, classical ballet rehearsal studio, wooden floor, wall mirrors, tall windows, soft natural light",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "pale blue classical ballet tutu, fitted satin bodice, layered tulle skirt, white tights, pointe shoes, delicate hair ornament",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos031.jpg"
     },
     {
@@ -355,8 +355,8 @@
       "label_ja": "フラメンコダンサー",
       "label_en": "Flamenco Dancer",
       "group": "stage",
-      "prompt": "red and black flamenco dress, fitted ruffled bodice, layered asymmetrical skirt, lace sleeves, flower hair ornament, dance heels, sunlit Spanish courtyard, tiled floor, white stucco walls, arches, warm late-afternoon light",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "red and black flamenco dress, fitted ruffled bodice, layered asymmetrical skirt, lace sleeves, flower hair ornament, dance heels",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos032.jpg"
     },
     {
@@ -365,8 +365,8 @@
       "label_ja": "アラビアンファンタジーダンサー",
       "label_en": "Arabian Fantasy Dancer",
       "group": "classic",
-      "prompt": "teal Arabian fantasy dancer outfit, embroidered cropped vest over opaque fitted top, layered harem pants, gold waist sash, jeweled headband, slippers, ornate lantern palace, mosaic floor, carved arches, silk drapes, warm golden ambience",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "teal Arabian fantasy dancer outfit, embroidered cropped vest over opaque fitted top, layered harem pants, gold waist sash, jeweled headband, slippers",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos033.jpg"
     },
     {
@@ -375,8 +375,8 @@
       "label_ja": "チャイナドレス",
       "label_en": "Qipao",
       "group": "japanese",
-      "prompt": "elegant dark blue qipao, gold floral embroidery, high mandarin collar, fitted long silhouette, side slits over opaque stockings, embroidered heels, traditional Chinese garden pavilion, red lanterns, moon gate, pond, soft evening light",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "elegant dark blue qipao, gold floral embroidery, high mandarin collar, fitted long silhouette, side slits over opaque stockings, embroidered heels",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos034.jpg"
     },
     {
@@ -385,8 +385,8 @@
       "label_ja": "パステル韓服",
       "label_en": "Pastel Hanbok",
       "group": "japanese",
-      "prompt": "formal pastel hanbok, pale blue jeogori jacket, navy ribbon tie, full ivory chima skirt, subtle floral embroidery, traditional Korean palace courtyard, painted wooden eaves, stone path, clear gentle daylight",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "formal pastel hanbok, pale blue jeogori jacket, navy ribbon tie, full ivory chima skirt, subtle floral embroidery",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos035.jpg"
     },
     {
@@ -395,8 +395,8 @@
       "label_ja": "ディアンドル",
       "label_en": "Dirndl",
       "group": "classic",
-      "prompt": "green and cream dirndl dress, white puff-sleeve blouse, fitted lace-up bodice, striped full skirt, embroidered apron, alpine festival square, timber houses, flower boxes, bunting, soft sunny weather",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "green and cream dirndl dress, white puff-sleeve blouse, fitted lace-up bodice, striped full skirt, embroidered apron",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos036.jpg"
     },
     {
@@ -405,8 +405,8 @@
       "label_ja": "カウガール",
       "label_en": "Cowgirl",
       "group": "classic",
-      "prompt": "brown cowgirl vest over white western shirt, denim skirt, leather belt with silver buckle, patterned neckerchief, cowboy boots and hat, western ranch yard, wooden fence, stable barn, distant dry hills, golden-hour light",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "brown cowgirl vest over white western shirt, denim skirt, leather belt with silver buckle, patterned neckerchief, cowboy boots and hat",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos037.jpg"
     },
     {
@@ -415,8 +415,8 @@
       "label_ja": "探偵",
       "label_en": "Detective",
       "group": "classic",
-      "prompt": "tan detective trench coat over white blouse and dark waistcoat, plaid skirt, opaque tights, leather gloves, deerstalker-style cap, noir detective office, wooden desk, case files, venetian blinds, rainy city window",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "tan detective trench coat over white blouse and dark waistcoat, plaid skirt, opaque tights, leather gloves, deerstalker-style cap",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos038.jpg"
     },
     {
@@ -425,8 +425,8 @@
       "label_ja": "怪盗",
       "label_en": "Phantom Thief",
       "group": "classic",
-      "prompt": "tailored white phantom thief suit, black fitted vest, white cape, blue cravat, long gloves, thigh-high boots, small top hat, museum rooftop at night, glass skylights, distant city lights, bright full moon",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "tailored white phantom thief suit, black fitted vest, white cape, blue cravat, long gloves, thigh-high boots, small top hat",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos039.jpg"
     },
     {
@@ -435,8 +435,8 @@
       "label_ja": "警察官",
       "label_en": "Police Officer",
       "group": "work",
-      "prompt": "navy police-inspired dress uniform, silver buttons, structured jacket, matching pleated skirt, dark tights, peaked cap, polished boots, stylized city precinct lobby, information desk, notice boards, clean overhead lighting",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "navy police-inspired dress uniform, silver buttons, structured jacket, matching pleated skirt, dark tights, peaked cap, polished boots",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos040.jpg"
     },
     {
@@ -445,8 +445,8 @@
       "label_ja": "消防士",
       "label_en": "Firefighter",
       "group": "work",
-      "prompt": "dark navy firefighter-inspired turnout coat and trousers, yellow reflective stripes, fitted utility belt, protective gloves, sturdy boots, fire station garage, parked red engine, equipment lockers, bright practical lighting",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "dark navy firefighter-inspired turnout coat and trousers, yellow reflective stripes, fitted utility belt, protective gloves, sturdy boots",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos041.jpg"
     },
     {
@@ -455,8 +455,8 @@
       "label_ja": "儀仗軍人",
       "label_en": "Ceremonial Officer",
       "group": "work",
-      "prompt": "formal navy ceremonial military uniform, gold braided cords, double-breasted jacket, fitted white trousers, white gloves, tall polished boots, peaked cap, palace parade courtyard, symmetrical stone paving, flags, formal architecture, clear daylight",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "formal navy ceremonial military uniform, gold braided cords, double-breasted jacket, fitted white trousers, white gloves, tall polished boots, peaked cap",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos042.jpg"
     },
     {
@@ -465,8 +465,8 @@
       "label_ja": "チアリーダー",
       "label_en": "Cheerleader",
       "group": "stage",
-      "prompt": "blue and white cheerleader uniform, fitted sleeveless top, pleated athletic skirt, ankle socks, white training shoes, matching hair bow, outdoor stadium sideline, green field, empty spectator stands, bright diffused daylight",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "blue and white cheerleader uniform, fitted sleeveless top, pleated athletic skirt, ankle socks, white training shoes, matching hair bow",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos045.jpg"
     },
     {
@@ -475,8 +475,8 @@
       "label_ja": "テニス選手",
       "label_en": "Tennis Player",
       "group": "stage",
-      "prompt": "white tennis dress with navy piping, fitted athletic top, pleated skirt, wristbands, ankle socks, white tennis shoes, visor, clean outdoor tennis court, net, green fencing, shaded club grounds",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "white tennis dress with navy piping, fitted athletic top, pleated skirt, wristbands, ankle socks, white tennis shoes, visor",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos046.jpg"
     },
     {
@@ -485,8 +485,8 @@
       "label_ja": "フィギュアスケーター",
       "label_en": "Figure Skater",
       "group": "stage",
-      "prompt": "ice blue figure skating dress, crystal accents, fitted long sleeves, layered short skirt, opaque nude tights, white figure skates, indoor ice rink, clean ice surface, rink boards, cool arena spotlights",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "ice blue figure skating dress, crystal accents, fitted long sleeves, layered short skirt, opaque nude tights, white figure skates",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos047.jpg"
     },
     {
@@ -495,8 +495,8 @@
       "label_ja": "レースクイーン",
       "label_en": "Race Queen",
       "group": "stage",
-      "prompt": "blue and white race queen outfit, fitted cropped jacket over opaque top, high-waisted short skirt, thigh-high boots, sponsor-free geometric accents, professional pit lane, race garage, tool cabinets, parked sports car, bright paddock lighting",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "blue and white race queen outfit, fitted cropped jacket over opaque top, high-waisted short skirt, thigh-high boots, sponsor-free geometric accents",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos048.jpg"
     },
     {
@@ -505,8 +505,8 @@
       "label_ja": "カジノディーラー",
       "label_en": "Casino Dealer",
       "group": "work",
-      "prompt": "tailored black casino dealer vest, crisp white shirt, burgundy bow tie, fitted black skirt, opaque tights, polished heels, elegant casino floor, green card tables, brass lamps, dark red carpet, warm subdued lighting",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "tailored black casino dealer vest, crisp white shirt, burgundy bow tie, fitted black skirt, opaque tights, polished heels",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos049.jpg"
     },
     {
@@ -515,8 +515,8 @@
       "label_ja": "バニーステージ",
       "label_en": "Bunny Stage Costume",
       "group": "stage",
-      "prompt": "black bunny-inspired stage costume, opaque fitted corset bodice, white collar and cuffs, black tights, high heels, satin rabbit-ear headband, small bow tie, theatrical cabaret stage, velvet curtains, circular spotlights, polished black floor",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "black bunny-inspired stage costume, opaque fitted corset bodice, white collar and cuffs, black tights, high heels, satin rabbit-ear headband, small bow tie",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos050.jpg"
     },
     {
@@ -525,8 +525,8 @@
       "label_ja": "猫耳カフェ店員",
       "label_en": "Cat-Ear Cafe Uniform",
       "group": "stage",
-      "prompt": "black and white cat-ear café uniform, fitted short-sleeve dress, white apron, black tights, paw-pattern cuffs, cat-ear headband, ribbon tail accessory, pastel themed café, cat-shaped décor, dessert display, warm soft indoor lighting",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "black and white cat-ear café uniform, fitted short-sleeve dress, white apron, black tights, paw-pattern cuffs, cat-ear headband, ribbon tail accessory",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos051.jpg"
     },
     {
@@ -535,8 +535,8 @@
       "label_ja": "狐の巫女",
       "label_en": "Fox Shrine Guardian",
       "group": "japanese",
-      "prompt": "white and red fox shrine guardian robes, fitted layered kimono top, pleated hakama skirt, gold bell ornaments, white fox-ear headpiece, decorative fox-tail sash, autumn mountain shrine, red torii path, maple leaves, stone lanterns, golden evening light",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "white and red fox shrine guardian robes, fitted layered kimono top, pleated hakama skirt, gold bell ornaments, white fox-ear headpiece, decorative fox-tail sash",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos052.jpg"
     },
     {
@@ -545,8 +545,8 @@
       "label_ja": "狼レンジャー",
       "label_en": "Wolf Ranger",
       "group": "classic",
-      "prompt": "gray and blue wolf ranger outfit, fur-trimmed hooded cape, fitted leather tunic, arm guards, dark leggings, tall snow boots, wolf-ear headpiece, snowy conifer forest, rocky trail, light snowfall, cold blue dawn",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "gray and blue wolf ranger outfit, fur-trimmed hooded cape, fitted leather tunic, arm guards, dark leggings, tall snow boots, wolf-ear headpiece",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos053.jpg"
     },
     {
@@ -555,8 +555,8 @@
       "label_ja": "竜の巫女",
       "label_en": "Dragon Priestess",
       "group": "fantasy",
-      "prompt": "black and crimson dragon priestess robes, scale-pattern fitted bodice, gold shoulder ornaments, layered split skirt, claw-shaped gloves, horned crown, volcanic dragon temple, dark basalt pillars, glowing lava channels, smoky red light",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "black and crimson dragon priestess robes, scale-pattern fitted bodice, gold shoulder ornaments, layered split skirt, claw-shaped gloves, horned crown",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos054.jpg"
     },
     {
@@ -565,8 +565,8 @@
       "label_ja": "天使",
       "label_en": "Angel",
       "group": "fantasy",
-      "prompt": "white angelic costume, fitted gold-trimmed dress, layered feather-like skirt, long white gloves, knee-high boots, luminous halo headpiece, decorative white wings, bright cloud sanctuary, marble arches, floating light particles, soft golden sky",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "white angelic costume, fitted gold-trimmed dress, layered feather-like skirt, long white gloves, knee-high boots, luminous halo headpiece, decorative white wings",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos055.jpg"
     },
     {
@@ -575,8 +575,8 @@
       "label_ja": "悪魔の女王",
       "label_en": "Demon Queen",
       "group": "fantasy",
-      "prompt": "black and wine-red demon queen gown, armored corset, high collar, layered split skirt, long gloves, thigh-high boots, horned crown, decorative bat wings, obsidian throne room, black stone pillars, red crystal braziers, deep crimson ambience",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "black and wine-red demon queen gown, armored corset, high collar, layered split skirt, long gloves, thigh-high boots, horned crown, decorative bat wings",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos056.jpg"
     },
     {
@@ -585,8 +585,8 @@
       "label_ja": "吸血鬼伯爵夫人",
       "label_en": "Vampire Countess",
       "group": "fantasy",
-      "prompt": "burgundy vampire countess gown, black lace high collar, fitted corset waist, layered long skirt, lace gloves, jeweled choker, moonlit gothic castle hall, tall arched windows, dark velvet curtains, silver candlelight",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "burgundy vampire countess gown, black lace high collar, fitted corset waist, layered long skirt, lace gloves, jeweled choker",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos057.jpg"
     },
     {
@@ -595,8 +595,8 @@
       "label_ja": "ゴーストブライド",
       "label_en": "Ghost Bride",
       "group": "fantasy",
-      "prompt": "weathered ivory ghost bride dress, high lace neckline, fitted bodice, layered long skirt, long veil, faded flower crown, lace gloves, abandoned stone chapel, broken stained glass, dusty pews, pale moonbeams and mist",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "weathered ivory ghost bride dress, high lace neckline, fitted bodice, layered long skirt, long veil, faded flower crown, lace gloves",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos058.jpg"
     },
     {
@@ -605,8 +605,8 @@
       "label_ja": "ハロウィンウィッチ",
       "label_en": "Halloween Witch",
       "group": "stage",
-      "prompt": "orange and black Halloween witch dress, striped fitted bodice, layered skirt, purple ribbon belt, striped stockings, buckle boots, pointed witch hat, autumn Halloween festival street, carved pumpkins, lantern stalls, orange leaves, twilight glow",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "orange and black Halloween witch dress, striped fitted bodice, layered skirt, purple ribbon belt, striped stockings, buckle boots, pointed witch hat",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos059.jpg"
     },
     {
@@ -615,8 +615,8 @@
       "label_ja": "サンタガール",
       "label_en": "Santa Girl",
       "group": "stage",
-      "prompt": "red and white Santa-inspired dress, fitted velvet bodice, white fur trim, flared knee-length skirt, black belt, red gloves, thigh-high boots, Santa hat, decorated winter lodge, Christmas tree, stone fireplace, wrapped gifts, warm evening light",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "red and white Santa-inspired dress, fitted velvet bodice, white fur trim, flared knee-length skirt, black belt, red gloves, thigh-high boots, Santa hat",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos060.jpg"
     },
     {
@@ -625,8 +625,8 @@
       "label_ja": "森のアーチャー",
       "label_en": "Forest Archer",
       "group": "fantasy",
-      "prompt": "forest archer costume, fitted moss-green tunic, brown leather corset belt, hooded short cape, fitted bracers, dark leggings, knee-high leather boots, fantasy woodland archery range, old trees, straw targets, weathered wooden fence, soft filtered daylight",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "forest archer costume, fitted moss-green tunic, brown leather corset belt, hooded short cape, fitted bracers, dark leggings, knee-high leather boots",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos061.jpg"
     },
     {
@@ -635,8 +635,8 @@
       "label_ja": "ファンタジーアサシン",
       "label_en": "Fantasy Assassin",
       "group": "fantasy",
-      "prompt": "sleek black fantasy assassin costume, high-collar fitted tunic, layered waist sash, leather shoulder guards, fitted arm wraps, dark leggings, silent soft-soled boots, moonlit old-city rooftop, stone chimneys, narrow alleys below, cool blue night haze",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "sleek black fantasy assassin costume, high-collar fitted tunic, layered waist sash, leather shoulder guards, fitted arm wraps, dark leggings, silent soft-soled boots",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos062.jpg"
     },
     {
@@ -645,8 +645,8 @@
       "label_ja": "ネクロマンサー",
       "label_en": "Necromancer",
       "group": "fantasy",
-      "prompt": "black and deep violet necromancer robes, fitted high-collar bodice, layered tattered overskirt, silver bone-like ornaments, long gloves, dark heeled boots, ancient underground crypt, carved stone sarcophagi, violet ritual candles, faint magical mist",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "black and deep violet necromancer robes, fitted high-collar bodice, layered tattered overskirt, silver bone-like ornaments, long gloves, dark heeled boots",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos063.jpg"
     },
     {
@@ -655,8 +655,8 @@
       "label_ja": "ドルイド",
       "label_en": "Druid",
       "group": "fantasy",
-      "prompt": "earth-tone druid costume, leaf-embroidered green mantle, fitted brown tunic dress, braided leather belt, vine-pattern bracers, tall lace-up boots, sacred forest stone circle, moss, ferns, old oaks, shafts of gentle green light",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "earth-tone druid costume, leaf-embroidered green mantle, fitted brown tunic dress, braided leather belt, vine-pattern bracers, tall lace-up boots",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos064.jpg"
     },
     {
@@ -665,8 +665,8 @@
       "label_ja": "吟遊詩人",
       "label_en": "Fantasy Bard",
       "group": "fantasy",
-      "prompt": "burgundy and navy fantasy bard costume, fitted embroidered vest, ivory puff-sleeve blouse, layered short overskirt, ribboned capelet, patterned tights, ankle boots, lively medieval inn stage, timber beams, wooden tables, hanging lanterns, warm evening ambience",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "burgundy and navy fantasy bard costume, fitted embroidered vest, ivory puff-sleeve blouse, layered short overskirt, ribboned capelet, patterned tights, ankle boots",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos065.jpg"
     },
     {
@@ -675,8 +675,8 @@
       "label_ja": "冒険者ギルド受付嬢",
       "label_en": "Guild Receptionist",
       "group": "work",
-      "prompt": "fantasy guild receptionist uniform, cream blouse, fitted forest-green waistcoat, brown ribbon tie, layered knee-length skirt, leather belt pouch, dark tights, practical shoes, busy adventurers guild counter, quest board, maps, wooden shelves, warm lamplight",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "fantasy guild receptionist uniform, cream blouse, fitted forest-green waistcoat, brown ribbon tie, layered knee-length skirt, leather belt pouch, dark tights, practical shoes",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos066.jpg"
     },
     {
@@ -685,8 +685,8 @@
       "label_ja": "中世酒場のウェイトレス",
       "label_en": "Medieval Tavern Waitress",
       "group": "work",
-      "prompt": "medieval tavern waitress costume, white puff-sleeve blouse, fitted brown lace-up bodice, deep green full skirt, cream waist apron, dark stockings, leather shoes, cozy fantasy tavern interior, long wooden counter, barrel shelves, stone hearth, amber lantern light",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "medieval tavern waitress costume, white puff-sleeve blouse, fitted brown lace-up bodice, deep green full skirt, cream waist apron, dark stockings, leather shoes",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos067.jpg"
     },
     {
@@ -695,8 +695,8 @@
       "label_ja": "陰陽師",
       "label_en": "Onmyoji",
       "group": "japanese",
-      "prompt": "formal onmyoji costume, layered white and pale lavender kariginu robes, purple cord sash, tall black eboshi-style cap, white tabi socks, lacquered sandals, Heian-inspired moonlit courtyard, wooden shrine gallery, paper lanterns, subtle talisman motifs, quiet mist",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "formal onmyoji costume, layered white and pale lavender kariginu robes, purple cord sash, tall black eboshi-style cap, white tabi socks, lacquered sandals",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos068.jpg"
     },
     {
@@ -705,8 +705,8 @@
       "label_ja": "大正浪漫の女学生",
       "label_en": "Taisho-Era Schoolgirl",
       "group": "japanese",
-      "prompt": "Taisho-era schoolgirl costume, burgundy hakama trousers over a cream high-collar kimono blouse, dark lace-up boots, small ribbon hair ornament, Taisho-era brick school courtyard, arched windows, old trees, soft nostalgic afternoon light",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "Taisho-era schoolgirl costume, burgundy hakama trousers over a cream high-collar kimono blouse, dark lace-up boots, small ribbon hair ornament",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos069.jpg"
     },
     {
@@ -715,8 +715,8 @@
       "label_ja": "仮面舞踏会",
       "label_en": "Masquerade Ball",
       "group": "stage",
-      "prompt": "midnight-blue masquerade ball gown, fitted embroidered bodice, layered sweeping skirt, gold filigree trim, opera gloves, jeweled half-mask, grand masquerade ballroom, chandeliers, marble columns, gilded mirrors, candlelit evening ambience",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "midnight-blue masquerade ball gown, fitted embroidered bodice, layered sweeping skirt, gold filigree trim, opera gloves, jeweled half-mask",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos070.jpg"
     },
     {
@@ -725,8 +725,8 @@
       "label_ja": "サーカス団長",
       "label_en": "Circus Ringmaster",
       "group": "stage",
-      "prompt": "red and black circus ringmaster costume, tailored tailcoat with gold braid, white ruffled shirt, fitted shorts over opaque tights, tall boots, miniature top hat, vintage circus ring, red velvet curtains, striped tent canopy, warm theatrical spotlights",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "red and black circus ringmaster costume, tailored tailcoat with gold braid, white ruffled shirt, fitted shorts over opaque tights, tall boots, miniature top hat",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos071.jpg"
     },
     {
@@ -735,8 +735,8 @@
       "label_ja": "ステージマジシャン",
       "label_en": "Stage Magician",
       "group": "stage",
-      "prompt": "elegant stage magician costume, fitted black tailcoat, white wing-collar shirt, crimson waistcoat, satin bow tie, black shorts over opaque tights, white gloves, small top hat, classic illusion theater stage, dark velvet curtains, gold trim, footlights, soft stage smoke",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "elegant stage magician costume, fitted black tailcoat, white wing-collar shirt, crimson waistcoat, satin bow tie, black shorts over opaque tights, white gloves, small top hat",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos072.jpg"
     },
     {
@@ -745,8 +745,8 @@
       "label_ja": "オペラ歌手",
       "label_en": "Opera Singer",
       "group": "stage",
-      "prompt": "dramatic jewel-tone opera gown, fitted brocade bodice, off-shoulder draped sleeves, layered full-length skirt, long gloves, ornate crystal jewelry, ornate opera house stage, red curtains, carved balconies, golden auditorium lights",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "dramatic jewel-tone opera gown, fitted brocade bodice, off-shoulder draped sleeves, layered full-length skirt, long gloves, ornate crystal jewelry",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos073.jpg"
     },
     {
@@ -755,8 +755,8 @@
       "label_ja": "社交ダンス",
       "label_en": "Ballroom Dancer",
       "group": "stage",
-      "prompt": "elegant emerald ballroom dance dress, fitted crystal bodice, flowing asymmetrical skirt, sheer long sleeves, satin dance heels, delicate earrings, luxurious ballroom dance floor, tall windows, chandeliers, polished parquet, soft evening light",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "elegant emerald ballroom dance dress, fitted crystal bodice, flowing asymmetrical skirt, sheer long sleeves, satin dance heels, delicate earrings",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos074.jpg"
     },
     {
@@ -765,8 +765,8 @@
       "label_ja": "キャビンアテンダント",
       "label_en": "Flight Attendant",
       "group": "work",
-      "prompt": "navy flight attendant uniform, tailored fitted jacket, white blouse, patterned neck scarf, knee-length pencil skirt, sheer tights, polished low heels, small pillbox hat, modern airport departure lounge, panoramic windows, boarding gate signs, soft clean daylight",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "navy flight attendant uniform, tailored fitted jacket, white blouse, patterned neck scarf, knee-length pencil skirt, sheer tights, polished low heels, small pillbox hat",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos075.jpg"
     },
     {
@@ -775,8 +775,8 @@
       "label_ja": "鉄道車掌",
       "label_en": "Railway Conductor",
       "group": "work",
-      "prompt": "deep navy railway conductor uniform, structured brass-button jacket, white shirt, burgundy tie, fitted knee-length skirt, white gloves, peaked cap, polished shoes, classic railway platform, vintage passenger train, station clock, warm late-afternoon light",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "deep navy railway conductor uniform, structured brass-button jacket, white shirt, burgundy tie, fitted knee-length skirt, white gloves, peaked cap, polished shoes",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos076.jpg"
     },
     {
@@ -785,8 +785,8 @@
       "label_ja": "ホテルコンシェルジュ",
       "label_en": "Hotel Concierge",
       "group": "work",
-      "prompt": "luxury hotel concierge uniform, tailored burgundy jacket with gold piping, ivory blouse, black fitted skirt, name badge, dark tights, polished heels, grand hotel lobby, marble reception desk, brass lamps, tall floral arrangement, warm refined lighting",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "luxury hotel concierge uniform, tailored burgundy jacket with gold piping, ivory blouse, black fitted skirt, name badge, dark tights, polished heels",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos077.jpg"
     },
     {
@@ -795,8 +795,8 @@
       "label_ja": "パティシエ",
       "label_en": "Patissier",
       "group": "work",
-      "prompt": "professional patissier uniform, crisp white double-breasted chef jacket, pale blue neckerchief, fitted dark apron, checked trousers, clean kitchen shoes, white chef hat, elegant pastry kitchen, marble worktop, cake display, copper utensils, bright soft task lighting",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "professional patissier uniform, crisp white double-breasted chef jacket, pale blue neckerchief, fitted dark apron, checked trousers, clean kitchen shoes, white chef hat",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos078.jpg"
     },
     {
@@ -805,8 +805,8 @@
       "label_ja": "レトロ郵便配達員",
       "label_en": "Retro Postal Carrier",
       "group": "work",
-      "prompt": "retro postal carrier uniform, navy fitted jacket, brass buttons, matching pleated skirt, red-trimmed peaked cap, brown leather mail satchel, dark socks, sturdy shoes, charming old-town post office street, red mailboxes, stone storefronts, gentle morning light",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "retro postal carrier uniform, navy fitted jacket, brass buttons, matching pleated skirt, red-trimmed peaked cap, brown leather mail satchel, dark socks, sturdy shoes",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos079.jpg"
     },
     {
@@ -815,8 +815,8 @@
       "label_ja": "宇宙艦隊司令官",
       "label_en": "Space-Fleet Commander",
       "group": "scifi",
-      "prompt": "formal white space-fleet commander uniform, structured high-collar jacket, navy shoulder panels, gold rank braid, fitted trousers, white gloves, tall polished boots, starship command bridge, panoramic starfield, tactical displays, cool blue console lighting",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "formal white space-fleet commander uniform, structured high-collar jacket, navy shoulder panels, gold rank braid, fitted trousers, white gloves, tall polished boots",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos080.jpg"
     },
     {
@@ -825,8 +825,8 @@
       "label_ja": "SFバウンティハンター",
       "label_en": "Sci-Fi Bounty Hunter",
       "group": "scifi",
-      "prompt": "sci-fi bounty hunter costume, fitted charcoal armored jacket, rust-red chest panels, utility belt, reinforced leggings, fingerless gloves, weathered combat boots, remote spaceport docking bay, cargo crates, landing lights, dusty alien twilight",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "sci-fi bounty hunter costume, fitted charcoal armored jacket, rust-red chest panels, utility belt, reinforced leggings, fingerless gloves, weathered combat boots",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos081.jpg"
     },
     {
@@ -835,8 +835,8 @@
       "label_ja": "終末世界の探索者",
       "label_en": "Post-Apocalyptic Explorer",
       "group": "scifi",
-      "prompt": "post-apocalyptic explorer costume, weathered hooded field jacket, fitted utility vest, layered scarf, reinforced cargo trousers, knee guards, rugged lace-up boots, abandoned overgrown city street, cracked concrete, rusted vehicles, hazy muted daylight",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "post-apocalyptic explorer costume, weathered hooded field jacket, fitted utility vest, layered scarf, reinforced cargo trousers, knee guards, rugged lace-up boots",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos082.jpg"
     },
     {
@@ -845,8 +845,8 @@
       "label_ja": "特撮ヒロイン",
       "label_en": "Tokusatsu Heroine",
       "group": "scifi",
-      "prompt": "bright red, white and silver tokusatsu heroine suit, fitted armored bodice, geometric shoulder guards, opaque leggings, gauntlets, knee-high armored boots, sleek visor helmet carried at the side, stylized futuristic city plaza, clean concrete structures, colorful safety rails, dramatic cloudy sky",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "bright red, white and silver tokusatsu heroine suit, fitted armored bodice, geometric shoulder guards, opaque leggings, gauntlets, knee-high armored boots, sleek visor helmet carried at the side",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos083.jpg"
     },
     {
@@ -855,8 +855,8 @@
       "label_ja": "深海探査員",
       "label_en": "Deep-Sea Explorer",
       "group": "scifi",
-      "prompt": "streamlined deep-sea exploration suit, navy pressure-resistant bodysuit, white reinforced torso panels, teal luminous seams, compact breathing unit, fitted gloves, heavy diving boots, deep-ocean research station airlock, round observation windows, dark blue water, softly glowing instruments",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "streamlined deep-sea exploration suit, navy pressure-resistant bodysuit, white reinforced torso panels, teal luminous seams, compact breathing unit, fitted gloves, heavy diving boots",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos084.jpg"
     },
     {
@@ -865,8 +865,8 @@
       "label_ja": "人魚姫",
       "label_en": "Mermaid Princess",
       "group": "fantasy",
-      "prompt": "fantasy mermaid princess costume, iridescent teal scale-pattern fitted bodice, pearl shoulder ornaments, flowing translucent fin-like waist drapes, long shimmering mermaid tail, shell tiara, underwater coral palace, luminous reefs, pearl arches, schools of tiny fish, turquoise filtered light",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "fantasy mermaid princess costume, iridescent teal scale-pattern fitted bodice, pearl shoulder ornaments, flowing translucent fin-like waist drapes, long shimmering mermaid tail, shell tiara",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos085.jpg"
     },
     {
@@ -875,8 +875,8 @@
       "label_ja": "湖の妖精",
       "label_en": "Lake Fairy",
       "group": "fantasy",
-      "prompt": "pale aqua lake-fairy costume, fitted petal-layered dress, translucent water-like overskirt, silver vine belt, delicate armlets, crystal anklets, subtle translucent wings, enchanted lakeshore at dawn, still water, reeds, floating lights, misty willow trees",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "pale aqua lake-fairy costume, fitted petal-layered dress, translucent water-like overskirt, silver vine belt, delicate armlets, crystal anklets, subtle translucent wings",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos086.jpg"
     },
     {
@@ -885,8 +885,8 @@
       "label_ja": "蝶の妖精",
       "label_en": "Butterfly Fairy",
       "group": "fantasy",
-      "prompt": "lavender butterfly-fairy costume, fitted floral bodice, layered petal skirt, delicate long gloves, ribboned ankle boots, large patterned translucent butterfly wings, magical flower meadow, tall blossoms, drifting pollen lights, pastel sunset sky",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "lavender butterfly-fairy costume, fitted floral bodice, layered petal skirt, delicate long gloves, ribboned ankle boots, large patterned translucent butterfly wings",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos087.jpg"
     },
     {
@@ -895,8 +895,8 @@
       "label_ja": "死神",
       "label_en": "Grim Reaper",
       "group": "fantasy",
-      "prompt": "black grim-reaper costume, fitted high-collar dress beneath a long hooded mantle, silver chain details, layered torn hem, long gloves, tall black boots, gothic cemetery at midnight, old stone crosses, bare trees, low silver fog, pale moonlight",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "black grim-reaper costume, fitted high-collar dress beneath a long hooded mantle, silver chain details, layered torn hem, long gloves, tall black boots",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos088.jpg"
     },
     {
@@ -905,8 +905,8 @@
       "label_ja": "ミイラの女王",
       "label_en": "Mummy Queen",
       "group": "fantasy",
-      "prompt": "ancient mummy-queen costume, ivory wrapped dress with structured gold collar, lapis jewelry, fitted arm wraps, layered linen skirt, ornate golden headdress, ancient Egyptian burial chamber, carved stone walls, gold relics, blue torchlight, drifting dust",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "ancient mummy-queen costume, ivory wrapped dress with structured gold collar, lapis jewelry, fitted arm wraps, layered linen skirt, ornate golden headdress",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos089.jpg"
     },
     {
@@ -915,8 +915,8 @@
       "label_ja": "カーニバルパレード",
       "label_en": "Carnival Parade",
       "group": "stage",
-      "prompt": "jewel-tone carnival parade costume, fitted feather-trimmed bodice, layered ruffled skirt, gold beadwork, long gloves, decorated ankle boots, dramatic feathered headdress, grand carnival parade avenue, ornate floats, colorful banners, festive evening lights",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "jewel-tone carnival parade costume, fitted feather-trimmed bodice, layered ruffled skirt, gold beadwork, long gloves, decorated ankle boots, dramatic feathered headdress",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos090.jpg"
     },
     {
@@ -925,8 +925,8 @@
       "label_ja": "イースターフェスティバル",
       "label_en": "Easter Festival",
       "group": "stage",
-      "prompt": "pastel Easter festival costume, pale yellow fitted jacket, white ruffled blouse, lavender layered skirt, striped tights, ankle boots, floral rabbit-ear headband, spring garden festival, painted eggs, flower arches, fresh green lawn, gentle sunny daylight",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "pastel Easter festival costume, pale yellow fitted jacket, white ruffled blouse, lavender layered skirt, striped tights, ankle boots, floral rabbit-ear headband",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos091.jpg"
     },
     {
@@ -935,8 +935,8 @@
       "label_ja": "バレンタインステージ",
       "label_en": "Valentine Stage",
       "group": "stage",
-      "prompt": "romantic Valentine stage costume, burgundy and rose-pink fitted dress, heart-shaped gold trim, layered flared skirt, long gloves, opaque thigh-high stockings, ribbon hair ornament, elegant chocolate boutique, heart-shaped decorations, glass display cases, warm rose-gold lighting",
-      "negative": "modern casual clothes, plain everyday outfit, school uniform, transparent fabric, nude, text, watermark",
+      "prompt": "romantic Valentine stage costume, burgundy and rose-pink fitted dress, heart-shaped gold trim, layered flared skirt, long gloves, opaque thigh-high stockings, ribbon hair ornament",
+      "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos092.jpg"
     }
   ]
