@@ -235,6 +235,18 @@ const works = [
     }
   },
   {
+    title: { ja: "黒髪彼女を独り占め", en: "My Black-Haired Girlfriend, All to Myself" },
+    slug: "kurokami-kanojo",
+    image: "0501_改修資料/kurokami-kanojo/cover.jpg?v=20260923",
+    thumbnail: "0501_改修資料/kurokami-kanojo/cover.jpg?v=20260923",
+    imageWidth: 933,
+    imageHeight: 1200,
+    links: {
+      DLsite: "https://dlaf.jp/aix/dlaf/=/t/s/link/work/aid/esunamura/id/RJ01723984.html",
+      PromptCom: "https://prompt-com.com/ja/p/f0afb5ad-dfd7-4de6-854a-522e7f1c265d?rating=all"
+    }
+  },
+  {
     title: { ja: "Fanart Select [R15]", en: "Fanart Select [R15]" },
     slug: "fanart-select-r15",
     image: "works/fanart-r15/img/cover.jpg",
@@ -273,6 +285,12 @@ const promptcomTabs = document.querySelectorAll("[data-promptcom-tab]");
 const promptcomPanels = document.querySelectorAll("[data-promptcom-panel]");
 
 const workDescriptions = {
+  "kurokami-kanojo": {
+    ja: "黒髪の彼女とふたりきりで過ごす時間を、日常から少しずつ距離が近づいていく流れで描いた全311枚のAI生成CG集。DLsite・PromptComで販売中。",
+    en: "A 311-image AI-generated CG collection following private moments with a black-haired girlfriend as everyday distance gradually becomes more intimate. Now available on DLsite and PromptCom.",
+    zh: "描绘与黑发女友独处、从日常逐渐拉近距离的311张AI生成CG集。现已在DLsite与PromptCom发售。",
+    ko: "흑발 여자친구와 단둘이 보내며 일상의 거리가 점차 가까워지는 흐름을 담은 311장 AI 생성 CG집. DLsite와 PromptCom에서 판매 중입니다."
+  },
   "blonde-shrine-maiden-isekai": {
     ja: "気がつくと見知らぬ異世界。灯りのともる宿での日常から街の探索、そして“災難”へ。物語仕立ての全448枚（本編300枚＋体験版148枚）の高解像度イラスト集。DLsiteで販売中（FANZA・PromptComでも配信）。",
     en: "A story-style isekai CG collection: from inn-side daily life to town exploration and an unavoidable calamity. 448 high-res images in total (300 main + 148 trial). On sale now at DLsite (also available on FANZA and PromptCom).",
@@ -396,6 +414,7 @@ const workDescriptions = {
 };
 
 const workTitleTranslations = {
+  "kurokami-kanojo": { zh: "独占黑发女友", ko: "흑발 여자친구를 독차지" },
   "blonde-shrine-maiden-isekai": { zh: "金发巫女、异世界 / Blonde Shrine Maiden, To Another World", ko: "금발 무녀, 이세계로 / Blonde Shrine Maiden, To Another World" },
   "satogaeri": { zh: "返乡 / Satogaeri", ko: "귀향 / Satogaeri" },
   "ancient-capital-beauty": { zh: "古都美人 / Ancient Capital Beauty", ko: "고도미인 / Ancient Capital Beauty" },
@@ -419,6 +438,12 @@ const workTitleTranslations = {
 };
 
 const workArchiveMeta = {
+  "kurokami-kanojo": {
+    count: { ja: "311枚収録", en: "311 images", zh: "收录311张", ko: "311장 수록" },
+    quality: "4K",
+    series: { ja: "彼女とふたりきり", en: "Alone with Her", zh: "与她独处", ko: "그녀와 단둘이" },
+    tags: { ja: ["黒髪", "物語仕立て"], en: ["Black hair", "Story format"], zh: ["黑发", "故事形式"], ko: ["흑발", "이야기 구성"] }
+  },
   "blonde-shrine-maiden-isekai": {
     count: { ja: "448枚収録", en: "448 images", zh: "收录448张", ko: "448장 수록" },
     quality: "4K",
@@ -554,6 +579,7 @@ const r15WorkSlugs = new Set([
 const pickupSlugs = ["erobokishin-4649", "blonde-shrine-maiden", "setouchi-omorashi-journey"];
 
 const detailPageBySlug = {
+  "kurokami-kanojo": "kurokami-kanojo",
   "blonde-shrine-maiden-isekai": "kinpatsu-miko-isekai",
   "satogaeri": "satogaeri",
   "hikagami": "hikagami",
@@ -576,6 +602,7 @@ const detailPageBySlug = {
 };
 
 const newReleaseLabels = {
+  "kurokami-kanojo": "NEW / 2026.09",
   "hikagami-school-route": "NEW / 2026.09",
   "fanart-select-r15": "NEW / 2026.07",
   "summer-schoolday": "NEW / 2026.07",
@@ -583,7 +610,7 @@ const newReleaseLabels = {
   "kyoto-prompt-pack": "NEW / 2026.05"
 };
 
-const worksGridPrioritySlugs = ["hikagami-school-route", "summer-schoolday", "fanart-select-r15", "fanart-select", "blonde-shrine-maiden-isekai"];
+const worksGridPrioritySlugs = ["kurokami-kanojo", "hikagami-school-route", "summer-schoolday", "fanart-select-r15", "fanart-select", "blonde-shrine-maiden-isekai"];
 
 function ratingBadgeFor(work) {
   if (allAgesWorkSlugs.has(work.slug)) return null;

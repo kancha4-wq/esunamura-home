@@ -78,6 +78,7 @@
   };
 
   const titleTranslations = {
+    "kurokami-kanojo": { en: "My Black-Haired Girlfriend, All to Myself", zh: "独占黑发女友", ko: "흑발 여자친구를 독차지" },
     "summer-schoolday": { en: "The Day No One Comes to School", zh: "无人到来的上学日", ko: "아무도 오지 않는 등교일" },
     "kinpatsu-miko-isekai": { en: "Blonde Shrine Maiden, To Another World", zh: "金发巫女、异世界", ko: "금발 무녀, 이세계로" },
     "satogaeri": { en: "Satogaeri", zh: "返乡", ko: "귀향" },
@@ -98,6 +99,11 @@
   };
 
   const shortTranslations = {
+    "kurokami-kanojo": {
+      summary: { en: "A 311-image AI-generated CG collection following private moments with a black-haired girlfriend as everyday distance gradually becomes more intimate. Now available on DLsite and PromptCom.", zh: "描绘与黑发女友独处、从日常逐渐拉近距离的311张AI生成CG集。现已在DLsite与PromptCom发售。", ko: "흑발 여자친구와 단둘이 보내며 일상의 거리가 점차 가까워지는 흐름을 담은 311장 AI 생성 CG집. DLsite와 PromptCom에서 판매 중입니다." },
+      format: { en: "Everyday life to private moments", zh: "从日常到两人独处", ko: "일상에서 둘만의 시간으로" },
+      focus: { en: "Short black hair / Girlfriend mood / Story flow", zh: "黑色短发 / 女友感 / 故事流程", ko: "짧은 흑발 / 여자친구 느낌 / 이야기 흐름" }
+    },
     "summer-schoolday": {
       summary: { en: "Alone with her in an empty summer classroom — a story-style high-res CG collection portraying one situation through three heroines. 327 images total (109 per heroine x 3). Now on sale at FANZA, DLsite, DiGiket, and PromptCom. The full collection is also available on chichi-pui.", zh: "在无人的夏日教室与她独处——以三位女主角描绘同一情境的故事感高分辨率CG集。全327张（每位109张×3人）。现已在 FANZA、DLsite、DiGiket、PromptCom 发售。也可在 chichi-pui 浏览完整版。", ko: "아무도 없는 여름 교실에서 그녀와 단둘이 — 하나의 상황을 3명의 히로인으로 그린 이야기형 고해상도 CG집. 총 327장(히로인당 109장×3). FANZA・DLsite・DiGiket・PromptCom에서 판매 중. chichi-pui에서도 본편을 보실 수 있습니다." },
       format: { en: "Summer classroom to a dusk farewell", zh: "从夏日教室到黄昏告别", ko: "여름 교실에서 황혼의 이별까지" },
@@ -911,6 +917,11 @@ chichi-puiでも、本編をご覧いただけます。
   };
 
   const labelTranslations = {
+    "彼女とふたりきり": { en: "Alone with Her", zh: "与她独处", ko: "그녀와 단둘이" },
+    "黒髪": { en: "Black hair", zh: "黑发", ko: "흑발" },
+    "ショートヘア": { en: "Short hair", zh: "短发", ko: "쇼트 헤어" },
+    "彼女感": { en: "Girlfriend mood", zh: "女友感", ko: "여자친구 느낌" },
+    "物語仕立て": { en: "Story format", zh: "故事形式", ko: "이야기 구성" },
     "異世界": { zh: "异世界", ko: "이세계" },
     "金髪": { zh: "金发", ko: "금발" },
     "探索": { zh: "探索", ko: "탐색" },
@@ -1455,7 +1466,7 @@ chichi-puiでも、本編をご覧いただけます。
           ${renderArchiveBadges(work)}
         </div>
         <div class="detail-copy">
-          <p class="eyebrow">${work.series}</p>
+          <p class="eyebrow">${labelOf(work.series)}</p>
           <h1>${titleOf(work)}</h1>
           <p class="lead">${summaryOf(work)}</p>
           <div class="quick-facts">

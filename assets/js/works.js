@@ -535,6 +535,44 @@ A school day during summer break. The quiet school echoes only with cicadas and 
     tags: ["学園", "制服", "教室", "夏休み", "複数ヒロイン", "物語仕立て"],
     salesLinks: saleLinkTemplate,
     related: ["hikagami-school", "school-legs", "kinpatsu-miko-isekai"]
+  },
+  {
+    id: "kurokami-kanojo",
+    folder: "kurokami-kanojo",
+    title: { ja: "黒髪彼女を独り占め" },
+    series: "彼女とふたりきり",
+    cover: "0501_改修資料/kurokami-kanojo/cover.jpg?v=20260923",
+    samples: [],
+    count: "311枚",
+    format: "日常 → ふたりきり → 近づく距離",
+    focus: "黒髪ショート / 彼女感 / 物語仕立て",
+    summary: "黒髪の彼女とふたりきりで過ごす時間を、日常から少しずつ距離が近づいていく流れで描いた全311枚のAI生成CG集。DLsite・PromptComで販売中。",
+    description: {
+      ja: `黒髪の彼女とふたりきりで過ごす時間を描いた、全311枚のAI生成CG集です。
+
+街歩きの自然な表情や何気ない日常から、ふたりだけの時間へ。少しずつ距離が近づき、彼女の雰囲気が変わっていく流れを、物語を読み進めるように楽しめる構成にしています。
+
+短い黒髪、やわらかな表情、身近な彼女らしさを軸に、日常の空気と親密な場面のコントラストをまとめました。DLsiteとPromptComで販売中です。`,
+      en: `A 311-image AI-generated CG collection centered on private moments with a black-haired girlfriend.
+
+The sequence moves from natural expressions during an everyday walk into time shared by the two of you. Her mood gradually changes as the distance closes, creating a story-like flow from one scene to the next.
+
+Short black hair, gentle expressions, and a familiar girlfriend-like presence shape the collection. Now available on DLsite and PromptCom.`,
+      zh: `这是一部收录311张图片的AI生成CG集，描绘与黑发女友独处的时光。
+
+从街头散步时自然的表情和日常片段，到只属于两人的时间。随着距离一点点拉近，她的氛围也逐渐变化，整体以如同阅读故事般的流程编排。
+
+作品以黑色短发、柔和表情与亲近的女友感为核心，展现日常空气与亲密场景之间的对比。现已在DLsite与PromptCom发售。`,
+      ko: `흑발 여자친구와 단둘이 보내는 시간을 담은 311장 구성의 AI 생성 CG집입니다.
+
+거리 산책에서 보이는 자연스러운 표정과 평범한 일상에서 시작해, 둘만의 시간으로 이어집니다. 거리가 조금씩 가까워지며 그녀의 분위기가 달라지는 흐름을 이야기처럼 감상할 수 있도록 구성했습니다.
+
+짧은 흑발, 부드러운 표정, 친근한 여자친구의 느낌을 중심으로 일상의 공기와 친밀한 장면의 대비를 담았습니다. DLsite와 PromptCom에서 판매 중입니다.`
+    },
+    phases: ["日常", "街歩き", "ふたりきり", "近づく距離"],
+    tags: ["黒髪", "ショートヘア", "彼女感", "日常", "物語仕立て"],
+    salesLinks: saleLinkTemplate,
+    related: ["summer-schoolday", "satogaeri", "kinpatsu-miko-isekai"]
   }
 ];
 
@@ -629,6 +667,10 @@ const salesByWorkId = {
     PromptCom: "https://prompt-com.com/ja/p/8b9b037a-07e6-4954-8972-866bcb6e7237?rating=all",
     pictSPACE: "https://pictspace.net/items/manage_detail/939145",
     DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0344449/AFID=esunamura/"
+  },
+  "kurokami-kanojo": {
+    DLsite: "https://dlaf.jp/aix/dlaf/=/t/s/link/work/aid/esunamura/id/RJ01723984.html",
+    PromptCom: "https://prompt-com.com/ja/p/f0afb5ad-dfd7-4de6-854a-522e7f1c265d?rating=all"
   }
 };
 
