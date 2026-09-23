@@ -1,0 +1,617 @@
+{
+  "count": 58,
+  "groups": [
+    {
+      "id": "magical-girl",
+      "label_ja": "魔法少女",
+      "label_en": "Magical Girls",
+      "count": 22
+    },
+    {
+      "id": "fantasy-mage",
+      "label_ja": "異世界魔法士",
+      "label_en": "Fantasy Mages",
+      "count": 13
+    },
+    {
+      "id": "battle-knight",
+      "label_ja": "戦闘職・騎士",
+      "label_en": "Battle / Knights",
+      "count": 11
+    },
+    {
+      "id": "eastern-mage",
+      "label_ja": "和・東洋術師",
+      "label_en": "Eastern Mages",
+      "count": 7
+    },
+    {
+      "id": "scifi-mecha",
+      "label_ja": "SF・メカ系",
+      "label_en": "Sci-Fi / Mecha",
+      "count": 5
+    }
+  ],
+  "items": [
+    {
+      "code": "MAG001",
+      "source_row_uid": 2992,
+      "label_ja": "王道ペタルドレス",
+      "label_en": "classic magical girl transformation costume",
+      "group": "magical-girl",
+      "prompt": "classic magical girl transformation costume, fitted ribboned bodice, heart-shaped transformation brooch, short layered petal skirt, puffed shoulder accents, detached flared sleeves, opaque thigh-high boots, winged tiara, magic wand",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag001.jpg"
+    },
+    {
+      "code": "MAG002",
+      "source_row_uid": 2993,
+      "label_ja": "セーラー変身服",
+      "label_en": "sailor-style magical girl uniform",
+      "group": "magical-girl",
+      "prompt": "sailor-style magical girl uniform, fitted sailor-collar top, transformation brooch at the bow, structured pleated skirt, long gloves, opaque knee socks, ankle boots",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag002.jpg"
+    },
+    {
+      "code": "MAG003",
+      "source_row_uid": 2994,
+      "label_ja": "プリンセスロングドレス",
+      "label_en": "princess magical girl gown",
+      "group": "magical-girl",
+      "prompt": "princess magical girl gown, fitted jeweled bodice, layered floor-length skirt, short puff sleeves, elbow gloves, heeled boots, crystal tiara",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag003.jpg"
+    },
+    {
+      "code": "MAG004",
+      "source_row_uid": 2995,
+      "label_ja": "ケープドレス",
+      "label_en": "magical girl cape dress",
+      "group": "magical-girl",
+      "prompt": "magical girl cape dress, fitted high-neck bodice, short shoulder cape, clean A-line skirt, jeweled belt, long gloves, knee-high boots",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag004.jpg"
+    },
+    {
+      "code": "MAG005",
+      "source_row_uid": 2996,
+      "label_ja": "ボレロツーピース",
+      "label_en": "magical girl two-piece costume",
+      "group": "magical-girl",
+      "prompt": "magical girl two-piece costume, embroidered cropped bolero over a fully covered fitted bodice, layered flared skirt, ribbon cuffs, opaque boots",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag005.jpg"
+    },
+    {
+      "code": "MAG006",
+      "source_row_uid": 2997,
+      "label_ja": "コートドレス",
+      "label_en": "magical girl coat dress",
+      "group": "magical-girl",
+      "prompt": "magical girl coat dress, fitted double-breasted long-sleeve bodice, flared pleated hem, transformation clasp, gloves, tall lace-up boots",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag006.jpg"
+    },
+    {
+      "code": "MAG007",
+      "source_row_uid": 2998,
+      "label_ja": "チュニックアンドスカート",
+      "label_en": "magical girl tunic outfit",
+      "group": "magical-girl",
+      "prompt": "magical girl tunic outfit, fitted belted tunic with split panels over a layered pleated skirt, arm guards, opaque leggings, tall boots",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag007.jpg"
+    },
+    {
+      "code": "MAG008",
+      "source_row_uid": 2999,
+      "label_ja": "マジカルチュチュ",
+      "label_en": "ballet magical girl costume",
+      "group": "magical-girl",
+      "prompt": "ballet magical girl costume, fitted opaque long-line bodice, structured romantic tutu, short puff sleeves, wrist ribbons, lace-up ballet boots, small tiara",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag008.jpg"
+    },
+    {
+      "code": "MAG009",
+      "source_row_uid": 3000,
+      "label_ja": "ジャンプスーツフォーム",
+      "label_en": "full-coverage magical girl jumpsuit",
+      "group": "magical-girl",
+      "prompt": "full-coverage magical girl jumpsuit, fitted paneled suit, detachable split overskirt, structured shoulders, gauntlets, knee-high boots, transformation crest",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag009.jpg"
+    },
+    {
+      "code": "MAG010",
+      "source_row_uid": 3001,
+      "label_ja": "アシンメトリードレス",
+      "label_en": "asymmetrical magical girl dress",
+      "group": "magical-girl",
+      "prompt": "asymmetrical magical girl dress, one-shoulder fitted bodice, diagonal layered skirt, single long detached sleeve, jeweled waist clasp, mismatched boots",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag010.jpg"
+    },
+    {
+      "code": "MAG011",
+      "source_row_uid": 3002,
+      "label_ja": "ホワイトナイト",
+      "label_en": "white-knight magical girl costume",
+      "group": "battle-knight",
+      "prompt": "white-knight magical girl costume, fitted armored bodice, layered armored skirt, compact shoulder guards, silver gauntlets, tall armored boots, winged circlet, sword-wand and shield",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag011.jpg"
+    },
+    {
+      "code": "MAG012",
+      "source_row_uid": 3003,
+      "label_ja": "アーチャーフォーム",
+      "label_en": "archer magical girl costume",
+      "group": "battle-knight",
+      "prompt": "archer magical girl costume, fitted high-collar tunic, short layered skirt over opaque leggings, asymmetrical shoulder guard, bracers, knee-high boots, magical bow",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag012.jpg"
+    },
+    {
+      "code": "MAG013",
+      "source_row_uid": 3004,
+      "label_ja": "ランサーフォーム",
+      "label_en": "lancer magical girl costume",
+      "group": "battle-knight",
+      "prompt": "lancer magical girl costume, fitted military-style bodice, split battle skirt panels, compact pauldrons, long gloves, armored boots, transforming spear",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag013.jpg"
+    },
+    {
+      "code": "MAG014",
+      "source_row_uid": 3005,
+      "label_ja": "シールドガーディアン",
+      "label_en": "guardian magical girl costume",
+      "group": "battle-knight",
+      "prompt": "guardian magical girl costume, fitted coat armor, layered knee-length skirt, reinforced gauntlets, opaque leggings, heavy boots, large magical shield",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag014.jpg"
+    },
+    {
+      "code": "MAG015",
+      "source_row_uid": 3006,
+      "label_ja": "ブレードダンサー",
+      "label_en": "sword-dancer magical girl dress",
+      "group": "battle-knight",
+      "prompt": "sword-dancer magical girl dress, fitted wrap bodice, swirling split overskirt over opaque shorts, arm guards, lace-up boots, paired ribbon-blades",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag015.jpg"
+    },
+    {
+      "code": "MAG016",
+      "source_row_uid": 3007,
+      "label_ja": "ガンナーフォーム",
+      "label_en": "magical gunner costume",
+      "group": "battle-knight",
+      "prompt": "magical gunner costume, fitted long coat over a full-coverage combat suit, holster belt, armored gloves, tall boots, transforming magic pistols",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag016.jpg"
+    },
+    {
+      "code": "MAG017",
+      "source_row_uid": 3008,
+      "label_ja": "バトルメイド",
+      "label_en": "battle-maid magical girl dress",
+      "group": "battle-knight",
+      "prompt": "battle-maid magical girl dress, fitted high-collar dress, armored bib apron, layered battle skirt, reinforced cuffs, opaque stockings, combat boots, halberd wand",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag017.jpg"
+    },
+    {
+      "code": "MAG018",
+      "source_row_uid": 3009,
+      "label_ja": "パラディンローブ",
+      "label_en": "paladin magical girl costume",
+      "group": "battle-knight",
+      "prompt": "paladin magical girl costume, fitted tunic dress beneath a short ceremonial tabard, plated shoulder guards, gauntlets, opaque leggings, armored boots, holy staff",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag018.jpg"
+    },
+    {
+      "code": "MAG019",
+      "source_row_uid": 3010,
+      "label_ja": "レンジャークローク",
+      "label_en": "ranger magical girl outfit",
+      "group": "battle-knight",
+      "prompt": "ranger magical girl outfit, fitted leather-trimmed tunic, pleated utility skirt, short hooded cloak, bracers, opaque leggings, lace-up boots, crystal bow staff",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag019.jpg"
+    },
+    {
+      "code": "MAG020",
+      "source_row_uid": 3011,
+      "label_ja": "ドラグーンアーマー",
+      "label_en": "dragoon magical girl armor",
+      "group": "battle-knight",
+      "prompt": "dragoon magical girl armor, fitted scaled bodice, wing-shaped pauldrons, segmented battle skirt, gauntlets, armored thigh boots, dragon spear",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag020.jpg"
+    },
+    {
+      "code": "MAG021",
+      "source_row_uid": 3012,
+      "label_ja": "クラシックウィッチ",
+      "label_en": "witch magical girl dress",
+      "group": "fantasy-mage",
+      "prompt": "witch magical girl dress, fitted high-neck bodice, layered knee-length skirt, long bell sleeves, corset belt, opaque tights, buckle boots, pointed hat, staff",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag021.jpg"
+    },
+    {
+      "code": "MAG022",
+      "source_row_uid": 3013,
+      "label_ja": "ゴシックロリータ",
+      "label_en": "gothic magical girl dress",
+      "group": "magical-girl",
+      "prompt": "gothic magical girl dress, fitted lace-trim high-neck bodice, bell-shaped skirt with opaque lining, long puff sleeves, opaque tights, platform boots, rose bonnet",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag022.jpg"
+    },
+    {
+      "code": "MAG023",
+      "source_row_uid": 3014,
+      "label_ja": "ヴァンパイアハンター",
+      "label_en": "vampire-hunter magical girl outfit",
+      "group": "battle-knight",
+      "prompt": "vampire-hunter magical girl outfit, fitted long military coat, high-collar blouse, layered burgundy skirt, leather gloves, tall boots, crossbow wand",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag023.jpg"
+    },
+    {
+      "code": "MAG024",
+      "source_row_uid": 3015,
+      "label_ja": "オラクルローブ",
+      "label_en": "oracle magical girl robes",
+      "group": "fantasy-mage",
+      "prompt": "oracle magical girl robes, fitted sleeveless tunic over a long-sleeve underdress, layered ankle-length skirt, wide ceremonial sash, gloves, jeweled veil crown, divination staff",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag024.jpg"
+    },
+    {
+      "code": "MAG026",
+      "source_row_uid": 3017,
+      "label_ja": "ネクロマンサードレス",
+      "label_en": "necromancer magical girl dress",
+      "group": "fantasy-mage",
+      "prompt": "necromancer magical girl dress, fitted black coat bodice, layered gray skirt, long detached sleeves, bone-shaped clasps, opaque stockings, tall boots, lantern staff",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag026.jpg"
+    },
+    {
+      "code": "MAG027",
+      "source_row_uid": 3018,
+      "label_ja": "レイヴンクローク",
+      "label_en": "raven magical girl costume",
+      "group": "fantasy-mage",
+      "prompt": "raven magical girl costume, fitted feather-trim bodice, layered feather skirt, short winged cloak, long gloves, black boots, raven crown, dark staff",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag027.jpg"
+    },
+    {
+      "code": "MAG028",
+      "source_row_uid": 3019,
+      "label_ja": "クロックワークウィッチ",
+      "label_en": "clockwork magical girl dress",
+      "group": "fantasy-mage",
+      "prompt": "clockwork magical girl dress, fitted brocade bodice, gear-shaped peplum, layered high-low skirt, brass gauntlets, lace-up boots, gear hat, clock-key staff",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag028.jpg"
+    },
+    {
+      "code": "MAG029",
+      "source_row_uid": 3020,
+      "label_ja": "ファントムヴェール",
+      "label_en": "phantom magical girl gown",
+      "group": "fantasy-mage",
+      "prompt": "phantom magical girl gown, fitted gray bodice, layered mist-colored ankle skirt, long veil sleeves over opaque arms, gloves, gray boots, crystal veil crown, lantern wand",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag029.jpg"
+    },
+    {
+      "code": "MAG030",
+      "source_row_uid": 3021,
+      "label_ja": "カースブレイカー",
+      "label_en": "curse-breaker magical girl costume",
+      "group": "fantasy-mage",
+      "prompt": "curse-breaker magical girl costume, fitted white coat dress with black seal trim, layered pleated hem, long gloves, reinforced boots, chain belt, talisman wand",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag030.jpg"
+    },
+    {
+      "code": "MAG031",
+      "source_row_uid": 3022,
+      "label_ja": "巫女魔法少女",
+      "label_en": "miko magical girl costume",
+      "group": "eastern-mage",
+      "prompt": "miko magical girl costume, fitted white shrine top, transformation brooch, layered red hakama-inspired skirt, detached white sleeves, tabi-style boots, kanzashi, bell wand",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag031.jpg"
+    },
+    {
+      "code": "MAG032",
+      "source_row_uid": 3023,
+      "label_ja": "和装剣姫",
+      "label_en": "kimono magical girl costume",
+      "group": "eastern-mage",
+      "prompt": "kimono magical girl costume, fitted wrap bodice, wide obi armor belt, layered petal skirt, detached flowing sleeves, knee-high boots, blossom sword-wand",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag032.jpg"
+    },
+    {
+      "code": "MAG033",
+      "source_row_uid": 3024,
+      "label_ja": "陰陽術師",
+      "label_en": "onmyoji magical girl robes",
+      "group": "eastern-mage",
+      "prompt": "onmyoji magical girl robes, fitted white-purple robe bodice, layered pleated skirt, wide sash, long detached sleeves, tall boots, ceremonial crown, folding fan wand",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag033.jpg"
+    },
+    {
+      "code": "MAG034",
+      "source_row_uid": 3025,
+      "label_ja": "大正魔法少女",
+      "label_en": "Taisho-inspired magical girl outfit",
+      "group": "eastern-mage",
+      "prompt": "Taisho-inspired magical girl outfit, high-collar blouse, fitted embroidered vest, pleated hakama skirt, short cape, lace gloves, ankle boots, jeweled parasol wand",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag034.jpg"
+    },
+    {
+      "code": "MAG035",
+      "source_row_uid": 3026,
+      "label_ja": "中華術士",
+      "label_en": "Chinese-inspired magical girl costume",
+      "group": "eastern-mage",
+      "prompt": "Chinese-inspired magical girl costume, fitted high-collar brocade jacket, layered pleated skirt, detached cuffs, opaque leggings, embroidered boots, floral crown, ring-blade wand",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag035.jpg"
+    },
+    {
+      "code": "MAG036",
+      "source_row_uid": 3027,
+      "label_ja": "韓服変身衣装",
+      "label_en": "hanbok-inspired magical girl costume",
+      "group": "eastern-mage",
+      "prompt": "hanbok-inspired magical girl costume, short fitted jeogori jacket, jeweled ribbon tie, structured layered chima skirt, wrist guards, embroidered boots, ornamental hairpiece",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag036.jpg"
+    },
+    {
+      "code": "MAG037",
+      "source_row_uid": 3028,
+      "label_ja": "アラビアンマギカ",
+      "label_en": "Arabian-inspired magical girl outfit with full coverage",
+      "group": "fantasy-mage",
+      "prompt": "Arabian-inspired magical girl outfit with full coverage, fitted embroidered tunic, harem trousers, split overskirt panels, arm cuffs, curled-toe boots, jeweled headpiece, crescent staff",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag037.jpg"
+    },
+    {
+      "code": "MAG038",
+      "source_row_uid": 3029,
+      "label_ja": "エジプシャンガーディアン",
+      "label_en": "Egyptian-inspired magical girl costume",
+      "group": "fantasy-mage",
+      "prompt": "Egyptian-inspired magical girl costume, fitted high-collar tunic dress, broad jeweled collar, pleated overskirt panels, gold arm cuffs, knee-high sandals over opaque stockings, crown, ankh staff",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag038.jpg"
+    },
+    {
+      "code": "MAG039",
+      "source_row_uid": 3030,
+      "label_ja": "レヘンガマギカ",
+      "label_en": "lehenga-inspired magical girl costume",
+      "group": "fantasy-mage",
+      "prompt": "lehenga-inspired magical girl costume, fitted high-neck embroidered top with full coverage, wide flared skirt, draped shoulder sash, bangles, embroidered boots, lotus wand",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag039.jpg"
+    },
+    {
+      "code": "MAG040",
+      "source_row_uid": 3031,
+      "label_ja": "ノルディックルーン",
+      "label_en": "Nordic magical girl outfit",
+      "group": "fantasy-mage",
+      "prompt": "Nordic magical girl outfit, fitted fur-trim tunic dress, layered wool skirt, short mantle, leather gloves, opaque leggings, tall boots, rune circlet, rune staff",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag040.jpg"
+    },
+    {
+      "code": "MAG041",
+      "source_row_uid": 3032,
+      "label_ja": "フラワーフェアリー",
+      "label_en": "flower-fairy magical girl dress",
+      "group": "magical-girl",
+      "prompt": "flower-fairy magical girl dress, fitted petal bodice, layered flower-petal skirt, leaf-shaped sleeves, vine belt, floral boots, flower crown, blossom wand",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag041.jpg"
+    },
+    {
+      "code": "MAG042",
+      "source_row_uid": 3033,
+      "label_ja": "バタフライフェアリー",
+      "label_en": "butterfly magical girl costume",
+      "group": "magical-girl",
+      "prompt": "butterfly magical girl costume, fitted bodice, layered wing-pattern skirt, wing-shaped shoulder cape, detached sleeves, violet boots, antenna tiara, butterfly wand",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag042.jpg"
+    },
+    {
+      "code": "MAG043",
+      "source_row_uid": 3034,
+      "label_ja": "エンジェルフォーム",
+      "label_en": "angel magical girl costume",
+      "group": "magical-girl",
+      "prompt": "angel magical girl costume, fitted white tunic dress, structured feather shoulder cape, layered ankle-length skirt, long gloves, white boots, halo crown, feather staff",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag043.jpg"
+    },
+    {
+      "code": "MAG044",
+      "source_row_uid": 3035,
+      "label_ja": "フェニックスフォーム",
+      "label_en": "phoenix magical girl costume",
+      "group": "magical-girl",
+      "prompt": "phoenix magical girl costume, fitted red-gold bodice, layered feather skirt, winged shoulder pieces, long gloves, red boots, feather crown, phoenix staff",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag044.jpg"
+    },
+    {
+      "code": "MAG046",
+      "source_row_uid": 3037,
+      "label_ja": "フォレストレンジャー",
+      "label_en": "forest magical girl outfit",
+      "group": "fantasy-mage",
+      "prompt": "forest magical girl outfit, fitted green tunic bodice, layered leaf skirt, short hooded cape, bracers, opaque leggings, lace-up boots, branch bow-wand",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag046.jpg"
+    },
+    {
+      "code": "MAG047",
+      "source_row_uid": 3038,
+      "label_ja": "スノークイーン",
+      "label_en": "snow magical girl gown",
+      "group": "magical-girl",
+      "prompt": "snow magical girl gown, fitted ice-blue bodice, structured layered ankle skirt, fur-trim capelet, long gloves, crystal boots, ice crown, frost staff",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag047.jpg"
+    },
+    {
+      "code": "MAG048",
+      "source_row_uid": 3039,
+      "label_ja": "ハニービーフォーム",
+      "label_en": "honeybee magical girl costume",
+      "group": "magical-girl",
+      "prompt": "honeybee magical girl costume, fitted striped jacket bodice, sculpted short overskirt, wing-shaped shoulder cape, long gloves, opaque leggings, yellow boots, antenna crown, honey wand",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag048.jpg"
+    },
+    {
+      "code": "MAG049",
+      "source_row_uid": 3040,
+      "label_ja": "ホワイトフォックス",
+      "label_en": "white-fox magical girl costume",
+      "group": "eastern-mage",
+      "prompt": "white-fox magical girl costume, fitted white-red kimono bodice, layered tail-shaped skirt panels, detached sleeves, white boots, fox-ear crown, bell staff",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag049.jpg"
+    },
+    {
+      "code": "MAG050",
+      "source_row_uid": 3041,
+      "label_ja": "ローズガーディアン",
+      "label_en": "rose guardian magical girl dress",
+      "group": "magical-girl",
+      "prompt": "rose guardian magical girl dress, fitted corset-style bodice over opaque lining, layered rose-petal skirt, thorn-shaped shoulder guards, long gloves, tall boots, rose crown, vine spear",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag050.jpg"
+    },
+    {
+      "code": "MAG051",
+      "source_row_uid": 3042,
+      "label_ja": "サイバーマギカ",
+      "label_en": "cyber magical girl costume",
+      "group": "scifi-mecha",
+      "prompt": "cyber magical girl costume, fitted tech jacket, high-neck circuit-panel bodice, pleated utility skirt, arm interfaces, platform boots, illuminated headset, laser wand",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag051.jpg"
+    },
+    {
+      "code": "MAG052",
+      "source_row_uid": 3043,
+      "label_ja": "メカガーディアン",
+      "label_en": "mechanical magical girl armor",
+      "group": "scifi-mecha",
+      "prompt": "mechanical magical girl armor, fitted armored bodice, articulated shoulder shells, segmented skirt plates over opaque undersuit, gauntlets, armored boots, mechanical crown, staff-rifle",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag052.jpg"
+    },
+    {
+      "code": "MAG053",
+      "source_row_uid": 3044,
+      "label_ja": "アンドロイドハート",
+      "label_en": "android magical girl costume",
+      "group": "scifi-mecha",
+      "prompt": "android magical girl costume, white segmented full-coverage suit, heart-core brooch, detachable pleated overskirt, arm guards, sleek boots, sensor tiara, energy baton",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag053.jpg"
+    },
+    {
+      "code": "MAG054",
+      "source_row_uid": 3045,
+      "label_ja": "ホログラムドレス",
+      "label_en": "hologram magical girl dress",
+      "group": "scifi-mecha",
+      "prompt": "hologram magical girl dress, structured iridescent bodice, layered geometric skirt panels over opaque lining, sleek gloves, white platform boots, prism crown, light wand",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag054.jpg"
+    },
+    {
+      "code": "MAG055",
+      "source_row_uid": 3046,
+      "label_ja": "スペースマギカ",
+      "label_en": "space magical girl uniform",
+      "group": "scifi-mecha",
+      "prompt": "space magical girl uniform, fitted full-coverage flight suit, cropped command cape, structured belt, gloves, knee-high space boots, communication tiara, orbital staff",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag055.jpg"
+    },
+    {
+      "code": "MAG056",
+      "source_row_uid": 3047,
+      "label_ja": "サーカスマギカ",
+      "label_en": "circus magical girl costume",
+      "group": "magical-girl",
+      "prompt": "circus magical girl costume, fitted ringmaster tailcoat bodice, layered striped skort, puff sleeves, gloves, opaque tights, buttoned boots, mini top hat, hoop wand",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag056.jpg"
+    },
+    {
+      "code": "MAG057",
+      "source_row_uid": 3048,
+      "label_ja": "マジカルアイススケーター",
+      "label_en": "ice-skater magical girl dress",
+      "group": "magical-girl",
+      "prompt": "ice-skater magical girl dress, fitted long-sleeve performance bodice, short layered skating skirt, opaque tights, white skating boots, crystal hairpiece, ribbon wand",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag057.jpg"
+    },
+    {
+      "code": "MAG058",
+      "source_row_uid": 3049,
+      "label_ja": "魔法学園首席",
+      "label_en": "magic-academy heroine uniform",
+      "group": "fantasy-mage",
+      "prompt": "magic-academy heroine uniform, fitted navy blazer, crystal crest brooch, ribboned shirt, layered pleated skirt, gloves, opaque knee socks, ankle boots, scholar cap, book wand",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag058.jpg"
+    },
+    {
+      "code": "MAG059",
+      "source_row_uid": 3050,
+      "label_ja": "マジカルディテクティブ",
+      "label_en": "magical detective outfit",
+      "group": "magical-girl",
+      "prompt": "magical detective outfit, fitted belted coat dress, high-collar blouse, pleated hem, gloves, opaque tights, ankle boots, small detective cap, magnifying-glass wand",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag059.jpg"
+    },
+    {
+      "code": "MAG060",
+      "source_row_uid": 3051,
+      "label_ja": "オペラマギカ",
+      "label_en": "opera magical girl gown",
+      "group": "magical-girl",
+      "prompt": "opera magical girl gown, fitted high-neck brocade bodice, layered formal skirt, elbow gloves, heeled boots, jeweled hair comb, conductor baton wand",
+      "negative": "",
+      "src": "../../assets/research/magic-costume/mag060.jpg"
+    }
+  ]
+}

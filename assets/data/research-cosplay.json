@@ -1,5 +1,5 @@
 {
-  "count": 90,
+  "count": 88,
   "groups": [
     {
       "id": "fantasy",
@@ -35,7 +35,7 @@
       "id": "stage",
       "label_ja": "ステージ・スポーツ",
       "label_en": "Stage / Sports",
-      "count": 22
+      "count": 20
     }
   ],
   "items": [
@@ -298,26 +298,6 @@
       "prompt": "form-fitting blue and white mecha pilot suit, orange chest accents, reinforced shoulder panels, tech gloves, armored boots",
       "negative": "modern casual clothes",
       "src": "../../assets/research/cosplay/cos026.jpg"
-    },
-    {
-      "code": "COS027",
-      "source_id": 27,
-      "label_ja": "魔法少女",
-      "label_en": "Magical Heroine",
-      "group": "stage",
-      "prompt": "white and pastel blue magical heroine dress, fitted ribboned bodice, layered short skirt, detached sleeves, opaque thigh-high socks, ankle boots, small jeweled tiara",
-      "negative": "modern casual clothes",
-      "src": "../../assets/research/cosplay/cos027.jpg"
-    },
-    {
-      "code": "COS028",
-      "source_id": 28,
-      "label_ja": "ブルーアイドル",
-      "label_en": "Blue Idol",
-      "group": "stage",
-      "prompt": "bright blue idol stage dress, white ruffled bodice, gold trim, layered pleated skirt, wrist cuffs, knee-high boots, star hair accessory",
-      "negative": "modern casual clothes",
-      "src": "../../assets/research/cosplay/cos028.jpg"
     },
     {
       "code": "COS029",

@@ -1,0 +1,633 @@
+{
+  "count": 59,
+  "groups": [
+    {
+      "id": "stage-dress",
+      "label_ja": "舞台ドレス",
+      "label_en": "Stage Dresses",
+      "count": 10
+    },
+    {
+      "id": "tailored",
+      "label_ja": "制服・テーラード",
+      "label_en": "Uniforms / Tailored",
+      "count": 10
+    },
+    {
+      "id": "dance",
+      "label_ja": "音楽・ダンス",
+      "label_en": "Music / Dance",
+      "count": 10
+    },
+    {
+      "id": "fashion",
+      "label_ja": "ファッション",
+      "label_en": "Fashion",
+      "count": 10
+    },
+    {
+      "id": "traditional",
+      "label_ja": "民族・伝統",
+      "label_en": "Folk / Traditional",
+      "count": 10
+    },
+    {
+      "id": "future",
+      "label_ja": "未来・コンセプト",
+      "label_en": "Future / Concept",
+      "count": 9
+    }
+  ],
+  "items": [
+    {
+      "code": "IDL001",
+      "source_row_uid": 2901,
+      "label_ja": "王道プリーツドレス",
+      "label_en": "idol performance dress",
+      "group": "stage-dress",
+      "prompt": "idol performance dress, fitted ruffled bodice, layered pleated mini skirt, waist bow, wrist cuffs, opaque knee-high boots",
+      "negative": "",
+      "src": "../../assets/research/idol/idl001.jpg"
+    },
+    {
+      "code": "IDL002",
+      "source_row_uid": 2902,
+      "label_ja": "テールコートドレス",
+      "label_en": "idol tailcoat dress",
+      "group": "stage-dress",
+      "prompt": "idol tailcoat dress, fitted double-breasted bodice, short front skirt, long split back tails, epaulets, gloves, knee-high boots",
+      "negative": "",
+      "src": "../../assets/research/idol/idl002.jpg"
+    },
+    {
+      "code": "IDL003",
+      "source_row_uid": 2903,
+      "label_ja": "ワンショルダーラッフル",
+      "label_en": "asymmetrical one-shoulder idol dress",
+      "group": "stage-dress",
+      "prompt": "asymmetrical one-shoulder idol dress, diagonal ruffled bodice, layered side-drape skirt, fitted waist belt, long single glove, heeled ankle boots",
+      "negative": "",
+      "src": "../../assets/research/idol/idl003.jpg"
+    },
+    {
+      "code": "IDL004",
+      "source_row_uid": 2904,
+      "label_ja": "ミニボールガウン",
+      "label_en": "mini ball-gown idol dress",
+      "group": "stage-dress",
+      "prompt": "mini ball-gown idol dress, structured princess bodice, voluminous bell-shaped short skirt, puff sleeves, elbow gloves, ribboned heels",
+      "negative": "",
+      "src": "../../assets/research/idol/idl004.jpg"
+    },
+    {
+      "code": "IDL005",
+      "source_row_uid": 2905,
+      "label_ja": "コルセットチュチュ",
+      "label_en": "idol corset-and-tutu costume",
+      "group": "stage-dress",
+      "prompt": "idol corset-and-tutu costume, boned fitted bodice over opaque lining, layered stiff tulle tutu, detached sleeves, lace-up knee boots",
+      "negative": "",
+      "src": "../../assets/research/idol/idl005.jpg"
+    },
+    {
+      "code": "IDL006",
+      "source_row_uid": 2906,
+      "label_ja": "ケープレットAライン",
+      "label_en": "A-line idol dress",
+      "group": "stage-dress",
+      "prompt": "A-line idol dress, fitted high-neck bodice, short shoulder capelet, clean flared skirt, wide waist sash, long gloves, ankle boots",
+      "negative": "",
+      "src": "../../assets/research/idol/idl006.jpg"
+    },
+    {
+      "code": "IDL007",
+      "source_row_uid": 2907,
+      "label_ja": "ペプラムツーピース",
+      "label_en": "idol two-piece costume",
+      "group": "stage-dress",
+      "prompt": "idol two-piece costume, fitted peplum jacket over a fully covered stage top, separate pleated skirt, short gloves, tall boots",
+      "negative": "",
+      "src": "../../assets/research/idol/idl007.jpg"
+    },
+    {
+      "code": "IDL008",
+      "source_row_uid": 2908,
+      "label_ja": "ボレロレイヤード",
+      "label_en": "idol bolero outfit",
+      "group": "stage-dress",
+      "prompt": "idol bolero outfit, cropped embroidered bolero over a fitted high-neck bodice, tiered flared skirt, ribbon cuffs, heeled boots",
+      "negative": "",
+      "src": "../../assets/research/idol/idl008.jpg"
+    },
+    {
+      "code": "IDL009",
+      "source_row_uid": 2909,
+      "label_ja": "ジャンプスーツオーバースカート",
+      "label_en": "full-coverage fitted idol jumpsuit",
+      "group": "stage-dress",
+      "prompt": "full-coverage fitted idol jumpsuit, detachable split overskirt, structured shoulder panels, long gloves, sleek knee-high boots",
+      "negative": "",
+      "src": "../../assets/research/idol/idl009.jpg"
+    },
+    {
+      "code": "IDL010",
+      "source_row_uid": 2910,
+      "label_ja": "ステージコートドレス",
+      "label_en": "idol coat dress",
+      "group": "stage-dress",
+      "prompt": "idol coat dress, fitted long-sleeve double-breasted coat bodice, flared pleated hem, waist belt, gloves, tall lace-up boots",
+      "negative": "",
+      "src": "../../assets/research/idol/idl010.jpg"
+    },
+    {
+      "code": "IDL011",
+      "source_row_uid": 2911,
+      "label_ja": "セーラーアイドル",
+      "label_en": "sailor-inspired idol uniform",
+      "group": "tailored",
+      "prompt": "sailor-inspired idol uniform, fitted sailor-collar top, neck ribbon, structured pleated skirt, wrist cuffs, opaque knee socks, ankle boots",
+      "negative": "",
+      "src": "../../assets/research/idol/idl011.jpg"
+    },
+    {
+      "code": "IDL012",
+      "source_row_uid": 2912,
+      "label_ja": "ミリタリーアイドル",
+      "label_en": "military idol uniform",
+      "group": "tailored",
+      "prompt": "military idol uniform, fitted high-collar jacket, epaulets, braided cords, pleated skirt, gloves, tall boots, formal cap",
+      "negative": "",
+      "src": "../../assets/research/idol/idl012.jpg"
+    },
+    {
+      "code": "IDL013",
+      "source_row_uid": 2913,
+      "label_ja": "マーチングバンド",
+      "label_en": "marching-band idol uniform",
+      "group": "tailored",
+      "prompt": "marching-band idol uniform, fitted braided jacket, decorative shoulder cords, structured pleated skirt, white gloves, knee-high boots, shako-style hat",
+      "negative": "",
+      "src": "../../assets/research/idol/idl013.jpg"
+    },
+    {
+      "code": "IDL014",
+      "source_row_uid": 2914,
+      "label_ja": "ブレザーステージ",
+      "label_en": "idol blazer ensemble",
+      "group": "tailored",
+      "prompt": "idol blazer ensemble, cropped tailored blazer, ribboned shirt, high-waisted box-pleat skirt, opaque knee socks, loafers",
+      "negative": "",
+      "src": "../../assets/research/idol/idl014.jpg"
+    },
+    {
+      "code": "IDL015",
+      "source_row_uid": 2915,
+      "label_ja": "ベルホップ",
+      "label_en": "bellhop-inspired idol uniform",
+      "group": "tailored",
+      "prompt": "bellhop-inspired idol uniform, fitted cropped jacket with rows of buttons, pillbox hat, tailored shorts with pleated overskirt panels, gloves, ankle boots",
+      "negative": "",
+      "src": "../../assets/research/idol/idl015.jpg"
+    },
+    {
+      "code": "IDL016",
+      "source_row_uid": 2916,
+      "label_ja": "キャビンアテンダント",
+      "label_en": "cabin-attendant-inspired idol uniform",
+      "group": "tailored",
+      "prompt": "cabin-attendant-inspired idol uniform, fitted short jacket, scarf-tied blouse, pencil-shaped stage skirt with kick pleats, gloves, heeled shoes, small hat",
+      "negative": "",
+      "src": "../../assets/research/idol/idl016.jpg"
+    },
+    {
+      "code": "IDL017",
+      "source_row_uid": 2917,
+      "label_ja": "タキシードディーラー",
+      "label_en": "idol tuxedo ensemble",
+      "group": "tailored",
+      "prompt": "idol tuxedo ensemble, fitted tailcoat, high-neck shirt, bow tie, high-waisted tailored shorts, opaque tights, gloves, ankle boots",
+      "negative": "",
+      "src": "../../assets/research/idol/idl017.jpg"
+    },
+    {
+      "code": "IDL018",
+      "source_row_uid": 2918,
+      "label_ja": "エクエストリアン",
+      "label_en": "equestrian idol uniform",
+      "group": "tailored",
+      "prompt": "equestrian idol uniform, fitted riding jacket, high-collar shirt, belted pleated riding skirt, gloves, opaque leggings, tall riding boots",
+      "negative": "",
+      "src": "../../assets/research/idol/idl018.jpg"
+    },
+    {
+      "code": "IDL019",
+      "source_row_uid": 2919,
+      "label_ja": "ワークウェアアイドル",
+      "label_en": "workwear idol outfit",
+      "group": "tailored",
+      "prompt": "workwear idol outfit, fitted zip-front utility jumpsuit with full coverage, cropped utility vest, belted waist, fingerless gloves, lace-up boots",
+      "negative": "",
+      "src": "../../assets/research/idol/idl019.jpg"
+    },
+    {
+      "code": "IDL020",
+      "source_row_uid": 2920,
+      "label_ja": "レーシングユニフォーム",
+      "label_en": "racing idol uniform",
+      "group": "tailored",
+      "prompt": "racing idol uniform, fitted color-block zip jacket, high-waisted paneled skort, logo-style patches, gloves, tall sporty boots",
+      "negative": "",
+      "src": "../../assets/research/idol/idl020.jpg"
+    },
+    {
+      "code": "IDL021",
+      "source_row_uid": 2921,
+      "label_ja": "ロックレザー",
+      "label_en": "rock-idol outfit",
+      "group": "dance",
+      "prompt": "rock-idol outfit, cropped leather rider jacket, fitted high-neck stage top, layered skirt with belt straps, fingerless gloves, combat boots",
+      "negative": "",
+      "src": "../../assets/research/idol/idl021.jpg"
+    },
+    {
+      "code": "IDL022",
+      "source_row_uid": 2922,
+      "label_ja": "パンクタータン",
+      "label_en": "punk idol outfit",
+      "group": "dance",
+      "prompt": "punk idol outfit, fitted vest, tartan asymmetrical pleated skirt, strap and chain details, striped arm warmers, buckle boots",
+      "negative": "",
+      "src": "../../assets/research/idol/idl022.jpg"
+    },
+    {
+      "code": "IDL023",
+      "source_row_uid": 2923,
+      "label_ja": "ヴィジュアル系",
+      "label_en": "visual-kei idol costume",
+      "group": "dance",
+      "prompt": "visual-kei idol costume, ornate fitted frock coat, ruffled high-collar shirt, layered skirt panels, lace gloves, tall buckle boots",
+      "negative": "",
+      "src": "../../assets/research/idol/idl023.jpg"
+    },
+    {
+      "code": "IDL024",
+      "source_row_uid": 2924,
+      "label_ja": "ディスコジャンプスーツ",
+      "label_en": "retro disco idol jumpsuit",
+      "group": "dance",
+      "prompt": "retro disco idol jumpsuit, fitted long-sleeve bodice, high waist, flared legs, wide metallic belt, wrist cuffs, platform boots",
+      "negative": "",
+      "src": "../../assets/research/idol/idl024.jpg"
+    },
+    {
+      "code": "IDL025",
+      "source_row_uid": 2925,
+      "label_ja": "ジャズキャバレードレス",
+      "label_en": "jazz-idol cabaret dress",
+      "group": "dance",
+      "prompt": "jazz-idol cabaret dress, fitted halter bodice with full coverage, knee-length fringe skirt, elbow gloves, strap heels, small feathered hat",
+      "negative": "",
+      "src": "../../assets/research/idol/idl025.jpg"
+    },
+    {
+      "code": "IDL026",
+      "source_row_uid": 2926,
+      "label_ja": "ヒップホップストリート",
+      "label_en": "hip-hop idol outfit",
+      "group": "dance",
+      "prompt": "hip-hop idol outfit, oversized cropped bomber over a fitted stage top, pleated cargo skort, arm warmers, leg straps, high-top sneakers",
+      "negative": "",
+      "src": "../../assets/research/idol/idl026.jpg"
+    },
+    {
+      "code": "IDL027",
+      "source_row_uid": 2927,
+      "label_ja": "チアアイドル",
+      "label_en": "cheer-idol uniform",
+      "group": "dance",
+      "prompt": "cheer-idol uniform, fitted sleeveless shell top, striped box-pleat skirt, wrist bands, opaque knee socks, cheer shoes, large hair bow",
+      "negative": "",
+      "src": "../../assets/research/idol/idl027.jpg"
+    },
+    {
+      "code": "IDL028",
+      "source_row_uid": 2928,
+      "label_ja": "バレエアイドル",
+      "label_en": "ballet-inspired idol costume",
+      "group": "dance",
+      "prompt": "ballet-inspired idol costume, fitted long-line bodice with opaque neckline, structured romantic tutu, short puff sleeves, wrist ribbons, lace-up ballet boots",
+      "negative": "",
+      "src": "../../assets/research/idol/idl028.jpg"
+    },
+    {
+      "code": "IDL029",
+      "source_row_uid": 2929,
+      "label_ja": "ラテンダンスアイドル",
+      "label_en": "Latin-dance idol dress",
+      "group": "dance",
+      "prompt": "Latin-dance idol dress, fitted asymmetrical bodice, layered diagonal ruffle skirt, one flared sleeve, waist sash, ankle-strap dance shoes",
+      "negative": "",
+      "src": "../../assets/research/idol/idl029.jpg"
+    },
+    {
+      "code": "IDL030",
+      "source_row_uid": 2930,
+      "label_ja": "タップタキシード",
+      "label_en": "tap-dance idol outfit",
+      "group": "dance",
+      "prompt": "tap-dance idol outfit, fitted cropped tuxedo jacket, pleated shirt front, high-waisted tailored shorts, opaque tights, bow tie, tap shoes, mini top hat",
+      "negative": "",
+      "src": "../../assets/research/idol/idl030.jpg"
+    },
+    {
+      "code": "IDL031",
+      "source_row_uid": 2931,
+      "label_ja": "クラシカルロリータ",
+      "label_en": "classical-lolita idol dress",
+      "group": "fashion",
+      "prompt": "classical-lolita idol dress, high-neck fitted bodice, bell-shaped knee-length skirt, long puff sleeves, lace cuffs, opaque tights, Mary Jane shoes, bonnet",
+      "negative": "",
+      "src": "../../assets/research/idol/idl031.jpg"
+    },
+    {
+      "code": "IDL032",
+      "source_row_uid": 2932,
+      "label_ja": "スイートロリータ",
+      "label_en": "sweet-lolita idol dress",
+      "group": "fashion",
+      "prompt": "sweet-lolita idol dress, square-neck fitted bodice, tiered knee-length skirt, short puff sleeves, large waist bow, knee socks, strap shoes",
+      "negative": "",
+      "src": "../../assets/research/idol/idl032.jpg"
+    },
+    {
+      "code": "IDL033",
+      "source_row_uid": 2933,
+      "label_ja": "メイドステージ",
+      "label_en": "maid-inspired idol dress",
+      "group": "fashion",
+      "prompt": "maid-inspired idol dress, fitted high-collar dress, full bib apron, layered flared skirt, puff sleeves, wrist cuffs, opaque stockings, ankle boots, maid headband",
+      "negative": "",
+      "src": "../../assets/research/idol/idl033.jpg"
+    },
+    {
+      "code": "IDL034",
+      "source_row_uid": 2934,
+      "label_ja": "ピナフォアドレス",
+      "label_en": "idol pinafore outfit",
+      "group": "fashion",
+      "prompt": "idol pinafore outfit, structured sleeveless pinafore dress over a long-sleeve ruffled blouse, box-pleat skirt, opaque socks, lace-up shoes",
+      "negative": "",
+      "src": "../../assets/research/idol/idl034.jpg"
+    },
+    {
+      "code": "IDL035",
+      "source_row_uid": 2935,
+      "label_ja": "ベビードールドレス",
+      "label_en": "babydoll idol dress",
+      "group": "fashion",
+      "prompt": "babydoll idol dress, fitted yoke, empire waist, short voluminous layered skirt, balloon sleeves, ribbon cuffs, opaque knee socks, strap shoes",
+      "negative": "",
+      "src": "../../assets/research/idol/idl035.jpg"
+    },
+    {
+      "code": "IDL036",
+      "source_row_uid": 2936,
+      "label_ja": "バルーンスカート",
+      "label_en": "idol dress with a fitted sleeveless bodice and sculpted balloon skirt",
+      "group": "fashion",
+      "prompt": "idol dress with a fitted sleeveless bodice and sculpted balloon skirt, wide waist belt, detached arm cuffs, opaque tights, ankle boots",
+      "negative": "",
+      "src": "../../assets/research/idol/idl036.jpg"
+    },
+    {
+      "code": "IDL037",
+      "source_row_uid": 2937,
+      "label_ja": "サスペンダースカート",
+      "label_en": "idol suspender-skirt outfit",
+      "group": "fashion",
+      "prompt": "idol suspender-skirt outfit, fitted ruffled blouse, high-waisted pleated suspender skirt, ribbon tie, opaque knee socks, loafers",
+      "negative": "",
+      "src": "../../assets/research/idol/idl037.jpg"
+    },
+    {
+      "code": "IDL038",
+      "source_row_uid": 2938,
+      "label_ja": "ステージロンパー",
+      "label_en": "tailored idol romper with full coverage",
+      "group": "fashion",
+      "prompt": "tailored idol romper with full coverage, structured collar, cinched waist, short puff sleeves, detachable half-skirt, gloves, knee-high boots",
+      "negative": "",
+      "src": "../../assets/research/idol/idl038.jpg"
+    },
+    {
+      "code": "IDL039",
+      "source_row_uid": 2939,
+      "label_ja": "ニットセットアップ",
+      "label_en": "idol knit ensemble",
+      "group": "fashion",
+      "prompt": "idol knit ensemble, fitted high-neck knit top, cropped cardigan, structured pleated knit skirt, opaque tights, ankle boots, beret",
+      "negative": "",
+      "src": "../../assets/research/idol/idl039.jpg"
+    },
+    {
+      "code": "IDL040",
+      "source_row_uid": 2940,
+      "label_ja": "ティアードチュールドレス",
+      "label_en": "idol tulle dress",
+      "group": "fashion",
+      "prompt": "idol tulle dress, fitted satin bodice with opaque lining, cascading tiered midi skirt, sheer-look decorative oversleeves over opaque sleeves, gloves, heels",
+      "negative": "",
+      "src": "../../assets/research/idol/idl040.jpg"
+    },
+    {
+      "code": "IDL041",
+      "source_row_uid": 2941,
+      "label_ja": "和風アイドル",
+      "label_en": "modern kimono idol costume",
+      "group": "traditional",
+      "prompt": "modern kimono idol costume, fitted wrap-style top, wide obi belt, layered pleated short skirt, detached kimono sleeves, tabi-style boots, kanzashi",
+      "negative": "",
+      "src": "../../assets/research/idol/idl041.jpg"
+    },
+    {
+      "code": "IDL042",
+      "source_row_uid": 2942,
+      "label_ja": "大正袴アイドル",
+      "label_en": "Taisho-inspired idol outfit",
+      "group": "traditional",
+      "prompt": "Taisho-inspired idol outfit, high-collar blouse, fitted decorative vest, pleated hakama-style skirt, lace gloves, ankle boots, ribbon hair bow",
+      "negative": "",
+      "src": "../../assets/research/idol/idl042.jpg"
+    },
+    {
+      "code": "IDL043",
+      "source_row_uid": 2943,
+      "label_ja": "チャイナステージ",
+      "label_en": "Chinese-inspired idol costume",
+      "group": "traditional",
+      "prompt": "Chinese-inspired idol costume, fitted high-collar brocade jacket with frog closures, layered pleated skirt, detached cuffs, embroidered boots, floral hair ornaments",
+      "negative": "",
+      "src": "../../assets/research/idol/idl043.jpg"
+    },
+    {
+      "code": "IDL044",
+      "source_row_uid": 2944,
+      "label_ja": "韓服アイドル",
+      "label_en": "hanbok-inspired idol costume",
+      "group": "traditional",
+      "prompt": "hanbok-inspired idol costume, short fitted jeogori jacket, wide ribbon tie, structured layered chima-style skirt shortened for stage, white socks, embroidered shoes",
+      "negative": "",
+      "src": "../../assets/research/idol/idl044.jpg"
+    },
+    {
+      "code": "IDL045",
+      "source_row_uid": 2945,
+      "label_ja": "フラメンコアイドル",
+      "label_en": "flamenco idol dress",
+      "group": "traditional",
+      "prompt": "flamenco idol dress, fitted long-sleeve bodice, tiered diagonal ruffle skirt, wide waist sash, ruffled cuffs, dance heels, flower hair comb",
+      "negative": "",
+      "src": "../../assets/research/idol/idl045.jpg"
+    },
+    {
+      "code": "IDL046",
+      "source_row_uid": 2946,
+      "label_ja": "レヘンガステージ",
+      "label_en": "lehenga-inspired idol costume",
+      "group": "traditional",
+      "prompt": "lehenga-inspired idol costume, fitted high-neck choli-style top with full coverage, embroidered flared skirt, draped shoulder sash, bangles, embroidered boots",
+      "negative": "",
+      "src": "../../assets/research/idol/idl046.jpg"
+    },
+    {
+      "code": "IDL047",
+      "source_row_uid": 2947,
+      "label_ja": "ディアンドルアイドル",
+      "label_en": "dirndl-inspired idol dress",
+      "group": "traditional",
+      "prompt": "dirndl-inspired idol dress, fitted lace-up bodice over a puff-sleeve blouse, full pleated skirt, decorative apron, opaque knee socks, lace-up shoes",
+      "negative": "",
+      "src": "../../assets/research/idol/idl047.jpg"
+    },
+    {
+      "code": "IDL048",
+      "source_row_uid": 2948,
+      "label_ja": "フォーク刺繍ドレス",
+      "label_en": "folk-inspired idol dress",
+      "group": "traditional",
+      "prompt": "folk-inspired idol dress, embroidered fitted vest, long-sleeve white blouse, layered patterned skirt, woven sash, opaque stockings, leather ankle boots",
+      "negative": "",
+      "src": "../../assets/research/idol/idl048.jpg"
+    },
+    {
+      "code": "IDL049",
+      "source_row_uid": 2949,
+      "label_ja": "アラビアンステージ",
+      "label_en": "Arabian-inspired idol costume with full coverage",
+      "group": "traditional",
+      "prompt": "Arabian-inspired idol costume with full coverage, fitted embroidered tunic bodice, harem trousers, split overskirt panels, arm cuffs, curled-toe boots, jeweled headpiece",
+      "negative": "",
+      "src": "../../assets/research/idol/idl049.jpg"
+    },
+    {
+      "code": "IDL050",
+      "source_row_uid": 2950,
+      "label_ja": "祭り法被アイドル",
+      "label_en": "festival idol outfit",
+      "group": "traditional",
+      "prompt": "festival idol outfit, fitted short happi jacket over a wrapped stage top, wide sash, pleated shorts-skirt, wrist wraps, tabi-style boots, headband",
+      "negative": "",
+      "src": "../../assets/research/idol/idl050.jpg"
+    },
+    {
+      "code": "IDL051",
+      "source_row_uid": 2951,
+      "label_ja": "サイバーアイドル",
+      "label_en": "cyber idol costume",
+      "group": "future",
+      "prompt": "cyber idol costume, fitted tech jacket, high-neck circuit-panel bodice, pleated utility skirt, arm interfaces, platform boots, illuminated headset",
+      "negative": "",
+      "src": "../../assets/research/idol/idl051.jpg"
+    },
+    {
+      "code": "IDL052",
+      "source_row_uid": 2952,
+      "label_ja": "メカアーマーアイドル",
+      "label_en": "mecha idol costume",
+      "group": "future",
+      "prompt": "mecha idol costume, fitted armored bodice, articulated shoulder shells, segmented skirt plates over opaque undersuit, gauntlets, armored boots, mechanical headpiece",
+      "negative": "",
+      "src": "../../assets/research/idol/idl052.jpg"
+    },
+    {
+      "code": "IDL053",
+      "source_row_uid": 2953,
+      "label_ja": "スペースユニフォーム",
+      "label_en": "space-idol uniform",
+      "group": "future",
+      "prompt": "space-idol uniform, fitted full-coverage flight suit, cropped command jacket, structured belt, gloves, knee-high space boots, communication headpiece",
+      "negative": "",
+      "src": "../../assets/research/idol/idl053.jpg"
+    },
+    {
+      "code": "IDL054",
+      "source_row_uid": 2954,
+      "label_ja": "ホログラムドレス",
+      "label_en": "holographic idol dress",
+      "group": "future",
+      "prompt": "holographic idol dress, structured iridescent bodice, layered geometric skirt panels over opaque lining, sleek arm cuffs, white platform boots, prism headpiece",
+      "negative": "",
+      "src": "../../assets/research/idol/idl054.jpg"
+    },
+    {
+      "code": "IDL055",
+      "source_row_uid": 2955,
+      "label_ja": "アンドロイドドレス",
+      "label_en": "android idol costume",
+      "group": "future",
+      "prompt": "android idol costume, white segmented full-coverage bodice, detachable pleated overskirt, jointed arm guards, sleek boots, sensor tiara",
+      "negative": "",
+      "src": "../../assets/research/idol/idl055.jpg"
+    },
+    {
+      "code": "IDL056",
+      "source_row_uid": 2956,
+      "label_ja": "ジオメトリックスーツ",
+      "label_en": "geometric idol pantsuit",
+      "group": "future",
+      "prompt": "geometric idol pantsuit, sharply tailored asymmetrical jacket, fitted high-neck top, tapered trousers, angular gloves, heeled boots, sculptural headband",
+      "negative": "",
+      "src": "../../assets/research/idol/idl056.jpg"
+    },
+    {
+      "code": "IDL057",
+      "source_row_uid": 2957,
+      "label_ja": "クロックワークアイドル",
+      "label_en": "clockwork idol dress",
+      "group": "future",
+      "prompt": "clockwork idol dress, fitted brocade bodice, gear-shaped peplum, layered high-low skirt, brass gauntlets, lace-up boots, miniature gear hat",
+      "negative": "",
+      "src": "../../assets/research/idol/idl057.jpg"
+    },
+    {
+      "code": "IDL059",
+      "source_row_uid": 2959,
+      "label_ja": "エンジェリッククワイア",
+      "label_en": "choir-inspired idol costume",
+      "group": "future",
+      "prompt": "choir-inspired idol costume, fitted high-neck tunic dress, structured shoulder cape, layered ankle-length skirt, long gloves, white boots, halo-like headband",
+      "negative": "",
+      "src": "../../assets/research/idol/idl059.jpg"
+    },
+    {
+      "code": "IDL060",
+      "source_row_uid": 2960,
+      "label_ja": "マスカレードアイドル",
+      "label_en": "masquerade idol gown",
+      "group": "future",
+      "prompt": "masquerade idol gown, fitted brocade bodice, dramatic high-low layered skirt, elbow gloves, heeled boots, decorative half-mask headpiece",
+      "negative": "",
+      "src": "../../assets/research/idol/idl060.jpg"
+    }
+  ]
+}
