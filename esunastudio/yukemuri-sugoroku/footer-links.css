@@ -1,0 +1,8 @@
+.footer-links{float:right;display:flex;gap:20px}
+.footer-links a{float:none}
+.privacy-footer-link{color:#f0cf82;font-size:13px;font-weight:700;text-decoration:underline;text-underline-offset:4px}
+
+@media(max-width:520px){
+  footer .wrap{display:flex;flex-direction:column;gap:8px}
+  .footer-links{float:none;justify-content:space-between;gap:12px}
+}
