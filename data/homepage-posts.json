@@ -4,19 +4,19 @@
     "items":  [
                   {
                       "platform":  "promptcom",
-                      "published_at":  "2026-09-24T19:00:00+09:00",
-                      "age_rating":  "全年齢",
+                      "published_at":  "2026-09-24T20:00:00+09:00",
+                      "age_rating":  "R15",
                       "membership_only":  false,
                       "destination_url":  "https://prompt-com.com/ja/6954d7c84740e/",
-                      "web_image_relative_path":  "images/homepage-feed-promptcom-654398d089523043a7ce.webp"
+                      "web_image_relative_path":  "images/homepage-feed-promptcom-da6a269706a3e97975ff.webp"
                   },
                   {
                       "platform":  "painter",
-                      "published_at":  "2026-09-24T19:00:00+09:00",
-                      "age_rating":  "R18",
+                      "published_at":  "2026-09-24T20:00:00+09:00",
+                      "age_rating":  "R15",
                       "membership_only":  false,
                       "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
-                      "web_image_relative_path":  "images/homepage-feed-painter-3a1f7af6f92d5e1df479.webp"
+                      "web_image_relative_path":  "images/homepage-feed-painter-859a247376f00ef3d4d6.webp"
                   },
                   {
                       "platform":  "x",
