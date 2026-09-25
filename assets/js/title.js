@@ -100,7 +100,7 @@
 
   const shortTranslations = {
     "kurokami-kanojo": {
-      summary: { en: "A 311-image AI-generated CG collection following private moments with a black-haired girlfriend as everyday distance gradually becomes more intimate. Now available on DLsite and PromptCom.", zh: "描绘与黑发女友独处、从日常逐渐拉近距离的311张AI生成CG集。现已在DLsite与PromptCom发售。", ko: "흑발 여자친구와 단둘이 보내며 일상의 거리가 점차 가까워지는 흐름을 담은 311장 AI 생성 CG집. DLsite와 PromptCom에서 판매 중입니다." },
+      summary: { en: "A 311-image AI-generated CG collection following private moments with a black-haired girlfriend as everyday distance gradually becomes more intimate. Now available on FANZA, DLsite, and PromptCom.", zh: "描绘与黑发女友独处、从日常逐渐拉近距离的311张AI生成CG集。现已在FANZA、DLsite与PromptCom发售。", ko: "흑발 여자친구와 단둘이 보내며 일상의 거리가 점차 가까워지는 흐름을 담은 311장 AI 생성 CG집. FANZA・DLsite・PromptCom에서 판매 중입니다." },
       format: { en: "Everyday life to private moments", zh: "从日常到两人独处", ko: "일상에서 둘만의 시간으로" },
       focus: { en: "Short black hair / Girlfriend mood / Story flow", zh: "黑色短发 / 女友感 / 故事流程", ko: "짧은 흑발 / 여자친구 느낌 / 이야기 흐름" }
     },
@@ -1369,7 +1369,7 @@ chichi-puiでも、本編をご覧いただけます。
       const href = link.url || "#";
       const className = link.url ? "sales-button" : "sales-button disabled";
       const label = link.url ? link.label : `${link.label} / ${copy.unavailable}`;
-      const rel = link.url && /^https:\/\/dlaf\.jp\//.test(link.url)
+      const rel = link.url && /^(?:https:\/\/dlaf\.jp\/|https:\/\/www\.dmm\.co\.jp\/dc\/doujin\/)/.test(link.url)
         ? 'rel="noopener noreferrer sponsored"'
         : 'rel="noopener noreferrer"';
       const platform = analyticsPlatformFromUrl(link.url, link.label);

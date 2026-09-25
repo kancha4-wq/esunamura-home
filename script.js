@@ -242,6 +242,7 @@ const works = [
     imageWidth: 933,
     imageHeight: 1200,
     links: {
+      FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_823900/",
       DLsite: "https://dlaf.jp/aix/dlaf/=/t/s/link/work/aid/esunamura/id/RJ01723984.html",
       PromptCom: "https://prompt-com.com/ja/p/f0afb5ad-dfd7-4de6-854a-522e7f1c265d?rating=all"
     }
@@ -286,10 +287,10 @@ const promptcomPanels = document.querySelectorAll("[data-promptcom-panel]");
 
 const workDescriptions = {
   "kurokami-kanojo": {
-    ja: "黒髪の彼女とふたりきりで過ごす時間を、日常から少しずつ距離が近づいていく流れで描いた全311枚のAI生成CG集。DLsite・PromptComで販売中。",
-    en: "A 311-image AI-generated CG collection following private moments with a black-haired girlfriend as everyday distance gradually becomes more intimate. Now available on DLsite and PromptCom.",
-    zh: "描绘与黑发女友独处、从日常逐渐拉近距离的311张AI生成CG集。现已在DLsite与PromptCom发售。",
-    ko: "흑발 여자친구와 단둘이 보내며 일상의 거리가 점차 가까워지는 흐름을 담은 311장 AI 생성 CG집. DLsite와 PromptCom에서 판매 중입니다."
+    ja: "黒髪の彼女とふたりきりで過ごす時間を、日常から少しずつ距離が近づいていく流れで描いた全311枚のAI生成CG集。FANZA・DLsite・PromptComで販売中。",
+    en: "A 311-image AI-generated CG collection following private moments with a black-haired girlfriend as everyday distance gradually becomes more intimate. Now available on FANZA, DLsite, and PromptCom.",
+    zh: "描绘与黑发女友独处、从日常逐渐拉近距离的311张AI生成CG集。现已在FANZA、DLsite与PromptCom发售。",
+    ko: "흑발 여자친구와 단둘이 보내며 일상의 거리가 점차 가까워지는 흐름을 담은 311장 AI 생성 CG집. FANZA・DLsite・PromptCom에서 판매 중입니다."
   },
   "blonde-shrine-maiden-isekai": {
     ja: "気がつくと見知らぬ異世界。灯りのともる宿での日常から街の探索、そして“災難”へ。物語仕立ての全448枚（本編300枚＋体験版148枚）の高解像度イラスト集。DLsiteで販売中（FANZA・PromptComでも配信）。",
@@ -814,7 +815,9 @@ function createLink(label, url, workSlug) {
   link.className = "link-button";
   link.href = url;
   link.target = "_blank";
-  link.rel = "noopener noreferrer";
+  link.rel = ["FANZA", "DLsite"].includes(label)
+    ? "noopener noreferrer sponsored"
+    : "noopener noreferrer";
   link.dataset.analyticsLink = analyticsKey(label);
   link.dataset.analyticsArea = "works";
   link.dataset.analyticsWork = workSlug;
