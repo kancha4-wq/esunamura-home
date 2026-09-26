@@ -3,12 +3,20 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
-                      "platform":  "promptcom",
-                      "published_at":  "2026-09-26T22:00:00+09:00",
+                      "platform":  "chichipui",
+                      "published_at":  "2026-09-26T22:30:00+09:00",
                       "age_rating":  "R18",
+                      "membership_only":  true,
+                      "destination_url":  "https://membership.chichi-pui.com/users/esuna/membership/",
+                      "web_image_relative_path":  "images/homepage-feed-chichipui-96d3d19daf99806075b1.webp"
+                  },
+                  {
+                      "platform":  "promptcom",
+                      "published_at":  "2026-09-26T22:30:00+09:00",
+                      "age_rating":  "R15",
                       "membership_only":  false,
                       "destination_url":  "https://prompt-com.com/ja/6954d7c84740e/",
-                      "web_image_relative_path":  "images/homepage-feed-promptcom-4da7d336ece50d4abe3d.webp"
+                      "web_image_relative_path":  "images/homepage-feed-promptcom-c9e7e2daa6b971936552.webp"
                   },
                   {
                       "platform":  "painter",
@@ -25,14 +33,6 @@
                       "membership_only":  false,
                       "destination_url":  "https://www.pixiv.net/users/21257126",
                       "web_image_relative_path":  "images/homepage-feed-pixiv-7e837eacd78e055fa9a0.webp"
-                  },
-                  {
-                      "platform":  "chichipui",
-                      "published_at":  "2026-09-26T21:00:00+09:00",
-                      "age_rating":  "R18",
-                      "membership_only":  false,
-                      "destination_url":  "https://www.chichi-pui.com/users/esuna/",
-                      "web_image_relative_path":  "images/homepage-feed-chichipui-f1e7fae353ffae4ff139.webp"
                   },
                   {
                       "platform":  "patreon",
