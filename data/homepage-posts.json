@@ -4,27 +4,27 @@
     "items":  [
                   {
                       "platform":  "promptcom",
-                      "published_at":  "2026-09-27T15:00:00+09:00",
-                      "age_rating":  "全年齢",
+                      "published_at":  "2026-09-27T17:00:00+09:00",
+                      "age_rating":  "R15",
                       "membership_only":  false,
                       "destination_url":  "https://prompt-com.com/ja/6954d7c84740e/",
-                      "web_image_relative_path":  "images/homepage-feed-promptcom-9854f650b253dea4684c.webp"
+                      "web_image_relative_path":  "images/homepage-feed-promptcom-71d278d5bbfdf8dfdd95.webp"
                   },
                   {
                       "platform":  "painter",
-                      "published_at":  "2026-09-27T15:00:00+09:00",
-                      "age_rating":  "R15",
+                      "published_at":  "2026-09-27T17:00:00+09:00",
+                      "age_rating":  "R18",
                       "membership_only":  false,
                       "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
-                      "web_image_relative_path":  "images/homepage-feed-painter-42fd93f6ea687e6d7564.webp"
+                      "web_image_relative_path":  "images/homepage-feed-painter-325ebdda37f1c717f473.webp"
                   },
                   {
                       "platform":  "chichipui",
-                      "published_at":  "2026-09-27T13:00:00+09:00",
-                      "age_rating":  "R15",
+                      "published_at":  "2026-09-27T16:00:00+09:00",
+                      "age_rating":  "全年齢",
                       "membership_only":  false,
                       "destination_url":  "https://www.chichi-pui.com/users/esuna/",
-                      "web_image_relative_path":  "images/homepage-feed-chichipui-2ce717416bdd29a3b553.webp"
+                      "web_image_relative_path":  "images/homepage-feed-chichipui-fa8445c5d1ec7e0f113e.webp"
                   },
                   {
                       "platform":  "pixiv",
