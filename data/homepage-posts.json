@@ -3,28 +3,28 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
-                      "platform":  "promptcom",
-                      "published_at":  "2026-09-27T20:00:00+09:00",
-                      "age_rating":  "R15",
+                      "platform":  "chichipui",
+                      "published_at":  "2026-09-27T21:00:00+09:00",
+                      "age_rating":  "R18",
                       "membership_only":  false,
+                      "destination_url":  "https://www.chichi-pui.com/users/esuna/",
+                      "web_image_relative_path":  "images/homepage-feed-chichipui-e29685d3657b269cb7fa.webp"
+                  },
+                  {
+                      "platform":  "promptcom",
+                      "published_at":  "2026-09-27T21:00:00+09:00",
+                      "age_rating":  "R15",
+                      "membership_only":  true,
                       "destination_url":  "https://prompt-com.com/ja/6954d7c84740e/",
-                      "web_image_relative_path":  "images/homepage-feed-promptcom-49c90c88ec94ae6d9cc7.webp"
+                      "web_image_relative_path":  "images/homepage-feed-promptcom-a54c5a1d04b3f737792e.webp"
                   },
                   {
                       "platform":  "painter",
-                      "published_at":  "2026-09-27T20:00:00+09:00",
-                      "age_rating":  "R15",
+                      "published_at":  "2026-09-27T21:00:00+09:00",
+                      "age_rating":  "R18",
                       "membership_only":  false,
                       "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
-                      "web_image_relative_path":  "images/homepage-feed-painter-bc5d7097de2d140cb724.webp"
-                  },
-                  {
-                      "platform":  "chichipui",
-                      "published_at":  "2026-09-27T19:30:00+09:00",
-                      "age_rating":  "R15",
-                      "membership_only":  false,
-                      "destination_url":  "https://www.chichi-pui.com/users/esuna/",
-                      "web_image_relative_path":  "images/homepage-feed-chichipui-cbdef9f57b10d468ef92.webp"
+                      "web_image_relative_path":  "images/homepage-feed-painter-5042201ed6ed18901dbf.webp"
                   },
                   {
                       "platform":  "patreon",
