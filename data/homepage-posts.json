@@ -3,6 +3,22 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
+                      "platform":  "promptcom",
+                      "published_at":  "2026-09-28T19:00:00+09:00",
+                      "age_rating":  "全年齢",
+                      "membership_only":  false,
+                      "destination_url":  "https://prompt-com.com/ja/6954d7c84740e/",
+                      "web_image_relative_path":  "images/homepage-feed-promptcom-94454848c813a4460607.webp"
+                  },
+                  {
+                      "platform":  "painter",
+                      "published_at":  "2026-09-28T19:00:00+09:00",
+                      "age_rating":  "R18",
+                      "membership_only":  false,
+                      "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
+                      "web_image_relative_path":  "images/homepage-feed-painter-f51fdf0afd975b97f2c3.webp"
+                  },
+                  {
                       "platform":  "patreon",
                       "published_at":  "2026-09-28T18:00:00+09:00",
                       "age_rating":  "R18",
@@ -17,22 +33,6 @@
                       "membership_only":  false,
                       "destination_url":  "https://www.chichi-pui.com/users/esuna/",
                       "web_image_relative_path":  "images/homepage-feed-chichipui-f3c81cbad54dc97f6b5f.webp"
-                  },
-                  {
-                      "platform":  "promptcom",
-                      "published_at":  "2026-09-28T18:00:00+09:00",
-                      "age_rating":  "R18",
-                      "membership_only":  false,
-                      "destination_url":  "https://prompt-com.com/ja/6954d7c84740e/",
-                      "web_image_relative_path":  "images/homepage-feed-promptcom-1960c6022a214d38564b.webp"
-                  },
-                  {
-                      "platform":  "painter",
-                      "published_at":  "2026-09-28T18:00:00+09:00",
-                      "age_rating":  "R15",
-                      "membership_only":  false,
-                      "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
-                      "web_image_relative_path":  "images/homepage-feed-painter-ad7cb96e809dd4fe0ca6.webp"
                   },
                   {
                       "platform":  "pixiv",
