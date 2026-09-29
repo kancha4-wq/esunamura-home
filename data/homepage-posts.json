@@ -4,11 +4,19 @@
     "items":  [
                   {
                       "platform":  "promptcom",
-                      "published_at":  "2026-09-29T14:00:00+09:00",
-                      "age_rating":  "R15",
+                      "published_at":  "2026-09-29T15:00:00+09:00",
+                      "age_rating":  "全年齢",
                       "membership_only":  false,
                       "destination_url":  "https://prompt-com.com/ja/6954d7c84740e/",
-                      "web_image_relative_path":  "images/homepage-feed-promptcom-6cfde85e4db53c315bd3.webp"
+                      "web_image_relative_path":  "images/homepage-feed-promptcom-41e542c6fd8e9a4dcd1d.webp"
+                  },
+                  {
+                      "platform":  "painter",
+                      "published_at":  "2026-09-29T15:00:00+09:00",
+                      "age_rating":  "R15",
+                      "membership_only":  false,
+                      "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
+                      "web_image_relative_path":  "images/homepage-feed-painter-b98775f24ee7e6b663f2.webp"
                   },
                   {
                       "platform":  "chichipui",
@@ -17,14 +25,6 @@
                       "membership_only":  false,
                       "destination_url":  "https://www.chichi-pui.com/users/esuna/",
                       "web_image_relative_path":  "images/homepage-feed-chichipui-64aac7ae08d294d1d68f.webp"
-                  },
-                  {
-                      "platform":  "painter",
-                      "published_at":  "2026-09-29T13:00:00+09:00",
-                      "age_rating":  "R15",
-                      "membership_only":  false,
-                      "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
-                      "web_image_relative_path":  "images/homepage-feed-painter-c2a3d16fc71633e1d559.webp"
                   },
                   {
                       "platform":  "pixiv",
