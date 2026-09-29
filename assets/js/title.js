@@ -1403,6 +1403,27 @@ chichi-puiでも、本編をご覧いただけます。
     "summer-schoolday": "https://www.chichi-pui.com/users/esuna/"
   };
 
+  function salesGuideFor(item) {
+    if (membershipLinks[item.id]) return uiText("salesGuide");
+
+    const isPreview = item.id === "pink-haired-idol-encore";
+    const guide = isPreview
+      ? {
+          ja: "FANZAの予告ページで、作品情報と体験版を確認できます。",
+          en: "View the work details and trial on the FANZA preview page.",
+          zh: "可在FANZA预告页面查看作品信息与体验版。",
+          ko: "FANZA 예고 페이지에서 작품 정보와 체험판을 확인할 수 있습니다."
+        }
+      : {
+          ja: "各販売サイトで作品情報を確認・購入できます。",
+          en: "View details or purchase from an available store.",
+          zh: "可前往各销售平台查看作品信息或购买。",
+          ko: "각 판매처에서 작품 정보를 확인하거나 구매할 수 있습니다."
+        };
+
+    return guide[currentLang()] || guide.ja;
+  }
+
   function renderMembershipLink(item) {
     const url = membershipLinks[item.id];
     if (!url) return "";
@@ -1495,7 +1516,7 @@ chichi-puiでも、本編をご覧いただけます。
           </div>
           ${(() => {
             const salesMarkup = `${renderMembershipLink(work)}${renderSales(work)}${renderTrialLink(work)}`;
-            return salesMarkup ? `<h2>${uiText("sales")}</h2><p class="sales-guidance">${uiText("salesGuide")}</p><div class="sales-links">${salesMarkup}</div>` : "";
+            return salesMarkup ? `<h2>${uiText("sales")}</h2><p class="sales-guidance">${salesGuideFor(work)}</p><div class="sales-links">${salesMarkup}</div>` : "";
           })()}
           <div class="share-links">${renderShareButton(work)}</div>
         </div>
