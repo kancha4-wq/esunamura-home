@@ -78,6 +78,7 @@
   };
 
   const titleTranslations = {
+    "pink-haired-idol-encore": { en: "Encore Alone with the Pink-Haired Idol", zh: "与桃发偶像独处的安可时光", ko: "분홍 머리 아이돌과 단둘이 보내는 앙코르" },
     "kurokami-kanojo": { en: "My Black-Haired Girlfriend, All to Myself", zh: "独占黑发女友", ko: "흑발 여자친구를 독차지" },
     "summer-schoolday": { en: "The Day No One Comes to School", zh: "无人到来的上学日", ko: "아무도 오지 않는 등교일" },
     "kinpatsu-miko-isekai": { en: "Blonde Shrine Maiden, To Another World", zh: "金发巫女、异世界", ko: "금발 무녀, 이세계로" },
@@ -99,6 +100,11 @@
   };
 
   const shortTranslations = {
+    "pink-haired-idol-encore": {
+      summary: { en: "59 outfits, one idol. A 460-image, long-edge 4K AI-generated CG collection capturing a pink-haired idol's radiant smile and bashful expressions. A 225-image trial is available, and the title is now listed as upcoming on FANZA.", zh: "59套服装，一位偶像。收录桃发偶像在舞台上的灿烂笑容与羞涩表情，共460张、长边4K的AI生成CG集。现已公开225张体验版，并在FANZA开放预告。", ko: "59벌의 의상, 한 명의 아이돌. 무대에서 빛나는 분홍 머리 아이돌의 미소와 수줍은 표정을 담은 본편 460장·긴 변 4K AI 생성 CG집입니다. 체험판 225장을 공개했으며 FANZA에서 예고 중입니다." },
+      format: { en: "59 outfits / 460 main images / 225 trial images", zh: "59套服装 / 本篇460张 / 体验版225张", ko: "59벌 의상 / 본편 460장 / 체험판 225장" },
+      focus: { en: "Pink-haired idol / Stage / Costumes and expressions", zh: "桃发偶像 / 舞台 / 多彩服装与表情", ko: "분홍 머리 아이돌 / 무대 / 다양한 의상과 표정" }
+    },
     "kurokami-kanojo": {
       summary: { en: "A 311-image AI-generated CG collection following private moments with a black-haired girlfriend as everyday distance gradually becomes more intimate. Now available on FANZA, DLsite, and PromptCom.", zh: "描绘与黑发女友独处、从日常逐渐拉近距离的311张AI生成CG集。现已在FANZA、DLsite与PromptCom发售。", ko: "흑발 여자친구와 단둘이 보내며 일상의 거리가 점차 가까워지는 흐름을 담은 311장 AI 생성 CG집. FANZA・DLsite・PromptCom에서 판매 중입니다." },
       format: { en: "Everyday life to private moments", zh: "从日常到两人独处", ko: "일상에서 둘만의 시간으로" },
@@ -917,6 +923,16 @@ chichi-puiでも、本編をご覧いただけます。
   };
 
   const labelTranslations = {
+    "桃髪アイドル": { en: "Pink-Haired Idol", zh: "桃发偶像", ko: "분홍 머리 아이돌" },
+    "桃髪": { en: "Pink hair", zh: "桃发", ko: "분홍 머리" },
+    "アイドル": { en: "Idol", zh: "偶像", ko: "아이돌" },
+    "59衣装": { en: "59 outfits", zh: "59套服装", ko: "59벌 의상" },
+    "ステージ": { en: "Stage", zh: "舞台", ko: "무대" },
+    "表情": { en: "Expressions", zh: "表情", ko: "표정" },
+    "長辺4K": { en: "Long-edge 4K", zh: "长边4K", ko: "긴 변 4K" },
+    "笑顔": { en: "Smile", zh: "笑容", ko: "미소" },
+    "照れた表情": { en: "Bashful expressions", zh: "羞涩表情", ko: "수줍은 표정" },
+    "ふたりきりのアンコール": { en: "An encore for two", zh: "只属于两人的安可", ko: "둘만의 앙코르" },
     "彼女とふたりきり": { en: "Alone with Her", zh: "与她独处", ko: "그녀와 단둘이" },
     "黒髪": { en: "Black hair", zh: "黑发", ko: "흑발" },
     "ショートヘア": { en: "Short hair", zh: "短发", ko: "쇼트 헤어" },
@@ -1368,7 +1384,10 @@ chichi-puiでも、本編をご覧いただけます。
     return item.salesLinks.map((link) => {
       const href = link.url || "#";
       const className = link.url ? "sales-button" : "sales-button disabled";
-      const label = link.url ? link.label : `${link.label} / ${copy.unavailable}`;
+      const previewLabel = item.id === "pink-haired-idol-encore" && link.label === "FANZA"
+        ? ({ ja: "FANZA予告ページ", en: "FANZA preview page", zh: "FANZA预告页面", ko: "FANZA 예고 페이지" }[currentLang()] || "FANZA予告ページ")
+        : link.label;
+      const label = link.url ? previewLabel : `${previewLabel} / ${copy.unavailable}`;
       const rel = link.url && /^(?:https:\/\/dlaf\.jp\/|https:\/\/www\.dmm\.co\.jp\/dc\/doujin\/)/.test(link.url)
         ? 'rel="noopener noreferrer sponsored"'
         : 'rel="noopener noreferrer"';

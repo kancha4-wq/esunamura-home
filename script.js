@@ -235,6 +235,17 @@ const works = [
     }
   },
   {
+    title: { ja: "桃髪アイドルとふたりきりのアンコール", en: "Encore Alone with the Pink-Haired Idol" },
+    slug: "pink-haired-idol-encore",
+    image: "0501_改修資料/pink-haired-idol-encore/hero.jpg?v=20260929",
+    thumbnail: "0501_改修資料/pink-haired-idol-encore/cover.jpg?v=20260929",
+    imageWidth: 1000,
+    imageHeight: 1000,
+    links: {
+      FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_828545/"
+    }
+  },
+  {
     title: { ja: "黒髪彼女を独り占め", en: "My Black-Haired Girlfriend, All to Myself" },
     slug: "kurokami-kanojo",
     image: "0501_改修資料/kurokami-kanojo/cover.jpg?v=20260923",
@@ -286,6 +297,12 @@ const promptcomTabs = document.querySelectorAll("[data-promptcom-tab]");
 const promptcomPanels = document.querySelectorAll("[data-promptcom-panel]");
 
 const workDescriptions = {
+  "pink-haired-idol-encore": {
+    ja: "59の衣装、ひとりの彼女。ステージで輝く桃髪アイドルの笑顔と照れた表情を集めた、本編460枚・長辺4KのAI生成CG集。体験版225枚を公開し、FANZAで予告受付中です。",
+    en: "59 outfits, one idol. A 460-image, long-edge 4K AI-generated CG collection capturing a pink-haired idol's radiant smile and bashful expressions. A 225-image trial is available, and the title is now listed as upcoming on FANZA.",
+    zh: "59套服装，一位偶像。收录桃发偶像在舞台上的灿烂笑容与羞涩表情，共460张、长边4K的AI生成CG集。现已公开225张体验版，并在FANZA开放预告。",
+    ko: "59벌의 의상, 한 명의 아이돌. 무대에서 빛나는 분홍 머리 아이돌의 미소와 수줍은 표정을 담은 본편 460장·긴 변 4K AI 생성 CG집입니다. 체험판 225장을 공개했으며 FANZA에서 예고 중입니다."
+  },
   "kurokami-kanojo": {
     ja: "黒髪の彼女とふたりきりで過ごす時間を、日常から少しずつ距離が近づいていく流れで描いた全311枚のAI生成CG集。FANZA・DLsite・PromptComで販売中。",
     en: "A 311-image AI-generated CG collection following private moments with a black-haired girlfriend as everyday distance gradually becomes more intimate. Now available on FANZA, DLsite, and PromptCom.",
@@ -415,6 +432,7 @@ const workDescriptions = {
 };
 
 const workTitleTranslations = {
+  "pink-haired-idol-encore": { zh: "与桃发偶像独处的安可时光", ko: "분홍 머리 아이돌과 단둘이 보내는 앙코르" },
   "kurokami-kanojo": { zh: "独占黑发女友", ko: "흑발 여자친구를 독차지" },
   "blonde-shrine-maiden-isekai": { zh: "金发巫女、异世界 / Blonde Shrine Maiden, To Another World", ko: "금발 무녀, 이세계로 / Blonde Shrine Maiden, To Another World" },
   "satogaeri": { zh: "返乡 / Satogaeri", ko: "귀향 / Satogaeri" },
@@ -439,6 +457,12 @@ const workTitleTranslations = {
 };
 
 const workArchiveMeta = {
+  "pink-haired-idol-encore": {
+    count: { ja: "460枚収録", en: "460 images", zh: "收录460张", ko: "460장 수록" },
+    quality: "4K",
+    series: { ja: "桃髪アイドル", en: "Pink-Haired Idol", zh: "桃发偶像", ko: "분홍 머리 아이돌" },
+    tags: { ja: ["59衣装", "FANZA予告"], en: ["59 outfits", "FANZA preview"], zh: ["59套服装", "FANZA预告"], ko: ["59벌 의상", "FANZA 예고"] }
+  },
   "kurokami-kanojo": {
     count: { ja: "311枚収録", en: "311 images", zh: "收录311张", ko: "311장 수록" },
     quality: "4K",
@@ -580,6 +604,7 @@ const r15WorkSlugs = new Set([
 const pickupSlugs = ["erobokishin-4649", "blonde-shrine-maiden", "setouchi-omorashi-journey"];
 
 const detailPageBySlug = {
+  "pink-haired-idol-encore": "pink-haired-idol-encore",
   "kurokami-kanojo": "kurokami-kanojo",
   "blonde-shrine-maiden-isekai": "kinpatsu-miko-isekai",
   "satogaeri": "satogaeri",
@@ -603,6 +628,7 @@ const detailPageBySlug = {
 };
 
 const newReleaseLabels = {
+  "pink-haired-idol-encore": "COMING / 2026.09",
   "kurokami-kanojo": "NEW / 2026.09",
   "hikagami-school-route": "NEW / 2026.09",
   "fanart-select-r15": "NEW / 2026.07",
@@ -611,7 +637,7 @@ const newReleaseLabels = {
   "kyoto-prompt-pack": "NEW / 2026.05"
 };
 
-const worksGridPrioritySlugs = ["kurokami-kanojo", "hikagami-school-route", "summer-schoolday", "fanart-select-r15", "fanart-select", "blonde-shrine-maiden-isekai"];
+const worksGridPrioritySlugs = ["pink-haired-idol-encore", "kurokami-kanojo", "hikagami-school-route", "summer-schoolday", "fanart-select-r15", "fanart-select", "blonde-shrine-maiden-isekai"];
 
 function ratingBadgeFor(work) {
   if (allAgesWorkSlugs.has(work.slug)) return null;

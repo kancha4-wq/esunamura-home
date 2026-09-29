@@ -537,6 +537,48 @@ A school day during summer break. The quiet school echoes only with cicadas and 
     related: ["hikagami-school", "school-legs", "kinpatsu-miko-isekai"]
   },
   {
+    id: "pink-haired-idol-encore",
+    folder: "pink-haired-idol-encore",
+    title: { ja: "桃髪アイドルとふたりきりのアンコール" },
+    series: "桃髪アイドル",
+    cover: "0501_改修資料/pink-haired-idol-encore/cover.jpg?v=20260929",
+    samples: ["0501_改修資料/pink-haired-idol-encore/hero.jpg?v=20260929"],
+    count: "460枚",
+    format: "59衣装 / 本編460枚 / 体験版225枚",
+    focus: "桃髪アイドル / ステージ / 多彩な衣装と表情",
+    summary: "59の衣装、ひとりの彼女。ステージで輝く桃髪アイドルの笑顔と照れた表情を集めた、本編460枚・長辺4KのAI生成CG集。体験版225枚を公開し、FANZAで予告受付中です。",
+    description: {
+      ja: `59の衣装、ひとりの彼女。
+ステージで輝く桃髪アイドルを、今夜はすぐそばで。
+
+華やかな衣装で歌う姿、まっすぐな笑顔、ふと見せる照れた表情。ドレスや和装など、59の衣装に彩られた彼女の魅力を集めました。ステージや親密な場面まで収録した、桃髪アイドルが主役のAI生成CG集です。
+
+本編は460枚。すべて長辺4KのJPG画像で収録しています。まずは225枚の体験版で、絵柄や表情、衣装の雰囲気をお楽しみください。FANZAで予告公開中です。`,
+      en: `59 outfits, one idol.
+Tonight, the pink-haired idol shining on stage is right beside you.
+
+Her performances in glamorous costumes, bright smiles, and bashful expressions are brought together across 59 outfits, including dresses and Japanese-inspired looks. This AI-generated CG collection follows the pink-haired idol from the stage to more intimate moments.
+
+The main collection contains 460 long-edge 4K JPG images. A 225-image trial lets you preview the artwork, expressions, and costume variety. Now listed as upcoming on FANZA.`,
+      zh: `59套服装，一位偶像。
+今晚，在近距离感受舞台上闪耀的桃发偶像。
+
+华丽服装下的歌唱身姿、率真的笑容，以及偶尔流露的羞涩表情。作品汇集礼服、和装等59套造型，记录桃发偶像从舞台到亲密场景的多彩魅力。
+
+本篇共460张，全部以长边4K的JPG图片收录。可先通过225张体验版确认画风、表情与服装氛围。现已在FANZA开放预告。`,
+      ko: `59벌의 의상, 한 명의 아이돌.
+무대에서 빛나는 분홍 머리 아이돌을 오늘 밤 바로 곁에서 만나 보세요.
+
+화려한 의상으로 노래하는 모습, 환한 미소, 문득 드러나는 수줍은 표정. 드레스와 일본풍 의상 등 59벌의 모습으로 그녀의 매력을 담았습니다. 무대부터 친밀한 장면까지 분홍 머리 아이돌을 중심으로 구성한 AI 생성 CG집입니다.
+
+본편은 총 460장으로, 모두 긴 변 4K JPG 이미지입니다. 225장 체험판에서 그림체와 표정, 다양한 의상의 분위기를 먼저 확인할 수 있습니다. FANZA에서 예고 중입니다.`
+    },
+    phases: ["ステージ", "59の衣装", "笑顔", "照れた表情", "ふたりきりのアンコール"],
+    tags: ["桃髪", "アイドル", "59衣装", "ステージ", "表情", "長辺4K"],
+    salesLinks: saleLinkTemplate,
+    related: ["momoiro-baito", "kurokami-kanojo", "summer-schoolday"]
+  },
+  {
     id: "kurokami-kanojo",
     folder: "kurokami-kanojo",
     title: { ja: "黒髪彼女を独り占め" },
@@ -667,6 +709,9 @@ const salesByWorkId = {
     PromptCom: "https://prompt-com.com/ja/p/8b9b037a-07e6-4954-8972-866bcb6e7237?rating=all",
     pictSPACE: "https://pictspace.net/items/manage_detail/939145",
     DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0344449/AFID=esunamura/"
+  },
+  "pink-haired-idol-encore": {
+    FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_828545/"
   },
   "kurokami-kanojo": {
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_823900/",
