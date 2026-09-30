@@ -4,19 +4,19 @@
     "items":  [
                   {
                       "platform":  "chichipui",
-                      "published_at":  "2026-09-29T22:30:00+09:00",
-                      "age_rating":  "R18",
-                      "membership_only":  true,
-                      "destination_url":  "https://membership.chichi-pui.com/users/esuna/membership/",
-                      "web_image_relative_path":  "images/homepage-feed-chichipui-f98dfa0787f9e732e6ca.webp"
+                      "published_at":  "2026-09-30T10:00:00+09:00",
+                      "age_rating":  "全年齢",
+                      "membership_only":  false,
+                      "destination_url":  "https://www.chichi-pui.com/users/esuna/",
+                      "web_image_relative_path":  "images/homepage-feed-chichipui-6b92bcafdb3aecffe47f.webp"
                   },
                   {
                       "platform":  "promptcom",
-                      "published_at":  "2026-09-29T22:30:00+09:00",
-                      "age_rating":  "R15",
+                      "published_at":  "2026-09-30T10:00:00+09:00",
+                      "age_rating":  "全年齢",
                       "membership_only":  false,
                       "destination_url":  "https://prompt-com.com/ja/6954d7c84740e/",
-                      "web_image_relative_path":  "images/homepage-feed-promptcom-bcdf70e7eeb11292af94.webp"
+                      "web_image_relative_path":  "images/homepage-feed-promptcom-0ea8dbd0d4f811aa01af.webp"
                   },
                   {
                       "platform":  "painter",
