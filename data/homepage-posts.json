@@ -3,12 +3,20 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
-                      "platform":  "painter",
-                      "published_at":  "2026-10-02T17:00:00+09:00",
+                      "platform":  "patreon",
+                      "published_at":  "2026-10-02T18:00:00+09:00",
                       "age_rating":  "R18",
                       "membership_only":  true,
-                      "destination_url":  "https://painter-ai.ai/ja/membership_rooms/a9a7be76-6c2b-4c23-a192-c309b1122209",
-                      "web_image_relative_path":  "images/homepage-feed-painter-8e02738c15505266e096.webp"
+                      "destination_url":  "https://www.patreon.com/esunamura/posts/171116369",
+                      "web_image_relative_path":  "images/homepage-feed-patreon-0df6b9717c30376d3287.webp"
+                  },
+                  {
+                      "platform":  "painter",
+                      "published_at":  "2026-10-02T18:00:00+09:00",
+                      "age_rating":  "R15",
+                      "membership_only":  false,
+                      "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
+                      "web_image_relative_path":  "images/homepage-feed-painter-ad7317b2acb0d86361fc.webp"
                   },
                   {
                       "platform":  "pixiv",
@@ -17,14 +25,6 @@
                       "membership_only":  false,
                       "destination_url":  "https://www.pixiv.net/users/21257126",
                       "web_image_relative_path":  "images/homepage-feed-pixiv-74147ae7806684da2da7.webp"
-                  },
-                  {
-                      "platform":  "patreon",
-                      "published_at":  "2026-10-02T12:00:00+09:00",
-                      "age_rating":  "R18",
-                      "membership_only":  true,
-                      "destination_url":  "https://www.patreon.com/esunamura/posts/171116251",
-                      "web_image_relative_path":  "images/homepage-feed-patreon-c690146776a76b023ba8.webp"
                   },
                   {
                       "platform":  "chichipui",
