@@ -3,20 +3,20 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
+                      "platform":  "painter",
+                      "published_at":  "2026-10-02T19:00:00+09:00",
+                      "age_rating":  "R18",
+                      "membership_only":  false,
+                      "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
+                      "web_image_relative_path":  "images/homepage-feed-painter-f379d95810ef55257c64.webp"
+                  },
+                  {
                       "platform":  "patreon",
                       "published_at":  "2026-10-02T18:00:00+09:00",
                       "age_rating":  "R18",
                       "membership_only":  true,
                       "destination_url":  "https://www.patreon.com/esunamura/posts/171116369",
                       "web_image_relative_path":  "images/homepage-feed-patreon-0df6b9717c30376d3287.webp"
-                  },
-                  {
-                      "platform":  "painter",
-                      "published_at":  "2026-10-02T18:00:00+09:00",
-                      "age_rating":  "R15",
-                      "membership_only":  false,
-                      "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
-                      "web_image_relative_path":  "images/homepage-feed-painter-ad7317b2acb0d86361fc.webp"
                   },
                   {
                       "platform":  "pixiv",
