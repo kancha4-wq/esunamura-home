@@ -4,11 +4,11 @@
     "items":  [
                   {
                       "platform":  "painter",
-                      "published_at":  "2026-10-02T20:00:00+09:00",
-                      "age_rating":  "R15",
+                      "published_at":  "2026-10-02T21:00:00+09:00",
+                      "age_rating":  "R18",
                       "membership_only":  false,
                       "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
-                      "web_image_relative_path":  "images/homepage-feed-painter-4fee4490e37ce1188e3f.webp"
+                      "web_image_relative_path":  "images/homepage-feed-painter-50c0be08dc6f7ee46557.webp"
                   },
                   {
                       "platform":  "patreon",
