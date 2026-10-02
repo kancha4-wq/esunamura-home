@@ -3,6 +3,22 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
+                      "platform":  "painter",
+                      "published_at":  "2026-10-02T13:00:00+09:00",
+                      "age_rating":  "R15",
+                      "membership_only":  false,
+                      "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
+                      "web_image_relative_path":  "images/homepage-feed-painter-28642c6832b4bb39f553.webp"
+                  },
+                  {
+                      "platform":  "pixiv",
+                      "published_at":  "2026-10-02T12:30:00+09:00",
+                      "age_rating":  "全年齢",
+                      "membership_only":  false,
+                      "destination_url":  "https://www.pixiv.net/users/21257126",
+                      "web_image_relative_path":  "images/homepage-feed-pixiv-74147ae7806684da2da7.webp"
+                  },
+                  {
                       "platform":  "patreon",
                       "published_at":  "2026-10-02T12:00:00+09:00",
                       "age_rating":  "R18",
@@ -11,28 +27,12 @@
                       "web_image_relative_path":  "images/homepage-feed-patreon-c690146776a76b023ba8.webp"
                   },
                   {
-                      "platform":  "painter",
-                      "published_at":  "2026-10-02T12:00:00+09:00",
-                      "age_rating":  "R15",
-                      "membership_only":  false,
-                      "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
-                      "web_image_relative_path":  "images/homepage-feed-painter-71023cfb9d7b4361668c.webp"
-                  },
-                  {
                       "platform":  "chichipui",
                       "published_at":  "2026-10-01T22:30:00+09:00",
                       "age_rating":  "R18",
                       "membership_only":  true,
                       "destination_url":  "https://membership.chichi-pui.com/users/esuna/membership/",
                       "web_image_relative_path":  "images/homepage-feed-chichipui-b579a63b63e9a4d18e5a.webp"
-                  },
-                  {
-                      "platform":  "pixiv",
-                      "published_at":  "2026-10-01T21:30:00+09:00",
-                      "age_rating":  "R18",
-                      "membership_only":  false,
-                      "destination_url":  "https://www.pixiv.net/users/21257126",
-                      "web_image_relative_path":  "images/homepage-feed-pixiv-c4b8e6ec71b4aa0f23a2.webp"
                   },
                   {
                       "platform":  "promptcom",
