@@ -101,7 +101,7 @@
 
   const shortTranslations = {
     "pink-haired-idol-encore": {
-      summary: { en: "59 outfits, one idol. A 460-image, long-edge 4K AI-generated CG collection capturing a pink-haired idol's radiant smile and bashful expressions. A 225-image trial is available. Now on sale at DLsite and listed as upcoming on FANZA.", zh: "59套服装，一位偶像。收录桃发偶像在舞台上的灿烂笑容与羞涩表情，共460张、长边4K的AI生成CG集。现已公开225张体验版，并于DLsite发售、在FANZA开放预告。", ko: "59벌의 의상, 한 명의 아이돌. 무대에서 빛나는 분홍 머리 아이돌의 미소와 수줍은 표정을 담은 본편 460장·긴 변 4K AI 생성 CG집입니다. 체험판 225장을 공개했으며 DLsite에서 판매 중, FANZA에서 예고 중입니다." },
+      summary: { en: "59 outfits, one idol. A 460-image, long-edge 4K AI-generated CG collection capturing a pink-haired idol's radiant smile and bashful expressions. A 225-image trial is available. Now on sale at FANZA and DLsite.", zh: "59套服装，一位偶像。收录桃发偶像在舞台上的灿烂笑容与羞涩表情，共460张、长边4K的AI生成CG集。现已公开225张体验版，并于FANZA和DLsite发售。", ko: "59벌의 의상, 한 명의 아이돌. 무대에서 빛나는 분홍 머리 아이돌의 미소와 수줍은 표정을 담은 본편 460장·긴 변 4K AI 생성 CG집입니다. 체험판 225장을 공개했으며 FANZA・DLsite에서 판매 중입니다." },
       format: { en: "59 outfits / 460 main images / 225 trial images", zh: "59套服装 / 本篇460张 / 体验版225张", ko: "59벌 의상 / 본편 460장 / 체험판 225장" },
       focus: { en: "Pink-haired idol / Stage / Costumes and expressions", zh: "桃发偶像 / 舞台 / 多彩服装与表情", ko: "분홍 머리 아이돌 / 무대 / 다양한 의상과 표정" }
     },
@@ -1384,10 +1384,7 @@ chichi-puiでも、本編をご覧いただけます。
     return item.salesLinks.map((link) => {
       const href = link.url || "#";
       const className = link.url ? "sales-button" : "sales-button disabled";
-      const previewLabel = item.id === "pink-haired-idol-encore" && link.label === "FANZA"
-        ? ({ ja: "FANZA予告ページ", en: "FANZA preview page", zh: "FANZA预告页面", ko: "FANZA 예고 페이지" }[currentLang()] || "FANZA予告ページ")
-        : link.label;
-      const label = link.url ? previewLabel : `${previewLabel} / ${copy.unavailable}`;
+      const label = link.url ? link.label : `${link.label} / ${copy.unavailable}`;
       const rel = link.url && /^(?:https:\/\/dlaf\.jp\/|https:\/\/www\.dmm\.co\.jp\/dc\/doujin\/)/.test(link.url)
         ? 'rel="noopener noreferrer sponsored"'
         : 'rel="noopener noreferrer"';
@@ -1406,20 +1403,12 @@ chichi-puiでも、本編をご覧いただけます。
   function salesGuideFor(item) {
     if (membershipLinks[item.id]) return uiText("salesGuide");
 
-    const isPinkIdol = item.id === "pink-haired-idol-encore";
-    const guide = isPinkIdol
-      ? {
-          ja: "DLsiteで購入できます。FANZAの予告ページでは作品情報と体験版を確認できます。",
-          en: "Purchase on DLsite, or view the work details and trial on the FANZA preview page.",
-          zh: "可在DLsite购买，也可在FANZA预告页面查看作品信息与体验版。",
-          ko: "DLsite에서 구매하거나 FANZA 예고 페이지에서 작품 정보와 체험판을 확인할 수 있습니다."
-        }
-      : {
-          ja: "各販売サイトで作品情報を確認・購入できます。",
-          en: "View details or purchase from an available store.",
-          zh: "可前往各销售平台查看作品信息或购买。",
-          ko: "각 판매처에서 작품 정보를 확인하거나 구매할 수 있습니다."
-        };
+    const guide = {
+      ja: "各販売サイトで作品情報を確認・購入できます。",
+      en: "View details or purchase from an available store.",
+      zh: "可前往各销售平台查看作品信息或购买。",
+      ko: "각 판매처에서 작품 정보를 확인하거나 구매할 수 있습니다."
+    };
 
     return guide[currentLang()] || guide.ja;
   }

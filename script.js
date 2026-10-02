@@ -299,10 +299,10 @@ const promptcomPanels = document.querySelectorAll("[data-promptcom-panel]");
 
 const workDescriptions = {
   "pink-haired-idol-encore": {
-    ja: "59の衣装、ひとりの彼女。ステージで輝く桃髪アイドルの笑顔と照れた表情を集めた、本編460枚・長辺4KのAI生成CG集。体験版225枚を公開。DLsiteで販売中、FANZAで予告受付中です。",
-    en: "59 outfits, one idol. A 460-image, long-edge 4K AI-generated CG collection capturing a pink-haired idol's radiant smile and bashful expressions. A 225-image trial is available. Now on sale at DLsite and listed as upcoming on FANZA.",
-    zh: "59套服装，一位偶像。收录桃发偶像在舞台上的灿烂笑容与羞涩表情，共460张、长边4K的AI生成CG集。现已公开225张体验版，并于DLsite发售、在FANZA开放预告。",
-    ko: "59벌의 의상, 한 명의 아이돌. 무대에서 빛나는 분홍 머리 아이돌의 미소와 수줍은 표정을 담은 본편 460장·긴 변 4K AI 생성 CG집입니다. 체험판 225장을 공개했으며 DLsite에서 판매 중, FANZA에서 예고 중입니다."
+    ja: "59の衣装、ひとりの彼女。ステージで輝く桃髪アイドルの笑顔と照れた表情を集めた、本編460枚・長辺4KのAI生成CG集。体験版225枚を公開。FANZA・DLsiteで販売中です。",
+    en: "59 outfits, one idol. A 460-image, long-edge 4K AI-generated CG collection capturing a pink-haired idol's radiant smile and bashful expressions. A 225-image trial is available. Now on sale at FANZA and DLsite.",
+    zh: "59套服装，一位偶像。收录桃发偶像在舞台上的灿烂笑容与羞涩表情，共460张、长边4K的AI生成CG集。现已公开225张体验版，并于FANZA和DLsite发售。",
+    ko: "59벌의 의상, 한 명의 아이돌. 무대에서 빛나는 분홍 머리 아이돌의 미소와 수줍은 표정을 담은 본편 460장·긴 변 4K AI 생성 CG집입니다. 체험판 225장을 공개했으며 FANZA・DLsite에서 판매 중입니다."
   },
   "kurokami-kanojo": {
     ja: "黒髪の彼女とふたりきりで過ごす時間を、日常から少しずつ距離が近づいていく流れで描いた全311枚のAI生成CG集。FANZA・DLsite・PromptComで販売中。",
