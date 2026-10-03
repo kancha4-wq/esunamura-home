@@ -6,7 +6,7 @@
     x: "X",
     patreon: "Patreon",
     chichipui: "chichi-pui",
-    promptcom: "PromptCom",
+    promptcom: "Aniborn",
     pixiv: "pixiv",
     painter: "pAInter",
   };

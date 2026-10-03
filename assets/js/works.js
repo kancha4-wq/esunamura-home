@@ -21,7 +21,7 @@ const saleLinkTemplate = [
   { label: "DiGiket", url: "" },
   { label: "pictSPACE", url: "" },
   { label: "BOOTH", url: "" },
-  { label: "PromptCom", url: "" }
+  { label: "Aniborn", url: "" }
 ];
 
 function pathFor(folder, type, filename) {
@@ -476,7 +476,7 @@ The images move through morning streets, stairs, classrooms, and small daily mom
     count: "448枚",
     format: "日常 → 探索 → 災難 → 余韻",
     focus: "異世界の宿 / 街の探索 / 物語仕立て",
-    summary: "気がつくと見知らぬ異世界。灯りのともる宿での日常から街の探索、そして“災難”へ。物語仕立ての全448枚（本編300枚＋体験版148枚）の高解像度イラスト集。DLsiteで販売中（FANZA・PromptComでも配信）。",
+    summary: "気がつくと見知らぬ異世界。灯りのともる宿での日常から街の探索、そして“災難”へ。物語仕立ての全448枚（本編300枚＋体験版148枚）の高解像度イラスト集。DLsiteで販売中（FANZA・Anibornでも配信）。",
     description: {
       ja: `気がつくと、そこは見知らぬ異世界――。
 
@@ -518,15 +518,15 @@ In total the collection contains 448 high-resolution images — 300 main images 
     count: "327枚",
     format: "夏の教室 → 夕暮れの別れ",
     focus: "夏休みの登校日 / 3人のヒロイン / 物語仕立て",
-    summary: "夏休みの登校日、誰もいない教室で彼女とふたりきり。同じシチュエーションを3人のヒロインそれぞれで描いた物語仕立ての高解像度CG集。全327枚（1ヒロイン109枚×3人）。FANZA・DLsite・DiGiket・PromptCom で販売中。chichi-puiでも、本編をご覧いただけます。",
+    summary: "夏休みの登校日、誰もいない教室で彼女とふたりきり。同じシチュエーションを3人のヒロインそれぞれで描いた物語仕立ての高解像度CG集。全327枚（1ヒロイン109枚×3人）。FANZA・DLsite・DiGiket・Aniborn で販売中。chichi-puiでも、本編をご覧いただけます。",
     description: {
-      ja: `本作品は、FANZA・DLsite・DiGiket・PromptCom で販売中のCG・イラスト集です。
+      ja: `本作品は、FANZA・DLsite・DiGiket・Aniborn で販売中のCG・イラスト集です。
 chichi-puiでも、本編をご覧いただけます。
 
 夏休みの登校日。静まり返った校舎に響くのは、蝉の声と、ふたりの気配だけ。教室で待っていた彼女と、いつもより少し近い距離で過ごす午後――。
 
 真夏の光が夕暮れへ変わるまで、誰にも邪魔されない、ふたりだけの時間がゆっくりと進んでいきます。本作は、ひとつのシチュエーションを3人のヒロインそれぞれで描いた、物語仕立ての高解像度CG・イラスト集です。`,
-      en: `A story-style, high-resolution CG collection now on sale at FANZA, DLsite, DiGiket, and PromptCom.
+      en: `A story-style, high-resolution CG collection now on sale at FANZA, DLsite, DiGiket, and Aniborn.
 The full collection is also available on chichi-pui.
 
 A school day during summer break. The quiet school echoes only with cicadas and the presence of the two of you. She was waiting in the classroom, and the afternoon passes at a slightly closer distance than usual — until the midsummer light turns to dusk.`
@@ -610,28 +610,28 @@ The main collection contains 460 long-edge 4K JPG images. A 225-image trial lets
     count: "311枚",
     format: "日常 → ふたりきり → 近づく距離",
     focus: "黒髪ショート / 彼女感 / 物語仕立て",
-    summary: "黒髪の彼女とふたりきりで過ごす時間を、日常から少しずつ距離が近づいていく流れで描いた全311枚のAI生成CG集。FANZA・DLsite・PromptComで販売中。",
+    summary: "黒髪の彼女とふたりきりで過ごす時間を、日常から少しずつ距離が近づいていく流れで描いた全311枚のAI生成CG集。FANZA・DLsite・Anibornで販売中。",
     description: {
       ja: `黒髪の彼女とふたりきりで過ごす時間を描いた、全311枚のAI生成CG集です。
 
 街歩きの自然な表情や何気ない日常から、ふたりだけの時間へ。少しずつ距離が近づき、彼女の雰囲気が変わっていく流れを、物語を読み進めるように楽しめる構成にしています。
 
-短い黒髪、やわらかな表情、身近な彼女らしさを軸に、日常の空気と親密な場面のコントラストをまとめました。FANZA・DLsite・PromptComで販売中です。`,
+短い黒髪、やわらかな表情、身近な彼女らしさを軸に、日常の空気と親密な場面のコントラストをまとめました。FANZA・DLsite・Anibornで販売中です。`,
       en: `A 311-image AI-generated CG collection centered on private moments with a black-haired girlfriend.
 
 The sequence moves from natural expressions during an everyday walk into time shared by the two of you. Her mood gradually changes as the distance closes, creating a story-like flow from one scene to the next.
 
-Short black hair, gentle expressions, and a familiar girlfriend-like presence shape the collection. Now available on FANZA, DLsite, and PromptCom.`,
+Short black hair, gentle expressions, and a familiar girlfriend-like presence shape the collection. Now available on FANZA, DLsite, and Aniborn.`,
       zh: `这是一部收录311张图片的AI生成CG集，描绘与黑发女友独处的时光。
 
 从街头散步时自然的表情和日常片段，到只属于两人的时间。随着距离一点点拉近，她的氛围也逐渐变化，整体以如同阅读故事般的流程编排。
 
-作品以黑色短发、柔和表情与亲近的女友感为核心，展现日常空气与亲密场景之间的对比。现已在FANZA、DLsite与PromptCom发售。`,
+作品以黑色短发、柔和表情与亲近的女友感为核心，展现日常空气与亲密场景之间的对比。现已在FANZA、DLsite与Aniborn发售。`,
       ko: `흑발 여자친구와 단둘이 보내는 시간을 담은 311장 구성의 AI 생성 CG집입니다.
 
 거리 산책에서 보이는 자연스러운 표정과 평범한 일상에서 시작해, 둘만의 시간으로 이어집니다. 거리가 조금씩 가까워지며 그녀의 분위기가 달라지는 흐름을 이야기처럼 감상할 수 있도록 구성했습니다.
 
-짧은 흑발, 부드러운 표정, 친근한 여자친구의 느낌을 중심으로 일상의 공기와 친밀한 장면의 대비를 담았습니다. FANZA・DLsite・PromptCom에서 판매 중입니다.`
+짧은 흑발, 부드러운 표정, 친근한 여자친구의 느낌을 중심으로 일상의 공기와 친밀한 장면의 대비를 담았습니다. FANZA・DLsite・Aniborn에서 판매 중입니다.`
     },
     phases: ["日常", "街歩き", "ふたりきり", "近づく距離"],
     tags: ["黒髪", "ショートヘア", "彼女感", "日常", "物語仕立て"],
@@ -649,86 +649,86 @@ const salesByWorkId = {
     pictSPACE: "https://pictspace.net/items/manage_detail/837289",
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_745411/",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01591984.html",
-    PromptCom: "https://prompt-com.com/ja/s/c3479669-23c9-4236-a771-0a9ac78cecc2"
+    Aniborn: "https://aniborn.com/ja/s/c3479669-23c9-4236-a771-0a9ac78cecc2"
   },
   "eroboxin-4649": {
     pictSPACE: "https://pictspace.net/items/manage_detail/851348",
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_758170/",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01612902.html",
-    PromptCom: "https://prompt-com.com/ja/s/989fda92-21f4-49b3-bf70-8cb7adc2dd61",
+    Aniborn: "https://aniborn.com/ja/s/989fda92-21f4-49b3-bf70-8cb7adc2dd61",
     DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0337471/AFID=esunamura/"
   },
   "eroboxin-akane": {
     pictSPACE: "https://pictspace.net/items/manage_detail/858788",
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_763759/",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01622810.html",
-    PromptCom: "https://prompt-com.com/ja/s/7073b5d6-4b35-4c77-a0d5-eefb11932083",
+    Aniborn: "https://aniborn.com/ja/s/7073b5d6-4b35-4c77-a0d5-eefb11932083",
     DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0337472/AFID=esunamura/"
   },
   "shizuku-record": {
     pictSPACE: "https://pictspace.net/items/manage_detail/838092",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01604402.html",
-    PromptCom: "https://prompt-com.com/ja/s/4713754c-96db-405c-aa16-d6abfc873421"
+    Aniborn: "https://aniborn.com/ja/s/4713754c-96db-405c-aa16-d6abfc873421"
   },
   hikagami: {
     pictSPACE: "https://pictspace.net/items/manage_detail/838048",
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_744243/",
-    PromptCom: "https://prompt-com.com/ja/s/d76883e7-c094-465c-9874-2afb7379e2f0"
+    Aniborn: "https://aniborn.com/ja/s/d76883e7-c094-465c-9874-2afb7379e2f0"
   },
   "hikagami-school": {
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_772274/",
     pictSPACE: "https://pictspace.net/items/manage_detail/845880",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01628452.html",
-    PromptCom: "https://prompt-com.com/ja/s/f4785b95-8fb8-4330-a96e-5487eaf39887"
+    Aniborn: "https://aniborn.com/ja/s/f4785b95-8fb8-4330-a96e-5487eaf39887"
   },
   "kinpatsu-miko": {
     pictSPACE: "https://pictspace.net/items/manage_detail/838067",
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_746695/",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01591986.html",
-    PromptCom: "https://prompt-com.com/ja/s/b2709d2b-7b6d-4156-9e75-cd6f7c6686d2",
+    Aniborn: "https://aniborn.com/ja/s/b2709d2b-7b6d-4156-9e75-cd6f7c6686d2",
     DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0337791/AFID=esunamura/"
   },
   "ancient-capital-beauty": {
     pictSPACE: "https://pictspace.net/items/manage_detail/838029",
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_743522/",
-    PromptCom: "https://prompt-com.com/ja/s/024ed546-b71b-4cda-afa4-5d2548f86dbd"
+    Aniborn: "https://aniborn.com/ja/s/024ed546-b71b-4cda-afa4-5d2548f86dbd"
   },
   "momoiro-baito": {
     pictSPACE: "https://pictspace.net/items/manage_detail/838081",
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_751890/",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01601145.html",
-    PromptCom: "https://prompt-com.com/ja/s/ddd231f2-060b-4f1c-a8af-f197c89f5073",
+    Aniborn: "https://aniborn.com/ja/s/ddd231f2-060b-4f1c-a8af-f197c89f5073",
     DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0337792/AFID=esunamura/"
   },
   satogaeri: {
     pictSPACE: "https://pictspace.net/items/manage_detail/837195",
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_741847/",
-    PromptCom: "https://prompt-com.com/ja/s/361fdc2f-feb2-4de2-b4a6-e6f94807f074"
+    Aniborn: "https://aniborn.com/ja/s/361fdc2f-feb2-4de2-b4a6-e6f94807f074"
   },
   gokujiri: {
     pictSPACE: "https://pictspace.net/items/manage_detail/838060",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01605513.html",
-    PromptCom: "https://prompt-com.com/ja/s/d2adcab1-91eb-491d-b1d8-0133e0c9b04e"
+    Aniborn: "https://aniborn.com/ja/s/d2adcab1-91eb-491d-b1d8-0133e0c9b04e"
   },
   "okinawa-soso": {
     pictSPACE: "https://pictspace.net/items/manage_detail/838076",
-    PromptCom: "https://prompt-com.com/ja/p/f2af63ce-b2f8-4c6d-ad0b-8340319531c4"
+    Aniborn: "https://aniborn.com/ja/p/f2af63ce-b2f8-4c6d-ad0b-8340319531c4"
   },
   "hokkaido-omorashi": {
     pictSPACE: "https://pictspace.net/items/manage_detail/838061",
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_745765/",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01591976.html",
-    PromptCom: "https://prompt-com.com/ja/p/2cbff6cf-bb88-4a78-8af0-cb43c5227164"
+    Aniborn: "https://aniborn.com/ja/p/2cbff6cf-bb88-4a78-8af0-cb43c5227164"
   },
   "kinpatsu-miko-isekai": {
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_784862/",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01658559.html",
-    PromptCom: "https://prompt-com.com/ja/p/fcea3420-06fc-4a52-b3ff-1cf4343f588b"
+    Aniborn: "https://aniborn.com/ja/p/fcea3420-06fc-4a52-b3ff-1cf4343f588b"
   },
   "summer-schoolday": {
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_796353/",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01677590.html",
-    PromptCom: "https://prompt-com.com/ja/p/8b9b037a-07e6-4954-8972-866bcb6e7237?rating=all",
+    Aniborn: "https://aniborn.com/ja/p/8b9b037a-07e6-4954-8972-866bcb6e7237?rating=all",
     pictSPACE: "https://pictspace.net/items/manage_detail/939145",
     DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0344449/AFID=esunamura/"
   },
@@ -739,14 +739,14 @@ const salesByWorkId = {
   "kurokami-kanojo": {
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_823900/",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/s/link/work/aid/esunamura/id/RJ01723984.html",
-    PromptCom: "https://prompt-com.com/ja/p/f0afb5ad-dfd7-4de6-854a-522e7f1c265d?rating=all"
+    Aniborn: "https://aniborn.com/ja/p/f0afb5ad-dfd7-4de6-854a-522e7f1c265d?rating=all"
   }
 };
 
 works.forEach((work) => {
   const sales = salesByWorkId[work.id];
   if (!sales) return;
-  const priority = ["FANZA", "DLsite", "DiGiket", "pictSPACE", "BOOTH", "PromptCom"];
+  const priority = ["FANZA", "DLsite", "DiGiket", "pictSPACE", "BOOTH", "Aniborn"];
   work.salesLinks = priority
     .filter((label) => sales[label])
     .map((label) => ({ label, url: sales[label] }));

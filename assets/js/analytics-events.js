@@ -69,7 +69,7 @@
     if (host.includes("dmm.co.jp")) return "fanza";
     if (host.includes("digiket.com")) return "digiket";
     if (host.includes("pictspace.net")) return "pictspace";
-    if (host.includes("prompt-com.com")) return "promptcom";
+    if (host.includes("aniborn.com")) return "promptcom";
     if (host.includes("painter-ai.ai")) return "painter";
     if (host.includes("booth.pm")) return "booth";
     if (host.includes("pixiv.net")) return "pixiv";

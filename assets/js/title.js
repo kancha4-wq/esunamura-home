@@ -106,17 +106,17 @@
       focus: { en: "Pink-haired idol / Stage / Costumes and expressions", zh: "桃发偶像 / 舞台 / 多彩服装与表情", ko: "분홍 머리 아이돌 / 무대 / 다양한 의상과 표정" }
     },
     "kurokami-kanojo": {
-      summary: { en: "A 311-image AI-generated CG collection following private moments with a black-haired girlfriend as everyday distance gradually becomes more intimate. Now available on FANZA, DLsite, and PromptCom.", zh: "描绘与黑发女友独处、从日常逐渐拉近距离的311张AI生成CG集。现已在FANZA、DLsite与PromptCom发售。", ko: "흑발 여자친구와 단둘이 보내며 일상의 거리가 점차 가까워지는 흐름을 담은 311장 AI 생성 CG집. FANZA・DLsite・PromptCom에서 판매 중입니다." },
+      summary: { en: "A 311-image AI-generated CG collection following private moments with a black-haired girlfriend as everyday distance gradually becomes more intimate. Now available on FANZA, DLsite, and Aniborn.", zh: "描绘与黑发女友独处、从日常逐渐拉近距离的311张AI生成CG集。现已在FANZA、DLsite与Aniborn发售。", ko: "흑발 여자친구와 단둘이 보내며 일상의 거리가 점차 가까워지는 흐름을 담은 311장 AI 생성 CG집. FANZA・DLsite・Aniborn에서 판매 중입니다." },
       format: { en: "Everyday life to private moments", zh: "从日常到两人独处", ko: "일상에서 둘만의 시간으로" },
       focus: { en: "Short black hair / Girlfriend mood / Story flow", zh: "黑色短发 / 女友感 / 故事流程", ko: "짧은 흑발 / 여자친구 느낌 / 이야기 흐름" }
     },
     "summer-schoolday": {
-      summary: { en: "Alone with her in an empty summer classroom — a story-style high-res CG collection portraying one situation through three heroines. 327 images total (109 per heroine x 3). Now on sale at FANZA, DLsite, DiGiket, and PromptCom. The full collection is also available on chichi-pui.", zh: "在无人的夏日教室与她独处——以三位女主角描绘同一情境的故事感高分辨率CG集。全327张（每位109张×3人）。现已在 FANZA、DLsite、DiGiket、PromptCom 发售。也可在 chichi-pui 浏览完整版。", ko: "아무도 없는 여름 교실에서 그녀와 단둘이 — 하나의 상황을 3명의 히로인으로 그린 이야기형 고해상도 CG집. 총 327장(히로인당 109장×3). FANZA・DLsite・DiGiket・PromptCom에서 판매 중. chichi-pui에서도 본편을 보실 수 있습니다." },
+      summary: { en: "Alone with her in an empty summer classroom — a story-style high-res CG collection portraying one situation through three heroines. 327 images total (109 per heroine x 3). Now on sale at FANZA, DLsite, DiGiket, and Aniborn. The full collection is also available on chichi-pui.", zh: "在无人的夏日教室与她独处——以三位女主角描绘同一情境的故事感高分辨率CG集。全327张（每位109张×3人）。现已在 FANZA、DLsite、DiGiket、Aniborn 发售。也可在 chichi-pui 浏览完整版。", ko: "아무도 없는 여름 교실에서 그녀와 단둘이 — 하나의 상황을 3명의 히로인으로 그린 이야기형 고해상도 CG집. 총 327장(히로인당 109장×3). FANZA・DLsite・DiGiket・Aniborn에서 판매 중. chichi-pui에서도 본편을 보실 수 있습니다." },
       format: { en: "Summer classroom to a dusk farewell", zh: "从夏日教室到黄昏告别", ko: "여름 교실에서 황혼의 이별까지" },
       focus: { en: "Summer school day / 3 heroines / Story format", zh: "夏日上学日 / 三位女主 / 故事形式", ko: "여름 등교일 / 3인 히로인 / 이야기 구성" }
     },
     "kinpatsu-miko-isekai": {
-      summary: { en: "A story-style isekai CG collection: from inn-side daily life to town exploration and an unavoidable calamity. 448 high-res images in total (300 main + 148 trial). On sale now at DLsite (also available on FANZA and PromptCom).", zh: "故事感异世界CG集：从旅店日常到街区探索，再到无法回避的“灾难”。全448张高分辨率（本篇300张＋体验版148张）。现已在 DLsite 发售（FANZA・PromptCom 亦有上架）。", ko: "이야기형 이세계 CG집: 여관에서의 일상부터 거리 탐색, 피할 수 없는 ‘재난’까지. 총 448장 고해상도(본편 300장＋체험판 148장). DLsite에서 판매 중(FANZA·PromptCom에서도 이용 가능)." },
+      summary: { en: "A story-style isekai CG collection: from inn-side daily life to town exploration and an unavoidable calamity. 448 high-res images in total (300 main + 148 trial). On sale now at DLsite (also available on FANZA and Aniborn).", zh: "故事感异世界CG集：从旅店日常到街区探索，再到无法回避的“灾难”。全448张高分辨率（本篇300张＋体验版148张）。现已在 DLsite 发售（FANZA・Aniborn 亦有上架）。", ko: "이야기형 이세계 CG집: 여관에서의 일상부터 거리 탐색, 피할 수 없는 ‘재난’까지. 총 448장 고해상도(본편 300장＋체험판 148장). DLsite에서 판매 중(FANZA·Aniborn에서도 이용 가능)." },
       format: { en: "Daily life, exploration, calamity, afterglow", zh: "日常 / 探索 / 灾难 / 余韵", ko: "일상 / 탐색 / 재난 / 여운" },
       focus: { en: "Isekai inn / Town exploration / Story format", zh: "异世界旅店 / 街区探索 / 故事形式", ko: "이세계 여관 / 거리 탐색 / 이야기 구성" }
     },
@@ -166,7 +166,7 @@
 
   const longDescriptionTranslations = {
     "summer-schoolday": {
-      en: `A story-style, high-resolution CG / illustration collection now on sale at FANZA, DLsite, DiGiket, and PromptCom.
+      en: `A story-style, high-resolution CG / illustration collection now on sale at FANZA, DLsite, DiGiket, and Aniborn.
 The full collection is also available on chichi-pui.
 
 A school day during summer break. The quiet school building echoes only with cicadas and the presence of the two of you. She was waiting in the classroom, and the afternoon passes at a slightly closer distance than usual.
@@ -184,7 +184,7 @@ Until the midsummer light turns to dusk, undisturbed time flows gently for just 
 - Image size: 3185x4096 (high resolution)
 
 You can buy or view it at each store's product page.`,
-      zh: `本作品现于 FANZA・DLsite・DiGiket・PromptCom 发售中，是一部故事感的高分辨率 CG・插画集。
+      zh: `本作品现于 FANZA・DLsite・DiGiket・Aniborn 发售中，是一部故事感的高分辨率 CG・插画集。
 也可在 chichi-pui 浏览完整版。
 
 暑假中的上学日。寂静的校舍里，回响的只有蝉鸣与两人的气息。在教室里等待的她，与你在比平时更近一些的距离中度过午后。
@@ -202,7 +202,7 @@ You can buy or view it at each store's product page.`,
 ・图像尺寸：3185×4096（高分辨率）
 
 购买与浏览请前往各商店的作品页。`,
-      ko: `본 작품은 현재 FANZA・DLsite・DiGiket・PromptCom에서 판매 중인 이야기형 고해상도 CG・일러스트집입니다.
+      ko: `본 작품은 현재 FANZA・DLsite・DiGiket・Aniborn에서 판매 중인 이야기형 고해상도 CG・일러스트집입니다.
 chichi-pui에서도 본편을 보실 수 있습니다.
 
 여름방학의 등교일. 고요한 교사에 울리는 것은 매미 소리와 두 사람의 기척뿐. 교실에서 기다리던 그녀와, 평소보다 조금 가까운 거리에서 보내는 오후.
@@ -222,7 +222,7 @@ chichi-pui에서도 본편을 보실 수 있습니다.
 구매・열람은 각 스토어 작품 페이지에서.`
     },
     "kinpatsu-miko-isekai": {
-      en: `This story-style CG collection is now on sale at DLsite (also available on FANZA and PromptCom).
+      en: `This story-style CG collection is now on sale at DLsite (also available on FANZA and Aniborn).
 
 A blonde-haired shrine maiden takes shelter at an inn in an unfamiliar other world and, amid her confusion, begins a new daily life — told as a story-style illustration collection.
 
@@ -238,8 +238,8 @@ From calm everyday moments to exploring the streets of the other world, and then
 [About the trial]
 The 148 trial images are not part of the 300 main images. There is no overlap with the main set, so you can enjoy all 448 images — trial plus main set — together.
 
-You can buy or preview it on the DLsite product page (also available on FANZA and PromptCom).`,
-      zh: `本作品现已在 DLsite 发售（FANZA・PromptCom 亦有上架），是一部故事感的 CG 集。
+You can buy or preview it on the DLsite product page (also available on FANZA and Aniborn).`,
+      zh: `本作品现已在 DLsite 发售（FANZA・Aniborn 亦有上架），是一部故事感的 CG 集。
 
 金发的巫女少女栖身于陌生异世界的旅店，在困惑中开始全新的日常。
 
@@ -255,8 +255,8 @@ You can buy or preview it on the DLsite product page (also available on FANZA an
 【关于体验版】
 免费体验版的148张，并不包含在本篇300张之中。与本篇没有重复，因此体验版＋本篇合计可欣赏全448张。
 
-购买与试读请前往 DLsite 作品页（FANZA・PromptCom 亦有上架）。`,
-      ko: `본 작품은 현재 DLsite에서 판매 중인 CG집입니다(FANZA·PromptCom에서도 이용 가능).
+购买与试读请前往 DLsite 作品页（FANZA・Aniborn 亦有上架）。`,
+      ko: `본 작품은 현재 DLsite에서 판매 중인 CG집입니다(FANZA·Aniborn에서도 이용 가능).
 
 금빛 머리의 무녀 소녀가 낯선 이세계의 여관에 몸을 의지하며, 당황하면서도 새로운 일상을 보내 가는 이야기형 일러스트집입니다.
 
@@ -272,7 +272,7 @@ You can buy or preview it on the DLsite product page (also available on FANZA an
 【체험판에 대하여】
 동봉된 체험판 148장은 본편 300장에는 포함되어 있지 않습니다. 본편과 중복이 없으므로, 체험판＋본편을 합쳐 전448장을 즐기실 수 있습니다.
 
-구매·미리보기는 DLsite 작품 페이지에서 이용해 주세요(FANZA·PromptCom에서도 이용 가능).`
+구매·미리보기는 DLsite 작품 페이지에서 이용해 주세요(FANZA·Aniborn에서도 이용 가능).`
     },
     "eroboxin-akane": {
       en: `Akane is a girl whose composure has been shaken by the strange drug Erobokishin 4649.
@@ -736,7 +736,7 @@ It is an omnibus-style fetish CG collection combining Setouchi scenery with a gi
   };
 
   const officialJapaneseDescriptions = {
-    "summer-schoolday": `本作品は、FANZA・DLsite・DiGiket・PromptCom で販売中のCG・イラスト集です。
+    "summer-schoolday": `本作品は、FANZA・DLsite・DiGiket・Aniborn で販売中のCG・イラスト集です。
 chichi-puiでも、本編をご覧いただけます。
 
 夏休みの登校日。静まり返った校舎に響くのは、蝉の声と、ふたりの気配だけ。教室で待っていた彼女と、いつもより少し近い距離で過ごす午後――。
@@ -754,7 +754,7 @@ chichi-puiでも、本編をご覧いただけます。
 ・画像サイズ：3185×4096（高解像度）
 
 購入・閲覧は各ストアの作品ページからどうぞ。`,
-    "kinpatsu-miko-isekai": `本作品は、DLsiteで販売中のCG集です（FANZA・PromptComでも配信中）。
+    "kinpatsu-miko-isekai": `本作品は、DLsiteで販売中のCG集です（FANZA・Anibornでも配信中）。
 
 金色の髪をした巫女の少女が、見知らぬ異世界の宿に身を寄せ、戸惑いながらも新しい日々を過ごしていく物語仕立てのイラスト集です。
 
@@ -770,7 +770,7 @@ chichi-puiでも、本編をご覧いただけます。
 【体験版について】
 無料体験版の148枚は、本編300枚には含まれていません。本編との重複はありませんので、体験版＋本編をあわせて全448枚をお楽しみいただけます。
 
-購入・試し読みは、DLsiteの作品ページからどうぞ（FANZA・PromptComでも配信中）。`,
+購入・試し読みは、DLsiteの作品ページからどうぞ（FANZA・Anibornでも配信中）。`,
     "school-legs": `制服姿の少女たちの通学風景や、やわらかな光の中で見せる美脚・足元の表情をまとめたAIイラスト集です。
 
 朝の通学路、階段、教室、日常の一場面などを中心に、足裏や脚線美をテーマにしたアートコレクションとして構成しました。
@@ -1038,39 +1038,39 @@ chichi-puiでも、本編をご覧いただけます。
   const previewLinks = {
     "eroboxin-akane": {
       pixiv: "https://www.pixiv.net/users/21257126/artworks/%E3%82%A8%E3%83%AD%E3%83%9C%E3%82%AD%E3%82%B7%E3%83%B34649v2",
-      promptcom: "https://prompt-com.com/ja/s/989fda92-21f4-49b3-bf70-8cb7adc2dd61"
+      promptcom: "https://aniborn.com/ja/s/989fda92-21f4-49b3-bf70-8cb7adc2dd61"
     },
     "eroboxin-4649": {
       pixiv: "https://www.pixiv.net/users/21257126/artworks/%E3%82%A8%E3%83%AD%E3%83%9C%E3%82%AD%E3%82%B7%E3%83%B34649",
-      promptcom: "https://prompt-com.com/ja/s/989fda92-21f4-49b3-bf70-8cb7adc2dd61"
+      promptcom: "https://aniborn.com/ja/s/989fda92-21f4-49b3-bf70-8cb7adc2dd61"
     },
     "hikagami-school": {
       pixiv: "https://www.pixiv.net/users/21257126/artworks/%E7%99%BB%E6%A0%A1%E7%B7%A8",
-      promptcom: "https://prompt-com.com/ja/s/f4785b95-8fb8-4330-a96e-5487eaf39887"
+      promptcom: "https://aniborn.com/ja/s/f4785b95-8fb8-4330-a96e-5487eaf39887"
     },
     "shizuku-record": {
       pixiv: "https://www.pixiv.net/users/21257126/artworks/%E3%81%97%E3%81%9A%E3%81%8F%E3%81%AE%E8%A8%98%E9%8C%B2",
-      promptcom: "https://prompt-com.com/ja/s/4713754c-96db-405c-aa16-d6abfc873421"
+      promptcom: "https://aniborn.com/ja/s/4713754c-96db-405c-aa16-d6abfc873421"
     },
     "momoiro-baito": {
       pixiv: "https://www.pixiv.net/users/21257126/artworks/%E6%A1%83%E8%89%B2%E3%83%90%E3%82%A4%E3%83%88",
-      promptcom: "https://prompt-com.com/ja/s/ddd231f2-060b-4f1c-a8af-f197c89f5073"
+      promptcom: "https://aniborn.com/ja/s/ddd231f2-060b-4f1c-a8af-f197c89f5073"
     },
     "okinawa-soso": {
       pixiv: "https://www.pixiv.net/users/21257126/artworks/%E3%81%A1%E3%82%85%E3%82%89%E3%81%95%E3%82%93%E7%B2%97%E7%9B%B8",
-      promptcom: "https://prompt-com.com/ja/tags/%E6%B2%96%E7%B8%84%E3%81%A1%E3%82%85%E3%82%89%E3%81%95%E3%82%93%E7%B2%97%E7%9B%B8%E7%84%A1%E6%96%99?product_typegallery&rating=all"
+      promptcom: "https://aniborn.com/ja/tags/%E6%B2%96%E7%B8%84%E3%81%A1%E3%82%85%E3%82%89%E3%81%95%E3%82%93%E7%B2%97%E7%9B%B8%E7%84%A1%E6%96%99?product_typegallery&rating=all"
     },
     "kinpatsu-miko": {
       pixiv: "https://www.pixiv.net/users/21257126/artworks/%E5%83%95%E3%81%A3%E5%AD%90",
-      promptcom: "https://prompt-com.com/ja/s/b2709d2b-7b6d-4156-9e75-cd6f7c6686d2"
+      promptcom: "https://aniborn.com/ja/s/b2709d2b-7b6d-4156-9e75-cd6f7c6686d2"
     },
     "ancient-capital-beauty": {
       pixiv: "https://www.pixiv.net/users/21257126/artworks/%E5%8F%A4%E9%83%BD%E7%BE%8E%E4%BA%BA",
-      promptcom: "https://prompt-com.com/ja/s/024ed546-b71b-4cda-afa4-5d2548f86dbd"
+      promptcom: "https://aniborn.com/ja/s/024ed546-b71b-4cda-afa4-5d2548f86dbd"
     },
     "hokkaido-omorashi": {
       pixiv: "https://www.pixiv.net/users/21257126/artworks/%E5%8C%97%E6%B5%B7%E9%81%93%E3%81%8A%E3%82%82%E3%82%89%E3%81%97%E7%B4%80%E8%A1%8C",
-      promptcom: "https://prompt-com.com/ja/tags/%E5%8C%97%E6%B5%B7%E9%81%93%E3%81%8A%E3%82%82%E3%82%89%E3%81%97%E7%B4%80%E8%A1%8C%E7%84%A1%E6%96%99?product_typegallery&rating=all"
+      promptcom: "https://aniborn.com/ja/tags/%E5%8C%97%E6%B5%B7%E9%81%93%E3%81%8A%E3%82%82%E3%82%89%E3%81%97%E7%B4%80%E8%A1%8C%E7%84%A1%E6%96%99?product_typegallery&rating=all"
     },
     "omorashi-sankei": {
       title: {
@@ -1083,19 +1083,19 @@ chichi-puiでも、本編をご覧いただけます。
     },
     "setouchi-omorashi": {
       pixiv: "https://www.pixiv.net/users/21257126/artworks/%E7%80%AC%E6%88%B8%E5%86%85%E3%81%8A%E3%82%82%E3%82%89%E3%81%97%E7%B4%80%E8%A1%8C",
-      promptcom: "https://prompt-com.com/ja/s/c3479669-23c9-4236-a771-0a9ac78cecc2"
+      promptcom: "https://aniborn.com/ja/s/c3479669-23c9-4236-a771-0a9ac78cecc2"
     },
     "gokujiri": {
       pixiv: "https://www.pixiv.net/users/21257126/artworks/%E3%81%94%E3%81%8F%E3%81%98%E3%82%8A",
-      promptcom: "https://prompt-com.com/ja/s/d2adcab1-91eb-491d-b1d8-0133e0c9b04e"
+      promptcom: "https://aniborn.com/ja/s/d2adcab1-91eb-491d-b1d8-0133e0c9b04e"
     },
     "hikagami": {
       pixiv: "https://www.pixiv.net/users/21257126/artworks/%E3%81%B2%E3%81%8B%E3%81%8C%E3%81%BF%E5%A5%BD",
-      promptcom: "https://prompt-com.com/ja/s/d76883e7-c094-465c-9874-2afb7379e2f0"
+      promptcom: "https://aniborn.com/ja/s/d76883e7-c094-465c-9874-2afb7379e2f0"
     },
     "satogaeri": {
       pixiv: "https://www.pixiv.net/users/21257126/artworks/%E9%87%8C%E5%B8%B0%E3%82%8A",
-      promptcom: "https://prompt-com.com/ja/s/361fdc2f-feb2-4de2-b4a6-e6f94807f074"
+      promptcom: "https://aniborn.com/ja/s/361fdc2f-feb2-4de2-b4a6-e6f94807f074"
     }
   };
 
@@ -1183,7 +1183,7 @@ chichi-puiでも、本編をご覧いただけます。
     if (hostname.includes("digiket.com")) return "digiket";
     if (hostname.includes("booth.pm")) return "booth";
     if (hostname.includes("pictspace.net")) return "pictspace";
-    if (hostname.includes("prompt-com.com")) return "promptcom";
+    if (hostname.includes("aniborn.com")) return "promptcom";
     if (hostname.includes("chichi-pui.com")) return "chichipui";
     if (hostname.includes("pixiv.net")) return "pixiv";
     return fallback.toLowerCase();
@@ -1426,13 +1426,13 @@ chichi-puiでも、本編をご覧いただけます。
   }
 
   const trialLinks = {
-    "summer-schoolday": "https://prompt-com.com/ja/p/58ba1e79-42e7-4f01-963c-9f4fe6b0a60d?rating=all"
+    "summer-schoolday": "https://aniborn.com/ja/p/58ba1e79-42e7-4f01-963c-9f4fe6b0a60d?rating=all"
   };
 
   function renderTrialLink(item) {
     const url = trialLinks[item.id];
     if (!url) return "";
-    const label = { ja: "無料体験版（PromptCom）", en: "Free trial (PromptCom)", zh: "免费体验版（PromptCom）", ko: "무료 체험판 (PromptCom)" }[currentLang()] || "無料体験版（PromptCom）";
+    const label = { ja: "無料体験版（Aniborn）", en: "Free trial (Aniborn)", zh: "免费体验版（Aniborn）", ko: "무료 체험판 (Aniborn)" }[currentLang()] || "無料体験版（Aniborn）";
     return `<a class="sales-button trial-button" href="${url}" target="_blank" rel="noopener noreferrer" data-analytics-platform="promptcom" data-analytics-link="trial-${item.id}" data-analytics-area="title-sales" data-analytics-work="${item.id}" data-analytics-work-title="${titleOf(item)}">${label}</a>`;
   }
 

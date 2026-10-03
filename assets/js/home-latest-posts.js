@@ -20,8 +20,8 @@
       hosts: new Set(["chichi-pui.com", "www.chichi-pui.com", "membership.chichi-pui.com"]),
     },
     promptcom: {
-      name: "PromptCom",
-      hosts: new Set(["prompt-com.com", "www.prompt-com.com"]),
+      name: "Aniborn",
+      hosts: new Set(["aniborn.com", "www.aniborn.com"]),
     },
     pixiv: {
       name: "pixiv",

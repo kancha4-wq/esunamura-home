@@ -9,7 +9,7 @@ const works = [
     links: {
       pictSPACE: "https://pictspace.net/items/manage_detail/837195",
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_741847/",
-      PromptCom: "https://prompt-com.com/ja/s/361fdc2f-feb2-4de2-b4a6-e6f94807f074"
+      Aniborn: "https://aniborn.com/ja/s/361fdc2f-feb2-4de2-b4a6-e6f94807f074"
     }
   },
   {
@@ -22,7 +22,7 @@ const works = [
     links: {
       pictSPACE: "https://pictspace.net/items/manage_detail/838029",
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_743522/",
-      PromptCom: "https://prompt-com.com/ja/s/024ed546-b71b-4cda-afa4-5d2548f86dbd"
+      Aniborn: "https://aniborn.com/ja/s/024ed546-b71b-4cda-afa4-5d2548f86dbd"
     }
   },
   {
@@ -35,7 +35,7 @@ const works = [
     links: {
       pictSPACE: "https://pictspace.net/items/manage_detail/838048",
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_744243/",
-      PromptCom: "https://prompt-com.com/ja/s/d76883e7-c094-465c-9874-2afb7379e2f0"
+      Aniborn: "https://aniborn.com/ja/s/d76883e7-c094-465c-9874-2afb7379e2f0"
     }
   },
   {
@@ -49,7 +49,7 @@ const works = [
       pictSPACE: "https://pictspace.net/items/manage_detail/837289",
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_745411/",
       DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01591984.html",
-      PromptCom: "https://prompt-com.com/ja/s/c3479669-23c9-4236-a771-0a9ac78cecc2"
+      Aniborn: "https://aniborn.com/ja/s/c3479669-23c9-4236-a771-0a9ac78cecc2"
     }
   },
   {
@@ -63,7 +63,7 @@ const works = [
       pictSPACE: "https://pictspace.net/items/manage_detail/838061",
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_745765/",
       DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01591976.html",
-      PromptCom: "https://prompt-com.com/ja/p/2cbff6cf-bb88-4a78-8af0-cb43c5227164"
+      Aniborn: "https://aniborn.com/ja/p/2cbff6cf-bb88-4a78-8af0-cb43c5227164"
     }
   },
   {
@@ -77,7 +77,7 @@ const works = [
       pictSPACE: "https://pictspace.net/items/manage_detail/838067",
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_746695/",
       DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01591986.html",
-      PromptCom: "https://prompt-com.com/ja/s/b2709d2b-7b6d-4156-9e75-cd6f7c6686d2",
+      Aniborn: "https://aniborn.com/ja/s/b2709d2b-7b6d-4156-9e75-cd6f7c6686d2",
       DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0337791/AFID=esunamura/"
     }
   },
@@ -91,7 +91,7 @@ const works = [
     links: {
       pictSPACE: "https://pictspace.net/items/manage_detail/838060",
       DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01605513.html",
-      PromptCom: "https://prompt-com.com/ja/s/d2adcab1-91eb-491d-b1d8-0133e0c9b04e"
+      Aniborn: "https://aniborn.com/ja/s/d2adcab1-91eb-491d-b1d8-0133e0c9b04e"
     }
   },
   {
@@ -103,7 +103,7 @@ const works = [
     imageHeight: 2867,
     links: {
       pictSPACE: "https://pictspace.net/items/manage_detail/838076",
-      PromptCom: "https://prompt-com.com/ja/p/f2af63ce-b2f8-4c6d-ad0b-8340319531c4"
+      Aniborn: "https://aniborn.com/ja/p/f2af63ce-b2f8-4c6d-ad0b-8340319531c4"
     }
   },
   {
@@ -117,7 +117,7 @@ const works = [
       pictSPACE: "https://pictspace.net/items/manage_detail/838081",
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_751890/",
       DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01601145.html",
-      PromptCom: "https://prompt-com.com/ja/s/ddd231f2-060b-4f1c-a8af-f197c89f5073",
+      Aniborn: "https://aniborn.com/ja/s/ddd231f2-060b-4f1c-a8af-f197c89f5073",
       DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0337792/AFID=esunamura/"
     }
   },
@@ -131,7 +131,7 @@ const works = [
     links: {
       pictSPACE: "https://pictspace.net/items/manage_detail/838092",
       DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01604402.html",
-      PromptCom: "https://prompt-com.com/ja/s/4713754c-96db-405c-aa16-d6abfc873421"
+      Aniborn: "https://aniborn.com/ja/s/4713754c-96db-405c-aa16-d6abfc873421"
     }
   },
   {
@@ -145,7 +145,7 @@ const works = [
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_772274/",
       pictSPACE: "https://pictspace.net/items/manage_detail/845880",
       DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01628452.html",
-      PromptCom: "https://prompt-com.com/ja/s/f4785b95-8fb8-4330-a96e-5487eaf39887"
+      Aniborn: "https://aniborn.com/ja/s/f4785b95-8fb8-4330-a96e-5487eaf39887"
     }
   },
   {
@@ -159,7 +159,7 @@ const works = [
       pictSPACE: "https://pictspace.net/items/manage_detail/851348",
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_758170/",
       DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01612902.html",
-      PromptCom: "https://prompt-com.com/ja/s/989fda92-21f4-49b3-bf70-8cb7adc2dd61",
+      Aniborn: "https://aniborn.com/ja/s/989fda92-21f4-49b3-bf70-8cb7adc2dd61",
       DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0337471/AFID=esunamura/"
     }
   },
@@ -190,7 +190,7 @@ const works = [
       pictSPACE: "https://pictspace.net/items/manage_detail/858788",
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_763759/",
       DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01622810.html",
-      PromptCom: "https://prompt-com.com/ja/s/7073b5d6-4b35-4c77-a0d5-eefb11932083",
+      Aniborn: "https://aniborn.com/ja/s/7073b5d6-4b35-4c77-a0d5-eefb11932083",
       DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0337472/AFID=esunamura/"
     }
   },
@@ -216,7 +216,7 @@ const works = [
     links: {
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_784862/",
       DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01658559.html",
-      PromptCom: "https://prompt-com.com/ja/p/fcea3420-06fc-4a52-b3ff-1cf4343f588b"
+      Aniborn: "https://aniborn.com/ja/p/fcea3420-06fc-4a52-b3ff-1cf4343f588b"
     }
   },
   {
@@ -230,7 +230,7 @@ const works = [
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_796353/",
       DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01677590.html",
       pictSPACE: "https://pictspace.net/items/manage_detail/939145",
-      PromptCom: "https://prompt-com.com/ja/p/8b9b037a-07e6-4954-8972-866bcb6e7237?rating=all",
+      Aniborn: "https://aniborn.com/ja/p/8b9b037a-07e6-4954-8972-866bcb6e7237?rating=all",
       DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0344449/AFID=esunamura/"
     }
   },
@@ -256,7 +256,7 @@ const works = [
     links: {
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_823900/",
       DLsite: "https://dlaf.jp/aix/dlaf/=/t/s/link/work/aid/esunamura/id/RJ01723984.html",
-      PromptCom: "https://prompt-com.com/ja/p/f0afb5ad-dfd7-4de6-854a-522e7f1c265d?rating=all"
+      Aniborn: "https://aniborn.com/ja/p/f0afb5ad-dfd7-4de6-854a-522e7f1c265d?rating=all"
     }
   },
   {
@@ -305,16 +305,16 @@ const workDescriptions = {
     ko: "59벌의 의상, 한 명의 아이돌. 무대에서 빛나는 분홍 머리 아이돌의 미소와 수줍은 표정을 담은 본편 460장·긴 변 4K AI 생성 CG집입니다. 체험판 225장을 공개했으며 FANZA・DLsite에서 판매 중입니다."
   },
   "kurokami-kanojo": {
-    ja: "黒髪の彼女とふたりきりで過ごす時間を、日常から少しずつ距離が近づいていく流れで描いた全311枚のAI生成CG集。FANZA・DLsite・PromptComで販売中。",
-    en: "A 311-image AI-generated CG collection following private moments with a black-haired girlfriend as everyday distance gradually becomes more intimate. Now available on FANZA, DLsite, and PromptCom.",
-    zh: "描绘与黑发女友独处、从日常逐渐拉近距离的311张AI生成CG集。现已在FANZA、DLsite与PromptCom发售。",
-    ko: "흑발 여자친구와 단둘이 보내며 일상의 거리가 점차 가까워지는 흐름을 담은 311장 AI 생성 CG집. FANZA・DLsite・PromptCom에서 판매 중입니다."
+    ja: "黒髪の彼女とふたりきりで過ごす時間を、日常から少しずつ距離が近づいていく流れで描いた全311枚のAI生成CG集。FANZA・DLsite・Anibornで販売中。",
+    en: "A 311-image AI-generated CG collection following private moments with a black-haired girlfriend as everyday distance gradually becomes more intimate. Now available on FANZA, DLsite, and Aniborn.",
+    zh: "描绘与黑发女友独处、从日常逐渐拉近距离的311张AI生成CG集。现已在FANZA、DLsite与Aniborn发售。",
+    ko: "흑발 여자친구와 단둘이 보내며 일상의 거리가 점차 가까워지는 흐름을 담은 311장 AI 생성 CG집. FANZA・DLsite・Aniborn에서 판매 중입니다."
   },
   "blonde-shrine-maiden-isekai": {
-    ja: "気がつくと見知らぬ異世界。灯りのともる宿での日常から街の探索、そして“災難”へ。物語仕立ての全448枚（本編300枚＋体験版148枚）の高解像度イラスト集。DLsiteで販売中（FANZA・PromptComでも配信）。",
-    en: "A story-style isekai CG collection: from inn-side daily life to town exploration and an unavoidable calamity. 448 high-res images in total (300 main + 148 trial). On sale now at DLsite (also available on FANZA and PromptCom).",
-    zh: "故事感异世界CG集：从旅店日常到街区探索，再到无法回避的“灾难”。全448张高分辨率（本篇300张＋体验版148张）。现已在 DLsite 发售（FANZA・PromptCom 亦有上架）。",
-    ko: "이야기형 이세계 CG집: 여관에서의 일상부터 거리 탐색, 피할 수 없는 ‘재난’까지. 총 448장 고해상도(본편 300장＋체험판 148장). DLsite에서 판매 중(FANZA·PromptCom에서도 이용 가능)."
+    ja: "気がつくと見知らぬ異世界。灯りのともる宿での日常から街の探索、そして“災難”へ。物語仕立ての全448枚（本編300枚＋体験版148枚）の高解像度イラスト集。DLsiteで販売中（FANZA・Anibornでも配信）。",
+    en: "A story-style isekai CG collection: from inn-side daily life to town exploration and an unavoidable calamity. 448 high-res images in total (300 main + 148 trial). On sale now at DLsite (also available on FANZA and Aniborn).",
+    zh: "故事感异世界CG集：从旅店日常到街区探索，再到无法回避的“灾难”。全448张高分辨率（本篇300张＋体验版148张）。现已在 DLsite 发售（FANZA・Aniborn 亦有上架）。",
+    ko: "이야기형 이세계 CG집: 여관에서의 일상부터 거리 탐색, 피할 수 없는 ‘재난’까지. 총 448장 고해상도(본편 300장＋체험판 148장). DLsite에서 판매 중(FANZA·Aniborn에서도 이용 가능)."
   },
   "satogaeri": {
     ja: "田舎の夏、幼馴染、覗き見感。帰省先で距離が少しずつ変わっていく流れを描く作品。",
@@ -413,10 +413,10 @@ const workDescriptions = {
     ko: "연구실 공개 기념 무료 Prompt Pack. SDXL / illustriousXL 계열 모델용 교토풍・일본풍 배경 프롬프트 검증 소재입니다."
   },
   "summer-schoolday": {
-    ja: "夏休みの登校日、誰もいない教室で彼女とふたりきり。同じシチュエーションを3人のヒロインそれぞれで描いた物語仕立ての高解像度CG集。全327枚（1ヒロイン109枚×3人）。FANZA・DLsite・DiGiket・PromptCom で販売中。chichi-puiでも、本編をご覧いただけます。",
-    en: "Alone with her in an empty summer classroom. A story-style high-res CG collection portraying one situation through three heroines — 327 images total (109 x 3). Now on sale at FANZA, DLsite, DiGiket, and PromptCom. The full collection is also available on chichi-pui.",
-    zh: "暑假上学日，在无人的教室与她独处。以三位女主角描绘同一情境的故事感高分辨率CG集，全327张（109×3）。现已在 FANZA、DLsite、DiGiket、PromptCom 发售。也可在 chichi-pui 浏览完整版。",
-    ko: "여름방학 등교일, 아무도 없는 교실에서 그녀와 단둘이. 하나의 상황을 3명의 히로인으로 그린 이야기형 고해상도 CG집. 총 327장(109×3). FANZA・DLsite・DiGiket・PromptCom에서 판매 중. chichi-pui에서도 본편을 보실 수 있습니다."
+    ja: "夏休みの登校日、誰もいない教室で彼女とふたりきり。同じシチュエーションを3人のヒロインそれぞれで描いた物語仕立ての高解像度CG集。全327枚（1ヒロイン109枚×3人）。FANZA・DLsite・DiGiket・Aniborn で販売中。chichi-puiでも、本編をご覧いただけます。",
+    en: "Alone with her in an empty summer classroom. A story-style high-res CG collection portraying one situation through three heroines — 327 images total (109 x 3). Now on sale at FANZA, DLsite, DiGiket, and Aniborn. The full collection is also available on chichi-pui.",
+    zh: "暑假上学日，在无人的教室与她独处。以三位女主角描绘同一情境的故事感高分辨率CG集，全327张（109×3）。现已在 FANZA、DLsite、DiGiket、Aniborn 发售。也可在 chichi-pui 浏览完整版。",
+    ko: "여름방학 등교일, 아무도 없는 교실에서 그녀와 단둘이. 하나의 상황을 3명의 히로인으로 그린 이야기형 고해상도 CG집. 총 327장(109×3). FANZA・DLsite・DiGiket・Aniborn에서 판매 중. chichi-pui에서도 본편을 보실 수 있습니다."
   },
   "fanart-select-r15": {
     ja: "R15対象の二次創作キャラクターごとのAIイラストをまとめたシリーズです。42キャラのサンプルを公開しています。本編・追加イラスト・過去公開分は、chichi-pui「R15 二次創作アーカイブ」でまとめてご覧いただけます。",
