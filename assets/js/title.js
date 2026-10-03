@@ -1507,6 +1507,12 @@ chichi-puiでも、本編をご覧いただけます。
             const salesMarkup = `${renderMembershipLink(work)}${renderSales(work)}${renderTrialLink(work)}`;
             return salesMarkup ? `<h2>${uiText("sales")}</h2><p class="sales-guidance">${salesGuideFor(work)}</p><div class="sales-links">${salesMarkup}</div>` : "";
           })()}
+          <div class="project-banner-slot" hidden>
+          <a class="project-banner-link" href="https://esunastudio-viewer.pages.dev/viewer/" target="_blank" rel="noopener noreferrer" data-analytics-link="book-project" data-analytics-area="title-project">
+            <picture><img src="/assets/banners/book-card.png" width="780" height="900" alt="Androidで読む — 書籍ビューア" loading="eager" decoding="async"></picture>
+            <span class="project-banner-caption" data-ja="Androidで読む — 書籍ビューア" data-en="Read on Android — Book viewer" data-zh="在 Android 上阅读 — 电子书阅读器" data-ko="Android에서 읽기 — 도서 뷰어">Androidで読む — 書籍ビューア</span>
+          </a>
+        </div>
           <div class="share-links">${renderShareButton(work)}</div>
         </div>
       </section>
