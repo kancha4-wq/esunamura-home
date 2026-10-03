@@ -3,20 +3,28 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
+                      "platform":  "promptcom",
+                      "published_at":  "2026-10-03T15:00:00+09:00",
+                      "age_rating":  "全年齢",
+                      "membership_only":  false,
+                      "destination_url":  "https://prompt-com.com/ja/6954d7c84740e/",
+                      "web_image_relative_path":  "images/homepage-feed-promptcom-8f7c0c9bc8046f006854.webp"
+                  },
+                  {
+                      "platform":  "painter",
+                      "published_at":  "2026-10-03T15:00:00+09:00",
+                      "age_rating":  "R15",
+                      "membership_only":  false,
+                      "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
+                      "web_image_relative_path":  "images/homepage-feed-painter-4ca38f85dd2e6fb9f033.webp"
+                  },
+                  {
                       "platform":  "chichipui",
                       "published_at":  "2026-10-03T13:00:00+09:00",
                       "age_rating":  "R15",
                       "membership_only":  false,
                       "destination_url":  "https://www.chichi-pui.com/users/esuna/",
                       "web_image_relative_path":  "images/homepage-feed-chichipui-2595e982e63a065db44b.webp"
-                  },
-                  {
-                      "platform":  "painter",
-                      "published_at":  "2026-10-03T13:00:00+09:00",
-                      "age_rating":  "R15",
-                      "membership_only":  false,
-                      "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
-                      "web_image_relative_path":  "images/homepage-feed-painter-aa282a18faf2e8aba8e2.webp"
                   },
                   {
                       "platform":  "pixiv",
@@ -41,14 +49,6 @@
                       "membership_only":  true,
                       "destination_url":  "https://www.patreon.com/esunamura/posts/171222145",
                       "web_image_relative_path":  "images/homepage-feed-patreon-ec29cc24fd92ca327550.webp"
-                  },
-                  {
-                      "platform":  "promptcom",
-                      "published_at":  "2026-10-03T12:00:00+09:00",
-                      "age_rating":  "R15",
-                      "membership_only":  true,
-                      "destination_url":  "https://prompt-com.com/ja/6954d7c84740e/",
-                      "web_image_relative_path":  "images/homepage-feed-promptcom-c52d6d91836ff4c3f28d.webp"
                   }
               ]
 }
