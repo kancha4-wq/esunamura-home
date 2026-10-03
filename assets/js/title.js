@@ -1471,6 +1471,12 @@ chichi-puiでも、本編をご覧いただけます。
     `;
   }
 
+  function renderSeparateReader() {
+    const copy = {"ja": ["別提供のAndroidアプリ", "ビュッの機能・対応形式を見る", "手元のZIP・CBZ・EPUBを読むためのアプリです。作品の購入・ダウンロードは各販売サイトで行います。作品やアプリの同梱・自動配信を案内するものではありません。"], "en": ["A separate Android app", "Explore Byu and supported formats", "An app for your own ZIP, CBZ and EPUB files. Purchase and download works from their stores. This is not an offer of bundled content or automatic delivery."], "zh": ["独立的 Android 应用", "查看 Byu 的功能与支持格式", "用于阅读您自备的 ZIP、CBZ、EPUB 文件。作品请在各销售平台购买和下载。此介绍不表示作品与应用捆绑或自动提供。"], "ko": ["별도로 제공되는 Android 앱", "Byu 기능과 지원 형식 보기", "직접 준비한 ZIP, CBZ, EPUB 파일을 읽는 앱입니다. 작품 구매와 다운로드는 각 판매 사이트에서 진행합니다. 작품과 앱의 묶음 제공이나 자동 배포를 뜻하지 않습니다."]};
+    const text = copy[currentLang()] || copy.ja;
+    return `<aside class="project-reader-note" aria-label="${text[0]}"><p class="project-reader-label">${text[0]}</p><a href="https://esunastudio-viewer.pages.dev/viewer/" target="_blank" rel="noopener noreferrer" data-analytics-link="book-project" data-analytics-area="title-project">${text[1]} ↗</a><p>${text[2]}</p></aside>`;
+  }
+
   function render() {
     document.documentElement.lang = currentLang();
     staticTranslatableNodes.forEach((node) => {
@@ -1507,12 +1513,7 @@ chichi-puiでも、本編をご覧いただけます。
             const salesMarkup = `${renderMembershipLink(work)}${renderSales(work)}${renderTrialLink(work)}`;
             return salesMarkup ? `<h2>${uiText("sales")}</h2><p class="sales-guidance">${salesGuideFor(work)}</p><div class="sales-links">${salesMarkup}</div>` : "";
           })()}
-          <div class="project-banner-slot" hidden>
-          <a class="project-banner-link" href="https://esunastudio-viewer.pages.dev/viewer/" target="_blank" rel="noopener noreferrer" data-analytics-link="book-project" data-analytics-area="title-project">
-            <picture><img src="/assets/banners/book-card.png" width="780" height="900" alt="Androidで読む — 書籍ビューア" loading="eager" decoding="async"></picture>
-            <span class="project-banner-caption" data-ja="Androidで読む — 書籍ビューア" data-en="Read on Android — Book viewer" data-zh="在 Android 上阅读 — 电子书阅读器" data-ko="Android에서 읽기 — 도서 뷰어">Androidで読む — 書籍ビューア</span>
-          </a>
-        </div>
+
           <div class="share-links">${renderShareButton(work)}</div>
         </div>
       </section>
@@ -1573,6 +1574,7 @@ chichi-puiでも、本編をご覧いただけます。
       </section>
 
       ${renderRelatedResearch(work)}
+      ${renderSeparateReader()}
     `;
   }
 

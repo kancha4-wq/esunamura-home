@@ -5077,3 +5077,9 @@ body[data-research-section="expression"] .research-candidate-media.has-samples .
 @media (min-width: 761px) {
   .research-subnav a { min-width: 0; padding-left: 5px; padding-right: 5px; font-size: clamp(.68rem, .82vw, .88rem); }
 }
+
+/* Constrain implicit research grid tracks to the viewport on narrow phones. */
+@media (max-width: 400px) {
+  .research-page main, .research-page .research-section { grid-template-columns: minmax(0, 1fr); }
+  .research-page main > *, .research-page .research-section > *, .research-page .research-overview-card { min-width: 0; }
+}
