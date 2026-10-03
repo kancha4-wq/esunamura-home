@@ -27,18 +27,36 @@
   .project-banner-group .project-banner-slot, .project-promo-single .project-banner-slot { margin-left: auto; margin-right: auto; }
 }
 
-/* One research game link moves into genuine outer whitespace; no sticky behavior. */
-.project-banner-rail-shell { position: relative; }
-.project-banner-slot.project-banner-slot--rail {
-  position: absolute;
-  left: var(--project-rail-left);
-  top: var(--project-rail-top);
-  width: 200px;
-  max-width: 200px;
-  margin: 0;
-}
 
 .project-context-label { margin: 0 0 8px; color: var(--muted, #666); font-size: 13px; line-height: 1.5; }
 
 /* Keep the product cover at its own height, independent of purchase-copy length. */
 .title-page:not(.research-page) .detail-hero > .cover-frame { align-self: start; }
+
+/* Requested top placement: shallow strips on desktop, clear text links on phones. */
+.project-promo-top { margin: 0 0 16px; padding: 0; border: 0; }
+.project-promo-top .project-banner-group { margin: 0; gap: 12px; }
+.project-promo-top .project-banner-slot { max-width: none; }
+.project-promo-top .project-banner-caption { padding: 7px 12px; font-size: 13px; }
+@media (max-width: 1023px) {
+  .project-promo-top .project-banner-group { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .project-promo-top .project-banner-slot { width: 100%; max-width: none; }
+  .project-promo-top picture { display: block; }
+  .project-promo-top .project-banner-link { height: 100%; }
+  .project-promo-top .project-banner-caption { padding: 8px 12px; font-size: 14px; line-height: 1.5; }
+}
+
+/* Common outer column preserves the existing 932px desktop content. */
+.project-layout-content { min-width: 0; }
+.project-common-rail[hidden] { display: none !important; }
+.project-common-rail { margin: 24px 0; }
+.project-layout-shell--rail { display: grid; grid-template-columns: 932px 140px; gap: 20px; width: 1140px; padding: 24px; }
+.project-layout-shell--rail > .site-footer { grid-column: 1; }
+.project-layout-shell--rail .project-common-rail { display: grid; grid-template-columns: 140px; align-content: start; gap: 20px; margin: 0; padding-top: var(--project-common-offset, 0px); }
+.project-layout-shell--rail .project-common-rail .project-banner-slot { width: 140px; max-width: 140px; }
+.project-layout-shell--rail .project-common-rail .project-banner-link { border: 0; }
+.project-layout-shell--rail .project-common-rail .project-banner-caption { padding: 8px 0; font-size: 13px; line-height: 1.5; }
+
+@media (max-width: 600px) {
+  .project-promo-top .project-banner-group { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+}

@@ -6,7 +6,10 @@
     document.querySelectorAll(".project-banner-slot").forEach(slot => {
       const caption = slot.querySelector(".project-banner-caption");
       const image = slot.querySelector("img");
-      if (caption && image) image.alt = caption.dataset[lang] || caption.dataset.ja || image.alt;
+      if (caption && image) {
+        caption.textContent = caption.dataset[lang] || caption.dataset.ja || caption.textContent;
+        image.alt = caption.textContent;
+      }
     });
     document.querySelectorAll("[data-project-label]").forEach(node => {
       node.setAttribute("aria-label", node.getAttribute("data-label-" + lang) || node.getAttribute("data-label-ja"));
@@ -22,34 +25,67 @@
     if (railFrame) return;
     railFrame = requestAnimationFrame(() => { railFrame = 0; layoutRails(); });
   }
+  let commonRail = null;
+  let slimReady = false;
+  let slimRequested = false;
+  function prepareSlimImages() {
+    if (slimRequested || window.innerWidth < 1200) return;
+    slimRequested = true;
+    const files = ["book", "game"];
+    let loaded = 0;
+    files.forEach(kind => {
+      const image = new Image();
+      image.onload = () => {
+        if (image.naturalWidth !== 280 || image.naturalHeight !== 1360) return;
+        if (++loaded === 2) { slimReady = true; queueRailLayout(); }
+      };
+      image.src = `/assets/banners/${kind}-slim.png`;
+    });
+  }
+  function initCommonRail() {
+    const shell = document.querySelector(".page-shell");
+    const footer = shell?.querySelector(":scope > .site-footer");
+    if (!shell || !footer) return;
+    const content = document.createElement("div");
+    content.className = "project-layout-content";
+    Array.from(shell.children).filter(node => node !== footer).forEach(node => content.append(node));
+    const rail = document.createElement("aside");
+    rail.className = "project-common-rail project-banner-group";
+    rail.hidden = true;
+    rail.setAttribute("data-project-label", "");
+    const labels = {ja:"別提供のアプリ・制作中ゲーム",en:"A separate app and a game in development",zh:"独立应用与开发中的游戏",ko:"별도 앱과 개발 중인 게임"};
+    Object.entries(labels).forEach(([lang,label]) => rail.setAttribute("data-label-" + lang,label));
+    const captions = {
+      book: {ja:"ビュッ｜別提供アプリ",en:"Byu — a separate app",zh:"独立应用 Byu",ko:"별도 앱 Byu"},
+      game: {ja:"温泉すごろく｜開発中",en:"Hot spring game — In development",zh:"温泉双六 — 开发中",ko:"온천 게임 — 개발 중"}
+    };
+    rail.innerHTML = ["book", "game"].map(kind => {
+      const attributes = Object.entries(captions[kind]).map(([lang,text]) => `data-${lang}="${text}"`).join(" ");
+      return `<div class="project-banner-slot" hidden><a class="project-banner-link" href="https://esunastudio-viewer.pages.dev/${kind === "book" ? "viewer/" : ""}" target="_blank" rel="noopener noreferrer" data-analytics-link="${kind}-project" data-analytics-area="common-project-rail"><picture><source data-common-slim media="not all" srcset="/assets/banners/${kind}-slim.png"><source media="(min-width:768px)" srcset="/assets/banners/${kind}-wide.png"><img src="/assets/banners/${kind}-card.png" width="780" height="900" alt="${captions[kind].ja}" loading="eager" decoding="async"></picture><span class="project-banner-caption" ${attributes}>${captions[kind].ja}</span></a></div>`;
+    }).join("");
+    shell.append(content, rail, footer);
+    commonRail = {shell,content,rail,footer};
+    new ResizeObserver(queueRailLayout).observe(content);
+  }
   function layoutRails() {
-    document.querySelectorAll(".project-banner-slot[data-project-rail]").forEach(slot => {
-      const shell = slot.closest(".page-shell");
-      const main = slot.closest("main");
-      const source = slot.querySelector("[data-project-rail-source]");
-      const caption = slot.querySelector(".project-banner-caption");
-      if (!shell || !main || !source) return;
-      shell.classList.add("project-banner-rail-shell");
-      const shellBox = shell.getBoundingClientRect();
-      const mainBox = main.getBoundingClientRect();
-      const slotBox = slot.getBoundingClientRect();
-      const railTop = mainBox.top + 8;
-      const width = Math.min(document.documentElement.clientWidth, document.body.clientWidth);
-      const margin = getComputedStyle(slot);
-      const normalSpace = slot.classList.contains("project-banner-slot--rail") ? 0 :
-        slotBox.height + parseFloat(margin.marginTop || 0) + parseFloat(margin.marginBottom || 0);
-      const context = slot.querySelector(".project-context-label");
-      const requiredHeight = 750 + (caption?.getBoundingClientRect().height || 44) +
-        (context ? context.getBoundingClientRect().height + 8 : 0) + 2;
-      // Evaluate remaining content without the normal banner, so short pages cannot oscillate.
-      const fits = width >= 1900 && width - shellBox.right >= 224 &&
-        mainBox.bottom - normalSpace - railTop >= requiredHeight + 24;
-      slot.style.setProperty("--project-rail-left", `${shellBox.width + 24 - shell.clientLeft}px`);
-      slot.style.setProperty("--project-rail-top", `${railTop - shellBox.top - shell.clientTop}px`);
-      slot.classList.toggle("project-banner-slot--rail", fits);
-      const media = fits ? "(min-width: 0px)" : "not all";
+    if (!commonRail) return;
+    prepareSlimImages();
+    const {shell, content, rail} = commonRail;
+    const main = content.querySelector("main");
+    if (!main) return;
+    const contentBox = content.getBoundingClientRect();
+    const offset = Math.max(0, main.getBoundingClientRect().top - contentBox.top);
+    // Keep both banners within the content row; short pages use their lower pair instead.
+    const active = slimReady && window.innerWidth >= 1200 && document.body.clientWidth >= 1140 &&
+      contentBox.height - offset >= 1600;
+    shell.classList.toggle("project-layout-shell--rail", active);
+    rail.style.setProperty("--project-common-offset", offset + "px");
+    rail.querySelectorAll("[data-common-slim]").forEach(source => {
+      const media = active ? "(min-width:1200px)" : "not all";
       if (source.media !== media) source.media = media;
     });
+    const hasLowerPair = !!content.querySelector(".project-promo-section:not(.project-promo-top) .project-banner-group");
+    rail.hidden = !(active || !hasLowerPair);
   }
   function attach(scope) {
     scope.querySelectorAll(".project-banner-slot").forEach(slot => {
@@ -66,6 +102,7 @@
       update();
     });
   }
+  initCommonRail();
   attach(document);
   localizePromotions();
   new MutationObserver(localizePromotions).observe(document.documentElement, {attributes: true, attributeFilter: ["lang"]});
