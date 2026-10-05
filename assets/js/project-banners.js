@@ -1,6 +1,43 @@
 (() => {
   "use strict";
   const attached = new WeakSet();
+  // English artwork is supplied separately. Keep the approved Japanese artwork
+  // until every required English format has loaded at its expected dimensions.
+  const bookFormats = {wide:[1400,500],card:[780,900],strip:[1400,280],slim:[280,1360]};
+  let englishBookReady = false;
+  let englishBookRequested = false;
+  function prepareEnglishBooks() {
+    if (englishBookRequested) return;
+    englishBookRequested = true;
+    Promise.all(Object.entries(bookFormats).map(([format, size]) => new Promise(resolve => {
+      const image = new Image();
+      image.onload = () => resolve(image.naturalWidth === size[0] && image.naturalHeight === size[1]);
+      image.onerror = () => resolve(false);
+      image.src = `/assets/banners/en/book-${format}.png`;
+    }))).then(results => {
+      englishBookReady = results.every(Boolean);
+      document.documentElement.dataset.readerEnglishImages = englishBookReady ? "ready" : "pending";
+      if (englishBookReady) localizePromotions();
+    });
+  }
+  function localizeBookImages(lang) {
+    const english = lang === "en" && englishBookReady;
+    document.querySelectorAll('a[href^="https://esunastudio-viewer.pages.dev/viewer/"]').forEach(link => {
+      if (!link.dataset.readerOriginalHref) link.dataset.readerOriginalHref = link.getAttribute("href");
+      const target = new URL(link.dataset.readerOriginalHref);
+      if (lang === "en") target.pathname = "/viewer/en/";
+      link.href = lang === "en" ? target.href : link.dataset.readerOriginalHref;
+      link.querySelectorAll("picture source, picture img").forEach(image => {
+        const attribute = image.tagName === "SOURCE" ? "srcset" : "src";
+        const original = image.dataset.readerOriginalSource || image.getAttribute(attribute);
+        if (!original || !original.includes("/assets/banners/book-")) return;
+        image.dataset.readerOriginalSource = original;
+        const wanted = english ? original.replaceAll("/assets/banners/book-", "/assets/banners/en/book-") : original;
+        if (image.getAttribute(attribute) !== wanted) image.setAttribute(attribute, wanted);
+      });
+    });
+    if (lang === "en") prepareEnglishBooks();
+  }
   function localizePromotions() {
     const lang = document.documentElement.lang.split("-")[0];
     document.querySelectorAll(".project-banner-slot").forEach(slot => {
@@ -14,6 +51,7 @@
     document.querySelectorAll("[data-project-label]").forEach(node => {
       node.setAttribute("aria-label", node.getAttribute("data-label-" + lang) || node.getAttribute("data-label-ja"));
     });
+    localizeBookImages(lang);
     queueRailLayout();
   }
   function syncGroup(slot) {
@@ -104,11 +142,22 @@
   }
   initCommonRail();
   attach(document);
+  document.querySelectorAll('[data-analytics-link="book-project"] .project-banner-caption').forEach(caption => {
+    caption.dataset.en = caption.dataset.en.replace(/\bByu(?: app)?\b/, "Byu: Manga, EPUB & Read Aloud");
+    caption.dataset.en += " — PC sample UI; Android capture pending";
+  });
   localizePromotions();
   new MutationObserver(localizePromotions).observe(document.documentElement, {attributes: true, attributeFilter: ["lang"]});
   queueRailLayout();
   window.addEventListener("resize", queueRailLayout);
   window.addEventListener("load", queueRailLayout);
   const titleApp = document.getElementById("titleApp");
-  if (titleApp) new MutationObserver(() => attach(titleApp)).observe(titleApp, {childList: true, subtree: true});
+  if (titleApp) new MutationObserver(records => {
+    attach(titleApp);
+    // Only rendered elements can introduce a new reader link; caption text
+    // changes must not recursively trigger localization.
+    if (records.some(record => Array.from(record.addedNodes).some(node => node.nodeType === 1))) {
+      localizeBookImages(document.documentElement.lang.split("-")[0]);
+    }
+  }).observe(titleApp, {childList: true, subtree: true});
 })();
