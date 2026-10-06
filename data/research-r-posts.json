@@ -3,6 +3,16 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
+                      "id":  "painter-7cbe6d7a3480bbdd616a",
+                      "platform":  "painter",
+                      "published_at":  "2026-10-06T19:00:00+09:00",
+                      "age_rating":  "R18",
+                      "membership_only":  false,
+                      "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
+                      "web_image_relative_path":  "images/homepage-feed-painter-7cbe6d7a3480bbdd616a.webp",
+                      "prompt_info":  "非公開"
+                  },
+                  {
                       "id":  "patreon-fb60cad9aaa5bfd2f881",
                       "platform":  "patreon",
                       "published_at":  "2026-10-06T18:00:00+09:00",
@@ -31,16 +41,6 @@
                       "destination_url":  "https://aniborn.com/ja/6954d7c84740e/",
                       "web_image_relative_path":  "images/homepage-feed-promptcom-c9c4753d087d5531b738.webp",
                       "prompt_info":  "非公開"
-                  },
-                  {
-                      "id":  "painter-167383c05ebaf0738c13",
-                      "platform":  "painter",
-                      "published_at":  "2026-10-06T18:00:00+09:00",
-                      "age_rating":  "R15",
-                      "membership_only":  false,
-                      "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
-                      "web_image_relative_path":  "images/homepage-feed-painter-167383c05ebaf0738c13.webp",
-                      "prompt_info":  "(1girl, solo), yanami, blue hair, blue eyes, ahoge, medium hair, teenage girl, masterpiece, best quality, very aesthetic, absurdres, cowboy shot, holding a colorful beach ball with both hands in front of her chest, bright smile, looking at viewer, polka dot bikini, sunny beach, blue sky, summer, highly detailed, blurred background, bokeh, depth of field, soft focus\nNegative prompt: worst quality, low quality, bad anatomy, bad hands, extra fingers, missing fingers, fused fingers, mutated hands, interlocked fingers, jpeg artifacts, signature, watermark, text, multiple girls, 2girls, multiple people, multiple views, nsfw, explicit, sex, nude, topless, nipples, pussy, penis, holding drink, holding cup, holding bottle, holding can, cup, bottle, drinking glass, soda can, beverage, full body, full-length shot\nSteps: 28, Sampler: DPM++ 2M, Schedule type: Karras, CFG scale: 4.0, Seed: 2728892747, Size: 896x1152, Model hash: cfb64b8c27, Model: prefect-illustrious-xl-v3-sdxl, VAE hash: 63aeecb90f, VAE: sdxl_vae.safetensors, Denoising strength: 0.3, Clip skip: 2, ADetailer model: face_yolov8s.pt, ADetailer prompt: \"yanami, blue hair, blue eyes, ahoge, medium hair, teenage girl, looking at viewer, masterpiece, best quality, very aesthetic\", ADetailer confidence: 0.3, ADetailer dilate erode: 4, ADetailer mask blur: 4, ADetailer denoising strength: 0.4, ADetailer inpaint only masked: True, ADetailer inpaint padding: 32, ADetailer model 2nd: hand_yolov8s.pt, ADetailer prompt 2nd: \"perfect hands, detailed fingers, \", ADetailer negative prompt 2nd: \"bad hands, extra fingers, missing fingers, fused fingers, mutated hands\", ADetailer confidence 2nd: 0.3, ADetailer dilate erode 2nd: 4, ADetailer mask blur 2nd: 4, ADetailer denoising strength 2nd: 0.5, ADetailer inpaint only masked 2nd: True, ADetailer inpaint padding 2nd: 32, ADetailer version: 25.3.0, Hires CFG Scale: 1.0, Hires upscale: 1.5, Hires steps: 12, Hires upscaler: R-ESRGAN 4x+ Anime6B, Version: f1.0.0v2-v1.10.1RC-latest-2514-g7307781a"
                   },
                   {
                       "id":  "pixiv-23723ab5137417809674",
