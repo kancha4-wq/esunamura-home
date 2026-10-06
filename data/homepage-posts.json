@@ -3,6 +3,22 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
+                      "platform":  "promptcom",
+                      "published_at":  "2026-10-06T15:00:00+09:00",
+                      "age_rating":  "全年齢",
+                      "membership_only":  false,
+                      "destination_url":  "https://aniborn.com/ja/6954d7c84740e/",
+                      "web_image_relative_path":  "images/homepage-feed-promptcom-1f49163a308920607cc4.webp"
+                  },
+                  {
+                      "platform":  "painter",
+                      "published_at":  "2026-10-06T15:00:00+09:00",
+                      "age_rating":  "R15",
+                      "membership_only":  false,
+                      "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
+                      "web_image_relative_path":  "images/homepage-feed-painter-a682a8e9d4bf044b514c.webp"
+                  },
+                  {
                       "platform":  "chichipui",
                       "published_at":  "2026-10-06T13:00:00+09:00",
                       "age_rating":  "R15",
@@ -11,28 +27,12 @@
                       "web_image_relative_path":  "images/homepage-feed-chichipui-ad634561d35d8488d1a8.webp"
                   },
                   {
-                      "platform":  "painter",
-                      "published_at":  "2026-10-06T13:00:00+09:00",
-                      "age_rating":  "R15",
-                      "membership_only":  false,
-                      "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
-                      "web_image_relative_path":  "images/homepage-feed-painter-e1c1fc75474e345517bb.webp"
-                  },
-                  {
                       "platform":  "pixiv",
                       "published_at":  "2026-10-06T12:30:00+09:00",
                       "age_rating":  "全年齢",
                       "membership_only":  false,
                       "destination_url":  "https://www.pixiv.net/users/21257126",
                       "web_image_relative_path":  "images/homepage-feed-pixiv-23723ab5137417809674.webp"
-                  },
-                  {
-                      "platform":  "promptcom",
-                      "published_at":  "2026-10-06T12:00:00+09:00",
-                      "age_rating":  "R15",
-                      "membership_only":  true,
-                      "destination_url":  "https://aniborn.com/ja/6954d7c84740e/",
-                      "web_image_relative_path":  "images/homepage-feed-promptcom-7fdf87c1c292d754ff33.webp"
                   },
                   {
                       "platform":  "x",
