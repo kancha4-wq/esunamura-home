@@ -4,11 +4,19 @@
     "items":  [
                   {
                       "platform":  "chichipui",
-                      "published_at":  "2026-10-05T22:30:00+09:00",
-                      "age_rating":  "R18",
-                      "membership_only":  true,
-                      "destination_url":  "https://membership.chichi-pui.com/users/esuna/membership/",
-                      "web_image_relative_path":  "images/homepage-feed-chichipui-ba3a83bebee5bc5b2ee8.webp"
+                      "published_at":  "2026-10-06T10:00:00+09:00",
+                      "age_rating":  "全年齢",
+                      "membership_only":  false,
+                      "destination_url":  "https://www.chichi-pui.com/users/esuna/",
+                      "web_image_relative_path":  "images/homepage-feed-chichipui-e4e3654d6e6cebd9cc3e.webp"
+                  },
+                  {
+                      "platform":  "promptcom",
+                      "published_at":  "2026-10-06T10:00:00+09:00",
+                      "age_rating":  "全年齢",
+                      "membership_only":  false,
+                      "destination_url":  "https://aniborn.com/ja/6954d7c84740e/",
+                      "web_image_relative_path":  "images/homepage-feed-promptcom-59302b9c62e1f2c34afe.webp"
                   },
                   {
                       "platform":  "painter",
@@ -41,14 +49,6 @@
                       "membership_only":  true,
                       "destination_url":  "https://www.patreon.com/esunamura/posts/171401928",
                       "web_image_relative_path":  "images/homepage-feed-patreon-beb2e77cdb99561ed7d9.webp"
-                  },
-                  {
-                      "platform":  "promptcom",
-                      "published_at":  "2026-10-05T18:00:00+09:00",
-                      "age_rating":  "R18",
-                      "membership_only":  false,
-                      "destination_url":  "https://aniborn.com/ja/6954d7c84740e/",
-                      "web_image_relative_path":  "images/homepage-feed-promptcom-355b673a9b6933e954c1.webp"
                   }
               ]
 }
