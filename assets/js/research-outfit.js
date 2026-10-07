@@ -567,6 +567,7 @@
   }
 
   function verificationNote(item, category, language = currentLanguage()) {
+    if (item.verification) return localized(item.verification, language);
     if (language === "ja") return japaneseVerificationNote(item, category);
     const label = itemLabel(item, language);
     const templates = {

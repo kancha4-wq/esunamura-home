@@ -7,6 +7,7 @@
   const languageButtons = document.querySelectorAll(".lang-button");
 
   function installDownloadPackBanner() {
+    if (document.body.dataset.downloadPackPending === "true") return;
     if (!document.body.classList.contains("research-detail-page")) return;
     if (document.body.classList.contains("prompt-guide-pack-page")) return;
     const subnav = document.querySelector(".research-subnav");
