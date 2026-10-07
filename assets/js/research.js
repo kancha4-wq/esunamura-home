@@ -18,11 +18,11 @@
     banner.innerHTML = `
       <div class="research-download-banner-copy">
         <p class="eyebrow" data-ja="DOWNLOAD PACK / VOL.1.6" data-en="DOWNLOAD PACK / VOL.1.6" data-zh="下载包 / VOL.1.6" data-ko="다운로드 팩 / VOL.1.6">DOWNLOAD PACK / VOL.1.6</p>
-        <h2 data-ja="検証プロンプト689件を、すぐ使える形でまとめて収録" data-en="Get all 689 tested prompts in a production-ready pack" data-zh="将689条验证提示词整理为可直接使用的下载包" data-ko="검증 프롬프트 689건을 바로 쓸 수 있는 형태로 한 번에">検証プロンプト689件を、すぐ使える形でまとめて収録</h2>
-        <p data-ja="このページを含む研究室のプロンプトを、TXT・CSV・サムネイル付きExcel・カテゴリ別ファイルでまとめて検索、コピー、管理できます。Vol.1.6では学生服22種類を追加しました。" data-en="Search, copy, and manage the Research Lab prompts—including this page—in TXT, CSV, thumbnail Excel, and category files. Vol.1.6 adds 22 school uniform prompts." data-zh="可通过TXT、CSV、带缩略图Excel及分类文件，集中搜索、复制和管理研究室提示词（包括本页内容）。Vol.1.6新增22条学生制服提示词。" data-ko="이 페이지를 포함한 연구실 프롬프트를 TXT, CSV, 썸네일 포함 Excel, 카테고리별 파일로 한꺼번에 검색·복사·관리할 수 있습니다. Vol.1.6에는 교복 22종을 추가했습니다.">このページを含む研究室のプロンプトを、TXT・CSV・サムネイル付きExcel・カテゴリ別ファイルでまとめて検索、コピー、管理できます。Vol.1.6では学生服22種類を追加しました。</p>
+        <h2 data-ja="検証プロンプト688件を、すぐ使える形でまとめて収録" data-en="Get all 688 tested prompts in a production-ready pack" data-zh="将688条验证提示词整理为可直接使用的下载包" data-ko="검증 프롬프트 688건을 바로 쓸 수 있는 형태로 한 번에">検証プロンプト688件を、すぐ使える形でまとめて収録</h2>
+        <p data-ja="このページを含む研究室のプロンプトを、TXT・CSV・サムネイル付きExcel・カテゴリ別ファイルでまとめて検索、コピー、管理できます。Vol.1.6では学生服21種類を追加しました。" data-en="Search, copy, and manage the Research Lab prompts—including this page—in TXT, CSV, thumbnail Excel, and category files. Vol.1.6 adds 21 school uniform prompts." data-zh="可通过TXT、CSV、带缩略图Excel及分类文件，集中搜索、复制和管理研究室提示词（包括本页内容）。Vol.1.6新增22条学生制服提示词。" data-ko="이 페이지를 포함한 연구실 프롬프트를 TXT, CSV, 썸네일 포함 Excel, 카테고리별 파일로 한꺼번에 검색·복사·관리할 수 있습니다. Vol.1.6에는 교복 21종을 추가했습니다.">このページを含む研究室のプロンプトを、TXT・CSV・サムネイル付きExcel・カテゴリ別ファイルでまとめて検索、コピー、管理できます。Vol.1.6では学生服21種類を追加しました。</p>
         <div class="research-download-banner-facts" aria-label="Pack summary">
-          <span data-ja="本体689件" data-en="689 main entries" data-zh="本体689条" data-ko="본체 689건">本体689件</span>
-          <span data-ja="学生服22種類" data-en="22 school uniform prompts" data-zh="学生制服22条" data-ko="교복 22종">学生服22種類</span>
+          <span data-ja="本体688件" data-en="688 main entries" data-zh="本体688条" data-ko="본체 688건">本体688件</span>
+          <span data-ja="学生服21種類" data-en="21 school uniform prompts" data-zh="学生制服21条" data-ko="교복 21종">学生服21種類</span>
           <span>TXT / CSV / Excel</span>
           <span data-ja="500円" data-en="500 JPY" data-zh="500日元" data-ko="500엔">500円</span>
         </div>
@@ -368,7 +368,7 @@
     eyes: "SDXL / illustriousXL 系モデル向けの目プロンプト検証ページです。\nジト目、猫目、大きい目、小さい目、瞳、ハイライト表現などを比較していきます。",
     expression: "SDXL / illustriousXL 系モデル向けの表情プロンプト検証ページです。\n無表情、笑顔、困り顔、怒り顔、照れ顔などの表情差を比較しています。",
     background: "SDXL / illustriousXL 系モデル向けの背景プロンプト検証をまとめました。\n京都風、和風町並み、温泉旅館、海辺、リゾートなどの背景表現を比較しています。",
-    "prompt-guide-pack": "えすなむら研究室のSDXL Prompt Guide Pack Vol.1.6です。\n学生服22種類を追加し、本体689件・服装283件・自然文髪型49件をTXT / CSV / サムネイル付きExcelなどでまとめています。"
+    "prompt-guide-pack": "えすなむら研究室のSDXL Prompt Guide Pack Vol.1.6です。\n学生服21種類を追加し、本体688件・服装282件・自然文髪型49件をTXT / CSV / サムネイル付きExcelなどでまとめています。"
   };
 
   const pageSectionGroups = {
