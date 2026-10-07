@@ -3,20 +3,28 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
+                      "platform":  "chichipui",
+                      "published_at":  "2026-10-07T10:00:00+09:00",
+                      "age_rating":  "全年齢",
+                      "membership_only":  false,
+                      "destination_url":  "https://www.chichi-pui.com/users/esuna/",
+                      "web_image_relative_path":  "images/homepage-feed-chichipui-e8aa5d9e359b02541a50.webp"
+                  },
+                  {
+                      "platform":  "promptcom",
+                      "published_at":  "2026-10-07T10:00:00+09:00",
+                      "age_rating":  "全年齢",
+                      "membership_only":  false,
+                      "destination_url":  "https://aniborn.com/ja/6954d7c84740e/",
+                      "web_image_relative_path":  "images/homepage-feed-promptcom-a01f762f32847d53f31b.webp"
+                  },
+                  {
                       "platform":  "x",
                       "published_at":  "2026-10-07T00:00:00+09:00",
                       "age_rating":  "全年齢",
                       "membership_only":  false,
                       "destination_url":  "https://x.com/esuna_4649",
                       "web_image_relative_path":  "images/homepage-feed-x-461a22e2023ffba7399a.webp"
-                  },
-                  {
-                      "platform":  "chichipui",
-                      "published_at":  "2026-10-06T22:30:00+09:00",
-                      "age_rating":  "R18",
-                      "membership_only":  true,
-                      "destination_url":  "https://membership.chichi-pui.com/users/esuna/membership/",
-                      "web_image_relative_path":  "images/homepage-feed-chichipui-4413b76b32870bf8d7d8.webp"
                   },
                   {
                       "platform":  "painter",
@@ -41,14 +49,6 @@
                       "membership_only":  true,
                       "destination_url":  "https://www.patreon.com/esunamura/posts/171497150",
                       "web_image_relative_path":  "images/homepage-feed-patreon-fb60cad9aaa5bfd2f881.webp"
-                  },
-                  {
-                      "platform":  "promptcom",
-                      "published_at":  "2026-10-06T18:00:00+09:00",
-                      "age_rating":  "R18",
-                      "membership_only":  false,
-                      "destination_url":  "https://aniborn.com/ja/6954d7c84740e/",
-                      "web_image_relative_path":  "images/homepage-feed-promptcom-c9c4753d087d5531b738.webp"
                   }
               ]
 }
