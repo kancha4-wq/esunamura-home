@@ -1,23 +1,24 @@
 (() => {
   "use strict";
   const attached = new WeakSet();
-  // English artwork is supplied separately. Keep the approved Japanese artwork
-  // until every required English format has loaded at its expected dimensions.
-  const bookFormats = {wide:[1400,500],card:[780,900],strip:[1400,280],slim:[280,1360]};
-  let englishBookReady = false;
-  let englishBookRequested = false;
-  function prepareEnglishBooks() {
-    if (englishBookRequested) return;
-    englishBookRequested = true;
-    Promise.all(Object.entries(bookFormats).map(([format, size]) => new Promise(resolve => {
+  // Load every format before switching a product to its translated artwork.
+  // A missing or malformed translation falls back to the original Japanese set.
+  const bannerFormats = {wide:[1400,500],card:[780,900],strip:[1400,280],slim:[280,1360]};
+  const readyBannerSets = new Set();
+  const requestedBannerSets = new Set();
+  function prepareBannerSet(kind, lang) {
+    const key = `${lang}:${kind}`;
+    if (requestedBannerSets.has(key)) return;
+    requestedBannerSets.add(key);
+    Promise.all(Object.entries(bannerFormats).map(([format, size]) => new Promise(resolve => {
       const image = new Image();
       image.onload = () => resolve(image.naturalWidth === size[0] && image.naturalHeight === size[1]);
       image.onerror = () => resolve(false);
-      image.src = `/assets/banners/en/book-${format}.png`;
+      image.src = `/assets/banners/${lang}/${kind}-${format}.png`;
     }))).then(results => {
-      englishBookReady = results.every(Boolean);
-      document.documentElement.dataset.readerEnglishImages = englishBookReady ? "ready" : "pending";
-      if (englishBookReady) localizePromotions();
+      const ready = results.every(Boolean);
+      document.documentElement.dataset[`${kind}${lang.toUpperCase()}Images`] = ready ? "ready" : "pending";
+      if (ready) { readyBannerSets.add(key); localizePromotions(); }
     });
   }
   // Only the two app/game promotion types are in scope. Keep all existing
@@ -39,19 +40,21 @@
       if (link.getAttribute("href") !== target.href) link.setAttribute("href", target.href);
     });
   }
-  function localizeBookImages(lang) {
-    const english = lang === "en" && englishBookReady;
-    document.querySelectorAll('.project-banner-link[data-analytics-link="book-project"]').forEach(link => {
+  function localizeBannerImages(lang) {
+    const translated = ["en", "zh", "ko"].includes(lang);
+    document.querySelectorAll('.project-banner-link[data-analytics-link="book-project"], .project-banner-link[data-analytics-link="game-project"]').forEach(link => {
+      const kind = link.dataset.analyticsLink === "book-project" ? "book" : "game";
+      const ready = translated && readyBannerSets.has(`${lang}:${kind}`);
       link.querySelectorAll("picture source, picture img").forEach(image => {
         const attribute = image.tagName === "SOURCE" ? "srcset" : "src";
-        const original = image.dataset.readerOriginalSource || image.getAttribute(attribute);
-        if (!original || !original.includes("/assets/banners/book-")) return;
-        image.dataset.readerOriginalSource = original;
-        const wanted = english ? original.replaceAll("/assets/banners/book-", "/assets/banners/en/book-") : original;
+        const original = image.dataset.projectOriginalSource || image.getAttribute(attribute);
+        if (!original || !original.startsWith(`/assets/banners/${kind}-`)) return;
+        image.dataset.projectOriginalSource = original;
+        const wanted = ready ? original.replaceAll(`/assets/banners/${kind}-`, `/assets/banners/${lang}/${kind}-`) : original;
         if (image.getAttribute(attribute) !== wanted) image.setAttribute(attribute, wanted);
       });
+      if (translated) prepareBannerSet(kind, lang);
     });
-    if (lang === "en") prepareEnglishBooks();
   }
   function localizePromotions() {
     const lang = document.documentElement.lang.split("-")[0];
@@ -67,7 +70,7 @@
       node.setAttribute("aria-label", node.getAttribute("data-label-" + lang) || node.getAttribute("data-label-ja"));
     });
     localizeProjectLinks(lang);
-    localizeBookImages(lang);
+    localizeBannerImages(lang);
     queueRailLayout();
   }
   function syncGroup(slot) {
@@ -174,7 +177,7 @@
     // changes must not recursively trigger localization.
     if (records.some(record => Array.from(record.addedNodes).some(node => node.nodeType === 1))) {
       localizeProjectLinks(document.documentElement.lang.split("-")[0]);
-      localizeBookImages(document.documentElement.lang.split("-")[0]);
+      localizeBannerImages(document.documentElement.lang.split("-")[0]);
     }
   }).observe(titleApp, {childList: true, subtree: true});
 })();
