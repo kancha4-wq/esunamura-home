@@ -20,13 +20,28 @@
       if (englishBookReady) localizePromotions();
     });
   }
+  // Only the two app/game promotion types are in scope. Keep all existing
+  // tracking parameters and fragments; language changes must not touch stores.
+  const readerPaths = {ja:"/viewer/",en:"/viewer/en/",zh:"/viewer/zh-Hans/",ko:"/viewer/ko/"};
+  function localizeProjectLinks(lang) {
+    const language = Object.hasOwn(readerPaths, lang) ? lang : "ja";
+    document.querySelectorAll('.project-banner-link[data-analytics-link="book-project"], .project-banner-link[data-analytics-link="game-project"], .project-reader-note a[data-analytics-link="book-project"]').forEach(link => {
+      const original = link.dataset.projectOriginalHref || link.getAttribute("href");
+      if (!original) return;
+      const target = new URL(original, document.baseURI);
+      if (target.origin !== "https://esunastudio-viewer.pages.dev") return;
+      const book = link.dataset.analyticsLink === "book-project";
+      if (book ? !Object.values(readerPaths).includes(target.pathname) : target.pathname !== "/") return;
+      link.dataset.projectOriginalHref = original;
+      if (book) target.pathname = readerPaths[language];
+      // Explicit ja also overrides a previously saved language on the game HP.
+      else target.searchParams.set("lang", language);
+      if (link.getAttribute("href") !== target.href) link.setAttribute("href", target.href);
+    });
+  }
   function localizeBookImages(lang) {
     const english = lang === "en" && englishBookReady;
-    document.querySelectorAll('a[href^="https://esunastudio-viewer.pages.dev/viewer/"]').forEach(link => {
-      if (!link.dataset.readerOriginalHref) link.dataset.readerOriginalHref = link.getAttribute("href");
-      const target = new URL(link.dataset.readerOriginalHref);
-      if (lang === "en") target.pathname = "/viewer/en/";
-      link.href = lang === "en" ? target.href : link.dataset.readerOriginalHref;
+    document.querySelectorAll('.project-banner-link[data-analytics-link="book-project"]').forEach(link => {
       link.querySelectorAll("picture source, picture img").forEach(image => {
         const attribute = image.tagName === "SOURCE" ? "srcset" : "src";
         const original = image.dataset.readerOriginalSource || image.getAttribute(attribute);
@@ -51,6 +66,7 @@
     document.querySelectorAll("[data-project-label]").forEach(node => {
       node.setAttribute("aria-label", node.getAttribute("data-label-" + lang) || node.getAttribute("data-label-ja"));
     });
+    localizeProjectLinks(lang);
     localizeBookImages(lang);
     queueRailLayout();
   }
@@ -157,6 +173,7 @@
     // Only rendered elements can introduce a new reader link; caption text
     // changes must not recursively trigger localization.
     if (records.some(record => Array.from(record.addedNodes).some(node => node.nodeType === 1))) {
+      localizeProjectLinks(document.documentElement.lang.split("-")[0]);
       localizeBookImages(document.documentElement.lang.split("-")[0]);
     }
   }).observe(titleApp, {childList: true, subtree: true});
