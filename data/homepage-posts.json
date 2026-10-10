@@ -3,6 +3,14 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
+                      "platform":  "x",
+                      "published_at":  "2026-10-11T00:00:00+09:00",
+                      "age_rating":  "全年齢",
+                      "membership_only":  false,
+                      "destination_url":  "https://x.com/esuna_4649",
+                      "web_image_relative_path":  "images/homepage-feed-x-5e58fb44318dd7e9681b.webp"
+                  },
+                  {
                       "platform":  "chichipui",
                       "published_at":  "2026-10-10T22:30:00+09:00",
                       "age_rating":  "R18",
@@ -25,14 +33,6 @@
                       "membership_only":  false,
                       "destination_url":  "https://www.pixiv.net/users/21257126",
                       "web_image_relative_path":  "images/homepage-feed-pixiv-d86b974e7cef91aa4c8d.webp"
-                  },
-                  {
-                      "platform":  "x",
-                      "published_at":  "2026-10-10T20:00:00+09:00",
-                      "age_rating":  "全年齢",
-                      "membership_only":  false,
-                      "destination_url":  "https://x.com/esuna_4649",
-                      "web_image_relative_path":  "images/homepage-feed-x-a9cd13e0cecf2c0c0afc.webp"
                   },
                   {
                       "platform":  "patreon",
