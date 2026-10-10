@@ -3,20 +3,28 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
+                      "platform":  "painter",
+                      "published_at":  "2026-10-10T22:00:00+09:00",
+                      "age_rating":  "R18",
+                      "membership_only":  false,
+                      "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
+                      "web_image_relative_path":  "images/homepage-feed-painter-5e67cc97ba42088101d7.webp"
+                  },
+                  {
+                      "platform":  "pixiv",
+                      "published_at":  "2026-10-10T21:30:00+09:00",
+                      "age_rating":  "R18",
+                      "membership_only":  false,
+                      "destination_url":  "https://www.pixiv.net/users/21257126",
+                      "web_image_relative_path":  "images/homepage-feed-pixiv-d86b974e7cef91aa4c8d.webp"
+                  },
+                  {
                       "platform":  "chichipui",
                       "published_at":  "2026-10-10T21:00:00+09:00",
                       "age_rating":  "R18",
                       "membership_only":  false,
                       "destination_url":  "https://www.chichi-pui.com/users/esuna/",
                       "web_image_relative_path":  "images/homepage-feed-chichipui-9e8ccf0d1b30c05a9ebf.webp"
-                  },
-                  {
-                      "platform":  "painter",
-                      "published_at":  "2026-10-10T21:00:00+09:00",
-                      "age_rating":  "R18",
-                      "membership_only":  false,
-                      "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
-                      "web_image_relative_path":  "images/homepage-feed-painter-9e34e1eb3459f9229dd0.webp"
                   },
                   {
                       "platform":  "x",
@@ -33,14 +41,6 @@
                       "membership_only":  false,
                       "destination_url":  "https://www.patreon.com/esunamura/posts/171888112",
                       "web_image_relative_path":  "images/homepage-feed-patreon-9746bc2930b041878ec8.webp"
-                  },
-                  {
-                      "platform":  "pixiv",
-                      "published_at":  "2026-10-10T12:30:00+09:00",
-                      "age_rating":  "全年齢",
-                      "membership_only":  false,
-                      "destination_url":  "https://www.pixiv.net/users/21257126",
-                      "web_image_relative_path":  "images/homepage-feed-pixiv-40c3fa0f534e48c9ab33.webp"
                   },
                   {
                       "platform":  "promptcom",
