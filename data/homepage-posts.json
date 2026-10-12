@@ -3,6 +3,30 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
+                      "platform":  "patreon",
+                      "published_at":  "2026-10-12T10:00:00+09:00",
+                      "age_rating":  "全年齢",
+                      "membership_only":  false,
+                      "destination_url":  "https://www.patreon.com/esunamura/posts/172057951",
+                      "web_image_relative_path":  "images/homepage-feed-patreon-5aa30d553698501d48f5.webp"
+                  },
+                  {
+                      "platform":  "chichipui",
+                      "published_at":  "2026-10-12T10:00:00+09:00",
+                      "age_rating":  "全年齢",
+                      "membership_only":  false,
+                      "destination_url":  "https://www.chichi-pui.com/users/esuna/",
+                      "web_image_relative_path":  "images/homepage-feed-chichipui-8644db7677fa89ccfe97.webp"
+                  },
+                  {
+                      "platform":  "promptcom",
+                      "published_at":  "2026-10-12T10:00:00+09:00",
+                      "age_rating":  "全年齢",
+                      "membership_only":  false,
+                      "destination_url":  "https://aniborn.com/ja/6954d7c84740e/",
+                      "web_image_relative_path":  "images/homepage-feed-promptcom-08619b5de00cae830274.webp"
+                  },
+                  {
                       "platform":  "x",
                       "published_at":  "2026-10-12T08:00:00+09:00",
                       "age_rating":  "全年齢",
@@ -25,30 +49,6 @@
                       "membership_only":  false,
                       "destination_url":  "https://www.pixiv.net/users/21257126",
                       "web_image_relative_path":  "images/homepage-feed-pixiv-1ebcfaf535625dbe928b.webp"
-                  },
-                  {
-                      "platform":  "chichipui",
-                      "published_at":  "2026-10-11T21:00:00+09:00",
-                      "age_rating":  "R18",
-                      "membership_only":  false,
-                      "destination_url":  "https://www.chichi-pui.com/users/esuna/",
-                      "web_image_relative_path":  "images/homepage-feed-chichipui-fc768d7feb4f794ce262.webp"
-                  },
-                  {
-                      "platform":  "patreon",
-                      "published_at":  "2026-10-11T20:00:00+09:00",
-                      "age_rating":  "全年齢",
-                      "membership_only":  false,
-                      "destination_url":  "https://www.patreon.com/esunamura/posts/171977810",
-                      "web_image_relative_path":  "images/homepage-feed-patreon-820288fc7ac7b24e2a44.webp"
-                  },
-                  {
-                      "platform":  "promptcom",
-                      "published_at":  "2026-10-11T18:00:00+09:00",
-                      "age_rating":  "R18",
-                      "membership_only":  false,
-                      "destination_url":  "https://aniborn.com/ja/6954d7c84740e/",
-                      "web_image_relative_path":  "images/homepage-feed-promptcom-8ff6faea3a3b0020ded4.webp"
                   }
               ]
 }
