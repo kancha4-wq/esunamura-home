@@ -3,6 +3,14 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
+                      "platform":  "pixiv",
+                      "published_at":  "2026-10-14T21:30:00+09:00",
+                      "age_rating":  "R18",
+                      "membership_only":  false,
+                      "destination_url":  "https://www.pixiv.net/users/21257126",
+                      "web_image_relative_path":  "images/homepage-feed-pixiv-9da2c54002e961d60866.webp"
+                  },
+                  {
                       "platform":  "chichipui",
                       "published_at":  "2026-10-14T21:00:00+09:00",
                       "age_rating":  "R18",
@@ -41,14 +49,6 @@
                       "membership_only":  false,
                       "destination_url":  "https://aniborn.com/ja/6954d7c84740e/",
                       "web_image_relative_path":  "images/homepage-feed-promptcom-aa89b6f340c7c2958cf9.webp"
-                  },
-                  {
-                      "platform":  "pixiv",
-                      "published_at":  "2026-10-14T12:30:00+09:00",
-                      "age_rating":  "全年齢",
-                      "membership_only":  false,
-                      "destination_url":  "https://www.pixiv.net/users/21257126",
-                      "web_image_relative_path":  "images/homepage-feed-pixiv-380b94fd6e51c7b17de0.webp"
                   }
               ]
 }
