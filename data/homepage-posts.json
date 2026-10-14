@@ -3,6 +3,22 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
+                      "platform":  "promptcom",
+                      "published_at":  "2026-10-14T15:00:00+09:00",
+                      "age_rating":  "全年齢",
+                      "membership_only":  false,
+                      "destination_url":  "https://aniborn.com/ja/6954d7c84740e/",
+                      "web_image_relative_path":  "images/homepage-feed-promptcom-a197fa54cfa6359b1957.webp"
+                  },
+                  {
+                      "platform":  "painter",
+                      "published_at":  "2026-10-14T15:00:00+09:00",
+                      "age_rating":  "R15",
+                      "membership_only":  false,
+                      "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
+                      "web_image_relative_path":  "images/homepage-feed-painter-daff091b450acf10ce33.webp"
+                  },
+                  {
                       "platform":  "chichipui",
                       "published_at":  "2026-10-14T13:00:00+09:00",
                       "age_rating":  "R15",
@@ -25,22 +41,6 @@
                       "membership_only":  false,
                       "destination_url":  "https://x.com/esuna_4649",
                       "web_image_relative_path":  "images/homepage-feed-x-5570f2c783102a1306e9.webp"
-                  },
-                  {
-                      "platform":  "promptcom",
-                      "published_at":  "2026-10-14T12:00:00+09:00",
-                      "age_rating":  "R15",
-                      "membership_only":  true,
-                      "destination_url":  "https://aniborn.com/ja/6954d7c84740e/",
-                      "web_image_relative_path":  "images/homepage-feed-promptcom-c6ad0d52230d297b2f86.webp"
-                  },
-                  {
-                      "platform":  "painter",
-                      "published_at":  "2026-10-14T11:00:00+09:00",
-                      "age_rating":  "R15",
-                      "membership_only":  false,
-                      "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
-                      "web_image_relative_path":  "images/homepage-feed-painter-0f2b8e2027229a8b5918.webp"
                   },
                   {
                       "platform":  "patreon",
