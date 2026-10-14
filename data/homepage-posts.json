@@ -3,6 +3,14 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
+                      "platform":  "painter",
+                      "published_at":  "2026-10-14T19:00:00+09:00",
+                      "age_rating":  "R18",
+                      "membership_only":  false,
+                      "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
+                      "web_image_relative_path":  "images/homepage-feed-painter-066648bdebb4d760ff13.webp"
+                  },
+                  {
                       "platform":  "patreon",
                       "published_at":  "2026-10-14T18:00:00+09:00",
                       "age_rating":  "R18",
@@ -25,14 +33,6 @@
                       "membership_only":  false,
                       "destination_url":  "https://aniborn.com/ja/6954d7c84740e/",
                       "web_image_relative_path":  "images/homepage-feed-promptcom-aa89b6f340c7c2958cf9.webp"
-                  },
-                  {
-                      "platform":  "painter",
-                      "published_at":  "2026-10-14T18:00:00+09:00",
-                      "age_rating":  "R15",
-                      "membership_only":  false,
-                      "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
-                      "web_image_relative_path":  "images/homepage-feed-painter-ea10ba3236c38dcb6a22.webp"
                   },
                   {
                       "platform":  "x",
