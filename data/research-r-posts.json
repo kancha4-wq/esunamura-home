@@ -3,6 +3,16 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
+                      "id":  "painter-0f2b8e2027229a8b5918",
+                      "platform":  "painter",
+                      "published_at":  "2026-10-14T11:00:00+09:00",
+                      "age_rating":  "R15",
+                      "membership_only":  false,
+                      "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
+                      "web_image_relative_path":  "images/homepage-feed-painter-0f2b8e2027229a8b5918.webp",
+                      "prompt_info":  "machu_lr, red hair, short hair, casual after-school style, pale yellow t-shirt, navy thin cardigan, knee-length skirt, sneakers, sitting backwards on a chair looking out the window, looking bored yet waiting for something, a longing for somewhere else, an empty classroom after school, orange light from the window, a blackboard, desks, curtains swaying, an artificial-sky sunset outside, cowboy shot, 1girl, solo, masterpiece, best quality, very aesthetic, highly detailed, absurdres, perfect hands, detailed fingers\nNegative prompt: worst quality, low quality, normal quality, bad anatomy, bad hands, extra fingers, missing fingers, fused fingers, mutated hands, jpeg artifacts, signature, watermark, text, lowres, oversaturated, high contrast, posterization, film grain, noise\nSteps: 28, Sampler: DPM++ 2M, Schedule type: Karras, CFG scale: 5.0, Seed: 4077147189, Size: 864x1216, Model hash: 2337449913, Model: illustriousXL20_v20, VAE hash: 63aeecb90f, VAE: sdxl_vae.safetensors, Denoising strength: 0.4, Clip skip: 2, ADetailer model: hand_yolov8s.pt, ADetailer prompt: \"perfect hands, detailed fingers\", ADetailer negative prompt: \"bad hands, extra fingers, missing fingers, fused fingers, mutated hands\", ADetailer confidence: 0.3, ADetailer dilate erode: 4, ADetailer mask blur: 4, ADetailer denoising strength: 0.4, ADetailer inpaint only masked: True, ADetailer inpaint padding: 32, ADetailer version: 25.3.0, Hires CFG Scale: 1.0, Hires upscale: 1.5, Hires steps: 12, Hires upscaler: 4x-AnimeSharp, Version: f1.0.0v2-v1.10.1RC-latest-2514-g7307781a"
+                  },
+                  {
                       "id":  "chichipui-3fbe73a4acb6473036d8",
                       "platform":  "chichipui",
                       "published_at":  "2026-10-14T10:00:00+09:00",
@@ -31,16 +41,6 @@
                       "destination_url":  "https://x.com/esuna_4649",
                       "web_image_relative_path":  "images/homepage-feed-x-2054d5083c1e904bad02.webp",
                       "prompt_info":  "1girl, solo, kuroko_lr, small adolescent stature, youthful face, narrow shoulders and slim natural torso, (long rose-brown twintails with a few broad loose S-shaped curls:1.45), two distinct unbraided twintails tied at the upper sides of her head, (two red hair bows at the twintail roots, clearly visible on both sides:1.2), (muted reddish-violet eyes with tall oval irises:1.2), youthful Kuroko face, naturally open eyes with clear vertical extent, parted bangs with a clear pointed central forehead opening, a few broad uneven bangs with tapered separated tips, (masterpiece, best quality:1.2), highly detailed skin texture, (dry skin, matte skin texture:1.2), (delicate skin folds:1.2), (subsurface scattering, realistic shadows:0.4), knee-up portrait, eye-level view, entire head visible, (hands naturally outside the frame:0.65), body turned slightly right, cheeky smile, simple gray background, Halloween costumes, swimwear, underwear, bare shoulders, bare shoulders, strapless dress, sleeveless top, cleavage, open chest, exposed chest, bare torso, (simple background:1.2)\nNegative prompt: black hair, loose untied hair, adult-looking body, braid, braided hair, twin braids, low twintails, short twintails, hat, witch hat, pointed hat, hat brim, Lowest quality, low quality, standard quality, unnatural body structure, unnatural hands, extra/missing/fused/deformed fingers, JPEG artifacts, signature, watermark, text, multiple angles, low resolution, unnatural proportions, hands pressed together, fingers interlaced, multiple people, multiple girls, holding drinks/cups/bottles/cans, cup, bottle, glass, soda can, beverage, strong sunlight, sharp shadows, high contrast, flat lighting, bright daylight, high-key lighting, excessive sharpening, deep shadows, (sweat, glistening skin, moist skin, wet skin, liquid, water drop, blue liquid:2.0), plastic skin, waxy skin, airbrushed skin, overly smooth skin, full body, full-length portrait, feet visible, distant shot, tiny face, cut off head, cropped forehead, face out of frame, sitting, close-up face, extreme low angle, foreshortened legs, one-handed wave, thumbs-up, hands touching hat, hands holding cape, clenched fists, (praying hands:0.8), (palms pressed together:0.8), (interlocked fingers:0.8), (hand close-up:0.7), Toes visible, picture frame, decorative frame, photo frame, (full body: 1.15), feet visible, (detailed background:1.3), scenery, sandy beach, sunset, horizon, outdoors, nature, waves, sand, landscape, buildings, cluttered background, holding food, eating, ice cream, popsicle, parfait, snack, food, holding flower\nSteps: 30, Sampler: Euler, Schedule type: Automatic, CFG scale: 7.0, Seed: 1087484736, Size: 832x1216, Model hash: cfb64b8c27, Model: prefect-illustrious-xl-v3-sdxl, VAE hash: 63aeecb90f, VAE: sdxl_vae.safetensors, Denoising strength: 0.4, Clip skip: 2, ControlNet 0: \"Module: depth_midas, Model: diffusers_xl_depth_full [2f51180b], Weight: 0.5, Resize Mode: ResizeMode.INNER_FIT, Processor Res: 512, Threshold A: 64.0, Threshold B: 64.0, Guidance Start: 0.0, Guidance End: 0.35, Pixel Perfect: True, Control Mode: ControlMode.PROMPT, Hr Option: HiResFixOption.BOTH\", Hires CFG Scale: 1.0, Hires upscale: 1.5, Hires steps: 15, Hires upscaler: R-ESRGAN 4x+ Anime6B, Pad conds: True, Version: f1.0.0v2-v1.10.1RC-latest-2518-g739b2e1d9"
-                  },
-                  {
-                      "id":  "painter-519a8959aaf7bda56585",
-                      "platform":  "painter",
-                      "published_at":  "2026-10-13T22:00:00+09:00",
-                      "age_rating":  "R18",
-                      "membership_only":  true,
-                      "destination_url":  "https://painter-ai.ai/ja/membership_rooms/a9a7be76-6c2b-4c23-a192-c309b1122209",
-                      "web_image_relative_path":  "images/homepage-feed-painter-519a8959aaf7bda56585.webp",
-                      "prompt_info":  "非公開"
                   },
                   {
                       "id":  "pixiv-3a4379558d6dec939b7b",
