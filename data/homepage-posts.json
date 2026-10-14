@@ -3,6 +3,22 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
+                      "platform":  "chichipui",
+                      "published_at":  "2026-10-14T10:00:00+09:00",
+                      "age_rating":  "全年齢",
+                      "membership_only":  false,
+                      "destination_url":  "https://www.chichi-pui.com/users/esuna/",
+                      "web_image_relative_path":  "images/homepage-feed-chichipui-3fbe73a4acb6473036d8.webp"
+                  },
+                  {
+                      "platform":  "promptcom",
+                      "published_at":  "2026-10-14T10:00:00+09:00",
+                      "age_rating":  "全年齢",
+                      "membership_only":  false,
+                      "destination_url":  "https://aniborn.com/ja/6954d7c84740e/",
+                      "web_image_relative_path":  "images/homepage-feed-promptcom-8fd0ac7b2460267a8ccb.webp"
+                  },
+                  {
                       "platform":  "x",
                       "published_at":  "2026-10-14T09:00:00+09:00",
                       "age_rating":  "全年齢",
@@ -27,28 +43,12 @@
                       "web_image_relative_path":  "images/homepage-feed-pixiv-3a4379558d6dec939b7b.webp"
                   },
                   {
-                      "platform":  "chichipui",
-                      "published_at":  "2026-10-13T21:00:00+09:00",
-                      "age_rating":  "R18",
-                      "membership_only":  false,
-                      "destination_url":  "https://www.chichi-pui.com/users/esuna/",
-                      "web_image_relative_path":  "images/homepage-feed-chichipui-1e5072772abd65c35162.webp"
-                  },
-                  {
                       "platform":  "patreon",
                       "published_at":  "2026-10-13T18:00:00+09:00",
                       "age_rating":  "R18",
                       "membership_only":  true,
                       "destination_url":  "https://www.patreon.com/esunamura/posts/172149626",
                       "web_image_relative_path":  "images/homepage-feed-patreon-8e53f9e06b69554fc8c9.webp"
-                  },
-                  {
-                      "platform":  "promptcom",
-                      "published_at":  "2026-10-13T18:00:00+09:00",
-                      "age_rating":  "R18",
-                      "membership_only":  false,
-                      "destination_url":  "https://aniborn.com/ja/6954d7c84740e/",
-                      "web_image_relative_path":  "images/homepage-feed-promptcom-f518c173f1432a6c6174.webp"
                   }
               ]
 }
