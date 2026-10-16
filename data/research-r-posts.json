@@ -3,6 +3,16 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
+                      "id":  "promptcom-7b092c45343f9dd936cc",
+                      "platform":  "promptcom",
+                      "published_at":  "2026-10-16T15:00:00+09:00",
+                      "age_rating":  "全年齢",
+                      "membership_only":  false,
+                      "destination_url":  "https://aniborn.com/ja/6954d7c84740e/",
+                      "web_image_relative_path":  "images/homepage-feed-promptcom-7b092c45343f9dd936cc.webp",
+                      "prompt_info":  "非公開"
+                  },
+                  {
                       "id":  "chichipui-a1c0718c94a886cf4cb6",
                       "platform":  "chichipui",
                       "published_at":  "2026-10-16T13:00:00+09:00",
@@ -41,16 +51,6 @@
                       "destination_url":  "https://x.com/esuna_4649",
                       "web_image_relative_path":  "images/homepage-feed-x-aaed1819f0a282bdf3cb.webp",
                       "prompt_info":  "(1girl, solo), takina_lr, black hair, long hair, purple eyes, masterpiece, best quality, very aesthetic, absurdres, soft shading, soft lighting, soft focus, depth of field, smooth shading, standing, one arm stretched high overhead, cheerful open-mouth smile, looking at viewer, white short-sleeve blouse and skirt, soft sunlit beach, warm gentle daylight, Explicit content, pleasure, Close-up of the crotch, blurred background, bokeh, depth of field, soft focus\nNegative prompt: worst quality, low quality, bad anatomy, bad hands, extra fingers, missing fingers, fused fingers, mutated hands, interlocked fingers, jpeg artifacts, signature, watermark, text, multiple girls, 2girls, multiple people, multiple views, nsfw, explicit, sex, nude, topless, nipples, pussy, penis, holding drink, holding cup, holding bottle, holding can, cup, bottle, drinking glass, soda can, beverage\nSteps: 28, Sampler: DPM++ 2M, Schedule type: Karras, CFG scale: 4.0, Seed: 1721645923, Size: 896x1152, Model hash: cfb64b8c27, Model: prefect-illustrious-xl-v3-sdxl, VAE hash: 63aeecb90f, VAE: sdxl_vae.safetensors, Denoising strength: 0.4, Clip skip: 2, ADetailer model: face_yolov8s.pt, ADetailer prompt: \"takina_lr, black hair, long hair, purple eyes, looking at viewer, masterpiece, best quality, very aesthetic\", ADetailer confidence: 0.3, ADetailer dilate erode: 4, ADetailer mask blur: 4, ADetailer denoising strength: 0.4, ADetailer inpaint only masked: True, ADetailer inpaint padding: 32, ADetailer model 2nd: hand_yolov8s.pt, ADetailer prompt 2nd: \"perfect hands, detailed fingers, \", ADetailer negative prompt 2nd: \"bad hands, extra fingers, missing fingers, fused fingers, mutated hands\", ADetailer confidence 2nd: 0.3, ADetailer dilate erode 2nd: 4, ADetailer mask blur 2nd: 4, ADetailer denoising strength 2nd: 0.5, ADetailer inpaint only masked 2nd: True, ADetailer inpaint padding 2nd: 32, ADetailer version: 26.2.0, Hires CFG Scale: 1.0, Hires upscale: 1.5, Hires steps: 12, Hires upscaler: R-ESRGAN 4x+, Version: f1.0.0v2-v1.10.1RC-latest-2518-g739b2e1d9"
-                  },
-                  {
-                      "id":  "promptcom-4e5a576477b7dacad40c",
-                      "platform":  "promptcom",
-                      "published_at":  "2026-10-16T12:00:00+09:00",
-                      "age_rating":  "R15",
-                      "membership_only":  true,
-                      "destination_url":  "https://aniborn.com/ja/6954d7c84740e/",
-                      "web_image_relative_path":  "images/homepage-feed-promptcom-4e5a576477b7dacad40c.webp",
-                      "prompt_info":  "(1girl, solo), leafa, blonde hair, green eyes, long hair, ponytail, pointy ears, masterpiece, best quality, very aesthetic, absurdres, upper body, both arms stretched up overhead, eyes closed with a happy smile, looking up, mint green bikini, beach, clear sky, summer, highly detailed, blurred background, bokeh, depth of field, soft focus\nNegative prompt: worst quality, low quality, normal quality, bad anatomy, bad hands, extra fingers, missing fingers, fused fingers, mutated hands, jpeg artifacts, signature, watermark, text, multiple views, lowres, pink hair, grey hair, silver hair, brown hair, black hair, blue hair, purple hair, mature body, adult, tall, long legs, elongated legs, bad proportions, own hands together, interlocked fingers, interlaced fingers, multiple people, multiple girls, full body, full-length shot\nSteps: 28, Sampler: DPM++ 2M, Schedule type: Karras, CFG scale: 4.0, Seed: 1585975346, Size: 896x1152, Model hash: cfb64b8c27, Model: prefect-illustrious-xl-v3-sdxl, VAE hash: 63aeecb90f, VAE: sdxl_vae.safetensors, Denoising strength: 0.3, Clip skip: 2, ADetailer model: face_yolov8s.pt, ADetailer prompt: \"leafa, blonde hair, green eyes, long hair, ponytail, pointy ears, looking at viewer, masterpiece, best quality, very aesthetic\", ADetailer confidence: 0.3, ADetailer dilate erode: 4, ADetailer mask blur: 4, ADetailer denoising strength: 0.4, ADetailer inpaint only masked: True, ADetailer inpaint padding: 32, ADetailer model 2nd: hand_yolov8s.pt, ADetailer prompt 2nd: \"perfect hands, detailed fingers, \", ADetailer negative prompt 2nd: \"bad hands, extra fingers, missing fingers, fused fingers, mutated hands\", ADetailer confidence 2nd: 0.3, ADetailer dilate erode 2nd: 4, ADetailer mask blur 2nd: 4, ADetailer denoising strength 2nd: 0.5, ADetailer inpaint only masked 2nd: True, ADetailer inpaint padding 2nd: 32, ADetailer version: 26.2.0, Hires CFG Scale: 1.0, Hires upscale: 1.5, Hires steps: 12, Hires upscaler: R-ESRGAN 4x+ Anime6B, Version: f1.0.0v2-v1.10.1RC-latest-2518-g739b2e1d9"
                   },
                   {
                       "id":  "patreon-615e4d8c9a97d25cdf70",
