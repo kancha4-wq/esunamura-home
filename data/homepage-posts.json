@@ -3,6 +3,22 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
+                      "platform":  "painter",
+                      "published_at":  "2026-10-18T22:00:00+09:00",
+                      "age_rating":  "R18",
+                      "membership_only":  false,
+                      "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
+                      "web_image_relative_path":  "images/homepage-feed-painter-468f5c4b70ffa0538276.webp"
+                  },
+                  {
+                      "platform":  "pixiv",
+                      "published_at":  "2026-10-18T21:30:00+09:00",
+                      "age_rating":  "R18",
+                      "membership_only":  false,
+                      "destination_url":  "https://www.pixiv.net/users/21257126",
+                      "web_image_relative_path":  "images/homepage-feed-pixiv-4405209aeda2982a0df7.webp"
+                  },
+                  {
                       "platform":  "x",
                       "published_at":  "2026-10-18T20:00:00+09:00",
                       "age_rating":  "全年齢",
@@ -11,28 +27,12 @@
                       "web_image_relative_path":  "images/homepage-feed-x-111a5afed2679d518089.webp"
                   },
                   {
-                      "platform":  "painter",
-                      "published_at":  "2026-10-18T19:00:00+09:00",
-                      "age_rating":  "R18",
-                      "membership_only":  false,
-                      "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
-                      "web_image_relative_path":  "images/homepage-feed-painter-dfeab6e0f64e791d8d2b.webp"
-                  },
-                  {
                       "platform":  "promptcom",
                       "published_at":  "2026-10-18T18:00:00+09:00",
                       "age_rating":  "R18",
                       "membership_only":  false,
                       "destination_url":  "https://aniborn.com/ja/6954d7c84740e/",
                       "web_image_relative_path":  "images/homepage-feed-promptcom-18c20930bb23848e39cb.webp"
-                  },
-                  {
-                      "platform":  "pixiv",
-                      "published_at":  "2026-10-18T12:30:00+09:00",
-                      "age_rating":  "全年齢",
-                      "membership_only":  false,
-                      "destination_url":  "https://www.pixiv.net/users/21257126",
-                      "web_image_relative_path":  "images/homepage-feed-pixiv-8cadeb1bddb511742f35.webp"
                   },
                   {
                       "platform":  "chichipui",
