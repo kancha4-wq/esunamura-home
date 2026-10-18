@@ -3,6 +3,14 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
+                      "platform":  "promptcom",
+                      "published_at":  "2026-10-18T15:00:00+09:00",
+                      "age_rating":  "全年齢",
+                      "membership_only":  false,
+                      "destination_url":  "https://aniborn.com/ja/6954d7c84740e/",
+                      "web_image_relative_path":  "images/homepage-feed-promptcom-0825b7fc883d950e1cee.webp"
+                  },
+                  {
                       "platform":  "painter",
                       "published_at":  "2026-10-18T13:00:00+09:00",
                       "age_rating":  "R15",
@@ -25,14 +33,6 @@
                       "membership_only":  false,
                       "destination_url":  "https://x.com/esuna_4649",
                       "web_image_relative_path":  "images/homepage-feed-x-940b3434d50b3d44f4f2.webp"
-                  },
-                  {
-                      "platform":  "promptcom",
-                      "published_at":  "2026-10-18T12:00:00+09:00",
-                      "age_rating":  "R15",
-                      "membership_only":  true,
-                      "destination_url":  "https://aniborn.com/ja/6954d7c84740e/",
-                      "web_image_relative_path":  "images/homepage-feed-promptcom-c0bb12871fa13884d205.webp"
                   },
                   {
                       "platform":  "chichipui",
