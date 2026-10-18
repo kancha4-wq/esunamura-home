@@ -3,6 +3,16 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
+                      "id":  "painter-dfeab6e0f64e791d8d2b",
+                      "platform":  "painter",
+                      "published_at":  "2026-10-18T19:00:00+09:00",
+                      "age_rating":  "R18",
+                      "membership_only":  false,
+                      "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
+                      "web_image_relative_path":  "images/homepage-feed-painter-dfeab6e0f64e791d8d2b.webp",
+                      "prompt_info":  "非公開"
+                  },
+                  {
                       "id":  "promptcom-18c20930bb23848e39cb",
                       "platform":  "promptcom",
                       "published_at":  "2026-10-18T18:00:00+09:00",
@@ -10,16 +20,6 @@
                       "membership_only":  false,
                       "destination_url":  "https://aniborn.com/ja/6954d7c84740e/",
                       "web_image_relative_path":  "images/homepage-feed-promptcom-18c20930bb23848e39cb.webp",
-                      "prompt_info":  "非公開"
-                  },
-                  {
-                      "id":  "painter-fab99fb34354a750eeb7",
-                      "platform":  "painter",
-                      "published_at":  "2026-10-18T17:00:00+09:00",
-                      "age_rating":  "R18",
-                      "membership_only":  true,
-                      "destination_url":  "https://painter-ai.ai/ja/membership_rooms/a9a7be76-6c2b-4c23-a192-c309b1122209",
-                      "web_image_relative_path":  "images/homepage-feed-painter-fab99fb34354a750eeb7.webp",
                       "prompt_info":  "非公開"
                   },
                   {
