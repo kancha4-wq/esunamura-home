@@ -3,6 +3,14 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
+                      "platform":  "chichipui",
+                      "published_at":  "2026-10-19T21:00:00+09:00",
+                      "age_rating":  "R18",
+                      "membership_only":  false,
+                      "destination_url":  "https://www.chichi-pui.com/users/esuna/",
+                      "web_image_relative_path":  "images/homepage-feed-chichipui-91c4956767a3db6bd68e.webp"
+                  },
+                  {
                       "platform":  "x",
                       "published_at":  "2026-10-19T20:00:00+09:00",
                       "age_rating":  "全年齢",
@@ -33,14 +41,6 @@
                       "membership_only":  false,
                       "destination_url":  "https://www.pixiv.net/users/21257126",
                       "web_image_relative_path":  "images/homepage-feed-pixiv-4405209aeda2982a0df7.webp"
-                  },
-                  {
-                      "platform":  "chichipui",
-                      "published_at":  "2026-10-17T21:00:00+09:00",
-                      "age_rating":  "R18",
-                      "membership_only":  false,
-                      "destination_url":  "https://www.chichi-pui.com/users/esuna/",
-                      "web_image_relative_path":  "images/homepage-feed-chichipui-23a5b32af1f2e52ca76e.webp"
                   },
                   {
                       "platform":  "patreon",
