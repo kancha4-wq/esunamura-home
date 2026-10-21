@@ -3,6 +3,14 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
+                      "platform":  "painter",
+                      "published_at":  "2026-10-21T19:00:00+09:00",
+                      "age_rating":  "R18",
+                      "membership_only":  false,
+                      "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
+                      "web_image_relative_path":  "images/homepage-feed-painter-d5a40ef1301634a31ddb.webp"
+                  },
+                  {
                       "platform":  "chichipui",
                       "published_at":  "2026-10-21T18:00:00+09:00",
                       "age_rating":  "R15",
@@ -25,14 +33,6 @@
                       "membership_only":  false,
                       "destination_url":  "https://x.com/esuna_4649",
                       "web_image_relative_path":  "images/homepage-feed-x-cbb8f636159a6088a0c0.webp"
-                  },
-                  {
-                      "platform":  "painter",
-                      "published_at":  "2026-10-21T13:00:00+09:00",
-                      "age_rating":  "R15",
-                      "membership_only":  false,
-                      "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
-                      "web_image_relative_path":  "images/homepage-feed-painter-2bc1ebc62fffd9cc49d4.webp"
                   },
                   {
                       "platform":  "pixiv",
