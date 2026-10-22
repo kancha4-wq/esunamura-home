@@ -4,21 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ビュッ｜漫画ビューア・電子書籍ビューア｜EPUB読み上げ</title>
-<meta name="description" content="漫画・EPUB・PDF に対応した蔵書ビューア。自分で買った同人漫画・同人小説・電子書籍を、ひとつの本棚ですっきり管理。EPUB はバックグラウンドで“聴く”朗読にも対応。Android版を開発中——最新情報はXで発信中。">
-<link rel="canonical" href="https://esunamura.com/app/">
+<meta name="description" content="漫画・EPUB・PDFに対応した蔵書ビューア『ビュッ』の旧公式ページです。最新の機能・公開情報は新しい公式サイトでご案内しています。">
+<link rel="canonical" href="https://esunastudio-viewer.pages.dev/viewer/">
 <meta name="robots" content="index,follow">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="えすなむら">
 <meta property="og:title" content="ビュッ｜漫画ビューア・電子書籍ビューア｜EPUB読み上げ">
-<meta property="og:description" content="漫画・EPUB・PDF 対応の蔵書ビューア。買った本を、自分の端末ですっきり管理。EPUB は“聴く”朗読にも対応。Android版を開発中——最新情報はXで。">
-<meta property="og:url" content="https://esunamura.com/app/">
+<meta property="og:description" content="漫画・EPUB・PDF対応の蔵書ビューア『ビュッ』。公式サイトは新しいページへ移転しました。">
+<meta property="og:url" content="https://esunastudio-viewer.pages.dev/viewer/">
 <meta property="og:image" content="https://esunamura.com/app/assets/ogp-android.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="ビュッ｜漫画ビューア・電子書籍ビューア｜EPUB読み上げ">
-<meta name="twitter:description" content="漫画・EPUB・PDF 対応の蔵書ビューア。買った本を、自分の端末ですっきり管理。EPUB は“聴く”朗読にも対応。Android版を開発中——最新情報はXで。">
+<meta name="twitter:description" content="漫画・EPUB・PDF対応の蔵書ビューア『ビュッ』。公式サイトは新しいページへ移転しました。">
 <meta name="twitter:image" content="https://esunamura.com/app/assets/ogp-android.jpg">
 <meta name="twitter:site" content="@esuna_4649">
 <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
@@ -35,7 +35,7 @@
   "operatingSystem": "Android",
   "description": "漫画・EPUB・PDF に対応した蔵書ビューア。買った本を自分の端末で管理でき、EPUB は読み上げ（朗読）にも対応。",
   "author": { "@type": "Organization", "name": "esunaStudio" },
-  "url": "https://esunamura.com/app/",
+  "url": "https://esunastudio-viewer.pages.dev/viewer/",
   "image": "https://esunamura.com/app/assets/ogp-android.jpg",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "JPY" }
 }
@@ -66,6 +66,38 @@
     line-height:1.85;
     -webkit-font-smoothing:antialiased;
   }
+  .migration-banner{
+    padding:16px 20px;
+    color:#173a63;
+    background:linear-gradient(135deg,#edf6ff,#fff7e9);
+    border-bottom:1px solid #d7e4f1;
+  }
+  .migration-banner-inner{
+    max-width:900px;
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:18px;
+    flex-wrap:wrap;
+  }
+  .migration-banner-copy{flex:1 1 420px}
+  .migration-banner strong{display:block;font-size:18px;line-height:1.45;margin-bottom:2px}
+  .migration-banner p{margin:0;color:#52667c;font-size:14px;line-height:1.65}
+  .migration-banner a{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:46px;
+    padding:8px 22px;
+    color:#fff;
+    background:var(--manga);
+    border-radius:999px;
+    font-weight:800;
+    text-decoration:none;
+    box-shadow:0 8px 20px rgba(59,120,184,.22);
+  }
+  .migration-banner a:hover{background:#2f68a5}
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
   section{padding:56px 0;border-bottom:1px solid var(--line)}
   section:last-of-type{border-bottom:0}
@@ -289,6 +321,16 @@
 </head>
 <body>
 
+<aside class="migration-banner" aria-label="公式サイト移転のお知らせ">
+  <div class="migration-banner-inner">
+    <div class="migration-banner-copy">
+      <strong>ビュッの公式サイトは移転しました</strong>
+      <p>最新の機能・公開情報は、新しい公式サイトでご案内しています。この旧ページも引き続きご覧いただけます。</p>
+    </div>
+    <a href="https://esunastudio-viewer.pages.dev/viewer/" target="_blank" rel="noopener" data-analytics-link="viewer-new-official-site" data-analytics-area="migration-banner">新しい公式サイトへ</a>
+  </div>
+</aside>
+
 <header class="site-head" id="siteHead">
   <div class="site-head-brand">
     <img class="site-head-logo" src="assets/app-icon-192.png" alt="ビュッ｜漫画ビューア・電子書籍ビューア｜EPUB読み上げ アイコン">
@@ -312,9 +354,9 @@
     <p>漫画もEPUBも、ひとつの本棚で。ローカルの蔵書を、すっきり整理。</p>
     <p>EPUBはバックグラウンドで“聴く”こともできます。</p>
     <p>設定はいりません。開いた、その状態がいちばん読みやすい。</p>
-    <p style="margin:16px auto 6px"><span class="soon">Android版 公開に向けて準備中</span></p>
-    <p style="margin:0 auto 12px;font-weight:700">公開時期やアップデートは、Xでお知らせします。フォローしてお待ちください。</p>
-    <a class="cta" href="https://x.com/esuna_4649" target="_blank" rel="noopener" data-analytics-link="app-follow-x" data-analytics-area="app-hero">最新情報をXでフォロー</a>
+    <p style="margin:16px auto 6px"><span class="soon">公式サイトを移転しました</span></p>
+    <p style="margin:0 auto 12px;font-weight:700">最新情報・機能紹介・公開情報は、新しい公式サイトでご案内しています。</p>
+    <a class="cta" href="https://esunastudio-viewer.pages.dev/viewer/" target="_blank" rel="noopener" data-analytics-link="viewer-new-official-site" data-analytics-area="app-hero">新しい公式サイトを見る</a>
     <a class="cta ghost" href="https://x.com/esuna_4649/status/2066098351804920247" target="_blank" rel="noopener" data-analytics-link="app-progress-x" data-analytics-area="app-hero">開発状況をXで見る</a>
     <a class="cta x" href="https://x.com/intent/post" rel="noopener" data-analytics-link="app-share-x" data-analytics-area="app-hero" onclick="return shareApp(event)">𝕏 でシェア</a>
     <div class="hero-duo">
@@ -579,10 +621,10 @@
 <section id="sample">
   <div class="wrap">
     <div class="panel">
-      <p style="margin:0 0 12px"><span class="soon">Android版 公開に向けて準備中</span></p>
-      <h2>Android版、公開に向けて準備中です。</h2>
-      <p class="lead" style="margin-bottom:18px">漫画・小説を本棚で読む・聴くAndroidアプリを開発中です。公開時期やアップデートの情報は、Xでお知らせします。フォローしてお待ちください。</p>
-      <a class="cta" href="https://x.com/esuna_4649" target="_blank" rel="noopener">最新情報をXでフォロー</a>
+      <p style="margin:0 0 12px"><span class="soon">公式サイトを移転しました</span></p>
+      <h2>最新情報は新しい公式サイトでご案内しています。</h2>
+      <p class="lead" style="margin-bottom:18px">機能紹介、公開情報、今後のアップデートは、新しい公式サイトをご覧ください。この旧ページも資料として引き続きご覧いただけます。</p>
+      <a class="cta" href="https://esunastudio-viewer.pages.dev/viewer/" target="_blank" rel="noopener">新しい公式サイトを見る</a>
       <a class="cta ghost" href="https://x.com/esuna_4649/status/2066098351804920247" target="_blank" rel="noopener">開発状況をXで見る</a>
     </div>
   </div>
@@ -617,8 +659,8 @@
 <section class="closing">
   <div class="wrap">
     <h2>読む本も、聴く本も。あなたの本棚を、ここに。</h2>
-    <p style="margin:12px 0 8px"><span class="soon">Android版 公開に向けて準備中</span></p>
-    <a class="cta" href="https://x.com/esuna_4649" target="_blank" rel="noopener" style="margin-top:6px">最新情報をXでフォロー</a>
+    <p style="margin:12px 0 8px"><span class="soon">公式サイトを移転しました</span></p>
+    <a class="cta" href="https://esunastudio-viewer.pages.dev/viewer/" target="_blank" rel="noopener" style="margin-top:6px">新しい公式サイトを見る</a>
     <a class="cta ghost" href="https://x.com/esuna_4649/status/2066098351804920247" target="_blank" rel="noopener" style="margin-top:6px">開発状況をXで見る</a>
     <a class="cta x" href="https://x.com/intent/post" rel="noopener" onclick="return shareApp(event)" style="margin-top:6px">𝕏 でシェア</a>
     <p class="small" style="margin-top:12px">ご意見・不具合報告は <a href="https://docs.google.com/forms/d/e/1FAIpQLSeY3DJLreYPvc20ZeEOkn238rYq2ojWfWwEZzcprUYQXo0O8A/viewform" target="_blank" rel="noopener" style="color:var(--accent)">こちらのフォーム</a> から。</p>
@@ -629,8 +671,8 @@
 
 <footer>
   ビュッ｜漫画ビューア・電子書籍ビューア｜EPUB読み上げ — esunaStudio<br>
-  漫画・EPUB・PDF対応の蔵書ビューア／ Android版を開発中。<br>
-  最新情報は <a href="https://x.com/esuna_4649" target="_blank" rel="noopener" style="color:inherit">X（@esuna_4649）</a> にて発信中。<br>
+  漫画・EPUB・PDF対応の蔵書ビューア／このページは旧公式ページです。<br>
+  最新情報は <a href="https://esunastudio-viewer.pages.dev/viewer/" target="_blank" rel="noopener" style="color:inherit">新しい公式サイト</a> と <a href="https://x.com/esuna_4649" target="_blank" rel="noopener" style="color:inherit">X（@esuna_4649）</a> でご案内しています。<br>
   <a href="/app/privacy/" style="color:inherit;text-decoration:underline">プライバシーポリシー</a>
 </footer>
 

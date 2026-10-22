@@ -78,6 +78,7 @@
   };
 
   const titleTranslations = {
+    "kurokami-kanojo-2": { en: "My Black-Haired Girlfriend, All to Myself 2", zh: "独占黑发女友 2 ～最真实的她，只属于你～", ko: "흑발 여자친구를 독차지 2 ～꾸밈없는 모습으로, 단둘이～" },
     "pink-haired-idol-encore": { en: "Encore Alone with the Pink-Haired Idol", zh: "与桃发偶像独处的安可时光", ko: "분홍 머리 아이돌과 단둘이 보내는 앙코르" },
     "kurokami-kanojo": { en: "My Black-Haired Girlfriend, All to Myself", zh: "独占黑发女友", ko: "흑발 여자친구를 독차지" },
     "summer-schoolday": { en: "The Day No One Comes to School", zh: "无人到来的上学日", ko: "아무도 오지 않는 등교일" },
@@ -100,6 +101,11 @@
   };
 
   const shortTranslations = {
+    "kurokami-kanojo-2": {
+      summary: { en: "A special day alone with a black-haired bob-cut girlfriend. A 340-image 4K AI-generated CG collection moving from everyday smiles to increasingly intimate moments. Coming soon on FANZA.", zh: "与黑色短发女友独处的特别一天。从日常笑容到逐渐拉近的距离，共340张4K AI生成CG。现已在FANZA公开预告。", ko: "검은 단발머리 여자친구와 단둘이 보내는 특별한 하루. 일상의 미소에서 점차 가까워지는 순간까지 담은 340장·4K AI 생성 CG집입니다. FANZA에서 예고 공개 중입니다." },
+      format: { en: "340 main images / 4K JPG", zh: "本篇340张 / 4K JPG", ko: "본편 340장 / 4K JPG" },
+      focus: { en: "Black bob / Partner's view / Everyday life to intimacy", zh: "黑色短发 / 恋人视角 / 从日常到亲密时光", ko: "검은 단발 / 연인 시점 / 일상에서 친밀한 시간으로" }
+    },
     "pink-haired-idol-encore": {
       summary: { en: "59 outfits, one idol. A 460-image, long-edge 4K AI-generated CG collection capturing a pink-haired idol's radiant smile and bashful expressions. A 225-image trial is available. Now on sale at FANZA and DLsite.", zh: "59套服装，一位偶像。收录桃发偶像在舞台上的灿烂笑容与羞涩表情，共460张、长边4K的AI生成CG集。现已公开225张体验版，并于FANZA和DLsite发售。", ko: "59벌의 의상, 한 명의 아이돌. 무대에서 빛나는 분홍 머리 아이돌의 미소와 수줍은 표정을 담은 본편 460장·긴 변 4K AI 생성 CG집입니다. 체험판 225장을 공개했으며 FANZA・DLsite에서 판매 중입니다." },
       format: { en: "59 outfits / 460 main images / 225 trial images", zh: "59套服装 / 本篇460张 / 体验版225张", ko: "59벌 의상 / 본편 460장 / 체험판 225장" },
