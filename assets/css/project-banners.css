@@ -57,6 +57,187 @@
 .project-layout-shell--rail .project-common-rail .project-banner-link { border: 0; }
 .project-layout-shell--rail .project-common-rail .project-banner-caption { padding: 8px 0; font-size: 13px; line-height: 1.5; }
 
+/* On the works page the hero image, book banner and game banner form the
+   requested three-column top row. */
+.project-layout-shell--dlsite { grid-template-columns: 880px 280px; width: 1228px; }
+.project-layout-shell--dlsite > .site-footer { grid-column: 1 / -1; }
+.project-layout-shell--dlsite .dlsite-category-rail { display: block; padding-top: 0; }
+.header-project-bars { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 0 0 18px; }
+.project-layout-shell--dlsite .header-project-bars .project-banner-slot { width: 100%; max-width: none; }
+.project-layout-shell--dlsite .header-project-bars .project-banner-link { border: 0; border-radius: 10px; }
+.project-layout-shell--dlsite .header-project-bars img { width: 100%; height: auto; }
+.project-layout-shell--dlsite .project-layout-content .project-promo-section { display: none; }
+
+/* Works page: the app/game banners move to the top and the freed rail becomes
+   a compact DLsite category finder sourced from the affiliate link workbook. */
+.dlsite-category-rail { margin: 24px 0; }
+.dlsite-category-panel {
+  overflow: hidden;
+  padding: 14px 12px;
+  border: 1px solid #e8b8c3;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #fff9fb 0%, #fff 100%);
+  box-shadow: 0 10px 24px rgba(95, 48, 60, .08);
+}
+.dlsite-category-brand {
+  display: inline-block;
+  margin: 0 0 8px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: #e95877;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .04em;
+}
+.dlsite-category-panel h2 { margin: 0; font-size: 18px; line-height: 1.35; }
+.dlsite-category-note { margin: 7px 0 12px; color: var(--muted, #666); font-size: 12px; line-height: 1.5; }
+.dlsite-link-explorer { margin-top: 12px; font-size: 11px; line-height: 1.35; }
+.dlsite-open-list { display: grid; gap: 10px; }
+.dlsite-open-list-title {
+  margin: 0;
+  padding: 7px 9px;
+  border-radius: 8px;
+  background: #fce9ee;
+  color: #743748;
+  font-size: 12px;
+  font-weight: 900;
+}
+.dlsite-link-legend {
+  display: grid;
+  gap: 6px;
+  padding: 8px;
+  border: 1px solid #eadde1;
+  border-radius: 8px;
+  background: #fff;
+}
+.dlsite-link-legend-title {
+  color: #4a3b3f;
+  font-size: 11px;
+  font-weight: 900;
+}
+.dlsite-link-legend-item {
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr);
+  align-items: center;
+  gap: 6px;
+}
+.dlsite-link-legend-badge {
+  display: inline-flex;
+  min-height: 22px;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 3px;
+  border: 1px solid #78a6dc;
+  border-radius: 5px;
+  background: #fff;
+  color: #3978c5;
+  font-size: 10px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+.dlsite-link-legend-soon .dlsite-link-legend-badge { background: #3978c5; color: #fff; }
+.dlsite-link-legend-text { color: #555b64; font-size: 10px; font-weight: 700; }
+.dlsite-ranking-block,
+.dlsite-category-block {
+  --category-color: #e95877;
+  --category-soft: #fff1f4;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--category-color) 36%, #fff);
+  border-radius: 9px;
+  background: #fff;
+}
+.dlsite-category-game { --category-color: #3978c5; --category-soft: #edf5ff; }
+.dlsite-category-movie { --category-color: #8657b8; --category-soft: #f6effd; }
+.dlsite-category-comic { --category-color: #2c8a62; --category-soft: #edf9f3; }
+.dlsite-category-cg { --category-color: #c87525; --category-soft: #fff5e9; }
+.dlsite-ranking-block > h3,
+.dlsite-category-block > h3 {
+  margin: 0;
+  padding: 7px 9px;
+  background: var(--category-soft);
+  color: var(--category-color);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: .02em;
+}
+.dlsite-ranking-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 5px;
+  padding: 7px;
+}
+.dlsite-ranking-links a {
+  min-width: 0;
+  padding: 6px 4px;
+  border: 1px solid #f0cbd4;
+  border-radius: 6px;
+  background: #fff;
+  color: #6f3444;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: none;
+}
+.dlsite-sort-block { padding: 7px; }
+.dlsite-sort-block + .dlsite-sort-block { border-top: 1px solid #ece8e9; }
+.dlsite-sort-block h4 {
+  margin: 0 0 5px;
+  padding: 3px 5px 4px;
+  border-left: 4px solid var(--category-color);
+  color: #2b3038;
+  font-size: 11px;
+  font-weight: 900;
+}
+.dlsite-filter-rows { display: grid; gap: 3px; }
+.dlsite-filter-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 5px;
+  min-height: 28px;
+  padding: 3px 4px 3px 7px;
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--category-soft) 62%, #fff);
+}
+.dlsite-filter-label { min-width: 0; color: #353942; font-weight: 700; }
+.dlsite-filter-actions { display: inline-grid; grid-template-columns: repeat(2, 38px); gap: 3px; }
+.dlsite-filter-actions a {
+  display: inline-flex;
+  min-height: 22px;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 3px;
+  border: 1px solid color-mix(in srgb, var(--category-color) 42%, #fff);
+  border-radius: 5px;
+  background: #fff;
+  color: var(--category-color);
+  font-size: 10px;
+  font-weight: 900;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.dlsite-filter-actions a:last-child { background: var(--category-color); color: #fff; }
+.dlsite-ranking-links a:hover,
+.dlsite-filter-actions a:hover { filter: brightness(.96); transform: translateY(-1px); }
+.dlsite-ranking-links a:focus-visible,
+.dlsite-filter-actions a:focus-visible { outline: 3px solid var(--category-color); outline-offset: 2px; }
+.dlsite-affiliate-disclosure { margin: 10px 0 0; color: var(--muted, #666); font-size: 10px; line-height: 1.45; }
+.project-layout-shell--rail .dlsite-category-rail {
+  display: block;
+  align-self: start;
+  margin: 0;
+  padding-top: var(--project-common-offset, 0px);
+}
+
+@media (max-width: 1229px) {
+  .header-project-bars { display: none !important; }
+  .dlsite-category-rail { margin: 24px; }
+  .dlsite-category-panel { padding: 18px; }
+  .dlsite-link-explorer { max-width: 720px; margin: 0 auto; }
+  .dlsite-affiliate-disclosure { text-align: center; }
+}
+
 @media (max-width: 600px) {
   .project-promo-top .project-banner-group { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  .dlsite-category-rail { margin: 20px 14px; }
 }

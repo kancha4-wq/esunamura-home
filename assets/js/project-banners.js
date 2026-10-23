@@ -103,23 +103,28 @@
     const shell = document.querySelector(".page-shell");
     const footer = shell?.querySelector(":scope > .site-footer");
     if (!shell || !footer) return;
+    const presetRail = shell.querySelector(":scope > .dlsite-category-rail");
     const content = document.createElement("div");
     content.className = "project-layout-content";
-    Array.from(shell.children).filter(node => node !== footer).forEach(node => content.append(node));
-    const rail = document.createElement("aside");
-    rail.className = "project-common-rail project-banner-group";
-    rail.hidden = true;
-    rail.setAttribute("data-project-label", "");
-    const labels = {ja:"別提供のアプリ・制作中ゲーム",en:"A separate app and a game in development",zh:"独立应用与开发中的游戏",ko:"별도 앱과 개발 중인 게임"};
-    Object.entries(labels).forEach(([lang,label]) => rail.setAttribute("data-label-" + lang,label));
-    const captions = {
-      book: {ja:"ビュッ｜別提供アプリ",en:"Byu — a separate app",zh:"独立应用 Byu",ko:"별도 앱 Byu"},
-      game: {ja:"温泉すごろく｜開発中",en:"Hot spring game — In development",zh:"温泉双六 — 开发中",ko:"온천 게임 — 개발 중"}
-    };
-    rail.innerHTML = ["book", "game"].map(kind => {
-      const attributes = Object.entries(captions[kind]).map(([lang,text]) => `data-${lang}="${text}"`).join(" ");
-      return `<div class="project-banner-slot" hidden><a class="project-banner-link" href="https://esunastudio-viewer.pages.dev/${kind === "book" ? "viewer/" : ""}" target="_blank" rel="noopener noreferrer" data-analytics-link="${kind}-project" data-analytics-area="common-project-rail"><picture><source data-common-slim media="not all" srcset="/assets/banners/${kind}-slim.png"><source media="(min-width:768px)" srcset="/assets/banners/${kind}-wide.png"><img src="/assets/banners/${kind}-card.png" width="780" height="900" alt="${captions[kind].ja}" loading="eager" decoding="async"></picture><span class="project-banner-caption" ${attributes}>${captions[kind].ja}</span></a></div>`;
-    }).join("");
+    Array.from(shell.children).filter(node => node !== footer && node !== presetRail).forEach(node => content.append(node));
+    const rail = presetRail || document.createElement("aside");
+    if (presetRail) {
+      rail.classList.add("project-common-rail");
+    } else {
+      rail.className = "dlsite-category-rail project-common-rail";
+      rail.setAttribute("aria-labelledby", "dlsite-category-title");
+      rail.innerHTML = `
+        <div class="header-project-bars project-banner-group" data-project-label data-label-ja="書籍アプリとゲーム" data-label-en="Book app and game" data-label-zh="书籍应用与游戏" data-label-ko="도서 앱과 게임" aria-label="書籍アプリとゲーム">
+          <div class="project-banner-slot" hidden><a class="project-banner-link" href="https://esunastudio-viewer.pages.dev/viewer/" target="_blank" rel="noopener noreferrer" data-analytics-link="book-project" data-analytics-area="header-project-bars"><picture><img src="/assets/banners/book-slim.png" width="280" height="1360" alt="ビュッ｜別提供アプリ" loading="eager" decoding="async"></picture></a></div>
+          <div class="project-banner-slot" hidden><a class="project-banner-link" href="https://esunastudio-viewer.pages.dev/" target="_blank" rel="noopener noreferrer" data-analytics-link="game-project" data-analytics-area="header-project-bars"><picture><img src="/assets/banners/game-slim.png" width="280" height="1360" alt="温泉すごろく｜開発中" loading="eager" decoding="async"></picture></a></div>
+        </div>
+        <div class="dlsite-category-panel">
+          <p class="dlsite-category-brand">DLsite</p>
+          <h2 id="dlsite-category-title" data-ja="内容カテゴリから探す" data-en="Browse by category" data-zh="按内容分类浏览" data-ko="콘텐츠 카테고리로 찾기">内容カテゴリから探す</h2>
+          <nav class="dlsite-link-explorer" id="dlsiteLinkExplorer" aria-label="DLsite affiliate link explorer"></nav>
+          <p class="dlsite-affiliate-disclosure" data-ja="※リンクにはアフィリエイトIDを含みます" data-en="Affiliate links are used." data-zh="※链接含推广ID" data-ko="※제휴 링크가 포함됩니다">※リンクにはアフィリエイトIDを含みます</p>
+        </div>`;
+    }
     shell.append(content, rail, footer);
     commonRail = {shell,content,rail,footer};
     new ResizeObserver(queueRailLayout).observe(content);
@@ -133,16 +138,19 @@
     const contentBox = content.getBoundingClientRect();
     const offset = Math.max(0, main.getBoundingClientRect().top - contentBox.top);
     // Keep both banners within the content row; short pages use their lower pair instead.
-    const active = slimReady && window.innerWidth >= 1200 && document.body.clientWidth >= 1140 &&
-      contentBox.height - offset >= 1600;
+    const isCategoryRail = rail.classList.contains("dlsite-category-rail");
+    const active = isCategoryRail
+      ? window.innerWidth >= 1230 && document.body.clientWidth >= 1230
+      : slimReady && window.innerWidth >= 1200 && document.body.clientWidth >= 1140 && contentBox.height - offset >= 1600;
     shell.classList.toggle("project-layout-shell--rail", active);
-    rail.style.setProperty("--project-common-offset", offset + "px");
+    shell.classList.toggle("project-layout-shell--dlsite", active && isCategoryRail);
+    rail.style.setProperty("--project-common-offset", (isCategoryRail ? 0 : offset) + "px");
     rail.querySelectorAll("[data-common-slim]").forEach(source => {
       const media = active ? "(min-width:1200px)" : "not all";
       if (source.media !== media) source.media = media;
     });
     const hasLowerPair = !!content.querySelector(".project-promo-section:not(.project-promo-top) .project-banner-group");
-    rail.hidden = !(active || !hasLowerPair);
+    rail.hidden = isCategoryRail ? false : !(active || !hasLowerPair);
   }
   function attach(scope) {
     scope.querySelectorAll(".project-banner-slot").forEach(slot => {
@@ -160,6 +168,11 @@
     });
   }
   initCommonRail();
+  if (document.getElementById("dlsiteLinkExplorer") && !document.querySelector('script[src*="dlsite-link-explorer.js"]')) {
+    const explorerScript = document.createElement("script");
+    explorerScript.src = "/assets/js/dlsite-link-explorer.js?v=20261023-locale-sync";
+    document.head.append(explorerScript);
+  }
   attach(document);
   document.querySelectorAll('[data-analytics-link="book-project"] .project-banner-caption').forEach(caption => {
     caption.dataset.en = caption.dataset.en.replace(/\bByu(?: app)?\b/, "Byu: Manga, EPUB & Read Aloud");

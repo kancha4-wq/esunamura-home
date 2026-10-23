@@ -2580,7 +2580,7 @@ h2 {
 
 .research-page main {
   display: grid;
-  gap: 28px;
+  gap: 14px;
   overflow-wrap: anywhere;
 }
 
@@ -2835,7 +2835,7 @@ body[data-research-section="outfit"] .outfit-note-section .section-heading-row {
 
 @media (max-width: 760px) {
   .research-page main {
-    gap: 22px;
+    gap: 14px;
   }
 
   .research-intro-visual {
@@ -4745,7 +4745,7 @@ body[data-research-section="expression"] .research-candidate-media.has-samples .
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 22px;
   align-items: center;
-  margin-top: 18px;
+  margin-top: 0;
   padding: 24px;
   border: 1px solid rgba(225, 87, 121, 0.34);
   border-radius: 24px;
