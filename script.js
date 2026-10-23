@@ -7,7 +7,6 @@ const works = [
     imageWidth: 1750,
     imageHeight: 1225,
     links: {
-      pictSPACE: "https://pictspace.net/items/manage_detail/837195",
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_741847/",
       Aniborn: "https://aniborn.com/ja/s/361fdc2f-feb2-4de2-b4a6-e6f94807f074"
     }
@@ -20,7 +19,6 @@ const works = [
     imageWidth: 4096,
     imageHeight: 2872,
     links: {
-      pictSPACE: "https://pictspace.net/items/manage_detail/838029",
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_743522/",
       Aniborn: "https://aniborn.com/ja/s/024ed546-b71b-4cda-afa4-5d2548f86dbd"
     }
@@ -33,7 +31,6 @@ const works = [
     imageWidth: 1000,
     imageHeight: 700,
     links: {
-      pictSPACE: "https://pictspace.net/items/manage_detail/838048",
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_744243/",
       Aniborn: "https://aniborn.com/ja/s/d76883e7-c094-465c-9874-2afb7379e2f0"
     }
@@ -46,7 +43,6 @@ const works = [
     imageWidth: 1000,
     imageHeight: 700,
     links: {
-      pictSPACE: "https://pictspace.net/items/manage_detail/837289",
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_745411/",
       DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01591984.html",
       Aniborn: "https://aniborn.com/ja/s/c3479669-23c9-4236-a771-0a9ac78cecc2"
@@ -60,7 +56,6 @@ const works = [
     imageWidth: 1260,
     imageHeight: 945,
     links: {
-      pictSPACE: "https://pictspace.net/items/manage_detail/838061",
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_745765/",
       DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01591976.html",
       Aniborn: "https://aniborn.com/ja/p/2cbff6cf-bb88-4a78-8af0-cb43c5227164"
@@ -74,7 +69,6 @@ const works = [
     imageWidth: 1375,
     imageHeight: 963,
     links: {
-      pictSPACE: "https://pictspace.net/items/manage_detail/838067",
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_746695/",
       DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01591986.html",
       Aniborn: "https://aniborn.com/ja/s/b2709d2b-7b6d-4156-9e75-cd6f7c6686d2",
@@ -89,7 +83,6 @@ const works = [
     imageWidth: 2048,
     imageHeight: 1536,
     links: {
-      pictSPACE: "https://pictspace.net/items/manage_detail/838060",
       DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01605513.html",
       Aniborn: "https://aniborn.com/ja/s/d2adcab1-91eb-491d-b1d8-0133e0c9b04e"
     }
@@ -102,7 +95,6 @@ const works = [
     imageWidth: 2867,
     imageHeight: 2867,
     links: {
-      pictSPACE: "https://pictspace.net/items/manage_detail/838076",
       Aniborn: "https://aniborn.com/ja/p/f2af63ce-b2f8-4c6d-ad0b-8340319531c4"
     }
   },
@@ -114,7 +106,6 @@ const works = [
     imageWidth: 1750,
     imageHeight: 1225,
     links: {
-      pictSPACE: "https://pictspace.net/items/manage_detail/838081",
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_751890/",
       DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01601145.html",
       Aniborn: "https://aniborn.com/ja/s/ddd231f2-060b-4f1c-a8af-f197c89f5073",
@@ -129,7 +120,6 @@ const works = [
     imageWidth: 1000,
     imageHeight: 700,
     links: {
-      pictSPACE: "https://pictspace.net/items/manage_detail/838092",
       DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01604402.html",
       Aniborn: "https://aniborn.com/ja/s/4713754c-96db-405c-aa16-d6abfc873421"
     }
@@ -143,7 +133,6 @@ const works = [
     imageHeight: 420,
     links: {
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_772274/",
-      pictSPACE: "https://pictspace.net/items/manage_detail/845880",
       DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01628452.html",
       Aniborn: "https://aniborn.com/ja/s/f4785b95-8fb8-4330-a96e-5487eaf39887"
     }
@@ -156,7 +145,6 @@ const works = [
     imageWidth: 1260,
     imageHeight: 945,
     links: {
-      pictSPACE: "https://pictspace.net/items/manage_detail/851348",
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_758170/",
       DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01612902.html",
       Aniborn: "https://aniborn.com/ja/s/989fda92-21f4-49b3-bf70-8cb7adc2dd61",
@@ -187,7 +175,6 @@ const works = [
     imageWidth: 1000,
     imageHeight: 1000,
     links: {
-      pictSPACE: "https://pictspace.net/items/manage_detail/858788",
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_763759/",
       DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01622810.html",
       Aniborn: "https://aniborn.com/ja/s/7073b5d6-4b35-4c77-a0d5-eefb11932083",
@@ -203,7 +190,6 @@ const works = [
     imageHeight: 700,
     links: {
       DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0337987/AFID=esunamura/",
-      pictSPACE: "https://pictspace.net/items/detail/863949"
     }
   },
   {
@@ -229,7 +215,6 @@ const works = [
     links: {
       FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_796353/",
       DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01677590.html",
-      pictSPACE: "https://pictspace.net/items/manage_detail/939145",
       Aniborn: "https://aniborn.com/ja/p/8b9b037a-07e6-4954-8972-866bcb6e7237?rating=all",
       DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0344449/AFID=esunamura/"
     }
@@ -738,7 +723,6 @@ function salesFormatBadgesFor(work) {
     DLsite: "4K ZIP",
     DiGiket: "4K ZIP + PDF",
     BOOTH: work.slug === "kyoto-prompt-pack" ? "Prompt Pack" : "ZIP + PDF",
-    pictSPACE: "ZIP + PDF"
   };
   return Object.keys(formats)
     .filter((store) => work.links?.[store])
@@ -879,7 +863,7 @@ function createLink(label, url, workSlug) {
 }
 
 function salesNoteText(work) {
-  const zipStores = ["BOOTH", "pictSPACE"].filter((store) => work.links[store]);
+  const zipStores = ["BOOTH"].filter((store) => work.links[store]);
   const highResStores = ["FANZA", "DLsite"].filter((store) => work.links[store]);
   const hasDigiket = Boolean(work.links.DiGiket);
   const parts = [];

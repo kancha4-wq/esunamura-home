@@ -19,7 +19,6 @@ const saleLinkTemplate = [
   { label: "FANZA", url: "" },
   { label: "DLsite", url: "" },
   { label: "DiGiket", url: "" },
-  { label: "pictSPACE", url: "" },
   { label: "BOOTH", url: "" },
   { label: "Aniborn", url: "" }
 ];
@@ -697,79 +696,65 @@ const salesByWorkId = {
   },
   "omorashi-sankei": {
     DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0337987/AFID=esunamura/",
-    pictSPACE: "https://pictspace.net/items/detail/863949"
   },
   "setouchi-omorashi": {
-    pictSPACE: "https://pictspace.net/items/manage_detail/837289",
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_745411/",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01591984.html",
     Aniborn: "https://aniborn.com/ja/s/c3479669-23c9-4236-a771-0a9ac78cecc2"
   },
   "eroboxin-4649": {
-    pictSPACE: "https://pictspace.net/items/manage_detail/851348",
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_758170/",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01612902.html",
     Aniborn: "https://aniborn.com/ja/s/989fda92-21f4-49b3-bf70-8cb7adc2dd61",
     DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0337471/AFID=esunamura/"
   },
   "eroboxin-akane": {
-    pictSPACE: "https://pictspace.net/items/manage_detail/858788",
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_763759/",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01622810.html",
     Aniborn: "https://aniborn.com/ja/s/7073b5d6-4b35-4c77-a0d5-eefb11932083",
     DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0337472/AFID=esunamura/"
   },
   "shizuku-record": {
-    pictSPACE: "https://pictspace.net/items/manage_detail/838092",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01604402.html",
     Aniborn: "https://aniborn.com/ja/s/4713754c-96db-405c-aa16-d6abfc873421"
   },
   hikagami: {
-    pictSPACE: "https://pictspace.net/items/manage_detail/838048",
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_744243/",
     Aniborn: "https://aniborn.com/ja/s/d76883e7-c094-465c-9874-2afb7379e2f0"
   },
   "hikagami-school": {
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_772274/",
-    pictSPACE: "https://pictspace.net/items/manage_detail/845880",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01628452.html",
     Aniborn: "https://aniborn.com/ja/s/f4785b95-8fb8-4330-a96e-5487eaf39887"
   },
   "kinpatsu-miko": {
-    pictSPACE: "https://pictspace.net/items/manage_detail/838067",
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_746695/",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01591986.html",
     Aniborn: "https://aniborn.com/ja/s/b2709d2b-7b6d-4156-9e75-cd6f7c6686d2",
     DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0337791/AFID=esunamura/"
   },
   "ancient-capital-beauty": {
-    pictSPACE: "https://pictspace.net/items/manage_detail/838029",
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_743522/",
     Aniborn: "https://aniborn.com/ja/s/024ed546-b71b-4cda-afa4-5d2548f86dbd"
   },
   "momoiro-baito": {
-    pictSPACE: "https://pictspace.net/items/manage_detail/838081",
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_751890/",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01601145.html",
     Aniborn: "https://aniborn.com/ja/s/ddd231f2-060b-4f1c-a8af-f197c89f5073",
     DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0337792/AFID=esunamura/"
   },
   satogaeri: {
-    pictSPACE: "https://pictspace.net/items/manage_detail/837195",
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_741847/",
     Aniborn: "https://aniborn.com/ja/s/361fdc2f-feb2-4de2-b4a6-e6f94807f074"
   },
   gokujiri: {
-    pictSPACE: "https://pictspace.net/items/manage_detail/838060",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01605513.html",
     Aniborn: "https://aniborn.com/ja/s/d2adcab1-91eb-491d-b1d8-0133e0c9b04e"
   },
   "okinawa-soso": {
-    pictSPACE: "https://pictspace.net/items/manage_detail/838076",
     Aniborn: "https://aniborn.com/ja/p/f2af63ce-b2f8-4c6d-ad0b-8340319531c4"
   },
   "hokkaido-omorashi": {
-    pictSPACE: "https://pictspace.net/items/manage_detail/838061",
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_745765/",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01591976.html",
     Aniborn: "https://aniborn.com/ja/p/2cbff6cf-bb88-4a78-8af0-cb43c5227164"
@@ -783,7 +768,6 @@ const salesByWorkId = {
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_796353/",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/n/link/work/aid/esunamura/id/RJ01677590.html",
     Aniborn: "https://aniborn.com/ja/p/8b9b037a-07e6-4954-8972-866bcb6e7237?rating=all",
-    pictSPACE: "https://pictspace.net/items/manage_detail/939145",
     DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0344449/AFID=esunamura/"
   },
   "pink-haired-idol-encore": {
@@ -800,7 +784,7 @@ const salesByWorkId = {
 works.forEach((work) => {
   const sales = salesByWorkId[work.id];
   if (!sales) return;
-  const priority = ["FANZA", "DLsite", "DiGiket", "pictSPACE", "BOOTH", "Aniborn"];
+  const priority = ["FANZA", "DLsite", "DiGiket", "BOOTH", "Aniborn"];
   work.salesLinks = priority
     .filter((label) => sales[label])
     .map((label) => ({ label, url: sales[label] }));

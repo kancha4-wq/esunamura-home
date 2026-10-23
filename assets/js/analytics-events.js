@@ -6,7 +6,7 @@
     "7z", "cb7", "cbr", "cbt", "cbz", "csv", "epub", "pdf", "rar", "txt", "xls", "xlsx", "zip",
   ]);
   const CONTENT_ACCESS_PLATFORMS = new Set([
-    "amazon", "booth", "chichipui", "digiket", "dlsite", "fanza", "painter", "patreon", "pictspace", "pixiv", "promptcom",
+    "amazon", "booth", "chichipui", "digiket", "dlsite", "fanza", "painter", "patreon", "pixiv", "promptcom",
   ]);
   const SITE_HOSTS = new Set(["esunamura.com", "www.esunamura.com", window.location.hostname]);
   let workDetailViewSent = false;
@@ -68,7 +68,6 @@
     if (host.includes("dlsite.com") || host === "dlaf.jp") return "dlsite";
     if (host.includes("dmm.co.jp")) return "fanza";
     if (host.includes("digiket.com")) return "digiket";
-    if (host.includes("pictspace.net")) return "pictspace";
     if (host.includes("aniborn.com")) return "promptcom";
     if (host.includes("painter-ai.ai")) return "painter";
     if (host.includes("booth.pm")) return "booth";

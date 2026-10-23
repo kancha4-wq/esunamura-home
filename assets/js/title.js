@@ -1188,7 +1188,6 @@ chichi-puiでも、本編をご覧いただけます。
     if (hostname.includes("dmm.co.jp")) return "fanza";
     if (hostname.includes("digiket.com")) return "digiket";
     if (hostname.includes("booth.pm")) return "booth";
-    if (hostname.includes("pictspace.net")) return "pictspace";
     if (hostname.includes("aniborn.com")) return "promptcom";
     if (hostname.includes("chichi-pui.com")) return "chichipui";
     if (hostname.includes("pixiv.net")) return "pixiv";
@@ -1238,7 +1237,6 @@ chichi-puiでも、本編をご覧いただけます。
       FANZA: "4K ZIP",
       DLsite: "4K ZIP",
       DiGiket: "4K ZIP + PDF",
-      pictSPACE: "ZIP + PDF",
       BOOTH: "ZIP + PDF"
     };
     return item.salesLinks
