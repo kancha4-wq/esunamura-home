@@ -227,7 +227,8 @@ const works = [
     imageWidth: 1000,
     imageHeight: 1000,
     links: {
-      FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_839231/"
+      FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_839231/",
+      DLsite: "https://dlaf.jp/aix/dlaf/=/t/s/link/work/aid/esunamura/id/RJ01748389.html"
     }
   },
   {
@@ -295,10 +296,10 @@ const promptcomPanels = document.querySelectorAll("[data-promptcom-panel]");
 
 const workDescriptions = {
   "kurokami-kanojo-2": {
-    ja: "黒髪ボブの彼女と過ごす、ふたりきりの特別な一日。日常の笑顔から少しずつ距離が近づく流れを描いた、全340枚・4KのAI生成CG集です。FANZAで予告公開中。",
-    en: "A special day alone with a black-haired bob-cut girlfriend. A 340-image 4K AI-generated CG collection moving from everyday smiles to increasingly intimate moments. Coming soon on FANZA.",
-    zh: "与黑色短发女友独处的特别一天。从日常笑容到逐渐拉近的距离，共340张4K AI生成CG。现已在FANZA公开预告。",
-    ko: "검은 단발머리 여자친구와 단둘이 보내는 특별한 하루. 일상의 미소에서 점차 가까워지는 순간까지 담은 340장·4K AI 생성 CG집입니다. FANZA에서 예고 공개 중입니다."
+    ja: "黒髪ボブの彼女と過ごす、ふたりきりの特別な一日。日常の笑顔から少しずつ距離が近づく流れを描いた、全340枚・4KのAI生成CG集です。DLsiteで販売中、FANZAで予告公開中。",
+    en: "A special day alone with a black-haired bob-cut girlfriend. A 340-image 4K AI-generated CG collection moving from everyday smiles to increasingly intimate moments. Now on sale at DLsite; coming soon on FANZA.",
+    zh: "与黑色短发女友独处的特别一天。从日常笑容到逐渐拉近的距离，共340张4K AI生成CG。现已在DLsite发售，并于FANZA公开预告。",
+    ko: "검은 단발머리 여자친구와 단둘이 보내는 특별한 하루. 일상의 미소에서 점차 가까워지는 순간까지 담은 340장·4K AI 생성 CG집입니다. DLsite에서 판매 중이며 FANZA에서 예고 공개 중입니다."
   },
   "pink-haired-idol-encore": {
     ja: "59の衣装、ひとりの彼女。ステージで輝く桃髪アイドルの笑顔と照れた表情を集めた、本編460枚・長辺4KのAI生成CG集。体験版225枚を公開。FANZA・DLsiteで販売中です。",
@@ -465,7 +466,7 @@ const workArchiveMeta = {
     count: { ja: "340枚収録", en: "340 images", zh: "收录340张", ko: "340장 수록" },
     quality: "4K",
     series: { ja: "彼女とふたりきり", en: "Alone with Her", zh: "与她独处", ko: "그녀와 단둘이" },
-    tags: { ja: ["黒髪ボブ", "FANZA予告公開中"], en: ["Black bob", "Coming soon on FANZA"], zh: ["黑色短发", "FANZA预告公开中"], ko: ["검은 단발", "FANZA 예고 공개 중"] }
+    tags: { ja: ["DLsite販売中", "FANZA予告公開中"], en: ["On sale at DLsite", "Coming soon on FANZA"], zh: ["DLsite发售中", "FANZA预告公开中"], ko: ["DLsite 판매 중", "FANZA 예고 공개 중"] }
   },
   "pink-haired-idol-encore": {
     count: { ja: "460枚収録", en: "460 images", zh: "收录460张", ko: "460장 수록" },
@@ -639,7 +640,7 @@ const detailPageBySlug = {
 };
 
 const newReleaseLabels = {
-  "kurokami-kanojo-2": "COMING / 2026.10",
+  "kurokami-kanojo-2": "NEW / 2026.10",
   "pink-haired-idol-encore": "NEW / 2026.09",
   "kurokami-kanojo": "NEW / 2026.09",
   "hikagami-school-route": "NEW / 2026.09",

@@ -102,7 +102,7 @@
 
   const shortTranslations = {
     "kurokami-kanojo-2": {
-      summary: { en: "A special day alone with a black-haired bob-cut girlfriend. A 340-image 4K AI-generated CG collection moving from everyday smiles to increasingly intimate moments. Coming soon on FANZA.", zh: "与黑色短发女友独处的特别一天。从日常笑容到逐渐拉近的距离，共340张4K AI生成CG。现已在FANZA公开预告。", ko: "검은 단발머리 여자친구와 단둘이 보내는 특별한 하루. 일상의 미소에서 점차 가까워지는 순간까지 담은 340장·4K AI 생성 CG집입니다. FANZA에서 예고 공개 중입니다." },
+      summary: { en: "A special day alone with a black-haired bob-cut girlfriend. A 340-image 4K AI-generated CG collection moving from everyday smiles to increasingly intimate moments. Now on sale at DLsite; coming soon on FANZA.", zh: "与黑色短发女友独处的特别一天。从日常笑容到逐渐拉近的距离，共340张4K AI生成CG。现已在DLsite发售，并于FANZA公开预告。", ko: "검은 단발머리 여자친구와 단둘이 보내는 특별한 하루. 일상의 미소에서 점차 가까워지는 순간까지 담은 340장·4K AI 생성 CG집입니다. DLsite에서 판매 중이며 FANZA에서 예고 공개 중입니다." },
       format: { en: "340 main images / 4K JPG", zh: "本篇340张 / 4K JPG", ko: "본편 340장 / 4K JPG" },
       focus: { en: "Black bob / Partner's view / Everyday life to intimacy", zh: "黑色短发 / 恋人视角 / 从日常到亲密时光", ko: "검은 단발 / 연인 시점 / 일상에서 친밀한 시간으로" }
     },

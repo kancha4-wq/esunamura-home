@@ -558,28 +558,28 @@ A school day during summer break. The quiet school echoes only with cicadas and 
     count: "340枚",
     format: "本編340枚 / 4K JPG",
     focus: "黒髪ボブ / 恋人目線 / 日常から親密な時間へ",
-    summary: "黒髪ボブの彼女と過ごす、ふたりきりの特別な一日。日常の笑顔から少しずつ距離が近づく流れを描いた、全340枚・4KのAI生成CG集です。FANZAで予告公開中。",
+    summary: "黒髪ボブの彼女と過ごす、ふたりきりの特別な一日。日常の笑顔から少しずつ距離が近づく流れを描いた、全340枚・4KのAI生成CG集です。DLsiteで販売中、FANZAで予告公開中。",
     description: {
       ja: `黒髪ボブの彼女と紡ぐ、ふたりきりの特別な一日。
 
 私服や制服、パーカー姿でのデートや散歩から始まり、お部屋に戻ってふたりきりになるまで、少しずつ距離が近づいていく流れを描きます。自然な笑顔、上目遣い、リラックスした部屋着姿など、恋人目線ならではの親密さを楽しめる構成です。
 
-可愛らしい日常も、誰にも見せない愛らしい姿も、すべてあなただけのもの。本編340枚、すべて4K JPGで収録したAI生成CG集です。FANZAで予告公開中です。`,
+可愛らしい日常も、誰にも見せない愛らしい姿も、すべてあなただけのもの。本編340枚、すべて4K JPGで収録したAI生成CG集です。DLsiteで販売中、FANZAで予告公開中です。`,
       en: `A special day alone with your black-haired, bob-cut girlfriend.
 
 The story begins with dates and walks in casual clothes, uniforms, hoodies, and T-shirts, then follows the two of you home as the distance between you gradually closes. Natural smiles, upward glances, and relaxed roomwear create the intimacy of a girlfriend seen from her partner's point of view.
 
-Her adorable everyday side and the expressions she shows no one else are all yours. This AI-generated CG collection contains 340 images, all supplied as 4K JPG files. Coming soon on FANZA.`,
+Her adorable everyday side and the expressions she shows no one else are all yours. This AI-generated CG collection contains 340 images, all supplied as 4K JPG files. Now on sale at DLsite; coming soon on FANZA.`,
       zh: `与黑色短发女友共同度过，只属于两人的特别一天。
 
 从便服、制服、连帽衫与T恤造型下的约会和散步开始，一直到回到房间、只剩彼此，距离一点点拉近。自然的笑容、仰望的目光与放松的居家服姿态，组成充满恋人视角亲密感的画面。
 
-可爱的日常，以及只让你看到的表情，全部只属于你。本篇共340张，全部以4K JPG收录。现已在FANZA公开预告。`,
+可爱的日常，以及只让你看到的表情，全部只属于你。本篇共340张，全部以4K JPG收录。现已在DLsite发售，并于FANZA公开预告。`,
       ko: `검은 단발머리 여자친구와 단둘이 보내는 특별한 하루.
 
 사복과 교복, 후드와 티셔츠 차림으로 즐기는 데이트와 산책에서 시작해, 방으로 돌아와 둘만 남기까지 거리가 조금씩 가까워지는 흐름을 담았습니다. 자연스러운 미소와 올려다보는 눈빛, 편안한 실내복 차림에서 연인의 시선으로 느끼는 친밀함을 즐길 수 있습니다.
 
-사랑스러운 일상도, 누구에게도 보여 주지 않는 모습도 모두 당신만의 것. 본편 340장을 모두 4K JPG로 수록한 AI 생성 CG집입니다. FANZA에서 예고 공개 중입니다.`
+사랑스러운 일상도, 누구에게도 보여 주지 않는 모습도 모두 당신만의 것. 본편 340장을 모두 4K JPG로 수록한 AI 생성 CG집입니다. DLsite에서 판매 중이며 FANZA에서 예고 공개 중입니다.`
     },
     phases: ["日常", "デート", "ふたりきり", "近づく距離", "素顔の彼女"],
     tags: ["黒髪ボブ", "恋人", "制服", "部屋着", "日常", "4K"],
@@ -692,7 +692,8 @@ Short black hair, gentle expressions, and a familiar girlfriend-like presence sh
 
 const salesByWorkId = {
   "kurokami-kanojo-2": {
-    FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_839231/"
+    FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_839231/",
+    DLsite: "https://dlaf.jp/aix/dlaf/=/t/s/link/work/aid/esunamura/id/RJ01748389.html"
   },
   "omorashi-sankei": {
     DiGiket: "https://www.digiket.com/work/show/_data/ID=ITM0337987/AFID=esunamura/",
