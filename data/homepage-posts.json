@@ -3,6 +3,22 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
+                      "platform":  "patreon",
+                      "published_at":  "2026-10-24T22:00:00+09:00",
+                      "age_rating":  "R18",
+                      "membership_only":  true,
+                      "destination_url":  "https://www.patreon.com/esunamura/posts/173187602",
+                      "web_image_relative_path":  "images/homepage-feed-patreon-18a3dbab702e7654b54a.webp"
+                  },
+                  {
+                      "platform":  "pixiv",
+                      "published_at":  "2026-10-24T21:30:00+09:00",
+                      "age_rating":  "R18",
+                      "membership_only":  false,
+                      "destination_url":  "https://www.pixiv.net/users/21257126",
+                      "web_image_relative_path":  "images/homepage-feed-pixiv-abe1334fba2d6bc37d49.webp"
+                  },
+                  {
                       "platform":  "chichipui",
                       "published_at":  "2026-10-24T21:00:00+09:00",
                       "age_rating":  "R18",
@@ -27,28 +43,12 @@
                       "web_image_relative_path":  "images/homepage-feed-x-c309bb4d98ea5c0bd554.webp"
                   },
                   {
-                      "platform":  "patreon",
-                      "published_at":  "2026-10-24T18:00:00+09:00",
-                      "age_rating":  "R18",
-                      "membership_only":  true,
-                      "destination_url":  "https://www.patreon.com/esunamura/posts/173187704",
-                      "web_image_relative_path":  "images/homepage-feed-patreon-cb826b9e386e118511ef.webp"
-                  },
-                  {
                       "platform":  "promptcom",
                       "published_at":  "2026-10-24T18:00:00+09:00",
                       "age_rating":  "R18",
                       "membership_only":  false,
                       "destination_url":  "https://aniborn.com/ja/6954d7c84740e/",
                       "web_image_relative_path":  "images/homepage-feed-promptcom-cf24e751adabe86a338e.webp"
-                  },
-                  {
-                      "platform":  "pixiv",
-                      "published_at":  "2026-10-24T12:30:00+09:00",
-                      "age_rating":  "全年齢",
-                      "membership_only":  false,
-                      "destination_url":  "https://www.pixiv.net/users/21257126",
-                      "web_image_relative_path":  "images/homepage-feed-pixiv-486fb638d112d747908b.webp"
                   }
               ]
 }
