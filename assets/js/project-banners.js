@@ -1,5 +1,8 @@
 (() => {
   "use strict";
+  const gameBannerVersion = "20261024-game-title";
+  const gameCaptions = {"ja": "湯けむり宿繁盛記 — 開発中", "en": "湯けむり宿繁盛記 — In development", "zh": "湯けむり宿繁盛記 — 开发中", "ko": "湯けむり宿繁盛記 — 개발 중"};
+  const bannerUrl = (url, kind) => kind === "game" ? url + (url.includes("?") ? "&" : "?") + "v=" + gameBannerVersion : url;
   const attached = new WeakSet();
   // Load every format before switching a product to its translated artwork.
   // A missing or malformed translation falls back to the original Japanese set.
@@ -14,7 +17,7 @@
       const image = new Image();
       image.onload = () => resolve(image.naturalWidth === size[0] && image.naturalHeight === size[1]);
       image.onerror = () => resolve(false);
-      image.src = `/assets/banners/${lang}/${kind}-${format}.png`;
+      image.src = bannerUrl(`/assets/banners/${lang}/${kind}-${format}.png`, kind);
     }))).then(results => {
       const ready = results.every(Boolean);
       document.documentElement.dataset[`${kind}${lang.toUpperCase()}Images`] = ready ? "ready" : "pending";
@@ -50,7 +53,9 @@
         const original = image.dataset.projectOriginalSource || image.getAttribute(attribute);
         if (!original || !original.startsWith(`/assets/banners/${kind}-`)) return;
         image.dataset.projectOriginalSource = original;
-        const wanted = ready ? original.replaceAll(`/assets/banners/${kind}-`, `/assets/banners/${lang}/${kind}-`) : original;
+        const localized = ready ? original.replaceAll(`/assets/banners/${kind}-`, `/assets/banners/${lang}/${kind}-`) : original;
+        const wanted = kind === "game" && !localized.includes("?v=") ? bannerUrl(localized, kind) : localized;
+        if (kind === "game" && image.tagName === "IMG") image.alt = gameCaptions[lang] || gameCaptions.ja;
         if (image.getAttribute(attribute) !== wanted) image.setAttribute(attribute, wanted);
       });
       if (translated) prepareBannerSet(kind, lang);
@@ -96,7 +101,7 @@
         if (image.naturalWidth !== 280 || image.naturalHeight !== 1360) return;
         if (++loaded === 2) { slimReady = true; queueRailLayout(); }
       };
-      image.src = `/assets/banners/${kind}-slim.png`;
+      image.src = bannerUrl(`/assets/banners/${kind}-slim.png`, kind);
     });
   }
   function initCommonRail() {
@@ -116,7 +121,7 @@
       rail.innerHTML = `
         <div class="header-project-bars project-banner-group" data-project-label data-label-ja="書籍アプリとゲーム" data-label-en="Book app and game" data-label-zh="书籍应用与游戏" data-label-ko="도서 앱과 게임" aria-label="書籍アプリとゲーム">
           <div class="project-banner-slot" hidden><a class="project-banner-link" href="https://esunastudio-viewer.pages.dev/viewer/" target="_blank" rel="noopener noreferrer" data-analytics-link="book-project" data-analytics-area="header-project-bars"><picture><img src="/assets/banners/book-slim.png" width="280" height="1360" alt="ビュッ｜別提供アプリ" loading="eager" decoding="async"></picture></a></div>
-          <div class="project-banner-slot" hidden><a class="project-banner-link" href="https://esunastudio-viewer.pages.dev/" target="_blank" rel="noopener noreferrer" data-analytics-link="game-project" data-analytics-area="header-project-bars"><picture><img src="/assets/banners/game-slim.png" width="280" height="1360" alt="温泉すごろく｜開発中" loading="eager" decoding="async"></picture></a></div>
+          <div class="project-banner-slot" hidden><a class="project-banner-link" href="https://esunastudio-viewer.pages.dev/" target="_blank" rel="noopener noreferrer" data-analytics-link="game-project" data-analytics-area="header-project-bars"><picture><img src="/assets/banners/game-slim.png?v=20261024-game-title" width="280" height="1360" alt="湯けむり宿繁盛記 — 開発中" loading="eager" decoding="async"></picture></a></div>
         </div>
         <div class="dlsite-category-panel">
           <p class="dlsite-category-brand">DLsite</p>
