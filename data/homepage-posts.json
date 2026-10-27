@@ -3,6 +3,14 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
+                      "platform":  "patreon",
+                      "published_at":  "2026-10-28T06:00:00+09:00",
+                      "age_rating":  "全年齢",
+                      "membership_only":  true,
+                      "destination_url":  "https://www.patreon.com/esunamura/posts/173556170",
+                      "web_image_relative_path":  "images/homepage-feed-patreon-8880863937ce4639bf5e.webp"
+                  },
+                  {
                       "platform":  "x",
                       "published_at":  "2026-10-28T04:00:00+09:00",
                       "age_rating":  "全年齢",
@@ -25,14 +33,6 @@
                       "membership_only":  false,
                       "destination_url":  "https://www.chichi-pui.com/users/esuna/",
                       "web_image_relative_path":  "images/homepage-feed-chichipui-5c02cbb7cb16216e896d.webp"
-                  },
-                  {
-                      "platform":  "patreon",
-                      "published_at":  "2026-10-27T20:00:00+09:00",
-                      "age_rating":  "R18",
-                      "membership_only":  false,
-                      "destination_url":  "https://www.patreon.com/esunamura/posts/173497343",
-                      "web_image_relative_path":  "images/homepage-feed-patreon-7ea1ca3d76a0c5e3076f.webp"
                   },
                   {
                       "platform":  "painter",
