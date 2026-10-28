@@ -3,6 +3,22 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
+                      "platform":  "chichipui",
+                      "published_at":  "2026-10-28T13:00:00+09:00",
+                      "age_rating":  "R15",
+                      "membership_only":  false,
+                      "destination_url":  "https://www.chichi-pui.com/users/esuna/",
+                      "web_image_relative_path":  "images/homepage-feed-chichipui-1fc4707f4b054f56ffa9.webp"
+                  },
+                  {
+                      "platform":  "pixiv",
+                      "published_at":  "2026-10-28T12:30:00+09:00",
+                      "age_rating":  "全年齢",
+                      "membership_only":  false,
+                      "destination_url":  "https://www.pixiv.net/users/21257126",
+                      "web_image_relative_path":  "images/homepage-feed-pixiv-7b21574ed2eb1f3c2662.webp"
+                  },
+                  {
                       "platform":  "x",
                       "published_at":  "2026-10-28T12:00:00+09:00",
                       "age_rating":  "全年齢",
@@ -19,28 +35,12 @@
                       "web_image_relative_path":  "images/homepage-feed-patreon-e29ffd3a5342df629ef5.webp"
                   },
                   {
-                      "platform":  "chichipui",
-                      "published_at":  "2026-10-28T10:00:00+09:00",
-                      "age_rating":  "全年齢",
-                      "membership_only":  false,
-                      "destination_url":  "https://www.chichi-pui.com/users/esuna/",
-                      "web_image_relative_path":  "images/homepage-feed-chichipui-c6b765c076f11f07bd6d.webp"
-                  },
-                  {
                       "platform":  "promptcom",
                       "published_at":  "2026-10-28T10:00:00+09:00",
                       "age_rating":  "全年齢",
                       "membership_only":  false,
                       "destination_url":  "https://aniborn.com/ja/6954d7c84740e/",
                       "web_image_relative_path":  "images/homepage-feed-promptcom-7bf20cc440ccfd7e87b5.webp"
-                  },
-                  {
-                      "platform":  "pixiv",
-                      "published_at":  "2026-10-27T21:30:00+09:00",
-                      "age_rating":  "R18",
-                      "membership_only":  false,
-                      "destination_url":  "https://www.pixiv.net/users/21257126",
-                      "web_image_relative_path":  "images/homepage-feed-pixiv-1eb5b696dfd4d6c48fb0.webp"
                   },
                   {
                       "platform":  "painter",
