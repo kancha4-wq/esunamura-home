@@ -35,11 +35,11 @@
       const target = new URL(original, document.baseURI);
       if (target.origin !== "https://esunastudio-viewer.pages.dev") return;
       const book = link.dataset.analyticsLink === "book-project";
-      if (book ? !Object.values(readerPaths).includes(target.pathname) : target.pathname !== "/") return;
+      if (book ? !Object.values(readerPaths).includes(target.pathname) : !["/", "/game/"].includes(target.pathname)) return;
       link.dataset.projectOriginalHref = original;
       if (book) target.pathname = readerPaths[language];
       // Explicit ja also overrides a previously saved language on the game HP.
-      else target.searchParams.set("lang", language);
+      else { target.pathname = "/game/"; target.searchParams.set("lang", language); }
       if (link.getAttribute("href") !== target.href) link.setAttribute("href", target.href);
     });
   }
@@ -121,7 +121,7 @@
       rail.innerHTML = `
         <div class="header-project-bars project-banner-group" data-project-label data-label-ja="書籍アプリとゲーム" data-label-en="Book app and game" data-label-zh="书籍应用与游戏" data-label-ko="도서 앱과 게임" aria-label="書籍アプリとゲーム">
           <div class="project-banner-slot" hidden><a class="project-banner-link" href="https://esunastudio-viewer.pages.dev/viewer/" target="_blank" rel="noopener noreferrer" data-analytics-link="book-project" data-analytics-area="header-project-bars"><picture><img src="/assets/banners/book-slim.png" width="280" height="1360" alt="ビュッ｜別提供アプリ" loading="eager" decoding="async"></picture></a></div>
-          <div class="project-banner-slot" hidden><a class="project-banner-link" href="https://esunastudio-viewer.pages.dev/" target="_blank" rel="noopener noreferrer" data-analytics-link="game-project" data-analytics-area="header-project-bars"><picture><img src="/assets/banners/game-slim.png?v=20261024-game-title" width="280" height="1360" alt="湯けむり宿繁盛記 — 開発中" loading="eager" decoding="async"></picture></a></div>
+          <div class="project-banner-slot" hidden><a class="project-banner-link" href="https://esunastudio-viewer.pages.dev/game/" target="_blank" rel="noopener noreferrer" data-analytics-link="game-project" data-analytics-area="header-project-bars"><picture><img src="/assets/banners/game-slim.png?v=20261024-game-title" width="280" height="1360" alt="湯けむり宿繁盛記 — 開発中" loading="eager" decoding="async"></picture></a></div>
         </div>
         <div class="dlsite-category-panel">
           <p class="dlsite-category-brand">DLsite</p>
