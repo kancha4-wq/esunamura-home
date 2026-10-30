@@ -3,6 +3,22 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
+                      "platform":  "chichipui",
+                      "published_at":  "2026-10-30T10:00:00+09:00",
+                      "age_rating":  "全年齢",
+                      "membership_only":  false,
+                      "destination_url":  "https://www.chichi-pui.com/users/esuna/",
+                      "web_image_relative_path":  "images/homepage-feed-chichipui-ea38cd00a52d61b16f6d.webp"
+                  },
+                  {
+                      "platform":  "promptcom",
+                      "published_at":  "2026-10-30T10:00:00+09:00",
+                      "age_rating":  "全年齢",
+                      "membership_only":  false,
+                      "destination_url":  "https://aniborn.com/ja/6954d7c84740e/",
+                      "web_image_relative_path":  "images/homepage-feed-promptcom-7ff1bcb1ce24f8ca0a5e.webp"
+                  },
+                  {
                       "platform":  "x",
                       "published_at":  "2026-10-30T08:00:00+09:00",
                       "age_rating":  "全年齢",
@@ -33,22 +49,6 @@
                       "membership_only":  false,
                       "destination_url":  "https://www.pixiv.net/users/21257126",
                       "web_image_relative_path":  "images/homepage-feed-pixiv-47065cb618ce25dd9d13.webp"
-                  },
-                  {
-                      "platform":  "chichipui",
-                      "published_at":  "2026-10-29T21:00:00+09:00",
-                      "age_rating":  "R18",
-                      "membership_only":  false,
-                      "destination_url":  "https://www.chichi-pui.com/users/esuna/",
-                      "web_image_relative_path":  "images/homepage-feed-chichipui-71eaa0b332d12495e1d8.webp"
-                  },
-                  {
-                      "platform":  "promptcom",
-                      "published_at":  "2026-10-29T18:00:00+09:00",
-                      "age_rating":  "R18",
-                      "membership_only":  false,
-                      "destination_url":  "https://aniborn.com/ja/6954d7c84740e/",
-                      "web_image_relative_path":  "images/homepage-feed-promptcom-86212f49b5026bf14b5c.webp"
                   }
               ]
 }
