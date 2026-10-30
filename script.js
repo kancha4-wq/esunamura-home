@@ -220,6 +220,22 @@ const works = [
     }
   },
   {
+    title: {
+      ja: "黒髪彼女を独り占め 3 ～もっと近くで、ふたりきり～",
+      en: "My Black-Haired Girlfriend, All to Myself 3 — Closer Than Ever, Just the Two of Us",
+      zh: "独占黑发女友 3 ～更近一些，只属于两人的时光～",
+      ko: "흑발 여자친구를 독차지 3 ～더 가까이, 단둘이～"
+    },
+    slug: "kurokami-kanojo-3",
+    image: "0501_改修資料/kurokami-kanojo-3/cover.jpg?v=20261030",
+    thumbnail: "0501_改修資料/kurokami-kanojo-3/cover.jpg?v=20261030",
+    imageWidth: 560,
+    imageHeight: 420,
+    links: {
+      FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_844377/"
+    }
+  },
+  {
     title: { ja: "黒髪彼女を独り占め 2 ～素顔のままの、ふたりきり～", en: "My Black-Haired Girlfriend, All to Myself 2" },
     slug: "kurokami-kanojo-2",
     image: "0501_改修資料/kurokami-kanojo-2/hero.jpg?v=20261022",
@@ -295,6 +311,12 @@ const promptcomTabs = document.querySelectorAll("[data-promptcom-tab]");
 const promptcomPanels = document.querySelectorAll("[data-promptcom-panel]");
 
 const workDescriptions = {
+  "kurokami-kanojo-3": {
+    ja: "黒髪ボブの彼女と過ごす、さらに甘く濃密な恋人時間。制服やネクタイシャツ姿から部屋着へ、ふたりの距離が限界まで近づいていく全328枚・4KのAI生成CG集です。FANZAで予告公開中。",
+    en: "An even sweeter, more intimate time alone with a black-haired, bob-cut girlfriend. A 328-image 4K AI-generated CG collection that moves from uniforms and tie shirts to relaxed roomwear as the two of you draw closer than ever. Coming soon on FANZA.",
+    zh: "与黑色短发女友共度更加甜蜜而亲密的恋人时光。从制服、领带衬衫到轻松的居家服，两人的距离不断拉近。全328张、4K AI生成CG集，现已在FANZA公开预告。",
+    ko: "검은 단발머리 여자친구와 보내는 한층 더 달콤하고 깊어진 연인 시간. 교복과 넥타이 셔츠 차림에서 편안한 실내복까지, 두 사람의 거리가 어느 때보다 가까워지는 328장·4K AI 생성 CG집입니다. FANZA에서 예고 공개 중입니다."
+  },
   "kurokami-kanojo-2": {
     ja: "黒髪ボブの彼女と過ごす、ふたりきりの特別な一日。日常の笑顔から少しずつ距離が近づく流れを描いた、全340枚・4KのAI生成CG集です。DLsite・FANZAで販売中。",
     en: "A special day alone with a black-haired bob-cut girlfriend. A 340-image 4K AI-generated CG collection moving from everyday smiles to increasingly intimate moments. Now on sale at DLsite and FANZA.",
@@ -462,6 +484,12 @@ const workTitleTranslations = {
 };
 
 const workArchiveMeta = {
+  "kurokami-kanojo-3": {
+    count: { ja: "328枚収録", en: "328 images", zh: "收录328张", ko: "328장 수록" },
+    quality: "4K",
+    series: { ja: "彼女とふたりきり", en: "Alone with Her", zh: "与她独处", ko: "그녀와 단둘이" },
+    tags: { ja: ["FANZA予告公開中", "黒髪ボブ"], en: ["Coming soon on FANZA", "Black bob"], zh: ["FANZA预告公开中", "黑色短发"], ko: ["FANZA 예고 공개 중", "검은 단발"] }
+  },
   "kurokami-kanojo-2": {
     count: { ja: "340枚収録", en: "340 images", zh: "收录340张", ko: "340장 수록" },
     quality: "4K",
@@ -615,6 +643,7 @@ const r15WorkSlugs = new Set([
 const pickupSlugs = ["erobokishin-4649", "blonde-shrine-maiden", "setouchi-omorashi-journey"];
 
 const detailPageBySlug = {
+  "kurokami-kanojo-3": "kurokami-kanojo-3",
   "kurokami-kanojo-2": "kurokami-kanojo-2",
   "pink-haired-idol-encore": "pink-haired-idol-encore",
   "kurokami-kanojo": "kurokami-kanojo",
@@ -640,6 +669,7 @@ const detailPageBySlug = {
 };
 
 const newReleaseLabels = {
+  "kurokami-kanojo-3": "COMING",
   "kurokami-kanojo-2": "NEW / 2026.10",
   "pink-haired-idol-encore": "NEW / 2026.09",
   "kurokami-kanojo": "NEW / 2026.09",
@@ -650,7 +680,7 @@ const newReleaseLabels = {
   "kyoto-prompt-pack": "NEW / 2026.05"
 };
 
-const worksGridPrioritySlugs = ["kurokami-kanojo-2", "pink-haired-idol-encore", "kurokami-kanojo", "hikagami-school-route", "summer-schoolday", "fanart-select-r15", "fanart-select", "blonde-shrine-maiden-isekai"];
+const worksGridPrioritySlugs = ["kurokami-kanojo-3", "kurokami-kanojo-2", "pink-haired-idol-encore", "kurokami-kanojo", "hikagami-school-route", "summer-schoolday", "fanart-select-r15", "fanart-select", "blonde-shrine-maiden-isekai"];
 
 function ratingBadgeFor(work) {
   if (allAgesWorkSlugs.has(work.slug)) return null;

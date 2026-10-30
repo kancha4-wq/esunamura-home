@@ -536,6 +536,54 @@ A school day during summer break. The quiet school echoes only with cicadas and 
     related: ["hikagami-school", "school-legs", "kinpatsu-miko-isekai"]
   },
   {
+    id: "kurokami-kanojo-3",
+    folder: "kurokami-kanojo-3",
+    title: {
+      ja: "黒髪彼女を独り占め 3 ～もっと近くで、ふたりきり～",
+      en: "My Black-Haired Girlfriend, All to Myself 3 — Closer Than Ever, Just the Two of Us",
+      zh: "独占黑发女友 3 ～更近一些，只属于两人的时光～",
+      ko: "흑발 여자친구를 독차지 3 ～더 가까이, 단둘이～"
+    },
+    series: "彼女とふたりきり",
+    cover: "0501_改修資料/kurokami-kanojo-3/cover.jpg?v=20261030",
+    samples: [
+      "0501_改修資料/kurokami-kanojo-3/samples/sample01.jpg?v=20261030",
+      "0501_改修資料/kurokami-kanojo-3/samples/sample02.jpg?v=20261030",
+      "0501_改修資料/kurokami-kanojo-3/samples/sample03.jpg?v=20261030",
+      "0501_改修資料/kurokami-kanojo-3/samples/sample04.jpg?v=20261030"
+    ],
+    count: "328枚",
+    format: "本編328枚 / 4K JPG",
+    focus: "黒髪ボブ / 恋人目線 / さらに近づくふたり",
+    summary: "黒髪ボブの彼女と過ごす、さらに甘く濃密な恋人時間。制服やネクタイシャツ姿から部屋着へ、ふたりの距離が限界まで近づいていく全328枚・4KのAI生成CG集です。FANZAで予告公開中。",
+    description: {
+      ja: `黒髪がよく似合う、ピュアで少し無防備な彼女。ふとした瞬間に見せる無邪気な笑顔も、あなたをじっと見つめる潤んだ瞳も、今日もすべてあなただけのもの。
+
+ふたりきりのお部屋で過ごす、甘く穏やかな日常。きちんとした制服やネクタイシャツ姿から、リラックスした部屋着やキャミソール姿へ。少しずつ重なる視線と触れ合う肌に、ふたりの距離は限界まで近づいていきます。
+
+日常のさりげない仕草から、熱を帯びた甘い吐息まで。彼女の愛おしい素顔と深まる魅力を心ゆくまでひとり占めできる、全328枚・4K JPGのAI生成CG集です。FANZAで予告公開中です。`,
+      en: `She is pure, a little unguarded, and perfectly suited to her black bob. Every innocent smile and every dewy-eyed glance is yours alone.
+
+Spend a sweet, peaceful day together in private. Her outfits shift from a neat uniform and tie shirt to relaxed roomwear and camisoles as your gazes meet and the distance between you disappears.
+
+From casual everyday gestures to warm, breathless expressions, this 328-image 4K JPG AI-generated CG collection lets you enjoy every lovable side of her. Coming soon on FANZA.`,
+      zh: `她留着非常适合自己的黑色短发，纯真而略显毫无防备。偶然流露的天真笑容，以及凝视着你的湿润眼眸，今天也全部只属于你。
+
+在只有两人的房间里，度过甜蜜而平静的日常。从端庄的制服与领带衬衫，到放松的居家服和吊带装，视线逐渐交汇，肌肤渐渐靠近，两人的距离也不断缩短。
+
+从日常中不经意的动作，到带着热度的甜蜜吐息。本篇共328张，全部以4K JPG收录，让你尽情独占她惹人怜爱的真实模样与不断加深的魅力。现已在FANZA公开预告。`,
+      ko: `검은 단발머리가 잘 어울리는 순수하고 조금은 무방비한 그녀. 문득 보이는 천진한 미소도, 당신을 바라보는 촉촉한 눈빛도 오늘은 모두 당신만의 것입니다.
+
+둘만의 방에서 보내는 달콤하고 평온한 일상. 단정한 교복과 넥타이 셔츠 차림에서 편안한 실내복과 캐미솔 차림으로 바뀌며, 시선과 피부가 가까워질수록 두 사람의 거리는 한계까지 좁혀집니다.
+
+일상의 사소한 몸짓부터 열기를 머금은 달콤한 숨결까지. 사랑스러운 본모습과 깊어지는 매력을 마음껏 독차지할 수 있는 328장·4K JPG AI 생성 CG집입니다. FANZA에서 예고 공개 중입니다.`
+    },
+    phases: ["日常", "制服", "部屋着", "ふたりきり", "もっと近くで"],
+    tags: ["黒髪ボブ", "恋人", "制服", "部屋着", "恋人目線", "4K"],
+    salesLinks: saleLinkTemplate,
+    related: ["kurokami-kanojo-2", "kurokami-kanojo", "summer-schoolday"]
+  },
+  {
     id: "kurokami-kanojo-2",
     folder: "kurokami-kanojo-2",
     title: {
@@ -691,6 +739,9 @@ Short black hair, gentle expressions, and a familiar girlfriend-like presence sh
 ];
 
 const salesByWorkId = {
+  "kurokami-kanojo-3": {
+    FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_844377/"
+  },
   "kurokami-kanojo-2": {
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_839231/",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/s/link/work/aid/esunamura/id/RJ01748389.html"
