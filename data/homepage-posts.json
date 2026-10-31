@@ -3,6 +3,30 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
+                      "platform":  "chichipui",
+                      "published_at":  "2026-10-31T13:00:00+09:00",
+                      "age_rating":  "R15",
+                      "membership_only":  false,
+                      "destination_url":  "https://www.chichi-pui.com/users/esuna/",
+                      "web_image_relative_path":  "images/homepage-feed-chichipui-d308dcd03b7e4e8c37a7.webp"
+                  },
+                  {
+                      "platform":  "painter",
+                      "published_at":  "2026-10-31T13:00:00+09:00",
+                      "age_rating":  "R15",
+                      "membership_only":  false,
+                      "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
+                      "web_image_relative_path":  "images/homepage-feed-painter-65aeeac0f602fa6ec6f5.webp"
+                  },
+                  {
+                      "platform":  "pixiv",
+                      "published_at":  "2026-10-31T12:30:00+09:00",
+                      "age_rating":  "全年齢",
+                      "membership_only":  false,
+                      "destination_url":  "https://www.pixiv.net/users/21257126",
+                      "web_image_relative_path":  "images/homepage-feed-pixiv-2dcef0ce83fbc210382c.webp"
+                  },
+                  {
                       "platform":  "x",
                       "published_at":  "2026-10-31T12:00:00+09:00",
                       "age_rating":  "全年齢",
@@ -19,36 +43,12 @@
                       "web_image_relative_path":  "images/homepage-feed-patreon-8f995787fc995b9596d8.webp"
                   },
                   {
-                      "platform":  "chichipui",
-                      "published_at":  "2026-10-31T10:00:00+09:00",
-                      "age_rating":  "全年齢",
-                      "membership_only":  false,
-                      "destination_url":  "https://www.chichi-pui.com/users/esuna/",
-                      "web_image_relative_path":  "images/homepage-feed-chichipui-a31345ea87bc601f88be.webp"
-                  },
-                  {
-                      "platform":  "pixiv",
-                      "published_at":  "2026-10-30T21:30:00+09:00",
-                      "age_rating":  "R18",
-                      "membership_only":  false,
-                      "destination_url":  "https://www.pixiv.net/users/21257126",
-                      "web_image_relative_path":  "images/homepage-feed-pixiv-44ed8ff0582a1796e476.webp"
-                  },
-                  {
                       "platform":  "promptcom",
                       "published_at":  "2026-10-30T18:00:00+09:00",
                       "age_rating":  "R18",
                       "membership_only":  false,
                       "destination_url":  "https://aniborn.com/ja/6954d7c84740e/",
                       "web_image_relative_path":  "images/homepage-feed-promptcom-c0d816f41fbf7c9b9da4.webp"
-                  },
-                  {
-                      "platform":  "painter",
-                      "published_at":  "2026-10-30T17:00:00+09:00",
-                      "age_rating":  "R18",
-                      "membership_only":  true,
-                      "destination_url":  "https://painter-ai.ai/ja/membership_rooms/a9a7be76-6c2b-4c23-a192-c309b1122209",
-                      "web_image_relative_path":  "images/homepage-feed-painter-d7549fd85d6898243abe.webp"
                   }
               ]
 }
