@@ -3,6 +3,14 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
+                      "platform":  "x",
+                      "published_at":  "2026-11-02T04:00:00+09:00",
+                      "age_rating":  "全年齢",
+                      "membership_only":  false,
+                      "destination_url":  "https://x.com/esuna_4649",
+                      "web_image_relative_path":  "images/homepage-feed-x-b78baa53674cbc70cbba.webp"
+                  },
+                  {
                       "platform":  "pixiv",
                       "published_at":  "2026-11-01T21:30:00+09:00",
                       "age_rating":  "R18",
@@ -33,14 +41,6 @@
                       "membership_only":  true,
                       "destination_url":  "https://www.patreon.com/esunamura/posts/173965269",
                       "web_image_relative_path":  "images/homepage-feed-patreon-2209d14610d682082060.webp"
-                  },
-                  {
-                      "platform":  "x",
-                      "published_at":  "2026-11-01T08:00:00+09:00",
-                      "age_rating":  "全年齢",
-                      "membership_only":  false,
-                      "destination_url":  "https://x.com/esuna_4649",
-                      "web_image_relative_path":  "images/homepage-feed-x-fc72da8570a9b33058d2.webp"
                   },
                   {
                       "platform":  "promptcom",
