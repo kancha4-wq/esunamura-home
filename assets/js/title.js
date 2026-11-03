@@ -102,7 +102,7 @@
 
   const shortTranslations = {
     "kurokami-kanojo-3": {
-      summary: { en: "An even sweeter, more intimate time alone with a black-haired, bob-cut girlfriend. A 328-image 4K AI-generated CG collection that moves from uniforms and tie shirts to relaxed roomwear as the two of you draw closer than ever. Coming soon on FANZA.", zh: "与黑色短发女友共度更加甜蜜而亲密的恋人时光。从制服、领带衬衫到轻松的居家服，两人的距离不断拉近。全328张、4K AI生成CG集，现已在FANZA公开预告。", ko: "검은 단발머리 여자친구와 보내는 한층 더 달콤하고 깊어진 연인 시간. 교복과 넥타이 셔츠 차림에서 편안한 실내복까지, 두 사람의 거리가 어느 때보다 가까워지는 328장·4K AI 생성 CG집입니다. FANZA에서 예고 공개 중입니다." },
+      summary: { en: "An even sweeter, more intimate time alone with a black-haired, bob-cut girlfriend. A 328-image 4K AI-generated CG collection that moves from uniforms and tie shirts to relaxed roomwear as the two of you draw closer than ever. Now on sale at DLsite and coming soon on FANZA.", zh: "与黑色短发女友共度更加甜蜜而亲密的恋人时光。从制服、领带衬衫到轻松的居家服，两人的距离不断拉近。全328张、4K AI生成CG集。现已在DLsite发售，并在FANZA公开预告。", ko: "검은 단발머리 여자친구와 보내는 한층 더 달콤하고 깊어진 연인 시간. 교복과 넥타이 셔츠 차림에서 편안한 실내복까지, 두 사람의 거리가 어느 때보다 가까워지는 328장·4K AI 생성 CG집입니다. DLsite에서 판매 중이며 FANZA에서 예고 공개 중입니다." },
       format: { en: "328 main images / 4K JPG", zh: "本篇328张 / 4K JPG", ko: "본편 328장 / 4K JPG" },
       focus: { en: "Black bob / Partner's view / Closer than ever", zh: "黑色短发 / 恋人视角 / 更近的两人", ko: "검은 단발 / 연인 시점 / 더 가까워지는 두 사람" }
     },
