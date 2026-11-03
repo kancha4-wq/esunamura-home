@@ -3,6 +3,14 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
+                      "platform":  "patreon",
+                      "published_at":  "2026-11-03T18:00:00+09:00",
+                      "age_rating":  "R18",
+                      "membership_only":  true,
+                      "destination_url":  "https://www.patreon.com/esunamura/posts/174167671",
+                      "web_image_relative_path":  "images/homepage-feed-patreon-e14422c7440052b36805.webp"
+                  },
+                  {
                       "platform":  "painter",
                       "published_at":  "2026-11-03T17:00:00+09:00",
                       "age_rating":  "R18",
@@ -25,14 +33,6 @@
                       "membership_only":  false,
                       "destination_url":  "https://www.pixiv.net/users/21257126",
                       "web_image_relative_path":  "images/homepage-feed-pixiv-7c3e1a396202f01c8d83.webp"
-                  },
-                  {
-                      "platform":  "patreon",
-                      "published_at":  "2026-11-03T12:00:00+09:00",
-                      "age_rating":  "R18",
-                      "membership_only":  true,
-                      "destination_url":  "https://www.patreon.com/esunamura/posts/174167486",
-                      "web_image_relative_path":  "images/homepage-feed-patreon-a3f94cb428ac442c653c.webp"
                   },
                   {
                       "platform":  "promptcom",
