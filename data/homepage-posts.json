@@ -3,6 +3,14 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
+                      "platform":  "x",
+                      "published_at":  "2026-11-03T20:00:00+09:00",
+                      "age_rating":  "全年齢",
+                      "membership_only":  false,
+                      "destination_url":  "https://x.com/esuna_4649",
+                      "web_image_relative_path":  "images/homepage-feed-x-08b49c955bfb1f293331.webp"
+                  },
+                  {
                       "platform":  "patreon",
                       "published_at":  "2026-11-03T18:00:00+09:00",
                       "age_rating":  "R18",
@@ -17,14 +25,6 @@
                       "membership_only":  true,
                       "destination_url":  "https://painter-ai.ai/ja/membership_rooms/a9a7be76-6c2b-4c23-a192-c309b1122209",
                       "web_image_relative_path":  "images/homepage-feed-painter-2e74423845cd267dfb4a.webp"
-                  },
-                  {
-                      "platform":  "x",
-                      "published_at":  "2026-11-03T16:00:00+09:00",
-                      "age_rating":  "全年齢",
-                      "membership_only":  false,
-                      "destination_url":  "https://x.com/esuna_4649",
-                      "web_image_relative_path":  "images/homepage-feed-x-e7d132c33cfe72343806.webp"
                   },
                   {
                       "platform":  "pixiv",
