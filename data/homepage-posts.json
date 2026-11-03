@@ -3,6 +3,14 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
+                      "platform":  "x",
+                      "published_at":  "2026-11-03T16:00:00+09:00",
+                      "age_rating":  "全年齢",
+                      "membership_only":  false,
+                      "destination_url":  "https://x.com/esuna_4649",
+                      "web_image_relative_path":  "images/homepage-feed-x-e7d132c33cfe72343806.webp"
+                  },
+                  {
                       "platform":  "painter",
                       "published_at":  "2026-11-03T13:00:00+09:00",
                       "age_rating":  "R15",
@@ -17,14 +25,6 @@
                       "membership_only":  false,
                       "destination_url":  "https://www.pixiv.net/users/21257126",
                       "web_image_relative_path":  "images/homepage-feed-pixiv-7c3e1a396202f01c8d83.webp"
-                  },
-                  {
-                      "platform":  "x",
-                      "published_at":  "2026-11-03T12:00:00+09:00",
-                      "age_rating":  "全年齢",
-                      "membership_only":  false,
-                      "destination_url":  "https://x.com/esuna_4649",
-                      "web_image_relative_path":  "images/homepage-feed-x-0fef224b1b857cf7fac8.webp"
                   },
                   {
                       "platform":  "patreon",
