@@ -313,10 +313,10 @@ const promptcomPanels = document.querySelectorAll("[data-promptcom-panel]");
 
 const workDescriptions = {
   "kurokami-kanojo-3": {
-    ja: "黒髪ボブの彼女と過ごす、さらに甘く濃密な恋人時間。制服やネクタイシャツ姿から部屋着へ、ふたりの距離が限界まで近づいていく全328枚・4KのAI生成CG集です。DLsiteで販売中、FANZAで予告公開中。",
-    en: "An even sweeter, more intimate time alone with a black-haired, bob-cut girlfriend. A 328-image 4K AI-generated CG collection that moves from uniforms and tie shirts to relaxed roomwear as the two of you draw closer than ever. Now on sale at DLsite and coming soon on FANZA.",
-    zh: "与黑色短发女友共度更加甜蜜而亲密的恋人时光。从制服、领带衬衫到轻松的居家服，两人的距离不断拉近。全328张、4K AI生成CG集。现已在DLsite发售，并在FANZA公开预告。",
-    ko: "검은 단발머리 여자친구와 보내는 한층 더 달콤하고 깊어진 연인 시간. 교복과 넥타이 셔츠 차림에서 편안한 실내복까지, 두 사람의 거리가 어느 때보다 가까워지는 328장·4K AI 생성 CG집입니다. DLsite에서 판매 중이며 FANZA에서 예고 공개 중입니다."
+    ja: "黒髪ボブの彼女と過ごす、さらに甘く濃密な恋人時間。制服やネクタイシャツ姿から部屋着へ、ふたりの距離が限界まで近づいていく全328枚・4KのAI生成CG集です。DLsite・FANZAで販売中。",
+    en: "An even sweeter, more intimate time alone with a black-haired, bob-cut girlfriend. A 328-image 4K AI-generated CG collection that moves from uniforms and tie shirts to relaxed roomwear as the two of you draw closer than ever. Now on sale at DLsite and FANZA.",
+    zh: "与黑色短发女友共度更加甜蜜而亲密的恋人时光。从制服、领带衬衫到轻松的居家服，两人的距离不断拉近。全328张、4K AI生成CG集。现已在DLsite和FANZA发售。",
+    ko: "검은 단발머리 여자친구와 보내는 한층 더 달콤하고 깊어진 연인 시간. 교복과 넥타이 셔츠 차림에서 편안한 실내복까지, 두 사람의 거리가 어느 때보다 가까워지는 328장·4K AI 생성 CG집입니다. DLsite와 FANZA에서 판매 중입니다."
   },
   "kurokami-kanojo-2": {
     ja: "黒髪ボブの彼女と過ごす、ふたりきりの特別な一日。日常の笑顔から少しずつ距離が近づく流れを描いた、全340枚・4KのAI生成CG集です。DLsite・FANZAで販売中。",
@@ -489,7 +489,7 @@ const workArchiveMeta = {
     count: { ja: "328枚収録", en: "328 images", zh: "收录328张", ko: "328장 수록" },
     quality: "4K",
     series: { ja: "彼女とふたりきり", en: "Alone with Her", zh: "与她独处", ko: "그녀와 단둘이" },
-    tags: { ja: ["DLsite販売中", "FANZA予告公開中", "黒髪ボブ"], en: ["On sale at DLsite", "Coming soon on FANZA", "Black bob"], zh: ["DLsite发售中", "FANZA预告公开中", "黑色短发"], ko: ["DLsite 판매 중", "FANZA 예고 공개 중", "검은 단발"] }
+    tags: { ja: ["DLsite販売中", "FANZA販売中", "黒髪ボブ"], en: ["On sale at DLsite", "On sale at FANZA", "Black bob"], zh: ["DLsite发售中", "FANZA发售中", "黑色短发"], ko: ["DLsite 판매 중", "FANZA 판매 중", "검은 단발"] }
   },
   "kurokami-kanojo-2": {
     count: { ja: "340枚収録", en: "340 images", zh: "收录340张", ko: "340장 수록" },
