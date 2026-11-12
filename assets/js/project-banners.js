@@ -2,7 +2,7 @@
   "use strict";
   const gameBannerVersion = "20261024-game-title";
   const gameCaptions = {"ja": "湯けむり宿繁盛記 — 開発中", "en": "湯けむり宿繁盛記 — In development", "zh": "湯けむり宿繁盛記 — 开发中", "ko": "湯けむり宿繁盛記 — 개발 중"};
-  const bannerUrl = (url, kind) => kind === "book" ? url.replace(/\.png(?=\?|$)/, ".svg") : kind === "game" ? url + (url.includes("?") ? "&" : "?") + "v=" + gameBannerVersion : url;
+  const bannerUrl = (url, kind) => kind === "game" ? url + (url.includes("?") ? "&" : "?") + "v=" + gameBannerVersion : url;
   const bookNames = {"ja": "EPUB読み上げ・電子書籍ビューア", "en": "EPUB Read Aloud & eBook Reader", "zh": "EPUB朗读·电子书阅读器", "ko": "EPUB 음성 읽기·전자책 뷰어"};
   const attached = new WeakSet();
   // Load every format before switching a product to its translated artwork.
@@ -78,7 +78,31 @@
     });
     localizeProjectLinks(lang);
     localizeBannerImages(lang);
+    refreshBookTitles();
     queueRailLayout();
+  }
+  // Preserve the original app artwork. The product name is accessible HTML,
+  // so localization never redraws or alters the app screenshots.
+  function refreshBookTitles() {
+    const lang = document.documentElement.lang.split("-")[0];
+    document.querySelectorAll('[data-analytics-link="book-project"] picture').forEach(picture => {
+      const img = picture.querySelector('img');
+      if (!img) return;
+      let title = picture.querySelector('.book-product-name');
+      if (!title) {
+        title = document.createElement('span'); title.className = 'book-product-name';
+        picture.append(title); picture.style.position = 'relative';
+        img.addEventListener('load', refreshBookTitles);
+      }
+      const format = (img.currentSrc || img.src).match(/book-(wide|card|strip|slim)/)?.[1] || 'card';
+      const dims = {slim:[280,24,24,236,130,25],wide:[1400,125,22,550,77,30],card:[780,110,22,630,72,29],strip:[1400,104,24,168,116,24]}[format];
+      const [width,x,y,w,h,font] = dims;
+      const scale = img.getBoundingClientRect().width / width;
+      Object.assign(title.style,{position:'absolute',left:(x/width*100)+'%',top:(y*scale)+'px',width:(w/width*100)+'%',height:(h*scale)+'px',fontSize:(font*scale)+'px',lineHeight:'1.2',fontWeight:'800',color:'#292820',background:'#fff8ee',display:'flex',alignItems:'center',overflowWrap:'anywhere',textAlign:'left',padding:'0',boxSizing:'border-box',pointerEvents:'none'});
+      title.style.whiteSpace = 'pre-line';
+      title.textContent = (bookNames[lang] || bookNames.ja).replace(lang === 'ja' || lang === 'ko' ? '・' : lang === 'zh' ? '·' : ' & ', '\n');
+      title.setAttribute('aria-hidden', 'true');
+    });
   }
   function syncGroup(slot) {
     const group = slot.closest(".project-banner-group");
@@ -122,7 +146,7 @@
       rail.setAttribute("aria-labelledby", "dlsite-category-title");
       rail.innerHTML = `
         <div class="header-project-bars project-banner-group" data-project-label data-label-ja="書籍アプリとゲーム" data-label-en="Book app and game" data-label-zh="书籍应用与游戏" data-label-ko="도서 앱과 게임" aria-label="書籍アプリとゲーム">
-          <div class="project-banner-slot" hidden><a class="project-banner-link" href="https://esunastudio-viewer.pages.dev/viewer/" target="_blank" rel="noopener noreferrer" data-analytics-link="book-project" data-analytics-area="header-project-bars"><picture><img src="/assets/banners/book-slim.svg" width="280" height="1360" alt="EPUB読み上げ・電子書籍ビューア" loading="eager" decoding="async"></picture></a></div>
+          <div class="project-banner-slot" hidden><a class="project-banner-link" href="https://esunastudio-viewer.pages.dev/viewer/" target="_blank" rel="noopener noreferrer" data-analytics-link="book-project" data-analytics-area="header-project-bars"><picture><img src="/assets/banners/book-slim.png" width="280" height="1360" alt="EPUB読み上げ・電子書籍ビューア" loading="eager" decoding="async"></picture></a></div>
           <div class="project-banner-slot" hidden><a class="project-banner-link" href="https://esunastudio-viewer.pages.dev/game/" target="_blank" rel="noopener noreferrer" data-analytics-link="game-project" data-analytics-area="header-project-bars"><picture><img src="/assets/banners/game-slim.png?v=20261024-game-title" width="280" height="1360" alt="湯けむり宿繁盛記 — 開発中" loading="eager" decoding="async"></picture></a></div>
         </div>
         <div class="dlsite-category-panel">
@@ -187,7 +211,7 @@
   localizePromotions();
   new MutationObserver(localizePromotions).observe(document.documentElement, {attributes: true, attributeFilter: ["lang"]});
   queueRailLayout();
-  window.addEventListener("resize", queueRailLayout);
+  window.addEventListener("resize", () => { queueRailLayout(); refreshBookTitles(); });
   window.addEventListener("load", queueRailLayout);
   const titleApp = document.getElementById("titleApp");
   if (titleApp) new MutationObserver(records => {
