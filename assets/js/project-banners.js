@@ -2,7 +2,8 @@
   "use strict";
   const gameBannerVersion = "20261024-game-title";
   const gameCaptions = {"ja": "湯けむり宿繁盛記 — 開発中", "en": "湯けむり宿繁盛記 — In development", "zh": "湯けむり宿繁盛記 — 开发中", "ko": "湯けむり宿繁盛記 — 개발 중"};
-  const bannerUrl = (url, kind) => kind === "game" ? url + (url.includes("?") ? "&" : "?") + "v=" + gameBannerVersion : url;
+  const bannerUrl = (url, kind) => kind === "book" ? url.replace(/\.png(?=\?|$)/, ".svg") : kind === "game" ? url + (url.includes("?") ? "&" : "?") + "v=" + gameBannerVersion : url;
+  const bookNames = {"ja": "EPUB読み上げ・電子書籍ビューア", "en": "EPUB Read Aloud & eBook Reader", "zh": "EPUB朗读·电子书阅读器", "ko": "EPUB 음성 읽기·전자책 뷰어"};
   const attached = new WeakSet();
   // Load every format before switching a product to its translated artwork.
   // A missing or malformed translation falls back to the original Japanese set.
@@ -54,7 +55,8 @@
         if (!original || !original.startsWith(`/assets/banners/${kind}-`)) return;
         image.dataset.projectOriginalSource = original;
         const localized = ready ? original.replaceAll(`/assets/banners/${kind}-`, `/assets/banners/${lang}/${kind}-`) : original;
-        const wanted = kind === "game" && !localized.includes("?v=") ? bannerUrl(localized, kind) : localized;
+        const wanted = kind === "book" || (kind === "game" && !localized.includes("?v=")) ? bannerUrl(localized, kind) : localized;
+        if (kind === "book" && image.tagName === "IMG") image.alt = bookNames[lang] || bookNames.ja;
         if (kind === "game" && image.tagName === "IMG") image.alt = gameCaptions[lang] || gameCaptions.ja;
         if (image.getAttribute(attribute) !== wanted) image.setAttribute(attribute, wanted);
       });
@@ -120,7 +122,7 @@
       rail.setAttribute("aria-labelledby", "dlsite-category-title");
       rail.innerHTML = `
         <div class="header-project-bars project-banner-group" data-project-label data-label-ja="書籍アプリとゲーム" data-label-en="Book app and game" data-label-zh="书籍应用与游戏" data-label-ko="도서 앱과 게임" aria-label="書籍アプリとゲーム">
-          <div class="project-banner-slot" hidden><a class="project-banner-link" href="https://esunastudio-viewer.pages.dev/viewer/" target="_blank" rel="noopener noreferrer" data-analytics-link="book-project" data-analytics-area="header-project-bars"><picture><img src="/assets/banners/book-slim.png" width="280" height="1360" alt="ビュッ｜別提供アプリ" loading="eager" decoding="async"></picture></a></div>
+          <div class="project-banner-slot" hidden><a class="project-banner-link" href="https://esunastudio-viewer.pages.dev/viewer/" target="_blank" rel="noopener noreferrer" data-analytics-link="book-project" data-analytics-area="header-project-bars"><picture><img src="/assets/banners/book-slim.svg" width="280" height="1360" alt="EPUB読み上げ・電子書籍ビューア" loading="eager" decoding="async"></picture></a></div>
           <div class="project-banner-slot" hidden><a class="project-banner-link" href="https://esunastudio-viewer.pages.dev/game/" target="_blank" rel="noopener noreferrer" data-analytics-link="game-project" data-analytics-area="header-project-bars"><picture><img src="/assets/banners/game-slim.png?v=20261024-game-title" width="280" height="1360" alt="湯けむり宿繁盛記 — 開発中" loading="eager" decoding="async"></picture></a></div>
         </div>
         <div class="dlsite-category-panel">
@@ -180,8 +182,7 @@
   }
   attach(document);
   document.querySelectorAll('[data-analytics-link="book-project"] .project-banner-caption').forEach(caption => {
-    caption.dataset.en = caption.dataset.en.replace(/\bByu(?: app)?\b/, "Byu: Manga, EPUB & Read Aloud");
-    caption.dataset.en += " — PC sample UI; Android capture pending";
+    Object.entries(bookNames).forEach(([lang, name]) => caption.dataset[lang] = name + " ↗");
   });
   localizePromotions();
   new MutationObserver(localizePromotions).observe(document.documentElement, {attributes: true, attributeFilter: ["lang"]});
