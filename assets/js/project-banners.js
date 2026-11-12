@@ -95,7 +95,7 @@
         img.addEventListener('load', refreshBookTitles);
       }
       const format = (img.currentSrc || img.src).match(/book-(wide|card|strip|slim)/)?.[1] || 'card';
-      const dims = {slim:[280,24,24,236,130,25],wide:[1400,125,22,550,77,30],card:[780,110,22,630,72,29],strip:[1400,104,24,168,116,24]}[format];
+      const dims = {slim:[280,92,24,166,75,20],wide:[1400,125,22,550,77,30],card:[780,110,22,630,72,29],strip:[1400,104,24,168,116,24]}[format];
       const [width,x,y,w,h,font] = dims;
       const scale = img.getBoundingClientRect().width / width;
       Object.assign(title.style,{position:'absolute',left:(x/width*100)+'%',top:(y*scale)+'px',width:(w/width*100)+'%',height:(h*scale)+'px',fontSize:(font*scale)+'px',lineHeight:'1.2',fontWeight:'800',color:'#292820',background:'#fff8ee',display:'flex',alignItems:'center',overflowWrap:'anywhere',textAlign:'left',padding:'0',boxSizing:'border-box',pointerEvents:'none'});
