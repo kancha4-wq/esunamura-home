@@ -3,6 +3,22 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
+                      "platform":  "patreon",
+                      "published_at":  "2026-11-15T18:00:00+09:00",
+                      "age_rating":  "R18",
+                      "membership_only":  true,
+                      "destination_url":  "https://www.patreon.com/esunamura/posts/175316398",
+                      "web_image_relative_path":  "images/homepage-feed-patreon-7ee161fb49813d1c57bc.webp"
+                  },
+                  {
+                      "platform":  "chichipui",
+                      "published_at":  "2026-11-15T18:00:00+09:00",
+                      "age_rating":  "R15",
+                      "membership_only":  false,
+                      "destination_url":  "https://www.chichi-pui.com/users/esuna/",
+                      "web_image_relative_path":  "images/homepage-feed-chichipui-b9171a11a9a75a28037d.webp"
+                  },
+                  {
                       "platform":  "painter",
                       "published_at":  "2026-11-15T17:00:00+09:00",
                       "age_rating":  "R18",
@@ -17,22 +33,6 @@
                       "membership_only":  false,
                       "destination_url":  "https://x.com/esuna_4649",
                       "web_image_relative_path":  "images/homepage-feed-x-73e29bdd0f43ac562ec6.webp"
-                  },
-                  {
-                      "platform":  "chichipui",
-                      "published_at":  "2026-11-15T16:00:00+09:00",
-                      "age_rating":  "全年齢",
-                      "membership_only":  false,
-                      "destination_url":  "https://www.chichi-pui.com/users/esuna/",
-                      "web_image_relative_path":  "images/homepage-feed-chichipui-92ce0da7998da2a902f6.webp"
-                  },
-                  {
-                      "platform":  "patreon",
-                      "published_at":  "2026-11-15T12:00:00+09:00",
-                      "age_rating":  "R18",
-                      "membership_only":  true,
-                      "destination_url":  "https://www.patreon.com/esunamura/posts/175316357",
-                      "web_image_relative_path":  "images/homepage-feed-patreon-64e8acfec4ed78aef754.webp"
                   },
                   {
                       "platform":  "promptcom",
