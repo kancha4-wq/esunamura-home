@@ -39,10 +39,10 @@
         "邂逅新的温泉。",
         "새로운 온천을 만나다."
     ],
-    "湯けむり宿繁盛記": [
-        "湯けむり宿繁盛記",
-        "湯けむり宿繁盛記",
-        "湯けむり宿繁盛記"
+    "ユノテラ": [
+        "ユノテラ",
+        "ユノテラ",
+        "ユノテラ"
     ],
     "温泉をめぐる。女将を集める。街を育てる。": [
         "Tour hot springs. Meet proprietresses. Build up the town.",
@@ -444,10 +444,10 @@
         "完成与发行时间尚未确定。",
         "완성 및 배포 시기는 미정입니다."
     ],
-    "湯けむり宿繁盛記の開発中タイトル画面": [
-        "Development title screen of 湯けむり宿繁盛記",
-        "《湯けむり宿繁盛記》开发中的标题画面",
-        "「湯けむり宿繁盛記」의 개발 중 타이틀 화면"
+    "ユノテラの開発中タイトル画面": [
+        "Development title screen of ユノテラ",
+        "《ユノテラ》开发中的标题画面",
+        "「ユノテラ」의 개발 중 타이틀 화면"
     ],
     "タイトル画面 ／ 開発候補": [
         "Title screen / Development candidate",
@@ -579,15 +579,15 @@
         "Android版本开发中，所示图片为开发候选版的实际画面。",
         "Android용으로 개발 중입니다. 이미지는 개발 후보의 실제 화면입니다."
     ],
-    "湯けむり宿繁盛記｜esunaStudio": [
-        "湯けむり宿繁盛記 | esunaStudio",
-        "湯けむり宿繁盛記｜esunaStudio",
-        "湯けむり宿繁盛記 | esunaStudio"
+    "ユノテラ｜esunaStudio": [
+        "ユノテラ | esunaStudio",
+        "ユノテラ｜esunaStudio",
+        "ユノテラ | esunaStudio"
     ],
-    "Android向けに開発中のゲーム「湯けむり宿繁盛記」。温泉地と女将たちを描くesunaStudioの新作です。": [
-        "An Android game in development from esunaStudio, featuring hot-spring destinations and their proprietresses: 湯けむり宿繁盛記.",
-        "esunaStudio正在开发的Android游戏《湯けむり宿繁盛記》，以温泉乡与女将们为主题。",
-        "온천지와 여주인들을 담은 esunaStudio의 Android 개발 중 게임, 「湯けむり宿繁盛記」입니다."
+    "Android向けに開発中のゲーム「ユノテラ」。温泉地と女将たちを描くesunaStudioの新作です。": [
+        "An Android game in development from esunaStudio, featuring hot-spring destinations and their proprietresses: ユノテラ.",
+        "esunaStudio正在开发的Android游戏《ユノテラ》，以温泉乡与女将们为主题。",
+        "온천지와 여주인들을 담은 esunaStudio의 Android 개발 중 게임, 「ユノテラ」입니다."
     ],
     "温泉のひとときを、": [
         "Enjoy a hot-spring moment",
@@ -679,10 +679,10 @@
         "普通模式／棋盘旋转中的实际画面",
         "일반 모드 / 보드 회전 중 실제 화면"
     ],
-    "Android向けに開発中のゲーム「湯けむり宿繁盛記」。掲載画像は開発候補の実画面です。完成・配信時期は未定です。": [
-        "湯けむり宿繁盛記 is in development for Android. These are actual development captures. Completion and release dates are undecided.",
-        "《湯けむり宿繁盛記》是面向Android开发中的游戏。所示为开发候选版实机画面，完成与发行时间尚未确定。",
-        "「湯けむり宿繁盛記」는 Android용으로 개발 중입니다. 개발 후보의 실제 화면이며 완성 및 배포 시기는 미정입니다."
+    "Android向けに開発中のゲーム「ユノテラ」。掲載画像は開発候補の実画面です。完成・配信時期は未定です。": [
+        "ユノテラ is in development for Android. These are actual development captures. Completion and release dates are undecided.",
+        "《ユノテラ》是面向Android开发中的游戏。所示为开发候选版实机画面，完成与发行时间尚未确定。",
+        "「ユノテラ」는 Android용으로 개발 중입니다. 개발 후보의 실제 화면이며 완성 및 배포 시기는 미정입니다."
     ]
 };
 
