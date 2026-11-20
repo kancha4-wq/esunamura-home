@@ -220,6 +220,14 @@ const works = [
     }
   },
   {
+    title: { ja: "黒髪少女を独り占め４ 京の景色、ふたりの余韻", en: "My Black-Haired Girlfriend, All to Myself 4 — Kyoto and the Echoes of Our Day", zh: "独占黑发少女 4 ～京都风景，两人的余韵～", ko: "흑발 소녀를 독차지 4 ～교토의 풍경, 두 사람의 여운～" },
+    slug: "kurokami-kanojo-4",
+    image: "0501_改修資料/kurokami-kanojo-4/thumb.jpg",
+    imageWidth: 560,
+    imageHeight: 420,
+    links: {}
+  },
+  {
     title: {
       ja: "黒髪彼女を独り占め 3 ～もっと近くで、ふたりきり～",
       en: "My Black-Haired Girlfriend, All to Myself 3 — Closer Than Ever, Just the Two of Us",
@@ -312,6 +320,7 @@ const promptcomTabs = document.querySelectorAll("[data-promptcom-tab]");
 const promptcomPanels = document.querySelectorAll("[data-promptcom-panel]");
 
 const workDescriptions = {
+  "kurokami-kanojo-4": { ja: "京都の小道から、木漏れ日が揺れるプール、ふたりで過ごす夜へ。黒髪の彼女の表情を全319枚の4K AI生成CGで描きます。FANZA予告公開中。", en: "From Kyoto’s quiet lanes to a sun-dappled pool and a night together, this collection follows her changing expressions across 319 AI-generated 4K illustrations. Coming soon on FANZA.", zh: "从京都小径到树影摇曳的泳池，再到两人共度的夜晚。全319张4K AI生成CG，描绘黑发女主随景色变化的神情。FANZA预告已公开。", ko: "교토의 골목길에서 햇살이 비치는 수영장을 지나 둘만의 밤으로. 풍경에 따라 달라지는 흑발 그녀의 표정을 319장의 4K AI 생성 CG에 담았습니다. FANZA 예고 공개 중." },
   "kurokami-kanojo-3": {
     ja: "黒髪ボブの彼女と過ごす、さらに甘く濃密な恋人時間。制服やネクタイシャツ姿から部屋着へ、ふたりの距離が限界まで近づいていく全328枚・4KのAI生成CG集です。DLsite・FANZAで販売中。",
     en: "An even sweeter, more intimate time alone with a black-haired, bob-cut girlfriend. A 328-image 4K AI-generated CG collection that moves from uniforms and tie shirts to relaxed roomwear as the two of you draw closer than ever. Now on sale at DLsite and FANZA.",
@@ -485,6 +494,12 @@ const workTitleTranslations = {
 };
 
 const workArchiveMeta = {
+  "kurokami-kanojo-4": {
+    count: { ja: "319枚収録", en: "319 images", zh: "收录319张", ko: "319장 수록" },
+    quality: "4K",
+    series: { ja: "京都", en: "Kyoto", zh: "京都", ko: "교토" },
+    tags: { ja: ["FANZA予告公開中"], en: ["Coming soon on FANZA"], zh: ["FANZA预告已公开"], ko: ["FANZA 예고 공개 중"] }
+  },
   "kurokami-kanojo-3": {
     count: { ja: "328枚収録", en: "328 images", zh: "收录328张", ko: "328장 수록" },
     quality: "4K",
@@ -644,6 +659,7 @@ const r15WorkSlugs = new Set([
 const pickupSlugs = ["erobokishin-4649", "blonde-shrine-maiden", "setouchi-omorashi-journey"];
 
 const detailPageBySlug = {
+  "kurokami-kanojo-4": "kurokami-kanojo-4",
   "kurokami-kanojo-3": "kurokami-kanojo-3",
   "kurokami-kanojo-2": "kurokami-kanojo-2",
   "pink-haired-idol-encore": "pink-haired-idol-encore",
@@ -681,7 +697,7 @@ const newReleaseLabels = {
   "kyoto-prompt-pack": "NEW / 2026.05"
 };
 
-const worksGridPrioritySlugs = ["kurokami-kanojo-3", "kurokami-kanojo-2", "pink-haired-idol-encore", "kurokami-kanojo", "hikagami-school-route", "summer-schoolday", "fanart-select-r15", "fanart-select", "blonde-shrine-maiden-isekai"];
+const worksGridPrioritySlugs = ["kurokami-kanojo-4", "kurokami-kanojo-3", "kurokami-kanojo-2", "pink-haired-idol-encore", "kurokami-kanojo", "hikagami-school-route", "summer-schoolday", "fanart-select-r15", "fanart-select", "blonde-shrine-maiden-isekai"];
 
 function ratingBadgeFor(work) {
   if (allAgesWorkSlugs.has(work.slug)) return null;

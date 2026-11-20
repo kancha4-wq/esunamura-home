@@ -536,6 +536,52 @@ A school day during summer break. The quiet school echoes only with cicadas and 
     related: ["hikagami-school", "school-legs", "kinpatsu-miko-isekai"]
   },
   {
+    id: "kurokami-kanojo-4",
+    folder: "kurokami-kanojo-4",
+    title: { ja: "黒髪少女を独り占め４ 京の景色、ふたりの余韻", en: "My Black-Haired Girlfriend, All to Myself 4 — Kyoto and the Echoes of Our Day", zh: "独占黑发少女 4 ～京都风景，两人的余韵～", ko: "흑발 소녀를 독차지 4 ～교토의 풍경, 두 사람의 여운～" },
+    series: "彼女とふたりきり",
+    cover: "0501_改修資料/kurokami-kanojo-4/cover.jpg",
+    samples: [
+      "0501_改修資料/kurokami-kanojo-4/samples/sample01.jpg",
+      "0501_改修資料/kurokami-kanojo-4/samples/sample02.jpg",
+      "0501_改修資料/kurokami-kanojo-4/samples/sample03.jpg",
+      "0501_改修資料/kurokami-kanojo-4/samples/sample04.jpg"
+    ],
+    count: "319枚",
+    format: "AI生成CG / JPEG / 3185×4096px（4K）",
+    focus: "京都 / ポニーテール / ふたりの時間",
+    summary: "京都の小道から、木漏れ日が揺れるプール、ふたりで過ごす夜へ。黒髪の彼女の表情を全319枚の4K AI生成CGで描きます。",
+    description: {
+      ja: `京の小道から、ふたりで過ごす夜まで。
+
+桜の小道や緑の参道を、黒髪の彼女と歩く京都の一日。
+水面に光が揺れるプールでは、街歩きのときとはまた違う、くつろいだ表情を見せてくれます。
+
+日が暮れ、舞台は静かなホテルへ。彼女がひとりで過ごすひとときから、恋人とふたりきりで過ごす夜へと続きます。
+街で見せる笑顔も、そばにいる人だけが知る表情も。京の景色から夜の余韻まで、全319枚の4K CGに収めました。`,
+      en: `From Kyoto’s quiet lanes to a night spent together.
+
+Follow her along cherry blossom paths and leafy temple approaches. Later, by the pool, light flickers on the water as she shows a more relaxed side.
+
+After dusk, the setting shifts to a quiet hotel, from a moment to herself to an evening shared with her partner. The 319 illustrations follow her expressions as the day unfolds.`,
+      zh: `从京都小径，到两人共度的夜晚。
+
+与黑发女主走过樱花小径和绿意盎然的参道。泳池水光摇曳，她露出了与街头漫步时不同的放松神情。
+
+天色渐暗，场景转到一间安静的酒店。故事从她独处的片刻，延续到与恋人共度的夜晚。全319张插画记录了她随时间与景色变化的神情。`,
+      ko: `교토의 골목길에서 둘이 함께 보내는 밤까지.
+
+흑발의 그녀와 함께 벚꽃이 핀 오솔길과 녹음이 우거진 참배길을 걷습니다. 물 위로 빛이 일렁이는 수영장에서는 거리를 걸을 때와는 다른 편안한 표정을 보여 줍니다.
+
+해가 지면 무대는 조용한 호텔로 옮겨 갑니다. 그녀가 혼자 보내는 잠깐의 여유에서 연인과 함께하는 밤으로 이어집니다. 풍경과 시간에 따라 달라지는 그녀의 표정을 319장의 일러스트에 담았습니다.`
+    },
+    phases: ["京巡り", "プール", "ホテルでのひとり時間", "恋人と過ごす夜"],
+    tags: ["京都", "ポニーテール", "黒髪", "物語仕立て"],
+    announcement: true,
+    salesLinks: saleLinkTemplate,
+    related: ["kurokami-kanojo-3", "kurokami-kanojo-2", "kurokami-kanojo"]
+  },
+  {
     id: "kurokami-kanojo-3",
     folder: "kurokami-kanojo-3",
     title: {
@@ -739,6 +785,9 @@ Short black hair, gentle expressions, and a familiar girlfriend-like presence sh
 ];
 
 const salesByWorkId = {
+  "kurokami-kanojo-4": {
+    FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_855285/"
+  },
   "kurokami-kanojo-3": {
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_844377/",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/s/link/work/aid/esunamura/id/RJ01755868.html"

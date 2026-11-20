@@ -9,6 +9,9 @@
   const ui = {
     ja: {
       sales: "購入・閲覧方法",
+      announcement: "FANZA予告公開中",
+      announcementGuide: "配信日・価格は未定です。",
+      announcementLink: "FANZAで予告を見る",
       salesGuide: "chichi-puiで閲覧するか、各販売サイトから購入できます。",
       phases: "フェーズ / 空間導線",
       tags: "この作品が好きな方向け",
@@ -26,6 +29,9 @@
     },
     en: {
       sales: "Ways to view or buy",
+      announcement: "Coming soon on FANZA",
+      announcementGuide: "The release date and price are yet to be announced.",
+      announcementLink: "View the FANZA announcement",
       salesGuide: "View on chichi-pui or purchase from an available store.",
       phases: "Phases / Flow",
       tags: "Recommended for",
@@ -43,6 +49,9 @@
     },
     zh: {
       sales: "浏览・购买方式",
+      announcement: "FANZA预告已公开",
+      announcementGuide: "发售日期和价格尚未公布。",
+      announcementLink: "在FANZA查看预告",
       salesGuide: "可在 chichi-pui 浏览，或前往各销售平台购买。",
       phases: "阶段 / 空间动线",
       tags: "推荐给喜欢这些要素的用户",
@@ -60,6 +69,9 @@
     },
     ko: {
       sales: "감상・구매 방법",
+      announcement: "FANZA 예고 공개 중",
+      announcementGuide: "출시일과 가격은 아직 공개되지 않았습니다.",
+      announcementLink: "FANZA에서 예고 보기",
       salesGuide: "chichi-pui에서 감상하거나 각 판매처에서 구매할 수 있습니다.",
       phases: "페이즈 / 공간 동선",
       tags: "이런 취향에 추천",
@@ -101,6 +113,11 @@
   };
 
   const shortTranslations = {
+    "kurokami-kanojo-4": {
+      summary: { ja: "京都の小道から、木漏れ日が揺れるプール、ふたりで過ごす夜へ。黒髪の彼女の表情を全319枚の4K AI生成CGで描きます。", en: "From Kyoto’s quiet lanes to a sun-dappled pool and a night together, this collection follows her changing expressions across 319 AI-generated 4K illustrations.", zh: "从京都小径到树影摇曳的泳池，再到两人共度的夜晚。全319张4K AI生成CG，描绘黑发女主随景色变化的神情。", ko: "교토의 골목길에서 햇살이 비치는 수영장을 지나 둘만의 밤으로. 풍경에 따라 달라지는 흑발 그녀의 표정을 319장의 4K AI 생성 CG에 담았습니다." },
+      format: { ja: "AI生成CG / JPEG / 3185×4096px（4K）", en: "AI-generated CG / JPEG / 3185×4096 px (4K)", zh: "AI生成CG / JPEG / 3185×4096像素（4K）", ko: "AI 생성 CG / JPEG / 3185×4096px (4K)" },
+      focus: { ja: "京都 / ポニーテール / ふたりの時間", en: "Kyoto / Ponytail / Time together", zh: "京都 / 马尾 / 两人时光", ko: "교토 / 포니테일 / 둘만의 시간" }
+    },
     "kurokami-kanojo-3": {
       summary: { en: "An even sweeter, more intimate time alone with a black-haired, bob-cut girlfriend. A 328-image 4K AI-generated CG collection that moves from uniforms and tie shirts to relaxed roomwear as the two of you draw closer than ever. Now on sale at DLsite and FANZA.", zh: "与黑色短发女友共度更加甜蜜而亲密的恋人时光。从制服、领带衬衫到轻松的居家服，两人的距离不断拉近。全328张、4K AI生成CG集。现已在DLsite和FANZA发售。", ko: "검은 단발머리 여자친구와 보내는 한층 더 달콤하고 깊어진 연인 시간. 교복과 넥타이 셔츠 차림에서 편안한 실내복까지, 두 사람의 거리가 어느 때보다 가까워지는 328장·4K AI 생성 CG집입니다. DLsite와 FANZA에서 판매 중입니다." },
       format: { en: "328 main images / 4K JPG", zh: "本篇328张 / 4K JPG", ko: "본편 328장 / 4K JPG" },
@@ -934,6 +951,12 @@ chichi-puiでも、本編をご覧いただけます。
   };
 
   const labelTranslations = {
+    "京巡り": { ja: "京巡り", en: "Around Kyoto", zh: "京都漫游", ko: "교토 산책" },
+    "プール": { ja: "プール", en: "Pool", zh: "泳池", ko: "수영장" },
+    "ホテルでのひとり時間": { ja: "ホテルでのひとり時間", en: "Time alone at the hotel", zh: "酒店独处时光", ko: "호텔에서 보내는 혼자만의 시간" },
+    "恋人と過ごす夜": { ja: "恋人と過ごす夜", en: "A night together", zh: "与恋人共度的夜晚", ko: "연인과 함께하는 밤" },
+    "京都": { ja: "京都", en: "Kyoto", zh: "京都", ko: "교토" },
+    "ポニーテール": { ja: "ポニーテール", en: "Ponytail", zh: "马尾", ko: "포니테일" },
     "桃髪アイドル": { en: "Pink-Haired Idol", zh: "桃发偶像", ko: "분홍 머리 아이돌" },
     "桃髪": { en: "Pink hair", zh: "桃发", ko: "분홍 머리" },
     "アイドル": { en: "Idol", zh: "偶像", ko: "아이돌" },
@@ -1170,6 +1193,9 @@ chichi-puiでも、本編をご覧いただけます。
     const pageUrl = detailPageUrl(item);
     const lang = currentLang();
     const r18 = allAgesWorkIds.has(item.id) ? "" : "🔞 ";
+    if (item.announcement) {
+      return `${r18}${title}\n${uiText("announcement")}\n${pageUrl}`;
+    }
     if (lang === "en") {
       return `${r18}"${title}" is now available.\n${summary}\nDetails, samples, and store links:\n${pageUrl}`;
     }
@@ -1237,6 +1263,7 @@ chichi-puiでも、本編をご覧いただけます。
   }
 
   function salesFormatBadgesFor(item) {
+    if (item.announcement) return [];
     const separator = currentLang() === "ja" ? "：" : ": ";
     const formats = {
       FANZA: "4K ZIP",
@@ -1393,7 +1420,9 @@ chichi-puiでも、本編をご覧いただけます。
     return item.salesLinks.map((link) => {
       const href = link.url || "#";
       const className = link.url ? "sales-button" : "sales-button disabled";
-      const label = link.url ? link.label : `${link.label} / ${copy.unavailable}`;
+      const label = item.announcement && link.url
+        ? uiText("announcementLink")
+        : link.url ? link.label : `${link.label} / ${copy.unavailable}`;
       const rel = link.url && /^(?:https:\/\/dlaf\.jp\/|https:\/\/www\.dmm\.co\.jp\/dc\/doujin\/)/.test(link.url)
         ? 'rel="noopener noreferrer sponsored"'
         : 'rel="noopener noreferrer"';
@@ -1410,6 +1439,7 @@ chichi-puiでも、本編をご覧いただけます。
   };
 
   function salesGuideFor(item) {
+    if (item.announcement) return uiText("announcementGuide");
     if (membershipLinks[item.id]) return uiText("salesGuide");
 
     const guide = {
@@ -1520,7 +1550,7 @@ chichi-puiでも、本編をご覧いただけます。
           </div>
           ${(() => {
             const salesMarkup = `${renderMembershipLink(work)}${renderSales(work)}${renderTrialLink(work)}`;
-            return salesMarkup ? `<h2>${uiText("sales")}</h2><p class="sales-guidance">${salesGuideFor(work)}</p><div class="sales-links">${salesMarkup}</div>` : "";
+            return salesMarkup ? `<h2>${uiText(work.announcement ? "announcement" : "sales")}</h2><p class="sales-guidance">${salesGuideFor(work)}</p><div class="sales-links">${salesMarkup}</div>` : "";
           })()}
 
           <div class="share-links">${renderShareButton(work)}</div>
