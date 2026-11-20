@@ -3,6 +3,22 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
+                      "platform":  "patreon",
+                      "published_at":  "2026-11-20T10:00:00+09:00",
+                      "age_rating":  "全年齢",
+                      "membership_only":  false,
+                      "destination_url":  "https://www.patreon.com/esunamura/posts/175798568",
+                      "web_image_relative_path":  "images/homepage-feed-patreon-b756f51655e4bfd562bf.webp"
+                  },
+                  {
+                      "platform":  "promptcom",
+                      "published_at":  "2026-11-20T10:00:00+09:00",
+                      "age_rating":  "全年齢",
+                      "membership_only":  false,
+                      "destination_url":  "https://aniborn.com/ja/6954d7c84740e/",
+                      "web_image_relative_path":  "images/homepage-feed-promptcom-4bcb1a56246e808a5cd5.webp"
+                  },
+                  {
                       "platform":  "x",
                       "published_at":  "2026-11-20T08:00:00+09:00",
                       "age_rating":  "全年齢",
@@ -11,28 +27,12 @@
                       "web_image_relative_path":  "images/homepage-feed-x-d4821a52aef5bccb543f.webp"
                   },
                   {
-                      "platform":  "patreon",
-                      "published_at":  "2026-11-19T20:00:00+09:00",
-                      "age_rating":  "R18",
-                      "membership_only":  false,
-                      "destination_url":  "https://www.patreon.com/esunamura/posts/175704324",
-                      "web_image_relative_path":  "images/homepage-feed-patreon-28e40cf601876d5e2ce0.webp"
-                  },
-                  {
                       "platform":  "painter",
                       "published_at":  "2026-11-19T17:00:00+09:00",
                       "age_rating":  "R18",
                       "membership_only":  true,
                       "destination_url":  "https://painter-ai.ai/ja/membership_rooms/a9a7be76-6c2b-4c23-a192-c309b1122209",
                       "web_image_relative_path":  "images/homepage-feed-painter-6491b73228752e4b313f.webp"
-                  },
-                  {
-                      "platform":  "promptcom",
-                      "published_at":  "2026-11-19T15:00:00+09:00",
-                      "age_rating":  "全年齢",
-                      "membership_only":  false,
-                      "destination_url":  "https://aniborn.com/ja/6954d7c84740e/",
-                      "web_image_relative_path":  "images/homepage-feed-promptcom-73049b8bd83e744ebdc7.webp"
                   },
                   {
                       "platform":  "chichipui",
