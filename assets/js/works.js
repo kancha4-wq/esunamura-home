@@ -577,7 +577,7 @@ After dusk, the setting shifts to a quiet hotel, from a moment to herself to an 
     },
     phases: ["京巡り", "プール", "ホテルでのひとり時間", "恋人と過ごす夜"],
     tags: ["京都", "ポニーテール", "黒髪", "物語仕立て"],
-    announcement: true,
+    previewStores: ["FANZA"],
     salesLinks: saleLinkTemplate,
     related: ["kurokami-kanojo-3", "kurokami-kanojo-2", "kurokami-kanojo"]
   },
@@ -786,7 +786,8 @@ Short black hair, gentle expressions, and a familiar girlfriend-like presence sh
 
 const salesByWorkId = {
   "kurokami-kanojo-4": {
-    FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_855285/"
+    FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_855285/",
+    DLsite: "https://dlaf.jp/aix/dlaf/=/t/s/link/work/aid/esunamura/id/RJ01773947.html"
   },
   "kurokami-kanojo-3": {
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_844377/",

@@ -1272,7 +1272,7 @@ chichi-puiでも、本編をご覧いただけます。
       BOOTH: "ZIP + PDF"
     };
     return item.salesLinks
-      .filter((link) => formats[link.label])
+      .filter((link) => formats[link.label] && !item.previewStores?.includes(link.label))
       .map((link) => `${link.label}${separator}${formats[link.label]}`);
   }
 
@@ -1420,7 +1420,7 @@ chichi-puiでも、本編をご覧いただけます。
     return item.salesLinks.map((link) => {
       const href = link.url || "#";
       const className = link.url ? "sales-button" : "sales-button disabled";
-      const label = item.announcement && link.url
+      const label = link.url && (item.announcement || item.previewStores?.includes(link.label))
         ? uiText("announcementLink")
         : link.url ? link.label : `${link.label} / ${copy.unavailable}`;
       const rel = link.url && /^(?:https:\/\/dlaf\.jp\/|https:\/\/www\.dmm\.co\.jp\/dc\/doujin\/)/.test(link.url)

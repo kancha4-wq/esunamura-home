@@ -225,7 +225,7 @@ const works = [
     image: "0501_改修資料/kurokami-kanojo-4/thumb.jpg",
     imageWidth: 560,
     imageHeight: 420,
-    links: {}
+    links: { DLsite: "https://dlaf.jp/aix/dlaf/=/t/s/link/work/aid/esunamura/id/RJ01773947.html" }
   },
   {
     title: {
@@ -320,7 +320,7 @@ const promptcomTabs = document.querySelectorAll("[data-promptcom-tab]");
 const promptcomPanels = document.querySelectorAll("[data-promptcom-panel]");
 
 const workDescriptions = {
-  "kurokami-kanojo-4": { ja: "京都の小道から、木漏れ日が揺れるプール、ふたりで過ごす夜へ。黒髪の彼女の表情を全319枚の4K AI生成CGで描きます。FANZA予告公開中。", en: "From Kyoto’s quiet lanes to a sun-dappled pool and a night together, this collection follows her changing expressions across 319 AI-generated 4K illustrations. Coming soon on FANZA.", zh: "从京都小径到树影摇曳的泳池，再到两人共度的夜晚。全319张4K AI生成CG，描绘黑发女主随景色变化的神情。FANZA预告已公开。", ko: "교토의 골목길에서 햇살이 비치는 수영장을 지나 둘만의 밤으로. 풍경에 따라 달라지는 흑발 그녀의 표정을 319장의 4K AI 생성 CG에 담았습니다. FANZA 예고 공개 중." },
+  "kurokami-kanojo-4": { ja: "京都の小道から、木漏れ日が揺れるプール、ふたりで過ごす夜へ。黒髪の彼女の表情を全319枚の4K AI生成CGで描きます。DLsiteで販売中。FANZA予告公開中。", en: "From Kyoto’s quiet lanes to a sun-dappled pool and a night together, this collection follows her changing expressions across 319 AI-generated 4K illustrations. Available on DLsite. Coming soon on FANZA.", zh: "从京都小径到树影摇曳的泳池，再到两人共度的夜晚。全319张4K AI生成CG，描绘黑发女主随景色变化的神情。DLsite发售中。FANZA预告已公开。", ko: "교토의 골목길에서 햇살이 비치는 수영장을 지나 둘만의 밤으로. 풍경에 따라 달라지는 흑발 그녀의 표정을 319장의 4K AI 생성 CG에 담았습니다. DLsite 판매 중. FANZA 예고 공개 중." },
   "kurokami-kanojo-3": {
     ja: "黒髪ボブの彼女と過ごす、さらに甘く濃密な恋人時間。制服やネクタイシャツ姿から部屋着へ、ふたりの距離が限界まで近づいていく全328枚・4KのAI生成CG集です。DLsite・FANZAで販売中。",
     en: "An even sweeter, more intimate time alone with a black-haired, bob-cut girlfriend. A 328-image 4K AI-generated CG collection that moves from uniforms and tie shirts to relaxed roomwear as the two of you draw closer than ever. Now on sale at DLsite and FANZA.",
