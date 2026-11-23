@@ -4,11 +4,11 @@
     "items":  [
                   {
                       "platform":  "patreon",
-                      "published_at":  "2026-11-23T10:00:00+09:00",
-                      "age_rating":  "全年齢",
-                      "membership_only":  false,
-                      "destination_url":  "https://www.patreon.com/esunamura/posts/176066620",
-                      "web_image_relative_path":  "images/homepage-feed-patreon-5fc97634d3974e3872be.webp"
+                      "published_at":  "2026-11-23T12:00:00+09:00",
+                      "age_rating":  "R18",
+                      "membership_only":  true,
+                      "destination_url":  "https://www.patreon.com/esunamura/posts/176066933",
+                      "web_image_relative_path":  "images/homepage-feed-patreon-0016bf2091c827e09b73.webp"
                   },
                   {
                       "platform":  "promptcom",
