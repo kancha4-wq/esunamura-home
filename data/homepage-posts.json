@@ -4,11 +4,11 @@
     "items":  [
                   {
                       "platform":  "patreon",
-                      "published_at":  "2026-11-23T18:00:00+09:00",
+                      "published_at":  "2026-11-23T20:00:00+09:00",
                       "age_rating":  "R18",
-                      "membership_only":  true,
-                      "destination_url":  "https://www.patreon.com/esunamura/posts/176067107",
-                      "web_image_relative_path":  "images/homepage-feed-patreon-f7765f589e29e5409eb8.webp"
+                      "membership_only":  false,
+                      "destination_url":  "https://www.patreon.com/esunamura/posts/176067286",
+                      "web_image_relative_path":  "images/homepage-feed-patreon-c1297708d48cc7d02c6d.webp"
                   },
                   {
                       "platform":  "painter",
