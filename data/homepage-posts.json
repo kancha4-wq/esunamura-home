@@ -3,6 +3,14 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
+                      "platform":  "patreon",
+                      "published_at":  "2026-11-23T18:00:00+09:00",
+                      "age_rating":  "R18",
+                      "membership_only":  true,
+                      "destination_url":  "https://www.patreon.com/esunamura/posts/176067107",
+                      "web_image_relative_path":  "images/homepage-feed-patreon-f7765f589e29e5409eb8.webp"
+                  },
+                  {
                       "platform":  "painter",
                       "published_at":  "2026-11-23T17:00:00+09:00",
                       "age_rating":  "R18",
@@ -17,14 +25,6 @@
                       "membership_only":  false,
                       "destination_url":  "https://aniborn.com/ja/6954d7c84740e/",
                       "web_image_relative_path":  "images/homepage-feed-promptcom-e0240510887af4bc6942.webp"
-                  },
-                  {
-                      "platform":  "patreon",
-                      "published_at":  "2026-11-23T12:00:00+09:00",
-                      "age_rating":  "R18",
-                      "membership_only":  true,
-                      "destination_url":  "https://www.patreon.com/esunamura/posts/176066933",
-                      "web_image_relative_path":  "images/homepage-feed-patreon-0016bf2091c827e09b73.webp"
                   },
                   {
                       "platform":  "x",
