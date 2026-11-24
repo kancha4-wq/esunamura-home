@@ -3,6 +3,14 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
+                      "platform":  "promptcom",
+                      "published_at":  "2026-11-24T15:00:00+09:00",
+                      "age_rating":  "全年齢",
+                      "membership_only":  false,
+                      "destination_url":  "https://aniborn.com/ja/6954d7c84740e/",
+                      "web_image_relative_path":  "images/homepage-feed-promptcom-caa2f6d1031242bfc1ed.webp"
+                  },
+                  {
                       "platform":  "chichipui",
                       "published_at":  "2026-11-24T13:00:00+09:00",
                       "age_rating":  "R15",
@@ -33,14 +41,6 @@
                       "membership_only":  true,
                       "destination_url":  "https://www.patreon.com/esunamura/posts/176155050",
                       "web_image_relative_path":  "images/homepage-feed-patreon-9f146f1705201d27f95c.webp"
-                  },
-                  {
-                      "platform":  "promptcom",
-                      "published_at":  "2026-11-24T10:00:00+09:00",
-                      "age_rating":  "全年齢",
-                      "membership_only":  false,
-                      "destination_url":  "https://aniborn.com/ja/6954d7c84740e/",
-                      "web_image_relative_path":  "images/homepage-feed-promptcom-a57a354af87344f6a1b9.webp"
                   },
                   {
                       "platform":  "pixiv",
