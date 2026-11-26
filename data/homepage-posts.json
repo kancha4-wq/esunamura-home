@@ -4,11 +4,11 @@
     "items":  [
                   {
                       "platform":  "chichipui",
-                      "published_at":  "2026-11-26T16:00:00+09:00",
-                      "age_rating":  "全年齢",
+                      "published_at":  "2026-11-26T18:00:00+09:00",
+                      "age_rating":  "R15",
                       "membership_only":  false,
                       "destination_url":  "https://www.chichi-pui.com/users/esuna/",
-                      "web_image_relative_path":  "images/homepage-feed-chichipui-9cf2d51fbb211a534948.webp"
+                      "web_image_relative_path":  "images/homepage-feed-chichipui-87edd08e06bc401fd88a.webp"
                   },
                   {
                       "platform":  "promptcom",
