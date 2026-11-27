@@ -3,6 +3,22 @@
     "timezone":  "Asia/Tokyo",
     "items":  [
                   {
+                      "platform":  "chichipui",
+                      "published_at":  "2026-11-27T13:00:00+09:00",
+                      "age_rating":  "R15",
+                      "membership_only":  false,
+                      "destination_url":  "https://www.chichi-pui.com/users/esuna/",
+                      "web_image_relative_path":  "images/homepage-feed-chichipui-6ec2395b3740ab934446.webp"
+                  },
+                  {
+                      "platform":  "painter",
+                      "published_at":  "2026-11-27T13:00:00+09:00",
+                      "age_rating":  "R15",
+                      "membership_only":  false,
+                      "destination_url":  "https://painter-ai.ai/ja/users/c156de76bd",
+                      "web_image_relative_path":  "images/homepage-feed-painter-c38e26bbfa0fedce4cb9.webp"
+                  },
+                  {
                       "platform":  "x",
                       "published_at":  "2026-11-27T12:00:00+09:00",
                       "age_rating":  "全年齢",
@@ -11,28 +27,12 @@
                       "web_image_relative_path":  "images/homepage-feed-x-eb65369eb6b57f9909e3.webp"
                   },
                   {
-                      "platform":  "chichipui",
-                      "published_at":  "2026-11-27T10:00:00+09:00",
-                      "age_rating":  "全年齢",
-                      "membership_only":  false,
-                      "destination_url":  "https://www.chichi-pui.com/users/esuna/",
-                      "web_image_relative_path":  "images/homepage-feed-chichipui-217596979b7f0dc771af.webp"
-                  },
-                  {
                       "platform":  "promptcom",
                       "published_at":  "2026-11-27T10:00:00+09:00",
                       "age_rating":  "全年齢",
                       "membership_only":  false,
                       "destination_url":  "https://aniborn.com/ja/6954d7c84740e/",
                       "web_image_relative_path":  "images/homepage-feed-promptcom-108f7612b2107c9484a5.webp"
-                  },
-                  {
-                      "platform":  "painter",
-                      "published_at":  "2026-11-26T22:00:00+09:00",
-                      "age_rating":  "R18",
-                      "membership_only":  true,
-                      "destination_url":  "https://painter-ai.ai/ja/membership_rooms/a9a7be76-6c2b-4c23-a192-c309b1122209",
-                      "web_image_relative_path":  "images/homepage-feed-painter-154b8ec94ee4cf7ebbcf.webp"
                   },
                   {
                       "platform":  "patreon",
