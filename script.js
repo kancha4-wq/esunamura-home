@@ -220,6 +220,17 @@ const works = [
     }
   },
   {
+    title: { ja: "黒髪彼女を独り占め1-2 ふたりで紡ぐ、やさしい時間。", en: "My Black-Haired Girlfriend, All to Myself 1-2 — Gentle Moments Together", zh: "独占黑发女友 1-2 ～两人共织的温柔时光～", ko: "흑발 여자친구를 독차지 1-2 ～함께 엮는 다정한 시간～" },
+    slug: "kurokami-kanojo-1-2",
+    image: "assets/images/kurokami-kanojo-1-2/cover.jpg",
+    imageWidth: 560,
+    imageHeight: 420,
+    links: {
+      FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_853156/",
+      DLsite: "https://dlaf.jp/aix/dlaf/=/t/s/link/work/aid/esunamura/id/RJ01771073.html"
+    }
+  },
+  {
     title: { ja: "黒髪少女を独り占め４ 京の景色、ふたりの余韻", en: "My Black-Haired Girlfriend, All to Myself 4 — Kyoto and the Echoes of Our Day", zh: "独占黑发少女 4 ～京都风景，两人的余韵～", ko: "흑발 소녀를 독차지 4 ～교토의 풍경, 두 사람의 여운～" },
     slug: "kurokami-kanojo-4",
     image: "0501_改修資料/kurokami-kanojo-4/thumb.jpg",
@@ -320,6 +331,7 @@ const promptcomTabs = document.querySelectorAll("[data-promptcom-tab]");
 const promptcomPanels = document.querySelectorAll("[data-promptcom-panel]");
 
 const workDescriptions = {
+  "kurokami-kanojo-1-2": { ja: "桜の小道や紫陽花の庭を巡り、黒髪ショートの彼女と京都で過ごす四季を描いた、全400枚の4K AI生成CG集です。FANZA・DLsiteで販売中。", en: "Explore Kyoto through the seasons with a short-haired, black-haired girlfriend, from cherry blossom lanes to hydrangea gardens, in 400 AI-generated 4K illustrations. Available on FANZA and DLsite.", zh: "从樱花小径到绣球花庭院，描绘与黑色短发女友在京都度过的四季。全400张4K AI生成CG。FANZA及DLsite发售中。", ko: "벚꽃이 핀 오솔길부터 수국 정원까지, 짧은 흑발의 여자친구와 교토에서 보내는 사계절을 담은 400장의 4K AI 생성 CG집입니다. FANZA와 DLsite에서 판매 중." },
   "kurokami-kanojo-4": { ja: "京都の小道から、木漏れ日が揺れるプール、ふたりで過ごす夜へ。黒髪の彼女の表情を全319枚の4K AI生成CGで描きます。DLsiteで販売中。FANZA予告公開中。", en: "From Kyoto’s quiet lanes to a sun-dappled pool and a night together, this collection follows her changing expressions across 319 AI-generated 4K illustrations. Available on DLsite. Coming soon on FANZA.", zh: "从京都小径到树影摇曳的泳池，再到两人共度的夜晚。全319张4K AI生成CG，描绘黑发女主随景色变化的神情。DLsite发售中。FANZA预告已公开。", ko: "교토의 골목길에서 햇살이 비치는 수영장을 지나 둘만의 밤으로. 풍경에 따라 달라지는 흑발 그녀의 표정을 319장의 4K AI 생성 CG에 담았습니다. DLsite 판매 중. FANZA 예고 공개 중." },
   "kurokami-kanojo-3": {
     ja: "黒髪ボブの彼女と過ごす、さらに甘く濃密な恋人時間。制服やネクタイシャツ姿から部屋着へ、ふたりの距離が限界まで近づいていく全328枚・4KのAI生成CG集です。DLsite・FANZAで販売中。",
@@ -494,6 +506,12 @@ const workTitleTranslations = {
 };
 
 const workArchiveMeta = {
+  "kurokami-kanojo-1-2": {
+    count: { ja: "400枚収録", en: "400 images", zh: "收录400张", ko: "400장 수록" },
+    quality: "4K",
+    series: { ja: "京都", en: "Kyoto", zh: "京都", ko: "교토" },
+    tags: { ja: ["FANZA・DLsite販売中"], en: ["On sale at FANZA and DLsite"], zh: ["FANZA及DLsite发售中"], ko: ["FANZA·DLsite 판매 중"] }
+  },
   "kurokami-kanojo-4": {
     count: { ja: "319枚収録", en: "319 images", zh: "收录319张", ko: "319장 수록" },
     quality: "4K",
@@ -686,6 +704,7 @@ const detailPageBySlug = {
 };
 
 const newReleaseLabels = {
+  "kurokami-kanojo-1-2": "NEW / 2026.11",
   "kurokami-kanojo-3": "NEW / 2026.11",
   "kurokami-kanojo-2": "NEW / 2026.10",
   "pink-haired-idol-encore": "NEW / 2026.09",
@@ -697,7 +716,7 @@ const newReleaseLabels = {
   "kyoto-prompt-pack": "NEW / 2026.05"
 };
 
-const worksGridPrioritySlugs = ["kurokami-kanojo-4", "kurokami-kanojo-3", "kurokami-kanojo-2", "pink-haired-idol-encore", "kurokami-kanojo", "hikagami-school-route", "summer-schoolday", "fanart-select-r15", "fanart-select", "blonde-shrine-maiden-isekai"];
+const worksGridPrioritySlugs = ["kurokami-kanojo-1-2", "kurokami-kanojo-4", "kurokami-kanojo-3", "kurokami-kanojo-2", "pink-haired-idol-encore", "kurokami-kanojo", "hikagami-school-route", "summer-schoolday", "fanart-select-r15", "fanart-select", "blonde-shrine-maiden-isekai"];
 
 function ratingBadgeFor(work) {
   if (allAgesWorkSlugs.has(work.slug)) return null;

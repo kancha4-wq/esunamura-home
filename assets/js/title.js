@@ -113,6 +113,11 @@
   };
 
   const shortTranslations = {
+    "kurokami-kanojo-1-2": {
+      summary: { ja: "桜の小道や紫陽花の庭を巡り、黒髪ショートの彼女と京都で過ごす四季を描いた、全400枚の4K AI生成CG集です。", en: "Explore Kyoto through the seasons with a short-haired, black-haired girlfriend, from cherry blossom lanes to hydrangea gardens, in 400 AI-generated 4K illustrations.", zh: "从樱花小径到绣球花庭院，描绘与黑色短发女友在京都度过的四季。全400张4K AI生成CG。", ko: "벚꽃이 핀 오솔길부터 수국 정원까지, 짧은 흑발의 여자친구와 교토에서 보내는 사계절을 담은 400장의 4K AI 생성 CG집입니다." },
+      format: { ja: "AI生成CG / JPEG / 3185×4096px（4K）", en: "AI-generated CG / JPEG / 3185×4096 px (4K)", zh: "AI生成CG / JPEG / 3185×4096像素（4K）", ko: "AI 생성 CG / JPEG / 3185×4096px (4K)" },
+      focus: { ja: "京都 / 黒髪ショート / 四季", en: "Kyoto / Short black hair / Four seasons", zh: "京都 / 黑色短发 / 四季", ko: "교토 / 짧은 흑발 / 사계절" }
+    },
     "kurokami-kanojo-4": {
       summary: { ja: "京都の小道から、木漏れ日が揺れるプール、ふたりで過ごす夜へ。黒髪の彼女の表情を全319枚の4K AI生成CGで描きます。", en: "From Kyoto’s quiet lanes to a sun-dappled pool and a night together, this collection follows her changing expressions across 319 AI-generated 4K illustrations.", zh: "从京都小径到树影摇曳的泳池，再到两人共度的夜晚。全319张4K AI生成CG，描绘黑发女主随景色变化的神情。", ko: "교토의 골목길에서 햇살이 비치는 수영장을 지나 둘만의 밤으로. 풍경에 따라 달라지는 흑발 그녀의 표정을 319장의 4K AI 생성 CG에 담았습니다." },
       format: { ja: "AI生成CG / JPEG / 3185×4096px（4K）", en: "AI-generated CG / JPEG / 3185×4096 px (4K)", zh: "AI生成CG / JPEG / 3185×4096像素（4K）", ko: "AI 생성 CG / JPEG / 3185×4096px (4K)" },
@@ -956,6 +961,9 @@ chichi-puiでも、本編をご覧いただけます。
     "ホテルでのひとり時間": { ja: "ホテルでのひとり時間", en: "Time alone at the hotel", zh: "酒店独处时光", ko: "호텔에서 보내는 혼자만의 시간" },
     "恋人と過ごす夜": { ja: "恋人と過ごす夜", en: "A night together", zh: "与恋人共度的夜晚", ko: "연인과 함께하는 밤" },
     "京都": { ja: "京都", en: "Kyoto", zh: "京都", ko: "교토" },
+    "桜の小道": { en: "Cherry blossom lanes", zh: "樱花小径", ko: "벚꽃 오솔길" },
+    "紫陽花の庭": { en: "Hydrangea garden", zh: "绣球花庭院", ko: "수국 정원" },
+    "京都の四季": { en: "Four seasons in Kyoto", zh: "京都四季", ko: "교토의 사계절" },
     "ポニーテール": { ja: "ポニーテール", en: "Ponytail", zh: "马尾", ko: "포니테일" },
     "桃髪アイドル": { en: "Pink-Haired Idol", zh: "桃发偶像", ko: "분홍 머리 아이돌" },
     "桃髪": { en: "Pink hair", zh: "桃发", ko: "분홍 머리" },

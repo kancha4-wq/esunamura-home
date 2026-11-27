@@ -536,6 +536,27 @@ A school day during summer break. The quiet school echoes only with cicadas and 
     related: ["hikagami-school", "school-legs", "kinpatsu-miko-isekai"]
   },
   {
+    id: "kurokami-kanojo-1-2",
+    folder: "kurokami-kanojo-1-2",
+    title: { ja: "黒髪彼女を独り占め1-2 ふたりで紡ぐ、やさしい時間。", en: "My Black-Haired Girlfriend, All to Myself 1-2 — Gentle Moments Together", zh: "独占黑发女友 1-2 ～两人共织的温柔时光～", ko: "흑발 여자친구를 독차지 1-2 ～함께 엮는 다정한 시간～" },
+    series: "彼女とふたりきり",
+    cover: "assets/images/kurokami-kanojo-1-2/cover.jpg",
+    count: "400枚",
+    format: "AI生成CG / JPEG / 3185×4096px（4K）",
+    focus: "京都 / 黒髪ショート / 四季",
+    summary: "桜の小道や紫陽花の庭を巡り、黒髪ショートの彼女と京都で過ごす四季を描いた、全400枚の4K AI生成CG集です。",
+    description: {
+      ja: "桜が咲く小道や紫陽花の庭を歩き、京都の風景とともに彼女の表情の移ろいをたどります。季節ごとに変わる装いも見どころです。",
+      en: "Follow her expressions as the Kyoto scenery changes, from cherry blossom lanes to hydrangea gardens. Her outfits change with each season.",
+      zh: "走过樱花小径和绣球花庭院，看京都景色与她的神情随季节变化。不同季节的装扮也是看点。",
+      ko: "벚꽃이 핀 오솔길과 수국 정원을 거닐며, 교토 풍경과 함께 달라지는 그녀의 표정을 따라갑니다. 계절마다 바뀌는 옷차림도 볼거리입니다."
+    },
+    phases: ["桜の小道", "紫陽花の庭", "京都の四季"],
+    tags: ["京都", "黒髪"],
+    salesLinks: saleLinkTemplate,
+    related: ["kurokami-kanojo-4", "kurokami-kanojo-3", "kurokami-kanojo-2"]
+  },
+  {
     id: "kurokami-kanojo-4",
     folder: "kurokami-kanojo-4",
     title: { ja: "黒髪少女を独り占め４ 京の景色、ふたりの余韻", en: "My Black-Haired Girlfriend, All to Myself 4 — Kyoto and the Echoes of Our Day", zh: "独占黑发少女 4 ～京都风景，两人的余韵～", ko: "흑발 소녀를 독차지 4 ～교토의 풍경, 두 사람의 여운～" },
@@ -785,6 +806,10 @@ Short black hair, gentle expressions, and a familiar girlfriend-like presence sh
 ];
 
 const salesByWorkId = {
+  "kurokami-kanojo-1-2": {
+    FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_853156/",
+    DLsite: "https://dlaf.jp/aix/dlaf/=/t/s/link/work/aid/esunamura/id/RJ01771073.html"
+  },
   "kurokami-kanojo-4": {
     FANZA: "https://www.dmm.co.jp/dc/doujin/-/detail/=/cid=d_855285/",
     DLsite: "https://dlaf.jp/aix/dlaf/=/t/s/link/work/aid/esunamura/id/RJ01773947.html"
